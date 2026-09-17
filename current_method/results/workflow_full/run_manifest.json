@@ -1,0 +1,257 @@
+{
+  "status": "complete",
+  "started_utc": "2026-09-16T10:27:20.251621+00:00",
+  "command": [
+    "run_workflow.py",
+    "--profile",
+    "workflow_full"
+  ],
+  "config": {
+    "profile": "workflow_full",
+    "seed": 2026091801,
+    "repetitions_per_cell": 200,
+    "surfaces": [
+      "linear",
+      "quadratic",
+      "sinusoidal"
+    ],
+    "scenarios": [
+      "supported",
+      "bridgeable",
+      "unreachable"
+    ],
+    "dimension": 2,
+    "initial_sources": 4,
+    "candidate_bridges": 6,
+    "max_bridges": 3,
+    "archive_participants": 800,
+    "participants_per_bridge": 96,
+    "calibration_archives": 199,
+    "proxy_scale": 0.012,
+    "eta": 0.05,
+    "zeta": 0.05,
+    "tolerances": [
+      0.2,
+      0.3
+    ],
+    "methods": [
+      "r2_targeted",
+      "rinf_targeted",
+      "r2_random",
+      "r2_nearest",
+      "r2_static",
+      "target_only"
+    ],
+    "bootstrap_repetitions": 2000,
+    "workers": 4
+  },
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "pandas": "3.0.5",
+    "matplotlib": "3.11.1"
+  },
+  "source_sha256": {
+    "run_workflow.py": "0db5b07c70561d4fdb8e9eeeff489f6198aee9c2abc43754ee7393ff86a00838",
+    "atlas_new\\workflow.py": "4c9a2185beb2b47b6ef289498b15136966bb03fc2318214e013c50591782e327",
+    "atlas_new\\workflow_report.py": "1d2af7ddee282fe58e99698aec59ee5ecbdab3d5809d71bd8e72b82e1db4a4e6",
+    "atlas_new\\core.py": "fe91cb77b425d48d435ef295973976449747182051d35aded01b1332e7fcd59b",
+    "atlas_new\\experiments.py": "f18849692be711433063adbdd883d60f4477af72d1ac46f1771f8bd7ae164ce4",
+    "atlas_new\\report.py": "389c077f33fc940ae823a5fd24dc0d70c0710c86bbeb14e66a96522dd90ceed3",
+    "configs\\workflow_full.json": "b335a4fb736c9c30b1f5f05713d5a362a8b5355535de36aeba811b5cae1989b2",
+    "docs\\完整流程实验协议.md": "3de176fa34e01b1d8eea71a451df50cdcc6d8ec817d91a63864513ba295437ff",
+    "tests\\test_workflow.py": "57ea2f6e782bd4a5625f765212f2ef80b5cbeeb9b9d6142ef3518a6e2e508d3f"
+  },
+  "scope": "Synthetic complete workflow; not real mechanism-set calibration; no superiority hard-coded.",
+  "checks": [
+    {
+      "name": "complete balanced factorial records",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "unique world policy tolerance budget",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "one calibration audit per independent world",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "declared cost is actual observed participants",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no source or target budget overrun",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "optimizer makes no global optimality assertion",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no finite wrong-width or fabricated zero-width interval",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no missing certificate or estimate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no missing causal score",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "bad release uses unconditional event",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "release uses prespecified tolerance only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "target outcome hidden at budget zero",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "initial bridge policies receive identical information",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "saved weights feasible and independently re-evaluated",
+      "passed": true,
+      "detail": "6.8833827526759706e-15"
+    },
+    {
+      "name": "prospective certificate does not worsen when sources added",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "cost and source availability match acquisition log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stopped policies do not acquire or update after release",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "predictions recomputed from actually collected outcomes",
+      "passed": true,
+      "detail": "2.1094237467877974e-15"
+    },
+    {
+      "name": "path coverage is conjunction across actual outputs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "two randomized arms reconstruct each acquired effect",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no calibrated path or set violation detected at familywise .01",
+      "passed": true,
+      "detail": "Failure to reject is not a proof; nominal path guarantee follows from the protocol assumptions."
+    }
+  ],
+  "counts": {
+    "independent_worlds": 1800,
+    "policy_budget_records": 86400,
+    "acquisitions_logged": 32883,
+    "planned_states": 30600
+  },
+  "finished_utc": "2026-09-16T10:29:53.410636+00:00",
+  "elapsed_seconds": 153.12027410000064,
+  "artifacts": {
+    "acquisitions.csv": {
+      "sha256": "6546ea6b36ffebc6511fdf30ae6be6705b14d4d88441148a93c30b333c5f856d",
+      "bytes": 4086876
+    },
+    "candidate_scores.csv": {
+      "sha256": "f74ee477975aadaa04ad4137fbafc26a45bddb738f99ec79e66e3b38f13a404e",
+      "bytes": 3312442
+    },
+    "paired_comparisons.csv": {
+      "sha256": "72c8b1934c4618f854d35e374e6a7dd03b805de7123301db74ba9bb4d549341a",
+      "bytes": 22639
+    },
+    "plans.jsonl": {
+      "sha256": "9ebef1658bc62f49c76cc3be8da450eb20d5274c2087aa9782c478ad4c2b7735",
+      "bytes": 10945295
+    },
+    "pooled_summary.csv": {
+      "sha256": "c15176a7fec8588520e6fc9e058d8608dd3f289cbafff71cff9605eae34ec21a",
+      "bytes": 17135
+    },
+    "statistical_calibration_checks.csv": {
+      "sha256": "9c937388a9749a7eb0297c39e44e71462e264a40790ff3c7367a1be1b569344f",
+      "bytes": 10812
+    },
+    "test_log.txt": {
+      "sha256": "806ca0aee7aa1df075b13399140386e9bc40ea883f524c409e885e97c2dfe993",
+      "bytes": 1110
+    },
+    "validation_checks.json": {
+      "sha256": "7f867b1c2d7beb057a4225a117adc95cb401cb0d36b32c8cb627025a9ba0c916",
+      "bytes": 2500
+    },
+    "workflow_records.csv": {
+      "sha256": "4068655ab7df20777409a334208b53601369ac7a66bd2e9be742829d32884136",
+      "bytes": 30318098
+    },
+    "workflow_summary.csv": {
+      "sha256": "98239d810b7465261153a9eb67e4ad08db8747586ac6260276c4817d0b44e970",
+      "bytes": 99928
+    },
+    "world_audits.jsonl": {
+      "sha256": "78071986149345fd5f5c7205c3c60b750d2364334ab9a1fccd478bb6e873fc49",
+      "bytes": 3790367
+    },
+    "完整流程实验结果.md": {
+      "sha256": "d9b46f6a9515ea2bbb110d822a90c71b88ed08b14f61795c1f2b205b3e100d57",
+      "bytes": 12392
+    },
+    "figures\\workflow_cost_and_release.pdf": {
+      "sha256": "2cc06ed376748ea03da115cbebdcf61f4b04281584918df54c6dcfe225d9655b",
+      "bytes": 33914
+    },
+    "figures\\workflow_cost_and_release.png": {
+      "sha256": "13b61f35cea6545991e00b4c22279a58b4a629761a1afba8302943522837bc5d",
+      "bytes": 302989
+    },
+    "figures\\workflow_cost_and_release.svg": {
+      "sha256": "c0c17b64109b02f2c8e843331e8fa4a589936f2b5d3a0103488c6aca743ac987",
+      "bytes": 80687
+    },
+    "figures\\workflow_release_frontier.pdf": {
+      "sha256": "829a042a6b208b0ea96158deaaef0e14a07a784f1c293e388ff284432515d02a",
+      "bytes": 40068
+    },
+    "figures\\workflow_release_frontier.png": {
+      "sha256": "93e68733933145c7b580afead17068a7983b60f59f7c224b165a706ce7b43cb6",
+      "bytes": 475271
+    },
+    "figures\\workflow_release_frontier.svg": {
+      "sha256": "6b94ef78c41ae7751063b7769470a4e379b761af1b96404ba3fa8a100953d679",
+      "bytes": 76387
+    }
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "balanced plans",
+    "passed": true
+  },
+  {
+    "name": "balanced stopped records",
+    "passed": true
+  },
+  {
+    "name": "unique planned states",
+    "passed": true
+  },
+  {
+    "name": "unique evaluated states",
+    "passed": true
+  },
+  {
+    "name": "no unreported global optimum claim",
+    "passed": true
+  },
+  {
+    "name": "finite planned estimates and radii",
+    "passed": true
+  },
+  {
+    "name": "same source prefixes across all variants",
+    "passed": true
+  },
+  {
+    "name": "simplex feasible",
+    "passed": true
+  },
+  {
+    "name": "saved radius is declared envelope",
+    "passed": true
+  },
+  {
+    "name": "minimum equals smaller bound at same weights",
+    "passed": true
+  },
+  {
+    "name": "geometric bounds dominate actual causal bias on joint event",
+    "passed": true
+  },
+  {
+    "name": "release and bad release use prespecified tolerance",
+    "passed": true
+  },
+  {
+    "name": "actual cost and carry-forward stopping",
+    "passed": true
+  },
+  {
+    "name": "optimized optional sources cannot worsen bound",
+    "passed": true
+  },
+  {
+    "name": "no path-coverage violation detected at familywise .01",
+    "passed": true
+  }
+]

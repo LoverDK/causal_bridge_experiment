@@ -1,0 +1,245 @@
+{
+  "started_utc": "2026-09-16T09:09:43.759971+00:00",
+  "command": [
+    "run_all.py",
+    "--profile",
+    "full"
+  ],
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "config": {
+    "profile": "full",
+    "hidden_draws": 20000,
+    "selection_draws": 50000,
+    "minimax_draws": 40000,
+    "minimax_grid": 27,
+    "bridge_instances": 200,
+    "bridge_random_subsets": 250,
+    "operational_repetitions": 200,
+    "calibration_archives": 199,
+    "pi_repetitions": 200,
+    "joint_calibration_repetitions": 2000,
+    "seed_hidden": 2026091601,
+    "seed_selection": 2026091602,
+    "seed_minimax": 2026091603,
+    "seed_bridge": 2026091604,
+    "seed_operational": 2026091610,
+    "seed_pi": 2026091611,
+    "seed_calibration": 2026091612,
+    "eta": 0.05,
+    "zeta": 0.05,
+    "tolerances": [
+      0.3,
+      0.6,
+      1.0,
+      1.5,
+      2.0,
+      3.0
+    ]
+  },
+  "status": "complete",
+  "source_sha256": {
+    "README.md": "26ca74e291795a97b550e06933d80aa83a2925f7449db6c1d71dd04eee38e66d",
+    "requirements.txt": "625e404ae18bc2c1d08930612edfd738f7023d28099bd953b3f69a5a237cc584",
+    "run_all.py": "38235e93be6335be29c61ec2bfdc0e789b2f48396b7a2b6394a8f6b7e649d300",
+    "atlas_new\\core.py": "fe91cb77b425d48d435ef295973976449747182051d35aded01b1332e7fcd59b",
+    "atlas_new\\experiments.py": "f18849692be711433063adbdd883d60f4477af72d1ac46f1771f8bd7ae164ce4",
+    "atlas_new\\manylabs.py": "896af9a05110eae367b8a2a81e9d8a0ce40e4d36e96caf06f31b4b3024ecfe34",
+    "atlas_new\\report.py": "f262a98c46ef459ccb0a94a8c70027588770a7234f6787d22e4b6ab51a118450",
+    "atlas_new\\__init__.py": "d304e8f296b668e8484337b5693c66171f5bf0fa5f941eb9234d06923703715e",
+    "configs\\full.json": "346478482237e8c1b72152bbcb83f1589214c04af00360c50f84fafb6cace8ad",
+    "configs\\smoke.json": "3887730db191f260815ee7da5aec569d4de58e0740efe4b6d4d34affe1a00989",
+    "docs\\paper_source.json": "ae7e48739b3e04f632385c323dad5d7c7c32a8fabcd272964aea6a3af5fed08a",
+    "docs\\实验设计与论文对应.md": "0027e26b01c2d2e24a8f2476cddf417823ab0d64bb5689d24f50022e208394b6",
+    "docs\\执行记录.md": "8a3f8dea8ea19e371348c41c7f291a07e36a0273c925e064830593d2e9459220",
+    "tests\\test_theory.py": "9936745d6e034de2db25f8048ae1dd5a5a2fd81a1c0035d0112014cd65061558"
+  },
+  "packages": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "pandas": "3.0.5",
+    "matplotlib": "3.11.1"
+  },
+  "blocks": {
+    "hidden": {
+      "status": "complete",
+      "seconds": 0.012913799999978437
+    },
+    "selection": {
+      "status": "complete",
+      "seconds": 0.7705590999999004
+    },
+    "minimax": {
+      "status": "complete",
+      "seconds": 0.0892845999999281
+    },
+    "joint_calibration": {
+      "status": "complete",
+      "seconds": 1.0281843000000208
+    },
+    "operational": {
+      "status": "complete",
+      "seconds": 33.2513778
+    },
+    "sharp_pi": {
+      "status": "complete",
+      "seconds": 0.9073174000000108
+    },
+    "bridges": {
+      "status": "complete",
+      "seconds": 4.2263697000000775
+    },
+    "manylabs": {
+      "status": "complete",
+      "seconds": 3.065341200000148,
+      "sha256": "15898b5c241696adc7fd91a638839ba49a9f9be64c78da9151b39018d66bfbd3"
+    }
+  },
+  "scope": "Independent implementation; not a claim of bitwise manuscript reproduction",
+  "validation_checks_passed": 12,
+  "finished_utc": "2026-09-16T09:10:31.400508+00:00",
+  "artifacts": {
+    "results\\full\\bridge_anisotropy.csv": {
+      "sha256": "9d521753c7e273a94ec737f0cac26f9b9388a7ad820949a96c1bff21fb8ce3b2",
+      "bytes": 160
+    },
+    "results\\full\\bridge_complementarity.csv": {
+      "sha256": "d85dac9a71f225e274c200c2a1203a06d739fe9d84587f59c3a6279e32827379",
+      "bytes": 55
+    },
+    "results\\full\\bridge_designs.json": {
+      "sha256": "a050a387051b95952979dbe52d2faf84fa784213085f9824919b634c5d1246e7",
+      "bytes": 800699
+    },
+    "results\\full\\bridge_records.csv": {
+      "sha256": "f4ec838d21e626f3b0cd5eeb9a132acd18224ee7dd7493e305d7740188c61239",
+      "bytes": 6629035
+    },
+    "results\\full\\hidden_shift.csv": {
+      "sha256": "d54dfcf885824da0e5db8de52601b2dbbe7ddcacb04ec5207be12b872d9e14ca",
+      "bytes": 7199
+    },
+    "results\\full\\joint_calibration_records.csv": {
+      "sha256": "8bb8781cdbb7f09b3a139ca6fa51607f80e4429449b8679b4402a62a77617cb8",
+      "bytes": 1906034
+    },
+    "results\\full\\joint_calibration_summary.csv": {
+      "sha256": "9a06c1212cff7b3adc7bd975584931b2f74294a263affcb1a2af4248c0505381",
+      "bytes": 1711
+    },
+    "results\\full\\manylabs_diagnostics.json": {
+      "sha256": "940766f63fcea6e02e405f12177db40ef64682781f8a9eb66b866e7706d3b527",
+      "bytes": 247
+    },
+    "results\\full\\manylabs_frontier.csv": {
+      "sha256": "4f566a1ecebd88a1938da8e9d6cdcdc2efdbe48a58ff2f9b351042ec18672a99",
+      "bytes": 12656
+    },
+    "results\\full\\manylabs_holdouts.csv": {
+      "sha256": "9ab1ac793f5f5894f8f22a95b266898605ce55d5916130c1999438e28037effd",
+      "bytes": 64262
+    },
+    "results\\full\\manylabs_leakage_tests.csv": {
+      "sha256": "2c0eebf60aa086a69839cb26e6e36650db5495e6ea77f15c254118058392b612",
+      "bytes": 2477
+    },
+    "results\\full\\manylabs_sources.csv": {
+      "sha256": "5ca66e8cd1fddd0ca232dfc6277e1bbb19a26fc1cdcfbdb84f7d5287c4d8f42b",
+      "bytes": 2707
+    },
+    "results\\full\\manylabs_summary.csv": {
+      "sha256": "b9ffacd28b7117eb545b4fc6268db84433ec2fdecdfc4c2ffdee084a7400e468",
+      "bytes": 333
+    },
+    "results\\full\\minimax.csv": {
+      "sha256": "2781b66342d6d321491cae24e1a39e4f4abd452d03bc2b1de9342c574bd86903",
+      "bytes": 91558
+    },
+    "results\\full\\operational_audits.csv": {
+      "sha256": "c62b34c8339151238c34835785d044cb3ee4f795e2288304f6e671279cf93ab0",
+      "bytes": 761706
+    },
+    "results\\full\\operational_frontier.csv": {
+      "sha256": "e953f38577114b22c794cfdfe779357de9b9586a538bda74aaeb39d34e413bb6",
+      "bytes": 21757
+    },
+    "results\\full\\operational_records.csv": {
+      "sha256": "afd426e38980a00833ef884c10472d2f1dcb08b9bd1e8986ff60516c3c1c51d8",
+      "bytes": 2130802
+    },
+    "results\\full\\operational_summary.csv": {
+      "sha256": "39b8c0fa3a80256a69f3c387a39656793404f38e9c6325d53956177bd821392c",
+      "bytes": 5107
+    },
+    "results\\full\\pi_boundary_cases.json": {
+      "sha256": "976eed5f3b1f690824530a7991eebc12c0601dddfab44376a8cf561bed537838",
+      "bytes": 520
+    },
+    "results\\full\\pi_records.csv": {
+      "sha256": "2161498182d22ee095d23c9616162c9890b6466e5894a3aa06715b9247b39619",
+      "bytes": 49983
+    },
+    "results\\full\\pi_witnesses.json": {
+      "sha256": "772c0ced3fb5371a4f3be2d0c0649e0614788113adebf97a93ce8f849f6b2953",
+      "bytes": 467143
+    },
+    "results\\full\\selection.csv": {
+      "sha256": "22165ff1509ac481a425eabc1f9b7ffa1482fb3fc2514f16b4ffb09b04898053",
+      "bytes": 5690
+    },
+    "results\\full\\test_log.txt": {
+      "sha256": "ac3d6e9728306ea2af3ff32327ae2e9c8e37c1212c83557b3d54f909c6f0aa91",
+      "bytes": 1486
+    },
+    "results\\full\\validation_checks.json": {
+      "sha256": "eb0d16c90041e6fda04bd330326157994f8737bf56682923c20101b64a737e4c",
+      "bytes": 1148
+    },
+    "results\\full\\结果解读.md": {
+      "sha256": "0e745b4fb47eac97bdd2020c9bf63836058b96a4751bb780ff6234be4978c37a",
+      "bytes": 7259
+    },
+    "results\\full\\figures\\01_theory_audits.png": {
+      "sha256": "849d04782b0de479f805f09989705e37dc5db44a9f494497d14b16c9d525c3f7",
+      "bytes": 442905
+    },
+    "results\\full\\figures\\01_theory_audits.svg": {
+      "sha256": "f75b30fa7937eaed776a9f1198a184395b0f7bcba8b949cdd3d4d445050d7050",
+      "bytes": 225514
+    },
+    "results\\full\\figures\\02_operational_extensions.png": {
+      "sha256": "fe963c6d8fba9c04f0caff4442b747caa5979d4bdb0e98c929ed85170fa535cc",
+      "bytes": 496444
+    },
+    "results\\full\\figures\\02_operational_extensions.svg": {
+      "sha256": "9498048bd92ace072157c1964ef0c8770e152fd4c88cbd7b35f262f1d849b1eb",
+      "bytes": 75563
+    },
+    "results\\full\\figures\\03_bridge_target_gap.png": {
+      "sha256": "274df889160ba82257c6487dbc087310b6bc17c70ab1f08446f430df776b47f8",
+      "bytes": 227895
+    },
+    "results\\full\\figures\\03_bridge_target_gap.svg": {
+      "sha256": "0e99adc4fe2de5c106d4d17a48699b5dbe58f00d859bb0bb2d2545205e2b842b",
+      "bytes": 60994
+    },
+    "results\\full\\figures\\04_manylabs_independent_sources.png": {
+      "sha256": "34ded5765ea6b0ecb60303e8f17c908ddb2d446c835b4f4d1e39236ef922d9e9",
+      "bytes": 228935
+    },
+    "results\\full\\figures\\04_manylabs_independent_sources.svg": {
+      "sha256": "fba9a1952c1c5f4584b2018de3eab64ff42b69d8a88c1421c1e1bdc81a20fd54",
+      "bytes": 31764
+    }
+  },
+  "postprocessing": [
+    {
+      "utc": "2026-09-16T09:12:59.259671+00:00",
+      "reason": "Report text and visual labeling update; no simulation resampling",
+      "source_sha256": {
+        "atlas_new/report.py": "389c077f33fc940ae823a5fd24dc0d70c0710c86bbeb14e66a96522dd90ceed3",
+        "refresh_report.py": "e9c8bae3e0568f44088487dc16b8cbf1479d9f04f95d3ce800e2e54fd14cb934"
+      }
+    }
+  ]
+}

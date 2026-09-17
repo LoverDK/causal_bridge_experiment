@@ -1,0 +1,25 @@
+{
+  "scope": "Post-run independent audit and paper-ready materials; original run manifest preserved",
+  "files": {
+    "audit_ablations.py": {
+      "sha256": "52a17e97514b6ee7f6e3af83d5f1f0b572bced7476847beb78ad602810734d2e",
+      "bytes": 5036
+    },
+    "docs\\ablation_results_zh.md": {
+      "sha256": "3c0a5fde19591e6099a4896ae1ab47262e94bec72028ae966c7b6c06bb6c734a",
+      "bytes": 7228
+    },
+    "docs\\paper_appendix_ablations.tex": {
+      "sha256": "b0db6175da70b089169b38f02e2e7c3c0e6af2e93092ae2c5b0e8f847b191258",
+      "bytes": 4164
+    },
+    "results\\ablations_full\\independent_audit.json": {
+      "sha256": "93eb94598023dde75c4f726cc647b0d227877775e8fa49c9b41faa5d8fc8c494",
+      "bytes": 537
+    },
+    "results\\ablations_full\\plans.jsonl.gz": {
+      "sha256": "f9e16b9dc596f0538ec91ba60b3567c4b2fa8cabb7d2941f66e02cff84de40b7",
+      "bytes": 8649543
+    }
+  }
+}

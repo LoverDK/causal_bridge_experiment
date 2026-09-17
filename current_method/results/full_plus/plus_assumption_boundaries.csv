@@ -1,0 +1,7 @@
+case,expected,observed,detail
+empty_mechanism_set,reject,reject,box lower > upper
+off_simplex,reject,reject,weights do not sum to one
+negative_L,reject,reject,negative smoothness bound
+small_calibration,infinite,finite,
+selection_R2,invalid_if_adaptive,explicitly_labelled,plus_correlated_noise.csv
+t3_gaussian_certificate,invalid_assumption,explicitly_labelled,plus_heavy_tails.csv

@@ -1,0 +1,33 @@
+test_branch_fallback_valid_when_solver_fails (test_ablations.AblationTests.test_branch_fallback_valid_when_solver_fails) ... ok
+test_ivw_uses_variance_not_standard_error (test_ablations.AblationTests.test_ivw_uses_variance_not_standard_error) ... ok
+test_minimum_path_matches_existing_random_workflow (test_ablations.AblationTests.test_minimum_path_matches_existing_random_workflow) ... ok
+test_no_outcome_or_truth_access_and_stop_is_respected (test_ablations.AblationTests.test_no_outcome_or_truth_access_and_stop_is_respected) ... ok
+test_paired_variants_share_prefixes_and_geometric_error_bound (test_ablations.AblationTests.test_paired_variants_share_prefixes_and_geometric_error_bound) ... ok
+test_single_source_bounds_coincide_and_invalid_bound_rejected (test_ablations.AblationTests.test_single_source_bounds_coincide_and_invalid_bound_rejected) ... ok
+test_conformal_small_calibration_is_infinite (test_audit_plus.PlusChecks.test_conformal_small_calibration_is_infinite) ... ok
+test_invalid_r2_is_labelled_in_protocol (test_audit_plus.PlusChecks.test_invalid_r2_is_labelled_in_protocol) ... ok
+test_plus_protocol_files_exist (test_audit_plus.PlusChecks.test_plus_protocol_files_exist) ... ok
+test_analytic_selection_boundary (test_theory.TheoryChecks.test_analytic_selection_boundary) ... ok
+test_box_maximum_dominates_interior_points (test_theory.TheoryChecks.test_box_maximum_dominates_interior_points) ... ok
+test_complementarity (test_theory.TheoryChecks.test_complementarity) ... ok
+test_fixed_radius_no_larger_than_simultaneous (test_theory.TheoryChecks.test_fixed_radius_no_larger_than_simultaneous) ... ok
+test_logdet_diminishing_returns (test_theory.TheoryChecks.test_logdet_diminishing_returns) ... ok
+test_lp_closed_form_and_witnesses (test_theory.TheoryChecks.test_lp_closed_form_and_witnesses) ... ok
+test_lp_source_constraints_and_infeasibility (test_theory.TheoryChecks.test_lp_source_constraints_and_infeasibility) ... ok
+test_optimizer_feasible_and_geometry_only (test_theory.TheoryChecks.test_optimizer_feasible_and_geometry_only) ... ok
+test_optimizer_handles_infeasible_internal_iterates (test_theory.TheoryChecks.test_optimizer_handles_infeasible_internal_iterates) ... ok
+test_quantile_rank_and_infinite_case (test_theory.TheoryChecks.test_quantile_rank_and_infinite_case) ... ok
+test_real_prediction_interface_has_no_target_effect (test_theory.TheoryChecks.test_real_prediction_interface_has_no_target_effect) ... ok
+test_uniform_bound_survives_adaptive_choice (test_theory.TheoryChecks.test_uniform_bound_survives_adaptive_choice) ... ok
+test_analytic_gradients (test_workflow.WorkflowChecks.test_analytic_gradients) ... ok
+test_ball_bound_dominates_realized_geometry (test_workflow.WorkflowChecks.test_ball_bound_dominates_realized_geometry) ... ok
+test_final_radius_recomputed_and_old_weights_remain_available (test_workflow.WorkflowChecks.test_final_radius_recomputed_and_old_weights_remain_available) ... ok
+test_no_collect_after_release_and_cumulative_target_batches (test_workflow.WorkflowChecks.test_no_collect_after_release_and_cumulative_target_batches) ... ok
+test_planning_and_stop_ignore_target_truth_and_future_outcomes (test_workflow.WorkflowChecks.test_planning_and_stop_ignore_target_truth_and_future_outcomes) ... ok
+test_same_world_reproduces_and_calibration_covers_candidate_universe (test_workflow.WorkflowChecks.test_same_world_reproduces_and_calibration_covers_candidate_universe) ... ok
+test_summary_noise_matches_two_balanced_arms (test_workflow.WorkflowChecks.test_summary_noise_matches_two_balanced_arms) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.705s
+
+OK

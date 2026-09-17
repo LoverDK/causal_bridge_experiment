@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Rinf correlated coverage valid scenarios",
+    "passed": true
+  },
+  {
+    "name": "negative controls labelled",
+    "passed": true
+  },
+  {
+    "name": "optimizer does not claim global optimum",
+    "passed": true
+  },
+  {
+    "name": "tiny calibration returns infinite radius",
+    "passed": true
+  },
+  {
+    "name": "diagonal R2 invalid under correlation or adaptation",
+    "passed": true
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "completed_utc": "2026-09-16T11:07:28.796773+00:00",
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "data_sha256": "15898b5c241696adc7fd91a638839ba49a9f9be64c78da9151b39018d66bfbd3",
+  "seed": 2026091607,
+  "thresholds": [
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3
+  ],
+  "inputs": {
+    "run_real_supplement.py": "2fa1f8710de4a2e3ae7402836752319ff0f233907b7e90ef84599f15d505296f",
+    "atlas_new\\manylabs.py": "896af9a05110eae367b8a2a81e9d8a0ce40e4d36e96caf06f31b4b3024ecfe34",
+    "docs\\\u771f\u5b9e\u6570\u636e\u8865\u5145\u534f\u8bae.md": "d387757a9fb3642663ffb34af56f5edd8a09effbabe92a8341f0ec82b84a5df2",
+    "data\\manylabs2_framing.csv": "15898b5c241696adc7fd91a638839ba49a9f9be64c78da9151b39018d66bfbd3"
+  },
+  "artifacts": {
+    "frontier.csv": "6908b4b23530d71b56c55c0378abdd371514b58c354eb59db073cc00bee2ad14",
+    "holdouts.csv": "d0e66ebfd061ba6169b7ac76a1a28393f6920a18225e96c072d6a17d495639bb",
+    "leakage_checks.csv": "79a3e900eb15e82485b2d419a4c4b8586a62507f79228f67d5bab2b946c01daa",
+    "matched_archive_size.csv": "3467e98b69ff0a38759c7973dfd6725588b0a8dacf681d9d86caf979cb26fdbb",
+    "matched_comparison.csv": "bf2855933436ea4bf96d1e2038c0d67fbe376960663f0cd20983b78e0a2d615c",
+    "sources.csv": "d0174393c979b6d1e37169be8a077154441b2ed5982627c5089286b177d5d45c",
+    "summary.csv": "dca4d885ec8e158fe4d69bb0a34401425e0c5474e4fa316c83d08f7280616b6d",
+    "validation_checks.json": "95ddfb2d806add16238c2adfe3aeeebf786b3bce7ca3461beffa344df8c82d6e"
+  },
+  "status": "complete",
+  "scope": "Post-hoc noisy-reference benchmark; no real calibrated mechanism sets or new intervention acquisition"
+}

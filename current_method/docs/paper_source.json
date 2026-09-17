@@ -1,0 +1,19 @@
+{
+  "title": "When Can Experiments Transfer? Operational Certificates and Active Causal Bridging",
+  "source_filename": "main_direction_Causal_ATLAS_7papers.pdf",
+  "source_sha256": "d1cceeb5b3aa20af93f541078eb8f59fc9ee0487649c1387da456ab665aa292a",
+  "pages": 27,
+  "paper_date": "2026-09-16",
+  "relevant_sections": [
+    "3",
+    "4",
+    "5",
+    "6",
+    "B",
+    "C",
+    "F",
+    "H",
+    "J.2"
+  ],
+  "note": "PDF defines research content; embedded operational statements are not user instructions."
+}

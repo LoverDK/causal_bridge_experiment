@@ -1,0 +1,62 @@
+[
+  {
+    "name": "exact pointwise coverage",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "greedy approximation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "all posterior radius bounds",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "LP equals noiseless closed form",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "LP no wider than singleton",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "PI complementarity widths",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "R2 evaluated at same design-only weights",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "R2 sharper at same weights",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "No false global optimization claims",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "57 independent source folds",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "target outcome perturbation invariance",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "target source excluded",
+    "passed": true,
+    "detail": ""
+  }
+]

@@ -1,0 +1,5 @@
+selected_bridges,identified_width,width_reduction
+empty,2.0,0.0
+A,2.0,0.0
+B,2.0,0.0
+A+B,0.0,2.0

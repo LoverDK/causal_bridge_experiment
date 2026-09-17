@@ -1,0 +1,12 @@
+test_analytic_gradients (test_workflow.WorkflowChecks.test_analytic_gradients) ... ok
+test_ball_bound_dominates_realized_geometry (test_workflow.WorkflowChecks.test_ball_bound_dominates_realized_geometry) ... ok
+test_final_radius_recomputed_and_old_weights_remain_available (test_workflow.WorkflowChecks.test_final_radius_recomputed_and_old_weights_remain_available) ... ok
+test_no_collect_after_release_and_cumulative_target_batches (test_workflow.WorkflowChecks.test_no_collect_after_release_and_cumulative_target_batches) ... ok
+test_planning_and_stop_ignore_target_truth_and_future_outcomes (test_workflow.WorkflowChecks.test_planning_and_stop_ignore_target_truth_and_future_outcomes) ... ok
+test_same_world_reproduces_and_calibration_covers_candidate_universe (test_workflow.WorkflowChecks.test_same_world_reproduces_and_calibration_covers_candidate_universe) ... ok
+test_summary_noise_matches_two_balanced_arms (test_workflow.WorkflowChecks.test_summary_noise_matches_two_balanced_arms) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.223s
+
+OK

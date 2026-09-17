@@ -1,0 +1,12 @@
+{
+  "raw_participants": 7228,
+  "sites": 57,
+  "countries": 26,
+  "method_holdouts": 570,
+  "integration_perturbation_checks": 114,
+  "max_heldout_outcome_effect": 0.0,
+  "all_estimates_finite": true,
+  "no_interval_for_unmodelled_robust_methods": true,
+  "matched_size_repeats": 100,
+  "seed": 2026091607
+}

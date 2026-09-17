@@ -1,0 +1,14 @@
+{
+  "profile": "smoke_plus",
+  "correlated_draws": 3000,
+  "heavy_tail_draws": 3000,
+  "calibration_sensitivity_repetitions": 300,
+  "optimizer_repetitions": 12,
+  "optimizer_random_weights": 500,
+  "seed_correlated": 2026091701,
+  "seed_heavy_tail": 2026091702,
+  "seed_calibration_sensitivity": 2026091703,
+  "seed_optimizer": 2026091704,
+  "eta": 0.05,
+  "zeta": 0.05
+}

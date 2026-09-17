@@ -1,0 +1,113 @@
+{
+  "started_utc": "2026-09-16T09:45:14.677900+00:00",
+  "command": [
+    "run_plus.py",
+    "--profile",
+    "full_plus"
+  ],
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "config": {
+    "profile": "full_plus",
+    "correlated_draws": 30000,
+    "heavy_tail_draws": 30000,
+    "calibration_sensitivity_repetitions": 3000,
+    "optimizer_repetitions": 120,
+    "optimizer_random_weights": 8000,
+    "seed_correlated": 2026091701,
+    "seed_heavy_tail": 2026091702,
+    "seed_calibration_sensitivity": 2026091703,
+    "seed_optimizer": 2026091704,
+    "eta": 0.05,
+    "zeta": 0.05
+  },
+  "status": "complete",
+  "source_sha256": {
+    "environment.lock.txt": "a5452c92f32a9b98acdded49173161cd6a0e26d22e2c3fcc2d5a8dd3df31d328",
+    "README.md": "12f45c510c9c1ca52a19a2cf3d81e8289ffedb34a88233051b7dbb6b83a371dc",
+    "refresh_report.py": "e9c8bae3e0568f44088487dc16b8cbf1479d9f04f95d3ce800e2e54fd14cb934",
+    "requirements.txt": "625e404ae18bc2c1d08930612edfd738f7023d28099bd953b3f69a5a237cc584",
+    "run_all.py": "38235e93be6335be29c61ec2bfdc0e789b2f48396b7a2b6394a8f6b7e649d300",
+    "run_plus.py": "5d20fa0dd0cddee381f1c69d9bdd59ad19a50b733c1b9d425e4227fbdb524ad9",
+    "atlas_new\\audit_plus.py": "20704c0633dca5906bb5e0c03d0cfe895c8ded8fda618fd6b67b180edea65896",
+    "atlas_new\\core.py": "fe91cb77b425d48d435ef295973976449747182051d35aded01b1332e7fcd59b",
+    "atlas_new\\experiments.py": "f18849692be711433063adbdd883d60f4477af72d1ac46f1771f8bd7ae164ce4",
+    "atlas_new\\manylabs.py": "896af9a05110eae367b8a2a81e9d8a0ce40e4d36e96caf06f31b4b3024ecfe34",
+    "atlas_new\\report.py": "389c077f33fc940ae823a5fd24dc0d70c0710c86bbeb14e66a96522dd90ceed3",
+    "atlas_new\\__init__.py": "d304e8f296b668e8484337b5693c66171f5bf0fa5f941eb9234d06923703715e",
+    "configs\\full.json": "346478482237e8c1b72152bbcb83f1589214c04af00360c50f84fafb6cace8ad",
+    "configs\\full_plus.json": "434f1c71796ecdb5de2ebde1f6a1b6f4a06f17bafe8d16766afc5d44c208567d",
+    "configs\\smoke.json": "3887730db191f260815ee7da5aec569d4de58e0740efe4b6d4d34affe1a00989",
+    "configs\\smoke_plus.json": "1c0cfc8496a5f15da0f47e2d90bbcaea9794b18cea2a90e376bb8c230dab8aad",
+    "docs\\paper_source.json": "ae7e48739b3e04f632385c323dad5d7c7c32a8fabcd272964aea6a3af5fed08a",
+    "docs\\实验设计与论文对应.md": "c83079f6c8b0659d71f2e7ceeb908a180394906ebfe3c5368dfd104d02a822d8",
+    "docs\\执行记录.md": "1ec94e2a7a36adbf74465db0c9efe146cee3a10abe9d00fa3f0eb759ec70b803",
+    "docs\\指标字典.md": "7f8cdcc1145a8588cbfd01d8d6d28d094d9e2c4b5821f66dad4f29ccf7091991",
+    "tests\\test_audit_plus.py": "a76ec5473dca156af70370701e6e111b8a2e39bccabac842b6337e5a269e5f3d",
+    "tests\\test_theory.py": "9936745d6e034de2db25f8048ae1dd5a5a2fd81a1c0035d0112014cd65061558"
+  },
+  "packages": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "pandas": "3.0.5",
+    "matplotlib": "3.11.1"
+  },
+  "scope": "Independent second-round audit; no old results imported",
+  "checks": [
+    {
+      "name": "Rinf correlated coverage valid scenarios",
+      "passed": true
+    },
+    {
+      "name": "negative controls labelled",
+      "passed": true
+    },
+    {
+      "name": "optimizer does not claim global optimum",
+      "passed": true
+    },
+    {
+      "name": "tiny calibration returns infinite radius",
+      "passed": true
+    },
+    {
+      "name": "diagonal R2 invalid under correlation or adaptation",
+      "passed": true
+    }
+  ],
+  "finished_utc": "2026-09-16T09:45:47.372196+00:00",
+  "artifacts": {
+    "results\\full_plus\\plus_assumption_boundaries.csv": {
+      "sha256": "dd490b3b21a7bc0c2aad7a0ffc1ea11a5cb0854f5c7fb3e10fcaac9b5961cfce",
+      "bytes": 390
+    },
+    "results\\full_plus\\plus_calibration_sensitivity_records.csv": {
+      "sha256": "ac0694691f1e21e965ed0a90ed884bfc822bfd48a1e3130acabeb879739ad988",
+      "bytes": 3424859
+    },
+    "results\\full_plus\\plus_calibration_sensitivity_summary.csv": {
+      "sha256": "314a7d410bd93d21c3558a061b25a3cdb76dc180fd8d11b9241f1a3ec5c7dc5f",
+      "bytes": 1512
+    },
+    "results\\full_plus\\plus_correlated_noise.csv": {
+      "sha256": "e085cc0b2e9bbd004add16ef9764f2ea50560cf5853c94c7835b406bb389ab01",
+      "bytes": 3209
+    },
+    "results\\full_plus\\plus_heavy_tails.csv": {
+      "sha256": "9387b2cce64e66ead15124afbdd61431d860fbfddba86bacf4dd2f98454837df",
+      "bytes": 892
+    },
+    "results\\full_plus\\plus_optimizer_audit.csv": {
+      "sha256": "6a92cbb10fb8a64975d64c897d4224347146b4519ec631b01f09bed63f4c7945",
+      "bytes": 9569
+    },
+    "results\\full_plus\\validation_checks.json": {
+      "sha256": "76eca944e7dfa1c76a1fdd2578fc19ef8695cfa451145634b96b80fd5d8901c5",
+      "bytes": 439
+    },
+    "results\\full_plus\\第二轮复核结果.md": {
+      "sha256": "e02497fac14a3f3be08c4ca17356dddf40fea5111098b4766aa2389583eac268",
+      "bytes": 5214
+    }
+  }
+}

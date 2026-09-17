@@ -1,0 +1,23 @@
+{
+  "profile": "full",
+  "hidden_draws": 20000,
+  "selection_draws": 50000,
+  "minimax_draws": 40000,
+  "minimax_grid": 27,
+  "bridge_instances": 200,
+  "bridge_random_subsets": 250,
+  "operational_repetitions": 200,
+  "calibration_archives": 199,
+  "pi_repetitions": 200,
+  "joint_calibration_repetitions": 2000,
+  "seed_hidden": 2026091601,
+  "seed_selection": 2026091602,
+  "seed_minimax": 2026091603,
+  "seed_bridge": 2026091604,
+  "seed_operational": 2026091610,
+  "seed_pi": 2026091611,
+  "seed_calibration": 2026091612,
+  "eta": 0.05,
+  "zeta": 0.05,
+  "tolerances": [0.3, 0.6, 1.0, 1.5, 2.0, 3.0]
+}

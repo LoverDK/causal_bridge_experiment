@@ -1,0 +1,17 @@
+test_analytic_selection_boundary (test_theory.TheoryChecks.test_analytic_selection_boundary) ... ok
+test_box_maximum_dominates_interior_points (test_theory.TheoryChecks.test_box_maximum_dominates_interior_points) ... ok
+test_complementarity (test_theory.TheoryChecks.test_complementarity) ... ok
+test_fixed_radius_no_larger_than_simultaneous (test_theory.TheoryChecks.test_fixed_radius_no_larger_than_simultaneous) ... ok
+test_logdet_diminishing_returns (test_theory.TheoryChecks.test_logdet_diminishing_returns) ... ok
+test_lp_closed_form_and_witnesses (test_theory.TheoryChecks.test_lp_closed_form_and_witnesses) ... ok
+test_lp_source_constraints_and_infeasibility (test_theory.TheoryChecks.test_lp_source_constraints_and_infeasibility) ... ok
+test_optimizer_feasible_and_geometry_only (test_theory.TheoryChecks.test_optimizer_feasible_and_geometry_only) ... ok
+test_optimizer_handles_infeasible_internal_iterates (test_theory.TheoryChecks.test_optimizer_handles_infeasible_internal_iterates) ... ok
+test_quantile_rank_and_infinite_case (test_theory.TheoryChecks.test_quantile_rank_and_infinite_case) ... ok
+test_real_prediction_interface_has_no_target_effect (test_theory.TheoryChecks.test_real_prediction_interface_has_no_target_effect) ... ok
+test_uniform_bound_survives_adaptive_choice (test_theory.TheoryChecks.test_uniform_bound_survives_adaptive_choice) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.232s
+
+OK

@@ -1,0 +1,31 @@
+{
+  "inconsistent_sources": {
+    "status": "infeasible",
+    "lower": null,
+    "upper": null,
+    "width": null
+  },
+  "unanchored": {
+    "status": "unbounded",
+    "lower": null,
+    "upper": null,
+    "width": null
+  },
+  "hull_interior": {
+    "status": "optimal",
+    "lower": -1.0,
+    "upper": 1.0,
+    "width": 2.0,
+    "lower_witness": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "upper_witness": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "max_pairwise_violation": 0.0
+  }
+}

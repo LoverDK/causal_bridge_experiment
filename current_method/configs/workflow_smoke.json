@@ -1,0 +1,21 @@
+{
+  "profile": "workflow_smoke",
+  "seed": 2026091802,
+  "repetitions_per_cell": 3,
+  "surfaces": ["linear", "quadratic", "sinusoidal"],
+  "scenarios": ["supported", "bridgeable", "unreachable"],
+  "dimension": 2,
+  "initial_sources": 4,
+  "candidate_bridges": 6,
+  "max_bridges": 3,
+  "archive_participants": 800,
+  "participants_per_bridge": 96,
+  "calibration_archives": 199,
+  "proxy_scale": 0.012,
+  "eta": 0.05,
+  "zeta": 0.05,
+  "tolerances": [0.2, 0.3],
+  "methods": ["r2_targeted", "rinf_targeted", "r2_random", "r2_nearest", "r2_static", "target_only"],
+  "bootstrap_repetitions": 300,
+  "workers": 4
+}

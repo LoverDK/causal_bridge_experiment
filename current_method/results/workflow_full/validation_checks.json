@@ -1,0 +1,107 @@
+[
+  {
+    "name": "complete balanced factorial records",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "unique world policy tolerance budget",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "one calibration audit per independent world",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "declared cost is actual observed participants",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "no source or target budget overrun",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "optimizer makes no global optimality assertion",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "no finite wrong-width or fabricated zero-width interval",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "no missing certificate or estimate",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "no missing causal score",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "bad release uses unconditional event",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "release uses prespecified tolerance only",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "target outcome hidden at budget zero",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "initial bridge policies receive identical information",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "saved weights feasible and independently re-evaluated",
+    "passed": true,
+    "detail": "6.8833827526759706e-15"
+  },
+  {
+    "name": "prospective certificate does not worsen when sources added",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "cost and source availability match acquisition log",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "stopped policies do not acquire or update after release",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "predictions recomputed from actually collected outcomes",
+    "passed": true,
+    "detail": "2.1094237467877974e-15"
+  },
+  {
+    "name": "path coverage is conjunction across actual outputs",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "two randomized arms reconstruct each acquired effect",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "no calibrated path or set violation detected at familywise .01",
+    "passed": true,
+    "detail": "Failure to reject is not a proof; nominal path guarantee follows from the protocol assumptions."
+  }
+]

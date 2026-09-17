@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+reproduced/
+scratch/
+current_method/results/ablations_full/plans.jsonl
+*.aux
+*.synctex.gz
+*.log
+

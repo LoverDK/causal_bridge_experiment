@@ -1,0 +1,3 @@
+candidate,chosen_by_logdet,information,target_radius,condition
+0,True,2.30756025842,0.619806421393,9.90099009901
+1,False,0.0476550899022,0.590962235372,1100

@@ -1,0 +1,196 @@
+{
+  "status": "complete",
+  "config": {
+    "profile": "ablations_full",
+    "seed": 2026091801,
+    "repetitions_per_cell": 200,
+    "surfaces": [
+      "linear",
+      "quadratic",
+      "sinusoidal"
+    ],
+    "scenarios": [
+      "supported",
+      "bridgeable",
+      "unreachable"
+    ],
+    "dimension": 2,
+    "initial_sources": 4,
+    "candidate_bridges": 6,
+    "max_bridges": 3,
+    "archive_participants": 800,
+    "participants_per_bridge": 96,
+    "calibration_archives": 199,
+    "proxy_scale": 0.012,
+    "eta": 0.05,
+    "zeta": 0.05,
+    "tolerances": [
+      0.2,
+      0.3
+    ],
+    "methods": [
+      "r2_targeted",
+      "rinf_targeted",
+      "r2_random",
+      "r2_nearest",
+      "r2_static",
+      "target_only"
+    ],
+    "bootstrap_repetitions": 2000,
+    "workers": 4,
+    "schedules": [
+      "random",
+      "nearest"
+    ],
+    "modes": [
+      "r2",
+      "rinf"
+    ],
+    "bootstrap_seed": 2026091702
+  },
+  "started_utc": "2026-09-17T12:39:49.805794+00:00",
+  "command": [
+    "run_ablations.py",
+    "--profile",
+    "full",
+    "--workers",
+    "4"
+  ],
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "pandas": "3.0.5"
+  },
+  "source_sha256": {
+    "run_ablations.py": "54570905ba7c60d4b8f5420d07c84f10fd6832d3cc53d173f7a2f6cb8c955e30",
+    "atlas_new\\ablations.py": "3ffde1247024253fefee7d9fc621d35a000f2cd073d46c55d6fc31bf99188ed8",
+    "atlas_new\\ablation_report.py": "710c737fd9ee393650be5e2a1bafb280239a47e7029f2ba9c6567163f90fa19b",
+    "atlas_new\\workflow.py": "4c9a2185beb2b47b6ef289498b15136966bb03fc2318214e013c50591782e327",
+    "atlas_new\\core.py": "fe91cb77b425d48d435ef295973976449747182051d35aded01b1332e7fcd59b",
+    "configs\\workflow_full.json": "b335a4fb736c9c30b1f5f05713d5a362a8b5355535de36aeba811b5cae1989b2",
+    "tests\\test_ablations.py": "18d2d9ec2907dabb54b28fd62cc289226ad6310f1aaa06f83449cbc82600810d",
+    "docs\\ablation_protocol.md": "169a0ad48061dcbbc621d05e5c8a442bd2f9340869558d78c5e59be2c9402482"
+  },
+  "scope": "Post-review attribution on existing synthetic DGP; no ExAtlas comparison; local optimization.",
+  "counts": {
+    "worlds": 1800,
+    "records": 345600,
+    "planned_states": 172800
+  },
+  "checks": [
+    {
+      "name": "balanced plans",
+      "passed": true
+    },
+    {
+      "name": "balanced stopped records",
+      "passed": true
+    },
+    {
+      "name": "unique planned states",
+      "passed": true
+    },
+    {
+      "name": "unique evaluated states",
+      "passed": true
+    },
+    {
+      "name": "no unreported global optimum claim",
+      "passed": true
+    },
+    {
+      "name": "finite planned estimates and radii",
+      "passed": true
+    },
+    {
+      "name": "same source prefixes across all variants",
+      "passed": true
+    },
+    {
+      "name": "simplex feasible",
+      "passed": true
+    },
+    {
+      "name": "saved radius is declared envelope",
+      "passed": true
+    },
+    {
+      "name": "minimum equals smaller bound at same weights",
+      "passed": true
+    },
+    {
+      "name": "geometric bounds dominate actual causal bias on joint event",
+      "passed": true
+    },
+    {
+      "name": "release and bad release use prespecified tolerance",
+      "passed": true
+    },
+    {
+      "name": "actual cost and carry-forward stopping",
+      "passed": true
+    },
+    {
+      "name": "optimized optional sources cannot worsen bound",
+      "passed": true
+    },
+    {
+      "name": "no path-coverage violation detected at familywise .01",
+      "passed": true
+    }
+  ],
+  "finished_utc": "2026-09-17T12:42:03.654091+00:00",
+  "elapsed_seconds": 133.80585309999879,
+  "artifacts": {
+    "calibration_checks.csv": {
+      "sha256": "b820b4bfc0530d983087f60c31616379722165871bf8f0f36f2f28c12dc99048",
+      "bytes": 39200
+    },
+    "fixed_budget_cells.csv": {
+      "sha256": "1954b0eddcd57094faed713281ecf512cfa3796af7cd2947c56151ceb7533a46",
+      "bytes": 199487
+    },
+    "fixed_budget_summary.csv": {
+      "sha256": "dbbbe2e618c505e57dbb405005deba5ec82e7aff0dede4f3963d17e72984ac75",
+      "bytes": 62451
+    },
+    "paired_differences.csv": {
+      "sha256": "c993873148d3d71f8306e85356a5b5f2debc5ed85b13aa502eee14d736d119da",
+      "bytes": 158727
+    },
+    "plans.jsonl": {
+      "sha256": "32b94f7602476145fa60cd98a9ee025e7c127b15456291ca29a68ad80d5ab0e3",
+      "bytes": 131812741
+    },
+    "records.csv": {
+      "sha256": "5434a141c7deb4d4f2e1c127560ac442e0af8dd373d8603449af8ad36995a869",
+      "bytes": 66102385
+    },
+    "report.md": {
+      "sha256": "f5e440f0a76f9be1a2633334e652a6755826213da90daeff335977b8f877bfa7",
+      "bytes": 22970
+    },
+    "same_weight_geometry.csv": {
+      "sha256": "d00fbae5de5e7d49ad8e26602a22972132e8365982cfce7c6d967e98443875a9",
+      "bytes": 9399
+    },
+    "stopped_cells.csv": {
+      "sha256": "371d40b1f9b71d4eb0b706af9a2368d1ac6b639eeb6bdf080ed9fa55f50f36e0",
+      "bytes": 199816
+    },
+    "stopped_summary.csv": {
+      "sha256": "dcd191e8ab8272024c4510731b497fa4a1e1e08db3c1f96c2e0a7ac562cdc6cf",
+      "bytes": 62474
+    },
+    "test_log.txt": {
+      "sha256": "b67f14aa106a6a0b4466731f1f67b3606302e8659106e5e6dfa236dbe07d3f4f",
+      "bytes": 3702
+    },
+    "validation_checks.json": {
+      "sha256": "8c5ed5969a605c733592f4bd5c716c681ecca78c14c0decd45999a91bd9eac45",
+      "bytes": 1252
+    }
+  }
+}
