@@ -5,7 +5,7 @@
 
 ## 阅读顺序
 
-1. [实验设计与论文对应](docs/实验设计与论文对应.md)：论文已经做了什么、我们补什么、哪些证据不能相互替代。
+1. [CURRENT_ARTIFACTS](../CURRENT_ARTIFACTS.md)：当前论文项目与实验产物的对应关系。
 2. [完整实验结果解读](results/full/结果解读.md)：运行后生成的中文结论与表格。
 3. `results/full/figures/`：PNG（预览）和 SVG（可编辑矢量）图。
 4. `results/full/run_manifest.json`：配置、种子、软件环境、运行耗时、输入/源码/输出哈希。
@@ -17,10 +17,10 @@
 从仓库根目录：
 
 ```powershell
-python -m pip install -r new_version/requirements.txt
-python new_version/run_all.py --profile smoke
-python new_version/run_all.py --profile full
-cd new_version
+python -m pip install -r current_method/requirements.txt
+python current_method/run_all.py --profile smoke
+python current_method/run_all.py --profile full
+cd current_method
 python -m unittest discover -s tests -v
 ```
 
@@ -28,13 +28,13 @@ python -m unittest discover -s tests -v
 不联网调试可加 `--skip-real`，输出另存于 `results/<profile>_synthetic_only`，报告会标注真实数据未运行。首次真实测试下载经过 commit 固定和 SHA-256 校验的数据，以后用本地缓存。
 完整运行的统计配置事先写入 `configs/full.json`，轻量测试输出在 `results/smoke`，不能当作论文完整结果。
 
-仅修改报告或图形时，可运行 `python new_version/refresh_report.py --profile full`，它检查实验核心源码哈希、使用已存 CSV，避免重新抽样。图形后处理版本另记入 manifest。
+仅修改报告或图形时，可运行 `python current_method/refresh_report.py --profile full`，它检查实验核心源码哈希、使用已存 CSV，避免重新抽样。图形后处理版本另记入 manifest。
 
 第二轮独立复核：
 
 ```powershell
-python new_version/run_plus.py --profile smoke_plus
-python new_version/run_plus.py --profile full_plus
+python current_method/run_plus.py --profile smoke_plus
+python current_method/run_plus.py --profile full_plus
 ```
 
 `full_plus` 独立测试相关源噪声、Gaussian 前提失效、联合校准样本量和权重优化数值误差，结果在 `results/full_plus`；它不会修改 `results/full`。
@@ -44,8 +44,8 @@ python new_version/run_plus.py --profile full_plus
 完整流程实验（独立输出，不覆盖以上两轮）：
 
 ```powershell
-python new_version/run_workflow.py --profile workflow_smoke
-python new_version/run_workflow.py --profile workflow_full
+python current_method/run_workflow.py --profile workflow_smoke
+python current_method/run_workflow.py --profile workflow_full
 ```
 
 协议见 [完整流程实验协议](docs/完整流程实验协议.md)。包含二维联合机制校准、真实生成的两臂随机试验、拒绝后桥接采集、重新估计和首次发布后停止；比较直接优化 R2/R∞、随机桥接、最近桥接、无桥接与目标重做。正式配置是 1,800 个独立世界，每个世界 6 方法 × 2 阈值配对评估。代码会拒绝覆盖已有运行；复跑请先把对应结果目录移动到明确的带版本名目录保留。
@@ -72,7 +72,6 @@ results/full/            全量运行结果、端点见证、图、报告
 
 ## 与旧仓库的关系
 
-旧版 NSW、Hillstrom、validation_v3 有独立价值，但属于旧算法/压力测试。本套件不复制其结果作为新版成绩。
 Many Labs 数据来源为论文固定的公开仓库和 OSF 8cd4r；引用原研究 Klein et al. (2018)，数据适用原提供者条款。
 
 ## 审查后新增的两组贡献归因实验
@@ -81,15 +80,15 @@ Many Labs 数据来源为论文固定的公开仓库和 OSF 8cd4r；引用原研
 使用原工作流的 1,800 个配对世界，共享随机／最近机制桥接顺序，分别比较 R2 和 R∞。
 
 ```powershell
-python new_version/run_ablations.py --profile smoke --workers 4
-python new_version/run_ablations.py --profile full --workers 4
-python new_version/audit_ablations.py
+python current_method/run_ablations.py --profile smoke --workers 4
+python current_method/run_ablations.py --profile full --workers 4
+python current_method/audit_ablations.py
 ```
 
 入口拒绝覆盖已有结果；复跑应在独立副本中进行。正式输出在 `results/ablations_full`。
 协议见 [ablation_protocol.md](docs/ablation_protocol.md)，主要结果和负结果见
 [ablation_results_zh.md](docs/ablation_results_zh.md)。
-附录片段 `docs/paper_appendix_ablations.tex` 尚未插入论文。
+附录表格 15--16 已集成到当前论文；仓库保留其数值结果、审计记录和运行代码。
 
 独立核验检查全部 172,800 个计划和 345,600 条停止记录，并确认与已有随机／最近 R2 工作流一致。
 `plans.jsonl.gz` 是 `plans.jsonl` 的已验证无损压缩副本，发布仓库时可用前者避免单文件体积限制。

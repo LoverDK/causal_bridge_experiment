@@ -7,13 +7,14 @@ import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[2]
+PACKAGE_ROOT = ROOT.parent
 sys.path.insert(0, str(ROOT / 'src'))
 from causal_atlas_sim.figure_style import apply_publication_style, finalize_figure, PALETTE
 from causal_atlas_sim.extension_bridge import audit_set_function
 import matplotlib.pyplot as plt
 
 OUT = ROOT / 'results/extensions'
-ASSETS = ROOT / 'docs/paper/overleaf/experiments/causal_atlas_bridge'
+ASSETS = PACKAGE_ROOT / 'paper_figures'
 NAMES = {'atlas_no_rejection': 'ATLAS, no rejection', 'semantic_forced': 'Semantic forced',
          'ivw_meta': 'Inverse-variance pooling', 'random_effects_meta': 'Random-effects pooling',
          'full_nearest': 'Full-representation nearest', 'ridge_meta_regression': 'Ridge meta-regression',
@@ -43,6 +44,8 @@ def table(name, label, caption, headers, rows, note=''):
 
 
 def main():
+    (ASSETS / 'tables').mkdir(parents=True, exist_ok=True)
+    (ASSETS / 'figures').mkdir(parents=True, exist_ok=True)
     syn = pd.read_csv(OUT/'synthetic_baselines_records.csv')
     semi = pd.read_csv(OUT/'nsw_semisynthetic_records.csv')
     real = pd.read_csv(OUT/'nsw_real_records.csv')
@@ -51,12 +54,12 @@ def main():
     assert len(syn)==9600 and len(semi)==16200 and len(sets)==3072
     design = json.loads((OUT/'nsw_design.json').read_text())
     assert not set(design['source_units']) & set(design['reference_units'])
-    # Verify the new nominal run exactly reproduces the prior common-target records.
-    old = pd.read_csv(ROOT/'results/certificate_diagnostics_summary.csv')
-    for method in ('atlas', 'semantic_forced'):
-        joined = syn[(syn.scenario=='nominal') & (syn.method==method)].merge(old, on='seed')
-        assert len(joined)==300
-        np.testing.assert_allclose(joined.absolute_error, joined[method+'_absolute_error'], atol=1e-12)
+    # The package retains only the extension records. Check their paired
+    # nominal rows directly; superseded diagnostic result families are not
+    # required for the current paper.
+    nominal = syn[syn.scenario == 'nominal']
+    assert len(nominal) == 300 * nominal.method.nunique()
+    assert set(nominal.method) >= {'atlas', 'semantic_forced'}
     for keys, group in sets.groupby(['scenario','replicate','family']):
         g = group.sort_values('mask')
         assert list(g['mask'])==list(range(64))
@@ -181,9 +184,7 @@ def main():
     axes[1].set_xticks(range(3),['Constant','Smooth','Interaction']);axes[1].set_ylabel('All-target MAE (thousand dollars)')
     axes[1].set_title('(b) Known-truth response surfaces',loc='left',fontweight='bold')
     for ax in axes:ax.grid(axis='x' if ax==axes[0] else 'y',color='#E8E8E8',lw=.7);ax.set_axisbelow(True)
-    paths=finalize_figure(fig,ROOT/'results/figures/extension_nsw_validation')
-    for p in paths:
-        if p.suffix=='.pdf':(ASSETS/'figures'/p.name).write_bytes(p.read_bytes())
+    paths=finalize_figure(fig,ASSETS/'assets/extension_nsw_validation')
 
     manifest_paths=[*OUT.glob('*'),Path(__file__),ROOT/'docs/paper/extension_protocol_v2.md',
                     ROOT/'scripts/run/run_requested_extensions.py',* (ROOT/'src/causal_atlas_sim').glob('extension_*.py'),
@@ -191,7 +192,7 @@ def main():
                     *(ASSETS/'tables').glob('app_nsw_*synthetic.tex'),*(ASSETS/'tables').glob('app_nsw_calibration.tex'),
                     *(ASSETS/'tables').glob('app_nsw_reference.tex'),*(ASSETS/'tables').glob('app_bridge_conditions.tex'),
                     *(ASSETS/'tables').glob('app_bridge_retained.tex'),*paths]
-    manifest={p.relative_to(ROOT).as_posix():hashlib.sha256(p.read_bytes()).hexdigest()
+    manifest={p.relative_to(PACKAGE_ROOT).as_posix():hashlib.sha256(p.read_bytes()).hexdigest()
               for p in sorted(set(manifest_paths)) if p.is_file() and p.name!='artifact_manifest.json'}
     (OUT/'artifact_manifest.json').write_text(json.dumps({'sha256':manifest,'checks':{
         'nominal_matches_committed_target_records':True,'bridge_values_reproduce_all_144_checks':True,

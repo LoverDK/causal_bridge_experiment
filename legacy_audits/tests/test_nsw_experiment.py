@@ -167,30 +167,5 @@ class NswExperimentTests(unittest.TestCase):
                 places=12,
             )
 
-    def test_manifest_includes_source_and_stage_twelve_artifacts(self) -> None:
-        manifest = json.loads(
-            (PROJECT_ROOT / "results" / "experiment_manifest.json").read_text(
-                encoding="utf-8"
-            )
-        )
-        paths = {artifact["path"] for artifact in manifest["artifacts"]}
-        self.assertTrue(
-            {
-                "data/nsw_dw.dta",
-                "results/nsw_experiment_summary.csv",
-                "results/nsw_experiment_seed_summary.csv",
-                "results/nsw_method_error_records.csv",
-                "results/nsw_experiment_metadata.json",
-                "results/figures/nsw_experiment_overview.png",
-                "results/tables/nsw_experiment_tables.md",
-                "docs/stages/nsw_experiment.md",
-            }.issubset(paths)
-        )
-        self.assertEqual(
-            manifest["result_row_counts"]["nsw_experiment_summary.csv"],
-            5,
-        )
-
-
 if __name__ == "__main__":
     unittest.main()

@@ -21,7 +21,6 @@ from causal_atlas_sim.bridge_experiment import (
     run_bridge_experiment,
 )
 from causal_atlas_sim.dgp import generate_minimal_archive
-from causal_atlas_sim.reporting import build_artifact_manifest
 
 
 class BridgeExperimentTests(unittest.TestCase):
@@ -90,24 +89,6 @@ class BridgeExperimentTests(unittest.TestCase):
         self.assertEqual(len(first.rows), 6)
         self.assertTrue(all(row.repetitions == 6 for row in first.rows))
         self.assertEqual(first.to_dict(), second.to_dict())
-
-    def test_manifest_includes_stage_eleven_artifacts(self) -> None:
-        manifest = build_artifact_manifest(PROJECT_ROOT)
-        paths = {artifact["path"] for artifact in manifest["artifacts"]}
-        self.assertTrue(
-            {
-                "results/bridge_experiment_summary.csv",
-                "results/bridge_experiment_seed_summary.csv",
-                "results/bridge_experiment_metadata.json",
-                "results/figures/bridge_experiment_overview.png",
-                "results/tables/bridge_experiment_tables.md",
-            }.issubset(paths)
-        )
-        self.assertEqual(
-            manifest["result_row_counts"]["bridge_experiment_summary.csv"],
-            12,
-        )
-
 
 if __name__ == "__main__":
     unittest.main()

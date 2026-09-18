@@ -1,42 +1,10 @@
 {
-  "imported_files_verified": 370,
-  "python_sources_parsed": 96,
+  "release_files": 234,
+  "imported_files": 232,
   "all_files_below_100_MiB": true,
-  "documentation_paths_checked": true,
-  "packaged_ablation_smoke": "passed; 28 tests",
-  "legacy_nsw_tests": 7,
-  "legacy_extension_tests": 7,
-  "packaged_independent_audit": {
-    "independent_plans_checked": 172800,
-    "max_radius_error": 2.220446049250313e-16,
-    "max_prediction_error": 0.0,
-    "stopped_records_checked": 345600,
-    "max_stopped_reconstruction_error": 5.10702591327572e-15,
-    "costs_match": true,
-    "original_workflow_parity": [
-      {
-        "schedule": "random",
-        "rows": 14400,
-        "matched": true
-      },
-      {
-        "schedule": "nearest",
-        "rows": 14400,
-        "matched": true
-      }
-    ],
-    "compressed_plans_bytes": 8649543,
-    "lossless_archive_verified": true
-  },
-  "original_scripts_reproduced": true,
-  "portable_figures_rendered": true,
-  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
-  "packages": {
-    "numpy": "2.5.2",
-    "scipy": "1.18.1",
-    "pandas": "3.0.5",
-    "matplotlib": "3.11.1",
-    "Pillow": "12.3.0",
-    "pypdf": "6.16.2"
-  }
+  "current_method_tests": "28 passed",
+  "legacy_retained_tests": "42 passed",
+  "legacy_nsw_smoke": "passed (112 local objects, 8,400 records)",
+  "legacy_extensions_smoke": "passed (synthetic, NSW and bridge blocks)",
+  "extension_artifacts_rebuilt": true
 }

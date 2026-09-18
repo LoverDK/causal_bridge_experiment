@@ -85,8 +85,6 @@ def main():
                 run([script,block,'--repetitions',n,'--bootstrap',200 if args.profile=='full' else 5,
                      '--bridge-repetitions',12 if args.profile=='full' else 1],dest)
             if args.profile=='full':
-                (dest/'docs/paper/overleaf/experiments/causal_atlas_bridge/tables').mkdir(parents=True,exist_ok=True)
-                (dest/'docs/paper/overleaf/experiments/causal_atlas_bridge/figures').mkdir(parents=True,exist_ok=True)
                 run(['scripts/build/build_extension_artifacts.py'],dest)
     else:
         run([ROOT/'paper_figures/render_appendix_figures.py','--output',out],ROOT)

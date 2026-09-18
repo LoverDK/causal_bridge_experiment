@@ -27,4 +27,9 @@ NSW archive objects are overlapping local reconstructions from one trial. They a
 
 Public input data retain their upstream authorship and applicable terms. This repository does not assert a new license over third-party datasets or papers. No software license has been selected in this release.
 
-`provenance/import_inventory.json` maps imported files to their original project-relative locations and hashes. Original run manifests describe the historical run environment, including occasional old local paths and then-current source versions. They are not a promise that every historical source hash matches a later source revision. `provenance/release_manifest.json` describes the actual delivered files; it excludes itself, Git metadata, and transient reproduction output. Line-ending conversion is disabled to preserve archived bytes across Git checkouts.
+`provenance/import_inventory.json` records imported-file origins and hashes. Run
+manifests record the environment and source hashes for the corresponding saved
+outputs. `provenance/release_manifest.json` describes the actual delivered
+files; it excludes itself, Git metadata, and transient reproduction output.
+Line-ending conversion is disabled to preserve archived bytes across Git
+checkouts.

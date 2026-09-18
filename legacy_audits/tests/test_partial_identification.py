@@ -20,7 +20,6 @@ from causal_atlas_sim.partial_identification import (
     oracle_hull_distance,
     run_partial_identification_experiment,
 )
-from causal_atlas_sim.reporting import build_artifact_manifest
 
 
 class PartialIdentificationTests(unittest.TestCase):
@@ -98,26 +97,6 @@ class PartialIdentificationTests(unittest.TestCase):
         self.assertEqual(len(first.rows), 2)
         self.assertTrue(all(row.repetitions == 4 for row in first.rows))
         self.assertEqual(first.to_dict(), second.to_dict())
-
-    def test_manifest_includes_stage_nine_artifacts(self) -> None:
-        manifest = build_artifact_manifest(PROJECT_ROOT)
-        paths = {artifact["path"] for artifact in manifest["artifacts"]}
-        self.assertTrue(
-            {
-                "results/partial_identification_summary.csv",
-                "results/partial_identification_seed_summary.csv",
-                "results/partial_identification_metadata.json",
-                "results/figures/partial_identification_overview.png",
-                "results/tables/partial_identification_tables.md",
-            }.issubset(paths)
-        )
-        self.assertEqual(
-            manifest["result_row_counts"][
-                "partial_identification_summary.csv"
-            ],
-            4,
-        )
-
 
 if __name__ == "__main__":
     unittest.main()

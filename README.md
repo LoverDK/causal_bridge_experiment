@@ -2,7 +2,7 @@
 
 Experimental code, public input data, frozen configurations, saved results, and paper figures for **When Can Experiments Transfer? Operational Certificates and Active Causal Bridging**. This release corresponds to the ICLR 2027 manuscript revision of 17 September 2026, including Appendix P's matched-certificate weight and geometric-bound ablations.
 
-The paper-to-file index is [paper_figures/PAPER_MAP.md](paper_figures/PAPER_MAP.md). Data origins and reuse boundaries are in [DATA_SOURCES.md](DATA_SOURCES.md). Manuscript integration and validation are recorded in [RELEASE_NOTES.md](RELEASE_NOTES.md).
+For the reviewer-facing package overview, start with [SUPPLEMENTARY_README.md](SUPPLEMENTARY_README.md). The complete current-paper map is [CURRENT_ARTIFACTS.md](CURRENT_ARTIFACTS.md); the figure/table asset index is [paper_figures/PAPER_MAP.md](paper_figures/PAPER_MAP.md). Data origins are in [DATA_SOURCES.md](DATA_SOURCES.md), and release validation is in [RELEASE_NOTES.md](RELEASE_NOTES.md).
 
 ## Contents
 
@@ -10,11 +10,11 @@ The paper-to-file index is [paper_figures/PAPER_MAP.md](paper_figures/PAPER_MAP.
 |---|---|
 | `paper_original/` | Exact theorem-linked synthetic and Many Labs 2 scripts, with recorded outputs for the main empirical figures |
 | `current_method/` | Independent certificate implementation, complete sequential workflow, real-data supplement, selection/calibration audits, and both new ablations |
-| `legacy_audits/` | Earlier synthetic, partial-identification, bridge, and NSW audits; retained for the paper's supplementary results and provenance |
+| `legacy_audits/` | Retained NSW reconstruction and stronger baseline/semi-synthetic extension, with only the shared bridge dependencies needed to reproduce them |
 | `paper_figures/` | Paper figure assets, LaTeX table fragments, and portable Figure 5/6 renderer |
 | `provenance/` | Import inventory and SHA-256 delivery manifest |
 
-Saved full runs are evidence archives. The wrapper below creates a separate output directory and refuses to overwrite an existing one. Historical READMEs and manifests retain their original dates and paths; use the root commands for this release's directory layout.
+Saved full runs are evidence archives. The wrapper below creates a separate output directory and refuses to overwrite an existing one.
 
 ## Reproduce
 
@@ -58,4 +58,4 @@ The ablations use 1,800 independent worlds, shared random/nearest acquisition sc
 
 The geometric result is mixed: the barycentric bound improves release and cost over the Lipschitz bound on bridgeable menus, but taking their minimum adds no release or cost benefit over the barycentric bound alone in any tested cell. Small radius improvements do not necessarily change a decision. All evaluated ablation policies have zero observed bad releases and full empirical path coverage in this run; these conservative simulation results are not universal coverage guarantees.
 
-The complete ExAtlas procedure has **not** been run as a matched-information comparator. Earlier semantic and point-representation baselines must not be relabelled as a full ExAtlas replication. Many Labs 2 is source holdout under a standardized intervention, and NSW is within-trial reconstruction; neither establishes calibrated mechanism sets for real cross-intervention transport. Simulations and code checks do not discharge every theoretical assumption.
+The complete ExAtlas procedure has **not** been run as a matched-information comparator. The included point-prediction baselines must not be relabelled as a full ExAtlas replication. Many Labs 2 is source holdout under a standardized intervention, and NSW is within-trial reconstruction; neither establishes calibrated mechanism sets for real cross-intervention transport. Simulations and code checks do not discharge every theoretical assumption.
