@@ -1,0 +1,9 @@
+{
+  "n_calibration": 199,
+  "n_entities": 11,
+  "dimension": 2,
+  "eta": 0.05,
+  "joint_radius": 3.277061146415023,
+  "marginal_radius": 2.4286461987919465,
+  "max_calibration_score": 3.955223151428698
+}

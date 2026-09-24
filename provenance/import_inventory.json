@@ -6,12 +6,17 @@
   },
   {
     "path": ".gitignore",
-    "sha256": "07adc61df8ab30cce14c8fe3877441acc4f8a2026c3bc5ccd359b136da8f01d1",
+    "sha256": "32b54a144f93a4b21e04ea661d7e9a62378766c9fd483212b089909f9f5a153c",
     "source": "current supplementary package"
   },
   {
+    "path": "ANONYMOUS_EXPORT.md",
+    "sha256": "eb8ad1efcb9983f1370a18f0d6e11db4e5506a982413c6b12e3e8132b550abb7",
+    "source": "revision/20260924"
+  },
+  {
     "path": "CURRENT_ARTIFACTS.md",
-    "sha256": "b6e0b2c881a1c64cec0a0890652318d87949ee3932acadd08bf70df79f73f427",
+    "sha256": "966e7d80f342f186775d4907d9fce7a56edecd6955afe5f3d5bbedaa0cab01a9",
     "source": "current supplementary package"
   },
   {
@@ -50,14 +55,14 @@
     "source": "experiment/new_version/atlas_new/manylabs.py"
   },
   {
+    "path": "current_method/atlas_new/mechanism_calibration.py",
+    "sha256": "1095d082f60c2159ff5ba494e1da5ebfaaa6c508e957c04f1a0b958a9a38a6dc",
+    "source": "revision/20260924"
+  },
+  {
     "path": "current_method/atlas_new/report.py",
     "sha256": "389c077f33fc940ae823a5fd24dc0d70c0710c86bbeb14e66a96522dd90ceed3",
     "source": "experiment/new_version/atlas_new/report.py"
-  },
-  {
-    "path": "current_method/atlas_new/workflow.py",
-    "sha256": "4c9a2185beb2b47b6ef289498b15136966bb03fc2318214e013c50591782e327",
-    "source": "experiment/new_version/atlas_new/workflow.py"
   },
   {
     "path": "current_method/atlas_new/workflow_report.py",
@@ -65,14 +70,14 @@
     "source": "experiment/new_version/atlas_new/workflow_report.py"
   },
   {
+    "path": "current_method/atlas_new/workflow.py",
+    "sha256": "4c9a2185beb2b47b6ef289498b15136966bb03fc2318214e013c50591782e327",
+    "source": "experiment/new_version/atlas_new/workflow.py"
+  },
+  {
     "path": "current_method/audit_ablations.py",
     "sha256": "52a17e97514b6ee7f6e3af83d5f1f0b572bced7476847beb78ad602810734d2e",
     "source": "experiment/new_version/audit_ablations.py"
-  },
-  {
-    "path": "current_method/configs/full.json",
-    "sha256": "346478482237e8c1b72152bbcb83f1589214c04af00360c50f84fafb6cace8ad",
-    "source": "experiment/new_version/configs/full.json"
   },
   {
     "path": "current_method/configs/full_plus.json",
@@ -80,14 +85,19 @@
     "source": "experiment/new_version/configs/full_plus.json"
   },
   {
-    "path": "current_method/configs/smoke.json",
-    "sha256": "3887730db191f260815ee7da5aec569d4de58e0740efe4b6d4d34affe1a00989",
-    "source": "experiment/new_version/configs/smoke.json"
+    "path": "current_method/configs/full.json",
+    "sha256": "346478482237e8c1b72152bbcb83f1589214c04af00360c50f84fafb6cace8ad",
+    "source": "experiment/new_version/configs/full.json"
   },
   {
     "path": "current_method/configs/smoke_plus.json",
     "sha256": "1c0cfc8496a5f15da0f47e2d90bbcaea9794b18cea2a90e376bb8c230dab8aad",
     "source": "experiment/new_version/configs/smoke_plus.json"
+  },
+  {
+    "path": "current_method/configs/smoke.json",
+    "sha256": "3887730db191f260815ee7da5aec569d4de58e0740efe4b6d4d34affe1a00989",
+    "source": "experiment/new_version/configs/smoke.json"
   },
   {
     "path": "current_method/configs/workflow_full.json",
@@ -110,6 +120,36 @@
     "source": "experiment/new_version/data/provenance.json"
   },
   {
+    "path": "current_method/docs/实验设计与论文对应.md",
+    "sha256": "48ef37d4d51fbfdf686ea2fcc9bf7c73e6d6e2601e5ac5b00fb1e23abf8cb7d3",
+    "source": "experiment/new_version/docs/实验设计与论文对应.md"
+  },
+  {
+    "path": "current_method/docs/完整流程实验协议.md",
+    "sha256": "3de176fa34e01b1d8eea71a451df50cdcc6d8ec817d91a63864513ba295437ff",
+    "source": "experiment/new_version/docs/完整流程实验协议.md"
+  },
+  {
+    "path": "current_method/docs/完整流程主要发现.md",
+    "sha256": "bf3399e2f80cc3692e12d8c626eb947dacd97e11fc0ffd604d14a2b8ea18dd34",
+    "source": "experiment/new_version/docs/完整流程主要发现.md"
+  },
+  {
+    "path": "current_method/docs/真实数据补充协议.md",
+    "sha256": "d387757a9fb3642663ffb34af56f5edd8a09effbabe92a8341f0ec82b84a5df2",
+    "source": "experiment/new_version/docs/真实数据补充协议.md"
+  },
+  {
+    "path": "current_method/docs/执行记录.md",
+    "sha256": "22aa104b98a134664b92f7c2e5677a6a90a8a63cbc2f9aa249df2e492d451689",
+    "source": "experiment/new_version/docs/执行记录.md"
+  },
+  {
+    "path": "current_method/docs/指标字典.md",
+    "sha256": "7f8cdcc1145a8588cbfd01d8d6d28d094d9e2c4b5821f66dad4f29ccf7091991",
+    "source": "experiment/new_version/docs/指标字典.md"
+  },
+  {
     "path": "current_method/docs/ablation_protocol.md",
     "sha256": "169a0ad48061dcbbc621d05e5c8a442bd2f9340869558d78c5e59be2c9402482",
     "source": "experiment/new_version/docs/ablation_protocol.md"
@@ -120,39 +160,14 @@
     "source": "experiment/new_version/docs/ablation_results_zh.md"
   },
   {
+    "path": "current_method/docs/mechanism_set_calibration_protocol.md",
+    "sha256": "b50664b6f74107165dd46ac52be6162278ed73347ff0b68a37e187e246d0cc49",
+    "source": "revision/20260924"
+  },
+  {
     "path": "current_method/docs/paper_source.json",
     "sha256": "ae7e48739b3e04f632385c323dad5d7c7c32a8fabcd272964aea6a3af5fed08a",
     "source": "experiment/new_version/docs/paper_source.json"
-  },
-  {
-    "path": "current_method/docs/完整流程主要发现.md",
-    "sha256": "bf3399e2f80cc3692e12d8c626eb947dacd97e11fc0ffd604d14a2b8ea18dd34",
-    "source": "experiment/new_version/docs/完整流程主要发现.md"
-  },
-  {
-    "path": "current_method/docs/完整流程实验协议.md",
-    "sha256": "3de176fa34e01b1d8eea71a451df50cdcc6d8ec817d91a63864513ba295437ff",
-    "source": "experiment/new_version/docs/完整流程实验协议.md"
-  },
-  {
-    "path": "current_method/docs/实验设计与论文对应.md",
-    "sha256": "48ef37d4d51fbfdf686ea2fcc9bf7c73e6d6e2601e5ac5b00fb1e23abf8cb7d3",
-    "source": "experiment/new_version/docs/实验设计与论文对应.md"
-  },
-  {
-    "path": "current_method/docs/执行记录.md",
-    "sha256": "1ec94e2a7a36adbf74465db0c9efe146cee3a10abe9d00fa3f0eb759ec70b803",
-    "source": "experiment/new_version/docs/执行记录.md"
-  },
-  {
-    "path": "current_method/docs/指标字典.md",
-    "sha256": "7f8cdcc1145a8588cbfd01d8d6d28d094d9e2c4b5821f66dad4f29ccf7091991",
-    "source": "experiment/new_version/docs/指标字典.md"
-  },
-  {
-    "path": "current_method/docs/真实数据补充协议.md",
-    "sha256": "d387757a9fb3642663ffb34af56f5edd8a09effbabe92a8341f0ec82b84a5df2",
-    "source": "experiment/new_version/docs/真实数据补充协议.md"
   },
   {
     "path": "current_method/environment.lock.txt",
@@ -161,7 +176,7 @@
   },
   {
     "path": "current_method/README.md",
-    "sha256": "168b22a39b13d135f926f8c71fcced5ddd8a4116b03dac53d5b16c20f02631e8",
+    "sha256": "1bdad58b432c19b41d8f0ce92ffc92b15cceacfd599b93bca13f6b71f8b866d7",
     "source": "experiment/new_version/README.md"
   },
   {
@@ -248,6 +263,56 @@
     "path": "current_method/results/ablations_full/validation_checks.json",
     "sha256": "8c5ed5969a605c733592f4bd5c716c681ecca78c14c0decd45999a91bd9eac45",
     "source": "experiment/new_version/results/ablations_full/validation_checks.json"
+  },
+  {
+    "path": "current_method/results/full_plus/第二轮复核结果.md",
+    "sha256": "e02497fac14a3f3be08c4ca17356dddf40fea5111098b4766aa2389583eac268",
+    "source": "experiment/new_version/results/full_plus/第二轮复核结果.md"
+  },
+  {
+    "path": "current_method/results/full_plus/plus_assumption_boundaries.csv",
+    "sha256": "dd490b3b21a7bc0c2aad7a0ffc1ea11a5cb0854f5c7fb3e10fcaac9b5961cfce",
+    "source": "experiment/new_version/results/full_plus/plus_assumption_boundaries.csv"
+  },
+  {
+    "path": "current_method/results/full_plus/plus_calibration_sensitivity_records.csv",
+    "sha256": "ac0694691f1e21e965ed0a90ed884bfc822bfd48a1e3130acabeb879739ad988",
+    "source": "experiment/new_version/results/full_plus/plus_calibration_sensitivity_records.csv"
+  },
+  {
+    "path": "current_method/results/full_plus/plus_calibration_sensitivity_summary.csv",
+    "sha256": "314a7d410bd93d21c3558a061b25a3cdb76dc180fd8d11b9241f1a3ec5c7dc5f",
+    "source": "experiment/new_version/results/full_plus/plus_calibration_sensitivity_summary.csv"
+  },
+  {
+    "path": "current_method/results/full_plus/plus_correlated_noise.csv",
+    "sha256": "e085cc0b2e9bbd004add16ef9764f2ea50560cf5853c94c7835b406bb389ab01",
+    "source": "experiment/new_version/results/full_plus/plus_correlated_noise.csv"
+  },
+  {
+    "path": "current_method/results/full_plus/plus_heavy_tails.csv",
+    "sha256": "9387b2cce64e66ead15124afbdd61431d860fbfddba86bacf4dd2f98454837df",
+    "source": "experiment/new_version/results/full_plus/plus_heavy_tails.csv"
+  },
+  {
+    "path": "current_method/results/full_plus/plus_optimizer_audit.csv",
+    "sha256": "6a92cbb10fb8a64975d64c897d4224347146b4519ec631b01f09bed63f4c7945",
+    "source": "experiment/new_version/results/full_plus/plus_optimizer_audit.csv"
+  },
+  {
+    "path": "current_method/results/full_plus/run_manifest.json",
+    "sha256": "1de61c085e935ea51d5d6b27513cb593d3f8494c6e6db8ceb6bf33bf152dad02",
+    "source": "experiment/new_version/results/full_plus/run_manifest.json"
+  },
+  {
+    "path": "current_method/results/full_plus/validation_checks.json",
+    "sha256": "76eca944e7dfa1c76a1fdd2578fc19ef8695cfa451145634b96b80fd5d8901c5",
+    "source": "experiment/new_version/results/full_plus/validation_checks.json"
+  },
+  {
+    "path": "current_method/results/full/结果解读.md",
+    "sha256": "0e745b4fb47eac97bdd2020c9bf63836058b96a4751bb780ff6234be4978c37a",
+    "source": "experiment/new_version/results/full/结果解读.md"
   },
   {
     "path": "current_method/results/full/bridge_anisotropy.csv",
@@ -415,54 +480,19 @@
     "source": "experiment/new_version/results/full/validation_checks.json"
   },
   {
-    "path": "current_method/results/full/结果解读.md",
-    "sha256": "0e745b4fb47eac97bdd2020c9bf63836058b96a4751bb780ff6234be4978c37a",
-    "source": "experiment/new_version/results/full/结果解读.md"
+    "path": "current_method/results/mechanism_calibration/calibrator.json",
+    "sha256": "7ff6d6ba553609dc47c373d5e949394122228afb38e23bd0d668df66d1545bdd",
+    "source": "revision/20260924"
   },
   {
-    "path": "current_method/results/full_plus/plus_assumption_boundaries.csv",
-    "sha256": "dd490b3b21a7bc0c2aad7a0ffc1ea11a5cb0854f5c7fb3e10fcaac9b5961cfce",
-    "source": "experiment/new_version/results/full_plus/plus_assumption_boundaries.csv"
+    "path": "current_method/results/mechanism_calibration/run_manifest.json",
+    "sha256": "00d7e9230062363d1115ac339e0bdb66dffd429222404225614ea0778942f92a",
+    "source": "revision/20260924"
   },
   {
-    "path": "current_method/results/full_plus/plus_calibration_sensitivity_records.csv",
-    "sha256": "ac0694691f1e21e965ed0a90ed884bfc822bfd48a1e3130acabeb879739ad988",
-    "source": "experiment/new_version/results/full_plus/plus_calibration_sensitivity_records.csv"
-  },
-  {
-    "path": "current_method/results/full_plus/plus_calibration_sensitivity_summary.csv",
-    "sha256": "314a7d410bd93d21c3558a061b25a3cdb76dc180fd8d11b9241f1a3ec5c7dc5f",
-    "source": "experiment/new_version/results/full_plus/plus_calibration_sensitivity_summary.csv"
-  },
-  {
-    "path": "current_method/results/full_plus/plus_correlated_noise.csv",
-    "sha256": "e085cc0b2e9bbd004add16ef9764f2ea50560cf5853c94c7835b406bb389ab01",
-    "source": "experiment/new_version/results/full_plus/plus_correlated_noise.csv"
-  },
-  {
-    "path": "current_method/results/full_plus/plus_heavy_tails.csv",
-    "sha256": "9387b2cce64e66ead15124afbdd61431d860fbfddba86bacf4dd2f98454837df",
-    "source": "experiment/new_version/results/full_plus/plus_heavy_tails.csv"
-  },
-  {
-    "path": "current_method/results/full_plus/plus_optimizer_audit.csv",
-    "sha256": "6a92cbb10fb8a64975d64c897d4224347146b4519ec631b01f09bed63f4c7945",
-    "source": "experiment/new_version/results/full_plus/plus_optimizer_audit.csv"
-  },
-  {
-    "path": "current_method/results/full_plus/run_manifest.json",
-    "sha256": "1de61c085e935ea51d5d6b27513cb593d3f8494c6e6db8ceb6bf33bf152dad02",
-    "source": "experiment/new_version/results/full_plus/run_manifest.json"
-  },
-  {
-    "path": "current_method/results/full_plus/validation_checks.json",
-    "sha256": "76eca944e7dfa1c76a1fdd2578fc19ef8695cfa451145634b96b80fd5d8901c5",
-    "source": "experiment/new_version/results/full_plus/validation_checks.json"
-  },
-  {
-    "path": "current_method/results/full_plus/第二轮复核结果.md",
-    "sha256": "e02497fac14a3f3be08c4ca17356dddf40fea5111098b4766aa2389583eac268",
-    "source": "experiment/new_version/results/full_plus/第二轮复核结果.md"
+    "path": "current_method/results/mechanism_calibration/summary.csv",
+    "sha256": "b2e781843a84d556ab7e6cfb457201cc6a5beb9e725038504c80cfe006773649",
+    "source": "revision/20260924"
   },
   {
     "path": "current_method/results/real_supplement/frontier.csv",
@@ -508,6 +538,11 @@
     "path": "current_method/results/real_supplement/validation_checks.json",
     "sha256": "95ddfb2d806add16238c2adfe3aeeebf786b3bce7ca3461beffa344df8c82d6e",
     "source": "experiment/new_version/results/real_supplement/validation_checks.json"
+  },
+  {
+    "path": "current_method/results/workflow_full/完整流程实验结果.md",
+    "sha256": "d9b46f6a9515ea2bbb110d822a90c71b88ed08b14f61795c1f2b205b3e100d57",
+    "source": "experiment/new_version/results/workflow_full/完整流程实验结果.md"
   },
   {
     "path": "current_method/results/workflow_full/acquisitions.csv",
@@ -600,11 +635,6 @@
     "source": "experiment/new_version/results/workflow_full/world_audits.jsonl"
   },
   {
-    "path": "current_method/results/workflow_full/完整流程实验结果.md",
-    "sha256": "d9b46f6a9515ea2bbb110d822a90c71b88ed08b14f61795c1f2b205b3e100d57",
-    "source": "experiment/new_version/results/workflow_full/完整流程实验结果.md"
-  },
-  {
     "path": "current_method/run_ablations.py",
     "sha256": "54570905ba7c60d4b8f5420d07c84f10fd6832d3cc53d173f7a2f6cb8c955e30",
     "source": "experiment/new_version/run_ablations.py"
@@ -615,6 +645,11 @@
     "source": "experiment/new_version/run_all.py"
   },
   {
+    "path": "current_method/run_mechanism_calibration.py",
+    "sha256": "5b1a82a4cc899171688bf15773f3185cb213d7b6a9f2c722920b2fe652a5ce0c",
+    "source": "revision/20260924"
+  },
+  {
     "path": "current_method/run_plus.py",
     "sha256": "5d20fa0dd0cddee381f1c69d9bdd59ad19a50b733c1b9d425e4227fbdb524ad9",
     "source": "experiment/new_version/run_plus.py"
@@ -623,6 +658,11 @@
     "path": "current_method/run_real_supplement.py",
     "sha256": "2fa1f8710de4a2e3ae7402836752319ff0f233907b7e90ef84599f15d505296f",
     "source": "experiment/new_version/run_real_supplement.py"
+  },
+  {
+    "path": "current_method/run_tests.py",
+    "sha256": "540257c928e41b72d00bba2b36184d4dc35b8d22db463dea5cadccf7f3f8091a",
+    "source": "revision/20260924"
   },
   {
     "path": "current_method/run_workflow.py",
@@ -640,6 +680,11 @@
     "source": "experiment/new_version/tests/test_audit_plus.py"
   },
   {
+    "path": "current_method/tests/test_mechanism_calibration.py",
+    "sha256": "3a8f59b9e6760599191edf9e472eb423d976ee6412f91d480019891dc1bd4ca7",
+    "source": "revision/20260924"
+  },
+  {
     "path": "current_method/tests/test_theory.py",
     "sha256": "9936745d6e034de2db25f8048ae1dd5a5a2fd81a1c0035d0112014cd65061558",
     "source": "experiment/new_version/tests/test_theory.py"
@@ -653,6 +698,11 @@
     "path": "DATA_SOURCES.md",
     "sha256": "c712b00bd78f1afd67f274d17ae4bec1b62ea91e67df454992002447fcbd2d24",
     "source": "current supplementary package"
+  },
+  {
+    "path": "docs/manuscript_revision_20260924.md",
+    "sha256": "57932eb0d5501e90996a4194c00fd4bd81cdc9b666b9257abc6403379abff773",
+    "source": "revision/20260924"
   },
   {
     "path": "legacy_audits/data/nsw_dw.dta",
@@ -925,6 +975,11 @@
     "source": "current supplementary package"
   },
   {
+    "path": "paper_figures/assets/figure_operational_theory_validation.pdf",
+    "sha256": "77343d4e238bf22766dea0f86d76410ac8c5c79d6cb863d89aef8317e66a6bcd",
+    "source": "output/overleaf-revision-20260917/project/causal_lab_proposal_subpapers_tex/experiments/causal_atlas_bridge/figures/figure_operational_theory_validation.pdf"
+  },
+  {
     "path": "paper_figures/assets/figure2_synthetic_validation.pdf",
     "sha256": "ce86941376a4bc5960d24f3fc8aa4cc823431f6b95ea9114b7b92445c70e7880",
     "source": "output/overleaf-revision-20260917/project/causal_lab_proposal_subpapers_tex/experiments/causal_atlas_bridge/figures/figure2_synthetic_validation.pdf"
@@ -943,11 +998,6 @@
     "path": "paper_figures/assets/figure5_nsw.pdf",
     "sha256": "66468e33612618eba8f9ebd5b5a83291289e5e896e4f63e3769bc1bdbcac2ef9",
     "source": "output/overleaf-revision-20260917/project/causal_lab_proposal_subpapers_tex/experiments/causal_atlas_bridge/figures/figure5_nsw.pdf"
-  },
-  {
-    "path": "paper_figures/assets/figure_operational_theory_validation.pdf",
-    "sha256": "77343d4e238bf22766dea0f86d76410ac8c5c79d6cb863d89aef8317e66a6bcd",
-    "source": "output/overleaf-revision-20260917/project/causal_lab_proposal_subpapers_tex/experiments/causal_atlas_bridge/figures/figure_operational_theory_validation.pdf"
   },
   {
     "path": "paper_figures/assets/manylabs2_framing_loso.pdf",
@@ -971,7 +1021,7 @@
   },
   {
     "path": "paper_figures/PAPER_MAP.md",
-    "sha256": "23de6e42ff470c9e87accf1aecbddf48fe36b3400aea0d789024ae5c5ef0708f",
+    "sha256": "b71f1781e409b2b8fd368710c2b2b56ecad396eaad8141517828ca30f1989bbe",
     "source": "current supplementary package"
   },
   {
@@ -1136,17 +1186,17 @@
   },
   {
     "path": "README.md",
-    "sha256": "7d5c562f45beddc3e6e426a080d51083868266967c8d3a04d0d14fa8d7f27e2f",
+    "sha256": "1aebbd0d7ec1c240504cbb2d7e255272b81269b362b368cca780249458d7938a",
     "source": "current supplementary package"
   },
   {
     "path": "RELEASE_NOTES.md",
-    "sha256": "2b3c6310284fd29998037ff6b60d972056baf35f944c32c4ca1b6b7800606249",
+    "sha256": "e1f417622ef647de95767136da9910f536c7b7b94ceb4861d6814efbc9bf073a",
     "source": "current supplementary package"
   },
   {
     "path": "reproduce.py",
-    "sha256": "dea45b70b585ec507194d20062e6cdcff47f925b3f8b7d12502d4489837eae80",
+    "sha256": "5b540382110c845446ed36619c292fe1bb77286cf8a9fa6ac9651725e72ebde7",
     "source": "current supplementary package"
   },
   {
@@ -1155,8 +1205,13 @@
     "source": "current supplementary package"
   },
   {
+    "path": "REVISION_LOG_20260924.md",
+    "sha256": "4b064bad2e3e9fcac38036c42c874d9762d0ed4b9798ab13db9cda917d4948bb",
+    "source": "revision/20260924"
+  },
+  {
     "path": "SUPPLEMENTARY_README.md",
-    "sha256": "14ff81758b37a09418d7e35c1f4df0542bb28a08affc2234cfb26f49fc6920e4",
+    "sha256": "3bdc755aa63dec048f5316a5d6c77e54dc45a5f5cdb10fad926fa6e423d8aecf",
     "source": "current supplementary package"
   }
 ]

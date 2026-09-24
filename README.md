@@ -2,7 +2,9 @@
 
 Experimental code, public input data, frozen configurations, saved results, and paper figures for **When Can Experiments Transfer? Operational Certificates and Active Causal Bridging**. This release corresponds to the ICLR 2027 manuscript revision of 17 September 2026, including Appendix P's matched-certificate weight and geometric-bound ablations.
 
-For the reviewer-facing package overview, start with [SUPPLEMENTARY_README.md](SUPPLEMENTARY_README.md). The complete current-paper map is [CURRENT_ARTIFACTS.md](CURRENT_ARTIFACTS.md); the figure/table asset index is [paper_figures/PAPER_MAP.md](paper_figures/PAPER_MAP.md). Data origins are in [DATA_SOURCES.md](DATA_SOURCES.md), and release validation is in [RELEASE_NOTES.md](RELEASE_NOTES.md).
+This repository is prepared for anonymous supplementary-material export. The export contains only the tracked research files; Git metadata, local caches, generated scratch outputs, and reproduction directories are excluded.
+
+For the reviewer-facing package overview, start with [SUPPLEMENTARY_README.md](SUPPLEMENTARY_README.md). The complete current-paper map is [CURRENT_ARTIFACTS.md](CURRENT_ARTIFACTS.md); the figure/table asset index is [paper_figures/PAPER_MAP.md](paper_figures/PAPER_MAP.md). The 2026-09-24 revision record is [REVISION_LOG_20260924.md](REVISION_LOG_20260924.md). Data origins are in [DATA_SOURCES.md](DATA_SOURCES.md), and release validation is in [RELEASE_NOTES.md](RELEASE_NOTES.md).
 
 ## Contents
 
@@ -14,7 +16,7 @@ For the reviewer-facing package overview, start with [SUPPLEMENTARY_README.md](S
 | `paper_figures/` | Paper figure assets, LaTeX table fragments, and portable Figure 5/6 renderer |
 | `provenance/` | Import inventory and SHA-256 delivery manifest |
 
-Saved full runs are evidence archives. The wrapper below creates a separate output directory and refuses to overwrite an existing one.
+Saved full runs are evidence archives. The wrapper below creates a separate output directory and refuses to overwrite an existing one. For the final submission ZIP, follow [ANONYMOUS_EXPORT.md](ANONYMOUS_EXPORT.md) and inspect the extracted archive before uploading it.
 
 ## Reproduce
 
@@ -43,14 +45,25 @@ python reproduce.py plus --profile full --output reproduced/robustness-full
 python reproduce.py workflow --profile full --workers 4 --output reproduced/workflow-full
 python reproduce.py ablations --profile full --workers 4 --output reproduced/ablation-full
 python reproduce.py real --output reproduced/real
+python reproduce.py calibration --output reproduced/calibration
 python reproduce.py legacy-nsw --output reproduced/nsw
 python reproduce.py legacy-extensions --profile full --output reproduced/extensions
 python reproduce.py figures --output reproduced/figures
 python reproduce.py audit-ablations --output reproduced/ablation-audit
-python -m unittest discover -s current_method/tests -v
+python current_method/run_tests.py
 ```
 
 `audit-ablations` reconstructs all saved weights, radii, predictions, stopping decisions, and costs, and checks parity with the earlier workflow. It expands `plans.jsonl.gz` in the isolated copy. The raw plan file exceeds GitHub's per-file limit; its committed gzip archive is lossless, with the original uncompressed hash retained in the run manifest. `verify` checks delivery integrity; it does not rerun simulations.
+
+The `calibration` suite runs the independent, outcome-blind mechanism-set
+calibration audit. It compares a row-wise joint radius against a marginal
+negative control under nominal and proxy-shifted test archives. The protocol,
+scope, and interpretation are recorded in
+[`current_method/docs/mechanism_set_calibration_protocol.md`](current_method/docs/mechanism_set_calibration_protocol.md).
+
+The audit is controlled labelled-error evidence. It does not establish real
+cross-intervention mechanism calibration; the distinction is recorded in the
+[revision log](REVISION_LOG_20260924.md) and in the paper source.
 
 ## What the new experiments show
 

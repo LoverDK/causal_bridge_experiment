@@ -22,3 +22,18 @@ experiment families and development-stage status documents were removed from
 the delivery tree; Git history retains their provenance.
 
 Primary conclusions are bounded by the specified DGP and protocol. Weight optimization helps bridgeable menus; the minimum of the two geometric bounds has no extra release/cost benefit over the barycentric bound at the tested settings. These results do not establish superiority over the complete ExAtlas pipeline or validate real cross-intervention mechanism calibration.
+
+## Revision audit: 24 September 2026
+
+The repository now includes an independent, outcome-blind mechanism-set
+calibration audit. It freezes 11 entities (four archive sources, six bridge
+candidates, and one target), calibrates a joint radius from 199 labelled audit
+archives, and evaluates 2,000 independent test archives. Nominal joint coverage
+is 0.951; reusing a marginal radius across the universe gives 0.544 joint
+coverage. A 1.5x test-only proxy shift reduces joint coverage to 0.348, exposing
+the exchangeability boundary. Reproduce it with `python reproduce.py
+calibration --output reproduced/calibration`.
+
+This audit is controlled labelled-error evidence. It does not establish real
+cross-intervention mechanism calibration. The full change record is
+`REVISION_LOG_20260924.md`.

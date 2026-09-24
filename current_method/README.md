@@ -30,6 +30,8 @@ python -m unittest discover -s tests -v
 
 仅修改报告或图形时，可运行 `python current_method/refresh_report.py --profile full`，它检查实验核心源码哈希、使用已存 CSV，避免重新抽样。图形后处理版本另记入 manifest。
 
+机制集合校准审计使用独立的 outcome-blind 入口：`python current_method/run_mechanism_calibration.py`，或从仓库根目录运行 `python reproduce.py calibration --output reproduced/calibration`。协议和边界见 `docs/mechanism_set_calibration_protocol.md`；它是带标签的控制审计，不是现实跨干预校准的替代品。
+
 第二轮独立复核：
 
 ```powershell

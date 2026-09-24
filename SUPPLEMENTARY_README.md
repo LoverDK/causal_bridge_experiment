@@ -6,7 +6,15 @@ Bridging*. It contains the code, public inputs, frozen configurations, saved
 numerical outputs, and paper-facing figure/table assets needed to inspect or
 reproduce the empirical claims.
 
+The submission archive is an anonymous export of the tracked files. It contains
+no Git metadata, local caches, generated scratch directories, or machine-specific
+paths. See [ANONYMOUS_EXPORT.md](ANONYMOUS_EXPORT.md) for the export and audit
+procedure.
+
 ## Start here
+
+The latest revision work and its evidence boundary are recorded in
+[REVISION_LOG_20260924.md](REVISION_LOG_20260924.md).
 
 1. Run `python reproduce.py verify` to check the delivered files.
 2. Read [CURRENT_ARTIFACTS.md](CURRENT_ARTIFACTS.md) for the paper-item to

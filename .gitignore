@@ -4,8 +4,11 @@ __pycache__/
 .env
 reproduced/
 scratch/
+.codex/
+.pytest_cache/
+*.ipynb_checkpoints/
+current_method/results/mechanism_calibration_initial/
 current_method/results/ablations_full/plans.jsonl
 *.aux
 *.synctex.gz
 *.log
-

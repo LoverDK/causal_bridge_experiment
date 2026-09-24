@@ -6,12 +6,16 @@
       "bytes": 135
     },
     ".gitignore": {
-      "sha256": "07adc61df8ab30cce14c8fe3877441acc4f8a2026c3bc5ccd359b136da8f01d1",
-      "bytes": 128
+      "sha256": "32b54a144f93a4b21e04ea661d7e9a62378766c9fd483212b089909f9f5a153c",
+      "bytes": 225
+    },
+    "ANONYMOUS_EXPORT.md": {
+      "sha256": "eb8ad1efcb9983f1370a18f0d6e11db4e5506a982413c6b12e3e8132b550abb7",
+      "bytes": 1005
     },
     "CURRENT_ARTIFACTS.md": {
-      "sha256": "b6e0b2c881a1c64cec0a0890652318d87949ee3932acadd08bf70df79f73f427",
-      "bytes": 2582
+      "sha256": "966e7d80f342f186775d4907d9fce7a56edecd6955afe5f3d5bbedaa0cab01a9",
+      "bytes": 2736
     },
     "current_method/atlas_new/__init__.py": {
       "sha256": "d304e8f296b668e8484337b5693c66171f5bf0fa5f941eb9234d06923703715e",
@@ -41,37 +45,41 @@
       "sha256": "896af9a05110eae367b8a2a81e9d8a0ce40e4d36e96caf06f31b4b3024ecfe34",
       "bytes": 5856
     },
+    "current_method/atlas_new/mechanism_calibration.py": {
+      "sha256": "1095d082f60c2159ff5ba494e1da5ebfaaa6c508e957c04f1a0b958a9a38a6dc",
+      "bytes": 3049
+    },
     "current_method/atlas_new/report.py": {
       "sha256": "389c077f33fc940ae823a5fd24dc0d70c0710c86bbeb14e66a96522dd90ceed3",
       "bytes": 15648
-    },
-    "current_method/atlas_new/workflow.py": {
-      "sha256": "4c9a2185beb2b47b6ef289498b15136966bb03fc2318214e013c50591782e327",
-      "bytes": 15747
     },
     "current_method/atlas_new/workflow_report.py": {
       "sha256": "1d2af7ddee282fe58e99698aec59ee5ecbdab3d5809d71bd8e72b82e1db4a4e6",
       "bytes": 20821
     },
+    "current_method/atlas_new/workflow.py": {
+      "sha256": "4c9a2185beb2b47b6ef289498b15136966bb03fc2318214e013c50591782e327",
+      "bytes": 15747
+    },
     "current_method/audit_ablations.py": {
       "sha256": "52a17e97514b6ee7f6e3af83d5f1f0b572bced7476847beb78ad602810734d2e",
       "bytes": 5036
-    },
-    "current_method/configs/full.json": {
-      "sha256": "346478482237e8c1b72152bbcb83f1589214c04af00360c50f84fafb6cace8ad",
-      "bytes": 607
     },
     "current_method/configs/full_plus.json": {
       "sha256": "434f1c71796ecdb5de2ebde1f6a1b6f4a06f17bafe8d16766afc5d44c208567d",
       "bytes": 377
     },
-    "current_method/configs/smoke.json": {
-      "sha256": "3887730db191f260815ee7da5aec569d4de58e0740efe4b6d4d34affe1a00989",
-      "bytes": 596
+    "current_method/configs/full.json": {
+      "sha256": "346478482237e8c1b72152bbcb83f1589214c04af00360c50f84fafb6cace8ad",
+      "bytes": 607
     },
     "current_method/configs/smoke_plus.json": {
       "sha256": "1c0cfc8496a5f15da0f47e2d90bbcaea9794b18cea2a90e376bb8c230dab8aad",
       "bytes": 373
+    },
+    "current_method/configs/smoke.json": {
+      "sha256": "3887730db191f260815ee7da5aec569d4de58e0740efe4b6d4d34affe1a00989",
+      "bytes": 596
     },
     "current_method/configs/workflow_full.json": {
       "sha256": "b335a4fb736c9c30b1f5f05713d5a362a8b5355535de36aeba811b5cae1989b2",
@@ -89,6 +97,30 @@
       "sha256": "217fb8248a21502098a66f0f7df792365dcc04f25d6bb27b6a1004faa24eae2f",
       "bytes": 464
     },
+    "current_method/docs/实验设计与论文对应.md": {
+      "sha256": "48ef37d4d51fbfdf686ea2fcc9bf7c73e6d6e2601e5ac5b00fb1e23abf8cb7d3",
+      "bytes": 1228
+    },
+    "current_method/docs/完整流程实验协议.md": {
+      "sha256": "3de176fa34e01b1d8eea71a451df50cdcc6d8ec817d91a63864513ba295437ff",
+      "bytes": 8795
+    },
+    "current_method/docs/完整流程主要发现.md": {
+      "sha256": "bf3399e2f80cc3692e12d8c626eb947dacd97e11fc0ffd604d14a2b8ea18dd34",
+      "bytes": 4558
+    },
+    "current_method/docs/真实数据补充协议.md": {
+      "sha256": "d387757a9fb3642663ffb34af56f5edd8a09effbabe92a8341f0ec82b84a5df2",
+      "bytes": 2108
+    },
+    "current_method/docs/执行记录.md": {
+      "sha256": "22aa104b98a134664b92f7c2e5677a6a90a8a63cbc2f9aa249df2e492d451689",
+      "bytes": 2329
+    },
+    "current_method/docs/指标字典.md": {
+      "sha256": "7f8cdcc1145a8588cbfd01d8d6d28d094d9e2c4b5821f66dad4f29ccf7091991",
+      "bytes": 3055
+    },
     "current_method/docs/ablation_protocol.md": {
       "sha256": "169a0ad48061dcbbc621d05e5c8a442bd2f9340869558d78c5e59be2c9402482",
       "bytes": 3246
@@ -97,41 +129,21 @@
       "sha256": "08b16fbe8a91fcdb56fe60c1f176a5fd996e001c8eda3b01d6b47a8fb566d810",
       "bytes": 7098
     },
+    "current_method/docs/mechanism_set_calibration_protocol.md": {
+      "sha256": "b50664b6f74107165dd46ac52be6162278ed73347ff0b68a37e187e246d0cc49",
+      "bytes": 2384
+    },
     "current_method/docs/paper_source.json": {
       "sha256": "ae7e48739b3e04f632385c323dad5d7c7c32a8fabcd272964aea6a3af5fed08a",
       "bytes": 527
-    },
-    "current_method/docs/完整流程主要发现.md": {
-      "sha256": "bf3399e2f80cc3692e12d8c626eb947dacd97e11fc0ffd604d14a2b8ea18dd34",
-      "bytes": 4558
-    },
-    "current_method/docs/完整流程实验协议.md": {
-      "sha256": "3de176fa34e01b1d8eea71a451df50cdcc6d8ec817d91a63864513ba295437ff",
-      "bytes": 8795
-    },
-    "current_method/docs/实验设计与论文对应.md": {
-      "sha256": "48ef37d4d51fbfdf686ea2fcc9bf7c73e6d6e2601e5ac5b00fb1e23abf8cb7d3",
-      "bytes": 1228
-    },
-    "current_method/docs/执行记录.md": {
-      "sha256": "1ec94e2a7a36adbf74465db0c9efe146cee3a10abe9d00fa3f0eb759ec70b803",
-      "bytes": 1764
-    },
-    "current_method/docs/指标字典.md": {
-      "sha256": "7f8cdcc1145a8588cbfd01d8d6d28d094d9e2c4b5821f66dad4f29ccf7091991",
-      "bytes": 3055
-    },
-    "current_method/docs/真实数据补充协议.md": {
-      "sha256": "d387757a9fb3642663ffb34af56f5edd8a09effbabe92a8341f0ec82b84a5df2",
-      "bytes": 2108
     },
     "current_method/environment.lock.txt": {
       "sha256": "a5452c92f32a9b98acdded49173161cd6a0e26d22e2c3fcc2d5a8dd3df31d328",
       "bytes": 232
     },
     "current_method/README.md": {
-      "sha256": "168b22a39b13d135f926f8c71fcced5ddd8a4116b03dac53d5b16c20f02631e8",
-      "bytes": 5955
+      "sha256": "1bdad58b432c19b41d8f0ce92ffc92b15cceacfd599b93bca13f6b71f8b866d7",
+      "bytes": 6312
     },
     "current_method/refresh_report.py": {
       "sha256": "e9c8bae3e0568f44088487dc16b8cbf1479d9f04f95d3ce800e2e54fd14cb934",
@@ -200,6 +212,46 @@
     "current_method/results/ablations_full/validation_checks.json": {
       "sha256": "8c5ed5969a605c733592f4bd5c716c681ecca78c14c0decd45999a91bd9eac45",
       "bytes": 1252
+    },
+    "current_method/results/full_plus/第二轮复核结果.md": {
+      "sha256": "e02497fac14a3f3be08c4ca17356dddf40fea5111098b4766aa2389583eac268",
+      "bytes": 5214
+    },
+    "current_method/results/full_plus/plus_assumption_boundaries.csv": {
+      "sha256": "dd490b3b21a7bc0c2aad7a0ffc1ea11a5cb0854f5c7fb3e10fcaac9b5961cfce",
+      "bytes": 390
+    },
+    "current_method/results/full_plus/plus_calibration_sensitivity_records.csv": {
+      "sha256": "ac0694691f1e21e965ed0a90ed884bfc822bfd48a1e3130acabeb879739ad988",
+      "bytes": 3424859
+    },
+    "current_method/results/full_plus/plus_calibration_sensitivity_summary.csv": {
+      "sha256": "314a7d410bd93d21c3558a061b25a3cdb76dc180fd8d11b9241f1a3ec5c7dc5f",
+      "bytes": 1512
+    },
+    "current_method/results/full_plus/plus_correlated_noise.csv": {
+      "sha256": "e085cc0b2e9bbd004add16ef9764f2ea50560cf5853c94c7835b406bb389ab01",
+      "bytes": 3209
+    },
+    "current_method/results/full_plus/plus_heavy_tails.csv": {
+      "sha256": "9387b2cce64e66ead15124afbdd61431d860fbfddba86bacf4dd2f98454837df",
+      "bytes": 892
+    },
+    "current_method/results/full_plus/plus_optimizer_audit.csv": {
+      "sha256": "6a92cbb10fb8a64975d64c897d4224347146b4519ec631b01f09bed63f4c7945",
+      "bytes": 9569
+    },
+    "current_method/results/full_plus/run_manifest.json": {
+      "sha256": "1de61c085e935ea51d5d6b27513cb593d3f8494c6e6db8ceb6bf33bf152dad02",
+      "bytes": 5050
+    },
+    "current_method/results/full_plus/validation_checks.json": {
+      "sha256": "76eca944e7dfa1c76a1fdd2578fc19ef8695cfa451145634b96b80fd5d8901c5",
+      "bytes": 439
+    },
+    "current_method/results/full/结果解读.md": {
+      "sha256": "0e745b4fb47eac97bdd2020c9bf63836058b96a4751bb780ff6234be4978c37a",
+      "bytes": 7259
     },
     "current_method/results/full/bridge_anisotropy.csv": {
       "sha256": "9d521753c7e273a94ec737f0cac26f9b9388a7ad820949a96c1bff21fb8ce3b2",
@@ -333,45 +385,17 @@
       "sha256": "eb0d16c90041e6fda04bd330326157994f8737bf56682923c20101b64a737e4c",
       "bytes": 1148
     },
-    "current_method/results/full/结果解读.md": {
-      "sha256": "0e745b4fb47eac97bdd2020c9bf63836058b96a4751bb780ff6234be4978c37a",
-      "bytes": 7259
+    "current_method/results/mechanism_calibration/calibrator.json": {
+      "sha256": "7ff6d6ba553609dc47c373d5e949394122228afb38e23bd0d668df66d1545bdd",
+      "bytes": 213
     },
-    "current_method/results/full_plus/plus_assumption_boundaries.csv": {
-      "sha256": "dd490b3b21a7bc0c2aad7a0ffc1ea11a5cb0854f5c7fb3e10fcaac9b5961cfce",
-      "bytes": 390
+    "current_method/results/mechanism_calibration/run_manifest.json": {
+      "sha256": "00d7e9230062363d1115ac339e0bdb66dffd429222404225614ea0778942f92a",
+      "bytes": 990
     },
-    "current_method/results/full_plus/plus_calibration_sensitivity_records.csv": {
-      "sha256": "ac0694691f1e21e965ed0a90ed884bfc822bfd48a1e3130acabeb879739ad988",
-      "bytes": 3424859
-    },
-    "current_method/results/full_plus/plus_calibration_sensitivity_summary.csv": {
-      "sha256": "314a7d410bd93d21c3558a061b25a3cdb76dc180fd8d11b9241f1a3ec5c7dc5f",
-      "bytes": 1512
-    },
-    "current_method/results/full_plus/plus_correlated_noise.csv": {
-      "sha256": "e085cc0b2e9bbd004add16ef9764f2ea50560cf5853c94c7835b406bb389ab01",
-      "bytes": 3209
-    },
-    "current_method/results/full_plus/plus_heavy_tails.csv": {
-      "sha256": "9387b2cce64e66ead15124afbdd61431d860fbfddba86bacf4dd2f98454837df",
-      "bytes": 892
-    },
-    "current_method/results/full_plus/plus_optimizer_audit.csv": {
-      "sha256": "6a92cbb10fb8a64975d64c897d4224347146b4519ec631b01f09bed63f4c7945",
-      "bytes": 9569
-    },
-    "current_method/results/full_plus/run_manifest.json": {
-      "sha256": "1de61c085e935ea51d5d6b27513cb593d3f8494c6e6db8ceb6bf33bf152dad02",
-      "bytes": 5050
-    },
-    "current_method/results/full_plus/validation_checks.json": {
-      "sha256": "76eca944e7dfa1c76a1fdd2578fc19ef8695cfa451145634b96b80fd5d8901c5",
-      "bytes": 439
-    },
-    "current_method/results/full_plus/第二轮复核结果.md": {
-      "sha256": "e02497fac14a3f3be08c4ca17356dddf40fea5111098b4766aa2389583eac268",
-      "bytes": 5214
+    "current_method/results/mechanism_calibration/summary.csv": {
+      "sha256": "b2e781843a84d556ab7e6cfb457201cc6a5beb9e725038504c80cfe006773649",
+      "bytes": 548
     },
     "current_method/results/real_supplement/frontier.csv": {
       "sha256": "6908b4b23530d71b56c55c0378abdd371514b58c354eb59db073cc00bee2ad14",
@@ -408,6 +432,10 @@
     "current_method/results/real_supplement/validation_checks.json": {
       "sha256": "95ddfb2d806add16238c2adfe3aeeebf786b3bce7ca3461beffa344df8c82d6e",
       "bytes": 318
+    },
+    "current_method/results/workflow_full/完整流程实验结果.md": {
+      "sha256": "d9b46f6a9515ea2bbb110d822a90c71b88ed08b14f61795c1f2b205b3e100d57",
+      "bytes": 12392
     },
     "current_method/results/workflow_full/acquisitions.csv": {
       "sha256": "6546ea6b36ffebc6511fdf30ae6be6705b14d4d88441148a93c30b333c5f856d",
@@ -481,10 +509,6 @@
       "sha256": "78071986149345fd5f5c7205c3c60b750d2364334ab9a1fccd478bb6e873fc49",
       "bytes": 3790367
     },
-    "current_method/results/workflow_full/完整流程实验结果.md": {
-      "sha256": "d9b46f6a9515ea2bbb110d822a90c71b88ed08b14f61795c1f2b205b3e100d57",
-      "bytes": 12392
-    },
     "current_method/run_ablations.py": {
       "sha256": "54570905ba7c60d4b8f5420d07c84f10fd6832d3cc53d173f7a2f6cb8c955e30",
       "bytes": 4597
@@ -493,6 +517,10 @@
       "sha256": "38235e93be6335be29c61ec2bfdc0e789b2f48396b7a2b6394a8f6b7e649d300",
       "bytes": 4242
     },
+    "current_method/run_mechanism_calibration.py": {
+      "sha256": "5b1a82a4cc899171688bf15773f3185cb213d7b6a9f2c722920b2fe652a5ce0c",
+      "bytes": 3995
+    },
     "current_method/run_plus.py": {
       "sha256": "5d20fa0dd0cddee381f1c69d9bdd59ad19a50b733c1b9d425e4227fbdb524ad9",
       "bytes": 3252
@@ -500,6 +528,10 @@
     "current_method/run_real_supplement.py": {
       "sha256": "2fa1f8710de4a2e3ae7402836752319ff0f233907b7e90ef84599f15d505296f",
       "bytes": 7003
+    },
+    "current_method/run_tests.py": {
+      "sha256": "540257c928e41b72d00bba2b36184d4dc35b8d22db463dea5cadccf7f3f8091a",
+      "bytes": 307
     },
     "current_method/run_workflow.py": {
       "sha256": "0db5b07c70561d4fdb8e9eeeff489f6198aee9c2abc43754ee7393ff86a00838",
@@ -513,6 +545,10 @@
       "sha256": "a76ec5473dca156af70370701e6e111b8a2e39bccabac842b6337e5a269e5f3d",
       "bytes": 805
     },
+    "current_method/tests/test_mechanism_calibration.py": {
+      "sha256": "3a8f59b9e6760599191edf9e472eb423d976ee6412f91d480019891dc1bd4ca7",
+      "bytes": 1414
+    },
     "current_method/tests/test_theory.py": {
       "sha256": "9936745d6e034de2db25f8048ae1dd5a5a2fd81a1c0035d0112014cd65061558",
       "bytes": 4832
@@ -524,6 +560,10 @@
     "DATA_SOURCES.md": {
       "sha256": "c712b00bd78f1afd67f274d17ae4bec1b62ea91e67df454992002447fcbd2d24",
       "bytes": 2185
+    },
+    "docs/manuscript_revision_20260924.md": {
+      "sha256": "57932eb0d5501e90996a4194c00fd4bd81cdc9b666b9257abc6403379abff773",
+      "bytes": 2496
     },
     "legacy_audits/data/nsw_dw.dta": {
       "sha256": "d1bd2680a1c6f799f1c6d2455bf29633fdf19be01cb19490621c20a560b4e072",
@@ -741,6 +781,10 @@
       "sha256": "537a0acca9cfad5b08187aa223061d7cde0265f00c878d942cbd0cf9a1cc2cbe",
       "bytes": 165552
     },
+    "paper_figures/assets/figure_operational_theory_validation.pdf": {
+      "sha256": "77343d4e238bf22766dea0f86d76410ac8c5c79d6cb863d89aef8317e66a6bcd",
+      "bytes": 55999
+    },
     "paper_figures/assets/figure2_synthetic_validation.pdf": {
       "sha256": "ce86941376a4bc5960d24f3fc8aa4cc823431f6b95ea9114b7b92445c70e7880",
       "bytes": 79023
@@ -756,10 +800,6 @@
     "paper_figures/assets/figure5_nsw.pdf": {
       "sha256": "66468e33612618eba8f9ebd5b5a83291289e5e896e4f63e3769bc1bdbcac2ef9",
       "bytes": 92873
-    },
-    "paper_figures/assets/figure_operational_theory_validation.pdf": {
-      "sha256": "77343d4e238bf22766dea0f86d76410ac8c5c79d6cb863d89aef8317e66a6bcd",
-      "bytes": 55999
     },
     "paper_figures/assets/manylabs2_framing_loso.pdf": {
       "sha256": "5284dc9384708baf992d4cf811324daec9f2f4c073db2eb08ee331bdb5b3c8b1",
@@ -778,8 +818,8 @@
       "bytes": 40068
     },
     "paper_figures/PAPER_MAP.md": {
-      "sha256": "23de6e42ff470c9e87accf1aecbddf48fe36b3400aea0d789024ae5c5ef0708f",
-      "bytes": 4377
+      "sha256": "b71f1781e409b2b8fd368710c2b2b56ecad396eaad8141517828ca30f1989bbe",
+      "bytes": 4592
     },
     "paper_figures/render_appendix_figures.py": {
       "sha256": "d4fad95aae72aa701c01c5a72f1d9db50193d089e83f62b78c683e7595d1bd1b",
@@ -910,32 +950,36 @@
       "bytes": 37093
     },
     "provenance/import_inventory.json": {
-      "sha256": "8d80fbfe4742f98bff6269a927b37525ce0017b673960c37b3ace41ab44c55e8",
-      "bytes": 55695
+      "sha256": "200312fb8f9f823e276953fc182f3f1fab4e6d075137ff4af383f9db64b3cbd3",
+      "bytes": 57784
     },
     "provenance/release_validation.json": {
       "sha256": "40b6105b9dd8f922fd7ee7d347e2acdef2a97d012329af921170fe3f5e4dfa7e",
       "bytes": 356
     },
     "README.md": {
-      "sha256": "7d5c562f45beddc3e6e426a080d51083868266967c8d3a04d0d14fa8d7f27e2f",
-      "bytes": 4992
+      "sha256": "1aebbd0d7ec1c240504cbb2d7e255272b81269b362b368cca780249458d7938a",
+      "bytes": 6095
     },
     "RELEASE_NOTES.md": {
-      "sha256": "2b3c6310284fd29998037ff6b60d972056baf35f944c32c4ca1b6b7800606249",
-      "bytes": 2109
+      "sha256": "e1f417622ef647de95767136da9910f536c7b7b94ceb4861d6814efbc9bf073a",
+      "bytes": 2899
     },
     "reproduce.py": {
-      "sha256": "dea45b70b585ec507194d20062e6cdcff47f925b3f8b7d12502d4489837eae80",
-      "bytes": 4509
+      "sha256": "5b540382110c845446ed36619c292fe1bb77286cf8a9fa6ac9651725e72ebde7",
+      "bytes": 4699
     },
     "requirements.txt": {
       "sha256": "f6b4c6d5fb6f0de518d71a762573d9708ffdbf8b4e4fa0713384d59e10355107",
       "bytes": 72
     },
+    "REVISION_LOG_20260924.md": {
+      "sha256": "4b064bad2e3e9fcac38036c42c874d9762d0ed4b9798ab13db9cda917d4948bb",
+      "bytes": 3356
+    },
     "SUPPLEMENTARY_README.md": {
-      "sha256": "14ff81758b37a09418d7e35c1f4df0542bb28a08affc2234cfb26f49fc6920e4",
-      "bytes": 2204
+      "sha256": "3bdc755aa63dec048f5316a5d6c77e54dc45a5f5cdb10fad926fa6e423d8aecf",
+      "bytes": 2579
     }
   }
 }

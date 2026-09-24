@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "seed": 2026092401,
+  "repetitions": 2000,
+  "calibration_archives": 199,
+  "entities": 11,
+  "dimension": 2,
+  "eta": 0.05,
+  "scope": "Independent proxy-error calibration audit; no outcomes or target effects",
+  "source_sha256": {
+    "run_mechanism_calibration.py": "5b1a82a4cc899171688bf15773f3185cb213d7b6a9f2c722920b2fe652a5ce0c",
+    "atlas_new/mechanism_calibration.py": "1095d082f60c2159ff5ba494e1da5ebfaaa6c508e957c04f1a0b958a9a38a6dc"
+  },
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "completed_utc": "2026-09-24T14:57:34.005409+00:00",
+  "artifacts": {
+    "calibrator.json": {
+      "sha256": "7ff6d6ba553609dc47c373d5e949394122228afb38e23bd0d668df66d1545bdd",
+      "bytes": 213
+    },
+    "summary.csv": {
+      "sha256": "b2e781843a84d556ab7e6cfb457201cc6a5beb9e725038504c80cfe006773649",
+      "bytes": 548
+    }
+  }
+}
