@@ -165,3 +165,25 @@ independent outcome-blind calibration archive, or causal target truth. The
 next feasible experiment remains a preregistered or newly collected
 cross-intervention archive with mechanism proxies and calibration split frozen
 before target outcomes are read.
+
+## ICLR 2027 paper integration: 2026-09-25
+
+The corrected five-family panel and the all-family sensitivity panel were
+integrated into the ICLR 2027 Overleaf source
+`causal_lab_proposal_subpapers_tex_iclr2027/01.tex`.
+
+- The main Experiments section now reports the five-family holdout (10 targets)
+  and all-family sensitivity (23 families, 28 valid effects), the five named
+  baselines, release frontiers, and zero target-effect flip leakage.
+- The Discussion now states that these results are external-validity and
+  baseline evidence only; Many Labs 2 standardized effects are noisy references
+  and do not provide real mechanism sets, an independent real calibration
+  archive, or causal target truth.
+- The appendix now freezes the pinned commit and eligibility rule, records the
+  corrected `study.analysis` unit, preserves the historical `study.name` run as
+  an audit artifact, and includes the five-family/all-family summary table.
+
+The local ICLR source compiled successfully with TeX Live 2026 to a 39-page
+PDF. The Overleaf project was then updated with the same `01.tex` and its
+recompile completed successfully. Existing warnings are layout warnings
+(underfull/one small overfull box); no LaTeX error occurred.

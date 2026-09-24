@@ -950,7 +950,7 @@
       "bytes": 37093
     },
     "provenance/import_inventory.json": {
-      "sha256": "53e912ac10055446b070c4d25eb78aab9b4fadfbf23256962c10439a54862c9c",
+      "sha256": "c7c67353be2659ce31fd9cf80b2f52a6cea3ac7bd37da89d6cc289bd858055c2",
       "bytes": 66255
     },
     "provenance/release_validation.json": {
@@ -974,8 +974,8 @@
       "bytes": 72
     },
     "REVISION_LOG_20260924.md": {
-      "sha256": "c17a85c24e653497a200c7e8021f62c5dcbc4972764d80048a36545e0e9d3f9d",
-      "bytes": 8515
+      "sha256": "ccf0ef8dc7b9975d2f7a33568df0ed1050828636b624e72f576926368614a855",
+      "bytes": 9741
     },
     "SUPPLEMENTARY_README.md": {
       "sha256": "3bdc755aa63dec048f5316a5d6c77e54dc45a5f5cdb10fad926fa6e423d8aecf",
