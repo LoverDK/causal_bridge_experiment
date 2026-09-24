@@ -16,6 +16,7 @@ in an isolated directory.
 | Tables 13--14 and Figure 6 | `current_method/results/full/`, `paper_figures/assets/revision_sources.pdf` | `python reproduce.py current --profile full` and `python reproduce.py figures` |
 | Tables 15--16 | `current_method/results/ablations_full/` | `python reproduce.py ablations --profile full`; `python reproduce.py audit-ablations` |
 | Mechanism-set calibration audit | `current_method/results/mechanism_calibration/` | `python reproduce.py calibration --output reproduced/calibration` |
+| Cross-effect-family external-validity audit | `current_method/results/effect_family_holdout/` | `python reproduce.py effect-family --output reproduced/effect-family` |
 
 The existing PDF assets are the paper inputs. `paper_figures/render_appendix_figures.py`
 regenerates the portable Figure 5/6 assets from committed CSV files; font and

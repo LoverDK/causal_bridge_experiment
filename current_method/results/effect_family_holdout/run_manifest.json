@@ -1,0 +1,67 @@
+{
+  "status": "complete",
+  "commit": "acef63fc397b8dce7f0b00f863bcea78d324bea8",
+  "data_url": "https://raw.githubusercontent.com/ManyLabsOpenScience/ManyLabs2/acef63fc397b8dce7f0b00f863bcea78d324bea8/OSFdata/!!RawData/ML2_OriginalEffects.csv",
+  "data_sha256": "78b3432bebb798595ebb08ee10fb68d3f6f59cd5e0ab49606cfb6835eb226406",
+  "eligible_target_families": [
+    "Hauser",
+    "Huang",
+    "Miyamoto",
+    "Ross",
+    "Savani"
+  ],
+  "alpha": 0.05,
+  "release_thresholds": [
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1.0
+  ],
+  "n_raw_rows": 32,
+  "n_included_rows": 28,
+  "n_excluded_rows": 4,
+  "n_target_studies": 10,
+  "scope": "Real Many Labs 2 cross-effect-family external-validity stress test; no mechanism labels",
+  "outcome_blind_fields": [
+    "N",
+    "study.analysis.ori context",
+    "training effects",
+    "training variances"
+  ],
+  "target_outcome_fields_used_only_for_scoring": [
+    "ESCI.d"
+  ],
+  "source_sha256": {
+    "run_effect_family_holdout.py": "9409828fac5d7e8de757c3e0e039dbc812a43116b083c2a35d1dcbeeb3c7ffe8"
+  },
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "completed_utc": "2026-09-24T17:00:50.144302+00:00",
+  "artifacts": {
+    "excluded_studies.csv": {
+      "sha256": "30694b8555f31c2b1c5a5a7fd43bb6912bec9759777c08b5d9c5d3e44279f8f6",
+      "bytes": 149
+    },
+    "included_studies.csv": {
+      "sha256": "d46bd06e91e7b67c7f40d1d66ffa8d4395d11b0d721bdd22dc5638256b842918",
+      "bytes": 1242
+    },
+    "leakage_audit.csv": {
+      "sha256": "263d5f52089883d99a23824e681c0689cbb03f0ff291266a77e033d8368091de",
+      "bytes": 2067
+    },
+    "predictions.csv": {
+      "sha256": "c46d47588735a51361cb94b6bed4207138625d09521733175c06fbb26c323e9f",
+      "bytes": 16012
+    },
+    "summary.csv": {
+      "sha256": "3b88face12ee5a6f62e189ede52712650e19dbe61eb9821b1425a487955b746f",
+      "bytes": 2119
+    },
+    "report.md": {
+      "sha256": "99c6a4357726703b4c83bd2bd26f4a4203e9d8158613e4cb258c6ec48ad83c65",
+      "bytes": 3838
+    }
+  }
+}

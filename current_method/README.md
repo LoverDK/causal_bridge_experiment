@@ -32,6 +32,8 @@ python -m unittest discover -s tests -v
 
 机制集合校准审计使用独立的 outcome-blind 入口：`python current_method/run_mechanism_calibration.py`，或从仓库根目录运行 `python reproduce.py calibration --output reproduced/calibration`。协议和边界见 `docs/mechanism_set_calibration_protocol.md`；它是带标签的控制审计，不是现实跨干预校准的替代品。
 
+跨 effect family 的真实外部有效性审计使用 `python current_method/run_effect_family_holdout.py`，或 `python reproduce.py effect-family --output reproduced/effect-family`。它固定留出 Hauser、Huang、Miyamoto、Ross、Savani 五个完整 family，报告多种迁移基线、拒绝率、宽度、噪声参考覆盖、误差、符号错误和目标效应翻转泄漏检查。它补充真实跨家族压力测试，但不冒称现实机制集合已经校准。
+
 第二轮独立复核：
 
 ```powershell

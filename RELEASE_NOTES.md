@@ -37,3 +37,20 @@ calibration --output reproduced/calibration`.
 This audit is controlled labelled-error evidence. It does not establish real
 cross-intervention mechanism calibration. The full change record is
 `REVISION_LOG_20260924.md`.
+
+## 25 September 2026: cross-effect-family external validity
+
+Added a pinned Many Labs 2 study-level summary and a complete family-holdout
+audit. Five complete families are held out in turn (10 target studies); 28 of
+32 published summary rows pass the pre-fixed Cohen's d eligibility rule. The
+audit compares fixed/random effects, context matching, a robust training range,
+and family split-conformal, with release/refusal, width, noisy-reference
+coverage, absolute error, sign error, and target-effect flip leakage checks.
+
+The result is real cross-family stress-test evidence, not real mechanism-set
+calibration. Fixed-effects all-target coverage is 0.50 and random-effects is
+0.90 in this ten-target audit; at half-width thresholds 0.20--1.00 they
+release at most 100% and 20%, respectively, while the robust range and
+split-conformal rules refuse all targets. The next evidence requirement remains
+an independently calibrated, design-metadata mechanism archive collected or
+preregistered across interventions.

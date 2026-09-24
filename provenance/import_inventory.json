@@ -16,8 +16,9 @@
   },
   {
     "path": "CURRENT_ARTIFACTS.md",
-    "sha256": "966e7d80f342f186775d4907d9fce7a56edecd6955afe5f3d5bbedaa0cab01a9",
-    "source": "current supplementary package"
+    "sha256": "3a68b4adb273303f8eefd3f55ddea6df3fb1ead74bb3e06345494fd329d38b63",
+    "source": "current supplementary package",
+    "bytes": 2906
   },
   {
     "path": "current_method/atlas_new/__init__.py",
@@ -141,8 +142,9 @@
   },
   {
     "path": "current_method/docs/执行记录.md",
-    "sha256": "22aa104b98a134664b92f7c2e5677a6a90a8a63cbc2f9aa249df2e492d451689",
-    "source": "experiment/new_version/docs/执行记录.md"
+    "sha256": "e2c51d2b8e81a5d2782481ae0b273fd1f6952dc800b963074229c28f80f526cb",
+    "source": "experiment/new_version/docs/执行记录.md",
+    "bytes": 3249
   },
   {
     "path": "current_method/docs/指标字典.md",
@@ -176,8 +178,9 @@
   },
   {
     "path": "current_method/README.md",
-    "sha256": "1bdad58b432c19b41d8f0ce92ffc92b15cceacfd599b93bca13f6b71f8b866d7",
-    "source": "experiment/new_version/README.md"
+    "sha256": "d578a5266ea761c610cde726103c995c445ed9cd33806e7e64993ed42338248e",
+    "source": "experiment/new_version/README.md",
+    "bytes": 6790
   },
   {
     "path": "current_method/refresh_report.py",
@@ -696,8 +699,9 @@
   },
   {
     "path": "DATA_SOURCES.md",
-    "sha256": "c712b00bd78f1afd67f274d17ae4bec1b62ea91e67df454992002447fcbd2d24",
-    "source": "current supplementary package"
+    "sha256": "9206f91cd465175a77a9b51a257f20e9e24cbc7cc40ee923ceda1b84293e938b",
+    "source": "current supplementary package",
+    "bytes": 2981
   },
   {
     "path": "docs/manuscript_revision_20260924.md",
@@ -1186,18 +1190,21 @@
   },
   {
     "path": "README.md",
-    "sha256": "1aebbd0d7ec1c240504cbb2d7e255272b81269b362b368cca780249458d7938a",
-    "source": "current supplementary package"
+    "sha256": "5e4cec35f5696758fef67bfdff24e778669e303c85f386852568d1038e0f566c",
+    "source": "current supplementary package",
+    "bytes": 6163
   },
   {
     "path": "RELEASE_NOTES.md",
-    "sha256": "e1f417622ef647de95767136da9910f536c7b7b94ceb4861d6814efbc9bf073a",
-    "source": "current supplementary package"
+    "sha256": "003f20c64c06ca918e518e341ffe2651ba2356ffc16fe4371599797249438c3f",
+    "source": "current supplementary package",
+    "bytes": 3913
   },
   {
     "path": "reproduce.py",
-    "sha256": "5b540382110c845446ed36619c292fe1bb77286cf8a9fa6ac9651725e72ebde7",
-    "source": "current supplementary package"
+    "sha256": "0369ad414f52e4fa1d4002c3935c58749817160cc87a35a4b0d532a4e8b349ce",
+    "source": "current supplementary package",
+    "bytes": 4891
   },
   {
     "path": "requirements.txt",
@@ -1206,12 +1213,85 @@
   },
   {
     "path": "REVISION_LOG_20260924.md",
-    "sha256": "4b064bad2e3e9fcac38036c42c874d9762d0ed4b9798ab13db9cda917d4948bb",
-    "source": "revision/20260924"
+    "sha256": "addbbf97c2ddd6d5c6b8c49be0f3fd160d794f04b548c8e393f0d45ce8868b75",
+    "source": "revision/20260924",
+    "bytes": 5069
   },
   {
     "path": "SUPPLEMENTARY_README.md",
     "sha256": "3bdc755aa63dec048f5316a5d6c77e54dc45a5f5cdb10fad926fa6e423d8aecf",
     "source": "current supplementary package"
+  },
+  {
+    "path": "current_method/docs/effect_family_holdout_protocol.md",
+    "sha256": "5726378b7b3a82c4026da90c852391f1ac715f46dd3e7d715af816b42aaff3a9",
+    "bytes": 3014,
+    "source": "revision/20260925 effect-family holdout"
+  },
+  {
+    "path": "current_method/run_effect_family_holdout.py",
+    "sha256": "9409828fac5d7e8de757c3e0e039dbc812a43116b083c2a35d1dcbeeb3c7ffe8",
+    "bytes": 15594,
+    "source": "revision/20260925 effect-family holdout"
+  },
+  {
+    "path": "current_method/tests/test_effect_family_holdout.py",
+    "sha256": "23f92a1fa7a7dc298b31472bc4a8204ebd62cc1fa34f1aad8efd39ae8d304028",
+    "bytes": 999,
+    "source": "revision/20260925 effect-family holdout"
+  },
+  {
+    "path": "current_method/data/manylabs2_original_effects.csv",
+    "sha256": "78b3432bebb798595ebb08ee10fb68d3f6f59cd5e0ab49606cfb6835eb226406",
+    "bytes": 12130,
+    "source": "revision/20260925 effect-family holdout"
+  },
+  {
+    "path": "current_method/data/manylabs2_original_effects_provenance.json",
+    "sha256": "c0ce991b3c0b857c58dcd1c6495aee1f7bb83da8f2437237304c70eaea40e8c4",
+    "bytes": 502,
+    "source": "revision/20260925 effect-family holdout"
+  },
+  {
+    "path": "current_method/results/effect_family_holdout/excluded_studies.csv",
+    "sha256": "30694b8555f31c2b1c5a5a7fd43bb6912bec9759777c08b5d9c5d3e44279f8f6",
+    "bytes": 149,
+    "source": "revision/20260925 effect-family holdout"
+  },
+  {
+    "path": "current_method/results/effect_family_holdout/included_studies.csv",
+    "sha256": "d46bd06e91e7b67c7f40d1d66ffa8d4395d11b0d721bdd22dc5638256b842918",
+    "bytes": 1242,
+    "source": "revision/20260925 effect-family holdout"
+  },
+  {
+    "path": "current_method/results/effect_family_holdout/leakage_audit.csv",
+    "sha256": "263d5f52089883d99a23824e681c0689cbb03f0ff291266a77e033d8368091de",
+    "bytes": 2067,
+    "source": "revision/20260925 effect-family holdout"
+  },
+  {
+    "path": "current_method/results/effect_family_holdout/predictions.csv",
+    "sha256": "c46d47588735a51361cb94b6bed4207138625d09521733175c06fbb26c323e9f",
+    "bytes": 16012,
+    "source": "revision/20260925 effect-family holdout"
+  },
+  {
+    "path": "current_method/results/effect_family_holdout/report.md",
+    "sha256": "99c6a4357726703b4c83bd2bd26f4a4203e9d8158613e4cb258c6ec48ad83c65",
+    "bytes": 3838,
+    "source": "revision/20260925 effect-family holdout"
+  },
+  {
+    "path": "current_method/results/effect_family_holdout/run_manifest.json",
+    "sha256": "6cd1c6dbf0583e7568078b4a4700e9f7c33f2d9f3036aa946fb18819a39e524c",
+    "bytes": 2151,
+    "source": "revision/20260925 effect-family holdout"
+  },
+  {
+    "path": "current_method/results/effect_family_holdout/summary.csv",
+    "sha256": "3b88face12ee5a6f62e189ede52712650e19dbe61eb9821b1425a487955b746f",
+    "bytes": 2119,
+    "source": "revision/20260925 effect-family holdout"
   }
 ]

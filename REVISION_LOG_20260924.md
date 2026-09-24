@@ -75,3 +75,33 @@ No real cross-intervention mechanism labels or independent real calibration
 archive were added in this revision. The paper must retain conditional wording
 for that claim, and a future real study should freeze `Gamma`, `L`, `H`, and
 the calibration split before target outcomes are inspected.
+
+## Follow-up audit: 2026-09-25
+
+The repository now includes a real Many Labs 2 cross-effect-family holdout
+audit. It adds the pinned author summary
+`current_method/data/manylabs2_original_effects.csv`, the runner
+`current_method/run_effect_family_holdout.py`, its unit tests, protocol, and
+the saved result directory `current_method/results/effect_family_holdout/`.
+
+The split was fixed before scoring: five complete target families (Hauser,
+Huang, Miyamoto, Ross, Savani), ten target studies, and 28 eligible records
+from the 32-row summary. Fixed/random effects, context-stratified pooling, a
+training-range baseline, and family split-conformal are compared. The audit
+reports release/refusal, interval width, noisy-reference coverage, absolute
+error, sign error, and a target-effect flip test. Maximum prediction and
+radius changes under the leakage test are both zero.
+
+At the pre-set half-width thresholds 0.20--1.00, fixed effects release 20%--
+100% with 0.50 coverage over all ten targets; random effects release 0%--20%
+with 0.90 all-target coverage; the robust range and split-conformal rules
+refuse all targets at these thresholds. The released-target counts are small,
+and the references are noisy standardized effects rather than causal truth.
+
+This experiment closes the prior gap of having only same-intervention source
+holdout for real data, but it does not close the central mechanism gap: the
+public summary has no real `U_i`, independent calibration archive, or causal
+truth. The next feasible step is a preregistered/newly collected
+cross-intervention archive with design-metadata mechanism proxies frozen before
+target outcomes, an independent calibration split, and the same baseline
+panel.

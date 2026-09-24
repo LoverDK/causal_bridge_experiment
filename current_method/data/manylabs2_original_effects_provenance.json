@@ -1,0 +1,9 @@
+{
+  "url": "https://raw.githubusercontent.com/ManyLabsOpenScience/ManyLabs2/acef63fc397b8dce7f0b00f863bcea78d324bea8/OSFdata/!!RawData/ML2_OriginalEffects.csv",
+  "commit": "acef63fc397b8dce7f0b00f863bcea78d324bea8",
+  "sha256": "78b3432bebb798595ebb08ee10fb68d3f6f59cd5e0ab49606cfb6835eb226406",
+  "bytes": 12130,
+  "paper_source": "Klein et al. (2018), Many Labs 2",
+  "use": "Cross-effect-family holdout external-validity stress test",
+  "eligibility": "Finite ESCI.d, positive ESCI.var.d, N > 1"
+}

@@ -46,6 +46,7 @@ python reproduce.py workflow --profile full --workers 4 --output reproduced/work
 python reproduce.py ablations --profile full --workers 4 --output reproduced/ablation-full
 python reproduce.py real --output reproduced/real
 python reproduce.py calibration --output reproduced/calibration
+python reproduce.py effect-family --output reproduced/effect-family
 python reproduce.py legacy-nsw --output reproduced/nsw
 python reproduce.py legacy-extensions --profile full --output reproduced/extensions
 python reproduce.py figures --output reproduced/figures
