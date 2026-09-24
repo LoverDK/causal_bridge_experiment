@@ -1,0 +1,8 @@
+{
+  "repetitions_per_scenario": 200,
+  "base_seed": 20260922,
+  "exatlas_variant": "composition-only; no LLM enrichment, reconciliation, or bridge generation",
+  "exatlas_residual_threshold": 0.1,
+  "purpose": "controlled observable and hidden target-shift audit of composability and refusal",
+  "target_outcomes_used_for_fit": false
+}
