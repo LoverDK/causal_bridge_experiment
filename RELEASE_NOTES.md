@@ -54,3 +54,14 @@ release at most 100% and 20%, respectively, while the robust range and
 split-conformal rules refuse all targets. The next evidence requirement remains
 an independently calibrated, design-metadata mechanism archive collected or
 preregistered across interventions.
+
+## 25 September 2026: named baseline panel
+
+The family holdout now has a separate baseline panel covering transport
+meta-regression, hierarchical meta-analysis, robust partial identification,
+study-level split-conformal, and family-level split-conformal under the same
+frozen targets and thresholds. Hierarchical coverage is 0.90 and robust-range
+coverage is 1.00 over ten noisy references, but they release at most 2/10 and
+0/10 respectively at the preset thresholds. The panel closes the named
+baseline comparison gap while retaining the limitation that Many Labs 2 has no
+real mechanism sets, independent calibration archive, or causal target truth.

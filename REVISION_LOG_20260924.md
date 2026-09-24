@@ -105,3 +105,31 @@ truth. The next feasible step is a preregistered/newly collected
 cross-intervention archive with design-metadata mechanism proxies frozen before
 target outcomes, an independent calibration split, and the same baseline
 panel.
+
+## Follow-up baseline panel: 2026-09-25
+
+The same frozen family holdout now has an explicit baseline panel in
+`current_method/run_effect_family_baselines.py`, with protocol and tests in
+`current_method/docs/effect_family_baselines_protocol.md` and
+`current_method/tests/test_effect_family_baselines.py`. The result directory
+is `current_method/results/effect_family_baselines/`.
+
+The panel compares transport meta-regression, Normal-Normal hierarchical
+meta-analysis, a robust training-range partial-identification baseline,
+study-level split-conformal, and stricter family-level split-conformal. It
+reports the same release/refusal, width, noisy-reference coverage, absolute
+error, and sign-error metrics at thresholds 0.20--1.00, with a per-family
+target-effect flip audit.
+
+For the ten held-out studies, hierarchical coverage is 0.90 and robust-range
+coverage is 1.00, but hierarchical releases only 2/10 at threshold 1.00 and
+the robust and both conformal rules release 0/10 throughout the preset range.
+Transport meta-regression releases 2/10 and has all-target coverage 0.80.
+Maximum prediction and radius changes under the flip audit are both zero.
+
+This closes the missing named-baseline comparison in the real-data audit. It
+does not close the decisive evidence gap: the public Many Labs summary still
+contains no real mechanism sets `U_i`, independent calibration archive, or
+causal target truth. The next feasible plan is a preregistered or newly
+collected cross-intervention archive with design-metadata mechanism proxies,
+an independent calibration split, and the same baseline panel.

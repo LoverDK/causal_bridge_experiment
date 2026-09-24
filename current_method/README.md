@@ -34,6 +34,8 @@ python -m unittest discover -s tests -v
 
 跨 effect family 的真实外部有效性审计使用 `python current_method/run_effect_family_holdout.py`，或 `python reproduce.py effect-family --output reproduced/effect-family`。它固定留出 Hauser、Huang、Miyamoto、Ross、Savani 五个完整 family，报告多种迁移基线、拒绝率、宽度、噪声参考覆盖、误差、符号错误和目标效应翻转泄漏检查。它补充真实跨家族压力测试，但不冒称现实机制集合已经校准。
 
+同一留出协议下的显式 baseline panel 使用 `python current_method/run_effect_family_baselines.py`，或 `python reproduce.py effect-family-baselines --output reproduced/effect-family-baselines`。它逐项比较 transport meta-regression、hierarchical meta-analysis、robust partial-identification、study-level split-conformal 和 family-level split-conformal，并保存统一指标与泄漏审计。
+
 第二轮独立复核：
 
 ```powershell

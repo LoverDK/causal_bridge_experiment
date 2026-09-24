@@ -25,7 +25,7 @@ def run(cmd,cwd):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('suite',choices=['verify','current','plus','workflow','ablations','audit-ablations','real','calibration','effect-family','original','legacy-nsw','legacy-extensions','figures'])
+    parser.add_argument('suite',choices=['verify','current','plus','workflow','ablations','audit-ablations','real','calibration','effect-family','effect-family-baselines','original','legacy-nsw','legacy-extensions','figures'])
     parser.add_argument('--profile',choices=['smoke','full'],default='smoke')
     parser.add_argument('--output',type=Path,default=ROOT/'reproduced')
     parser.add_argument('--workers',type=int,default=4)
@@ -44,17 +44,18 @@ def main():
     if out.exists():
         raise FileExistsError('Choose a new --output directory to preserve previous runs: '+str(out))
     out.mkdir(parents=True)
-    if args.suite in ['current','plus','workflow','ablations','real','calibration','effect-family']:
+    if args.suite in ['current','plus','workflow','ablations','real','calibration','effect-family','effect-family-baselines']:
         dest=out/'current_method'
         shutil.copytree(ROOT/'current_method',dest,ignore=shutil.ignore_patterns('results','__pycache__'))
-        script={'current':'run_all.py','plus':'run_plus.py','workflow':'run_workflow.py','ablations':'run_ablations.py','real':'run_real_supplement.py','calibration':'run_mechanism_calibration.py','effect-family':'run_effect_family_holdout.py'}[args.suite]
+        script={'current':'run_all.py','plus':'run_plus.py','workflow':'run_workflow.py','ablations':'run_ablations.py','real':'run_real_supplement.py','calibration':'run_mechanism_calibration.py','effect-family':'run_effect_family_holdout.py','effect-family-baselines':'run_effect_family_baselines.py'}[args.suite]
         cmd=[script]
-        if args.suite not in ['real','calibration','effect-family']:
+        if args.suite not in ['real','calibration','effect-family','effect-family-baselines']:
             profile={'workflow':'workflow_'+args.profile,'plus':args.profile+'_plus'}.get(args.suite,args.profile)
             cmd+=['--profile',profile]
         if args.suite in ['workflow','ablations']:cmd+=['--workers',args.workers]
         if args.suite=='calibration':cmd+=['--output',Path('results')/'mechanism_calibration']
         if args.suite=='effect-family':cmd+=['--output',Path('results')/'effect_family_holdout']
+        if args.suite=='effect-family-baselines':cmd+=['--output',Path('results')/'effect_family_baselines']
         run(cmd,dest)
     elif args.suite=='audit-ablations':
         dest=out/'current_method'

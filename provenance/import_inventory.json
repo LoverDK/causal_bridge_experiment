@@ -16,9 +16,9 @@
   },
   {
     "path": "CURRENT_ARTIFACTS.md",
-    "sha256": "3a68b4adb273303f8eefd3f55ddea6df3fb1ead74bb3e06345494fd329d38b63",
+    "sha256": "2a9c5cb7a48f82f7988d15e005dd148a12eb792d5b07959cb0d30896d3926005",
     "source": "current supplementary package",
-    "bytes": 2906
+    "bytes": 3089
   },
   {
     "path": "current_method/atlas_new/__init__.py",
@@ -142,9 +142,9 @@
   },
   {
     "path": "current_method/docs/执行记录.md",
-    "sha256": "e2c51d2b8e81a5d2782481ae0b273fd1f6952dc800b963074229c28f80f526cb",
+    "sha256": "b360cf4d7a49978a63823f9db93344c2c19975f1e368b18c36e830c4d539cc58",
     "source": "experiment/new_version/docs/执行记录.md",
-    "bytes": 3249
+    "bytes": 4210
   },
   {
     "path": "current_method/docs/指标字典.md",
@@ -178,9 +178,9 @@
   },
   {
     "path": "current_method/README.md",
-    "sha256": "d578a5266ea761c610cde726103c995c445ed9cd33806e7e64993ed42338248e",
+    "sha256": "d6c9a915d2230a13f562133e2388879a68f1d7eadfab6f941d2bc1a63e225f0f",
     "source": "experiment/new_version/README.md",
-    "bytes": 6790
+    "bytes": 7205
   },
   {
     "path": "current_method/refresh_report.py",
@@ -1190,21 +1190,21 @@
   },
   {
     "path": "README.md",
-    "sha256": "5e4cec35f5696758fef67bfdff24e778669e303c85f386852568d1038e0f566c",
+    "sha256": "71d41382699c3f47bee9cae2e611b43f809dde5e63be8ca665b6a81b704e6b94",
     "source": "current supplementary package",
-    "bytes": 6163
+    "bytes": 6251
   },
   {
     "path": "RELEASE_NOTES.md",
-    "sha256": "003f20c64c06ca918e518e341ffe2651ba2356ffc16fe4371599797249438c3f",
+    "sha256": "3630455eada9ffdeb66d53f13e76d2ad541fea9e63d1ad239aeb3246a309ee97",
     "source": "current supplementary package",
-    "bytes": 3913
+    "bytes": 4567
   },
   {
     "path": "reproduce.py",
-    "sha256": "0369ad414f52e4fa1d4002c3935c58749817160cc87a35a4b0d532a4e8b349ce",
+    "sha256": "aadb101ce178bbbc3310ac6b5b8f12014969c583b19749e85b3b1481ccdb0395",
     "source": "current supplementary package",
-    "bytes": 4891
+    "bytes": 5137
   },
   {
     "path": "requirements.txt",
@@ -1213,9 +1213,9 @@
   },
   {
     "path": "REVISION_LOG_20260924.md",
-    "sha256": "addbbf97c2ddd6d5c6b8c49be0f3fd160d794f04b548c8e393f0d45ce8868b75",
+    "sha256": "ae7f5f589e0cf43427816922868a382f3be0c2a17104dd6974d61382403c5b00",
     "source": "revision/20260924",
-    "bytes": 5069
+    "bytes": 6668
   },
   {
     "path": "SUPPLEMENTARY_README.md",
@@ -1293,5 +1293,53 @@
     "sha256": "3b88face12ee5a6f62e189ede52712650e19dbe61eb9821b1425a487955b746f",
     "bytes": 2119,
     "source": "revision/20260925 effect-family holdout"
+  },
+  {
+    "path": "current_method/docs/effect_family_baselines_protocol.md",
+    "sha256": "ea473ae6b490123f70779a4eb999726ed61af044800bed57bdc8b475de2b2f2e",
+    "bytes": 2210,
+    "source": "revision/20260925 baseline panel"
+  },
+  {
+    "path": "current_method/run_effect_family_baselines.py",
+    "sha256": "8d9908b3e2acac97cc64207111a760c58b2e6492ffb905d972715545b33724bf",
+    "bytes": 13761,
+    "source": "revision/20260925 baseline panel"
+  },
+  {
+    "path": "current_method/tests/test_effect_family_baselines.py",
+    "sha256": "91d65465d300ff156cceeefa67414e89e48cdb2c930f577289d779d81c24d132",
+    "bytes": 1268,
+    "source": "revision/20260925 baseline panel"
+  },
+  {
+    "path": "current_method/results/effect_family_baselines/leakage_audit.csv",
+    "sha256": "bd588756a4b6ed98a3c69906352988f2ec238271e25ac0bdd404ee8ae760208c",
+    "bytes": 2387,
+    "source": "revision/20260925 baseline panel"
+  },
+  {
+    "path": "current_method/results/effect_family_baselines/predictions.csv",
+    "sha256": "18c30243a0e31b3856bccc05b6441bdaaa4597da5476d0af052d236e17a3062d",
+    "bytes": 6759,
+    "source": "revision/20260925 baseline panel"
+  },
+  {
+    "path": "current_method/results/effect_family_baselines/report.md",
+    "sha256": "b82912e620f3549f3356f6f94712380090f246c448659d94b557d82fbd905516",
+    "bytes": 3770,
+    "source": "revision/20260925 baseline panel"
+  },
+  {
+    "path": "current_method/results/effect_family_baselines/run_manifest.json",
+    "sha256": "91973224fbc71d9ad566816f02987d436fbedeccba65d87e4162bca8e0a08ce9",
+    "bytes": 1916,
+    "source": "revision/20260925 baseline panel"
+  },
+  {
+    "path": "current_method/results/effect_family_baselines/summary.csv",
+    "sha256": "8ba7ce2078bfd3d99a29e78d58bcee17644831ddda60703a895129b47fb82e49",
+    "bytes": 1975,
+    "source": "revision/20260925 baseline panel"
   }
 ]
