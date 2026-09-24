@@ -65,3 +65,17 @@ coverage is 1.00 over ten noisy references, but they release at most 2/10 and
 0/10 respectively at the preset thresholds. The panel closes the named
 baseline comparison gap while retaining the limitation that Many Labs 2 has no
 real mechanism sets, independent calibration archive, or causal target truth.
+
+## 25 September 2026: baseline-unit correction and all-family sensitivity
+
+The baseline audit was corrected after finding that `study.name` is a family
+label, not a unique study unit. The corrected output uses `study.analysis` for
+study-level conformal calibration and is saved separately from the historical
+run. Study-level coverage changes from 0.80 to 1.00 on the ten-target panel,
+with zero releases at the preset thresholds.
+
+An all-family sensitivity panel holds out all 23 eligible families and 28
+valid effects. Hierarchical and transport coverage are 0.964 and 0.929, with
+only 2/28 releases each; robust and both conformal methods release 0/28. This
+improves audit validity and target-family coverage but does not establish real
+mechanism-set calibration or causal target truth.

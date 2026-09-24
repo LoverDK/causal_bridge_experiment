@@ -119,7 +119,9 @@ def _predict(train: pd.DataFrame, target: pd.Series) -> list[dict[str, float | s
     hi = float(train.effect.max() + z * target_se)
     robust_center = (lo + hi) / 2.0
     robust_radius = (hi - lo) / 2.0
-    study_center, study_radius = _conformal_radius(train, target, "study.name")
+    # ``study.name`` is the effect-family label in the author summary. Use the
+    # unique analysis id for the study-level calibration unit.
+    study_center, study_radius = _conformal_radius(train, target, "study.analysis")
     family_center, family_radius = _conformal_radius(train, target, "family")
     return [
         {"method": "transport_meta_regression", "estimate": transport, "radius": transport_radius},
@@ -207,7 +209,7 @@ def leakage_audit(frame: pd.DataFrame, original: pd.DataFrame) -> pd.DataFrame:
 
 def write_report(predictions: pd.DataFrame, summary: pd.DataFrame, leakage: pd.DataFrame) -> str:
     lines = [
-        "# Many Labs 2 baseline panel under cross-effect-family holdout",
+        "# Many Labs 2 corrected baseline panel under cross-effect-family holdout",
         "",
         f"The panel uses the pinned Many Labs 2 summary at commit `{COMMIT}` (SHA-256 `{DATA_SHA256}`), with the same five complete-family holdouts and ten targets as the external-validity audit.",
         "",
@@ -216,7 +218,7 @@ def write_report(predictions: pd.DataFrame, summary: pd.DataFrame, leakage: pd.D
         "- `transport_meta_regression`: weighted context meta-regression using the pre-existing WEIRD/NONWEIRD design metadata.",
         "- `hierarchical_meta_analysis`: Normal-Normal random-effects predictive interval with DerSimonian--Laird heterogeneity.",
         "- `robust_partial_identification`: training effect envelope plus an N-only sampling allowance.",
-        "- `study_split_conformal`: leave-one-study-out absolute residual calibration.",
+        "- `study_split_conformal`: leave-one-`study.analysis`-out absolute residual calibration. The historical run grouped by `study.name`, which is the family label; this corrected run keeps study and family units distinct.",
         "- `family_split_conformal`: leave-one-family-out residual calibration, the stricter family-level comparison.",
         "",
         "## Results",

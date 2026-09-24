@@ -1,0 +1,78 @@
+{
+  "status": "complete",
+  "commit": "acef63fc397b8dce7f0b00f863bcea78d324bea8",
+  "data_url": "https://raw.githubusercontent.com/ManyLabsOpenScience/ManyLabs2/acef63fc397b8dce7f0b00f863bcea78d324bea8/OSFdata/!!RawData/ML2_OriginalEffects.csv",
+  "data_sha256": "78b3432bebb798595ebb08ee10fb68d3f6f59cd5e0ab49606cfb6835eb226406",
+  "target_families": [
+    "Alter",
+    "Anderson",
+    "Bauer",
+    "Critcher",
+    "Gati",
+    "Giessner",
+    "Graham",
+    "Gray",
+    "Hauser",
+    "Hsee",
+    "Huang",
+    "Kay",
+    "Knobe",
+    "Miyamoto",
+    "Risen",
+    "Ross",
+    "Rottenstreich",
+    "Savani",
+    "Shafir",
+    "Tversky",
+    "Zaval",
+    "Zhong",
+    "vanLange"
+  ],
+  "n_target_families": 23,
+  "n_target_studies": 28,
+  "methods": [
+    "family_split_conformal",
+    "hierarchical_meta_analysis",
+    "robust_partial_identification",
+    "study_split_conformal",
+    "transport_meta_regression"
+  ],
+  "release_thresholds": [
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1.0
+  ],
+  "scope": "All eligible-family external-validity sensitivity; no mechanism labels",
+  "target_outcome_fields_used_only_for_scoring": [
+    "ESCI.d"
+  ],
+  "target_effect_variance_used_only_for_eligibility": [
+    "ESCI.var.d"
+  ],
+  "source_sha256": {
+    "run_effect_family_baselines_all.py": "f640a7efb72856c8f2cd052a3d6facbfbed371cdb3f9e215e566694afa49cc96"
+  },
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "completed_utc": "2026-09-24T21:05:05.028553+00:00",
+  "artifacts": {
+    "leakage_audit.csv": {
+      "sha256": "cabf7100863b2a4bb4430f33aef94983f375ec8ad16a233fa401cd753475b088",
+      "bytes": 6591
+    },
+    "predictions.csv": {
+      "sha256": "8e4ba9f3e2832d1e9ac024947d4028f0af478d864a845499fa7be373ea6b87fd",
+      "bytes": 18699
+    },
+    "report.md": {
+      "sha256": "559c5dce2cedf4b11c3e2ef697af49b4c1799a9a3d225c31923cb9c058171e5c",
+      "bytes": 3106
+    },
+    "summary.csv": {
+      "sha256": "7137c565634ed23db5e86ef7e3478ff44e6b49054ab9d2f6d5c44b681524ec9c",
+      "bytes": 2799
+    }
+  }
+}

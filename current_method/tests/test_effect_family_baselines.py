@@ -28,6 +28,13 @@ class EffectFamilyBaselineChecks(unittest.TestCase):
         self.assertLessEqual(float(audit.prediction_change.max()), 1e-12)
         self.assertLessEqual(float(audit.radius_change.max()), 1e-12)
 
+    def test_study_and_family_units_are_not_silently_collapsed(self):
+        frame = load_data(Path(__file__).parents[1] / "data" / "manylabs2_original_effects.csv")
+        predictions = analyze(frame)
+        study = predictions[predictions.method == "study_split_conformal"].set_index(["target_family", "target_study"])
+        family = predictions[predictions.method == "family_split_conformal"].set_index(["target_family", "target_study"])
+        self.assertGreater(float((study.radius - family.radius).abs().max()), 1e-12)
+
 
 if __name__ == "__main__":
     unittest.main()

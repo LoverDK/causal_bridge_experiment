@@ -16,9 +16,9 @@
   },
   {
     "path": "CURRENT_ARTIFACTS.md",
-    "sha256": "2a9c5cb7a48f82f7988d15e005dd148a12eb792d5b07959cb0d30896d3926005",
+    "sha256": "464c0dd85def8cf86936ce2b0aca7e49ba19bbdc46dfbeafb838447b504e5546",
     "source": "current supplementary package",
-    "bytes": 3089
+    "bytes": 3472
   },
   {
     "path": "current_method/atlas_new/__init__.py",
@@ -142,9 +142,9 @@
   },
   {
     "path": "current_method/docs/执行记录.md",
-    "sha256": "b360cf4d7a49978a63823f9db93344c2c19975f1e368b18c36e830c4d539cc58",
+    "sha256": "383de56579ca378340913088660c1721bbb68ca61c0284f5cf7626f5b825fc98",
     "source": "experiment/new_version/docs/执行记录.md",
-    "bytes": 4210
+    "bytes": 4994
   },
   {
     "path": "current_method/docs/指标字典.md",
@@ -178,9 +178,9 @@
   },
   {
     "path": "current_method/README.md",
-    "sha256": "d6c9a915d2230a13f562133e2388879a68f1d7eadfab6f941d2bc1a63e225f0f",
+    "sha256": "0c13e99ce715086fdbfbe6646f0530ccddb2ea1c9b2d5b1001181b6b34fec361",
     "source": "experiment/new_version/README.md",
-    "bytes": 7205
+    "bytes": 7630
   },
   {
     "path": "current_method/refresh_report.py",
@@ -1190,21 +1190,21 @@
   },
   {
     "path": "README.md",
-    "sha256": "71d41382699c3f47bee9cae2e611b43f809dde5e63be8ca665b6a81b704e6b94",
+    "sha256": "9f6caaf3d9d35c131a84d3084c735b13edbfc64d5a1af3c2883e7e574c81b833",
     "source": "current supplementary package",
-    "bytes": 6251
+    "bytes": 6455
   },
   {
     "path": "RELEASE_NOTES.md",
-    "sha256": "3630455eada9ffdeb66d53f13e76d2ad541fea9e63d1ad239aeb3246a309ee97",
+    "sha256": "9b595109d61aeb3e71ef3bff795933cbe5f757b5cf8c8ffb13494bd0c3255892",
     "source": "current supplementary package",
-    "bytes": 4567
+    "bytes": 5358
   },
   {
     "path": "reproduce.py",
-    "sha256": "aadb101ce178bbbc3310ac6b5b8f12014969c583b19749e85b3b1481ccdb0395",
+    "sha256": "cf0642f8411f9194aa3cf382c18608931955a427605c63753bfec18a86f73077",
     "source": "current supplementary package",
-    "bytes": 5137
+    "bytes": 5717
   },
   {
     "path": "requirements.txt",
@@ -1213,9 +1213,9 @@
   },
   {
     "path": "REVISION_LOG_20260924.md",
-    "sha256": "ae7f5f589e0cf43427816922868a382f3be0c2a17104dd6974d61382403c5b00",
+    "sha256": "c17a85c24e653497a200c7e8021f62c5dcbc4972764d80048a36545e0e9d3f9d",
     "source": "revision/20260924",
-    "bytes": 6668
+    "bytes": 8515
   },
   {
     "path": "SUPPLEMENTARY_README.md",
@@ -1296,20 +1296,20 @@
   },
   {
     "path": "current_method/docs/effect_family_baselines_protocol.md",
-    "sha256": "ea473ae6b490123f70779a4eb999726ed61af044800bed57bdc8b475de2b2f2e",
-    "bytes": 2210,
+    "sha256": "938dbead0b4877b2c12a3200e3fa536f5231a829de9ddaed05d8d464b6fd0c27",
+    "bytes": 2466,
     "source": "revision/20260925 baseline panel"
   },
   {
     "path": "current_method/run_effect_family_baselines.py",
-    "sha256": "8d9908b3e2acac97cc64207111a760c58b2e6492ffb905d972715545b33724bf",
-    "bytes": 13761,
+    "sha256": "cb5f84e9b7f3b845a25203084d7a9ef5ebe99a4fa6150497339c1194f564afb5",
+    "bytes": 14057,
     "source": "revision/20260925 baseline panel"
   },
   {
     "path": "current_method/tests/test_effect_family_baselines.py",
-    "sha256": "91d65465d300ff156cceeefa67414e89e48cdb2c930f577289d779d81c24d132",
-    "bytes": 1268,
+    "sha256": "91e0986eaa3fbfdd78f0e6facdd0f055bb8c4442747986d934b8fa2f8d94b457",
+    "bytes": 1800,
     "source": "revision/20260925 baseline panel"
   },
   {
@@ -1341,5 +1341,83 @@
     "sha256": "8ba7ce2078bfd3d99a29e78d58bcee17644831ddda60703a895129b47fb82e49",
     "bytes": 1975,
     "source": "revision/20260925 baseline panel"
+  },
+  {
+    "path": "current_method/docs/effect_family_baselines_all_protocol.md",
+    "sha256": "3d35637911638066554f78023c9c0c83d499ef69baba73adbc69e9b29aeceb1d",
+    "bytes": 1726,
+    "source": "revision/20260925 baseline correction and sensitivity"
+  },
+  {
+    "path": "current_method/run_effect_family_baselines_all.py",
+    "sha256": "f640a7efb72856c8f2cd052a3d6facbfbed371cdb3f9e215e566694afa49cc96",
+    "bytes": 9061,
+    "source": "revision/20260925 baseline correction and sensitivity"
+  },
+  {
+    "path": "current_method/tests/test_effect_family_baselines_all.py",
+    "sha256": "7c37f624abdd9a3645551774ac81601dbe0f6a6cca1396c7fdd5be36c7bae828",
+    "bytes": 985,
+    "source": "revision/20260925 baseline correction and sensitivity"
+  },
+  {
+    "path": "current_method/results/effect_family_baselines_corrected/leakage_audit.csv",
+    "sha256": "bd588756a4b6ed98a3c69906352988f2ec238271e25ac0bdd404ee8ae760208c",
+    "bytes": 2387,
+    "source": "revision/20260925 baseline correction and sensitivity"
+  },
+  {
+    "path": "current_method/results/effect_family_baselines_corrected/predictions.csv",
+    "sha256": "87e8cb74b0f553f1fd41c8e61c83f67c002833b1369f109baae482a2b976121a",
+    "bytes": 6760,
+    "source": "revision/20260925 baseline correction and sensitivity"
+  },
+  {
+    "path": "current_method/results/effect_family_baselines_corrected/report.md",
+    "sha256": "6d9dfc5209a63a72daf6f9ab6aa8fbbcc44e9c6a7490c1fc6673b6d851290629",
+    "bytes": 3920,
+    "source": "revision/20260925 baseline correction and sensitivity"
+  },
+  {
+    "path": "current_method/results/effect_family_baselines_corrected/run_manifest.json",
+    "sha256": "82f90519886baf3b91f7377da5fa938278a6f1dfdb8f6669e233eea351e1819d",
+    "bytes": 1916,
+    "source": "revision/20260925 baseline correction and sensitivity"
+  },
+  {
+    "path": "current_method/results/effect_family_baselines_corrected/summary.csv",
+    "sha256": "d9042def5a8a985e0c29b8b0bc1565c9835c04a0ff3921ffbfd76aba617033f5",
+    "bytes": 1965,
+    "source": "revision/20260925 baseline correction and sensitivity"
+  },
+  {
+    "path": "current_method/results/effect_family_baselines_all/leakage_audit.csv",
+    "sha256": "cabf7100863b2a4bb4430f33aef94983f375ec8ad16a233fa401cd753475b088",
+    "bytes": 6591,
+    "source": "revision/20260925 baseline correction and sensitivity"
+  },
+  {
+    "path": "current_method/results/effect_family_baselines_all/predictions.csv",
+    "sha256": "8e4ba9f3e2832d1e9ac024947d4028f0af478d864a845499fa7be373ea6b87fd",
+    "bytes": 18699,
+    "source": "revision/20260925 baseline correction and sensitivity"
+  },
+  {
+    "path": "current_method/results/effect_family_baselines_all/report.md",
+    "sha256": "559c5dce2cedf4b11c3e2ef697af49b4c1799a9a3d225c31923cb9c058171e5c",
+    "bytes": 3106,
+    "source": "revision/20260925 baseline correction and sensitivity"
+  },
+  {
+    "path": "current_method/results/effect_family_baselines_all/run_manifest.json",
+    "sha256": "2bb4f792665855964e746d92cf8756f07a59735558921f59274c23f2455f65be",
+    "bytes": 2190,
+    "source": "revision/20260925 baseline correction and sensitivity"
+  },
+  {
+    "path": "current_method/results/effect_family_baselines_all/summary.csv",
+    "sha256": "7137c565634ed23db5e86ef7e3478ff44e6b49054ab9d2f6d5c44b681524ec9c",
+    "bytes": 2799,
+    "source": "revision/20260925 baseline correction and sensitivity"
   }
 ]

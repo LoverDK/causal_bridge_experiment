@@ -133,3 +133,35 @@ contains no real mechanism sets `U_i`, independent calibration archive, or
 causal target truth. The next feasible plan is a preregistered or newly
 collected cross-intervention archive with design-metadata mechanism proxies,
 an independent calibration split, and the same baseline panel.
+
+## Implementation correction and all-family sensitivity: 2026-09-25
+
+An audit of the baseline implementation found that the first panel passed
+`study.name` to the study-level conformal routine. In the Many Labs author
+summary, `study.name` is the family label, so that run silently collapsed the
+study-level and family-level calibration units. The old output remains in
+`results/effect_family_baselines/` as a historical audit record; the corrected
+five-family output is in `results/effect_family_baselines_corrected/` and now
+uses unique `study.analysis` ids for study-level leave-one-out calibration.
+
+The correction changes study-level noisy-reference coverage from 0.80 to
+1.00 on the ten-target panel, while its release rate remains 0/10 at every
+preset half-width threshold. Family-level conformal remains 0.80 coverage and
+0/10 release. A new unit test verifies that the two radii are not silently
+identical.
+
+To test target-selection sensitivity, the new
+`results/effect_family_baselines_all/` panel holds out all 23 eligible
+families and all 28 valid study-level effects. Hierarchical coverage is 0.964
+and transport coverage is 0.929; each releases only 2/28 at the preset range.
+Robust partial identification and both conformal rules have 1.00 coverage in
+this noisy-reference audit but release 0/28. All target-effect flip audits
+remain exactly zero.
+
+This correction improves the validity of the baseline comparison and the
+all-family sensitivity analysis, but it does not reduce the central distance
+to the PDF assessment's strongest requirement: there is still no real `U_i`,
+independent outcome-blind calibration archive, or causal target truth. The
+next feasible experiment remains a preregistered or newly collected
+cross-intervention archive with mechanism proxies and calibration split frozen
+before target outcomes are read.

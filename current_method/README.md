@@ -36,6 +36,8 @@ python -m unittest discover -s tests -v
 
 同一留出协议下的显式 baseline panel 使用 `python current_method/run_effect_family_baselines.py`，或 `python reproduce.py effect-family-baselines --output reproduced/effect-family-baselines`。它逐项比较 transport meta-regression、hierarchical meta-analysis、robust partial-identification、study-level split-conformal 和 family-level split-conformal，并保存统一指标与泄漏审计。
 
+2026-09-25 修正版把 study-level conformal 的校准单元改为唯一 `study.analysis`，并增加全部 23 个可纳入 family 的敏感性运行：`python current_method/run_effect_family_baselines_all.py`。修正版结果和全部-family结果分别保存在 `results/effect_family_baselines_corrected/` 与 `results/effect_family_baselines_all/`，旧版 `results/effect_family_baselines/` 保留为历史审计。
+
 第二轮独立复核：
 
 ```powershell

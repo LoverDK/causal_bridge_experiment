@@ -18,6 +18,7 @@ in an isolated directory.
 | Mechanism-set calibration audit | `current_method/results/mechanism_calibration/` | `python reproduce.py calibration --output reproduced/calibration` |
 | Cross-effect-family external-validity audit | `current_method/results/effect_family_holdout/` | `python reproduce.py effect-family --output reproduced/effect-family` |
 | Cross-effect-family baseline panel | `current_method/results/effect_family_baselines/` | `python reproduce.py effect-family-baselines --output reproduced/effect-family-baselines` |
+| Corrected and all-family baseline sensitivities | `current_method/results/effect_family_baselines_corrected/`, `current_method/results/effect_family_baselines_all/` | `python reproduce.py effect-family-baselines-corrected --output reproduced/effect-family-baselines-corrected` and `python reproduce.py effect-family-baselines-all --output reproduced/effect-family-baselines-all` |
 
 The existing PDF assets are the paper inputs. `paper_figures/render_appendix_figures.py`
 regenerates the portable Figure 5/6 assets from committed CSV files; font and

@@ -1,0 +1,59 @@
+{
+  "status": "complete",
+  "commit": "acef63fc397b8dce7f0b00f863bcea78d324bea8",
+  "data_url": "https://raw.githubusercontent.com/ManyLabsOpenScience/ManyLabs2/acef63fc397b8dce7f0b00f863bcea78d324bea8/OSFdata/!!RawData/ML2_OriginalEffects.csv",
+  "data_sha256": "78b3432bebb798595ebb08ee10fb68d3f6f59cd5e0ab49606cfb6835eb226406",
+  "eligible_target_families": [
+    "Hauser",
+    "Huang",
+    "Miyamoto",
+    "Ross",
+    "Savani"
+  ],
+  "release_thresholds": [
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1.0
+  ],
+  "n_target_studies": 10,
+  "methods": [
+    "family_split_conformal",
+    "hierarchical_meta_analysis",
+    "robust_partial_identification",
+    "study_split_conformal",
+    "transport_meta_regression"
+  ],
+  "scope": "Baseline comparison under real Many Labs 2 cross-effect-family holdout; no mechanism labels",
+  "target_outcome_fields_used_only_for_scoring": [
+    "ESCI.d"
+  ],
+  "target_effect_variance_used_only_for_eligibility": [
+    "ESCI.var.d"
+  ],
+  "source_sha256": {
+    "run_effect_family_baselines.py": "cb5f84e9b7f3b845a25203084d7a9ef5ebe99a4fa6150497339c1194f564afb5"
+  },
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "completed_utc": "2026-09-24T21:10:44.441135+00:00",
+  "artifacts": {
+    "leakage_audit.csv": {
+      "sha256": "bd588756a4b6ed98a3c69906352988f2ec238271e25ac0bdd404ee8ae760208c",
+      "bytes": 2387
+    },
+    "predictions.csv": {
+      "sha256": "87e8cb74b0f553f1fd41c8e61c83f67c002833b1369f109baae482a2b976121a",
+      "bytes": 6760
+    },
+    "report.md": {
+      "sha256": "6d9dfc5209a63a72daf6f9ab6aa8fbbcc44e9c6a7490c1fc6673b6d851290629",
+      "bytes": 3920
+    },
+    "summary.csv": {
+      "sha256": "d9042def5a8a985e0c29b8b0bc1565c9835c04a0ff3921ffbfd76aba617033f5",
+      "bytes": 1965
+    }
+  }
+}
