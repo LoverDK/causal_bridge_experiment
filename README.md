@@ -86,6 +86,8 @@ The first outcome-blind variable-label audit is in
 with its machine-readable label handoff in
 [microcredit_variable_label_audit.csv](microcredit_variable_label_audit.csv)
 and extractor in [tools/inspect_microcredit_metadata.py](tools/inspect_microcredit_metadata.py).
+The conservative treatment/control compatibility draft is in
+[MICROCREDIT_ESTIMAND_MATRIX_DRAFT_20260925.md](MICROCREDIT_ESTIMAND_MATRIX_DRAFT_20260925.md).
 The detailed author response to the real cross-intervention critique is in
 [REAL_CROSS_INTERVENTION_AUTHOR_RESPONSE.md](REAL_CROSS_INTERVENTION_AUTHOR_RESPONSE.md).
 

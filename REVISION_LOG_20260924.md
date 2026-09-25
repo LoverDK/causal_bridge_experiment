@@ -297,6 +297,16 @@ The header-only extractor `tools/inspect_microcredit_metadata.py` generated
 provides a concrete coder handoff, while retaining the rule that variable names
 alone do not establish a common treatment or estimand.
 
+## Draft estimand compatibility matrix: 2026-09-25
+
+The package labels now support a conservative study-by-study estimand matrix.
+It keeps Karlan--Zinman outside the pooled invitation-ITT pilot until the
+credit-score design is reviewed, keeps Attanasio and Tarozzi multi-arm contrasts
+separate until their control arms are frozen, and marks unknown controls and
+horizons explicitly for the other studies. The matrix and CSV are
+`MICROCREDIT_ESTIMAND_MATRIX_DRAFT_20260925.md` and
+`microcredit_estimand_matrix_draft.csv`.
+
 ## Distance to the reviewer requirement after this step
 
 The package-access and file-inventory gap is closed, and the feasibility of

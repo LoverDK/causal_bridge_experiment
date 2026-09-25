@@ -62,3 +62,8 @@ been completed.
    test compatibility, leakage controls and descriptive refusal behaviour.
 4. Keep Karlan--Zinman separate until its credit-score experiment can be shown
    to identify the declared invitation-ITT estimand.
+
+The resulting conservative compatibility draft is recorded in
+`MICROCREDIT_ESTIMAND_MATRIX_DRAFT_20260925.md` and its CSV companion. It is
+deliberately not a harmonized effect dataset: unknown control conditions and
+horizons remain unknown until the design sources are reviewed.

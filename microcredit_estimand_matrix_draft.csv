@@ -1,0 +1,8 @@
+study_id,country,treatment_evidence,control_evidence,outcome_horizon_evidence,current_decision
+angelucci_2015,Mexico,"Treatment; BTreatment fields; exact contrast not frozen",unknown,"Business; loan; consumption candidates; horizon not frozen",design review
+attanasio_2015,Mongolia,"treatment labelled Soum belongs to treatment; group/individual fields",unknown,"Credit; self-employment; income; labour; consumption files; horizon not frozen",separate multi-arm contrasts
+augsberg_2015,Bosnia,"treatment; ebrd_selected_loan; randomisation date/time",unknown,"Baseline loans; consumption; income; business sections; linkage/horizon not frozen",design and linkage review
+banerjee_2015,India,"treatment labelled Treatment area",unknown,"Baseline/endline; credit; business; income; consumption indices; horizon not frozen",wave and control review
+crepon_2015,Morocco,"treatment labelled 1 if treated village; wave; random5_final",unknown,"Baseline/endline; admin loan terms; multiple waves",design and horizon review
+karlan_zinman_2011,Philippines,"css_randomizetag labelled decision randomized; no simple invitation assignment",unknown,"Credit score; loan decision; loan terms; estimand not established",exclude pending design review
+tarozzi_2015,Ethiopia,"PA-level randomization; patypen; D_MF/D_Both/D_FP/D_None", "D_None assigned-none arm documented", "time baseline/endline; credit; revenues; costs; consumption candidates", candidate MF-versus-none ITT
