@@ -1,0 +1,40 @@
+{
+  "command": [
+    "python",
+    "legacy_audits/scripts/run/run_nsw_real_proxy_truth.py",
+    "--repetitions",
+    "100",
+    "--output",
+    "D:\\study\\zzh\u79d1\u7814\\output\\causal_bridge_experiment_publish\\legacy_audits\\results\\extensions\\nsw_real_proxy_truth_v2"
+  ],
+  "seed": 2026092501,
+  "settings": {
+    "repetitions": 100,
+    "alpha": 0.1,
+    "entity_size": 8
+  },
+  "python": "3.13.15",
+  "numpy": "2.5.2",
+  "base_commit": "4cb1cb15d54f9b8c8cac5a2932ec50f46f951c29",
+  "sources": {
+    "data/nsw_dw.dta": "d1bd2680a1c6f799f1c6d2455bf29633fdf19be01cb19490621c20a560b4e072",
+    "docs/paper/nsw_real_proxy_truth_protocol.md": "d3088871f9d713d570ead14fcc76e57b2ca64d398d32bc6ab793cee7a0acca49",
+    "scripts/run/run_nsw_real_proxy_truth.py": "b22686f848a37bb6bffa9eced9cb98632ed0a1c3b12410bd64128d0eb2d83414",
+    "src/causal_atlas_sim/extension_nsw.py": "3356cacddae85587a9c384345fabf19654b3664d46b8d499a6463a4462dabab5",
+    "src/causal_atlas_sim/extension_baselines.py": "2a4920e1a18472991a57af53743ff10ab08d8b5c3ec8bdfdbaad55baac9d89b9"
+  },
+  "outputs": {
+    "causal_truth_design.json": "79303d53321e99e1815fd76df072ef0d15527182ecc1e0aa69e3e97e6c49045b",
+    "real_covariate_proxy_records.csv": "0ae91bc2363c7327399e094d63bb0e6ec20f5a427fdea10ef125cb5242a6a9ad",
+    "real_covariate_proxy_summary.csv": "90e2fa95a0f393344e5563d0293d537590ad150c0c7f6236fb8fe71c359e08a2",
+    "semisynthetic_truth_records.csv": "bced5dfbc920a32a6094dec8e272f944f24718d1f5ed6d7060a9c7b0f40d8aad",
+    "semisynthetic_truth_summary.csv": "6f139e3b0fa4cbe3c228bf2b425381773173265fe022c202ccfcd7c731d9989c",
+    "split_manifest.json": "6f57ee10d9e507ac801aed92b51016af94d0712754b33c9723ba224cd31a03e0",
+    "target_effect_flip_audit.csv": "4bdd158b4d705a207e9a120738d59c6f26d874abddaf34c59259f286a4bd6fe2"
+  },
+  "scope": {
+    "real_covariate_proxy": "within-trial observed baseline profile only; not latent mechanism truth",
+    "calibration_archive": "participant-disjoint split from one randomized trial; not independent study-level archive",
+    "causal_truth": "exact semisynthetic finite-neighborhood truth on real NSW covariates and original assignment"
+  }
+}

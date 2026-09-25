@@ -50,6 +50,7 @@ python reproduce.py effect-family --output reproduced/effect-family
 python reproduce.py effect-family-baselines --output reproduced/effect-family-baselines
 python reproduce.py effect-family-baselines-all --output reproduced/effect-family-baselines-all
 python reproduce.py effect-family-baselines-corrected --output reproduced/effect-family-baselines-corrected
+python reproduce.py legacy-nsw-real-proxy-truth --output reproduced/nsw-real-proxy-truth
 python reproduce.py legacy-nsw --output reproduced/nsw
 python reproduce.py legacy-extensions --profile full --output reproduced/extensions
 python reproduce.py figures --output reproduced/figures
@@ -68,6 +69,12 @@ scope, and interpretation are recorded in
 The audit is controlled labelled-error evidence. It does not establish real
 cross-intervention mechanism calibration; the distinction is recorded in the
 [revision log](REVISION_LOG_20260924.md) and in the paper source.
+
+The NSW real-covariate and semisynthetic truth audit is reproduced with
+`python reproduce.py legacy-nsw-real-proxy-truth --output reproduced/nsw-real-proxy-truth`.
+Its scope and exact input requirements for the next real cross-intervention
+study are documented in
+[REAL_CROSS_INTERVENTION_REQUIREMENTS.md](REAL_CROSS_INTERVENTION_REQUIREMENTS.md).
 
 ## What the new experiments show
 

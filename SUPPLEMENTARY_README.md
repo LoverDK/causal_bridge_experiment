@@ -44,6 +44,13 @@ development-stage notes, or duplicate pre-integration paper fragments. The
 complete ExAtlas procedure is not included because it was not run as a matched
 comparator for this manuscript.
 
+The NSW real-covariate and semisynthetic truth audit is in
+`legacy_audits/results/extensions/nsw_real_proxy_truth_v2/`. It uses a
+participant-disjoint outcome-blind covariate split and frozen response surfaces
+with exact finite-neighborhood truth. It is deliberately labelled as a
+within-trial proxy and semisynthetic audit; it is not a real cross-intervention
+mechanism-set calibration.
+
 ## Evidence boundaries
 
 Many Labs 2 is a source-holdout evaluation under a standardized intervention.
@@ -52,3 +59,11 @@ generated response surfaces. Synthetic audits expose mechanism truth only for
 post-hoc scoring. These protocols support the claims stated in the manuscript,
 but they do not establish real cross-intervention mechanism calibration or a
 universal coverage guarantee.
+
+## Next real-data input
+
+The concrete data and protocol requirements for the outstanding real study are
+listed in [REAL_CROSS_INTERVENTION_REQUIREMENTS.md](REAL_CROSS_INTERVENTION_REQUIREMENTS.md).
+The short version is: independent interventions, harmonized estimands,
+outcome-blind mechanism proxies, a separate calibration archive, a frozen
+calibration/target split, and an independently randomized target reference.

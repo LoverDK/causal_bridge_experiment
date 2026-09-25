@@ -14,8 +14,8 @@
       "bytes": 1005
     },
     "CURRENT_ARTIFACTS.md": {
-      "sha256": "464c0dd85def8cf86936ce2b0aca7e49ba19bbdc46dfbeafb838447b504e5546",
-      "bytes": 3472
+      "sha256": "33a09bf78e774d395093aa77a1fadfc706b71254a7570d26a33b316e924ace3b",
+      "bytes": 3869
     },
     "current_method/atlas_new/__init__.py": {
       "sha256": "d304e8f296b668e8484337b5693c66171f5bf0fa5f941eb9234d06923703715e",
@@ -558,8 +558,8 @@
       "bytes": 5487
     },
     "DATA_SOURCES.md": {
-      "sha256": "9206f91cd465175a77a9b51a257f20e9e24cbc7cc40ee923ceda1b84293e938b",
-      "bytes": 2981
+      "sha256": "a996649249ab1702c600e79801ffc433ce401bcfc0426e3b213575449f4486fc",
+      "bytes": 3372
     },
     "docs/manuscript_revision_20260924.md": {
       "sha256": "57932eb0d5501e90996a4194c00fd4bd81cdc9b666b9257abc6403379abff773",
@@ -950,36 +950,36 @@
       "bytes": 37093
     },
     "provenance/import_inventory.json": {
-      "sha256": "c7c67353be2659ce31fd9cf80b2f52a6cea3ac7bd37da89d6cc289bd858055c2",
-      "bytes": 66255
+      "sha256": "1342964008cfe99e8a50692cac74e0ca69f3fe06e684dc0e050ee2e54fe6c352",
+      "bytes": 72456
     },
     "provenance/release_validation.json": {
       "sha256": "40b6105b9dd8f922fd7ee7d347e2acdef2a97d012329af921170fe3f5e4dfa7e",
       "bytes": 356
     },
     "README.md": {
-      "sha256": "9f6caaf3d9d35c131a84d3084c735b13edbfc64d5a1af3c2883e7e574c81b833",
-      "bytes": 6455
+      "sha256": "5fe0d77b89c15ebad34a0a575cd1be3a6a69a9a7c437e9bdd68a61ccb6cb2592",
+      "bytes": 6893
     },
     "RELEASE_NOTES.md": {
-      "sha256": "9b595109d61aeb3e71ef3bff795933cbe5f757b5cf8c8ffb13494bd0c3255892",
-      "bytes": 5358
+      "sha256": "1e87ec12c1f1b97cd50cd51970d3eb6e6be2f9e4489fe23230ed67e1f57cd0a0",
+      "bytes": 5463
     },
     "reproduce.py": {
-      "sha256": "cf0642f8411f9194aa3cf382c18608931955a427605c63753bfec18a86f73077",
-      "bytes": 5717
+      "sha256": "aa6795d02278d7d90dc401936a713043e9c2ff281dbb20edb103e62c96478f5b",
+      "bytes": 5983
     },
     "requirements.txt": {
       "sha256": "f6b4c6d5fb6f0de518d71a762573d9708ffdbf8b4e4fa0713384d59e10355107",
       "bytes": 72
     },
     "REVISION_LOG_20260924.md": {
-      "sha256": "ccf0ef8dc7b9975d2f7a33568df0ed1050828636b624e72f576926368614a855",
-      "bytes": 9741
+      "sha256": "0bf43cee6b812cb6d0df1b69ae8b05905e63fcf3c46f1ccb37dedbd30be1c487",
+      "bytes": 12607
     },
     "SUPPLEMENTARY_README.md": {
-      "sha256": "3bdc755aa63dec048f5316a5d6c77e54dc45a5f5cdb10fad926fa6e423d8aecf",
-      "bytes": 2579
+      "sha256": "35073e3bcb850e2e7c967535f07808e53ea3db7d3feb7bf373c096882e68f1c2",
+      "bytes": 3388
     },
     "current_method/docs/effect_family_holdout_protocol.md": {
       "sha256": "5726378b7b3a82c4026da90c852391f1ac715f46dd3e7d715af816b42aaff3a9",
@@ -1112,6 +1112,91 @@
     "current_method/results/effect_family_baselines_all/summary.csv": {
       "sha256": "7137c565634ed23db5e86ef7e3478ff44e6b49054ab9d2f6d5c44b681524ec9c",
       "bytes": 2799
+    },
+    "REAL_CROSS_INTERVENTION_REQUIREMENTS.md": {
+      "sha256": "22cea3243155fd9e904f7d538436349792af6e5fc72e7b3dbacd8a29c4c9ead1",
+      "bytes": 4338
+    },
+    "legacy_audits/docs/paper/nsw_real_proxy_truth_protocol.md": {
+      "sha256": "d3088871f9d713d570ead14fcc76e57b2ca64d398d32bc6ab793cee7a0acca49",
+      "bytes": 3285
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth/causal_truth_design.json": {
+      "sha256": "79303d53321e99e1815fd76df072ef0d15527182ecc1e0aa69e3e97e6c49045b",
+      "bytes": 4849
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth/manifest.json": {
+      "sha256": "7ec264d6235b9235d830a10dd5f8aebe18401a9887e3fab9cc06f124c51d5b16",
+      "bytes": 2057
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth/real_covariate_proxy_records.csv": {
+      "sha256": "0ae91bc2363c7327399e094d63bb0e6ec20f5a427fdea10ef125cb5242a6a9ad",
+      "bytes": 3989
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth/real_covariate_proxy_summary.csv": {
+      "sha256": "90e2fa95a0f393344e5563d0293d537590ad150c0c7f6236fb8fe71c359e08a2",
+      "bytes": 533
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth/semisynthetic_truth_records.csv": {
+      "sha256": "bced5dfbc920a32a6094dec8e272f944f24718d1f5ed6d7060a9c7b0f40d8aad",
+      "bytes": 2841491
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth/semisynthetic_truth_summary.csv": {
+      "sha256": "4c8874051ca39c91a9a66205743151c726f3b960517e0ab1c2aaaf605fc29429",
+      "bytes": 3947
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth/split_manifest.json": {
+      "sha256": "6f57ee10d9e507ac801aed92b51016af94d0712754b33c9723ba224cd31a03e0",
+      "bytes": 9359
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth/target_effect_flip_audit.csv": {
+      "sha256": "4bdd158b4d705a207e9a120738d59c6f26d874abddaf34c59259f286a4bd6fe2",
+      "bytes": 5518
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/causal_truth_design.json": {
+      "sha256": "79303d53321e99e1815fd76df072ef0d15527182ecc1e0aa69e3e97e6c49045b",
+      "bytes": 4849
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/manifest.json": {
+      "sha256": "94a46d233a051f7821e251245aca97176880742986487036c91275470d5dffd3",
+      "bytes": 2212
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/real_covariate_proxy_records.csv": {
+      "sha256": "0ae91bc2363c7327399e094d63bb0e6ec20f5a427fdea10ef125cb5242a6a9ad",
+      "bytes": 3989
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/real_covariate_proxy_summary.csv": {
+      "sha256": "90e2fa95a0f393344e5563d0293d537590ad150c0c7f6236fb8fe71c359e08a2",
+      "bytes": 533
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/report.md": {
+      "sha256": "fbd071d5a8833a511175f91aec8e83726e75cb73ae7ad9794d9e5bb51b3aefa9",
+      "bytes": 1414
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/semisynthetic_truth_records.csv": {
+      "sha256": "bced5dfbc920a32a6094dec8e272f944f24718d1f5ed6d7060a9c7b0f40d8aad",
+      "bytes": 2841491
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/semisynthetic_truth_summary.csv": {
+      "sha256": "6f139e3b0fa4cbe3c228bf2b425381773173265fe022c202ccfcd7c731d9989c",
+      "bytes": 3952
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/split_manifest.json": {
+      "sha256": "6f57ee10d9e507ac801aed92b51016af94d0712754b33c9723ba224cd31a03e0",
+      "bytes": 9359
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/target_effect_flip_audit.csv": {
+      "sha256": "4bdd158b4d705a207e9a120738d59c6f26d874abddaf34c59259f286a4bd6fe2",
+      "bytes": 5518
+    },
+    "legacy_audits/scripts/run/run_nsw_real_proxy_truth.py": {
+      "sha256": "b22686f848a37bb6bffa9eced9cb98632ed0a1c3b12410bd64128d0eb2d83414",
+      "bytes": 15303
+    },
+    "legacy_audits/tests/test_nsw_real_proxy_truth.py": {
+      "sha256": "7db0642ab62c213ec89c3958d83f010189fb2d0c3543f058cde01cf1ad33c45a",
+      "bytes": 1774
     }
-  }
+  },
+  "release_files": 299
 }

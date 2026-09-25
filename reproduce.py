@@ -25,7 +25,7 @@ def run(cmd,cwd):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('suite',choices=['verify','current','plus','workflow','ablations','audit-ablations','real','calibration','effect-family','effect-family-baselines','effect-family-baselines-corrected','effect-family-baselines-all','original','legacy-nsw','legacy-extensions','figures'])
+    parser.add_argument('suite',choices=['verify','current','plus','workflow','ablations','audit-ablations','real','calibration','effect-family','effect-family-baselines','effect-family-baselines-corrected','effect-family-baselines-all','original','legacy-nsw','legacy-nsw-real-proxy-truth','legacy-extensions','figures'])
     parser.add_argument('--profile',choices=['smoke','full'],default='smoke')
     parser.add_argument('--output',type=Path,default=ROOT/'reproduced')
     parser.add_argument('--workers',type=int,default=4)
@@ -77,6 +77,9 @@ def main():
         shutil.copytree(ROOT/'legacy_audits',dest,ignore=shutil.ignore_patterns('__pycache__'))
         if args.suite=='legacy-nsw':
             run(['scripts/run/run_nsw_experiment.py'],dest)
+        elif args.suite=='legacy-nsw-real-proxy-truth':
+            run(['scripts/run/run_nsw_real_proxy_truth.py','--repetitions',100,
+                 '--output',Path('results')/'extensions'/'nsw_real_proxy_truth_reproduction'],dest)
         else:
             # The original runner records a git revision; avoid inventing one in a scratch copy.
             script=dest/'scripts/run/run_requested_extensions.py'

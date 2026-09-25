@@ -37,6 +37,12 @@ The analyzed sample has 57 complete sources and 7,228 responses. Country holdout
 
 NSW archive objects are overlapping local reconstructions from one trial. They are not 112 independent studies. The semi-synthetic extension uses NSW covariates with generated outcomes and an exactly specified target effect.
 
+The versioned `legacy_audits/results/extensions/nsw_real_proxy_truth_v2/` audit
+uses a participant-disjoint split of the same trial for an outcome-blind
+pretreatment-covariate proxy check and a separate semisynthetic causal-truth
+run. The proxy is explicitly `observed_covariate_proxy`, not a latent mechanism
+set; the causal truth is exact only for the frozen generated response surfaces.
+
 ## Terms and file provenance
 
 Public input data retain their upstream authorship and applicable terms. This repository does not assert a new license over third-party datasets or papers. No software license has been selected in this release.

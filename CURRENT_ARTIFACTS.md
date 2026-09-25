@@ -19,6 +19,10 @@ in an isolated directory.
 | Cross-effect-family external-validity audit | `current_method/results/effect_family_holdout/` | `python reproduce.py effect-family --output reproduced/effect-family` |
 | Cross-effect-family baseline panel | `current_method/results/effect_family_baselines/` | `python reproduce.py effect-family-baselines --output reproduced/effect-family-baselines` |
 | Corrected and all-family baseline sensitivities | `current_method/results/effect_family_baselines_corrected/`, `current_method/results/effect_family_baselines_all/` | `python reproduce.py effect-family-baselines-corrected --output reproduced/effect-family-baselines-corrected` and `python reproduce.py effect-family-baselines-all --output reproduced/effect-family-baselines-all` |
+| NSW real-covariate proxy and semisynthetic causal-truth audit | `legacy_audits/results/extensions/nsw_real_proxy_truth_v2/` | `python legacy_audits/scripts/run/run_nsw_real_proxy_truth.py --repetitions 100 --output results/extensions/nsw_real_proxy_truth_new` |
+
+The outstanding real-study input checklist is
+[`REAL_CROSS_INTERVENTION_REQUIREMENTS.md`](REAL_CROSS_INTERVENTION_REQUIREMENTS.md).
 
 The existing PDF assets are the paper inputs. `paper_figures/render_appendix_figures.py`
 regenerates the portable Figure 5/6 assets from committed CSV files; font and

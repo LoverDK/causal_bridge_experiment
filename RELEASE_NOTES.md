@@ -2,7 +2,7 @@
 
 The two new ablations are incorporated into the ICLR 2027 manuscript as Appendix P, Tables 15 and 16. The limitation paragraph retains the missing complete ExAtlas comparison.
 
-The integrated PDF has 37 pages: main text is pages 1–9, references begin on page 10, main Figures 1/2/3 remain on pages 4/7/8, and the source-estimate Figure 6 remains on page 35. The first nine pages' extracted text is identical to the preceding revision. All 31 checked theorem, assumption, corollary, lemma, proposition, and proof environments were preserved. Integration does not claim to repair the previously flagged frozen theoretical conditions.
+The integrated PDF has 38 pages: main text is pages 1–9, references begin on page 10, main Figures 1/2/3 remain on pages 4/7/8, and the source-estimate Figure 6 remains near the end of the appendix. Page 8 contains the Many Labs figure and text, and page 9 ends at manuscript line 485. The first nine pages' extracted text is identical to the preceding revision. All 31 checked theorem, assumption, corollary, lemma, proposition, and proof environments were preserved. Integration does not claim to repair the previously flagged frozen theoretical conditions.
 
 Validation before release:
 
