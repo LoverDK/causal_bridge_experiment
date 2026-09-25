@@ -100,6 +100,12 @@ status, and descriptive LOSO protocol/report are in
 [MICROCREDIT_LOSO_PILOT_REPORT_20260925.md](MICROCREDIT_LOSO_PILOT_REPORT_20260925.md).
 The pilot runner is [tools/run_microcredit_loso_pilot.py](tools/run_microcredit_loso_pilot.py);
 saved tables and the leakage audit are in `results/microcredit_loso_pilot/`.
+The held-out result effect and SE are excluded from prediction and release;
+they are used only for the post-prediction noisy-reference comparison. The
+pilot also records sign error and released-target risk (undefined here because
+all computed methods refused at the primary tolerance).
+The complete work summary for independent review is in
+[MICROCREDIT_LOSO_PILOT_WORK_SUMMARY_20260925.md](MICROCREDIT_LOSO_PILOT_WORK_SUMMARY_20260925.md).
 Only three studies passed the strict community-access/first-endline-profit
 gate, so this is descriptive and cannot be called real 95% calibration.
 

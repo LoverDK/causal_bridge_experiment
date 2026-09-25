@@ -352,3 +352,15 @@ outcome-blind coding/adjudication, at least 19 independent estimand-compatible
 interventions for a finite 95% rank radius, and an authorized independent
 mechanism reference archive. No real 95% calibration or noise-free causal truth
 claim is made.
+
+## Leakage-boundary correction: 2026-09-25
+
+An audit of the executable LOSO pilot found that the initial interval formulas
+used the held-out study's result standard error when constructing prediction
+widths. That violated the frozen information boundary even though the target
+effect itself was not used. The runner now uses only training-study effects and
+SEs plus the target design vector for every prediction and release decision.
+The held-out effect and SE enter only after serialization to form the noisy RCT
+reference interval. The leakage audit now changes both target fields; all three
+targets remain invariant. The regenerated tables add sign error and
+released-target risk, with the latter undefined because no target was released.

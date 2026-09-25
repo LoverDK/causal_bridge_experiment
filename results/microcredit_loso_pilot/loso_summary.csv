@@ -1,6 +1,6 @@
-method,n_targets,n_computed,n_released,release_rate,mean_width,mean_point_error,contains_full,disjoint,partial_overlap
-atlas_descriptive,3,3,0,0.0,30.269217932392422,11.668722141118346,0,0,3
-design_meta_regression,3,0,0,,,,0,0,0
-fixed_effect,3,3,0,0.0,45.64649486138742,15.585160493395703,0,0,3
-random_effects,3,0,0,,,,0,0,0
-robust_training_range,3,3,0,0.0,49.048833027647504,11.077746774622943,1,0,2
+method,n_targets,n_computed,n_released,release_rate,mean_width,mean_point_error,sign_errors,released_target_errors,released_target_risk,contains_full,disjoint,partial_overlap
+atlas_descriptive,3,3,0,0.0,30.269217932392422,11.668722141118346,0,0,,0,0,3
+design_meta_regression,3,0,0,,,,0,0,,0,0,0
+fixed_effect,3,3,0,0.0,20.974967018761724,15.585160493395703,0,0,,0,0,3
+random_effects,3,0,0,,,,0,0,,0,0,0
+robust_training_range,3,3,0,0.0,11.928133737878518,11.077746774622943,0,0,,0,1,2

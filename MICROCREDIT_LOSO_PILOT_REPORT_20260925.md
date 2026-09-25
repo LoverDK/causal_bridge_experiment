@@ -20,19 +20,22 @@ range, and descriptive ATLAS methods all produced finite intervals; random
 effects and design meta-regression were not identified with only two training
 studies. The complete threshold curve is in `release_frontier.csv`.
 
-The point estimates and intervals are noisy-reference diagnostics. The held-out
-RCT's `effect +/- 1.96*se` interval is reported alongside the prediction
+The point estimates and intervals are noisy-reference diagnostics. Prediction
+and release use only the two training studies' effects/SEs and the held-out
+study's design vector. The held-out RCT's `effect +/- 1.96*se` interval is
+computed only after that decision and is reported alongside the prediction
 interval. The result categories are exact study-level counts: prediction and
 reference intervals were partially overlapping for all fixed-effect and ATLAS
-rows; the robust range contained the full reference interval for one target and
-partially overlapped for two. These are not causal-truth coverage or calibration
-rates.
+rows; the robust range was disjoint for one target and partially overlapped for
+two after removing the target result SE from prediction. These are not
+causal-truth coverage or calibration rates. No method released a target at the
+primary tolerance, so released-target risk is undefined rather than zero.
 
-The leakage audit in `leakage_audit.csv` flips each target effect after the
-prediction decision. All prediction, interval, and release values were
-unchanged (`max_prediction_change=0` for all three targets). This verifies the
-implementation's information boundary for this pilot; it does not validate the
-mechanism representation.
+The leakage audit in `leakage_audit.csv` flips each target effect and changes
+each target result SE after the prediction decision. All prediction, interval,
+and release values were unchanged (`max_prediction_change=0` for all three
+targets). This verifies the implementation's information boundary for this
+pilot; it does not validate the mechanism representation.
 
 ## Limitations and distance to the requirement
 

@@ -64,14 +64,16 @@ def _reference_relation(lo: float, hi: float, rlo: float, rhi: float) -> str:
     return "partial_overlap"
 
 
-def fixed_effect(train: pd.DataFrame, target_se: float) -> tuple[float, float]:
+def fixed_effect(train: pd.DataFrame) -> tuple[float, float]:
     w = 1.0 / np.square(train.se.to_numpy())
     mu = float(np.dot(w, train.effect) / w.sum())
-    rad = float(norm.ppf(.975) * np.sqrt(1.0 / w.sum() + target_se**2))
+    # The held-out result SE is reserved for the post-prediction noisy
+    # reference interval and cannot affect prediction or release.
+    rad = float(norm.ppf(.975) * np.sqrt(1.0 / w.sum()))
     return mu, rad
 
 
-def random_effects(train: pd.DataFrame, target_se: float) -> tuple[float, float] | None:
+def random_effects(train: pd.DataFrame) -> tuple[float, float] | None:
     # The frozen protocol requires a t predictive radius with df=n_train-2.
     # With two training studies df=0; returning None is a deliberate refusal.
     if len(train) <= 2:
@@ -84,14 +86,13 @@ def random_effects(train: pd.DataFrame, target_se: float) -> tuple[float, float]
     wr = 1.0 / (v + tau2)
     mu = float(np.dot(wr, y) / wr.sum())
     df = len(train) - 2
-    rad = float(t.ppf(.975, df) * np.sqrt(1.0 / wr.sum() + tau2 + target_se**2))
+    rad = float(t.ppf(.975, df) * np.sqrt(1.0 / wr.sum() + tau2))
     return mu, rad
 
 
-def robust_range(train: pd.DataFrame, target_se: float) -> tuple[float, float]:
+def robust_range(train: pd.DataFrame) -> tuple[float, float]:
     lo, hi = float(train.effect.min()), float(train.effect.max())
-    extra = 1.96 * target_se
-    return (lo + hi) / 2.0, (hi - lo) / 2.0 + extra
+    return (lo + hi) / 2.0, (hi - lo) / 2.0
 
 
 def design_atlas(train: pd.DataFrame, target: pd.Series) -> tuple[float, float]:
@@ -106,15 +107,15 @@ def design_atlas(train: pd.DataFrame, target: pd.Series) -> tuple[float, float]:
     return mu, radius
 
 
-def predict(method: str, train: pd.DataFrame, target: pd.Series) -> tuple[float, float] | None:
+def predict(method: str, train: pd.DataFrame, target_design: pd.Series) -> tuple[float, float] | None:
     if method == "fixed_effect":
-        return fixed_effect(train, float(target.se))
+        return fixed_effect(train)
     if method == "random_effects":
-        return random_effects(train, float(target.se))
+        return random_effects(train)
     if method == "robust_training_range":
-        return robust_range(train, float(target.se))
+        return robust_range(train)
     if method == "atlas_descriptive":
-        return design_atlas(train, target)
+        return design_atlas(train, target_design)
     if method == "design_meta_regression":
         # The three-row compatible set leaves only two training rows. A full
         # seven-coordinate regression is therefore not identified.
@@ -131,40 +132,67 @@ def run(out: Path) -> None:
     for target_id in STUDIES.study_id:
         target = STUDIES[STUDIES.study_id == target_id].iloc[0]
         train = STUDIES[STUDIES.study_id != target_id].copy()
-        rlo, rhi = _interval(target)
+        target_design = target[DESIGN_COLUMNS]
+        target_rows: list[dict[str, object]] = []
         for method in methods:
-            result = predict(method, train, target)
+            result = predict(method, train, target_design)
             if result is None:
-                rows.append(dict(target=target_id, method=method,
-                                 n_train=len(train), status="not_identified",
-                                 reference_lower=rlo, reference_upper=rhi,
-                                 estimate=np.nan, lower=np.nan, upper=np.nan,
-                                 width=np.inf, released=False,
-                                 point_error=np.nan, reference_relation="not_run"))
+                target_rows.append(dict(target=target_id, method=method,
+                                        n_train=len(train), status="not_identified",
+                                        estimate=np.nan, lower=np.nan, upper=np.nan,
+                                        width=np.inf, released=False,
+                                        point_error=np.nan, sign_error=np.nan,
+                                        released_error_beyond_delta=np.nan))
                 continue
             estimate, radius = result
-            rows.append(dict(target=target_id, method=method,
-                             n_train=len(train), status="computed",
-                             reference_lower=rlo, reference_upper=rhi,
-                             estimate=estimate, lower=estimate-radius,
-                             upper=estimate+radius, width=2*radius,
-                             radius=radius, released=radius <= .20,
-                             point_error=abs(estimate-target.effect),
-                             reference_relation=_reference_relation(
-                                 estimate-radius, estimate+radius, rlo, rhi)))
-        # Target effect is not passed to prediction. Replacing it leaves every
-        # serialized prediction/release decision unchanged.
-        changed = target.copy(); changed.effect = -float(changed.effect)
+            target_rows.append(dict(target=target_id, method=method,
+                                    n_train=len(train), status="computed",
+                                    estimate=estimate, lower=estimate-radius,
+                                    upper=estimate+radius, width=2*radius,
+                                    radius=radius, released=radius <= .20,
+                                    point_error=np.nan, sign_error=np.nan,
+                                    released_error_beyond_delta=np.nan))
+
+        # Only now open the held-out result to construct the noisy reference
+        # and score the already-frozen predictions and release decisions.
+        rlo, rhi = _interval(target)
+        for row in target_rows:
+            row["reference_lower"] = rlo
+            row["reference_upper"] = rhi
+            if row["status"] == "computed":
+                estimate = float(row["estimate"])
+                radius = float(row["radius"])
+                row["point_error"] = abs(estimate - target.effect)
+                row["sign_error"] = bool(
+                    np.sign(estimate) != np.sign(target.effect)
+                ) if estimate != 0 and target.effect != 0 else False
+                row["released_error_beyond_delta"] = bool(
+                    row["released"] and abs(estimate - target.effect) > .20
+                )
+                row["reference_relation"] = _reference_relation(
+                    estimate-radius, estimate+radius, rlo, rhi
+                )
+            else:
+                row["reference_relation"] = "not_run"
+        rows.extend(target_rows)
+
+        # Change only held-out result fields; the target design vector remains
+        # the sole target input to the prediction function.
+        changed = target.copy()
+        changed.effect = -float(changed.effect)
+        changed.se = float(changed.se * 3.0 + 1.0)
+        changed_design = changed[DESIGN_COLUMNS]
         changed_rows = []
         for method in methods:
-            result = predict(method, train, changed)
+            result = predict(method, train, changed_design)
             changed_rows.append(None if result is None else tuple(float(x) for x in result))
         original_rows = []
         for method in methods:
-            result = predict(method, train, target)
+            result = predict(method, train, target_design)
             original_rows.append(None if result is None else tuple(float(x) for x in result))
         leakage.append(dict(target=target_id,
                             target_effect_flipped=True,
+                            target_se_changed=True,
                             predictions_unchanged=changed_rows == original_rows,
                             max_prediction_change=max(
                                 [max(abs(a-b) for a,b in zip(x,y))
@@ -195,6 +223,12 @@ def run(out: Path) -> None:
                             release_rate=float(computed.released.mean()) if len(computed) else np.nan,
                             mean_width=float(computed.width.replace(np.inf, np.nan).mean()) if len(computed) else np.nan,
                             mean_point_error=float(computed.point_error.mean()) if len(computed) else np.nan,
+                            sign_errors=int(computed.sign_error.sum()) if len(computed) else 0,
+                            released_target_errors=int(computed.released_error_beyond_delta.sum())
+                            if len(computed) else 0,
+                            released_target_risk=(float(computed.released_error_beyond_delta.sum() /
+                                                         computed.released.sum())
+                                                  if len(computed) and computed.released.sum() else np.nan),
                             contains_full=int((computed.reference_relation == "contains_full").sum()) if len(computed) else 0,
                             disjoint=int((computed.reference_relation == "disjoint").sum()) if len(computed) else 0,
                             partial_overlap=int((computed.reference_relation == "partial_overlap").sum()) if len(computed) else 0))
