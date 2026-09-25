@@ -75,7 +75,7 @@ records must remain governed by their data-use and ethics conditions.
 * `python tools/test_microcredit_loso_pilot.py`: passed.
 * `python current_method/run_tests.py`: 42 tests passed.
 * `python -m py_compile tools/run_microcredit_loso_pilot.py tools/test_microcredit_loso_pilot.py`: passed.
-* `python reproduce.py verify`: verified 322 release files.
+* `python reproduce.py verify`: verified 323 release files.
 * `git diff --check`: reports CRLF-related whitespace warnings for generated
   CSV/JSON files under the repository's existing `* -text` policy; no code or
   Markdown syntax failure was found.
