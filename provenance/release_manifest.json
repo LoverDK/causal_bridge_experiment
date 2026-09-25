@@ -958,8 +958,8 @@
       "bytes": 356
     },
     "README.md": {
-      "sha256": "5fe0d77b89c15ebad34a0a575cd1be3a6a69a9a7c437e9bdd68a61ccb6cb2592",
-      "bytes": 6893
+      "sha256": "b26c192bc551f0e2091bad77e4db00fa603beae1b0981dff7b96123749a0dbfb",
+      "bytes": 7012
     },
     "RELEASE_NOTES.md": {
       "sha256": "1e87ec12c1f1b97cd50cd51970d3eb6e6be2f9e4489fe23230ed67e1f57cd0a0",
@@ -1117,6 +1117,10 @@
       "sha256": "22cea3243155fd9e904f7d538436349792af6e5fc72e7b3dbacd8a29c4c9ead1",
       "bytes": 4338
     },
+    "REAL_CROSS_INTERVENTION_INTAKE_ZH.md": {
+      "sha256": "cbbf0984c20915dd4051e12731e82afaf84ee2a23b022a4051b7b455ef59c6af",
+      "bytes": 2393
+    },
     "legacy_audits/docs/paper/nsw_real_proxy_truth_protocol.md": {
       "sha256": "d3088871f9d713d570ead14fcc76e57b2ca64d398d32bc6ab793cee7a0acca49",
       "bytes": 3285
@@ -1198,5 +1202,5 @@
       "bytes": 1774
     }
   },
-  "release_files": 299
+  "release_files": 300
 }

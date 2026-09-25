@@ -75,6 +75,8 @@ The NSW real-covariate and semisynthetic truth audit is reproduced with
 Its scope and exact input requirements for the next real cross-intervention
 study are documented in
 [REAL_CROSS_INTERVENTION_REQUIREMENTS.md](REAL_CROSS_INTERVENTION_REQUIREMENTS.md).
+For a short user-facing intake form, see
+[REAL_CROSS_INTERVENTION_INTAKE_ZH.md](REAL_CROSS_INTERVENTION_INTAKE_ZH.md).
 
 ## What the new experiments show
 
