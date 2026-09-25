@@ -91,6 +91,18 @@ The conservative treatment/control compatibility draft is in
 The detailed author response to the real cross-intervention critique is in
 [REAL_CROSS_INTERVENTION_AUTHOR_RESPONSE.md](REAL_CROSS_INTERVENTION_AUTHOR_RESPONSE.md).
 
+The seven-study design evidence audit, frozen invitation-ITT protocol, coding
+status, and descriptive LOSO protocol/report are in
+[MICROCREDIT_DESIGN_EVIDENCE_20260925.md](MICROCREDIT_DESIGN_EVIDENCE_20260925.md),
+[MICROCREDIT_INVITATION_ITT_PROTOCOL_20260925.md](MICROCREDIT_INVITATION_ITT_PROTOCOL_20260925.md),
+[MICROCREDIT_CODING_STATUS_20260925.md](MICROCREDIT_CODING_STATUS_20260925.md),
+[MICROCREDIT_LOSO_PILOT_PROTOCOL_20260925.md](MICROCREDIT_LOSO_PILOT_PROTOCOL_20260925.md), and
+[MICROCREDIT_LOSO_PILOT_REPORT_20260925.md](MICROCREDIT_LOSO_PILOT_REPORT_20260925.md).
+The pilot runner is [tools/run_microcredit_loso_pilot.py](tools/run_microcredit_loso_pilot.py);
+saved tables and the leakage audit are in `results/microcredit_loso_pilot/`.
+Only three studies passed the strict community-access/first-endline-profit
+gate, so this is descriptive and cannot be called real 95% calibration.
+
 ## What the new experiments show
 
 The ablations use 1,800 independent worlds, shared random/nearest acquisition schedules, two certificates, and tolerances 0.2/0.3. The archive includes 172,800 plans and 345,600 stopped records. At tolerance 0.3 on the bridgeable random-order menu, optimized R2 weights release 100% of targets versus 20.33% for uniform weights, with mean new-participant costs of 159.68 versus 283.52. Weight optimization is useful in these settings; it is not uniformly better in point error on already-supported menus.

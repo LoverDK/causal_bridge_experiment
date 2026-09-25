@@ -316,3 +316,39 @@ dual-coder mechanism records, an intervention-disjoint calibration archive with
 at least 19 independent units, and an independently randomized target
 reference. The seven-study package remains a pilot and cannot be described as a
 real 95% distribution-free calibration study.
+
+## Seven-study design freeze and descriptive LOSO pilot: 2026-09-25
+
+The Meager V1 archive was reviewed at the study-design, metadata, readme, and
+analysis-code level without committing raw observations. The new evidence table
+(`MICROCREDIT_DESIGN_EVIDENCE_20260925.md`) distinguishes five community access
+designs from two applicant-level offer/approval designs, records control credit
+and crossover fields, and keeps unresolved assignment meanings visible.
+
+The invitation-ITT protocol is now frozen. It uses community/village/PA
+assignment to a credit offer or access intervention, a declared usual-service
+control, first-endline self-employment/business profit transformed to USD PPP
+per fortnight, and assignment-level inference. Applicant-level Bosnia and
+Philippines studies, multi-arm contrasts without a frozen arm, and unresolved
+variance estimates are excluded from the pooled pilot.
+
+The strict gate leaves three numerical pilot units: Mexico/Angelucci, India
+endline 1/Banerjee, and Morocco/Crépon. Leave-one-study-out fits therefore have
+two training studies. Fixed effect, robust range, and an uncalibrated design
+weighted ATLAS interval are computed; random effects and design meta-regression
+are correctly marked not identified. At the frozen `delta=0.20` USD PPP per
+fortnight tolerance all computed methods refuse all three targets. Reference
+interval relations are noisy-RCT diagnostics, not causal-truth coverage. The
+target-effect flip audit leaves predictions and release decisions unchanged.
+Results are in `results/microcredit_loso_pilot/`; the runner and test are
+`tools/run_microcredit_loso_pilot.py` and
+`tools/test_microcredit_loso_pilot.py`.
+
+The required double-blind human coding is **not complete**. The automated
+header audit and an AI second pass exist, but the second pass encountered
+narrative result/balance text while locating design pages. No agreement
+statistic is reported. The remaining decisive gaps are a fresh two-person
+outcome-blind coding/adjudication, at least 19 independent estimand-compatible
+interventions for a finite 95% rank radius, and an authorized independent
+mechanism reference archive. No real 95% calibration or noise-free causal truth
+claim is made.

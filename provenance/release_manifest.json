@@ -1,5 +1,5 @@
 {
-  "scope": "Current-paper supplementary package; excludes this manifest, Git metadata, caches and transient reproduction output",
+  "scope": "Current-paper supplementary package plus the microcredit design/LOSO pilot; excludes this manifest, Git metadata, caches and transient scratch reruns.",
   "files": {
     ".gitattributes": {
       "sha256": "9a26f76fbe4fef9d7125bd1bdfac3b27f7eb9f4524cc8d4870cf6e1e38352cff",
@@ -959,9 +959,8 @@
       "bytes": 356
     },
     "README.md": {
-      "sha256": "804c57661fca33a08624b06bf73ac3d715147d59fa671dacbe139bf10473bb23",
-      "bytes": 8014,
-      "source": "revision/20260925 microcredit metadata audit"
+      "sha256": "e3948e2e6a8ee8deaeca0a4fc4a50fbb8449b0fad498a067cd16dc73366f122d",
+      "bytes": 8913
     },
     "RELEASE_NOTES.md": {
       "sha256": "1e87ec12c1f1b97cd50cd51970d3eb6e6be2f9e4489fe23230ed67e1f57cd0a0",
@@ -976,9 +975,8 @@
       "bytes": 72
     },
     "REVISION_LOG_20260924.md": {
-      "sha256": "a8f997cea7251e2c225906e84128aae3794d22f598fc73a4e323d7711e2892c3",
-      "bytes": 17430,
-      "source": "revision/20260925 microcredit metadata audit"
+      "sha256": "fe5186627a8c2c9a8464f323e60e739ca6cef4c49b751afd1168d335e1d46838",
+      "bytes": 19647
     },
     "SUPPLEMENTARY_README.md": {
       "sha256": "35073e3bcb850e2e7c967535f07808e53ea3db7d3feb7bf373c096882e68f1c2",
@@ -1248,6 +1246,58 @@
       "sha256": "fcab7e1874443fda95cdadc4c0c5bf440179675774ff01e08da4ead3064793c7",
       "bytes": 1455,
       "source": "revision/20260925 microcredit metadata and estimand audit"
+    },
+    "MICROCREDIT_DESIGN_EVIDENCE_20260925.md": {
+      "sha256": "ed6ee4b3625318cba0cfd51ce12e626bee90be290e6b1c8b63029bd9e697e72a",
+      "bytes": 15337
+    },
+    "MICROCREDIT_INVITATION_ITT_PROTOCOL_20260925.md": {
+      "sha256": "430aaa0925195662651f8e4fda209ff124fa3af932362c387acc0d8b23289a91",
+      "bytes": 5564
+    },
+    "MICROCREDIT_CODING_STATUS_20260925.md": {
+      "sha256": "462c9bbf797b86445c377b3bcc53b8b841cd491eeb36a1817b1930702d51d763",
+      "bytes": 1781
+    },
+    "MICROCREDIT_LOSO_PILOT_PROTOCOL_20260925.md": {
+      "sha256": "3430f0e6c33103c57ba602a6ca24817c86f1a7bbcd324c3b45f031079e4c3d31",
+      "bytes": 2793
+    },
+    "MICROCREDIT_LOSO_PILOT_REPORT_20260925.md": {
+      "sha256": "9206df2da5b5d90f6ad98460298e212f0d36c239f2be6955efbd8fcc8bfebf23",
+      "bytes": 2820
+    },
+    "tools/run_microcredit_loso_pilot.py": {
+      "sha256": "4631f59d8c507d877a0b441b0dadb5b57c9ba69843ae2d9e14a64dca956c82f5",
+      "bytes": 11190
+    },
+    "tools/test_microcredit_loso_pilot.py": {
+      "sha256": "1475b1b2706536e56b212a2f5e6873bb95a5eb98729042d376ad0ccabaaf5c0c",
+      "bytes": 1171
+    },
+    "results/microcredit_loso_pilot/loso_results.csv": {
+      "sha256": "6bdedcdbadba406b7a5376b6ccfd4f150dabae0b1e37f641cacf224b2d03b0b0",
+      "bytes": 2802
+    },
+    "results/microcredit_loso_pilot/loso_summary.csv": {
+      "sha256": "aac32db2c346999c98a88fac62262f112f3d33a4676cc8a19c19145e800f54a1",
+      "bytes": 407
+    },
+    "results/microcredit_loso_pilot/release_frontier.csv": {
+      "sha256": "9dabbb6832e0b975641c46d6cdaca908f67a0e4af175b9678d08aeff360acacf",
+      "bytes": 988
+    },
+    "results/microcredit_loso_pilot/leakage_audit.csv": {
+      "sha256": "f8edc654633ed79012bedde50539b233970e26e3d57cd23f5b1bf98fb096fc2e",
+      "bytes": 175
+    },
+    "results/microcredit_loso_pilot/pilot_input_design_and_reference.csv": {
+      "sha256": "425e11662f4fa616d598fe84932d0103770729c9f79647dbf88751256a1bfb65",
+      "bytes": 1010
+    },
+    "results/microcredit_loso_pilot/run_manifest.json": {
+      "sha256": "751945844cf09356df2686897b2de598f1662b421f15397d1c214b44dec32314",
+      "bytes": 525
     }
   },
   "release_files": 309

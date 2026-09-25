@@ -1,0 +1,20 @@
+{
+  "protocol": "MICROCREDIT_LOSO_PILOT_PROTOCOL_20260925.md",
+  "estimand_protocol": "MICROCREDIT_INVITATION_ITT_PROTOCOL_20260925.md",
+  "n_compatible_studies": 3,
+  "studies": [
+    "angelucci_mexico",
+    "banerjee_india_endline1",
+    "crepon_morocco"
+  ],
+  "thresholds": [
+    0.1,
+    0.2,
+    0.4,
+    0.8
+  ],
+  "primary_threshold": 0.2,
+  "calibration_claim": false,
+  "raw_records_committed": false,
+  "interpretation": "noisy-reference descriptive pilot; overlapping LOSO fits; no bootstrap"
+}
