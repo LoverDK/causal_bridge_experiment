@@ -558,8 +558,9 @@
       "bytes": 5487
     },
     "DATA_SOURCES.md": {
-      "sha256": "a996649249ab1702c600e79801ffc433ce401bcfc0426e3b213575449f4486fc",
-      "bytes": 3372
+      "sha256": "5f3f7113548a538f0e621b2317f8b0c3d39337a3210c50624d31cfc9f18cbd25",
+      "bytes": 4511,
+      "source": "data provenance update"
     },
     "docs/manuscript_revision_20260924.md": {
       "sha256": "57932eb0d5501e90996a4194c00fd4bd81cdc9b666b9257abc6403379abff773",
@@ -958,8 +959,9 @@
       "bytes": 356
     },
     "README.md": {
-      "sha256": "14cf58ae0c7ea902d8abc42fb52184b5239c8584a99f2b235f976333f0160ca6",
-      "bytes": 7167
+      "sha256": "2f1649de7265ceca4406f888c06d6ed8ef72e5ba72b290178ccb434f108e4aaa",
+      "bytes": 7857,
+      "source": "revision/20260925 microcredit metadata audit"
     },
     "RELEASE_NOTES.md": {
       "sha256": "1e87ec12c1f1b97cd50cd51970d3eb6e6be2f9e4489fe23230ed67e1f57cd0a0",
@@ -974,8 +976,9 @@
       "bytes": 72
     },
     "REVISION_LOG_20260924.md": {
-      "sha256": "109fdafafbb88ba01d16f5eb1a40071f62f5c8a224048750013f0535acef3d36",
-      "bytes": 14049
+      "sha256": "1b7419184dfd640c41fcd5ba2eb97fd308fe475c21739b86f6e07adf508edd4e",
+      "bytes": 16908,
+      "source": "revision/20260925 microcredit metadata audit"
     },
     "SUPPLEMENTARY_README.md": {
       "sha256": "35073e3bcb850e2e7c967535f07808e53ea3db7d3feb7bf373c096882e68f1c2",
@@ -1122,8 +1125,9 @@
       "bytes": 2393
     },
     "MICROCREDIT_PILOT_PROTOCOL.md": {
-      "sha256": "d149e5ae29ad77eebcc6bdd9a2a348b9f44ea8ada6a089250c4ed1fb5f5502e8",
-      "bytes": 4962
+      "sha256": "64b1afa8be529ee533fc858dc65cf49b5c25fbb53a8a6cf05673ec6f659df15e",
+      "bytes": 5443,
+      "source": "microcredit package inventory"
     },
     "legacy_audits/docs/paper/nsw_real_proxy_truth_protocol.md": {
       "sha256": "d3088871f9d713d570ead14fcc76e57b2ca64d398d32bc6ab793cee7a0acca49",
@@ -1204,7 +1208,37 @@
     "legacy_audits/tests/test_nsw_real_proxy_truth.py": {
       "sha256": "7db0642ab62c213ec89c3958d83f010189fb2d0c3543f058cde01cf1ad33c45a",
       "bytes": 1774
+    },
+    "MICROCREDIT_METADATA_AUDIT_20260925.md": {
+      "sha256": "13acb8aa475a95bae6acbc435394544cd0302db6930e199518d1a7e38547cd0b",
+      "bytes": 5202,
+      "source": "revision/20260925 microcredit metadata audit"
+    },
+    "MICROCREDIT_OPENICPSR_INVENTORY_20260925.md": {
+      "sha256": "16d805056e5fe53cdfdf8417098774acea7a0642bab5204ffa06c08b73fcabe5",
+      "bytes": 5398,
+      "source": "microcredit package inventory"
+    },
+    "REAL_CROSS_INTERVENTION_AUTHOR_RESPONSE.md": {
+      "sha256": "188a1a7087e0d6f0625c6fd4b0fccdc6f7b2d5cfda1aa5a49f55bca4088200c2",
+      "bytes": 21276,
+      "source": "real cross-intervention author response"
+    },
+    "microcredit_metadata_audit.csv": {
+      "sha256": "37524c517fd9b8e8f381a17cc4d9cbbcfbe5badeca0733459c4ae2bf96f2dcc8",
+      "bytes": 1848,
+      "source": "microcredit metadata audit"
+    },
+    "microcredit_variable_label_audit.csv": {
+      "sha256": "98422529041881aa86b5109c129f7adbe1bb8d91566d92804df83a3479999644",
+      "bytes": 153354,
+      "source": "revision/20260925 microcredit metadata audit"
+    },
+    "tools/inspect_microcredit_metadata.py": {
+      "sha256": "1636a1f7c2339d9a38a1034e292c3c5053d3facb70fc85b46e35f2578736b5f3",
+      "bytes": 3927,
+      "source": "revision/20260925 microcredit metadata audit"
     }
   },
-  "release_files": 301
+  "release_files": 307
 }

@@ -79,6 +79,15 @@ For a short user-facing intake form, see
 [REAL_CROSS_INTERVENTION_INTAKE_ZH.md](REAL_CROSS_INTERVENTION_INTAKE_ZH.md).
 The microcredit starting design and its pilot-versus-confirmatory boundary are
 recorded in [MICROCREDIT_PILOT_PROTOCOL.md](MICROCREDIT_PILOT_PROTOCOL.md).
+The metadata-only local inventory of the downloaded Meager/OpenICPSR package is
+in [MICROCREDIT_OPENICPSR_INVENTORY_20260925.md](MICROCREDIT_OPENICPSR_INVENTORY_20260925.md).
+The first outcome-blind variable-label audit is in
+[MICROCREDIT_METADATA_AUDIT_20260925.md](MICROCREDIT_METADATA_AUDIT_20260925.md),
+with its machine-readable label handoff in
+[microcredit_variable_label_audit.csv](microcredit_variable_label_audit.csv)
+and extractor in [tools/inspect_microcredit_metadata.py](tools/inspect_microcredit_metadata.py).
+The detailed author response to the real cross-intervention critique is in
+[REAL_CROSS_INTERVENTION_AUTHOR_RESPONSE.md](REAL_CROSS_INTERVENTION_AUTHOR_RESPONSE.md).
 
 ## What the new experiments show
 

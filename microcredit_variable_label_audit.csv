@@ -1,0 +1,885 @@
+study_id,archive_path,rows,columns,selection_rank,variable,variable_label,value_label_count
+angelucci_2015,data/microcredit-rct-data/angelucci_et_al_2015.dta,21523,124,0,Treatment,Treatment,0
+angelucci_2015,data/microcredit-rct-data/angelucci_et_al_2015.dta,21523,124,1,BTreatment,Treatment Assignment,0
+angelucci_2015,data/microcredit-rct-data/angelucci_et_al_2015.dta,21523,124,2,Q9_4_soldloan_none,Did not sell an asset to help pay for a loan,0
+angelucci_2015,data/microcredit-rct-data/angelucci_et_al_2015.dta,21523,124,3,Q13_jobincome,Household income from salaried and non-salaried jobs last month,0
+angelucci_2015,data/microcredit-rct-data/angelucci_et_al_2015.dta,21523,124,4,Q21_anyloan,Any loan,0
+angelucci_2015,data/microcredit-rct-data/angelucci_et_al_2015.dta,21523,124,5,BE_Q21_anyloan,,0
+angelucci_2015,data/microcredit-rct-data/angelucci_et_al_2015.dta,21523,124,6,BE_Q21_anyloan_mdum,,0
+angelucci_2015,data/microcredit-rct-data/angelucci_et_al_2015.dta,21523,124,7,foodconsump,Amount spent on food,0
+angelucci_2015,data/microcredit-rct-data/angelucci_et_al_2015.dta,21523,124,8,BE_foodconsump,,0
+angelucci_2015,data/microcredit-rct-data/angelucci_et_al_2015.dta,21523,124,9,BE_foodconsump_mdum,,0
+angelucci_2015,data/microcredit-rct-data/angelucci_et_al_2015.dta,21523,124,10,business_before,Prior business owner,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,0,treatment,Soum belongs to treatment,3
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,1,followup,baseline or followup?,2
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,2,treated,Was household treated? (followup*treatment),2
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,3,repayme7,Hh had to repay loans plus interest in the last month,2
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,4,repayme8,Value of expenditure on repayment and interests in the last month,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,5,repayme10,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,6,repayme9,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,7,repayme_cm,Value of total consumption of repayme in past month,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,8,repayme_ckm,Value of consumption-in-kind of repayme in past month,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,9,profit_r,aggregated profit,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,10,profit_p,aggregated profit,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,11,profit_j,aggregated profit,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,12,profit,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,13,hhincome,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,14,repayme70,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,15,repayme80,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,16,repayme100,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,17,repayme90,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,18,repayme_cm0,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,19,repayme_ckm0,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,20,profit_r0,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,21,profit_p0,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,22,profit_j0,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,23,profit0,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,24,hhincome0,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,25,loan_baseline,Household has any outstanding loans,2
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,26,nloans_soum,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,27,treated_g,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,28,treated_i,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,29,nloans_g,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,30,nloans_i,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,31,treatg_eduhi,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,32,treatg_eduvoc,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,33,treati_eduhi,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,34,treati_eduvoc,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,35,treatgloan,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,36,treatiloan,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,37,treatgage,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,38,treatiage,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,39,entrevenue,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,40,entprofit,household income from enterprise profits,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,41,started_bus_followup,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,42,closed_bus_followup,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,43,BLtot_amount_loans,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,44,BLdum_loan_x,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,45,BLdum_loan_formalnonX,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,46,BLdum_any_loan,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,47,BLdum_loan_nonbank,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,48,BLscaled_profit,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,49,BLscaled_profit_r,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,50,nloans_x,Number of loans from XacBank obtained since march 08,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,51,interest1_x,monthly interest rate on XacBank loan 1,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,52,interest2_x,monthly interest rate on XacBank loan 2,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,53,interest3_x,monthly interest rate on XacBank loan 3,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,54,loanapp_x,HH ever applied for loan with XacBank?,2
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,55,loanpurp_x,Purpose of loan application,9
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,56,loans_e,"HH has outstanding loans since march 08, from sources other than XacBank",2
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,57,interest1_e,monthly interest rate on Ext loan 1,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,58,interest2_e,monthly interest rate on Ext loan 2,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,59,interest3_e,monthly interest rate on Ext loan 3,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,60,loan,Household has any outstanding loans,2
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,61,otherloan,Hh receives any other loan,2
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,62,nrofloans,Number of loans hh has received in the past 5 years,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,63,valueloan_1,Total value of first loan,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,64,collateral_1,HH pledged any collateral for the loan,2
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,65,valueloan_2,Total value of second loan,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,66,collateral_2,HH pledged any collateral for the loan,2
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,67,valueloan_3,Total value of third loan,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,68,collateral_3,HH pledged any collateral for the loan,2
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,69,tot_amount_loans,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,70,scaled_tot_amount_loans,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,71,dum_loan_x,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,72,dum_loan_bank,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,73,dum_loan_other_formal,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,74,dum_loan_informal,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,75,dum_loan_formalnonX,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,76,dum_any_loan,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,77,dum_loan_nonbank,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,78,scaled_profit,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,79,scaled_profit_r,,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,80,useloan_j1,Would use part of the loan on prim joint ent,2
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,81,perloan_j1,Percentage of loan used on prim joint ent,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,82,whatuseloan_j1,What loan would mainly be used for,6
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,83,useloan_j2,Would use part of the loan on sec joint ent,2
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,84,perloan_j2,Percentage of loan used on sec joint ent,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,85,whatuseloan_j2,"What loan would mainly be used for, sec ent",6
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,86,useloan_r,Would use part of the loan on own ent,2
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,87,perloan_r,Percentage of loan used on own ent,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,88,whatuseloan_r,What loan would mainly be used for,6
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,89,useloan_p,Would use part of the loan on partner's ent,2
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,90,perloan_p,Percentage of loan used on partner's ent,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,91,whatuseloan_p,What loan would mainly be used for,6
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,92,profit_j1,aggregated profit,0
+attanasio_2015,data/microcredit-rct-data/attanasio-et-al-2015/Analysis-files/data/attanasio_processed_for_rm_analysis.dta,2109,2062,93,profit_j2,aggregated profit,0
+augsberg_2015,data/microcredit-rct-data/augsberg-et-al-2015/Analysis-files_AEJApp-2013-0272/data/Baseline/BL---SECTION-2---Loans-cl.dta,1240,94,0,treatment,,0
+augsberg_2015,data/microcredit-rct-data/augsberg-et-al-2015/Analysis-files_AEJApp-2013-0272/data/Baseline/BL---SECTION-2---Loans-cl.dta,1240,94,1,ebrd_selected_loan,EBRD selected to receive a loan (Y/N),0
+augsberg_2015,data/microcredit-rct-data/augsberg-et-al-2015/Analysis-files_AEJApp-2013-0272/data/Baseline/BL---SECTION-2---Loans-cl.dta,1240,94,2,randomisation_date,Date of Randomisation,0
+augsberg_2015,data/microcredit-rct-data/augsberg-et-al-2015/Analysis-files_AEJApp-2013-0272/data/Baseline/BL---SECTION-2---Loans-cl.dta,1240,94,3,randomisation_time,Seed,0
+augsberg_2015,data/microcredit-rct-data/augsberg-et-al-2015/Analysis-files_AEJApp-2013-0272/data/Baseline/BL---SECTION-2---Loans-cl.dta,1240,94,4,baseline,,0
+augsberg_2015,data/microcredit-rct-data/augsberg-et-al-2015/Analysis-files_AEJApp-2013-0272/data/Baseline/BL---SECTION-2---Loans-cl.dta,1240,94,5,loans,"No. of loans, No 'NA/DK'",0
+augsberg_2015,data/microcredit-rct-data/augsberg-et-al-2015/Analysis-files_AEJApp-2013-0272/data/Baseline/BL---SECTION-2---Loans-cl.dta,1240,94,6,l1_interestknown,"Interest rate of loan 1 claimed to be known, no 'DK/NA'",0
+augsberg_2015,data/microcredit-rct-data/augsberg-et-al-2015/Analysis-files_AEJApp-2013-0272/data/Baseline/BL---SECTION-2---Loans-cl.dta,1240,94,7,otherloantry,=1 if plans to apply somewheer else if EKI loan will be declined,0
+augsberg_2015,data/microcredit-rct-data/augsberg-et-al-2015/Analysis-files_AEJApp-2013-0272/data/Baseline/BL---SECTION-2---Loans-cl.dta,1240,94,8,l1_otherloantry_bank,=1 will try to get other loan from bank,0
+augsberg_2015,data/microcredit-rct-data/augsberg-et-al-2015/Analysis-files_AEJApp-2013-0272/data/Baseline/BL---SECTION-2---Loans-cl.dta,1240,94,9,l1_otherloantry_mfi,=1 will try to get other loan from MFI,0
+augsberg_2015,data/microcredit-rct-data/augsberg-et-al-2015/Analysis-files_AEJApp-2013-0272/data/Baseline/BL---SECTION-2---Loans-cl.dta,1240,94,10,l1_otherloantry_eki,=1 will try to get other loan from EKI,0
+augsberg_2015,data/microcredit-rct-data/augsberg-et-al-2015/Analysis-files_AEJApp-2013-0272/data/Baseline/BL---SECTION-2---Loans-cl.dta,1240,94,11,l2_interestknown,"Interest rate of loan 2 claimed to be known, no 'DK/NA'",0
+augsberg_2015,data/microcredit-rct-data/augsberg-et-al-2015/Analysis-files_AEJApp-2013-0272/data/Baseline/BL---SECTION-2---Loans-cl.dta,1240,94,12,l3_interestknown,"Interest rate of Loan 3 claimed to be known, no 'DK/NA'",0
+banerjee_2015,data/microcredit-rct-data/banerjee-et-al-2015/2013-0533_data--TO-SUBMIT-/2013-0533_data_endlines1and2_stata12.dta,6863,187,0,treatment,Treatment area,2
+banerjee_2015,data/microcredit-rct-data/banerjee-et-al-2015/2013-0533_data--TO-SUBMIT-/2013-0533_data_endlines1and2_stata12.dta,6863,187,1,area_business_total_base,"Total number of businesses in area, baseline",0
+banerjee_2015,data/microcredit-rct-data/banerjee-et-al-2015/2013-0533_data--TO-SUBMIT-/2013-0533_data_endlines1and2_stata12.dta,6863,187,2,anyloan_1,"Has any outstanding loan, endline 1",2
+banerjee_2015,data/microcredit-rct-data/banerjee-et-al-2015/2013-0533_data--TO-SUBMIT-/2013-0533_data_endlines1and2_stata12.dta,6863,187,3,mfi_loan_cycles_1,"Number of cycles borrowed from an MFI, endline 1",0
+banerjee_2015,data/microcredit-rct-data/banerjee-et-al-2015/2013-0533_data--TO-SUBMIT-/2013-0533_data_endlines1and2_stata12.dta,6863,187,4,anyloan_amt_1,"Total outstanding loan amount (Rs.), endline 1",0
+banerjee_2015,data/microcredit-rct-data/banerjee-et-al-2015/2013-0533_data--TO-SUBMIT-/2013-0533_data_endlines1and2_stata12.dta,6863,187,5,anyloan_2,"Has any outstanding loan, endline 2",2
+banerjee_2015,data/microcredit-rct-data/banerjee-et-al-2015/2013-0533_data--TO-SUBMIT-/2013-0533_data_endlines1and2_stata12.dta,6863,187,6,mfi_loan_cycles_2,"Number of cycles borrowed from an MFI, endline 2",0
+banerjee_2015,data/microcredit-rct-data/banerjee-et-al-2015/2013-0533_data--TO-SUBMIT-/2013-0533_data_endlines1and2_stata12.dta,6863,187,7,anyloan_amt_2,"Total outstanding loan amount (Rs.), endline 2",0
+banerjee_2015,data/microcredit-rct-data/banerjee-et-al-2015/2013-0533_data--TO-SUBMIT-/2013-0533_data_endlines1and2_stata12.dta,6863,187,8,bizprofit_1,"Business profits (last 30 days, Rs.), endline 1",0
+banerjee_2015,data/microcredit-rct-data/banerjee-et-al-2015/2013-0533_data--TO-SUBMIT-/2013-0533_data_endlines1and2_stata12.dta,6863,187,9,bizprofit_2,"Business profits (last 30 days, Rs.), endline 2",0
+banerjee_2015,data/microcredit-rct-data/banerjee-et-al-2015/2013-0533_data--TO-SUBMIT-/2013-0533_data_endlines1and2_stata12.dta,6863,187,10,credit_index_1,"Table 2 dependent variable index, endline 1",0
+banerjee_2015,data/microcredit-rct-data/banerjee-et-al-2015/2013-0533_data--TO-SUBMIT-/2013-0533_data_endlines1and2_stata12.dta,6863,187,11,income_index_1,"Table 4 dependent variable index, endline 1",0
+banerjee_2015,data/microcredit-rct-data/banerjee-et-al-2015/2013-0533_data--TO-SUBMIT-/2013-0533_data_endlines1and2_stata12.dta,6863,187,12,consumption_index_1,"Table 6 dependent variable index, endline 1",0
+banerjee_2015,data/microcredit-rct-data/banerjee-et-al-2015/2013-0533_data--TO-SUBMIT-/2013-0533_data_endlines1and2_stata12.dta,6863,187,13,credit_index_2,"Table 2 dependent variable index, endline 2",0
+banerjee_2015,data/microcredit-rct-data/banerjee-et-al-2015/2013-0533_data--TO-SUBMIT-/2013-0533_data_endlines1and2_stata12.dta,6863,187,14,income_index_2,"Table 4 dependent variable index, endline 2",0
+banerjee_2015,data/microcredit-rct-data/banerjee-et-al-2015/2013-0533_data--TO-SUBMIT-/2013-0533_data_endlines1and2_stata12.dta,6863,187,15,consumption_index_2,"Table 6 dependent variable index, endline 2",0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,0,wave,survey round number,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,1,treatment,1 if treated village,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,2,admin_time_1stloan_baseline,admin: time elapsed between intervention start and loan uptake (in months),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,3,admin_nloans,admin: number of loans,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,4,admin_loanlength,admin: repayment period (in months),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,5,admin_1stloan_amt,admin: first loan amount (in mad),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,6,admin_1stloan_group,admin: 1 if first loan group-liability,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,7,admin_1stloan_indiv,admin: 1 if first loan individual,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,8,admin_1stloan_house,admin: 1 if first loan housing,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,9,admin_time_1stloan6,admin: share of clients who took up 1st loan during the first 6 months,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,10,admin_time_1stloan612,admin: share of clients who took up 1st loan within the 6th and 12th month,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,11,admin_time_1stloan1224,admin: share of clients who took up 1st loan within the 12th and 24th month,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,12,admin_loany1_amt_c,admin: loan amount if took up a loan during the first year (in mad),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,13,admin_loany2_amt_c,admin: loan amount if took up a loan during the second year (in mad),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,14,aloansamt_alamana,amount in MAD of outstanding loans: alamana,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,15,aloansamt_informal,amount in MAD of outstanding loans: informal source,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,16,aloansamt_branching,amount in MAD of outstanding loans: utility company,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,17,aloansamt_oformal2,amount in MAD of outstanding loans: other formal source,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,18,loansamt_alamana,amount (in MAD) of loans: alamana,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,19,loansamt_oformal,amount (in MAD) of loans: other formal source,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,20,loansamt_informal,amount (in MAD) of loans: informal source,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,21,loansamt_branching,amount (in MAD) of loans: utility company,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,22,loansamt_oamc,amount (in MAD) of loans: other mfi,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,23,loansamt_total,amount (in MAD) of loans: total,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,24,inv_business_assets,Non-agricultural business: purchases of assets past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,25,asset_business,Non-agricultural business: current stock of assets (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,26,act_business,1 if declared non-agricultural self-employment activity,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,27,act_number_business,number of non-agricultural self-employment activities,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,28,selfempl_business,1 if non-agricultural self-employment activity,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,29,sale_business,sales and self-consumption non-agricultural business past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,30,expense_business,non-agricultural business: total expenses past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,31,astock_business,non-agricultural business: assets and output stock (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,32,profit_agri,agriculture: profit past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,33,profit_livestock,animal husbandry: profit past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,34,profit_business,non-agricultural business: profit past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,35,profit_total,self-employment activities: total profit past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,36,income_agri,income from agriculture past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,37,income_livestock,income from animal husbandry past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,38,income_business,income from non-agricultural business past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,39,income_dep,income from day labor and salaried past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,40,income_remittance,income from remittances past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,41,income_pension,income from retirement and pension past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,42,income_assetsales,income from asset sales past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,43,income_gvt,income from gov program past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,44,income_othoth,income from other source past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,45,income,total income past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,46,income_work,"income from self-employment activities, day work and salaried past 12 months (in",0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,47,income_other_new,"income from remittances, pension, goverment and other source past 12 month (in M",0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,48,cons_repay,monthly loan repayments (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,49,consumption,total monthly consumption (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,50,consumption_pc,total monthly per capita consumption (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,51,wave_bl,survey round number,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,52,aloansamt_alamana_bl,BL amount in MAD of outstanding loans: alamana,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,53,aloansamt_informal_bl,BL amount in MAD of outstanding loans: informal source,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,54,aloansamt_branching_bl,BL amount in MAD of outstanding loans: utility company,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,55,aloansamt_oformal2_bl,BL amount in MAD of outstanding loans: other formal source,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,56,act_business_bl,BL 1 if declared non-agricultural self-employment activity,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,57,selfempl_business_bl,BL 1 if non-agricultural self-employment activity,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,58,profit_total_bl,BL self-employment activities: total profit past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,59,consumption_bl,BL total monthly consumption (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,60,consumption_pc_bl,BL total monthly per capita consumption (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,61,income_agri_bl,BL income from agriculture past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,62,income_livestock_bl,BL income from animal husbandry past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,63,income_business_bl,BL income from non-agricultural business past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,64,income_dep_bl,BL income from day labor and salaried past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,65,income_pension_bl,BL income from retirement and pension past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,66,income_assetsales_bl,BL income from asset sales past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,67,income_remittance_bl,BL income from remittances past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,68,income_gvt_bl,BL income from gov program past 12 months (in MAD),0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,69,share_cons_income_bl,BL share of expenses to total income,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,70,act_business_d_bl,1 if missing obs at baseline,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,71,random5_final,1 if final random obs,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,72,aloansamt_alamana_m,1 if aloansamt_alamana baseline obs non-missing,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,73,aloansamt_oformal2_m,1 if aloansamt_oformal2 baseline obs non-missing,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,74,aloansamt_informal_m,1 if aloansamt_informal baseline obs non-missing,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,75,aloansamt_branching_m,1 if aloansamt_branching baseline obs non-missing,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,76,act_business_m,1 if act_business baseline obs non-missing,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,77,consumption_m,1 if consumption baseline obs non-missing,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,78,consumption_pc_m,1 if consumption_pc baseline obs non-missing,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,79,income_remittance_m,1 if income_remittance baseline obs non-missing,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,80,income_pension_m,1 if income_pension baseline obs non-missing,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,81,income_gvt_m,1 if income_gvt baseline obs non-missing,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,82,income_assetsales_m,1 if income_assetsales baseline obs non-missing,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,83,income_agri_m,1 if income_agri baseline obs non-missing,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,84,income_livestock_m,1 if income_livestock baseline obs non-missing,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,85,income_business_m,1 if income_business baseline obs non-missing,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,86,income_dep_m,1 if income_dep baseline obs non-missing,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,87,profit_total_m,1 if profit_total baseline obs non-missing,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,88,selfempl_business_m,1 if selfempl_business baseline obs non-missing,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,89,share_cons_income_m,1 if share_cons_income baseline obs non-missing,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,90,attrition_treat,1 if attrited x treated village,0
+crepon_2015,data/microcredit-rct-data/crepon-et-al-2015/Data-Code_AEJApp_MicrocreditMorocco/Output/endline_baseline_outcomes.dta,5524,518,91,meattrition_treat,1 if attrited x treated village - minisurvey sample,0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,0,loans_informal,Outstanding loans from informal sources,0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,1,loans_formal,Outstanding loans from banks/cooperatives,0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,2,loans_rca,Outstanding loans from revolving credit associations,0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,3,loans_ngo,Outstanding loans from NGO,0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,4,loans_mf,Outstanding loans from MF (Follow-up only),0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,5,loans_ml,Outstanding loans from Money Lenders,0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,6,loans_rca_w,Women's outstanding loans from RCA,0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,7,loans_mf_w,Women's outstanding loans from MF (Follow-up only),0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,8,loanw_k,Outstanding loans for capital investment,0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,9,loanw_var,Outstanding loans to purchase variable inputs,0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,10,loanw_c,Outstanding loans for consumption,0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,11,loanw_s,Outstanding loans to pay for schooling costs,0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,12,loanp_owncrop,Outstanding loans to finance production of food crops,0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,13,loanp_cashcrop,Outstanding loans to finance production of cash crops,0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,14,loanp_animals,Outstanding loans to finance livestock activity,0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,15,loanp_other,Outstanding loans to finance other economic activity,0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,16,loanstot,Total outstanding loans (2006 Birr),0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,17,loanstot_prod,Total outstanding loans for productive purposes (2006 Birr),0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,18,loanstot_rca,Total outstanding loans from RC Associations (2006 Birr),0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,19,loanstot_mf,"Total outstanding loans from MF (2006 Birr, Follow-up only)",0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,20,loanstot_informal,Total outstanding loans from informal sources (2003 Birr),0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,21,loanstot_formal,Total outstanding loans from banks/cooperatives (2003 Birr),0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,22,loanstot_ngo,Total outstanding loans from NGO (2003 Birr),0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,23,loanstot_woman,Total outstanding loans initiated by women,0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,24,loans,Any outstanding loan in household,0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,25,loans_nothead,Any outstanding loan not initiated by household head,0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,26,loans_woman,Any outstanding loan initiated by a woman,0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,27,loans_any,Household has any outstanding loan,2
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,28,loans_rep12,Household repaid any loan last 12 months,2
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,29,oldbusiness,,0
+tarozzi_2015,data/microcredit-rct-data/tarozzi-et-al-2015/TarozziEtAlReplicationFiles/data.dta,12675,336,30,revenues,Tot revenues (cropsales + bsns_sales + anim_totsales),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,0,fu_hh_not_seek_treat,Didn't Visit Doctor Due to Financial Constraints,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,1,fu_hh_business_ins,HH Business Insurance,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,2,fu_business_description_1,Description of Business Activities,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,3,fu_business_description_2,Description of Business Activities,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,4,fu_business_description_3,Description of Business Activities,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,5,fu_business_description_4,Description of Business Activities,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,6,fu_business_description_5,,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,7,fu_business_description_6,,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,8,fu_business_description_7,,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,9,fu_business_description_8,,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,10,fu_profit_1,Profit past Month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,11,fu_profit_2,Profit past Month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,12,fu_profit_3,Profit past Month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,13,fu_profit_4,Profit past Month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,14,fu_profit_5,Profit past Month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,15,fu_profit_6,Profit past Month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,16,fu_profit_7,Profit past Month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,17,fu_profit_8,Profit past Month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,18,fu_self_salary_profit,Self Salary Included in Profit Calculation,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,19,fu_number_loans,Number of Loans in Last Yr,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,20,fu_loans,Loans Outstanding,6
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,21,fu_dum_loan_use_capital,Dummy loan use: capital,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,22,fu_dum_loan_use_general,Dummy loan use: general,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,23,fu_dum_loan_use_mainten,Dummy loan use: maintenance,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,24,fu_dum_loan_use_school,Dummy loan use: school,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,25,fu_dum_loan_use_medical,Dummy loan use: medical,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,26,fu_dum_loan_use_pay_loans,Dummy loan use: pay other loans,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,27,fu_dum_loan_use_asset,Dummy loan use: purchase asset,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,28,fu_loans_last_yr_bank,Loans Last year Bank,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,29,fu_loans_last_yr_lending_org,Loans Last yr Lending Org,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,30,fu_loans_last_yr_ngo,Loans Last yr NGO,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,31,fu_loans_last_yr_credit_union,Loans Last yr Credit Union,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,32,fu_loans_last_yr_paluwagan,Loans Last yr Paluwagan,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,33,fu_loans_last_yr_pawnshop,Loans Last yr Pawnshop,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,34,fu_loans_last_yr_employer,Loans Last yr Employer,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,35,fu_loans_last_yr_bombay_5_6er,Loans Last yr Bombay/5-6er,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,36,fu_loans_last_yr_family_friend,Loans Last yr Family/Friend,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,37,fu_loan_last_yr_refuse,Loan Last yr Refuse,2
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,38,fu_loan_last_yr_dontknow,Loan Last yr Don't Know,2
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,39,fu_loan_formal_1,Loans Formal Institutions- Last month,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,40,fu_loan_formal_2,Loans Formal Institutions- Last month,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,41,fu_loan_formal_3,Loans Formal Institutions- Last month,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,42,fu_loan_formal_4,Loans Formal Institutions- Last month,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,43,fu_loan_formal_5,Loans Formal Institutions- Last month,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,44,fu_loan_formal_6,Loans Formal Institutions- Last month,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,45,fu_loan_formal_7,Loans Formal Institutions- Last month,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,46,fu_loan_formal_8,Loans Formal Institutions- Last month,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,47,fu_loan_name_1,Loans' Name,410
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,48,fu_loan_name_2,Loans' Name,410
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,49,fu_loan_name_3,Loans' Name,410
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,50,fu_loan_name_4,Loans' Name,410
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,51,fu_loan_name_5,Loans' Name,410
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,52,fu_loan_name_6,Loans' Name,410
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,53,fu_loan_name_7,Loans' Name,410
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,54,fu_loan_name_8,Loans' Name,410
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,55,fu_loan_use_1,Loans Use,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,56,fu_loan_use_2,Loans Use,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,57,fu_loan_use_3,Loans Use,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,58,fu_loan_use_4,Loans Use,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,59,fu_loan_use_5,Loans Use,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,60,fu_loan_use_6,Loans Use,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,61,fu_loan_use_7,Loans Use,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,62,fu_loan_use_8,Loans Use,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,63,fu_loan_received_month_1,,15
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,64,fu_loan_received_year_1,,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,65,fu_loan_received_month_2,,15
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,66,fu_loan_received_year_2,,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,67,fu_loan_received_month_3,,15
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,68,fu_loan_received_year_3,,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,69,fu_loan_received_month_4,,15
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,70,fu_loan_received_year_4,,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,71,fu_loan_received_month_5,,15
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,72,fu_loan_received_year_5,,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,73,fu_loan_received_month_6,,15
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,74,fu_loan_received_year_6,,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,75,fu_loan_received_month_7,,15
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,76,fu_loan_received_year_7,,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,77,fu_loan_received_month_8,,15
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,78,fu_loan_received_year_8,,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,79,fu_loan_collateral_1,Loan Collateral,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,80,fu_loan_collateral_2,Loan Collateral,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,81,fu_loan_collateral_3,Loan Collateral,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,82,fu_loan_collateral_4,Loan Collateral,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,83,fu_loan_collateral_5,Loan Collateral,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,84,fu_loan_collateral_6,Loan Collateral,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,85,fu_loan_collateral_7,Loan Collateral,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,86,fu_loan_collateral_8,Loan Collateral,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,87,fu_loan_coborrower_1,Loan Co-borrower,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,88,fu_loan_coborrower_2,Loan Co-borrower,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,89,fu_loan_coborrower_3,Loan Co-borrower,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,90,fu_loan_coborrower_4,Loan Co-borrower,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,91,fu_loan_coborrower_5,Loan Co-borrower,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,92,fu_loan_coborrower_6,Loan Co-borrower,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,93,fu_loan_coborrower_7,Loan Co-borrower,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,94,fu_loan_coborrower_8,Loan Co-borrower,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,95,fu_loan_solidarity_1,Loan Solidarity Group,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,96,fu_loan_solidarity_2,Loan Solidarity Group,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,97,fu_loan_solidarity_3,Loan Solidarity Group,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,98,fu_loan_solidarity_4,Loan Solidarity Group,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,99,fu_loan_solidarity_5,Loan Solidarity Group,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,100,fu_loan_solidarity_6,Loan Solidarity Group,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,101,fu_loan_solidarity_7,Loan Solidarity Group,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,102,fu_loan_solidarity_8,Loan Solidarity Group,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,103,fu_loan_before_1,Loan Before Deductions,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,104,fu_loan_before_2,Loan Before Deductions,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,105,fu_loan_before_3,Loan Before Deductions,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,106,fu_loan_before_4,Loan Before Deductions,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,107,fu_loan_before_5,Loan Before Deductions,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,108,fu_loan_before_6,Loan Before Deductions,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,109,fu_loan_before_7,Loan Before Deductions,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,110,fu_loan_before_8,Loan Before Deductions,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,111,fu_loan_after_1,Loan After Deductions,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,112,fu_loan_after_2,Loan After Deductions,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,113,fu_loan_after_3,Loan After Deductions,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,114,fu_loan_after_4,Loan After Deductions,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,115,fu_loan_after_5,Loan After Deductions,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,116,fu_loan_after_6,Loan After Deductions,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,117,fu_loan_after_7,Loan After Deductions,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,118,fu_loan_after_8,Loan After Deductions,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,119,fu_loan_expenses_1,Loan Expenses Incurred,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,120,fu_loan_expenses_2,Loan Expenses Incurred,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,121,fu_loan_expenses_3,Loan Expenses Incurred,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,122,fu_loan_expenses_4,Loan Expenses Incurred,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,123,fu_loan_expenses_5,Loan Expenses Incurred,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,124,fu_loan_expenses_6,Loan Expenses Incurred,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,125,fu_loan_expenses_7,Loan Expenses Incurred,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,126,fu_loan_expenses_8,Loan Expenses Incurred,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,127,fu_loan_term_fill_1,Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,128,fu_loan_term_fill_2,Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,129,fu_loan_term_fill_3,Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,130,fu_loan_term_fill_4,Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,131,fu_loan_term_fill_5,Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,132,fu_loan_term_fill_6,Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,133,fu_loan_term_fill_7,Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,134,fu_loan_term_fill_8,Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,135,fu_loan_term_options_1,Loan Term Unit,7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,136,fu_loan_term_options_2,Loan Term Unit,7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,137,fu_loan_term_options_3,Loan Term Unit,7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,138,fu_loan_term_options_4,Loan Term Unit,7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,139,fu_loan_term_options_5,Loan Term Unit,7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,140,fu_loan_term_options_6,Loan Term Unit,7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,141,fu_loan_term_options_7,Loan Term Unit,7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,142,fu_loan_term_options_8,Loan Term Unit,7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,143,fu_loan_installment_options_1,Loan Installment (Frequency),8
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,144,fu_loan_installment_options_2,Loan Installment (Frequency),8
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,145,fu_loan_installment_options_3,Loan Installment (Frequency),8
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,146,fu_loan_installment_options_4,Loan Installment (Frequency),8
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,147,fu_loan_installment_options_5,Loan Installment (Frequency),8
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,148,fu_loan_installment_options_6,Loan Installment (Frequency),8
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,149,fu_loan_installment_options_7,Loan Installment (Frequency),8
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,150,fu_loan_installment_options_8,Loan Installment (Frequency),8
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,151,fu_loan_installment_1,Loan Installment Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,152,fu_loan_installment_2,Loan Installment Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,153,fu_loan_installment_3,Loan Installment Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,154,fu_loan_installment_4,Loan Installment Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,155,fu_loan_installment_5,Loan Installment Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,156,fu_loan_installment_6,Loan Installment Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,157,fu_loan_installment_7,Loan Installment Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,158,fu_loan_installment_8,Loan Installment Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,159,fu_loan_interest_fill_1,Loan Interest Rate,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,160,fu_loan_interest_fill_2,Loan Interest Rate,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,161,fu_loan_interest_fill_3,Loan Interest Rate,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,162,fu_loan_interest_fill_4,Loan Interest Rate,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,163,fu_loan_interest_fill_5,Loan Interest Rate,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,164,fu_loan_interest_fill_6,Loan Interest Rate,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,165,fu_loan_interest_fill_7,Loan Interest Rate,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,166,fu_loan_interest_fill_8,Loan Interest Rate,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,167,fu_loan_interest_options_1,Loan Interest Rate (Frequency),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,168,fu_loan_interest_options_2,Loan Interest Rate (Frequency),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,169,fu_loan_interest_options_3,Loan Interest Rate (Frequency),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,170,fu_loan_interest_options_4,Loan Interest Rate (Frequency),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,171,fu_loan_interest_options_5,Loan Interest Rate (Frequency),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,172,fu_loan_interest_options_6,Loan Interest Rate (Frequency),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,173,fu_loan_interest_options_7,Loan Interest Rate (Frequency),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,174,fu_loan_interest_options_8,Loan Interest Rate (Frequency),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,175,fu_loan_paluwagan,Paluwagan Last Month,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,176,fu_paluwagan_loan_number,Paluwagan Loan Number Last Year,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,177,fu_paluwagan_term_fill_1,Paluwagan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,178,fu_paluwagan_term_fill_2,Paluwagan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,179,fu_paluwagan_term_fill_3,Paluwagan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,180,fu_paluwagan_term_fill_4,Paluwagan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,181,fu_paluwagan_term_fill_5,Paluwagan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,182,fu_paluwagan_term_fill_6,Paluwagan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,183,fu_paluwagan_term_fill_7,Paluwagan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,184,fu_paluwagan_term_fill_8,Paluwagan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,185,fu_paluwagan_term_options_1,Paluwagan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,186,fu_paluwagan_term_options_2,Paluwagan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,187,fu_paluwagan_term_options_3,Paluwagan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,188,fu_paluwagan_term_options_4,Paluwagan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,189,fu_paluwagan_term_options_5,Paluwagan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,190,fu_paluwagan_term_options_6,Paluwagan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,191,fu_paluwagan_term_options_7,Paluwagan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,192,fu_paluwagan_term_options_8,Paluwagan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,193,fu_paluwagan_interest_fill_1,Paluwagan Interest Rate,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,194,fu_paluwagan_interest_fill_2,Paluwagan Interest Rate,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,195,fu_paluwagan_interest_fill_3,Paluwagan Interest Rate,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,196,fu_paluwagan_interest_fill_4,Paluwagan Interest Rate,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,197,fu_paluwagan_interest_fill_5,Paluwagan Interest Rate,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,198,fu_paluwagan_interest_fill_6,Paluwagan Interest Rate,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,199,fu_paluwagan_interest_fill_7,Paluwagan Interest Rate,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,200,fu_paluwagan_interest_fill_8,Paluwagan Interest Rate,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,201,fu_paluwagan_interest_options_1,Paluwagan Interest Rate (frequency),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,202,fu_paluwagan_interest_options_2,Paluwagan Interest Rate (frequency),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,203,fu_paluwagan_interest_options_3,Paluwagan Interest Rate (frequency),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,204,fu_paluwagan_interest_options_4,Paluwagan Interest Rate (frequency),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,205,fu_paluwagan_interest_options_5,Paluwagan Interest Rate (frequency),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,206,fu_paluwagan_interest_options_6,Paluwagan Interest Rate (frequency),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,207,fu_paluwagan_interest_options_7,Paluwagan Interest Rate (frequency),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,208,fu_paluwagan_interest_options_8,Paluwagan Interest Rate (frequency),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,209,fu_pawnshop_loan,Pawnshop Loan- Last Month,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,210,fu_pawnshop_loan_number,Pawnshop Loan Number Last Year,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,211,fu_pawnshop_interest_fill_1,Pawnshop Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,212,fu_pawnshop_interest_fill_2,Pawnshop Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,213,fu_pawnshop_interest_fill_3,Pawnshop Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,214,fu_pawnshop_interest_fill_4,Pawnshop Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,215,fu_pawnshop_interest_fill_5,Pawnshop Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,216,fu_pawnshop_interest_fill_6,Pawnshop Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,217,fu_pawnshop_interest_fill_7,Pawnshop Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,218,fu_pawnshop_interest_fill_8,Pawnshop Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,219,fu_pawnshop_interest_options_1,Pawnshop Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,220,fu_pawnshop_interest_options_2,Pawnshop Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,221,fu_pawnshop_interest_options_3,Pawnshop Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,222,fu_pawnshop_interest_options_4,Pawnshop Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,223,fu_pawnshop_interest_options_5,Pawnshop Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,224,fu_pawnshop_interest_options_6,Pawnshop Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,225,fu_pawnshop_interest_options_7,Pawnshop Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,226,fu_pawnshop_interest_options_8,Pawnshop Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,227,fu_employer_loan,Employer Loan_Last Month,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,228,fu_employer_loan_number,Employer Loan Number last year,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,229,fu_employer_collateral_1,Employer Loan Collateral,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,230,fu_employer_collateral_2,Employer Loan Collateral,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,231,fu_employer_collateral_3,Employer Loan Collateral,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,232,fu_employer_collateral_4,Employer Loan Collateral,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,233,fu_employer_collateral_5,Employer Loan Collateral,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,234,fu_employer_collateral_6,Employer Loan Collateral,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,235,fu_employer_collateral_7,Employer Loan Collateral,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,236,fu_employer_collateral_8,Employer Loan Collateral,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,237,fu_employer_term_fill_1,Employer Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,238,fu_employer_term_fill_2,Employer Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,239,fu_employer_term_fill_3,Employer Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,240,fu_employer_term_fill_4,Employer Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,241,fu_employer_term_fill_5,Employer Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,242,fu_employer_term_fill_6,Employer Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,243,fu_employer_term_fill_7,Employer Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,244,fu_employer_term_fill_8,Employer Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,245,fu_employer_term_options_1,Employer Loan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,246,fu_employer_term_options_2,Employer Loan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,247,fu_employer_term_options_3,Employer Loan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,248,fu_employer_term_options_4,Employer Loan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,249,fu_employer_term_options_5,Employer Loan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,250,fu_employer_term_options_6,Employer Loan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,251,fu_employer_term_options_7,Employer Loan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,252,fu_employer_term_options_8,Employer Loan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,253,fu_employer_interest_fill_1,Employer Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,254,fu_employer_interest_fill_2,Employer Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,255,fu_employer_interest_fill_3,Employer Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,256,fu_employer_interest_fill_4,Employer Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,257,fu_employer_interest_fill_5,Employer Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,258,fu_employer_interest_fill_6,Employer Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,259,fu_employer_interest_fill_7,Employer Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,260,fu_employer_interest_fill_8,Employer Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,261,fu_employer_interest_options_1,Employer Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,262,fu_employer_interest_options_2,Employer Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,263,fu_employer_interest_options_3,Employer Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,264,fu_employer_interest_options_4,Employer Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,265,fu_employer_interest_options_5,Employer Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,266,fu_employer_interest_options_6,Employer Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,267,fu_employer_interest_options_7,Employer Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,268,fu_employer_interest_options_8,Employer Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,269,fu_bombay_loan,Bombay/Financing Loan-Last Month,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,270,fu_bombay_loan_use_1,Bombay/Finacing Loan Use,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,271,fu_bombay_loan_use_2,Bombay/Finacing Loan Use,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,272,fu_bombay_loan_use_3,Bombay/Finacing Loan Use,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,273,fu_bombay_loan_use_4,Bombay/Finacing Loan Use,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,274,fu_bombay_loan_use_5,Bombay/Finacing Loan Use,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,275,fu_bombay_loan_use_6,Bombay/Finacing Loan Use,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,276,fu_bombay_loan_use_7,Bombay/Finacing Loan Use,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,277,fu_bombay_loan_use_8,Bombay/Finacing Loan Use,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,278,fu_bombay_term_fill_1,Bombay/Financing Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,279,fu_bombay_term_fill_2,Bombay/Financing Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,280,fu_bombay_term_fill_3,Bombay/Financing Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,281,fu_bombay_term_fill_4,Bombay/Financing Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,282,fu_bombay_term_fill_5,Bombay/Financing Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,283,fu_bombay_term_fill_6,Bombay/Financing Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,284,fu_bombay_term_fill_7,Bombay/Financing Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,285,fu_bombay_term_fill_8,Bombay/Financing Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,286,fu_bombay_term_options_1,Bombay/Financing Loan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,287,fu_bombay_term_options_2,Bombay/Financing Loan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,288,fu_bombay_term_options_3,Bombay/Financing Loan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,289,fu_bombay_term_options_4,Bombay/Financing Loan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,290,fu_bombay_term_options_5,Bombay/Financing Loan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,291,fu_bombay_term_options_6,Bombay/Financing Loan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,292,fu_bombay_term_options_7,Bombay/Financing Loan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,293,fu_bombay_term_options_8,Bombay/Financing Loan Term (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,294,fu_bombay_interest_fill_1,Bombay/Financing Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,295,fu_bombay_interest_fill_2,Bombay/Financing Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,296,fu_bombay_interest_fill_3,Bombay/Financing Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,297,fu_bombay_interest_fill_4,Bombay/Financing Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,298,fu_bombay_interest_fill_5,Bombay/Financing Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,299,fu_bombay_interest_fill_6,Bombay/Financing Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,300,fu_bombay_interest_fill_7,Bombay/Financing Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,301,fu_bombay_interest_fill_8,Bombay/Financing Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,302,fu_bombay_interest_options_1,Bombay/Financing Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,303,fu_bombay_interest_options_2,Bombay/Financing Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,304,fu_bombay_interest_options_3,Bombay/Financing Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,305,fu_bombay_interest_options_4,Bombay/Financing Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,306,fu_bombay_interest_options_5,Bombay/Financing Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,307,fu_bombay_interest_options_6,Bombay/Financing Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,308,fu_bombay_interest_options_7,Bombay/Financing Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,309,fu_bombay_interest_options_8,Bombay/Financing Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,310,fu_family_friend_loan,Family/Friend Loan,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,311,fu_family_friends_loan_number,Family Friends Loan Number last year,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,312,fu_family_term_fill_1,Family/Friends Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,313,fu_family_term_fill_2,Family/Friends Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,314,fu_family_term_fill_3,Family/Friends Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,315,fu_family_term_fill_4,Family/Friends Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,316,fu_family_term_fill_5,Family/Friends Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,317,fu_family_term_fill_6,Family/Friends Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,318,fu_family_term_fill_7,Family/Friends Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,319,fu_family_term_fill_8,Family/Friends Loan Term (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,320,fu_family_term_options_1,Family/Friends Loan Term (unit),10
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,321,fu_family_term_options_2,Family/Friends Loan Term (unit),10
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,322,fu_family_term_options_3,Family/Friends Loan Term (unit),10
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,323,fu_family_term_options_4,Family/Friends Loan Term (unit),10
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,324,fu_family_term_options_5,Family/Friends Loan Term (unit),10
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,325,fu_family_term_options_6,Family/Friends Loan Term (unit),10
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,326,fu_family_term_options_7,Family/Friends Loan Term (unit),10
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,327,fu_family_term_options_8,Family/Friends Loan Term (unit),10
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,328,fu_family_interest_fill_1,Family/Friends Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,329,fu_family_interest_fill_2,Family/Friends Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,330,fu_family_interest_fill_3,Family/Friends Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,331,fu_family_interest_fill_4,Family/Friends Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,332,fu_family_interest_fill_5,Family/Friends Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,333,fu_family_interest_fill_6,Family/Friends Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,334,fu_family_interest_fill_7,Family/Friends Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,335,fu_family_interest_fill_8,Family/Friends Loan Interest Rate (fill),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,336,fu_family_interest_options_1,Family/Friends Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,337,fu_family_interest_options_2,Family/Friends Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,338,fu_family_interest_options_3,Family/Friends Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,339,fu_family_interest_options_4,Family/Friends Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,340,fu_family_interest_options_5,Family/Friends Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,341,fu_family_interest_options_6,Family/Friends Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,342,fu_family_interest_options_7,Family/Friends Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,343,fu_family_interest_options_8,Family/Friends Loan Interest Rate (unit),7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,344,fu_family_friends_loan_others_1,Family/Friends Loan Others,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,345,fu_family_friends_loan_others_2,Family/Friends Loan Others,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,346,fu_family_friends_loan_others_3,Family/Friends Loan Others,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,347,fu_family_friends_loan_others_4,Family/Friends Loan Others,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,348,fu_family_friends_loan_others_5,Family/Friends Loan Others,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,349,fu_family_friends_loan_others_6,Family/Friends Loan Others,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,350,fu_family_friends_loan_others_7,Family/Friends Loan Others,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,351,fu_family_friends_loan_others_8,Family/Friends Loan Others,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,352,fu_suppliers_loan,Suppliers' Loan in Last Month,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,353,fu_suppliers_term,Suppliers Loan Term,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,354,fu_suppliers_term_option,Suppliers' Loan Term (unit),5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,355,fu_loan_denied,Loan Denied in Last Year,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,356,fu_theor_loan_location,Theoretical Loan Source,13
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,357,fu_theor_loan_trouble,Theoretical Loan Approval Trouble,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,358,fu_theor_loan_irate,Theoretical Loan IRate,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,359,fu_theor_loan_fr_fam,Theoretical Loan From Friends/Family,5
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,360,fu_theor_loan_fr_fam_amt,Theoretical Loan Friends/Fam Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,361,fu_dum_challenge_credit_debit,Dummy main challenge: creditors,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,362,fu_ladder_creditworthiness,Ladder Creditworthines,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,363,fu_trust_groups_business_assoc,Trust Groups Business Associates,7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,364,fu_trust_groups_credit_inst,Trust Groups Credit Inst,7
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,365,fu_politics_interest,Politics Interest,6
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,366,css_loannumb,Loan Number in CSS,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,367,css_loantype,New or Repeat Borrower,2
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,368,css_loanrequested,Loan Amount Requested (by Applicant),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,369,css_loanrecommend,Loan Amount Recommended (by Officer),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,370,css_loanterm,Loan Term Requested (by Applicant),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,371,css_creditscorefinal,Final Credit Score,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,372,css_loandecision,Step1 Loan Decision,2
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,373,css_loandecision_raw,Step1 Loan Decision (CSS original),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,374,css_loandecision2,Step2 Loan Decision,2
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,375,css_calculatedloanamt,Exact Loan Amount Calculated,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,376,css_roundloanamt,Calculated Loan Amount Rounded,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,377,css_finalloanamt,Final Loan Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,378,css_randomizetag,1=decision randomized / 0=decision not randomized,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,379,css_randomizetag_raw,1=decision randomized / 0=decision not randomized (CSS original),0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,380,css_amtrandomizetag,,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,381,css_loansavailed,Number of Loans Availed,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,382,css_previousloan,Amount of Last FMB Loan,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,383,css_businessprovince1,Business 1: Province,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,384,css_businessmunicipality1,Business 1: Municipality,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,385,css_businesstype1,Business 1: Type,6
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,386,css_yearsinbusiness1,Business 1: Years In Business,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,387,css_businesslocation1,Business 1: Location,3
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,388,css_businessspace1,Business 1: Space,3
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,389,css_businesslicense1,Business 1: License,3
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,390,css_totaloutstandingloans,Total Outstanding Loans,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,391,css_totalnonfmbloans,Total Non-FMB Loans,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,392,css_dailybusinessincome,Total Daily Business Income,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,393,css_weeklybusinessincome,Total Weekly Business Income,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,394,css_monthlybusinessincome,Total Monthly Business Income,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,395,css_dailybusinessexpense,Total Daily Business Expense,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,396,css_weeklybusinessexpense,Total Weekly Business Expense,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,397,css_monthlybusinessexpense,Total Monthly Business Expense,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,398,css_dailyhouseholdincome,Daily Household Income,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,399,css_weeklyhouseholdincome,Weekly Household Income,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,400,css_monthlyhouseholdincome,Monthly Household Income,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,401,css_dailybusincome1,Daily Income from 1 Business,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,402,css_dailybusincome2,Daily Income from 2 Business,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,403,css_dailybusincome3,Daily Income from 3 Business,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,404,css_weeklybusincome1,Weekly Income from 1 Business,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,405,css_weeklybusincome2,Weekly Income from 2 Business,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,406,css_weeklybusincome3,Weekly Income from 3 Business,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,407,css_monthlybusincome1,Monthly Income from 1 Business,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,408,css_monthlybusincome2,Monthly Income from 2 Business,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,409,css_monthlybusincome3,Monthly Income from 3 Business,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,410,css_noofbusiness,Number of Businesses,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,411,css_businessprovince2,Business 2: Province,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,412,css_businessmunicipality2,Business 2: Municipality,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,413,css_businesstype2,Business 2: Type,6
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,414,css_yearsinbusiness2,Business 2: Years In Business,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,415,css_businesslocation2,Business 2: Location,3
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,416,css_businessspace2,Business 2: Space,3
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,417,css_businesslicense2,Business 2: License,3
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,418,css_businessprovince3,Business 3: Province,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,419,css_businessmunicipality3,Business 3: Municipality,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,420,css_businesstype3,Business 3: Type,6
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,421,css_yearsinbusiness3,Business 3: Years In Business,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,422,css_businesslocation3,Business 3: Location,3
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,423,css_businessspace3,Business 3: Space,3
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,424,css_businesslicense3,Business 3: License,3
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,425,css_nametag_credit,credit bill in name?,2
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,426,css_paidtag_credit,credit bill on time?,2
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,427,css_loansource1,Loan 1: Source,13
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,428,css_loanamount1,Loan 1: Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,429,css_loancollateral1,Loan 1: Collateral Requirement,4
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,430,css_loanoutstanding1,Loan 1: Outstanding?,2
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,431,css_loanmissed1,Loan 1: Payments Missed,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,432,css_loandate1,Loan 1: Date,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,433,css_loansource2,Loan 2: Source,13
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,434,css_loanamount2,Loan 2: Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,435,css_loancollateral2,Loan 2: Collateral Requirement,4
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,436,css_loanoutstanding2,Loan 2: Outstanding?,2
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,437,css_loanmissed2,Loan 2: Payments Missed,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,438,css_loandate2,Loan 2: Date,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,439,css_loansource3,Loan 3: Source,13
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,440,css_loanamount3,Loan 3: Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,441,css_loancollateral3,Loan 3: Collateral Requirement,4
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,442,css_loanoutstanding3,Loan 3: Outstanding?,2
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,443,css_loanmissed3,Loan 3: Payments Missed,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,444,css_loandate3,Loan 3: Date,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,445,css_loansource4,Loan 4: Source,13
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,446,css_loanamount4,Loan 4: Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,447,css_loancollateral4,Loan 4: Collateral Requirement,4
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,448,css_loanoutstanding4,Loan 4: Outstanding?,2
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,449,css_loanmissed4,Loan 4: Payments Missed,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,450,css_loandate4,Loan 4: Date,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,451,css_loansource5,Loan 5: Source,13
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,452,css_loanamount5,Loan 5: Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,453,css_loancollateral5,Loan 5: Collateral Requirement,4
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,454,css_loanoutstanding5,Loan 5: Outstanding?,2
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,455,css_loanmissed5,Loan 5: Payments Missed,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,456,css_loandate5,Loan 5: Date,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,457,css_loansource6,Loan 6: Source,13
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,458,css_loanamount6,Loan 6: Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,459,css_loancollateral6,Loan 6: Collateral Requirement,4
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,460,css_loanoutstanding6,Loan 6: Outstanding?,2
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,461,css_loanmissed6,Loan 6: Payments Missed,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,462,css_loandate6,Loan 6: Date,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,463,css_loansource7,Loan 7: Source,13
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,464,css_loanamount7,Loan 7: Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,465,css_loancollateral7,Loan 7: Collateral Requirement,4
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,466,css_loanoutstanding7,Loan 7: Outstanding?,2
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,467,css_loanmissed7,Loan 7: Payments Missed,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,468,css_loandate7,Loan 7: Date,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,469,css_loansource8,Loan 8: Source,13
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,470,css_loanamount8,Loan 8: Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,471,css_loancollateral8,Loan 8: Collateral Requirement,4
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,472,css_loanoutstanding8,Loan 8: Outstanding?,2
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,473,css_loanmissed8,Loan 8: Payments Missed,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,474,css_loandate8,Loan 8: Date,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,475,css_loansource9,Loan 9: Source,13
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,476,css_loanamount9,Loan 9: Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,477,css_loancollateral9,Loan 9: Collateral Requirement,4
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,478,css_loanoutstanding9,Loan 9: Outstanding?,2
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,479,css_loanmissed9,Loan 9: Payments Missed,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,480,css_loandate9,Loan 9: Date,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,481,css_loansource10,Loan 10: Source,13
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,482,css_loanamount10,Loan 10: Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,483,css_loancollateral10,Loan 10: Collateral Requirement,4
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,484,css_loanoutstanding10,Loan 10: Outstanding?,2
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,485,css_loanmissed10,Loan 10: Payments Missed,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,486,css_loandate10,Loan 10: Date,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,487,css_loansource11,Loan 11: Source,13
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,488,css_loanamount11,Loan 11: Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,489,css_loancollateral11,Loan 11: Collateral Requirement,4
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,490,css_loanoutstanding11,Loan 11: Outstanding?,2
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,491,css_loanmissed11,Loan 11: Payments Missed,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,492,css_loandate11,Loan 11: Date,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,493,css_loansource12,Loan 12: Source,13
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,494,css_loanamount12,Loan 12: Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,495,css_loancollateral12,Loan 12: Collateral Requirement,4
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,496,css_loanoutstanding12,Loan 12: Outstanding?,2
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,497,css_loanmissed12,Loan 12: Payments Missed,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,498,css_loandate12,Loan 12: Date,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,499,css_loansource13,Loan 13: Source,13
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,500,css_loanamount13,Loan 13: Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,501,css_loancollateral13,Loan 13: Collateral Requirement,4
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,502,css_loanoutstanding13,Loan 13: Outstanding?,2
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,503,css_loanmissed13,Loan 13: Payments Missed,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,504,css_loandate13,Loan 13: Date,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,505,css_loansource14,Loan 14: Source,13
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,506,css_loanamount14,Loan 14: Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,507,css_loancollateral14,Loan 14: Collateral Requirement,4
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,508,css_loanoutstanding14,Loan 14: Outstanding?,2
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,509,css_loanmissed14,Loan 14: Payments Missed,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,510,css_loandate14,Loan 14: Date,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,511,css_loansource15,Loan 15: Source,13
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,512,css_loanamount15,Loan 15: Amount,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,513,css_loancollateral15,Loan 15: Collateral Requirement,4
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,514,css_loanoutstanding15,Loan 15: Outstanding?,2
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,515,css_loanmissed15,Loan 15: Payments Missed,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,516,css_loandate15,Loan 15: Date,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,517,css_creditscorefinal_recreate,,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,518,css_creditscorefinal_diff,,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,519,loans_pawnshop_numb_12_ms,Number of pawnshop loans availed last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,520,loans_pawnshop_dum_12_ms,Dummy if pawnshop loan availed in last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,521,loans_bank_numb_12_ms,Number of bank loans availed last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,522,loans_bank_dum_12_ms,Dummy if bank loan availed in last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,523,loans_lending_numb_12_ms,Number of lending org loans availed last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,524,loans_lending_dum_12_ms,Dummy if lending org loan availed in last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,525,loans_ngo_numb_12_ms,Number of NGO loans availed last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,526,loans_ngo_dum_12_ms,Dummy if NGO loan availed in last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,527,loans_union_numb_12_ms,Number of credit union loans availed last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,528,loans_union_dum_12_ms,Dummy if credit union loan availed in last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,529,loans_employer_numb_12_ms,Number of loans from employer availed last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,530,loans_employer_dum_12_ms,Dummy if loan from employer availed in last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,531,loans_form_numb_12_ms,Number of form sector loans availed last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,532,loans_form_dum_12_ms,Dummy if form sector loan availed in last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,533,loans_paluwagan_numb_12_ms,Number of paluwagan loans availed last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,534,loans_paluwagan_dum_12_ms,Dummy if paluwagan loan availed in last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,535,loans_bombay_numb_12_ms,Number of bombay or 5-6er loans availed last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,536,loans_bombay_dum_12_ms,Dummy if bombay or 5-6er loan availed in last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,537,loans_family_numb_12_ms,Number of family or friends loans availed last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,538,loans_family_dum_12_ms,Dummy if family or friend loan availed in last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,539,loans_inform_numb_12_ms,Number of inform sector loans availed last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,540,loans_inform_dum_12_ms,Dummy if inform sector loan availed in last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,541,loans_any_numb_12_ms,Number of loans availed last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,542,loans_any_dum_12_ms,Dummy if any loan availed in last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,543,loans_form_simfmb_dum_m_c,"Dummy if simfmb form loan outstanding last month, competitors data",0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,544,loans_k50_form_simfmb_dum_m_c,"Dummy if simfmb form loan outstanding (<=50,000) last month, competitors data",0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,545,loans_form_simfmb_numb_m_c,"Number of simfmb form loans outstanding last month, competitors data",0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,546,loans_k50_form_simfmb_numb_m_c,"Number of simfmb form loans outstanding (<=50,000) last month, competitors data",0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,547,loans_simfmb_before_m_c,"Total princ of simfmb form loans outstanding last month, competitors data",0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,548,loans_k50_simfmb_before_m_c,"Total princ of simfmb form loans outstanding (<=50,000) last month, competitors",0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,549,loans_simfmb_before_m_l_c,"Log of total princ of simfmb form loans outstanding last month, competitors data",0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,550,loans_k50_simfmb_before_m_l_c,"Log of total princ of simfmb form loans outstanding (<=50,000) last month, compe",0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,551,loans_form_nosimfmb_dum_m_c,"Dummy if nosimfmb form loan outstanding last month, competitors data",0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,552,loans_k50_form_nosimfmb_dum_m_c,"Dummy if nosimfmb form loan outstanding (<=50,000) last month, competitors data",0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,553,loans_form_nosimfmb_numb_m_c,"Number of nosimfmb form loans outstanding last month, competitors data",0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,554,loans_k50_form_nosimfmb_numb_m_c,"Number of nosimfmb form loans outstanding (<=50,000) last month, competitors dat",0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,555,loans_nosimfmb_before_m_c,"Total princ of nosimfmb form loans outstanding last month, competitors data",0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,556,loans_k50_nosimfmb_before_m_c,"Total princ of nosimfmb form loans outstanding (<=50,000) last month, competitor",0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,557,loans_nosimfmb_before_m_l_c,"Log of total princ of nosimfmb form loans outstanding last month, competitors da",0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,558,loans_k50_nosimfmb_before_m_l_c,"Log of total princ of nosimfmb form loans outstanding (<=50,000) last month, com",0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,559,loans_form_fmb_numb_m,Number of FMB loans claimed outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,560,loans_form_fmb_dum_m,Dummy if FMB loan claimed outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,561,loans_form_fmb_before_m,Total princ of FMB loans claimed outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,562,loans_form_fmb_before_m_l,Log of total princ of FMB loans claimed outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,563,loans_k50_form_fmb_numb_m,"Number of FMB loans (<=50,000) claimed outstanding last month",0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,564,loans_k50_form_fmb_dum_m,"Dummy if FMB loan (<=50,000) claimed outstanding last month",0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,565,loans_k50_form_fmb_before_m,"Total princ of FMB loans (<=50,000) claimed outstanding last month",0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,566,loans_k50_form_fmb_before_m_l,"Log of total princ of FMB loans (<=50,000) claimed outstanding last month",0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,567,loans_form_numb_m,Number of form sector loans outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,568,loans_form_dum_m,Dummy if form sector loan outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,569,loans_form_before_m,Total princ of form sector loans outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,570,loans_k50_form_numb_m,Number of form sector loans outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,571,loans_k50_form_dum_m,Dummy if form sector loan outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,572,loans_k50_form_before_m,Total princ of form sector loans outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,573,loans_inform_numb_m,Number of inform sector loans outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,574,loans_inform_dum_m,Dummy if inform sector loan outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,575,loans_inform_before_m,Total princ of inform sector loans outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,576,loans_k50_inform_numb_m,Number of inform sector loans outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,577,loans_k50_inform_dum_m,Dummy if inform sector loan outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,578,loans_k50_inform_before_m,Total princ of inform sector loans outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,579,loans_any_numb_m,Number of all loans outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,580,loans_any_dum_m,Dummy if any loans outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,581,loans_any_before_m,Total princ of all loans outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,582,loans_k50_any_numb_m,Number of all loans outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,583,loans_k50_any_dum_m,Dummy if any loans outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,584,loans_k50_any_before_m,Total princ of all loans outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,585,loans_form_before_m_l,Log of total princ of form loans outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,586,loans_k50_form_before_m_l,Log of total princ of form loans outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,587,loans_inform_before_m_l,Log of total princ of inform loans outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,588,loans_k50_inform_before_m_l,Log of total princ of inform loans outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,589,loans_any_before_m_l,Log of total princ of any loans outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,590,loans_k50_any_before_m_l,Log of total princ of any loans outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,591,loans_fmb_frommis_amount_m,Total principal FMB loans outstanding last month from MIS,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,592,loans_fmb_frommis_numb_m,Number of FMB loans outstanding last month from MIS,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,593,loans_k50_fmb_frommis_amount_m,Total principal FMB loans outstanding (<=50000) last month from MIS,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,594,loans_k50_fmb_frommis_numb_m,Number of FMB loans outstanding (<=50000) last month from MIS,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,595,loans_fmb_frommis_numb_12_ms,Number of FMB loans availed last 12 months from MIS,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,596,loans_form_wmis_dum_12_ms,Dummy if form loan incl FMB MIS availed last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,597,loans_any_wmis_dum_12_ms,Dummy if any loan incl FMB MIS availed last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,598,loans_form_wmis_dum_m,Dummy if form loan incl FMB MIS outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,599,loans_form_wmis_numb_m,Number of form loans incl FMB MIS outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,600,loans_form_wmis_before_m,Total princ of form loans incl FMB MIS outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,601,loans_form_wmis_before_m_l,Log of total princ of form loans incl FMB MIS outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,602,loans_k50_form_wmis_dum_m,Dummy if form loan incl FMB MIS outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,603,loans_k50_form_wmis_numb_m,Number of form loans incl FMB MIS outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,604,loans_k50_form_wmis_before_m,Total princ of form loans incl FMB MIS outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,605,loans_k50_form_wmis_before_m_l,Log of total princ of form loans incl FMB MIS outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,606,loans_any_wmis_dum_m,Dummy if any loan incl FMB MIS outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,607,loans_any_wmis_numb_m,Number of any loans incl FMB MIS outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,608,loans_any_wmis_before_m,Total princ of any loans incl FMB MIS outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,609,loans_any_wmis_before_m_l,Log of total princ of any loans incl FMB MIS outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,610,loans_k50_any_wmis_dum_m,Dummy if any loan incl FMB MIS outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,611,loans_k50_any_wmis_numb_m,Number of any loans incl FMB MIS outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,612,loans_k50_any_wmis_before_m,Total princ of any loans incl FMB MIS outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,613,loans_k50_any_wmis_before_m_l,Log of total princ of any loans incl FMB MIS outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,614,loans_form_simfmb_wmis_dum_m,Dummy if simfmb form loan incl FMB MIS outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,615,loans_form_simfmb_wmis_numb_m,Number of simfmb form loans incl FMB MIS outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,616,loans_form_simfmb_wmis_bef_m,Total princ of simfmb form loans incl FMB MIS outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,617,loans_form_simfmb_wmis_bef_m_l,Log of total princ of simfmb form loans incl FMB MIS outstanding last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,618,loans_k50_form_simfmb_wmis_dum_m,Dummy if simfmb form loan incl FMB MIS outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,619,loans_k50_form_simfmb_wmis_num_m,Number of simfmb form loans incl FMB MIS outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,620,loans_k50_form_simfmb_wmis_bef_m,Total princ of simfmb form loans incl FMB MIS outstanding (<=50000) last month,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,621,loans_k50_form_simfmb_wmis_b_m_l,Log of total princ of simfmb form loans incl FMB MIS outstanding (<=50000) last,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,622,loans_outst_dum_12_ms,Dummy if any loan outstanding last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,623,loans_outst_dum_survey,Dummy if any loan outstanding time of survey,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,624,loans_fmb_frommis_numb_survey,Number of FMB loans outstanding time of survey from MIS,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,625,loans_outst_wmis_dum_12_ms,Dummy if any loan incl FMB MIS outstanding last 12 months,0
+karlan_zinman_2011,data/microcredit-rct-data/karlan-and-zinman-2010.zip!1200138sdataset_clean.dta,1978,1953,626,loans_outst_wmis_dum_survey,Dummy if any loan incl FMB MIS outstanding time of survey,0

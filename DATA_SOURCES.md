@@ -43,6 +43,24 @@ pretreatment-covariate proxy check and a separate semisynthetic causal-truth
 run. The proxy is explicitly `observed_covariate_proxy`, not a latent mechanism
 set; the causal truth is exact only for the frozen generated response surfaces.
 
+## Meager microcredit pilot inventory
+
+- Official article: https://www.aeaweb.org/articles?id=10.1257/app.20170299.
+- Official supplemental appendix: https://www.aeaweb.org/articles/materials/10055.
+- OpenICPSR package DOI: https://doi.org/10.3886/E116357V1.
+- User-supplied local archive: `C:\Users\Qiutian\Downloads\116357-V1.zip`.
+- Archive SHA-256: `1EC66E45ED401C7CC476548B0AE77DF0AF765942D7D8914202797D6FA4C61BFE`.
+- The archive has 306 files, including 95 `.dta` files, one cleaned project
+  `RData`, 12 nested source ZIPs, and code/readme/survey materials for the seven
+  published study units. The metadata-only inventory is in
+  `MICROCREDIT_OPENICPSR_INVENTORY_20260925.md`.
+- The package root `LICENSE.txt` states Modified BSD for code and CC BY 4.0 for
+  databases, images, tables and text. This repository does not claim that the
+  package-level license resolves every upstream trial-file, consent, ethics or
+  linkage restriction. Raw Meager files are not committed here.
+- The package is a feasibility/pilot source. It does not by itself provide 19
+  independent interventions for a finite-sample 95% calibration archive.
+
 ## Terms and file provenance
 
 Public input data retain their upstream authorship and applicable terms. This repository does not assert a new license over third-party datasets or papers. No software license has been selected in this release.

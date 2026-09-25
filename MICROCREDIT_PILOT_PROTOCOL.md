@@ -86,13 +86,22 @@ on a target reference must be uncertainty-aware and labelled accordingly.
 ## Feasibility status of the starting archive
 
 The AEA article page is reachable and identifies Meager's seven-study paper.
-DataCite metadata for `10.3886/E116357V1` has no explicit rights entry. The
-OpenICPSR project page returned HTTP 403 from the current environment, so the
-replication package's exact file inventory, individual-level coverage, and
-reuse terms remain unverified. Do not assume that the package contains all
-seven participant-level datasets or that its files can be redistributed.
+The user supplied an authorized local OpenICPSR download. Its recorded SHA-256
+is `1EC66E45ED401C7CC476548B0AE77DF0AF765942D7D8914202797D6FA4C61BFE`; the
+archive contains 306 files, including 95 Stata files, one cleaned `RData`
+object, study-level source packages, readmes, survey material and code. The
+metadata-only inventory is in
+`MICROCREDIT_OPENICPSR_INVENTORY_20260925.md`.
 
-The next action is an inventory-only pass over a locally downloaded package or
-an accessible data export. It should record file names, study IDs, unit of
-observation, effect summaries, design documents, codebooks, licenses, and
-hashes before any outcome-based modelling.
+The package root license states Modified BSD for code and CC BY 4.0 for
+databases, images, tables and text. This is evidence about the downloaded
+package, not a blanket clearance for every upstream trial file or every new
+linkage. Study-specific terms, consent/ethics conditions, and the precise unit
+of observation still require review before individual-level modelling or any
+redistribution.
+
+The package is therefore sufficient to start an outcome-blind inventory and
+estimand/codebook audit. It still cannot be treated as a seven-unit
+independent 95% calibration archive. The next action is to map each study's
+treatment, control, population, horizon, design proxies, and source terms;
+only compatible records then enter the descriptive pilot.

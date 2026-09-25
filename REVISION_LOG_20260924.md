@@ -257,3 +257,52 @@ no explicit rights entry. File inventory, individual-level coverage, and reuse
 terms therefore remain unverified until a local package or accessible export
 is supplied. No Meager file is redistributed or used to claim real mechanism
 calibration before that verification.
+
+## OpenICPSR package inventory: 2026-09-25
+
+The user supplied an authorized download of `116357-V1.zip`. Its SHA-256 is
+`1EC66E45ED401C7CC476548B0AE77DF0AF765942D7D8914202797D6FA4C61BFE`. The
+archive contains 306 files: 95 Stata `.dta` files, one cleaned project
+`RData`, 12 nested source ZIPs, analysis code, readmes, survey material and
+PDFs. Study-specific directories or source packages are present for the seven
+published units (Mexico, Mongolia, Bosnia, India, Morocco, Philippines and
+Ethiopia). The root license states Modified BSD for code and CC BY 4.0 for
+databases, images, tables and text.
+
+This closes the prior *package inventory* gap. It does not close the scientific
+gap: study-specific terms, the exact invitation-ITT alignment, complete
+implementation fields, an independent calibration archive, and a causal
+reference for a held-out intervention still require separate review. Raw files
+remain local and are not committed to GitHub. The metadata-only record is in
+`MICROCREDIT_OPENICPSR_INVENTORY_20260925.md`.
+
+## Outcome-blind metadata audit: 2026-09-25
+
+The first read-only metadata pass inspected one representative or cleaned data
+file for each published study, recording rows, columns, assignment-field names,
+candidate design/proxy fields, and documentation. Mexico, Mongolia, Bosnia,
+India, Morocco and Ethiopia expose recognizable assignment/treatment fields in
+the inspected files. The Philippines source package exposes credit-score and
+randomization-tag fields but no simple treatment field, so it remains a design
+review candidate rather than an automatically pooled invitation-ITT unit.
+
+The audit is recorded in `MICROCREDIT_METADATA_AUDIT_20260925.md` and
+`microcredit_metadata_audit.csv`. It is metadata-only: no effect estimates were
+computed, no target outcomes were used for feature construction, and no raw
+records were committed. The next required step is a two-coder design review of
+the treatment arms, control conditions, outcome family and follow-up horizon.
+
+The header-only extractor `tools/inspect_microcredit_metadata.py` generated
+`microcredit_variable_label_audit.csv` with 884 candidate field labels. This
+provides a concrete coder handoff, while retaining the rule that variable names
+alone do not establish a common treatment or estimand.
+
+## Distance to the reviewer requirement after this step
+
+The package-access and file-inventory gap is closed, and the feasibility of
+outcome-blind proxy construction is now supported by actual variable metadata.
+The decisive gaps remain: a frozen common invitation-ITT estimand, blinded
+dual-coder mechanism records, an intervention-disjoint calibration archive with
+at least 19 independent units, and an independently randomized target
+reference. The seven-study package remains a pilot and cannot be described as a
+real 95% distribution-free calibration study.
