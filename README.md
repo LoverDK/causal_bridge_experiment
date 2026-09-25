@@ -77,6 +77,8 @@ study are documented in
 [REAL_CROSS_INTERVENTION_REQUIREMENTS.md](REAL_CROSS_INTERVENTION_REQUIREMENTS.md).
 For a short user-facing intake form, see
 [REAL_CROSS_INTERVENTION_INTAKE_ZH.md](REAL_CROSS_INTERVENTION_INTAKE_ZH.md).
+The microcredit starting design and its pilot-versus-confirmatory boundary are
+recorded in [MICROCREDIT_PILOT_PROTOCOL.md](MICROCREDIT_PILOT_PROTOCOL.md).
 
 ## What the new experiments show
 

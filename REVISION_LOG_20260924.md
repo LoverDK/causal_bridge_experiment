@@ -233,3 +233,27 @@ split and set-construction protocol, and an independently randomized target
 reference. Individual-level potential outcomes are required for literal
 noise-free causal truth; a randomized target estimate with its sampling
 uncertainty supports a real reference audit but must be labelled as such.
+
+## Microcredit expansion pilot protocol: 2026-09-25
+
+Microcredit expansion was selected as the first real cross-intervention domain.
+The pilot question is whether design and implementation information alone can
+produce a useful ITT interval for an unseen project or region and refuse when
+the interval is too wide. `MICROCREDIT_PILOT_PROTOCOL.md` freezes the scope:
+the default estimand is invitation/eligibility ITT against usual service,
+business and household outcomes are analysed separately, and incompatible
+studies are excluded rather than silently harmonized.
+
+The seven-study Meager archive is treated as a feasibility and pilot source.
+It can support an inventory, mechanism dictionary, coder audit, and descriptive
+leave-one-study-out stress test. It cannot support a stable distribution-free
+95% finite-sample calibration claim. The formal gate is at least 19 independent
+calibration interventions for the finite rank rule, with 25--40 total
+interventions preferred for repeated held-out evaluation.
+
+The AEA article page is reachable. The OpenICPSR project returned HTTP 403 in
+the current environment, and DataCite metadata for `10.3886/E116357V1` exposes
+no explicit rights entry. File inventory, individual-level coverage, and reuse
+terms therefore remain unverified until a local package or accessible export
+is supplied. No Meager file is redistributed or used to claim real mechanism
+calibration before that verification.

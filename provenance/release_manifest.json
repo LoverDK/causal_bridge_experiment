@@ -958,8 +958,8 @@
       "bytes": 356
     },
     "README.md": {
-      "sha256": "b26c192bc551f0e2091bad77e4db00fa603beae1b0981dff7b96123749a0dbfb",
-      "bytes": 7012
+      "sha256": "14cf58ae0c7ea902d8abc42fb52184b5239c8584a99f2b235f976333f0160ca6",
+      "bytes": 7167
     },
     "RELEASE_NOTES.md": {
       "sha256": "1e87ec12c1f1b97cd50cd51970d3eb6e6be2f9e4489fe23230ed67e1f57cd0a0",
@@ -974,8 +974,8 @@
       "bytes": 72
     },
     "REVISION_LOG_20260924.md": {
-      "sha256": "0bf43cee6b812cb6d0df1b69ae8b05905e63fcf3c46f1ccb37dedbd30be1c487",
-      "bytes": 12607
+      "sha256": "109fdafafbb88ba01d16f5eb1a40071f62f5c8a224048750013f0535acef3d36",
+      "bytes": 14049
     },
     "SUPPLEMENTARY_README.md": {
       "sha256": "35073e3bcb850e2e7c967535f07808e53ea3db7d3feb7bf373c096882e68f1c2",
@@ -1121,6 +1121,10 @@
       "sha256": "cbbf0984c20915dd4051e12731e82afaf84ee2a23b022a4051b7b455ef59c6af",
       "bytes": 2393
     },
+    "MICROCREDIT_PILOT_PROTOCOL.md": {
+      "sha256": "d149e5ae29ad77eebcc6bdd9a2a348b9f44ea8ada6a089250c4ed1fb5f5502e8",
+      "bytes": 4962
+    },
     "legacy_audits/docs/paper/nsw_real_proxy_truth_protocol.md": {
       "sha256": "d3088871f9d713d570ead14fcc76e57b2ca64d398d32bc6ab793cee7a0acca49",
       "bytes": 3285
@@ -1202,5 +1206,5 @@
       "bytes": 1774
     }
   },
-  "release_files": 300
+  "release_files": 301
 }
