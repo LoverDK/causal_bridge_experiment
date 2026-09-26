@@ -32,11 +32,11 @@ The Causal ATLAS release rate and released-target MAE are reported alongside
 these quantities. Conditional errors are not comparable to all-target errors;
 the output therefore keeps both populations explicit.
 
-Run the seven-scenario, 200-repetition stress audit from any working directory
-using the path to this script and a new output directory:
+From the repository root, run the seven-scenario, 200-repetition stress audit
+with a new output directory:
 
 ```powershell
-python D:\path\to\current_method\exatlas\run_exatlas_stress.py --output D:\path\to\new-exatlas-stress-run
+python current_method/exatlas/run_exatlas_stress.py --output reproduced/exatlas-stress
 ```
 
 The output directory is required and must not exist. The runner writes
