@@ -5,7 +5,7 @@
     "--repetitions",
     "100",
     "--output",
-    "D:\\study\\zzh\u79d1\u7814\\output\\causal_bridge_experiment_publish\\legacy_audits\\results\\extensions\\nsw_real_proxy_truth_v2"
+    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2"
   ],
   "seed": 2026092501,
   "settings": {
