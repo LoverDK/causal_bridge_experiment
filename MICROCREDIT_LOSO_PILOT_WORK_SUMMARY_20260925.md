@@ -1,5 +1,11 @@
 # Microcredit LOSO pilot: author work summary
 
+**Historical, superseded work summary.** The old three-study run and earlier
+test-command claims below are not the accepted current evidence. The source
+correction, actual nine-test execution, new results and hashes are recorded
+in `MICROCREDIT_PUBLISHED_V1_ACCEPTANCE_20260925.md`. This history is preserved
+locally but excluded from the new submission allowlist.
+
 Date: 2026-09-25. This summary is written for an independent review of the
 next-stage evidence. It records what was completed and what remains outside
 the evidence boundary.

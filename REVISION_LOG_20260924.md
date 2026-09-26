@@ -340,7 +340,10 @@ are correctly marked not identified. At the frozen `delta=0.20` USD PPP per
 fortnight tolerance all computed methods refuse all three targets. Reference
 interval relations are noisy-RCT diagnostics, not causal-truth coverage. The
 target-effect flip audit leaves predictions and release decisions unchanged.
-Results are in `results/microcredit_loso_pilot/`; the runner and test are
+Historical results were in `results/microcredit_loso_pilot/`; this stage is
+superseded by `MICROCREDIT_PUBLISHED_V1_ACCEPTANCE_20260925.md` and the two
+versioned published-summary runs. The old results are not shipped in the new
+submission allowlist. The runner and test are
 `tools/run_microcredit_loso_pilot.py` and
 `tools/test_microcredit_loso_pilot.py`.
 

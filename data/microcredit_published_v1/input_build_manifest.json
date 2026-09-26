@@ -1,0 +1,9 @@
+{
+  "source_spec_sha256": "0f75ec5d315fb1bfe83b0e5db07c559b60b479e8dcba80ee808ea97a782f1b82",
+  "builder_sha256": "96175fbfd4ede7469a2f6fd90e6878423108628b647259091b09363248bd89b7",
+  "outputs": {
+    "primary.csv": "5d8838a9a4a79844428cf294929750997e3f1653c58bd5a47665d70443d8e641",
+    "population_sensitivity.csv": "743b78ab4e1c6df2f9f5b4a7c420e20a67aec8bcc282cccfd140483a1f26b811"
+  },
+  "scope": "Published rounded summaries only; no microdata reconstruction"
+}

@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-25",
+  "scope": "Checks of the reviewed working tree; extraction and ZIP checks are recorded in the external archive audit.",
+  "main_text_page_gate": "Final online PDF is checked separately after every compilation; this numerical package is not a PDF page-count certification.",
+  "current_method_tests_before_portability_fix": {
+    "passed": 42
+  },
+  "current_method_tests_after_portability_fix_in_extracted_package": {
+    "passed": 43,
+    "invocation": "python -B current_method/run_tests.py"
+  },
+  "microcredit_tests": {
+    "passed": 9,
+    "invocation": "python -B tools/test_microcredit_loso_pilot.py"
+  },
+  "published_pilot_independent_verification": {
+    "runs": [
+      "microcredit_primary_published_v1",
+      "microcredit_population_sensitivity_v1"
+    ],
+    "max_numeric_discrepancy": 7.105427357601002e-15,
+    "checks": [
+      "Decimal conversion",
+      "independent arithmetic",
+      "saved status/count/reference relation",
+      "conditional target-effect/SE perturbation",
+      "input/protocol/output hashes"
+    ]
+  },
+  "exatlas_portability_checks": {
+    "stress_tests_passed": 2,
+    "baseline_tests_passed": 3,
+    "reproduction_records": 1400,
+    "reproduction_summary_rows": 7,
+    "reproduced_output_bytes_identical": true,
+    "scope": "Composition-only ExAtlas-style diagnostic; not complete ExAtlas"
+  },
+  "exporter_isolated_checks_passed": 26,
+  "independent_ablation_audit": {
+    "plans": 172800,
+    "stopped_records": 345600,
+    "max_radius_discrepancy": 2.22e-16,
+    "max_prediction_discrepancy": 0,
+    "max_stopped_discrepancy": 5.11e-15
+  },
+  "historical_microcredit_input_and_outputs_preserved": true,
+  "real_mechanism_calibration_verified": false,
+  "human_double_coding_verified": false,
+  "study_specific_data_use_authorization_certified": false
+}

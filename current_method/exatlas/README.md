@@ -16,9 +16,8 @@ by least squares, computes the reconstruction residual divided by the median
 source-target distance, and releases a point composition only when that ratio
 is at most 0.10. This represents a ten-percent residual relative to the local
 source-target scale and is fixed before the shared-seed run.
-Design-incompatible sources are removed before fitting. The output also reports
-a prespecified sensitivity grid at thresholds 0.05, 0.10, 0.15, and 0.20,
-because ExAtlas-style composability is threshold-dependent.
+Design-incompatible sources are removed before fitting. This stress runner
+uses only the fixed 0.10 residual threshold; it does not run a threshold grid.
 
 The held-out target effect and target outcome records are never used in fitting,
 candidate selection, or the composability decision. The target effect is used
@@ -27,25 +26,29 @@ before the run and is a sensitivity parameter, not a learned value.
 
 ## Metrics and interpretation
 
-The runner reports composable-target rate, conditional MAE and direction
-accuracy among composable targets, as well as all-target raw-composition MAE.
+The runner reports composable-target rate and conditional MAE among composable
+targets, as well as all-target raw-composition MAE.
 The Causal ATLAS release rate and released-target MAE are reported alongside
 these quantities. Conditional errors are not comparable to all-target errors;
 the output therefore keeps both populations explicit.
 
-Run:
+Run the seven-scenario, 200-repetition stress audit from any working directory
+using the path to this script and a new output directory:
 
 ```powershell
-python scripts/run/run_exatlas_comparison.py
+python D:\path\to\current_method\exatlas\run_exatlas_stress.py --output D:\path\to\new-exatlas-stress-run
 ```
 
-Outputs are saved in `results/exatlas_comparison/`. This result is suitable as
-an appendix diagnostic or baseline audit. It should not be described as a full
-ExAtlas reproduction or as a comparison of the LLM-generated bridge module.
+The output directory is required and must not exist. The runner writes
+`stress_summary.csv`, `stress_records.csv`, and `stress_metadata.json` there.
+The historical files with these names in this folder are preserved. This result
+is suitable as an appendix diagnostic or baseline audit. It should not be
+described as a full ExAtlas reproduction or as a comparison of the LLM-generated
+bridge module.
 
 ## Controlled target-shift stress test
 
-`scripts/run/run_exatlas_stress.py` repeats the comparison under observable
+`run_exatlas_stress.py` repeats the comparison under observable
 target shifts and hidden-moderator shifts of 0.25, 0.50, and 0.75 toward a
 fixed in-domain anchor. The archive, target-outcome isolation, 200 repetitions
 per scenario, and residual threshold remain fixed. This audit asks whether the

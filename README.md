@@ -1,10 +1,10 @@
 # Causal bridge experiment archive
 
-Experimental code, public input data, frozen configurations, saved results, and paper figures for **When Can Experiments Transfer? Operational Certificates and Active Causal Bridging**. This release corresponds to the ICLR 2027 manuscript revision of 17 September 2026, including Appendix P's matched-certificate weight and geometric-bound ablations.
+Experimental code, public input data, frozen configurations, saved results, and paper figures for **When Can Experiments Be Reused? Certified Transport, Refusal, and Causal Bridging**. This release corresponds to the ICLR 2027 manuscript revision of 25 September 2026, including Appendix P's matched-certificate weight and geometric-bound ablations.
 
-This repository is prepared for anonymous supplementary-material export. The export contains only the tracked research files; Git metadata, local caches, generated scratch outputs, and reproduction directories are excluded.
+This repository is prepared for anonymous supplementary-material export. The export contains the reviewed files pinned in the release manifest, including accepted local revisions; Git metadata, local caches, generated scratch outputs, and reproduction directories are excluded.
 
-For the reviewer-facing package overview, start with [SUPPLEMENTARY_README.md](SUPPLEMENTARY_README.md). The complete current-paper map is [CURRENT_ARTIFACTS.md](CURRENT_ARTIFACTS.md); the figure/table asset index is [paper_figures/PAPER_MAP.md](paper_figures/PAPER_MAP.md). The 2026-09-24 revision record is [REVISION_LOG_20260924.md](REVISION_LOG_20260924.md). Data origins are in [DATA_SOURCES.md](DATA_SOURCES.md), and release validation is in [RELEASE_NOTES.md](RELEASE_NOTES.md).
+For the package overview, start with [SUPPLEMENTARY_README.md](SUPPLEMENTARY_README.md). The paper-item map is [CURRENT_ARTIFACTS.md](CURRENT_ARTIFACTS.md); the figure/table asset index is [paper_figures/PAPER_MAP.md](paper_figures/PAPER_MAP.md). Data origins are in [DATA_SOURCES.md](DATA_SOURCES.md). Exact delivered bytes are pinned in [provenance/release_manifest.json](provenance/release_manifest.json).
 
 ## Contents
 
@@ -15,8 +15,9 @@ For the reviewer-facing package overview, start with [SUPPLEMENTARY_README.md](S
 | `legacy_audits/` | Retained NSW reconstruction and stronger baseline/semi-synthetic extension, with only the shared bridge dependencies needed to reproduce them |
 | `paper_figures/` | Paper figure assets, LaTeX table fragments, and portable Figure 5/6 renderer |
 | `provenance/` | Import inventory and SHA-256 delivery manifest |
+| `LeanProofs/` | Standalone Lean/Mathlib project for the deterministic appendix lemmas |
 
-Saved full runs are evidence archives. The wrapper below creates a separate output directory and refuses to overwrite an existing one. For the final submission ZIP, follow [ANONYMOUS_EXPORT.md](ANONYMOUS_EXPORT.md) and inspect the extracted archive before uploading it.
+Saved full runs are evidence archives. The wrapper below creates a separate output directory and refuses to overwrite an existing one. `tools/export_submission.py` checks the allowlist, hashes, and ZIP members; `python reproduce.py verify` checks the extracted files.
 
 ## Reproduce
 
@@ -67,18 +68,13 @@ scope, and interpretation are recorded in
 [`current_method/docs/mechanism_set_calibration_protocol.md`](current_method/docs/mechanism_set_calibration_protocol.md).
 
 The audit is controlled labelled-error evidence. It does not establish real
-cross-intervention mechanism calibration; the distinction is recorded in the
-[revision log](REVISION_LOG_20260924.md) and in the paper source.
+cross-intervention mechanism calibration; its scope is fixed in the linked
+protocol and `current_method/results/mechanism_calibration/summary.csv`.
 
 The NSW real-covariate and semisynthetic truth audit is reproduced with
 `python reproduce.py legacy-nsw-real-proxy-truth --output reproduced/nsw-real-proxy-truth`.
-Its scope and exact input requirements for the next real cross-intervention
-study are documented in
-[REAL_CROSS_INTERVENTION_REQUIREMENTS.md](REAL_CROSS_INTERVENTION_REQUIREMENTS.md).
-For a short user-facing intake form, see
-[REAL_CROSS_INTERVENTION_INTAKE_ZH.md](REAL_CROSS_INTERVENTION_INTAKE_ZH.md).
-The microcredit starting design and its pilot-versus-confirmatory boundary are
-recorded in [MICROCREDIT_PILOT_PROTOCOL.md](MICROCREDIT_PILOT_PROTOCOL.md).
+Its truth is exact only for the specified generated response surfaces; the
+real-covariate component remains a within-trial proxy audit.
 The metadata-only local inventory of the downloaded Meager/OpenICPSR package is
 in [MICROCREDIT_OPENICPSR_INVENTORY_20260925.md](MICROCREDIT_OPENICPSR_INVENTORY_20260925.md).
 The first outcome-blind variable-label audit is in
@@ -86,28 +82,42 @@ The first outcome-blind variable-label audit is in
 with its machine-readable label handoff in
 [microcredit_variable_label_audit.csv](microcredit_variable_label_audit.csv)
 and extractor in [tools/inspect_microcredit_metadata.py](tools/inspect_microcredit_metadata.py).
-The conservative treatment/control compatibility draft is in
-[MICROCREDIT_ESTIMAND_MATRIX_DRAFT_20260925.md](MICROCREDIT_ESTIMAND_MATRIX_DRAFT_20260925.md).
-The detailed author response to the real cross-intervention critique is in
-[REAL_CROSS_INTERVENTION_AUTHOR_RESPONSE.md](REAL_CROSS_INTERVENTION_AUTHOR_RESPONSE.md).
-
-The seven-study design evidence audit, frozen invitation-ITT protocol, coding
-status, and descriptive LOSO protocol/report are in
+The seven-study source audit, operational access-ITT protocol, and descriptive
+LOSO execution protocol are in
 [MICROCREDIT_DESIGN_EVIDENCE_20260925.md](MICROCREDIT_DESIGN_EVIDENCE_20260925.md),
 [MICROCREDIT_INVITATION_ITT_PROTOCOL_20260925.md](MICROCREDIT_INVITATION_ITT_PROTOCOL_20260925.md),
-[MICROCREDIT_CODING_STATUS_20260925.md](MICROCREDIT_CODING_STATUS_20260925.md),
-[MICROCREDIT_LOSO_PILOT_PROTOCOL_20260925.md](MICROCREDIT_LOSO_PILOT_PROTOCOL_20260925.md), and
-[MICROCREDIT_LOSO_PILOT_REPORT_20260925.md](MICROCREDIT_LOSO_PILOT_REPORT_20260925.md).
+[MICROCREDIT_LOSO_PILOT_PROTOCOL_20260925.md](MICROCREDIT_LOSO_PILOT_PROTOCOL_20260925.md).
 The pilot runner is [tools/run_microcredit_loso_pilot.py](tools/run_microcredit_loso_pilot.py);
-saved tables and the leakage audit are in `results/microcredit_loso_pilot/`.
-The held-out result effect and SE are excluded from prediction and release;
-they are used only for the post-prediction noisy-reference comparison. The
-pilot also records sign error and released-target risk (undefined here because
-all computed methods refused at the primary tolerance).
-The complete work summary for independent review is in
-[MICROCREDIT_LOSO_PILOT_WORK_SUMMARY_20260925.md](MICROCREDIT_LOSO_PILOT_WORK_SUMMARY_20260925.md).
-Only three studies passed the strict community-access/first-endline-profit
-gate, so this is descriptive and cannot be called real 95% calibration.
+the source cells, post-hoc selection, inputs, results, and limits are in
+[MICROCREDIT_PUBLISHED_V1_REPORT_20260925.md](MICROCREDIT_PUBLISHED_V1_REPORT_20260925.md).
+The source-corrected primary has two studies (Mexico and India endline 1);
+a separately labelled post-hoc population sensitivity adds Morocco's weighted
+all-sample Table 8B estimate. Their results are in
+`results/microcredit_primary_published_v1/` and
+`results/microcredit_population_sensitivity_v1/`. Design provenance remains
+unverified, so ATLAS and design regression are not qualified. Every computed
+baseline refuses at the frozen tolerances; released-target risk is undefined.
+Numerical target effect/SE perturbations leave predictions and decisions
+unchanged conditional on frozen qualification. This does not establish
+outcome-blind design coding or real calibration.
+
+The old `data/microcredit_loso_pilot_input.csv` is retained as a fail-closed
+regression fixture, not an accepted input. Historical three-study outputs and
+reports are preserved locally but excluded from this submission allowlist.
+
+From a fresh output path, rebuild the published-summary inputs and verify both
+saved analyses:
+
+```bash
+python -B tools/build_microcredit_published_inputs.py --output reproduced/published-inputs
+python -B tools/verify_microcredit_published_run.py --run results/microcredit_primary_published_v1
+python -B tools/verify_microcredit_published_run.py --run results/microcredit_population_sensitivity_v1
+python -B tools/test_microcredit_loso_pilot.py
+```
+
+The paper's deterministic Lean core is provided as a self-contained project in
+`LeanProofs/`. Its toolchain and Mathlib revision are pinned; setup, scope, and
+verification commands are documented in `LeanProofs/README.md`.
 
 ## What the new experiments show
 
@@ -116,3 +126,12 @@ The ablations use 1,800 independent worlds, shared random/nearest acquisition sc
 The geometric result is mixed: the barycentric bound improves release and cost over the Lipschitz bound on bridgeable menus, but taking their minimum adds no release or cost benefit over the barycentric bound alone in any tested cell. Small radius improvements do not necessarily change a decision. All evaluated ablation policies have zero observed bad releases and full empirical path coverage in this run; these conservative simulation results are not universal coverage guarantees.
 
 The complete ExAtlas procedure has **not** been run as a matched-information comparator. The included point-prediction baselines must not be relabelled as a full ExAtlas replication. Many Labs 2 is source holdout under a standardized intervention, and NSW is within-trial reconstruction; neither establishes calibrated mechanism sets for real cross-intervention transport. Simulations and code checks do not discharge every theoretical assumption.
+
+The retained `current_method/exatlas/` diagnostic implements composition only,
+with a fixed 0.10 residual threshold; its synthetic release rates do not
+reproduce the full ExAtlas system. Weight selection uses multi-start SLSQP and
+feasible fallbacks, then recomputes the radius at the selected feasible weights.
+Saved plans mark `global_optimum_certified=False`: numerical feasibility is not
+a global optimum certificate. Real-data `reference_inclusion` and the
+microcredit interval comparisons refer to noisy held-out estimates, not exact
+causal-effect coverage.

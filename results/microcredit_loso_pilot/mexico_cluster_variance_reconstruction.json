@@ -1,0 +1,20 @@
+{
+  "archive_sha256": "1ec66e45ed401c7cc476548b0ae77df0af765942d7d8914202797d6fa4c61bfe",
+  "archive_bytes": 95043384,
+  "data_path": "data/microcredit-rct-data/angelucci-et-al-2015/Compartamos_AEJ/Main/data/analysis_data_AEJ_pub.dta",
+  "model_source": "data/microcredit-rct-data/angelucci-et-al-2015/Compartamos_AEJ/Main/Compartamos-AEJ-tables-2-8.do:3,5,31-33",
+  "outcome": "Q10_9_toprof",
+  "assignment": "Treatment",
+  "cluster": "cluster",
+  "sample_filter": "survey == Endline; complete model-case rows",
+  "n_observations": 16005,
+  "n_clusters": 238,
+  "n_regressors": 49,
+  "coefficient_local_currency_per_fortnight": 0.1147434249211603,
+  "cluster_robust_se_local_currency_per_fortnight": 39.00438867180691,
+  "conversion_to_usd_ppp_per_fortnight": 0.10264929832327094,
+  "coefficient_usd_ppp_per_fortnight": 0.011778332055366025,
+  "se_usd_ppp_per_fortnight": 4.003773128689117,
+  "python": "3.13.15",
+  "raw_records_committed": false
+}

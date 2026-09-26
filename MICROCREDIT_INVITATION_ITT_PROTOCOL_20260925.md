@@ -1,7 +1,29 @@
 # Frozen invitation-ITT protocol for the seven-study pilot
 
-Status: frozen before the LOSO result table was opened, 2026-09-25. This is a
-descriptive pilot protocol, not a preregistered 95% calibration experiment.
+Status: the initial protocol preceded the historical LOSO table. The
+source-correction amendment dated 2026-09-25 below was made after those
+results and published cells were seen. This is a descriptive pilot protocol,
+not a preregistered 95% calibration experiment.
+
+## Source-correction amendment
+
+The accepted source specification is `data/microcredit_published_sources_v1.json`.
+The primary versioned input contains published Mexico Table 3 and India
+Table 3A endline-1 summaries. Morocco's old Table 3 row is excluded because
+it targets the likely-borrower stratum. A separately reported post-hoc
+population sensitivity uses Morocco Table 8 Panel B, inverse-sampling-weighted
+for the selected-village population, with its original trimming and clustered
+inference. It does not silently replace the primary specification. Details
+and fixed source values are in `MICROCREDIT_LOSO_PILOT_PROTOCOL_20260925.md`.
+
+Published rounded, assignment-clustered summaries establish source-based
+variance provenance, not raw-data or native Stata reproduction. The operational
+profit/access grouping does not establish measurement equivalence. Design
+coordinate gates stay closed until independently sourced, including planned
+versus realized `loansize_percentincome`; neither run can be called calibrated
+ATLAS. The historical mixed-input run remains superseded and is excluded
+from the new submission export. The two-human-coder requirement remains
+unfulfilled; the source-based numerical pilot is explicitly descriptive.
 
 ## Primary estimand
 
@@ -74,8 +96,10 @@ Baselines use the same held-out study, same training set, and same outcome
 information boundary: fixed-effect inverse-variance meta-analysis, random-
 effects DerSimonian--Laird style prediction, design/context meta-regression
 only when the training design matrix has full rank, and robust training range
-expanded by the target sampling uncertainty. No result-dependent threshold or
-model choice is allowed.
+computed from training-study effects only. Held-out sampling uncertainty is
+used only to define the post-prediction noisy-reference interval; it cannot
+expand a prediction interval or affect release. No result-dependent threshold
+or model choice is allowed.
 
 ## Reference and leakage reporting
 

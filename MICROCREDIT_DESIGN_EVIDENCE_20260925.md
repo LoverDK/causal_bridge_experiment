@@ -4,6 +4,16 @@ Date: 2026-09-25. This is a source audit for the Meager OpenICPSR V1
 package. It is not an effect estimate and does not certify a common estimand.
 Raw records remain in the authorized local archive and are not committed.
 
+**Source-correction update:** the design table below retains the initial
+seven-study screening stage. The selected published cells and current numeric
+status are in `MICROCREDIT_PUBLISHED_V1_REPORT_20260925.md` and
+`data/microcredit_published_sources_v1.json`. Mexico Table 3 and India EL1
+Table 3A supply assignment-clustered published summaries for the two-study
+descriptive primary. Morocco Table 3 targets a different population; Table 8B
+enters only a separately reported post-hoc population sensitivity. This
+selection occurred after published cells were visible. Design-coordinate and
+human-coding gaps remain.
+
 ## Evidence rules
 
 We accept a design claim only when it is supported by a paper methods/design
@@ -41,7 +51,7 @@ be reproduced from the cited study code or a study-specific reported table.
 
 | Study | Assignment field and location | Profit/outcome field and location | Summary effect / SE location | Variance status |
 |---|---|---|---|---|
-| Mexico | `Treatment`, `BTreatment`, `cluster` in `data/microcredit-rct-data/angelucci_et_al_2015.dta`; import lines 74--75, 106 | `Q10_9_toprof` (last 2 weeks), import lines 76--78 | `reported_coefficients_profit[1]`, `reported_coefficients_profit_sds[1]`, import lines 749--756 | **Unresolved:** ordinary R `lm` is not cluster-robust; study quantile code clusters `cluster`, but an exact mean-profit SE is not frozen |
+| Mexico | `Treatment`, `BTreatment`, `cluster` in `data/microcredit-rct-data/angelucci_et_al_2015.dta`; import lines 74--75, 106 | `Q10_9_toprof` (last 2 weeks), import lines 76--78 | `reported_coefficients_profit[1]`, `reported_coefficients_profit_sds[1]`, import lines 749--756 | **Unresolved in the Meager summary; official design-based reconstruction located:** `Compartamos-AEJ-tables-2-8.do`, lines 3, 5, 31--33, uses endline, supercluster fixed effects, and `vce(cl cluster)` for `Q10_9_toprof` with `Treatment`. A separate Meager do-file uses unclustered robust SEs. The reconstructed coefficient/sample must be reconciled to the summary before use. |
 | Mongolia | `treatment`, `soum`, `followup` in `attanasio_processed_for_rm_analysis.dta`; import lines 145--162, 183 | `profit_j`, import lines 163--165; one-year standardization line 746 | summary vector indices `[2]`, lines 749--756 | **Unresolved:** arm-specific group-vs-control or individual-vs-control SE is not supplied by the current pooled summary |
 | Bosnia | `treatment`, `ebrd_selected_loan`, `randomisation_date/time`; baseline/follow-up files in the Augsburg path; import lines 300--301, 371--376 | `bm_profit` in follow-up business file, import lines 314--327 | summary vector index `[3]`, lines 749--756 | **Unresolved for community stratum:** study code clusters at the relevant assignment/design level, but this is an applicant-level contrast |
 | India | `treatment` and `areaid` in `2013-0533_data_endlines1and2_stata12.dta`; import lines 415--416, 435 | `bizprofit_1` (last 30 days, endline 1), variable label and import lines 417--419 | summary vector index `[4]`, lines 749--756; study do-files cluster `areaid` | **Candidate:** cluster-robust design code is present; exact reported SE source must be retained with the frozen endline-1 extraction |
@@ -49,10 +59,9 @@ be reproduced from the cited study code or a study-specific reported table.
 | Philippines | `css_randomizetag`, `css_loandecision_raw`, score fields in nested `1200138sdataset_clean.dta`; import lines 568--574 | constructed `fu_profit_1`...`fu_profit_8`, import lines 574--578 | summary vector index `[6]`, lines 749--756 | **Unresolved:** randomization-tag to primary assignment and a common profit SE are not established |
 | Ethiopia | `patypen`, `pa`, `time`, `D_MF`, `D_None` in `TarozziEtAlReplicationFiles/data.dta`; import lines 667--681 | `net` (revenues minus costs), import lines 679--681 | summary vector index `[7]`, lines 749--756 | **Unresolved for frozen MF-vs-None:** existing summary uses `t_D` and does not isolate the required arm contrast |
 
-This map is why the executable numerical pilot uses only the three rows whose
-first-endline profit summary and design stratum can be stated without silently
-changing arms. It does not claim that their ordinary summary SEs are sufficient
-for a confirmatory RCT variance analysis.
+The original map motivated a three-row candidate, subsequently superseded by
+the source-corrected primary and population sensitivity above. It must not be
+read as current eligibility for all three historical rows.
 
 ## Data-field and variance audit
 
@@ -62,8 +71,11 @@ fits `lm(profit ~ treatment)` for all seven studies (`data/replicating-
 microcredit-regressions-profit.R`, lines 62--74), while study-specific do-files
 cluster by `areaid`, `demi_paire`, or `pa` where appropriate. Therefore a pilot
 must not silently treat the ordinary `lm` standard errors as RCT sampling
-variances. Any study without an auditable assignment-level variance is marked
-variance-unresolved and excluded from a formal 95% statement.
+variances. The published Mexico Table 3 and India Table 3A cells give
+assignment-clustered standard errors; the separately labelled Morocco Table 8B
+cell does likewise under its weighted, paired-village specification. These are
+rounded published summaries, not native microdata reconstructions. They support
+descriptive numerical baselines, not a real 95% mechanism-calibration claim.
 
 The package README also says the cleaned project object was assembled from seven
 online datasets and does not import every available variable
@@ -73,8 +85,7 @@ locations and labels, not complete mechanism coverage.
 ## Coding status
 
 The repository has one automated metadata extraction (884 labelled fields) and
-an AI design-only second pass. The attempted second pass accidentally exposed
-abstract/result-summary and balance-table text while locating method pages; it
-did not use numerical treatment-effect values, but it does not qualify as a
-strict outcome-blind human double code. No inter-coder agreement statistic is
-reported. See `MICROCREDIT_CODING_STATUS_20260925.md`.
+a design-only source pass. A strict outcome-blind human double code,
+adjudication record, and inter-coder agreement statistic were not completed;
+the published-summary pilot therefore remains descriptive and not
+confirmatory.

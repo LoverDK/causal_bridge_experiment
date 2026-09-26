@@ -4,7 +4,7 @@ Paths are relative to the repository root. The saved outputs are the numerical
 records used for the integrated manuscript; the commands below regenerate them
 in an isolated directory.
 
-| Paper item | Committed evidence | Source and reproduction |
+| Paper item | Accepted evidence | Source and reproduction |
 |---|---|---|
 | Figure 2 and Table 4 | `paper_original/recorded/summaries/operational_panel_*.csv`, `operational_simulation_manifest.csv` | `paper_original/run_operational_experiments.py`; `python reproduce.py original` |
 | Figure 3 | `paper_original/recorded/manylabs/`, with the independent source-level records in `current_method/results/full/` | `paper_original/run_manylabs2_framing.py`; `python reproduce.py original` |
@@ -20,9 +20,19 @@ in an isolated directory.
 | Cross-effect-family baseline panel | `current_method/results/effect_family_baselines/` | `python reproduce.py effect-family-baselines --output reproduced/effect-family-baselines` |
 | Corrected and all-family baseline sensitivities | `current_method/results/effect_family_baselines_corrected/`, `current_method/results/effect_family_baselines_all/` | `python reproduce.py effect-family-baselines-corrected --output reproduced/effect-family-baselines-corrected` and `python reproduce.py effect-family-baselines-all --output reproduced/effect-family-baselines-all` |
 | NSW real-covariate proxy and semisynthetic causal-truth audit | `legacy_audits/results/extensions/nsw_real_proxy_truth_v2/` | `python legacy_audits/scripts/run/run_nsw_real_proxy_truth.py --repetitions 100 --output results/extensions/nsw_real_proxy_truth_new` |
+| Source-corrected microcredit descriptive primary and post-hoc population sensitivity | `results/microcredit_primary_published_v1/`, `results/microcredit_population_sensitivity_v1/` | `MICROCREDIT_PUBLISHED_V1_REPORT_20260925.md` gives exact inputs, source cells, hashes and reproduction commands; ATLAS remains not qualified |
+| Composition-only ExAtlas-style stress diagnostic | `current_method/exatlas/stress_records.csv`, `stress_summary.csv`, `stress_metadata.json` | `python current_method/exatlas/run_exatlas_stress.py --output reproduced/exatlas-stress`; seven scenarios and 200 repetitions, fixed threshold 0.10; not the complete ExAtlas system |
+| Machine-checked deterministic appendix core | `LeanProofs/CausalAtlasBridge.lean`, `LeanProofs/AxiomAudit.lean` | `cd LeanProofs && lake exe cache get && lake build`; `LeanProofs/README.md` records standalone warning and axiom checks |
 
-The outstanding real-study input checklist is
-[`REAL_CROSS_INTERVENTION_REQUIREMENTS.md`](REAL_CROSS_INTERVENTION_REQUIREMENTS.md).
+The outstanding real-study input requirement is a separately calibrated archive
+of independent interventions with frozen estimands, outcome-blind mechanism
+proxies, and an independent randomized target reference.
+
+Table and figure numbers above refer to the pre-final integrated draft; match
+items by caption and content after the final appendix insertion. The NSW v2
+historical manifest is supplied as the explicitly labelled anonymous derivative
+`provenance/nsw_real_proxy_truth_v2_public_manifest.json`; its original
+absolute-path command is excluded from delivery and preserved locally.
 
 The existing PDF assets are the paper inputs. `paper_figures/render_appendix_figures.py`
 regenerates the portable Figure 5/6 assets from committed CSV files; font and

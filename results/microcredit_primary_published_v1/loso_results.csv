@@ -1,0 +1,11 @@
+target,method,n_train,status,qualification_reason,estimate,lower,upper,radius,width,released,reference_lower,reference_upper,point_error,sign_error,released_error_beyond_delta,reference_relation
+angelucci_mexico,fixed_effect,1,computed,variance_gate,15.341039717051054,-11.329344446443413,42.01142388054552,26.670384163494465,53.34076832698893,False,-7.84651236383083,7.84651236383083,15.341039717051054,False,False,contains_full
+angelucci_mexico,random_effects,1,not_identified,frozen_df_rule_unavailable,,,,,inf,False,-7.84651236383083,7.84651236383083,,,,not_run
+angelucci_mexico,design_meta_regression,1,not_qualified,variance_or_design_gate_failed,,,,,inf,False,-7.84651236383083,7.84651236383083,,,,not_run
+angelucci_mexico,robust_training_range,1,not_identified,at_least_two_training_studies_required,,,,,inf,False,-7.84651236383083,7.84651236383083,,,,not_run
+angelucci_mexico,atlas_descriptive,1,not_qualified,variance_or_design_gate_failed,,,,,inf,False,-7.84651236383083,7.84651236383083,,,,not_run
+banerjee_india_endline1,fixed_effect,1,computed,variance_gate,0.0,-7.846368182324833,7.846368182324833,7.846368182324833,15.692736364649663,False,-11.329834530016457,42.01191396411856,15.341039717051052,False,False,partial_overlap
+banerjee_india_endline1,random_effects,1,not_identified,frozen_df_rule_unavailable,,,,,inf,False,-11.329834530016457,42.01191396411856,,,,not_run
+banerjee_india_endline1,design_meta_regression,1,not_qualified,variance_or_design_gate_failed,,,,,inf,False,-11.329834530016457,42.01191396411856,,,,not_run
+banerjee_india_endline1,robust_training_range,1,not_identified,at_least_two_training_studies_required,,,,,inf,False,-11.329834530016457,42.01191396411856,,,,not_run
+banerjee_india_endline1,atlas_descriptive,1,not_qualified,variance_or_design_gate_failed,,,,,inf,False,-11.329834530016457,42.01191396411856,,,,not_run

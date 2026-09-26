@@ -1,0 +1,128 @@
+{
+  "status": "numeric_descriptive_pilot",
+  "run_utc": "2026-09-25T10:01:15.599352+00:00",
+  "input_path": "data/microcredit_published_v1/primary.csv",
+  "input_sha256": "5d8838a9a4a79844428cf294929750997e3f1653c58bd5a47665d70443d8e641",
+  "runner_path": "tools/run_microcredit_loso_pilot.py",
+  "runner_sha256": "191de90adb37f68dd1e967ccf8ba9e948007a094d6a954c6a1e05ff7b0f1d360",
+  "protocol_hashes": {
+    "MICROCREDIT_LOSO_PILOT_PROTOCOL_20260925.md": "2115b52a59310366da40ce9824872e1c1ae6a685b05a0eea2e54a60d09ef9ff6",
+    "MICROCREDIT_INVITATION_ITT_PROTOCOL_20260925.md": "86614157ba4bf74da4432395f017883246a5aa6bd4ca9e732a35a0ba22b1b30f"
+  },
+  "git": {
+    "head": "0b33a55d2bb2796397d256234a985af8fdf5af71",
+    "dirty": true,
+    "status_lines": [
+      " M ANONYMOUS_EXPORT.md",
+      " M DATA_SOURCES.md",
+      " M MICROCREDIT_DESIGN_EVIDENCE_20260925.md",
+      " M MICROCREDIT_INVITATION_ITT_PROTOCOL_20260925.md",
+      " M MICROCREDIT_LOSO_PILOT_PROTOCOL_20260925.md",
+      " M MICROCREDIT_OPENICPSR_INVENTORY_20260925.md",
+      " M README.md",
+      " M SUPPLEMENTARY_README.md",
+      " M tools/run_microcredit_loso_pilot.py",
+      " M tools/test_microcredit_loso_pilot.py",
+      "?? data/",
+      "?? results/microcredit_loso_pilot/mexico_cluster_variance_reconstruction.json",
+      "?? results/microcredit_primary_published_v1/",
+      "?? tools/build_microcredit_published_inputs.py",
+      "?? tools/export_submission.py",
+      "?? tools/reconstruct_mexico_cluster_variance.py"
+    ]
+  },
+  "dependencies": {
+    "python": "3.13.15",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1"
+  },
+  "n_input_studies": 2,
+  "n_qualified_studies": 2,
+  "qualification": [
+    {
+      "study_id": "angelucci_mexico",
+      "common_qualified": true,
+      "variance_qualified": true,
+      "design_qualified": false,
+      "reasons": "design_vector_status_not_verified",
+      "common_reasons": "",
+      "variance_reasons": "",
+      "design_reasons": "design_vector_status_not_verified",
+      "variance_status": "verified_assignment_level_se",
+      "design_vector_status": "exploratory_author_coded_coordinates_unverified",
+      "target_population": "Surveyed potential-borrower households in eligible geographic program-expansion clusters; assigned access contrast, not actual borrowers",
+      "assignment_status": "verified_source",
+      "outcome_status": "verified_source",
+      "stratum_status": "verified_source",
+      "target_population_status": "verified_source",
+      "assignment_source_locator": "Article randomization/ITT design pp. 11-14; official Compartamos-AEJ-tables-2-8.do:3,5,31-33, Treatment with vce(cl cluster)",
+      "outcome_source_locator": "Table 3 col (3) and notes; Q10_9_toprof, last two weeks; import_organise_data_v7.R:76-78,741-756",
+      "stratum_source_locator": "Article design pp. 11-14: geographic randomized program placement, promotion/access vs control",
+      "target_population_source_locator": "Article design/sampling pp. 11-14; Table 3 full endline respondent sample, N=16005"
+    },
+    {
+      "study_id": "banerjee_india_endline1",
+      "common_qualified": true,
+      "variance_qualified": true,
+      "design_qualified": false,
+      "reasons": "design_vector_status_not_verified",
+      "common_reasons": "",
+      "variance_reasons": "",
+      "design_reasons": "design_vector_status_not_verified",
+      "variance_status": "verified_assignment_level_se",
+      "design_vector_status": "exploratory_author_coded_coordinates_unverified",
+      "target_population": "Eligible sampled Hyderabad-area households at endline 1, reweighted for oversampling Spandana borrowers; not restricted to business owners or actual borrowers",
+      "assignment_status": "verified_source",
+      "outcome_status": "verified_source",
+      "stratum_status": "verified_source",
+      "target_population_status": "verified_source",
+      "assignment_source_locator": "Article design pp. 10-13; Table 3A Treated area; 2013-0533_do_tables.do:192-208, treatment and cluster(areaid)",
+      "outcome_source_locator": "Table 3A col (4) and notes (3)-(7); bizprofit_1 last 30 days, endline 1; import_organise_data_v7.R:417-419,741-756",
+      "stratum_source_locator": "Article design pp. 10-13, treatment-area Spandana branch rollout; first endline retained due to later control entry",
+      "target_population_source_locator": "Table 3 all households and sampling notes; article Hyderabad eligible-area household sampling, pp. 10-13"
+    }
+  ],
+  "method_gates": {
+    "fixed_effect": {
+      "qualified": true,
+      "reason": "variance_gate"
+    },
+    "random_effects": {
+      "qualified": true,
+      "reason": "variance_gate"
+    },
+    "design_meta_regression": {
+      "qualified": false,
+      "reason": "variance_or_design_gate_failed"
+    },
+    "robust_training_range": {
+      "qualified": true,
+      "reason": "common_gate"
+    },
+    "atlas_descriptive": {
+      "qualified": false,
+      "reason": "variance_or_design_gate_failed"
+    }
+  },
+  "thresholds": [
+    0.1,
+    0.2,
+    0.4,
+    0.8
+  ],
+  "primary_threshold": 0.2,
+  "calibration_claim": false,
+  "raw_records_committed": false,
+  "interpretation": "noisy-reference descriptive pilot only; no real calibration claim",
+  "output_sha256": {
+    "qualification_audit.csv": "f3e622493c57a4a7ecf75c061eafd8d549a0ce7654bca5b11d9e810fdf3d0b29",
+    "predictions_before_scoring.csv": "02fef3481692dab3db4952014d59c4d22b593778acebd47848f2fc8ac8da729f",
+    "leakage_predictions_before_scoring.csv": "02fef3481692dab3db4952014d59c4d22b593778acebd47848f2fc8ac8da729f",
+    "leakage_audit.csv": "33ddab3ca811e786448fb8e1c7dafee0f086fc77e0f86f4204234a9b5a714792",
+    "loso_results.csv": "292587a268e2fb6b10e2860ac2d4c41d2109c0406f1d59658132324d6277bc24",
+    "release_frontier.csv": "97cba37c14409595a634018f36c6c52b29d9bfd0d6edfb3e4ec02829e274ecc9",
+    "loso_summary.csv": "953d76e7335e211ad94d52dd19898b2ed4198bcbd031c33bbb3ce1cb5ea54220",
+    "pilot_input_design_and_reference.csv": "aef8274c17fb8fc807b456d3160cb055808a0390a56537b5c41c3a9220811f7f"
+  }
+}

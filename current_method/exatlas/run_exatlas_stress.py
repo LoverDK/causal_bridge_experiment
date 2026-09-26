@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import argparse
 import csv
 import json
 import math
@@ -10,7 +11,7 @@ from pathlib import Path
 
 import numpy as np
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
 from causal_atlas_sim.dgp import SimulationConfig, generate_minimal_archive
@@ -116,9 +117,19 @@ def run(repetitions: int = 200, base_seed: int = 20260922) -> list[dict[str, obj
 
 
 def main() -> None:
-    output = PROJECT_ROOT / "results" / "exatlas_comparison"
-    output.mkdir(parents=True, exist_ok=True)
-    rows, raw_records = _run()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", type=Path, required=True,
+                        help="New directory for this run; existing paths are refused")
+    parser.add_argument("--repetitions", type=int, default=200)
+    parser.add_argument("--base-seed", type=int, default=20260922)
+    args = parser.parse_args()
+    if args.repetitions < 1:
+        parser.error("--repetitions must be positive")
+    output = args.output.resolve()
+    if output.exists():
+        parser.error(f"output path already exists: {output}")
+    output.mkdir(parents=True, exist_ok=False)
+    rows, raw_records = _run(repetitions=args.repetitions, base_seed=args.base_seed)
     with (output / "stress_summary.csv").open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
         writer.writeheader()
@@ -128,8 +139,8 @@ def main() -> None:
         writer.writeheader()
         writer.writerows(raw_records)
     metadata = {
-        "repetitions_per_scenario": 200,
-        "base_seed": 20260922,
+        "repetitions_per_scenario": args.repetitions,
+        "base_seed": args.base_seed,
         "exatlas_variant": "composition-only; no LLM enrichment, reconciliation, or bridge generation",
         "exatlas_residual_threshold": 0.10,
         "purpose": "controlled observable and hidden target-shift audit of composability and refusal",

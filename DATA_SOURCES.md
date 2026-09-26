@@ -48,7 +48,7 @@ set; the causal truth is exact only for the frozen generated response surfaces.
 - Official article: https://www.aeaweb.org/articles?id=10.1257/app.20170299.
 - Official supplemental appendix: https://www.aeaweb.org/articles/materials/10055.
 - OpenICPSR package DOI: https://doi.org/10.3886/E116357V1.
-- User-supplied local archive: `C:\Users\Qiutian\Downloads\116357-V1.zip`.
+- User-supplied local archive: `116357-V1.zip (local archive; not redistributed)`.
 - Archive SHA-256: `1EC66E45ED401C7CC476548B0AE77DF0AF765942D7D8914202797D6FA4C61BFE`.
 - The archive has 306 files, including 95 `.dta` files, one cleaned project
   `RData`, 12 nested source ZIPs, and code/readme/survey materials for the seven
@@ -65,9 +65,8 @@ set; the causal truth is exact only for the frozen generated response surfaces.
 
 Public input data retain their upstream authorship and applicable terms. This repository does not assert a new license over third-party datasets or papers. No software license has been selected in this release.
 
-`provenance/import_inventory.json` records imported-file origins and hashes. Run
-manifests record the environment and source hashes for the corresponding saved
-outputs. `provenance/release_manifest.json` describes the actual delivered
+Run manifests record the environment and source hashes for the corresponding
+saved outputs. `provenance/release_manifest.json` describes the actual delivered
 files; it excludes itself, Git metadata, and transient reproduction output.
 Line-ending conversion is disabled to preserve archived bytes across Git
 checkouts.

@@ -1,0 +1,16 @@
+import CausalAtlasBridge
+
+open CausalAtlasBridge
+
+#print axioms simplex_weighted_noise_bound
+#print axioms simplex_weighted_bias_bound
+#print axioms selection_substitution
+#print axioms two_world_absolute_loss
+#print axioms barycentric_cancellation
+#print axioms interval_intersection_endpoint_characterization
+#print axioms interval_projection_nonempty_implies_ordered
+#print axioms interval_projection_ordered_implies_nonempty
+#print axioms interval_projection_lower_endpoint_feasible
+#print axioms interval_projection_upper_endpoint_feasible
+#print axioms complementarity_pi_width_table
+#print axioms complementarity_pi_width_violates_diminishing_returns

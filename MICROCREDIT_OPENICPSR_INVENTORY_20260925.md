@@ -9,7 +9,7 @@ This is a metadata-only inventory of the locally downloaded OpenICPSR version
 
 | Item | Value |
 |---|---|
-| Local file | `C:\Users\Qiutian\Downloads\116357-V1.zip` |
+| Local file | `116357-V1.zip (local archive; not redistributed)` |
 | Archive SHA-256 | `1EC66E45ED401C7CC476548B0AE77DF0AF765942D7D8914202797D6FA4C61BFE` |
 | Compressed size | 95,043,384 bytes |
 | Files in archive | 306 regular files, 54 directory entries |

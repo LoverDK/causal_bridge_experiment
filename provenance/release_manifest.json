@@ -1,5 +1,5 @@
 {
-  "scope": "Current-paper supplementary package plus the microcredit design/LOSO pilot; excludes this manifest, Git metadata, caches and transient scratch reruns.",
+  "scope": "Current-paper supplementary package plus accepted source-corrected microcredit pilot and composition-only ExAtlas diagnostic; excludes this manifest, Git metadata, caches and transient scratch reruns.",
   "files": {
     ".gitattributes": {
       "sha256": "9a26f76fbe4fef9d7125bd1bdfac3b27f7eb9f4524cc8d4870cf6e1e38352cff",
@@ -10,12 +10,88 @@
       "bytes": 225
     },
     "ANONYMOUS_EXPORT.md": {
-      "sha256": "eb8ad1efcb9983f1370a18f0d6e11db4e5506a982413c6b12e3e8132b550abb7",
-      "bytes": 1005
+      "sha256": "c5eefb5c15da20ac459431e6402a73fcdeb03fd2dc8eb8d69638f7f9ecf7c5c3",
+      "bytes": 2214
     },
     "CURRENT_ARTIFACTS.md": {
-      "sha256": "33a09bf78e774d395093aa77a1fadfc706b71254a7570d26a33b316e924ace3b",
-      "bytes": 3869
+      "sha256": "2adddd342ff9bc5b704c333d768ddf11a2b1ec7e512acbd57cde0c1bce49d5f8",
+      "bytes": 5222
+    },
+    "DATA_SOURCES.md": {
+      "sha256": "bca3fbb621146422f249647373aa2715b2384f392ed9c6cf7e45bee7af3cf2b4",
+      "bytes": 4442
+    },
+    "MICROCREDIT_CODING_STATUS_20260925.md": {
+      "sha256": "462c9bbf797b86445c377b3bcc53b8b841cd491eeb36a1817b1930702d51d763",
+      "bytes": 1781
+    },
+    "MICROCREDIT_DESIGN_EVIDENCE_20260925.md": {
+      "sha256": "5218f5ac2695abca15175dcb26c91cd1ef844cbe5c437b1c4c338f6afa6f370b",
+      "bytes": 16235
+    },
+    "MICROCREDIT_ESTIMAND_MATRIX_DRAFT_20260925.md": {
+      "sha256": "895149e476ab74087a25fa715c269843afcb0660f44628887506fdaa6f577fb9",
+      "bytes": 3469
+    },
+    "MICROCREDIT_INVITATION_ITT_PROTOCOL_20260925.md": {
+      "sha256": "86614157ba4bf74da4432395f017883246a5aa6bd4ca9e732a35a0ba22b1b30f",
+      "bytes": 7077
+    },
+    "MICROCREDIT_LOSO_PILOT_PROTOCOL_20260925.md": {
+      "sha256": "2115b52a59310366da40ce9824872e1c1ae6a685b05a0eea2e54a60d09ef9ff6",
+      "bytes": 6162
+    },
+    "MICROCREDIT_METADATA_AUDIT_20260925.md": {
+      "sha256": "b0576d2f8b2734ecaea83ac33442e9c824e1fa77dcb3edcd8d740b98fbdba169",
+      "bytes": 5482
+    },
+    "MICROCREDIT_OPENICPSR_INVENTORY_20260925.md": {
+      "sha256": "b76a41d54a78ad658b11db0b41a728d2c026352adb0eae7370c88624539523e2",
+      "bytes": 5406
+    },
+    "MICROCREDIT_PILOT_PROTOCOL.md": {
+      "sha256": "64b1afa8be529ee533fc858dc65cf49b5c25fbb53a8a6cf05673ec6f659df15e",
+      "bytes": 5443
+    },
+    "MICROCREDIT_PUBLISHED_V1_ACCEPTANCE_20260925.md": {
+      "sha256": "64ba9ea5e52f8c296675c870263d9905679a1b7b14309fe7990b30910e9e0c79",
+      "bytes": 8464
+    },
+    "MICROCREDIT_PUBLISHED_V1_REPORT_20260925.md": {
+      "sha256": "91c366963cc3bd97b5bb99bc4f623c1dcaa0e5a73e1d1b7fbbc694d69d972625",
+      "bytes": 8626
+    },
+    "README.md": {
+      "sha256": "a15cb5d87b66070a875985ed72c077250ab4ce4c1f5f9c158fc32b1faa76bb81",
+      "bytes": 10232
+    },
+    "REAL_CROSS_INTERVENTION_AUTHOR_RESPONSE.md": {
+      "sha256": "188a1a7087e0d6f0625c6fd4b0fccdc6f7b2d5cfda1aa5a49f55bca4088200c2",
+      "bytes": 21276
+    },
+    "REAL_CROSS_INTERVENTION_INTAKE_ZH.md": {
+      "sha256": "cbbf0984c20915dd4051e12731e82afaf84ee2a23b022a4051b7b455ef59c6af",
+      "bytes": 2393
+    },
+    "REAL_CROSS_INTERVENTION_REQUIREMENTS.md": {
+      "sha256": "22cea3243155fd9e904f7d538436349792af6e5fc72e7b3dbacd8a29c4c9ead1",
+      "bytes": 4338
+    },
+    "RELEASE_NOTES.md": {
+      "sha256": "368a379df16d13370f8d298ab19d41bdff9d1ebdd19ce746e120df87d1826133",
+      "bytes": 7823
+    },
+    "REVISION_LOG_20260924.md": {
+      "sha256": "8190c39344e2454e596154588a1a45ca4839450497aabe41f42e69c3652c7050",
+      "bytes": 20591
+    },
+    "SUPPLEMENTARY_README.md": {
+      "sha256": "5d248bc1dab2e49b1a5eb2223bcbdc063fd24337caf61e824b0cf40d4cfc960b",
+      "bytes": 4784
+    },
+    "current_method/README.md": {
+      "sha256": "0c13e99ce715086fdbfbe6646f0530ccddb2ea1c9b2d5b1001181b6b34fec361",
+      "bytes": 7630
     },
     "current_method/atlas_new/__init__.py": {
       "sha256": "d304e8f296b668e8484337b5693c66171f5bf0fa5f941eb9234d06923703715e",
@@ -53,33 +129,33 @@
       "sha256": "389c077f33fc940ae823a5fd24dc0d70c0710c86bbeb14e66a96522dd90ceed3",
       "bytes": 15648
     },
-    "current_method/atlas_new/workflow_report.py": {
-      "sha256": "1d2af7ddee282fe58e99698aec59ee5ecbdab3d5809d71bd8e72b82e1db4a4e6",
-      "bytes": 20821
-    },
     "current_method/atlas_new/workflow.py": {
       "sha256": "4c9a2185beb2b47b6ef289498b15136966bb03fc2318214e013c50591782e327",
       "bytes": 15747
+    },
+    "current_method/atlas_new/workflow_report.py": {
+      "sha256": "1d2af7ddee282fe58e99698aec59ee5ecbdab3d5809d71bd8e72b82e1db4a4e6",
+      "bytes": 20821
     },
     "current_method/audit_ablations.py": {
       "sha256": "52a17e97514b6ee7f6e3af83d5f1f0b572bced7476847beb78ad602810734d2e",
       "bytes": 5036
     },
-    "current_method/configs/full_plus.json": {
-      "sha256": "434f1c71796ecdb5de2ebde1f6a1b6f4a06f17bafe8d16766afc5d44c208567d",
-      "bytes": 377
-    },
     "current_method/configs/full.json": {
       "sha256": "346478482237e8c1b72152bbcb83f1589214c04af00360c50f84fafb6cace8ad",
       "bytes": 607
     },
-    "current_method/configs/smoke_plus.json": {
-      "sha256": "1c0cfc8496a5f15da0f47e2d90bbcaea9794b18cea2a90e376bb8c230dab8aad",
-      "bytes": 373
+    "current_method/configs/full_plus.json": {
+      "sha256": "434f1c71796ecdb5de2ebde1f6a1b6f4a06f17bafe8d16766afc5d44c208567d",
+      "bytes": 377
     },
     "current_method/configs/smoke.json": {
       "sha256": "3887730db191f260815ee7da5aec569d4de58e0740efe4b6d4d34affe1a00989",
       "bytes": 596
+    },
+    "current_method/configs/smoke_plus.json": {
+      "sha256": "1c0cfc8496a5f15da0f47e2d90bbcaea9794b18cea2a90e376bb8c230dab8aad",
+      "bytes": 373
     },
     "current_method/configs/workflow_full.json": {
       "sha256": "b335a4fb736c9c30b1f5f05713d5a362a8b5355535de36aeba811b5cae1989b2",
@@ -93,33 +169,17 @@
       "sha256": "15898b5c241696adc7fd91a638839ba49a9f9be64c78da9151b39018d66bfbd3",
       "bytes": 3903591
     },
+    "current_method/data/manylabs2_original_effects.csv": {
+      "sha256": "78b3432bebb798595ebb08ee10fb68d3f6f59cd5e0ab49606cfb6835eb226406",
+      "bytes": 12130
+    },
+    "current_method/data/manylabs2_original_effects_provenance.json": {
+      "sha256": "c0ce991b3c0b857c58dcd1c6495aee1f7bb83da8f2437237304c70eaea40e8c4",
+      "bytes": 502
+    },
     "current_method/data/provenance.json": {
       "sha256": "217fb8248a21502098a66f0f7df792365dcc04f25d6bb27b6a1004faa24eae2f",
       "bytes": 464
-    },
-    "current_method/docs/实验设计与论文对应.md": {
-      "sha256": "48ef37d4d51fbfdf686ea2fcc9bf7c73e6d6e2601e5ac5b00fb1e23abf8cb7d3",
-      "bytes": 1228
-    },
-    "current_method/docs/完整流程实验协议.md": {
-      "sha256": "3de176fa34e01b1d8eea71a451df50cdcc6d8ec817d91a63864513ba295437ff",
-      "bytes": 8795
-    },
-    "current_method/docs/完整流程主要发现.md": {
-      "sha256": "bf3399e2f80cc3692e12d8c626eb947dacd97e11fc0ffd604d14a2b8ea18dd34",
-      "bytes": 4558
-    },
-    "current_method/docs/真实数据补充协议.md": {
-      "sha256": "d387757a9fb3642663ffb34af56f5edd8a09effbabe92a8341f0ec82b84a5df2",
-      "bytes": 2108
-    },
-    "current_method/docs/执行记录.md": {
-      "sha256": "383de56579ca378340913088660c1721bbb68ca61c0284f5cf7626f5b825fc98",
-      "bytes": 4994
-    },
-    "current_method/docs/指标字典.md": {
-      "sha256": "7f8cdcc1145a8588cbfd01d8d6d28d094d9e2c4b5821f66dad4f29ccf7091991",
-      "bytes": 3055
     },
     "current_method/docs/ablation_protocol.md": {
       "sha256": "169a0ad48061dcbbc621d05e5c8a442bd2f9340869558d78c5e59be2c9402482",
@@ -129,6 +189,18 @@
       "sha256": "08b16fbe8a91fcdb56fe60c1f176a5fd996e001c8eda3b01d6b47a8fb566d810",
       "bytes": 7098
     },
+    "current_method/docs/effect_family_baselines_all_protocol.md": {
+      "sha256": "3d35637911638066554f78023c9c0c83d499ef69baba73adbc69e9b29aeceb1d",
+      "bytes": 1726
+    },
+    "current_method/docs/effect_family_baselines_protocol.md": {
+      "sha256": "938dbead0b4877b2c12a3200e3fa536f5231a829de9ddaed05d8d464b6fd0c27",
+      "bytes": 2466
+    },
+    "current_method/docs/effect_family_holdout_protocol.md": {
+      "sha256": "5726378b7b3a82c4026da90c852391f1ac715f46dd3e7d715af816b42aaff3a9",
+      "bytes": 3014
+    },
     "current_method/docs/mechanism_set_calibration_protocol.md": {
       "sha256": "b50664b6f74107165dd46ac52be6162278ed73347ff0b68a37e187e246d0cc49",
       "bytes": 2384
@@ -137,13 +209,53 @@
       "sha256": "ae7e48739b3e04f632385c323dad5d7c7c32a8fabcd272964aea6a3af5fed08a",
       "bytes": 527
     },
+    "current_method/docs/完整流程主要发现.md": {
+      "sha256": "bf3399e2f80cc3692e12d8c626eb947dacd97e11fc0ffd604d14a2b8ea18dd34",
+      "bytes": 4558
+    },
+    "current_method/docs/完整流程实验协议.md": {
+      "sha256": "3de176fa34e01b1d8eea71a451df50cdcc6d8ec817d91a63864513ba295437ff",
+      "bytes": 8795
+    },
+    "current_method/docs/实验设计与论文对应.md": {
+      "sha256": "48ef37d4d51fbfdf686ea2fcc9bf7c73e6d6e2601e5ac5b00fb1e23abf8cb7d3",
+      "bytes": 1228
+    },
+    "current_method/docs/执行记录.md": {
+      "sha256": "383de56579ca378340913088660c1721bbb68ca61c0284f5cf7626f5b825fc98",
+      "bytes": 4994
+    },
+    "current_method/docs/指标字典.md": {
+      "sha256": "7f8cdcc1145a8588cbfd01d8d6d28d094d9e2c4b5821f66dad4f29ccf7091991",
+      "bytes": 3055
+    },
+    "current_method/docs/真实数据补充协议.md": {
+      "sha256": "d387757a9fb3642663ffb34af56f5edd8a09effbabe92a8341f0ec82b84a5df2",
+      "bytes": 2108
+    },
     "current_method/environment.lock.txt": {
       "sha256": "a5452c92f32a9b98acdded49173161cd6a0e26d22e2c3fcc2d5a8dd3df31d328",
       "bytes": 232
     },
-    "current_method/README.md": {
-      "sha256": "0c13e99ce715086fdbfbe6646f0530ccddb2ea1c9b2d5b1001181b6b34fec361",
-      "bytes": 7630
+    "current_method/exatlas/README.md": {
+      "sha256": "9ae7c832e41f70298b01f835fbd4ffe3f5596174f15f85011473b7eaa621b2e1",
+      "bytes": 3427
+    },
+    "current_method/exatlas/run_exatlas_stress.py": {
+      "sha256": "d27640d025068c32ab4fcdcab9163fe4197cfd5756f29895b048e371c0a9da97",
+      "bytes": 7048
+    },
+    "current_method/exatlas/stress_metadata.json": {
+      "sha256": "bf3d1520e1f8b71cb28e883ca982a39be8ffb0d9caffee4c19c5931fa9df7f10",
+      "bytes": 344
+    },
+    "current_method/exatlas/stress_records.csv": {
+      "sha256": "e72e715389c1c359b763c4072037ef4a55068fb84fa31733d80a6eefc967651d",
+      "bytes": 183221
+    },
+    "current_method/exatlas/stress_summary.csv": {
+      "sha256": "dcd9e235b3f1238462537cabda20cf1e47e90a0c3c2acbacb015fad2ca5cf6fd",
+      "bytes": 1778
     },
     "current_method/refresh_report.py": {
       "sha256": "e9c8bae3e0568f44088487dc16b8cbf1479d9f04f95d3ce800e2e54fd14cb934",
@@ -213,45 +325,93 @@
       "sha256": "8c5ed5969a605c733592f4bd5c716c681ecca78c14c0decd45999a91bd9eac45",
       "bytes": 1252
     },
-    "current_method/results/full_plus/第二轮复核结果.md": {
-      "sha256": "e02497fac14a3f3be08c4ca17356dddf40fea5111098b4766aa2389583eac268",
-      "bytes": 5214
+    "current_method/results/effect_family_baselines/leakage_audit.csv": {
+      "sha256": "bd588756a4b6ed98a3c69906352988f2ec238271e25ac0bdd404ee8ae760208c",
+      "bytes": 2387
     },
-    "current_method/results/full_plus/plus_assumption_boundaries.csv": {
-      "sha256": "dd490b3b21a7bc0c2aad7a0ffc1ea11a5cb0854f5c7fb3e10fcaac9b5961cfce",
-      "bytes": 390
+    "current_method/results/effect_family_baselines/predictions.csv": {
+      "sha256": "18c30243a0e31b3856bccc05b6441bdaaa4597da5476d0af052d236e17a3062d",
+      "bytes": 6759
     },
-    "current_method/results/full_plus/plus_calibration_sensitivity_records.csv": {
-      "sha256": "ac0694691f1e21e965ed0a90ed884bfc822bfd48a1e3130acabeb879739ad988",
-      "bytes": 3424859
+    "current_method/results/effect_family_baselines/report.md": {
+      "sha256": "b82912e620f3549f3356f6f94712380090f246c448659d94b557d82fbd905516",
+      "bytes": 3770
     },
-    "current_method/results/full_plus/plus_calibration_sensitivity_summary.csv": {
-      "sha256": "314a7d410bd93d21c3558a061b25a3cdb76dc180fd8d11b9241f1a3ec5c7dc5f",
-      "bytes": 1512
+    "current_method/results/effect_family_baselines/run_manifest.json": {
+      "sha256": "91973224fbc71d9ad566816f02987d436fbedeccba65d87e4162bca8e0a08ce9",
+      "bytes": 1916
     },
-    "current_method/results/full_plus/plus_correlated_noise.csv": {
-      "sha256": "e085cc0b2e9bbd004add16ef9764f2ea50560cf5853c94c7835b406bb389ab01",
-      "bytes": 3209
+    "current_method/results/effect_family_baselines/summary.csv": {
+      "sha256": "8ba7ce2078bfd3d99a29e78d58bcee17644831ddda60703a895129b47fb82e49",
+      "bytes": 1975
     },
-    "current_method/results/full_plus/plus_heavy_tails.csv": {
-      "sha256": "9387b2cce64e66ead15124afbdd61431d860fbfddba86bacf4dd2f98454837df",
-      "bytes": 892
+    "current_method/results/effect_family_baselines_all/leakage_audit.csv": {
+      "sha256": "cabf7100863b2a4bb4430f33aef94983f375ec8ad16a233fa401cd753475b088",
+      "bytes": 6591
     },
-    "current_method/results/full_plus/plus_optimizer_audit.csv": {
-      "sha256": "6a92cbb10fb8a64975d64c897d4224347146b4519ec631b01f09bed63f4c7945",
-      "bytes": 9569
+    "current_method/results/effect_family_baselines_all/predictions.csv": {
+      "sha256": "8e4ba9f3e2832d1e9ac024947d4028f0af478d864a845499fa7be373ea6b87fd",
+      "bytes": 18699
     },
-    "current_method/results/full_plus/run_manifest.json": {
-      "sha256": "1de61c085e935ea51d5d6b27513cb593d3f8494c6e6db8ceb6bf33bf152dad02",
-      "bytes": 5050
+    "current_method/results/effect_family_baselines_all/report.md": {
+      "sha256": "559c5dce2cedf4b11c3e2ef697af49b4c1799a9a3d225c31923cb9c058171e5c",
+      "bytes": 3106
     },
-    "current_method/results/full_plus/validation_checks.json": {
-      "sha256": "76eca944e7dfa1c76a1fdd2578fc19ef8695cfa451145634b96b80fd5d8901c5",
-      "bytes": 439
+    "current_method/results/effect_family_baselines_all/run_manifest.json": {
+      "sha256": "2bb4f792665855964e746d92cf8756f07a59735558921f59274c23f2455f65be",
+      "bytes": 2190
     },
-    "current_method/results/full/结果解读.md": {
-      "sha256": "0e745b4fb47eac97bdd2020c9bf63836058b96a4751bb780ff6234be4978c37a",
-      "bytes": 7259
+    "current_method/results/effect_family_baselines_all/summary.csv": {
+      "sha256": "7137c565634ed23db5e86ef7e3478ff44e6b49054ab9d2f6d5c44b681524ec9c",
+      "bytes": 2799
+    },
+    "current_method/results/effect_family_baselines_corrected/leakage_audit.csv": {
+      "sha256": "bd588756a4b6ed98a3c69906352988f2ec238271e25ac0bdd404ee8ae760208c",
+      "bytes": 2387
+    },
+    "current_method/results/effect_family_baselines_corrected/predictions.csv": {
+      "sha256": "87e8cb74b0f553f1fd41c8e61c83f67c002833b1369f109baae482a2b976121a",
+      "bytes": 6760
+    },
+    "current_method/results/effect_family_baselines_corrected/report.md": {
+      "sha256": "6d9dfc5209a63a72daf6f9ab6aa8fbbcc44e9c6a7490c1fc6673b6d851290629",
+      "bytes": 3920
+    },
+    "current_method/results/effect_family_baselines_corrected/run_manifest.json": {
+      "sha256": "82f90519886baf3b91f7377da5fa938278a6f1dfdb8f6669e233eea351e1819d",
+      "bytes": 1916
+    },
+    "current_method/results/effect_family_baselines_corrected/summary.csv": {
+      "sha256": "d9042def5a8a985e0c29b8b0bc1565c9835c04a0ff3921ffbfd76aba617033f5",
+      "bytes": 1965
+    },
+    "current_method/results/effect_family_holdout/excluded_studies.csv": {
+      "sha256": "30694b8555f31c2b1c5a5a7fd43bb6912bec9759777c08b5d9c5d3e44279f8f6",
+      "bytes": 149
+    },
+    "current_method/results/effect_family_holdout/included_studies.csv": {
+      "sha256": "d46bd06e91e7b67c7f40d1d66ffa8d4395d11b0d721bdd22dc5638256b842918",
+      "bytes": 1242
+    },
+    "current_method/results/effect_family_holdout/leakage_audit.csv": {
+      "sha256": "263d5f52089883d99a23824e681c0689cbb03f0ff291266a77e033d8368091de",
+      "bytes": 2067
+    },
+    "current_method/results/effect_family_holdout/predictions.csv": {
+      "sha256": "c46d47588735a51361cb94b6bed4207138625d09521733175c06fbb26c323e9f",
+      "bytes": 16012
+    },
+    "current_method/results/effect_family_holdout/report.md": {
+      "sha256": "99c6a4357726703b4c83bd2bd26f4a4203e9d8158613e4cb258c6ec48ad83c65",
+      "bytes": 3838
+    },
+    "current_method/results/effect_family_holdout/run_manifest.json": {
+      "sha256": "6cd1c6dbf0583e7568078b4a4700e9f7c33f2d9f3036aa946fb18819a39e524c",
+      "bytes": 2151
+    },
+    "current_method/results/effect_family_holdout/summary.csv": {
+      "sha256": "3b88face12ee5a6f62e189ede52712650e19dbe61eb9821b1425a487955b746f",
+      "bytes": 2119
     },
     "current_method/results/full/bridge_anisotropy.csv": {
       "sha256": "9d521753c7e273a94ec737f0cac26f9b9388a7ad820949a96c1bff21fb8ce3b2",
@@ -385,6 +545,46 @@
       "sha256": "eb0d16c90041e6fda04bd330326157994f8737bf56682923c20101b64a737e4c",
       "bytes": 1148
     },
+    "current_method/results/full/结果解读.md": {
+      "sha256": "0e745b4fb47eac97bdd2020c9bf63836058b96a4751bb780ff6234be4978c37a",
+      "bytes": 7259
+    },
+    "current_method/results/full_plus/plus_assumption_boundaries.csv": {
+      "sha256": "dd490b3b21a7bc0c2aad7a0ffc1ea11a5cb0854f5c7fb3e10fcaac9b5961cfce",
+      "bytes": 390
+    },
+    "current_method/results/full_plus/plus_calibration_sensitivity_records.csv": {
+      "sha256": "ac0694691f1e21e965ed0a90ed884bfc822bfd48a1e3130acabeb879739ad988",
+      "bytes": 3424859
+    },
+    "current_method/results/full_plus/plus_calibration_sensitivity_summary.csv": {
+      "sha256": "314a7d410bd93d21c3558a061b25a3cdb76dc180fd8d11b9241f1a3ec5c7dc5f",
+      "bytes": 1512
+    },
+    "current_method/results/full_plus/plus_correlated_noise.csv": {
+      "sha256": "e085cc0b2e9bbd004add16ef9764f2ea50560cf5853c94c7835b406bb389ab01",
+      "bytes": 3209
+    },
+    "current_method/results/full_plus/plus_heavy_tails.csv": {
+      "sha256": "9387b2cce64e66ead15124afbdd61431d860fbfddba86bacf4dd2f98454837df",
+      "bytes": 892
+    },
+    "current_method/results/full_plus/plus_optimizer_audit.csv": {
+      "sha256": "6a92cbb10fb8a64975d64c897d4224347146b4519ec631b01f09bed63f4c7945",
+      "bytes": 9569
+    },
+    "current_method/results/full_plus/run_manifest.json": {
+      "sha256": "1de61c085e935ea51d5d6b27513cb593d3f8494c6e6db8ceb6bf33bf152dad02",
+      "bytes": 5050
+    },
+    "current_method/results/full_plus/validation_checks.json": {
+      "sha256": "76eca944e7dfa1c76a1fdd2578fc19ef8695cfa451145634b96b80fd5d8901c5",
+      "bytes": 439
+    },
+    "current_method/results/full_plus/第二轮复核结果.md": {
+      "sha256": "e02497fac14a3f3be08c4ca17356dddf40fea5111098b4766aa2389583eac268",
+      "bytes": 5214
+    },
     "current_method/results/mechanism_calibration/calibrator.json": {
       "sha256": "7ff6d6ba553609dc47c373d5e949394122228afb38e23bd0d668df66d1545bdd",
       "bytes": 213
@@ -432,10 +632,6 @@
     "current_method/results/real_supplement/validation_checks.json": {
       "sha256": "95ddfb2d806add16238c2adfe3aeeebf786b3bce7ca3461beffa344df8c82d6e",
       "bytes": 318
-    },
-    "current_method/results/workflow_full/完整流程实验结果.md": {
-      "sha256": "d9b46f6a9515ea2bbb110d822a90c71b88ed08b14f61795c1f2b205b3e100d57",
-      "bytes": 12392
     },
     "current_method/results/workflow_full/acquisitions.csv": {
       "sha256": "6546ea6b36ffebc6511fdf30ae6be6705b14d4d88441148a93c30b333c5f856d",
@@ -509,6 +705,10 @@
       "sha256": "78071986149345fd5f5c7205c3c60b750d2364334ab9a1fccd478bb6e873fc49",
       "bytes": 3790367
     },
+    "current_method/results/workflow_full/完整流程实验结果.md": {
+      "sha256": "d9b46f6a9515ea2bbb110d822a90c71b88ed08b14f61795c1f2b205b3e100d57",
+      "bytes": 12392
+    },
     "current_method/run_ablations.py": {
       "sha256": "54570905ba7c60d4b8f5420d07c84f10fd6832d3cc53d173f7a2f6cb8c955e30",
       "bytes": 4597
@@ -516,6 +716,18 @@
     "current_method/run_all.py": {
       "sha256": "38235e93be6335be29c61ec2bfdc0e789b2f48396b7a2b6394a8f6b7e649d300",
       "bytes": 4242
+    },
+    "current_method/run_effect_family_baselines.py": {
+      "sha256": "cb5f84e9b7f3b845a25203084d7a9ef5ebe99a4fa6150497339c1194f564afb5",
+      "bytes": 14057
+    },
+    "current_method/run_effect_family_baselines_all.py": {
+      "sha256": "f640a7efb72856c8f2cd052a3d6facbfbed371cdb3f9e215e566694afa49cc96",
+      "bytes": 9061
+    },
+    "current_method/run_effect_family_holdout.py": {
+      "sha256": "9409828fac5d7e8de757c3e0e039dbc812a43116b083c2a35d1dcbeeb3c7ffe8",
+      "bytes": 15594
     },
     "current_method/run_mechanism_calibration.py": {
       "sha256": "5b1a82a4cc899171688bf15773f3185cb213d7b6a9f2c722920b2fe652a5ce0c",
@@ -537,6 +749,22 @@
       "sha256": "0db5b07c70561d4fdb8e9eeeff489f6198aee9c2abc43754ee7393ff86a00838",
       "bytes": 5341
     },
+    "current_method/src/causal_atlas_sim/__init__.py": {
+      "sha256": "9fb1f5130beb7370eae66f39ee0ee578dd3b04909236db7ef4ffd31a7e00e5a1",
+      "bytes": 62
+    },
+    "current_method/src/causal_atlas_sim/dgp.py": {
+      "sha256": "b2bec1df18a3f0c2eeae38f8f77b70090acc7b73d5428891bc987dc40a73d8b6",
+      "bytes": 22191
+    },
+    "current_method/src/causal_atlas_sim/exatlas_baseline.py": {
+      "sha256": "19eb63b276c0605bae730596779e32b0b29e3f2069a9683840647b0963c62e35",
+      "bytes": 5864
+    },
+    "current_method/src/causal_atlas_sim/methods.py": {
+      "sha256": "627aa255f60ee276c2d7cc84d08c3bd45890da140b4a4337fb8edd2bff075854",
+      "bytes": 21495
+    },
     "current_method/tests/test_ablations.py": {
       "sha256": "18d2d9ec2907dabb54b28fd62cc289226ad6310f1aaa06f83449cbc82600810d",
       "bytes": 3348
@@ -544,6 +772,26 @@
     "current_method/tests/test_audit_plus.py": {
       "sha256": "a76ec5473dca156af70370701e6e111b8a2e39bccabac842b6337e5a269e5f3d",
       "bytes": 805
+    },
+    "current_method/tests/test_effect_family_baselines.py": {
+      "sha256": "91e0986eaa3fbfdd78f0e6facdd0f055bb8c4442747986d934b8fa2f8d94b457",
+      "bytes": 1800
+    },
+    "current_method/tests/test_effect_family_baselines_all.py": {
+      "sha256": "7c37f624abdd9a3645551774ac81601dbe0f6a6cca1396c7fdd5be36c7bae828",
+      "bytes": 985
+    },
+    "current_method/tests/test_effect_family_holdout.py": {
+      "sha256": "23f92a1fa7a7dc298b31472bc4a8204ebd62cc1fa34f1aad8efd39ae8d304028",
+      "bytes": 999
+    },
+    "current_method/tests/test_exatlas_baseline.py": {
+      "sha256": "1ca72efef4ebb8d6bdc963e0c46b97d5107e4207888383f852964af7aa56b4ae",
+      "bytes": 1961
+    },
+    "current_method/tests/test_exatlas_stress.py": {
+      "sha256": "a96717625dee30df845953238cf08d523d8dff059bc0c2d4238dba570bbe080a",
+      "bytes": 2541
     },
     "current_method/tests/test_mechanism_calibration.py": {
       "sha256": "3a8f59b9e6760599191edf9e472eb423d976ee6412f91d480019891dc1bd4ca7",
@@ -557,18 +805,41 @@
       "sha256": "57ea2f6e782bd4a5625f765212f2ef80b5cbeeb9b9d6142ef3518a6e2e508d3f",
       "bytes": 5487
     },
-    "DATA_SOURCES.md": {
-      "sha256": "5f3f7113548a538f0e621b2317f8b0c3d39337a3210c50624d31cfc9f18cbd25",
-      "bytes": 4511,
-      "source": "data provenance update"
+    "data/microcredit_loso_pilot_input.csv": {
+      "sha256": "519b7f473268bb1a21f030bf0a0c6865028f01b511ba2357883510c3a9d806fb",
+      "bytes": 1461
+    },
+    "data/microcredit_published_sources_v1.json": {
+      "sha256": "0f75ec5d315fb1bfe83b0e5db07c559b60b479e8dcba80ee808ea97a782f1b82",
+      "bytes": 6142
+    },
+    "data/microcredit_published_v1/input_build_manifest.json": {
+      "sha256": "b2260c5e9a1c4559dc0b422ae88ee17aeea9d97b807affeed19a90a4a177a059",
+      "bytes": 476
+    },
+    "data/microcredit_published_v1/population_sensitivity.csv": {
+      "sha256": "743b78ab4e1c6df2f9f5b4a7c420e20a67aec8bcc282cccfd140483a1f26b811",
+      "bytes": 4773
+    },
+    "data/microcredit_published_v1/primary.csv": {
+      "sha256": "5d8838a9a4a79844428cf294929750997e3f1653c58bd5a47665d70443d8e641",
+      "bytes": 3185
     },
     "docs/manuscript_revision_20260924.md": {
       "sha256": "57932eb0d5501e90996a4194c00fd4bd81cdc9b666b9257abc6403379abff773",
       "bytes": 2496
     },
+    "legacy_audits/README.md": {
+      "sha256": "b12b9d2fb2e2e9f3f35bb7a0505c31355e108e8977d3574cd75814649acee733",
+      "bytes": 1040
+    },
     "legacy_audits/data/nsw_dw.dta": {
       "sha256": "d1bd2680a1c6f799f1c6d2455bf29633fdf19be01cb19490621c20a560b4e072",
       "bytes": 28598
+    },
+    "legacy_audits/docs/README.md": {
+      "sha256": "c9d5bf2bde9531f76c60aa4dc825b875fe91d8fc72ea67860e774a2dd75c17b3",
+      "bytes": 446
     },
     "legacy_audits/docs/paper/extension_protocol_v2.md": {
       "sha256": "be802ae9015d03470692fd44bfa23d4876b6a88083b7e3f53fbceb0ef0be2f09",
@@ -578,13 +849,9 @@
       "sha256": "583c1b74a82fea1d90133e4120fb7aaf3fade27d4200cfcc08f0d87b96cf9294",
       "bytes": 3330
     },
-    "legacy_audits/docs/README.md": {
-      "sha256": "c9d5bf2bde9531f76c60aa4dc825b875fe91d8fc72ea67860e774a2dd75c17b3",
-      "bytes": 446
-    },
-    "legacy_audits/README.md": {
-      "sha256": "b12b9d2fb2e2e9f3f35bb7a0505c31355e108e8977d3574cd75814649acee733",
-      "bytes": 1040
+    "legacy_audits/docs/paper/nsw_real_proxy_truth_protocol.md": {
+      "sha256": "d3088871f9d713d570ead14fcc76e57b2ca64d398d32bc6ab793cee7a0acca49",
+      "bytes": 3285
     },
     "legacy_audits/results/extensions/artifact_manifest.json": {
       "sha256": "317afef00d9904996b0106ca2124ec0900408e66135da5e779d66bd2f495da8d",
@@ -625,6 +892,70 @@
     "legacy_audits/results/extensions/nsw_real_failures.csv": {
       "sha256": "338e61d2bd6428776ab12a661024af11b2ddfa8414a510d379294fdc8915f46a",
       "bytes": 84
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth/causal_truth_design.json": {
+      "sha256": "79303d53321e99e1815fd76df072ef0d15527182ecc1e0aa69e3e97e6c49045b",
+      "bytes": 4849
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth/manifest.json": {
+      "sha256": "7ec264d6235b9235d830a10dd5f8aebe18401a9887e3fab9cc06f124c51d5b16",
+      "bytes": 2057
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth/real_covariate_proxy_records.csv": {
+      "sha256": "0ae91bc2363c7327399e094d63bb0e6ec20f5a427fdea10ef125cb5242a6a9ad",
+      "bytes": 3989
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth/real_covariate_proxy_summary.csv": {
+      "sha256": "90e2fa95a0f393344e5563d0293d537590ad150c0c7f6236fb8fe71c359e08a2",
+      "bytes": 533
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth/semisynthetic_truth_records.csv": {
+      "sha256": "bced5dfbc920a32a6094dec8e272f944f24718d1f5ed6d7060a9c7b0f40d8aad",
+      "bytes": 2841491
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth/semisynthetic_truth_summary.csv": {
+      "sha256": "4c8874051ca39c91a9a66205743151c726f3b960517e0ab1c2aaaf605fc29429",
+      "bytes": 3947
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth/split_manifest.json": {
+      "sha256": "6f57ee10d9e507ac801aed92b51016af94d0712754b33c9723ba224cd31a03e0",
+      "bytes": 9359
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth/target_effect_flip_audit.csv": {
+      "sha256": "4bdd158b4d705a207e9a120738d59c6f26d874abddaf34c59259f286a4bd6fe2",
+      "bytes": 5518
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/causal_truth_design.json": {
+      "sha256": "79303d53321e99e1815fd76df072ef0d15527182ecc1e0aa69e3e97e6c49045b",
+      "bytes": 4849
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/real_covariate_proxy_records.csv": {
+      "sha256": "0ae91bc2363c7327399e094d63bb0e6ec20f5a427fdea10ef125cb5242a6a9ad",
+      "bytes": 3989
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/real_covariate_proxy_summary.csv": {
+      "sha256": "90e2fa95a0f393344e5563d0293d537590ad150c0c7f6236fb8fe71c359e08a2",
+      "bytes": 533
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/report.md": {
+      "sha256": "fbd071d5a8833a511175f91aec8e83726e75cb73ae7ad9794d9e5bb51b3aefa9",
+      "bytes": 1414
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/semisynthetic_truth_records.csv": {
+      "sha256": "bced5dfbc920a32a6094dec8e272f944f24718d1f5ed6d7060a9c7b0f40d8aad",
+      "bytes": 2841491
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/semisynthetic_truth_summary.csv": {
+      "sha256": "6f139e3b0fa4cbe3c228bf2b425381773173265fe022c202ccfcd7c731d9989c",
+      "bytes": 3952
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/split_manifest.json": {
+      "sha256": "6f57ee10d9e507ac801aed92b51016af94d0712754b33c9723ba224cd31a03e0",
+      "bytes": 9359
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/target_effect_flip_audit.csv": {
+      "sha256": "4bdd158b4d705a207e9a120738d59c6f26d874abddaf34c59259f286a4bd6fe2",
+      "bytes": 5518
     },
     "legacy_audits/results/extensions/nsw_real_records.csv": {
       "sha256": "bba0cf92d96678383be0b1530c4427a2eecee5abc9af87f7ec62bac4871d6f60",
@@ -693,6 +1024,10 @@
     "legacy_audits/scripts/run/run_nsw_experiment.py": {
       "sha256": "01bce83c359ea67390fd64b77e223f7edcdea79ef952e1d51ad8019642f00d91",
       "bytes": 14749
+    },
+    "legacy_audits/scripts/run/run_nsw_real_proxy_truth.py": {
+      "sha256": "b22686f848a37bb6bffa9eced9cb98632ed0a1c3b12410bd64128d0eb2d83414",
+      "bytes": 15303
     },
     "legacy_audits/scripts/run/run_requested_extensions.py": {
       "sha256": "e6be843a7b455c5ff517e76ddab6f23539987ef9fe71368298950c1126bd00bb",
@@ -766,6 +1101,10 @@
       "sha256": "b634924174f5a929851de118594239f2e76592bdfe9f94c6edbf9bce549d5fd1",
       "bytes": 6961
     },
+    "legacy_audits/tests/test_nsw_real_proxy_truth.py": {
+      "sha256": "7db0642ab62c213ec89c3958d83f010189fb2d0c3543f058cde01cf1ad33c45a",
+      "bytes": 1774
+    },
     "legacy_audits/tests/test_partial_identification.py": {
       "sha256": "2a1c17a0821d220bdf6f73abd2fa70cdf5d7b2551ca8dbc4c95e0412d2fa9632",
       "bytes": 3527
@@ -774,6 +1113,22 @@
       "sha256": "46500bde9267b2da620eecbac9c925cfcb31e41285271c42a8c83d5a1cf5bc73",
       "bytes": 3001
     },
+    "microcredit_estimand_matrix_draft.csv": {
+      "sha256": "fcab7e1874443fda95cdadc4c0c5bf440179675774ff01e08da4ead3064793c7",
+      "bytes": 1455
+    },
+    "microcredit_metadata_audit.csv": {
+      "sha256": "37524c517fd9b8e8f381a17cc4d9cbbcfbe5badeca0733459c4ae2bf96f2dcc8",
+      "bytes": 1848
+    },
+    "microcredit_variable_label_audit.csv": {
+      "sha256": "98422529041881aa86b5109c129f7adbe1bb8d91566d92804df83a3479999644",
+      "bytes": 153354
+    },
+    "paper_figures/PAPER_MAP.md": {
+      "sha256": "b71f1781e409b2b8fd368710c2b2b56ecad396eaad8141517828ca30f1989bbe",
+      "bytes": 4592
+    },
     "paper_figures/assets/extension_nsw_validation.pdf": {
       "sha256": "d46eec433895a036f1fa890a3fb981640e5d127168929b73bac66eeb5f502bc1",
       "bytes": 30315
@@ -781,10 +1136,6 @@
     "paper_figures/assets/extension_nsw_validation.png": {
       "sha256": "537a0acca9cfad5b08187aa223061d7cde0265f00c878d942cbd0cf9a1cc2cbe",
       "bytes": 165552
-    },
-    "paper_figures/assets/figure_operational_theory_validation.pdf": {
-      "sha256": "77343d4e238bf22766dea0f86d76410ac8c5c79d6cb863d89aef8317e66a6bcd",
-      "bytes": 55999
     },
     "paper_figures/assets/figure2_synthetic_validation.pdf": {
       "sha256": "ce86941376a4bc5960d24f3fc8aa4cc823431f6b95ea9114b7b92445c70e7880",
@@ -802,6 +1153,10 @@
       "sha256": "66468e33612618eba8f9ebd5b5a83291289e5e896e4f63e3769bc1bdbcac2ef9",
       "bytes": 92873
     },
+    "paper_figures/assets/figure_operational_theory_validation.pdf": {
+      "sha256": "77343d4e238bf22766dea0f86d76410ac8c5c79d6cb863d89aef8317e66a6bcd",
+      "bytes": 55999
+    },
     "paper_figures/assets/manylabs2_framing_loso.pdf": {
       "sha256": "5284dc9384708baf992d4cf811324daec9f2f4c073db2eb08ee331bdb5b3c8b1",
       "bytes": 57068
@@ -817,10 +1172,6 @@
     "paper_figures/assets/test_workflow_release_frontier.pdf": {
       "sha256": "829a042a6b208b0ea96158deaaef0e14a07a784f1c293e388ff284432515d02a",
       "bytes": 40068
-    },
-    "paper_figures/PAPER_MAP.md": {
-      "sha256": "b71f1781e409b2b8fd368710c2b2b56ecad396eaad8141517828ca30f1989bbe",
-      "bytes": 4592
     },
     "paper_figures/render_appendix_figures.py": {
       "sha256": "d4fad95aae72aa701c01c5a72f1d9db50193d089e83f62b78c683e7595d1bd1b",
@@ -954,17 +1305,13 @@
       "sha256": "1342964008cfe99e8a50692cac74e0ca69f3fe06e684dc0e050ee2e54fe6c352",
       "bytes": 72456
     },
-    "provenance/release_validation.json": {
-      "sha256": "40b6105b9dd8f922fd7ee7d347e2acdef2a97d012329af921170fe3f5e4dfa7e",
-      "bytes": 356
+    "provenance/nsw_real_proxy_truth_v2_public_manifest.json": {
+      "sha256": "a1063cab0c0db3116c8ec9aa916b1a10224d6a81b0908747b1ff48b06cd4945b",
+      "bytes": 2994
     },
-    "README.md": {
-      "sha256": "b4e7abed5ade1a23c8806d384576c3547eb7b613a3dffaf041e17472ce9ab253",
-      "bytes": 8913
-    },
-    "RELEASE_NOTES.md": {
-      "sha256": "1e87ec12c1f1b97cd50cd51970d3eb6e6be2f9e4489fe23230ed67e1f57cd0a0",
-      "bytes": 5463
+    "provenance/release_validation_20260925.json": {
+      "sha256": "f8227e06ada4d1cba660245698cf870ff2fbc6d7d631d7c137647097e4a9351c",
+      "bytes": 1874
     },
     "reproduce.py": {
       "sha256": "aa6795d02278d7d90dc401936a713043e9c2ff281dbb20edb103e62c96478f5b",
@@ -974,336 +1321,149 @@
       "sha256": "f6b4c6d5fb6f0de518d71a762573d9708ffdbf8b4e4fa0713384d59e10355107",
       "bytes": 72
     },
-    "REVISION_LOG_20260924.md": {
-      "sha256": "3e97fb426320dcafdd4b64b7fe4567c37db7760deaa31b33d244b3e22daea918",
-      "bytes": 19647
+    "results/microcredit_population_sensitivity_v1/leakage_audit.csv": {
+      "sha256": "daaca866ec012eee1e6fedc4f5920ca1feaf1e064662f05f02d5cf3257609b8a",
+      "bytes": 340
     },
-    "SUPPLEMENTARY_README.md": {
-      "sha256": "35073e3bcb850e2e7c967535f07808e53ea3db7d3feb7bf373c096882e68f1c2",
-      "bytes": 3388
+    "results/microcredit_population_sensitivity_v1/leakage_predictions_before_scoring.csv": {
+      "sha256": "ed707a92a35af3e0eeea0c0613020a058cd6fbab2a298e64265dda593ca1eb39",
+      "bytes": 1970
     },
-    "current_method/docs/effect_family_holdout_protocol.md": {
-      "sha256": "5726378b7b3a82c4026da90c852391f1ac715f46dd3e7d715af816b42aaff3a9",
-      "bytes": 3014
+    "results/microcredit_population_sensitivity_v1/loso_results.csv": {
+      "sha256": "92c417e881e7c785458b9c005ff155ba6ed0f449108d4e4dcd6de1e7d9c9b65e",
+      "bytes": 2994
     },
-    "current_method/run_effect_family_holdout.py": {
-      "sha256": "9409828fac5d7e8de757c3e0e039dbc812a43116b083c2a35d1dcbeeb3c7ffe8",
-      "bytes": 15594
+    "results/microcredit_population_sensitivity_v1/loso_summary.csv": {
+      "sha256": "ecba047bca3b787f4f88a85091fe13fbc4256d344474bf5a3c1d5b8540fde211",
+      "bytes": 449
     },
-    "current_method/tests/test_effect_family_holdout.py": {
-      "sha256": "23f92a1fa7a7dc298b31472bc4a8204ebd62cc1fa34f1aad8efd39ae8d304028",
-      "bytes": 999
+    "results/microcredit_population_sensitivity_v1/pilot_input_design_and_reference.csv": {
+      "sha256": "48831b9c36f37e9aeca5d14b8e11b2818a4e345329d5b882e79b0210cede9e50",
+      "bytes": 4775
     },
-    "current_method/data/manylabs2_original_effects.csv": {
-      "sha256": "78b3432bebb798595ebb08ee10fb68d3f6f59cd5e0ab49606cfb6835eb226406",
-      "bytes": 12130
+    "results/microcredit_population_sensitivity_v1/predictions_before_scoring.csv": {
+      "sha256": "ed707a92a35af3e0eeea0c0613020a058cd6fbab2a298e64265dda593ca1eb39",
+      "bytes": 1970
     },
-    "current_method/data/manylabs2_original_effects_provenance.json": {
-      "sha256": "c0ce991b3c0b857c58dcd1c6495aee1f7bb83da8f2437237304c70eaea40e8c4",
-      "bytes": 502
+    "results/microcredit_population_sensitivity_v1/qualification_audit.csv": {
+      "sha256": "88c81f4bf9c04a4cb1702f839fe493682db29af45bfbf65ffa15100c054d6dbf",
+      "bytes": 3004
     },
-    "current_method/results/effect_family_holdout/excluded_studies.csv": {
-      "sha256": "30694b8555f31c2b1c5a5a7fd43bb6912bec9759777c08b5d9c5d3e44279f8f6",
-      "bytes": 149
+    "results/microcredit_population_sensitivity_v1/release_frontier.csv": {
+      "sha256": "a86a511f7664122cf4898484b12e35434ad9b83df13cf281a9c98d1ffc4c43c4",
+      "bytes": 908
     },
-    "current_method/results/effect_family_holdout/included_studies.csv": {
-      "sha256": "d46bd06e91e7b67c7f40d1d66ffa8d4395d11b0d721bdd22dc5638256b842918",
-      "bytes": 1242
+    "results/microcredit_population_sensitivity_v1/run_manifest.json": {
+      "sha256": "e94279d32c34cf70595f0c7cbacf4a473c65daa3c3c1147b8604a7e878b99f8c",
+      "bytes": 7892
     },
-    "current_method/results/effect_family_holdout/leakage_audit.csv": {
-      "sha256": "263d5f52089883d99a23824e681c0689cbb03f0ff291266a77e033d8368091de",
-      "bytes": 2067
+    "results/microcredit_loso_pilot/mexico_cluster_variance_reconstruction.json": {
+      "sha256": "4379338cd83703ef14cedab8a06d9a80163a98b1bbaa2e022a13e4131ec403a8",
+      "bytes": 970
     },
-    "current_method/results/effect_family_holdout/predictions.csv": {
-      "sha256": "c46d47588735a51361cb94b6bed4207138625d09521733175c06fbb26c323e9f",
-      "bytes": 16012
+    "results/microcredit_primary_published_v1/leakage_audit.csv": {
+      "sha256": "33ddab3ca811e786448fb8e1c7dafee0f086fc77e0f86f4204234a9b5a714792",
+      "bytes": 274
     },
-    "current_method/results/effect_family_holdout/report.md": {
-      "sha256": "99c6a4357726703b4c83bd2bd26f4a4203e9d8158613e4cb258c6ec48ad83c65",
-      "bytes": 3838
+    "results/microcredit_primary_published_v1/leakage_predictions_before_scoring.csv": {
+      "sha256": "02fef3481692dab3db4952014d59c4d22b593778acebd47848f2fc8ac8da729f",
+      "bytes": 1225
     },
-    "current_method/results/effect_family_holdout/run_manifest.json": {
-      "sha256": "6cd1c6dbf0583e7568078b4a4700e9f7c33f2d9f3036aa946fb18819a39e524c",
-      "bytes": 2151
+    "results/microcredit_primary_published_v1/loso_results.csv": {
+      "sha256": "292587a268e2fb6b10e2860ac2d4c41d2109c0406f1d59658132324d6277bc24",
+      "bytes": 1872
     },
-    "current_method/results/effect_family_holdout/summary.csv": {
-      "sha256": "3b88face12ee5a6f62e189ede52712650e19dbe61eb9821b1425a487955b746f",
-      "bytes": 2119
+    "results/microcredit_primary_published_v1/loso_summary.csv": {
+      "sha256": "953d76e7335e211ad94d52dd19898b2ed4198bcbd031c33bbb3ce1cb5ea54220",
+      "bytes": 409
     },
-    "current_method/docs/effect_family_baselines_protocol.md": {
-      "sha256": "938dbead0b4877b2c12a3200e3fa536f5231a829de9ddaed05d8d464b6fd0c27",
-      "bytes": 2466
+    "results/microcredit_primary_published_v1/pilot_input_design_and_reference.csv": {
+      "sha256": "aef8274c17fb8fc807b456d3160cb055808a0390a56537b5c41c3a9220811f7f",
+      "bytes": 3185
     },
-    "current_method/run_effect_family_baselines.py": {
-      "sha256": "cb5f84e9b7f3b845a25203084d7a9ef5ebe99a4fa6150497339c1194f564afb5",
-      "bytes": 14057
+    "results/microcredit_primary_published_v1/predictions_before_scoring.csv": {
+      "sha256": "02fef3481692dab3db4952014d59c4d22b593778acebd47848f2fc8ac8da729f",
+      "bytes": 1225
     },
-    "current_method/tests/test_effect_family_baselines.py": {
-      "sha256": "91e0986eaa3fbfdd78f0e6facdd0f055bb8c4442747986d934b8fa2f8d94b457",
-      "bytes": 1800
+    "results/microcredit_primary_published_v1/qualification_audit.csv": {
+      "sha256": "f3e622493c57a4a7ecf75c061eafd8d549a0ce7654bca5b11d9e810fdf3d0b29",
+      "bytes": 2011
     },
-    "current_method/results/effect_family_baselines/leakage_audit.csv": {
-      "sha256": "bd588756a4b6ed98a3c69906352988f2ec238271e25ac0bdd404ee8ae760208c",
-      "bytes": 2387
+    "results/microcredit_primary_published_v1/release_frontier.csv": {
+      "sha256": "97cba37c14409595a634018f36c6c52b29d9bfd0d6edfb3e4ec02829e274ecc9",
+      "bytes": 816
     },
-    "current_method/results/effect_family_baselines/predictions.csv": {
-      "sha256": "18c30243a0e31b3856bccc05b6441bdaaa4597da5476d0af052d236e17a3062d",
-      "bytes": 6759
+    "results/microcredit_primary_published_v1/run_manifest.json": {
+      "sha256": "5d8a161fb3302e1b513e7342372527f8fb36c9fe6c97fa7bedf27b5c8b1b3b3d",
+      "bytes": 6230
     },
-    "current_method/results/effect_family_baselines/report.md": {
-      "sha256": "b82912e620f3549f3356f6f94712380090f246c448659d94b557d82fbd905516",
-      "bytes": 3770
+    "tools/build_microcredit_published_inputs.py": {
+      "sha256": "96175fbfd4ede7469a2f6fd90e6878423108628b647259091b09363248bd89b7",
+      "bytes": 3505
     },
-    "current_method/results/effect_family_baselines/run_manifest.json": {
-      "sha256": "91973224fbc71d9ad566816f02987d436fbedeccba65d87e4162bca8e0a08ce9",
-      "bytes": 1916
-    },
-    "current_method/results/effect_family_baselines/summary.csv": {
-      "sha256": "8ba7ce2078bfd3d99a29e78d58bcee17644831ddda60703a895129b47fb82e49",
-      "bytes": 1975
-    },
-    "current_method/docs/effect_family_baselines_all_protocol.md": {
-      "sha256": "3d35637911638066554f78023c9c0c83d499ef69baba73adbc69e9b29aeceb1d",
-      "bytes": 1726
-    },
-    "current_method/run_effect_family_baselines_all.py": {
-      "sha256": "f640a7efb72856c8f2cd052a3d6facbfbed371cdb3f9e215e566694afa49cc96",
-      "bytes": 9061
-    },
-    "current_method/tests/test_effect_family_baselines_all.py": {
-      "sha256": "7c37f624abdd9a3645551774ac81601dbe0f6a6cca1396c7fdd5be36c7bae828",
-      "bytes": 985
-    },
-    "current_method/results/effect_family_baselines_corrected/leakage_audit.csv": {
-      "sha256": "bd588756a4b6ed98a3c69906352988f2ec238271e25ac0bdd404ee8ae760208c",
-      "bytes": 2387
-    },
-    "current_method/results/effect_family_baselines_corrected/predictions.csv": {
-      "sha256": "87e8cb74b0f553f1fd41c8e61c83f67c002833b1369f109baae482a2b976121a",
-      "bytes": 6760
-    },
-    "current_method/results/effect_family_baselines_corrected/report.md": {
-      "sha256": "6d9dfc5209a63a72daf6f9ab6aa8fbbcc44e9c6a7490c1fc6673b6d851290629",
-      "bytes": 3920
-    },
-    "current_method/results/effect_family_baselines_corrected/run_manifest.json": {
-      "sha256": "82f90519886baf3b91f7377da5fa938278a6f1dfdb8f6669e233eea351e1819d",
-      "bytes": 1916
-    },
-    "current_method/results/effect_family_baselines_corrected/summary.csv": {
-      "sha256": "d9042def5a8a985e0c29b8b0bc1565c9835c04a0ff3921ffbfd76aba617033f5",
-      "bytes": 1965
-    },
-    "current_method/results/effect_family_baselines_all/leakage_audit.csv": {
-      "sha256": "cabf7100863b2a4bb4430f33aef94983f375ec8ad16a233fa401cd753475b088",
-      "bytes": 6591
-    },
-    "current_method/results/effect_family_baselines_all/predictions.csv": {
-      "sha256": "8e4ba9f3e2832d1e9ac024947d4028f0af478d864a845499fa7be373ea6b87fd",
-      "bytes": 18699
-    },
-    "current_method/results/effect_family_baselines_all/report.md": {
-      "sha256": "559c5dce2cedf4b11c3e2ef697af49b4c1799a9a3d225c31923cb9c058171e5c",
-      "bytes": 3106
-    },
-    "current_method/results/effect_family_baselines_all/run_manifest.json": {
-      "sha256": "2bb4f792665855964e746d92cf8756f07a59735558921f59274c23f2455f65be",
-      "bytes": 2190
-    },
-    "current_method/results/effect_family_baselines_all/summary.csv": {
-      "sha256": "7137c565634ed23db5e86ef7e3478ff44e6b49054ab9d2f6d5c44b681524ec9c",
-      "bytes": 2799
-    },
-    "REAL_CROSS_INTERVENTION_REQUIREMENTS.md": {
-      "sha256": "22cea3243155fd9e904f7d538436349792af6e5fc72e7b3dbacd8a29c4c9ead1",
-      "bytes": 4338
-    },
-    "REAL_CROSS_INTERVENTION_INTAKE_ZH.md": {
-      "sha256": "cbbf0984c20915dd4051e12731e82afaf84ee2a23b022a4051b7b455ef59c6af",
-      "bytes": 2393
-    },
-    "MICROCREDIT_PILOT_PROTOCOL.md": {
-      "sha256": "64b1afa8be529ee533fc858dc65cf49b5c25fbb53a8a6cf05673ec6f659df15e",
-      "bytes": 5443,
-      "source": "microcredit package inventory"
-    },
-    "legacy_audits/docs/paper/nsw_real_proxy_truth_protocol.md": {
-      "sha256": "d3088871f9d713d570ead14fcc76e57b2ca64d398d32bc6ab793cee7a0acca49",
-      "bytes": 3285
-    },
-    "legacy_audits/results/extensions/nsw_real_proxy_truth/causal_truth_design.json": {
-      "sha256": "79303d53321e99e1815fd76df072ef0d15527182ecc1e0aa69e3e97e6c49045b",
-      "bytes": 4849
-    },
-    "legacy_audits/results/extensions/nsw_real_proxy_truth/manifest.json": {
-      "sha256": "7ec264d6235b9235d830a10dd5f8aebe18401a9887e3fab9cc06f124c51d5b16",
-      "bytes": 2057
-    },
-    "legacy_audits/results/extensions/nsw_real_proxy_truth/real_covariate_proxy_records.csv": {
-      "sha256": "0ae91bc2363c7327399e094d63bb0e6ec20f5a427fdea10ef125cb5242a6a9ad",
-      "bytes": 3989
-    },
-    "legacy_audits/results/extensions/nsw_real_proxy_truth/real_covariate_proxy_summary.csv": {
-      "sha256": "90e2fa95a0f393344e5563d0293d537590ad150c0c7f6236fb8fe71c359e08a2",
-      "bytes": 533
-    },
-    "legacy_audits/results/extensions/nsw_real_proxy_truth/semisynthetic_truth_records.csv": {
-      "sha256": "bced5dfbc920a32a6094dec8e272f944f24718d1f5ed6d7060a9c7b0f40d8aad",
-      "bytes": 2841491
-    },
-    "legacy_audits/results/extensions/nsw_real_proxy_truth/semisynthetic_truth_summary.csv": {
-      "sha256": "4c8874051ca39c91a9a66205743151c726f3b960517e0ab1c2aaaf605fc29429",
-      "bytes": 3947
-    },
-    "legacy_audits/results/extensions/nsw_real_proxy_truth/split_manifest.json": {
-      "sha256": "6f57ee10d9e507ac801aed92b51016af94d0712754b33c9723ba224cd31a03e0",
-      "bytes": 9359
-    },
-    "legacy_audits/results/extensions/nsw_real_proxy_truth/target_effect_flip_audit.csv": {
-      "sha256": "4bdd158b4d705a207e9a120738d59c6f26d874abddaf34c59259f286a4bd6fe2",
-      "bytes": 5518
-    },
-    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/causal_truth_design.json": {
-      "sha256": "79303d53321e99e1815fd76df072ef0d15527182ecc1e0aa69e3e97e6c49045b",
-      "bytes": 4849
-    },
-    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/manifest.json": {
-      "sha256": "94a46d233a051f7821e251245aca97176880742986487036c91275470d5dffd3",
-      "bytes": 2212
-    },
-    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/real_covariate_proxy_records.csv": {
-      "sha256": "0ae91bc2363c7327399e094d63bb0e6ec20f5a427fdea10ef125cb5242a6a9ad",
-      "bytes": 3989
-    },
-    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/real_covariate_proxy_summary.csv": {
-      "sha256": "90e2fa95a0f393344e5563d0293d537590ad150c0c7f6236fb8fe71c359e08a2",
-      "bytes": 533
-    },
-    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/report.md": {
-      "sha256": "fbd071d5a8833a511175f91aec8e83726e75cb73ae7ad9794d9e5bb51b3aefa9",
-      "bytes": 1414
-    },
-    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/semisynthetic_truth_records.csv": {
-      "sha256": "bced5dfbc920a32a6094dec8e272f944f24718d1f5ed6d7060a9c7b0f40d8aad",
-      "bytes": 2841491
-    },
-    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/semisynthetic_truth_summary.csv": {
-      "sha256": "6f139e3b0fa4cbe3c228bf2b425381773173265fe022c202ccfcd7c731d9989c",
-      "bytes": 3952
-    },
-    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/split_manifest.json": {
-      "sha256": "6f57ee10d9e507ac801aed92b51016af94d0712754b33c9723ba224cd31a03e0",
-      "bytes": 9359
-    },
-    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/target_effect_flip_audit.csv": {
-      "sha256": "4bdd158b4d705a207e9a120738d59c6f26d874abddaf34c59259f286a4bd6fe2",
-      "bytes": 5518
-    },
-    "legacy_audits/scripts/run/run_nsw_real_proxy_truth.py": {
-      "sha256": "b22686f848a37bb6bffa9eced9cb98632ed0a1c3b12410bd64128d0eb2d83414",
-      "bytes": 15303
-    },
-    "legacy_audits/tests/test_nsw_real_proxy_truth.py": {
-      "sha256": "7db0642ab62c213ec89c3958d83f010189fb2d0c3543f058cde01cf1ad33c45a",
-      "bytes": 1774
-    },
-    "MICROCREDIT_METADATA_AUDIT_20260925.md": {
-      "sha256": "b0576d2f8b2734ecaea83ac33442e9c824e1fa77dcb3edcd8d740b98fbdba169",
-      "bytes": 5482,
-      "source": "revision/20260925 microcredit metadata audit"
-    },
-    "MICROCREDIT_OPENICPSR_INVENTORY_20260925.md": {
-      "sha256": "16d805056e5fe53cdfdf8417098774acea7a0642bab5204ffa06c08b73fcabe5",
-      "bytes": 5398,
-      "source": "microcredit package inventory"
-    },
-    "REAL_CROSS_INTERVENTION_AUTHOR_RESPONSE.md": {
-      "sha256": "188a1a7087e0d6f0625c6fd4b0fccdc6f7b2d5cfda1aa5a49f55bca4088200c2",
-      "bytes": 21276,
-      "source": "real cross-intervention author response"
-    },
-    "microcredit_metadata_audit.csv": {
-      "sha256": "37524c517fd9b8e8f381a17cc4d9cbbcfbe5badeca0733459c4ae2bf96f2dcc8",
-      "bytes": 1848,
-      "source": "microcredit metadata audit"
-    },
-    "microcredit_variable_label_audit.csv": {
-      "sha256": "98422529041881aa86b5109c129f7adbe1bb8d91566d92804df83a3479999644",
-      "bytes": 153354,
-      "source": "revision/20260925 microcredit metadata audit"
+    "tools/export_submission.py": {
+      "sha256": "f93f0de498262b53f75085a339e2990e94399717de27e07d50d256fabfdef4d4",
+      "bytes": 5759
     },
     "tools/inspect_microcredit_metadata.py": {
       "sha256": "1636a1f7c2339d9a38a1034e292c3c5053d3facb70fc85b46e35f2578736b5f3",
-      "bytes": 3927,
-      "source": "revision/20260925 microcredit metadata audit"
+      "bytes": 3927
     },
-    "MICROCREDIT_ESTIMAND_MATRIX_DRAFT_20260925.md": {
-      "sha256": "895149e476ab74087a25fa715c269843afcb0660f44628887506fdaa6f577fb9",
-      "bytes": 3469,
-      "source": "revision/20260925 microcredit metadata and estimand audit"
-    },
-    "microcredit_estimand_matrix_draft.csv": {
-      "sha256": "fcab7e1874443fda95cdadc4c0c5bf440179675774ff01e08da4ead3064793c7",
-      "bytes": 1455,
-      "source": "revision/20260925 microcredit metadata and estimand audit"
-    },
-    "MICROCREDIT_DESIGN_EVIDENCE_20260925.md": {
-      "sha256": "ed6ee4b3625318cba0cfd51ce12e626bee90be290e6b1c8b63029bd9e697e72a",
-      "bytes": 15337
-    },
-    "MICROCREDIT_INVITATION_ITT_PROTOCOL_20260925.md": {
-      "sha256": "430aaa0925195662651f8e4fda209ff124fa3af932362c387acc0d8b23289a91",
-      "bytes": 5564
-    },
-    "MICROCREDIT_CODING_STATUS_20260925.md": {
-      "sha256": "462c9bbf797b86445c377b3bcc53b8b841cd491eeb36a1817b1930702d51d763",
-      "bytes": 1781
-    },
-    "MICROCREDIT_LOSO_PILOT_PROTOCOL_20260925.md": {
-      "sha256": "3fe7231dd5d81a11b1e8e90ffdaabe52e88d9964a0edec3f3faad7f193b62dfb",
-      "bytes": 2793
-    },
-    "MICROCREDIT_LOSO_PILOT_REPORT_20260925.md": {
-      "sha256": "af31522abdc8ef15f3c8a7fd4c8eabbc4eded3c51a22687a95e69716f24532fa",
-      "bytes": 2820
+    "tools/reconstruct_mexico_cluster_variance.py": {
+      "sha256": "102cd980316d8889ee89431ecdbc09320172c1b78905025acfa7ec6e594e18e9",
+      "bytes": 4354
     },
     "tools/run_microcredit_loso_pilot.py": {
-      "sha256": "7989897e7628889af503592018e53b4d00fa230b73ec2c6e5f6c6a91be6af6f6",
-      "bytes": 11190
+      "sha256": "191de90adb37f68dd1e967ccf8ba9e948007a094d6a954c6a1e05ff7b0f1d360",
+      "bytes": 22973
     },
     "tools/test_microcredit_loso_pilot.py": {
-      "sha256": "9f338d719c568868e3d7964c78c457934d40147c2ca50ae151381622fb986eeb",
-      "bytes": 1171
+      "sha256": "aad5336fe8c1b3df9a44b9a4e98c35a1ed7e367d3d4cd2eb4b1f5f440654f7c2",
+      "bytes": 10019
     },
-    "results/microcredit_loso_pilot/loso_results.csv": {
-      "sha256": "2b399ca55bdb1f3db49296b2236e9acd148bbcc5475087d28422ebbeb9d917d1",
-      "bytes": 2802
+    "tools/verify_microcredit_published_run.py": {
+      "sha256": "30a52124a88abc9556e777a8a1e8a3186e754593b6f694f153fbcdef19ef134a",
+      "bytes": 5793
     },
-    "results/microcredit_loso_pilot/loso_summary.csv": {
-      "sha256": "81d1023541e03decf66924e682fa38654a74ffa755bb68cdc4645e46537b23b5",
-      "bytes": 407
+    "LeanProofs/.gitignore": {
+      "sha256": "61e249832777f68ef99d2853d7344269af435213481b8c3dcad3507a69d0929b",
+      "bytes": 19
     },
-    "results/microcredit_loso_pilot/release_frontier.csv": {
-      "sha256": "f0ea742e12484a88fce0028b60e7bea6f153d355f6ed221afed375ff96686d33",
-      "bytes": 988
+    "LeanProofs/AxiomAudit.lean": {
+      "sha256": "c463bc525407868004fd70135210d0534f78fc519670a60f686986b0f14b7630",
+      "bytes": 658
     },
-    "results/microcredit_loso_pilot/leakage_audit.csv": {
-      "sha256": "f9406efdf51446c1fa05673bf238cf8d2d5b691c4db3f711e71e28cdaa1eef83",
-      "bytes": 175
+    "LeanProofs/CausalAtlasBridge.lean": {
+      "sha256": "7fd0fcd76bc2fb100c80284fcbe247dd9cf000e3d423f4539d70ffb6afd51d5c",
+      "bytes": 10879
     },
-    "results/microcredit_loso_pilot/pilot_input_design_and_reference.csv": {
-      "sha256": "425e11662f4fa616d598fe84932d0103770729c9f79647dbf88751256a1bfb65",
-      "bytes": 1010
+    "LeanProofs/README.md": {
+      "sha256": "c57027f4f6eb80031000a5ded29b6e3d4814854d18362dbbd858db1a0c81e540",
+      "bytes": 1668
     },
-    "results/microcredit_loso_pilot/run_manifest.json": {
-      "sha256": "751945844cf09356df2686897b2de598f1662b421f15397d1c214b44dec32314",
-      "bytes": 525
+    "LeanProofs/VERIFICATION.md": {
+      "sha256": "b63fa553d4fe11d11c531249f29025cbfba737992ab3b58891d749eb205e4099",
+      "bytes": 1426
     },
-    "MICROCREDIT_LOSO_PILOT_WORK_SUMMARY_20260925.md": {
-      "sha256": "427fa60d861736dd8f0112888a67a5b4dcb23c0dd4b6ef8e3dda2a17c7521f93",
-      "bytes": 4748,
-      "source": "microcredit LOSO pilot work summary"
+    "LeanProofs/lake-manifest.json": {
+      "sha256": "889a368c33d38450c8c6b31662f5f52df33c754cb7716a54acb327d38a739133",
+      "bytes": 3141
+    },
+    "LeanProofs/lakefile.lean": {
+      "sha256": "d6392877331b7c4c805f46a7bdbf8ed2500715acc254e4f1c60d463d2700ff3a",
+      "bytes": 283
+    },
+    "LeanProofs/lean-toolchain": {
+      "sha256": "cdbc6c372a2b37ad94430a6cec69cedfa4d36f255bfd968773fd91bf7a1746bf",
+      "bytes": 29
+    },
+    "LeanProofs/LeanProofs.lean": {
+      "sha256": "e1028eb79e1ee34cf59cf041d513d4bd69c591cff4fb8c54188019002466c7f5",
+      "bytes": 43
+    },
+    "LeanProofs/verify.ps1": {
+      "sha256": "62a267c5039d6177fa9796f9899812ffa13bb5676dcc80c458d03619cb01f1aa",
+      "bytes": 393
     }
-  },
-  "release_files": 323
+  }
 }

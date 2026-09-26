@@ -1,0 +1,6 @@
+method,n_targets,n_computed,n_released,release_rate,mean_width,mean_point_error,sign_errors,released_target_errors,released_target_risk,contains_full,disjoint,partial_overlap
+atlas_descriptive,2,0,0,,,,0,0,,0,0,0
+design_meta_regression,2,0,0,,,,0,0,,0,0,0
+fixed_effect,2,2,0,0.0,34.5167523458193,15.341039717051054,0,0,,1,0,1
+random_effects,2,0,0,,,,0,0,,0,0,0
+robust_training_range,2,0,0,,,,0,0,,0,0,0

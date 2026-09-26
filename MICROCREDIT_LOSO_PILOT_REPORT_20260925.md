@@ -1,5 +1,12 @@
 # Descriptive LOSO pilot report
 
+**Historical, superseded report.** This describes the old mixed-source run,
+not the accepted source-corrected execution. Morocco's old row targets a
+different population; do not reuse the eligibility or numeric conclusions
+below as current evidence. See `MICROCREDIT_PUBLISHED_V1_ACCEPTANCE_20260925.md`.
+This report and its historical results are preserved locally but excluded
+from the new submission allowlist.
+
 Run date: 2026-09-25. The executable protocol is frozen in
 `MICROCREDIT_LOSO_PILOT_PROTOCOL_20260925.md`; the implementation is
 `tools/run_microcredit_loso_pilot.py`. The report uses only the three studies

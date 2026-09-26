@@ -1,4 +1,44 @@
-# Release: 17 September 2026
+# Release notes
+
+## 25 September 2026: source-corrected microcredit execution
+
+The published-summary microcredit pilot now has a two-study primary input
+(Mexico and India EL1) and a separate three-study post-hoc population
+sensitivity that adds Morocco's all-sample weighted estimate. The old Morocco
+high-propensity estimate is excluded from the primary; the previous mixed-input
+results are preserved locally and excluded from this delivery. The source
+specification, deterministic input builder, two accepted runs and independent
+arithmetic verifier are included. The complete execution and claim boundary
+is `MICROCREDIT_PUBLISHED_V1_ACCEPTANCE_20260925.md`.
+
+Primary fixed effect is computed for two held-out targets. Sensitivity fixed
+effect and training range are each computed for three targets. All computed
+rules refuse at every frozen tolerance; released-target risk is undefined.
+ATLAS and design meta-regression remain unqualified. These results are an
+auditable descriptive feasibility exercise, not real mechanism calibration,
+common-effect identification, or evidence of superiority. The population
+selection is explicitly post-hoc, after published cells were visible.
+
+Nine microcredit tests actually execute and pass. Independent verification
+matches both saved runs and their input/protocol/output hashes, with maximum
+numerical discrepancy 7.11e-15. The current-method suite passed 42 tests before
+the portability repair described in the current release validation record.
+The 172,800-plan and 345,600-stopped-record ablation audit was independently
+reconstructed without changing historical outputs. The exporter's 26 isolated
+checks pass; actual archive verification is recorded beside each exported ZIP.
+
+These software and arithmetic checks do not settle empirical validity. The
+selection audit tests outcome-adaptive weighting with zero causal discrepancy;
+the full bridge workflow uses design-measurable weights. The geometric minimum
+has no additional release/cost gain over the barycentric bound in the tested
+ablations. The complete ExAtlas procedure and real cross-intervention mechanism
+calibration remain untested.
+
+The delivery uses the reviewed working-tree allowlist and current file hashes,
+not `git archive HEAD`. Historical page counts below describe earlier drafts
+and do not certify the final Overleaf PDF.
+
+## Historical release: 17 September 2026
 
 The two new ablations are incorporated into the ICLR 2027 manuscript as Appendix P, Tables 15 and 16. The limitation paragraph retains the missing complete ExAtlas comparison.
 

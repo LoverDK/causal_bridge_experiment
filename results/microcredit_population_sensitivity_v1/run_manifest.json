@@ -1,0 +1,150 @@
+{
+  "status": "numeric_descriptive_pilot",
+  "run_utc": "2026-09-25T10:01:16.050603+00:00",
+  "input_path": "data/microcredit_published_v1/population_sensitivity.csv",
+  "input_sha256": "743b78ab4e1c6df2f9f5b4a7c420e20a67aec8bcc282cccfd140483a1f26b811",
+  "runner_path": "tools/run_microcredit_loso_pilot.py",
+  "runner_sha256": "191de90adb37f68dd1e967ccf8ba9e948007a094d6a954c6a1e05ff7b0f1d360",
+  "protocol_hashes": {
+    "MICROCREDIT_LOSO_PILOT_PROTOCOL_20260925.md": "2115b52a59310366da40ce9824872e1c1ae6a685b05a0eea2e54a60d09ef9ff6",
+    "MICROCREDIT_INVITATION_ITT_PROTOCOL_20260925.md": "86614157ba4bf74da4432395f017883246a5aa6bd4ca9e732a35a0ba22b1b30f"
+  },
+  "git": {
+    "head": "0b33a55d2bb2796397d256234a985af8fdf5af71",
+    "dirty": true,
+    "status_lines": [
+      " M ANONYMOUS_EXPORT.md",
+      " M DATA_SOURCES.md",
+      " M MICROCREDIT_DESIGN_EVIDENCE_20260925.md",
+      " M MICROCREDIT_INVITATION_ITT_PROTOCOL_20260925.md",
+      " M MICROCREDIT_LOSO_PILOT_PROTOCOL_20260925.md",
+      " M MICROCREDIT_OPENICPSR_INVENTORY_20260925.md",
+      " M README.md",
+      " M SUPPLEMENTARY_README.md",
+      " M tools/run_microcredit_loso_pilot.py",
+      " M tools/test_microcredit_loso_pilot.py",
+      "?? data/",
+      "?? results/microcredit_loso_pilot/mexico_cluster_variance_reconstruction.json",
+      "?? results/microcredit_population_sensitivity_v1/",
+      "?? results/microcredit_primary_published_v1/",
+      "?? tools/build_microcredit_published_inputs.py",
+      "?? tools/export_submission.py",
+      "?? tools/reconstruct_mexico_cluster_variance.py"
+    ]
+  },
+  "dependencies": {
+    "python": "3.13.15",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1"
+  },
+  "n_input_studies": 3,
+  "n_qualified_studies": 3,
+  "qualification": [
+    {
+      "study_id": "angelucci_mexico",
+      "common_qualified": true,
+      "variance_qualified": true,
+      "design_qualified": false,
+      "reasons": "design_vector_status_not_verified",
+      "common_reasons": "",
+      "variance_reasons": "",
+      "design_reasons": "design_vector_status_not_verified",
+      "variance_status": "verified_assignment_level_se",
+      "design_vector_status": "exploratory_author_coded_coordinates_unverified",
+      "target_population": "Surveyed potential-borrower households in eligible geographic program-expansion clusters; assigned access contrast, not actual borrowers",
+      "assignment_status": "verified_source",
+      "outcome_status": "verified_source",
+      "stratum_status": "verified_source",
+      "target_population_status": "verified_source",
+      "assignment_source_locator": "Article randomization/ITT design pp. 11-14; official Compartamos-AEJ-tables-2-8.do:3,5,31-33, Treatment with vce(cl cluster)",
+      "outcome_source_locator": "Table 3 col (3) and notes; Q10_9_toprof, last two weeks; import_organise_data_v7.R:76-78,741-756",
+      "stratum_source_locator": "Article design pp. 11-14: geographic randomized program placement, promotion/access vs control",
+      "target_population_source_locator": "Article design/sampling pp. 11-14; Table 3 full endline respondent sample, N=16005"
+    },
+    {
+      "study_id": "banerjee_india_endline1",
+      "common_qualified": true,
+      "variance_qualified": true,
+      "design_qualified": false,
+      "reasons": "design_vector_status_not_verified",
+      "common_reasons": "",
+      "variance_reasons": "",
+      "design_reasons": "design_vector_status_not_verified",
+      "variance_status": "verified_assignment_level_se",
+      "design_vector_status": "exploratory_author_coded_coordinates_unverified",
+      "target_population": "Eligible sampled Hyderabad-area households at endline 1, reweighted for oversampling Spandana borrowers; not restricted to business owners or actual borrowers",
+      "assignment_status": "verified_source",
+      "outcome_status": "verified_source",
+      "stratum_status": "verified_source",
+      "target_population_status": "verified_source",
+      "assignment_source_locator": "Article design pp. 10-13; Table 3A Treated area; 2013-0533_do_tables.do:192-208, treatment and cluster(areaid)",
+      "outcome_source_locator": "Table 3A col (4) and notes (3)-(7); bizprofit_1 last 30 days, endline 1; import_organise_data_v7.R:417-419,741-756",
+      "stratum_source_locator": "Article design pp. 10-13, treatment-area Spandana branch rollout; first endline retained due to later control entry",
+      "target_population_source_locator": "Table 3 all households and sampling notes; article Hyderabad eligible-area household sampling, pp. 10-13"
+    },
+    {
+      "study_id": "crepon_morocco_all_sample",
+      "common_qualified": true,
+      "variance_qualified": true,
+      "design_qualified": false,
+      "reasons": "design_vector_status_not_verified",
+      "common_reasons": "",
+      "variance_reasons": "",
+      "design_reasons": "design_vector_status_not_verified",
+      "variance_status": "verified_assignment_level_se",
+      "design_vector_status": "exploratory_author_coded_coordinates_unverified",
+      "target_population": "Whole population of selected marginal villages as represented by both endline sampling frames and inverse-probability weights, subject to published 0.5 percent trimming; not all Al Amana catchment villages",
+      "assignment_status": "verified_source",
+      "outcome_status": "verified_source",
+      "stratum_status": "verified_source",
+      "target_population_status": "verified_source",
+      "assignment_source_locator": "Article printed p.129, matched village randomization; Table 8 notes, treated village contrast with paired-village strata",
+      "outcome_source_locator": "Article Table 3 col (5) and notes, physical p.13 / printed p.135, annual production including self-consumption minus expenses; Table 8B col (5), endline",
+      "stratum_source_locator": "Article Section III.A printed p.141, village-population access ITT; Table 8B and notes p.142",
+      "target_population_source_locator": "Article Section III.A p.141 and Table 8B notes p.142: high-probability households plus randomly sampled households, inverse selection probability weighting"
+    }
+  ],
+  "method_gates": {
+    "fixed_effect": {
+      "qualified": true,
+      "reason": "variance_gate"
+    },
+    "random_effects": {
+      "qualified": true,
+      "reason": "variance_gate"
+    },
+    "design_meta_regression": {
+      "qualified": false,
+      "reason": "variance_or_design_gate_failed"
+    },
+    "robust_training_range": {
+      "qualified": true,
+      "reason": "common_gate"
+    },
+    "atlas_descriptive": {
+      "qualified": false,
+      "reason": "variance_or_design_gate_failed"
+    }
+  },
+  "thresholds": [
+    0.1,
+    0.2,
+    0.4,
+    0.8
+  ],
+  "primary_threshold": 0.2,
+  "calibration_claim": false,
+  "raw_records_committed": false,
+  "interpretation": "noisy-reference descriptive pilot only; no real calibration claim",
+  "output_sha256": {
+    "qualification_audit.csv": "88c81f4bf9c04a4cb1702f839fe493682db29af45bfbf65ffa15100c054d6dbf",
+    "predictions_before_scoring.csv": "ed707a92a35af3e0eeea0c0613020a058cd6fbab2a298e64265dda593ca1eb39",
+    "leakage_predictions_before_scoring.csv": "ed707a92a35af3e0eeea0c0613020a058cd6fbab2a298e64265dda593ca1eb39",
+    "leakage_audit.csv": "daaca866ec012eee1e6fedc4f5920ca1feaf1e064662f05f02d5cf3257609b8a",
+    "loso_results.csv": "92c417e881e7c785458b9c005ff155ba6ed0f449108d4e4dcd6de1e7d9c9b65e",
+    "release_frontier.csv": "a86a511f7664122cf4898484b12e35434ad9b83df13cf281a9c98d1ffc4c43c4",
+    "loso_summary.csv": "ecba047bca3b787f4f88a85091fe13fbc4256d344474bf5a3c1d5b8540fde211",
+    "pilot_input_design_and_reference.csv": "48831b9c36f37e9aeca5d14b8e11b2818a4e345329d5b882e79b0210cede9e50"
+  }
+}
