@@ -8,7 +8,8 @@
   "user_requirements": [
     "每次实验推进前、后回顾全部 review 和 12 个问题。",
     "不能用已运行代替已解决；状态由验收证据决定，保留未覆盖问题与负结果。",
-    "实验重建使用本地Git分支；未经明确安排不向公开实验仓库发布修订记录。"
+    "实验重建使用本地Git分支；未经明确安排不向公开实验仓库发布修订记录。",
+    "Evaluate cost and precision jointly under a common reliability requirement, including informative refusal intervals."
   ],
   "status_definitions": {
     "open": "关键修复证据仍缺；已诊断不等于已修复。",
@@ -22,8 +23,17 @@
     "execution_status": "not_started",
     "scope": "原完整合成workflow已核实；按原设置进行27世界smoke及单世界讲解，随后复现1800世界full，逐阶段回顾全部review。",
     "cannot_claim": "跑通不等于真实机制有效、方法优越、新颖性成立或写作完成。",
-    "design_status": "specified_v1",
-    "archive_audit": "revision/evidence/workflow_archive_audit.json"
+    "design_status": "specified_v2_cost_precision",
+    "archive_audit": "revision/evidence/workflow_archive_audit.json",
+    "primary_evaluation": {
+      "objective": "Evaluate cost and precision jointly under a common reliability requirement, including informative refusal intervals.",
+      "views": [
+        "precision versus actual acquisition cost at prespecified budgets",
+        "probability and cost of attaining prespecified precision"
+      ],
+      "precision": "returned interval halfwidth; original certificate radius and point error recorded separately",
+      "execution": "No new simulation. Original stopping-rule reproduction remains baseline; a separately versioned full-acquisition-prefix evaluation requires new runs and frozen independent seeds."
+    }
   },
   "round_review_protocol": {
     "before": [
@@ -182,6 +192,49 @@
         "remaining_gaps": [
           "No new simulation; interval comparisons at matched budgets/costs and any revised rule require a separate specified analysis.",
           "Real mechanism validity, adaptive selection utility, closest-work novelty and general bridge guarantees remain unresolved."
+        ]
+      },
+      {
+        "round_id": "DESIGN-COST-PRECISION-01",
+        "phase": "after",
+        "date_local": "2026-11-07",
+        "code_revision": "96a8ab760b50407038a9d42e12f77418d541dc82",
+        "artifact_paths": [
+          "revision/FIRST_WORKFLOW.md",
+          "current_method/results/workflow_full/workflow_records.csv"
+        ],
+        "all_issue_ids_reviewed": [
+          "REV-01",
+          "REV-02",
+          "REV-03",
+          "REV-04",
+          "REV-05",
+          "REV-06",
+          "REV-07",
+          "REV-08",
+          "REV-09",
+          "REV-10",
+          "REV-11",
+          "REV-12"
+        ],
+        "covered_review_refs": [
+          "nrhq.Q2",
+          "WGDN.W1a",
+          "WGDN.Q1",
+          "WGDN.Q2",
+          "KoBT.Q1"
+        ],
+        "findings": [
+          "User establishes joint cost and precision evaluation as the central goal.",
+          "Original linear/bridgeable/replicate 0 at delta=.3 and actual n=96: targeted R2 halfwidth .205812, direct-target halfwidth .292060, both released. This is illustrative only.",
+          "Protocol distinguishes returned-interval precision from original-estimator certificate radius; preserves coverage and all outcomes.",
+          "Stopped-policy records do not supply unobserved full-budget acquisitions. A new full-prefix version and independently seeded evaluation are specified but not implemented."
+        ],
+        "status_changes_with_evidence": {},
+        "remaining_gaps": [
+          "All issue statuses unchanged; no new simulated results.",
+          "Actual cost-precision curves, attainment analysis and any midpoint stopping rule still require implementation and validation.",
+          "Real mechanism assumptions, outcome-adaptive utility, closest-work contribution and broader bridge guarantees remain open."
         ]
       }
     ]
