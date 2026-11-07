@@ -1,0 +1,331 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "REVIEW-ABLATION-CONTINUATION02",
+  "subexperiment": "smoothness_declaration_and_curvature",
+  "frozen_date_local": "2026-11-07",
+  "objective": "Measure paired effects of declaring L/H too small, correctly, or conservatively, including zero-curvature omission, in the existing general U/L/H workflow.",
+  "implementation_identity": "general U/L/H computational min(Bbar,BLip) certificate over simplex; all weights design-only, fixed common random acquisition; not the new moment theorem",
+  "source_config": "current_method/configs/workflow_full.json",
+  "source_dependencies": [
+    "current_method/atlas_new/workflow.py",
+    "current_method/atlas_new/core.py",
+    "current_method/atlas_new/mechanism_uncertainty_ablation.py"
+  ],
+  "surfaces": [
+    "linear",
+    "quadratic",
+    "sinusoidal"
+  ],
+  "scenarios": [
+    "supported",
+    "bridgeable",
+    "unreachable"
+  ],
+  "dimension": 2,
+  "mechanism_domain": "[-1,1]^2; all true locations and their convex hull in this domain; calibrated balls interpreted with domain intersection; distance formula is a conservative envelope",
+  "initial_sources": 4,
+  "candidate_bridges": 6,
+  "max_bridges": 3,
+  "archive_participants": 800,
+  "participants_per_bridge": 96,
+  "calibration_archives": 199,
+  "proxy_scale": 0.012,
+  "eta": 0.05,
+  "zeta": 0.05,
+  "mechanism_input": "calibrated_U in every variant; same proxy centers, all source/target radii, calibration scores and independent source observations",
+  "variants": [
+    "baseline",
+    "L_half",
+    "L_double",
+    "H_zero",
+    "H_double"
+  ],
+  "variant_definitions": {
+    "baseline": {
+      "L_factor": 1,
+      "H_factor": 1,
+      "role": "correct analytic smoothness declaration"
+    },
+    "L_half": {
+      "L_factor": 0.5,
+      "H_factor": 1,
+      "role": "understated domain Lipschitz bound; unsupported negative control on all three surfaces"
+    },
+    "L_double": {
+      "L_factor": 2,
+      "H_factor": 1,
+      "role": "valid conservative Lipschitz declaration"
+    },
+    "H_zero": {
+      "L_factor": 1,
+      "H_factor": 0,
+      "role": "curvature omission: exactly baseline on linear, unsupported barycentric curvature declaration on nonlinear surfaces; valid Lipschitz branch retained"
+    },
+    "H_double": {
+      "L_factor": 1,
+      "H_factor": 2,
+      "role": "valid conservative curvature declaration; exactly baseline on linear"
+    }
+  },
+  "true_domain_bounds": {
+    "linear": {
+      "L_expression": "hypot(.55,.30)",
+      "H": 0
+    },
+    "quadratic": {
+      "L_expression": "hypot(.62,.32)",
+      "H": 0.12
+    },
+    "sinusoidal": {
+      "L_expression": "hypot(.61,.20)",
+      "H": 0.32
+    }
+  },
+  "bound_modes": [
+    "r2",
+    "rinf"
+  ],
+  "primary_mode": "r2",
+  "primary_stage": 3,
+  "primary_new_participants": 288,
+  "branch_tie_tolerance": 1e-12,
+  "causal_check_tolerance": 1e-10,
+  "fixed_budgets": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "tolerances": [
+    0.2,
+    0.3
+  ],
+  "schedule": "frozen_random_only",
+  "random_order_rule": "default_rng(SeedSequence([profile seed,surface_id,scenario_id,replicate,20])).permutation(arange(4,10)); shared across all variants/modes",
+  "optimizer": "Existing workflow.optimize unchanged, own-variant previous weights only; no global-optimum claim, no cross-variant warm starts",
+  "statistical_allocation": {
+    "r2_certificate": "sqrt(2 log(2*4/(zeta/2))) * norm(a*s,2)",
+    "r2_refusal": "sqrt(2 log(2*10/(zeta/2))) coordinate multiplier",
+    "rinf": "sqrt(2 log(2*10/zeta)) coordinate multiplier",
+    "scope": "Per-policy finite-horizon path; correct/conservative full declarations have failure <=eta+zeta=.10; invalid declaration policies have no uniform nominal guarantee; no conditional-on-release claim"
+  },
+  "validity_fields": [
+    "declared_L_valid_on_domain",
+    "declared_H_valid_on_domain",
+    "smoothness_declaration_valid",
+    "mechanism_event_holds",
+    "barycentric_assumptions_satisfied",
+    "lipschitz_assumptions_satisfied",
+    "refusal_bound_assumptions_satisfied",
+    "active_branch",
+    "strict_valid_branch_attains_min",
+    "tolerant_valid_branch_attains_min",
+    "selected_bound_assumptions_satisfied",
+    "output_bound_assumptions_satisfied",
+    "path_all_output_bound_assumptions_satisfied",
+    "guarantee_applicable",
+    "nominal_path_failure_bound"
+  ],
+  "validity_rules": {
+    "domain_L": "L_half is below exact gradient supremum on [-1,1]^2 for every surface; other L declarations valid",
+    "domain_H": "H_zero is invalid on quadratic/sinusoidal, valid on linear; baseline/double valid",
+    "branches": "Bbar's sufficient conditions require valid L and H; BLip/refusal require valid L only. A valid branch attaining the minimum can justify the selected numerical radius, including exact ties.",
+    "numeric_tie_tolerance": 1e-12,
+    "numeric_tie_use": "Save both strict and tolerance diagnostics. Neither a tolerant tie nor observed finite-point coverage upgrades invalid-declaration policy to a uniform guarantee.",
+    "method_guarantee": "True only when complete declared L/H conditions hold; nominal_path_failure_bound=.10 then, null otherwise. H_zero nonlinear remains null even if all sampled outputs happen to use valid BLip.",
+    "output_scope": "If released, evaluate selected certificate justification; if refused, evaluate L-only outer-envelope justification. Preserve mechanism-event scoring separately."
+  },
+  "same_weight_reference": "baseline actual saved optimized weights at each mode/stage; identical outcomes and prefix; recompute all variant Bbar/BLip/min/noise, with valid BLip retained as no-H diagnostic but no sixth optimization policy",
+  "same_weight_checks": [
+    "L_double and H_double radius >=baseline; L_half and H_zero radius <=baseline",
+    "noise and weighted estimate identical across parameter variants at fixed baseline weights",
+    "linear baseline/H_zero/H_double have identical inputs and outputs to numerical tolerance",
+    "do not impose these orderings on separately reoptimized local SLSQP solutions"
+  ],
+  "scoring_decomposition": {
+    "signed_causal_error": "sum_i a_i*true_source_effect_i - true_target_effect",
+    "signed_sampling_error": "sum_i a_i*(observed_source_effect_i - true_source_effect_i)",
+    "signed_total_error": "estimate - true_target_effect = signed_causal_error + signed_sampling_error",
+    "absolute_causal_error": "abs(signed_causal_error)",
+    "geometry_covers_causal_error": "absolute_causal_error <= min(Bbar,BLip), with numeric tolerance separately specified in checks",
+    "information_boundary": "True source/target effects are scorer-only, never optimizer/selection/stopping inputs; geometric violations under a negative declaration need not occur in every finite realization"
+  },
+  "execution_views": {
+    "fixed_budget": "Observe common full prefix through stage 3; actual fixed-budget certificate intervals at 0,96,192,288 participants",
+    "stopped": "Reconstruct first radius<=.2/.3 from same observed prefixes, carry after stop; no second independent experiment and no use of post-stop outcomes",
+    "refusal": "Use declared-L variant-specific distances; label outer refusal envelope, not sharp PI; empty/inconsistent never zero-width success",
+    "cost": "new trial participants only, history4*800 sunk; calibration/metadata/deployment costs omitted and stated"
+  },
+  "primary_metrics": [
+    "fixed-budget certificate full width and change from baseline",
+    "true-target MAE/MSE/coverage",
+    "causal error and geometry coverage",
+    "sampling/geometry/noise decomposition",
+    "paired baseline-vs-variant contrasts at R2 stage3"
+  ],
+  "secondary_metrics": [
+    "all fixed budgets and Rinf",
+    "same-weight causal/error-bound diagnostics",
+    "first-release probability and actual stopped cost at .2/.3",
+    "unconditional bad release and path coverage",
+    "output/branch validity and active-branch proportions",
+    "refusal outer widths/coverage/status"
+  ],
+  "aggregation": "All9 surface/scenario cells plus equal-surface pooling within each scenario; each full cell200 independent worlds; methods/budgets/tolerances not extra worlds",
+  "bootstrap_repetitions": 2000,
+  "bootstrap_seed": 2026110773,
+  "inference_scope": "World-paired bootstrap stratified within surface/scenario, exploratory individual intervals only; no multiple-comparison-adjusted superiority claim",
+  "workers": 4,
+  "profiles": {
+    "smoke": {
+      "seed": 2026110771,
+      "repetitions_per_cell": 3,
+      "bootstrap_repetitions": 100
+    },
+    "full": {
+      "seed": 2026110772,
+      "repetitions_per_cell": 200,
+      "bootstrap_repetitions": 2000
+    }
+  },
+  "trace": {
+    "surface": "quadratic",
+    "scenario": "bridgeable",
+    "replicate": 0
+  },
+  "output_root": "reproduced/ablation_continuation02",
+  "report_root": "revision/results/ablation_continuation02",
+  "primary_review_refs": [
+    "KoBT.W1",
+    "WGDN.W2a",
+    "nrhq.Q1",
+    "nrhq.Q2"
+  ],
+  "before_review": [
+    {
+      "id": "REV-01",
+      "status_retained": "partial_evidence",
+      "role": "secondary",
+      "scope": "Prespecified nonlinear trace explains actual curvature and declared bounds; no manuscript rewrite."
+    },
+    {
+      "id": "REV-02",
+      "status_retained": "partial_evidence",
+      "role": "boundary",
+      "scope": "Weights remain design-only; cannot show Rinf beats globally optimized valid R2 under identical inputs; no adaptive utility task."
+    },
+    {
+      "id": "REV-03",
+      "status_retained": "partial_evidence",
+      "role": "secondary",
+      "scope": "Attribute new numbers to declared-smoothness input intervention and actual interval objects."
+    },
+    {
+      "id": "REV-04",
+      "status_retained": "open",
+      "role": "primary",
+      "scope": "Synthetic L/H declaration sensitivity complements completed mechanism-set ablation. It cannot establish real L/H/U or certify omitted mechanisms."
+    },
+    {
+      "id": "REV-05",
+      "status_retained": "open",
+      "role": "not_addressed",
+      "scope": "Real experiments remain preparation only; no real fits, target scoring or replay."
+    },
+    {
+      "id": "REV-06",
+      "status_retained": "partial_evidence",
+      "role": "not_addressed",
+      "scope": "ManyLabs target noise requires its own prepared real diagnostic."
+    },
+    {
+      "id": "REV-07",
+      "status_retained": "partial_evidence",
+      "role": "secondary",
+      "scope": "Matched internal component and cost/precision comparison, not a new ExAtlas/sample-split/direct superiority claim."
+    },
+    {
+      "id": "REV-08",
+      "status_retained": "open",
+      "role": "not_addressed",
+      "scope": "Novelty and close prior work need mathematical/textual comparison, not repeated ablations."
+    },
+    {
+      "id": "REV-09",
+      "status_retained": "open",
+      "role": "not_addressed",
+      "scope": "Signed weights cannot be inserted into simplex bounds unchanged; legal alternative class requires separate theory/protocol."
+    },
+    {
+      "id": "REV-10",
+      "status_retained": "partial_evidence",
+      "role": "not_addressed",
+      "scope": "Fixed random acquisition; no repeat of completed new-theorem selection run or Gaussian-removal claim."
+    },
+    {
+      "id": "REV-11",
+      "status_retained": "open",
+      "role": "secondary",
+      "scope": "Explicit general U/L/H identity, negative declarations and branch-specific metadata; no full manuscript naming repair."
+    },
+    {
+      "id": "REV-12",
+      "status_retained": "partial_evidence",
+      "role": "secondary",
+      "scope": "Separate invalid declarations, selected branch, valid L-only refusal, stopping and conditional risk denominators."
+    }
+  ],
+  "continuation_inventory": {
+    "already_available_do_not_repeat": [
+      "complete matched weight ablation",
+      "Bbar/BLip/min geometry optimization ablation",
+      "joint-vs-marginal calibration and selection-protection local controls",
+      "new moment historical limited-budget selection main experiment",
+      "mechanism uncertainty ablation01"
+    ],
+    "next_requires_separate_question": [
+      "Outcome-adaptive task utility versus valid alternatives/sample splitting; radius superiority against globally optimal design R2 is impossible at identical inputs",
+      "Estimator-class alternatives to simplex need an applicable certificate or clearly point-prediction-only comparison"
+    ],
+    "deterministic_audit_fixes_to_track_separately": [
+      "full_plus small_calibration finite label ignored actual infinite quantile",
+      "full operational assumption_valid encoded scenario not method-specific validity"
+    ],
+    "no_noise_rerun_now": "Contamination variance1.63 is an interpretation confound already recorded. No equal-variance rerun is necessary for the present smoothness question.",
+    "not_closed_by_ablations": [
+      "real mechanism provenance and calibrated U/L/H",
+      "actual real certificate case and metadata qualification",
+      "related-work novelty and scientific meaning of mechanism coordinates",
+      "real costs/governance and prospectively independent validation"
+    ]
+  },
+  "prohibitions": [
+    "No new DGP, proxy/noise amplification, seed selection, candidate geometry tuning or threshold changes based on prior results",
+    "No L/H Cartesian stress grid or sixth optimized Lipschitz-only method",
+    "No real-data estimation/model/replay in this authorization",
+    "No claim that negative control must empirically fail",
+    "No reviewer automatically resolved"
+  ],
+  "initial_runtime_estimate": {
+    "smoke_seconds": [
+      5,
+      20
+    ],
+    "full_seconds": [
+      120,
+      300
+    ],
+    "analysis_seconds": [
+      30,
+      90
+    ],
+    "resource": "4 CPU workers; SciPy SLSQP for run, CPU/Pandas for audit; no GPU",
+    "basis": "Previous mechanism ablation full75.79s/smoke3.093s with24 optimizer states/world; this5variant*2mode*4stage=40 states/world, approximate1.67 scale plus parameter-dependent optimizer overhead.",
+    "root_pre_notice": "Root confirmed initial smoke5-20s/full2-5min timing told to user before launch."
+  },
+  "run_gates": {
+    "smoke": "Freeze and commit protocol, independent design review, then relevant tests/smoke; root initial timing notice already confirmed.",
+    "full": "Smoke tests/checks and independent report audit pass; implementation sends measured updated full estimate; root informs user before launch. No redundant permission request.",
+    "postrun": "Preserve all cells and negative results, independently reconstruct geometry/weighted observations/stopping, check all12 reviews and save scope without auto-closing issues."
+  }
+}
