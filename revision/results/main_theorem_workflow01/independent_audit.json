@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "profile": "full",
+  "source_archive_sha256": "a050a387051b95952979dbe52d2faf84fa784213085f9824919b634c5d1246e7",
+  "designs": 200,
+  "worlds": 40000,
+  "endpoints": 160000,
+  "audited_path_states": 350840,
+  "audited_bridge_choices": 338841,
+  "max_absolute_differences": {
+    "W": 1.7763568394002505e-15,
+    "q": 1.3988810110276972e-14,
+    "weight": 4.440892098500626e-15,
+    "radius": 2.6645352591003757e-15,
+    "selected_next_W": 1.099120794378905e-14,
+    "type_stat_weight": 6.800116025829084e-16,
+    "estimate": 4.604649994632837e-13,
+    "trace_estimate": 2.2648549702353193e-14
+  },
+  "notes": [
+    "No experiment implementation imported; algebra recomputed from archived inputs.",
+    "Sampling-law independence is established by source inspection, not inferred from empirical histograms.",
+    "Path checks do not confer simultaneous coverage; only the design-only stop is evaluated."
+  ]
+}

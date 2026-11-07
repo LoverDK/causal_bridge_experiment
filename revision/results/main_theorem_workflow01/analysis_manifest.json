@@ -1,0 +1,35 @@
+{
+  "raw_directory": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\reproduced\\main_theorem_workflow01\\full",
+  "raw_manifest_sha256": "1d1a50c4849d114cc78b088e14ded65da3599f2fe514938699390fcf7446cb5d",
+  "analysis_script_sha256": "ba498d3ffdabd5804cf422e5caea264c74b21124fb519f7d8d431c36c16c45fe",
+  "command": [
+    "current_method/analyze_main_theorem_workflow.py",
+    "--raw",
+    "reproduced/main_theorem_workflow01/full",
+    "--output",
+    "revision/results/main_theorem_workflow01"
+  ],
+  "source_profile": "full",
+  "sampling_performed": false,
+  "output_sha256": {
+    "cost_summary.csv": "3537188957f9673ce96857fe275912f058be561ee5801c34dc297a03784970f3",
+    "design_costs.csv": "54ce5f0d24696ac1425455abf94d870622f17870cf3f47116ffa1b60c98fa879",
+    "fixed_budget_widths.csv": "b42719e902d3bc33001e1a0631de3a5900ef6dc2b6687144e5b7a1712d323ae7",
+    "independent_audit.json": "f72054e58cce161530bb0770cd04c255b0107221d64c51c6c14f7ab96c714560",
+    "main_cost_and_reliability.pdf": "2b535d7d439e9fd628d3d4dbcf8914f19b2410c4b9b32de4f4209d069bfb286d",
+    "main_cost_and_reliability.png": "f12cdb3874e75eaf98ce22dd2ccfcd11221d82c7d6837e7d9ebbf6f3ef8a813f",
+    "paired_cost_summary.csv": "48387d808a4fcc96e57dc6f766b3c36eb12c9ca066287d1870367b358a66d2c4",
+    "paired_design_costs.csv": "9bcb742d7cbe5e0b0714c5056b6f68cfeeb7df2f58b7f3f716006c6841a7b5da",
+    "per_design_reliability.csv": "370383308695942bca6d3627490020f834518a2d7a4990c1bc8c6c8699adfc52",
+    "pooled_descriptive_reliability.csv": "dfc273f06337044b249acbd9ae0fc37df58e42a1dd7550443913bba77b7cd619",
+    "RESULTS.md": "77f0fc1840ed76d897b0bb90c386d5cc29d428dfe1ab1a6d230717cc4efe722a",
+    "single_world_steps.csv": "c6a2f263a11cc6ff6c8bed1b558e16695daecc5f75cf7e2cda3530ca33380fa4",
+    "single_world_workflow.pdf": "f134fd5d82d9b515b8f9c0dcc4a21bf3d97032f17805d27f974daadb1556367f",
+    "single_world_workflow.png": "d70700aae3912ce3a05fb4e04c81ceb3686a4e768b1f25869a2bc51951a67fec"
+  },
+  "review": {
+    "figure_visual_inspection": "passed",
+    "implementation_agent_cross_review": "passed",
+    "git_whitespace_check": "passed"
+  }
+}
