@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "baseline_commit": "7e5841d3f3f22f892233582b9509aad656f3d266",
   "branch": "codex/reviewer-guided-rebuild",
-  "scope_note": "已建立审稿跟踪并完成首轮写作副本；尚未运行本轮新实验。已有记录、只读审计与新实验分开，没有问题被标为全部解决。",
+  "scope_note": "已完成写作副本、原workflow只读审计及首轮具体方案；尚未运行本轮新模拟。已有结果的重算与新实验分开，没有问题被标为全部解决。",
   "user_requirements": [
     "每次实验推进前、后回顾全部 review 和 12 个问题。",
     "不能用已运行代替已解决；状态由验收证据决定，保留未覆盖问题与负结果。",
@@ -20,8 +20,10 @@
   "first_round": {
     "protocol": "revision/FIRST_WORKFLOW.md",
     "execution_status": "not_started",
-    "scope": "先解释模拟条件与信息边界，从 smoke 和单世界轨迹开始，再检查 supported/bridgeable/unreachable；理解后才 full。",
-    "cannot_claim": "跑通不等于真实机制有效、方法优越、新颖性成立或写作完成。"
+    "scope": "原完整合成workflow已核实；按原设置进行27世界smoke及单世界讲解，随后复现1800世界full，逐阶段回顾全部review。",
+    "cannot_claim": "跑通不等于真实机制有效、方法优越、新颖性成立或写作完成。",
+    "design_status": "specified_v1",
+    "archive_audit": "revision/evidence/workflow_archive_audit.json"
   },
   "round_review_protocol": {
     "before": [
@@ -90,6 +92,55 @@
         "remaining_gaps": [
           "本轮无新实验，first_round.execution_status保持not_started。",
           "真实机制集合有效性、完整比较、新颖性及bridge衔接均未因语言编辑关闭。"
+        ]
+      },
+      {
+        "round_id": "AUDIT-WORKFLOW-01",
+        "phase": "after",
+        "date_local": "2026-11-07",
+        "code_revision": "Simulation baseline 7e5841d3f3f22f892233582b9509aad656f3d266; planning documentation based on local 41c62db; simulation code unchanged",
+        "artifact_paths": [
+          "revision/FIRST_WORKFLOW.md",
+          "revision/evidence/workflow_archive_audit.json",
+          "current_method/results/workflow_full/"
+        ],
+        "all_issue_ids_reviewed": [
+          "REV-01",
+          "REV-02",
+          "REV-03",
+          "REV-04",
+          "REV-05",
+          "REV-06",
+          "REV-07",
+          "REV-08",
+          "REV-09",
+          "REV-10",
+          "REV-11",
+          "REV-12"
+        ],
+        "covered_review_refs": [
+          "nrhq.W1",
+          "nrhq.W2",
+          "nrhq.W4",
+          "nrhq.Q1",
+          "nrhq.Q2",
+          "WGDN.W1a",
+          "WGDN.W3",
+          "WGDN.Q1",
+          "KoBT.W4",
+          "KoBT.Q1"
+        ],
+        "findings": [
+          "原版本已有完整合成workflow，1800独立世界及86400策略/阈值/预算记录；记录不是独立重复。",
+          "manifest源文件及产物哈希一致；从保存输入独立重算固定旧轨迹，未执行新模拟。",
+          "核实设计驱动规划、球集合有效几何界、Lipschitz拒绝外区间与一步桥接启发式的实际身份。",
+          "第一轮协议已具体化：27世界smoke与逐步解释，然后1800世界full复现；仍未开始执行。"
+        ],
+        "status_changes_with_evidence": {},
+        "remaining_gaps": [
+          "所有12项保留原状态；只读审计及方案设计不足以关闭任何review。",
+          "真实机制与L/H、真实闭环、Many Labs噪声、近邻贡献、候选类理由及outcome-adaptive或logdet策略证据尚缺。",
+          "作者是否理解流程尚未确认，不能由代理自行标记。"
         ]
       }
     ]
@@ -347,7 +398,8 @@
       "known_evidence": [
         "已有 PDF 及改写候选；nrhq 指出 decision layer、certificate、bridge 等定义前使用。",
         "用户已在本机完成Overleaf克隆。原稿位于 causal_lab_proposal_subpapers_tex_iclr2027/01.tex；基线29e4c0db4a17e72e04d9a1c9b330e81b166c604a，原稿SHA256为ef261e308e3463eb8e54d5de3c0fded1879f58777222f0115a0c5a5f79eaab73。同目录01_humanized.tex已创建并提交475b1ecfae407460ff9e587c2b9be1c47b56f5d5；用户已推送，origin/main的update by push记录与该提交一致。原稿保留。",
-        "已完成01_humanized.tex首轮主文改写并通过独立语义审查、形式内容保留检查与完整LaTeX编译。正文10页、总42页；原01.tex SHA256未变。用户已完成Git推送，原稿和默认主文档选择未变。"
+        "已完成01_humanized.tex首轮主文改写并通过独立语义审查、形式内容保留检查与完整LaTeX编译。正文10页、总42页；原01.tex SHA256未变。用户已完成Git推送，原稿和默认主文档选择未变。",
+        "只读重建原linear/bridgeable/replicate 0轨迹，解释半径.583089→.205812→.168749及192人停止；作者理解情况尚待讨论。"
       ],
       "gaps": [
         "尚需作者阅读并确认解释是否清楚；对照实验与新增贡献不能由本轮语言编辑解决。"
@@ -361,7 +413,7 @@
         "为方法直觉提供一个可检查的流程例子。"
       ],
       "first_round_cannot_answer": [
-        "最新 Overleaf 已修改完成；一次运行自动修复写作。"
+        "一次流程运行自动解决写作、实用收益或新增贡献问题。"
       ],
       "sources": [
         "用户 PDF 第 1–2 页",
@@ -381,7 +433,8 @@
       "known_evidence": [
         "当前 optimize_radius / plan 不接收 observed effects，主 workflow 是设计权重并实际使用 R2。",
         "同一非负权重、偏差项、噪声及置信预算下 R∞≥R2；不能寻找同条件的反向发布例子。",
-        "已有 workflow 记录显示 R∞ 释放更少；这是原有结果，非本轮运行。"
+        "已有 workflow 记录显示 R∞ 释放更少；这是原有结果，非本轮运行。",
+        "核实原workflow在观察结果前预规划全部候选顺序、权重与半径；新结果更新估计和拒绝区间，不提供outcome-adaptive选择收益证据。"
       ],
       "gaps": [
         "缺真实 outcome-adaptive 用途和与合法 sample splitting 的匹配对照；权重优化收益不能归为 selection safety。"
@@ -554,7 +607,8 @@
       ],
       "known_evidence": [
         "已有 Appendix P 在共同 random bridge path 下支持部分合成场景的 design-only R2 权重收益，不能归为 R∞ 收益或超越最近前作。",
-        "已有汇总中直接 target trial 在若干设置更有利；审计/部署成本未纳入；尚无完整 ExAtlas matched-information 对照。"
+        "已有汇总中直接 target trial 在若干设置更有利；审计/部署成本未纳入；尚无完整 ExAtlas matched-information 对照。",
+        "复核原bridgeable汇总：delta=.3定向R2与直接目标均发布100%，平均新增人数117.92与96；仍是旧结果，不是本轮新实验。"
       ],
       "gaps": [
         "缺统一信息、假设、预算、置信水平和停止规则的强基线对照及全部成本。"
@@ -657,7 +711,8 @@
       ],
       "known_evidence": [
         "Theorem 5.6 为非自适应 linear-Gaussian logdet 保证，target radius 控制另需 posterior condition-number 条件。",
-        "workflow targeted R2 最小化 prospective radius，是一步 heuristic；并非上述 theorem-backed policy。"
+        "workflow targeted R2 最小化 prospective radius，是一步 heuristic；并非上述 theorem-backed policy。",
+        "原targeted逐候选最小化prospective radius；初始完整路径按设计排定，没有执行logdet策略。"
       ],
       "gaps": [
         "缺两种 policy 明确分离及匹配对照；缺非线性/非高斯/异方差/错设下证据。"
@@ -690,21 +745,22 @@
         "nrhq.W1"
       ],
       "known_evidence": [
-        "主文/附录 ATLAS 命名和旧 prototype 归属存在混淆；仓库已有 current_method、paper_original、legacy_audits 分区。"
+        "主文/附录 ATLAS 命名和旧 prototype 归属存在混淆；仓库已有 current_method、paper_original、legacy_audits 分区。",
+        "原workflow对应01.tex Appendix L、Tables 10–12及Figure 5；9个manifest源文件及18个产物哈希均一致。"
       ],
       "gaps": [
-        "尚无全稿图表到实现、policy、bound、保证的完整清单；最新 Overleaf 源未取得。"
+        "最新Overleaf源已取得，workflow已对应Appendix L / Tables 10–12 / Figure 5；全稿图表到实现、policy、bound、保证的完整清单尚未完成。"
       ],
       "acceptance_evidence": [
         "名称统一并首现介绍；图表和摘要结果有 source commit、method_id、bound_id、适用范围。",
         "旧 prototype 明确标记，不能支持当前定理的真实有效性。"
       ],
-      "next_step": "首轮记录代码/配置/输出身份；论文图表映射待源文件到位。",
+      "next_step": "为首轮新输出记录代码、配置、方法与结果出处；继续核对其余论文图表。",
       "first_round_can_answer": [
         "新输出可追溯到哪份代码、配置和方法。"
       ],
       "first_round_cannot_answer": [
-        "旧图表自动属于当前算法；最新 Overleaf 已同步。"
+        "旧prototype图表自动属于当前算法；一套workflow映射完成全稿归属检查。"
       ],
       "sources": [
         "CURRENT_ARTIFACTS.md",
@@ -729,7 +785,8 @@
       "known_evidence": [
         "已有 sharp_lipschitz / outer-region 工具和 workflow；有限已知位置的 sharp region 不等于一般机制集合的 sharp region。",
         "联合事件 P(release 且 bad error) 控制不等于给定 release 的条件覆盖。",
-        "现有 unreachable 菜单可耗尽预算仍拒绝；提前判无效/转直接 target 仍缺。"
+        "现有 unreachable 菜单可耗尽预算仍拒绝；提前判无效/转直接 target 仍缺。",
+        "只读重建三几何linear/replicate 0的R2半径，最大差异3.11e-15；确认发布后预算行沿用输出与成本，plans中未来状态不是实际采集。"
       ],
       "gaps": [
         "需统一资格失败、已算拒绝、发布、预算停止及空/无界/有限区域记录；统计口径与停止策略仍需核对。"

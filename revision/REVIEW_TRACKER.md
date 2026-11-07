@@ -2,7 +2,7 @@
 
 更新：2026-11-07（Asia/Shanghai）。基线：`7e5841d3f3f22f892233582b9509aad656f3d266`；分支：`codex/reviewer-guided-rebuild`。
 
-已建立审稿跟踪并完成首轮写作副本；尚未运行本轮新实验。已有记录、只读审计与新实验分开，没有问题被标为全部解决。 机器可读版本为 `review_tracker.json`，两份同步维护。
+已完成写作副本、原workflow只读审计及首轮具体方案；尚未运行本轮新模拟。已有结果的重算与新实验分开，没有问题被标为全部解决。 机器可读版本为 `review_tracker.json`，两份同步维护。
 
 ## 每轮固定要求
 
@@ -37,7 +37,7 @@
 
 首轮能回答：为方法直觉提供一个可检查的流程例子。
 
-首轮不能回答：最新 Overleaf 已修改完成；一次运行自动修复写作。
+首轮不能回答：一次流程运行自动解决写作、实用收益或新增贡献问题。
 
 依据：`用户 PDF 第 1–2 页`；`nrhq review`。
 
@@ -75,7 +75,7 @@
 - headline 数字逐项对应实际方法和设置；Bonferroni 动机例子与完整方法结果分开。
 - 摘要实用结论由相应方法直接支持，负结果与范围保留。
 
-下一步：追踪现有数字来源，后续修改摘要及贡献归因。
+下一步：复核每个主要实验结论的实际方法与保证，决定摘要应呈现哪些完整方法结果。
 
 首轮能回答：本轮实际使用哪个 bound、policy 和评价事件。
 
@@ -236,18 +236,18 @@
 
 已知证据：主文/附录 ATLAS 命名和旧 prototype 归属存在混淆；仓库已有 current_method、paper_original、legacy_audits 分区。
 
-缺口：尚无全稿图表到实现、policy、bound、保证的完整清单；最新 Overleaf 源未取得。
+缺口：最新Overleaf源已取得，workflow已对应Appendix L / Tables 10–12 / Figure 5；全稿图表到实现、policy、bound、保证的完整清单尚未完成。
 
 验收证据：
 
 - 名称统一并首现介绍；图表和摘要结果有 source commit、method_id、bound_id、适用范围。
 - 旧 prototype 明确标记，不能支持当前定理的真实有效性。
 
-下一步：首轮记录代码/配置/输出身份；论文图表映射待源文件到位。
+下一步：为首轮新输出记录代码、配置、方法与结果出处；继续核对其余论文图表。
 
 首轮能回答：新输出可追溯到哪份代码、配置和方法。
 
-首轮不能回答：旧图表自动属于当前算法；最新 Overleaf 已同步。
+首轮不能回答：旧prototype图表自动属于当前算法；一套workflow映射完成全稿归属检查。
 
 依据：`CURRENT_ARTIFACTS.md`；`README.md`；`legacy_audits/`；`用户 PDF 附录和 NSW 叙述`。
 
@@ -317,3 +317,17 @@ Q1 仅回指 W1–W4。
 ## WRITING-01 回顾
 
 已回顾全部12项，未运行本轮新实验。01_humanized.tex完成主文改写与独立检查：正文10页、全稿42页，正式数学内容、数据表和原稿均保留。REV-01和REV-03有部分文字证据；摘要明确95.3%来自Gaussian Bonferroni。相关工作扩展仅使用原附录内容，尚未完成最近邻工作的数学比较。其余问题继续保持此前状态。写作提交为475b1ec，用户已推送且本地origin/main的推送记录一致。
+
+
+## AUDIT-WORKFLOW-01 回顾与首轮设计
+
+已重读三份review并回顾全部12项，所有状态保留。原完整合成workflow已存在：1800独立世界、6策略、2阈值；9源文件和18产物哈希一致。从固定旧轨迹独立重算R2半径，最大差异约3.11e-15；这属于旧结果核查，尚未运行新模拟。
+
+- REV-01：只读重建原linear/bridgeable/replicate 0轨迹，解释半径.583089→.205812→.168749及192人停止；作者理解情况尚待讨论。
+- REV-02：核实原workflow在观察结果前预规划全部候选顺序、权重与半径；新结果更新估计和拒绝区间，不提供outcome-adaptive选择收益证据。
+- REV-07：复核原bridgeable汇总：delta=.3定向R2与直接目标均发布100%，平均新增人数117.92与96；仍是旧结果，不是本轮新实验。
+- REV-10：原targeted逐候选最小化prospective radius；初始完整路径按设计排定，没有执行logdet策略。
+- REV-11：原workflow对应01.tex Appendix L、Tables 10–12及Figure 5；9个manifest源文件及18个产物哈希均一致。
+- REV-12：只读重建三几何linear/replicate 0的R2半径，最大差异3.11e-15；确认发布后预算行沿用输出与成本，plans中未来状态不是实际采集。
+
+具体方案见 [FIRST_WORKFLOW.md](FIRST_WORKFLOW.md)：27世界smoke和单世界讲解，然后原1800世界full复现。每阶段检查全部review；保存不利结果。真实输入、真实闭环、Many Labs、近邻新增贡献、候选类合理性和更一般桥接保证继续开放。机器证据见 `evidence/workflow_archive_audit.json`。
