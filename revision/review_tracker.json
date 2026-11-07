@@ -20,7 +20,7 @@
   "closure_policy": "本轮最多 partial_evidence，不设 resolved。未来关闭须逐项验收产物、范围匹配并由根代理复核。",
   "first_round": {
     "protocol": "revision/FIRST_WORKFLOW.md",
-    "execution_status": "not_started",
+    "execution_status": "implementation_in_progress",
     "scope": "原完整合成workflow已核实；按原设置进行27世界smoke及单世界讲解，随后复现1800世界full，逐阶段回顾全部review。",
     "cannot_claim": "跑通不等于真实机制有效、方法优越、新颖性成立或写作完成。",
     "design_status": "specified_v2_cost_precision",
@@ -33,7 +33,8 @@
       ],
       "precision": "returned interval halfwidth; original certificate radius and point error recorded separately",
       "execution": "No new simulation. Original stopping-rule reproduction remains baseline; a separately versioned full-acquisition-prefix evaluation requires new runs and frozen independent seeds."
-    }
+    },
+    "run_protocol": "revision/COST_PRECISION_RUN01.md"
   },
   "round_review_protocol": {
     "before": [
@@ -235,6 +236,48 @@
           "All issue statuses unchanged; no new simulated results.",
           "Actual cost-precision curves, attainment analysis and any midpoint stopping rule still require implementation and validation.",
           "Real mechanism assumptions, outcome-adaptive utility, closest-work contribution and broader bridge guarantees remain open."
+        ]
+      },
+      {
+        "round_id": "COST-PRECISION-RUN01",
+        "phase": "before",
+        "date_local": "2026-11-07",
+        "code_revision": "0f14c4a356d76ac73898862b03d9dcfe842c1bba",
+        "artifact_paths": [
+          "revision/COST_PRECISION_RUN01.md"
+        ],
+        "all_issue_ids_reviewed": [
+          "REV-01",
+          "REV-02",
+          "REV-03",
+          "REV-04",
+          "REV-05",
+          "REV-06",
+          "REV-07",
+          "REV-08",
+          "REV-09",
+          "REV-10",
+          "REV-11",
+          "REV-12"
+        ],
+        "covered_review_refs": [
+          "nrhq.W4",
+          "nrhq.Q2",
+          "nrhq.W1",
+          "nrhq.W2",
+          "WGDN.W1a",
+          "WGDN.Q1",
+          "KoBT.Q1"
+        ],
+        "findings": [
+          "User authorized execution of joint cost-precision rerun.",
+          "Frozen smoke/full seeds 2026110701/2026110702, 27/1800 independent worlds, full original factorial and six policies.",
+          "Prespecified returned-interval halfwidth, reliability, full prefixes, original stopped reference and distinct original versus halfwidth attainment tasks."
+        ],
+        "status_changes_with_evidence": {},
+        "remaining_gaps": [
+          "No new numerical outcomes observed before freezing this protocol.",
+          "This synthetic design does not demonstrate real mechanism validity, outcome-adaptive selection utility, closest-work novelty or logdet performance."
         ]
       }
     ]
