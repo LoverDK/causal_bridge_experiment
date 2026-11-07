@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "baseline_commit": "7e5841d3f3f22f892233582b9509aad656f3d266",
   "branch": "codex/reviewer-guided-rebuild",
-  "scope_note": "已有消融完成只读核查；原设计非高斯分支运行及全局成本诊断完成，明确其缺实际历史数据。作者现将主目标改为有限新增预算缩短历史区间，并比较与高预算直接目标参考的点差和方向结论；HISTORICAL-BRIDGE-WORKFLOW01已冻结待执行。不再以同精度省钱验收，全部12项状态保留。",
+  "scope_note": "消融盘点、原设计成本/模型审计及历史有限预算主实验均完成。新历史主实验40000世界耗时63.18秒并独立核验：主预算4区间缩短中位46.79%，支持有限预算信息增益；与高预算参考方向接近的更强目标仍未达到。全部12项状态保留，没有resolved。",
   "user_requirements": [
     "每次实验推进前、后回顾全部 review 和 12 个问题。",
     "不能用已运行代替已解决；状态由验收证据决定，保留未覆盖问题与负结果。",
@@ -712,6 +712,54 @@
           "REV-12"
         ],
         "status_changes_with_evidence": {}
+      },
+      {
+        "round_id": "HISTORICAL-BRIDGE-WORKFLOW01",
+        "phase": "after",
+        "date_local": "2026-11-07",
+        "code_revision": "protocol cdc146b / implementation ba7f3dc / analysis b173f7d",
+        "artifact_paths": [
+          "revision/results/historical_bridge_workflow01/RESULTS.md",
+          "revision/results/historical_bridge_workflow01/independent_audit.json",
+          "revision/results/historical_bridge_workflow01/analysis_manifest.json"
+        ],
+        "all_issue_ids_reviewed": [
+          "REV-01",
+          "REV-02",
+          "REV-03",
+          "REV-04",
+          "REV-05",
+          "REV-06",
+          "REV-07",
+          "REV-08",
+          "REV-09",
+          "REV-10",
+          "REV-11",
+          "REV-12"
+        ],
+        "covered_review_refs": [
+          "nrhq.Q1",
+          "nrhq.Q2",
+          "KoBT.W4",
+          "KoBT.Q1"
+        ],
+        "findings": [
+          "200原设计x200世界，4实际历史观测共享，0/1/2/4/8固定新增预算，64独立未来目标参考；840000端点。",
+          "full63.18秒，事前更新预计60–120秒；10测试/19运行检查通过。独立重算20200状态、4800选桥、840000端点，最大误差6.75e-14。",
+          "主预算4：target相对历史全宽缩短比例中位46.7915%，random21.2088%、logdet37.6880%；target相对random在200/200设计更窄，相对logdet在193/200更窄。",
+          "预算8的缩短中位56.3336%，是预定补充，没有按结果挑预算。",
+          "主预算4与参考点差中位.2306，差<=.30占61.275%；参考定向30658世界中，同向4841、证据不足25816、反向1。",
+          "主预算4有用同向占全体12.1025%，三分类一致35.4525%中23.35个百分点为双方不足。",
+          "target真实MAE .2930，覆盖39989/40000；同预算direct MAE .1817，未证明全面优于direct或与充分参考方向接近。",
+          "支持所测非高斯线性已知矩模型中有限桥接预算明显缩短历史区间；未做总体显著性检验，不推广所有机制或现实成本。"
+        ],
+        "status_changes_with_evidence": {},
+        "remaining_gaps": [
+          "高预算参考方向接近目标未达到",
+          "真实机制校准、真实应用、现实成本和一般U/L/H接口未解决",
+          "R∞适应性用途、候选估计类及最近邻公平比较仍缺",
+          "形式化范围仍按既有Lean记录；新成本下界未Lean验证"
+        ]
       }
     ]
   },
@@ -971,7 +1019,8 @@
         "已完成01_humanized.tex首轮主文改写并通过独立语义审查、形式内容保留检查与完整LaTeX编译。正文10页、总42页；原01.tex SHA256未变。用户已完成Git推送，原稿和默认主文档选择未变。",
         "只读重建原linear/bridgeable/replicate 0轨迹，解释半径.583089→.205812→.168749及192人停止；作者理解情况尚待讨论。",
         "COST-PRECISION-RUN01：有可复核的完整流程、成本与精度例子；作者是否理解、正文是否足够清楚仍需讨论。",
-        "NON-GAUSSIAN-TARGET-RUN01：新增预先指定单世界的观测、权重、方差分解和采集/停止轨迹；不代替作者理解或全稿编辑。"
+        "NON-GAUSSIAN-TARGET-RUN01：新增预先指定单世界的观测、权重、方差分解和采集/停止轨迹；不代替作者理解或全稿编辑。",
+        "HISTORICAL-BRIDGE：固定设计0/世界0实际历史和新观测轨迹已保存，有助解释，不代替作者可读性审阅。"
       ],
       "gaps": [
         "尚需作者阅读并确认解释是否清楚；对照实验与新增贡献不能由本轮语言编辑解决。"
@@ -1194,7 +1243,8 @@
         "复核原bridgeable汇总：delta=.3定向R2与直接目标均发布100%，平均新增人数117.92与96；仍是旧结果，不是本轮新实验。",
         "COST-PRECISION-RUN01：在共同名义可靠性、明确新增成本下完成六策略和全部预设场景比较，直接推进 nrhq.W4/Q2；最近前作/样本拆分及审计部署总成本仍缺。",
         "NON-GAUSSIAN-TARGET-RUN01：严格同宽0.532657214043时强桥64新人数、direct256；弱桥在256人仍不能达到width .6。优势来自声明的loading，非普遍省成本。",
-        "MAIN-THEOREM与预算下界保留不利direct比较；下一协议依作者改为有限预算信息增益及高预算参考结论接近，尚无新结果。"
+        "MAIN-THEOREM与预算下界保留不利direct比较；下一协议依作者改为有限预算信息增益及高预算参考结论接近，尚无新结果。",
+        "HISTORICAL-BRIDGE：主预算4缩宽中位46.79%，支持有限预算信息增益；同预算direct更强，与高预算参考方向接近仍未达到。"
       ],
       "gaps": [
         "合成六策略已按统一评价比较；仍缺最近前作、样本拆分等强外部基线与审计部署总成本，以及真实输入下的对应证据。"
@@ -1203,7 +1253,7 @@
         "与适用设计权重、稳健聚合、样本拆分、最近前作和直接 trial 比较，明确不可比条件。",
         "报告 coverage、错误发布、发布率、宽度、目标误差与成本；保留全部预设场景及负结果。"
       ],
-      "next_step": "作者讨论成本—精度交叉及失败场景；下一协议考虑可观测输入下桥接/目标切换，强外部基线和完整成本仍须独立补齐。",
+      "next_step": "讨论已支持的有限预算区间缩短主张；进一步优化前区分信息不足与区间保守性，现实成本及强外部基线仍待补。",
       "first_round_can_answer": [
         "单世界中各策略做了什么、花费多少参与者。"
       ],
@@ -1307,7 +1357,8 @@
         "COST-PRECISION-RUN01：验证的是 prospective-radius heuristic；随机与最近来源对照不能验证 logdet 定理，非高斯/异方差稳健性仍缺。",
         "THEORY-NONGAUSSIAN-01：保留原零均值随机参数的完整协方差，取消Gaussian形状；实际Y到目标误差的W形式界、有限菜单直接最小目标半径及覆盖通过Lean。一般logdet近似因子不转称为目标半径保证。",
         "NON-GAUSSIAN-TARGET-RUN01：5400世界覆盖27个预设几何×参数分布×噪声分布；target规则实际枚举W并核对目标gain。去Gaussian部分得到理论与域内实现证据，线性和有效输入限制仍在。",
-        "MAIN-THEOREM：200原设计×200非Gaussian世界新W选桥执行并审计；原PanelD无实际历史观测的任务局限已记录。"
+        "MAIN-THEOREM：200原设计×200非Gaussian世界新W选桥执行并审计；原PanelD无实际历史观测的任务局限已记录。",
+        "HISTORICAL-BRIDGE：实际历史和新观测共同进入W与中心，新非高斯单步公式已在40000世界执行并全量重建；线性已知矩条件保留。"
       ],
       "gaps": [
         "实际新W执行已完成；一般机制流程衔接、真实输入与成本仍未验证。",
@@ -1317,7 +1368,7 @@
         "每个 policy 标注目标、信息、假设和适用定理；不把 heuristic 结果当 logdet 保证。",
         "定理域内验证，域外另列经验 stress test；共同预算比较 random、radius policy、logdet 等。"
       ],
-      "next_step": "执行已冻结HISTORICAL-BRIDGE-WORKFLOW01：实际历史Y、有限预算、点差/方向/真实误差综合评价，不再以同精度省钱验收。",
+      "next_step": "历史有限预算运行已完成；后续讨论证据和理论改进，不把一般机制流程或高预算方向接近视为已实现。",
       "first_round_can_answer": [
         "当前一步规则如何选 bridge、更新半径和停止。"
       ],
@@ -1387,7 +1438,8 @@
         "现有 unreachable 菜单可耗尽预算仍拒绝；提前判无效/转直接 target 仍缺。",
         "只读重建三几何linear/replicate 0的R2半径，最大差异3.11e-15；确认发布后预算行沿用输出与成本，plans中未来状态不是实际采集。",
         "COST-PRECISION-RUN01：严格区分点发布、拒绝外区间、半宽达标、完整前缀和原停止；失败/无界保留，支持本合成流程统计口径。真实资格状态、提前无效停止和 sharp 区域使用仍待处理。",
-        "NON-GAUSSIAN-TARGET-RUN01：独立记录pointwise/五前缀区间、actual stopped/full prefix，以及interval miss与scientific bad release；停止由设计决定，不能推广为任意outcome-adaptive停止。"
+        "NON-GAUSSIAN-TARGET-RUN01：独立记录pointwise/五前缀区间、actual stopped/full prefix，以及interval miss与scientific bad release；停止由设计决定，不能推广为任意outcome-adaptive停止。",
+        "HISTORICAL-BRIDGE：固定预算、独立未来参考、真值误差、方向三分类及分母分开；不声明条件或全路径覆盖。"
       ],
       "gaps": [
         "本合成流程输出/停止/空无界/分母已核对；真实资格失败状态、sharp区域与外区间的全篇归属，以及提前无效停止/目标切换仍待处理。"
