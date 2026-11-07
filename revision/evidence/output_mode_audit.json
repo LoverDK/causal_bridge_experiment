@@ -1,0 +1,57 @@
+{
+  "type": "exploratory_read_only_reanalysis_not_new_simulation",
+  "source": "current_method/results/workflow_full/workflow_records.csv",
+  "scope": "bridgeable; final reporting budget; original stopped paths",
+  "criterion": "finite nonempty returned interval with width <= 2 * tolerance",
+  "counts": [
+    {
+      "method": "r2_targeted",
+      "tolerance": "0.2",
+      "n": 600,
+      "released": 399,
+      "unreleased_narrow": 8
+    },
+    {
+      "method": "r2_targeted",
+      "tolerance": "0.3",
+      "n": 600,
+      "released": 600,
+      "unreleased_narrow": 0
+    },
+    {
+      "method": "rinf_targeted",
+      "tolerance": "0.2",
+      "n": 600,
+      "released": 0,
+      "unreleased_narrow": 30
+    },
+    {
+      "method": "rinf_targeted",
+      "tolerance": "0.3",
+      "n": 600,
+      "released": 208,
+      "unreleased_narrow": 149
+    },
+    {
+      "method": "target_only",
+      "tolerance": "0.2",
+      "n": 600,
+      "released": 600,
+      "unreleased_narrow": 0
+    },
+    {
+      "method": "target_only",
+      "tolerance": "0.3",
+      "n": 600,
+      "released": 600,
+      "unreleased_narrow": 0
+    }
+  ],
+  "interpretation": [
+    "Original release rule is R <= delta for both bridge and direct target policies.",
+    "Released outputs contain both point estimate and interval. Unreleased bridge outputs remain informative outer intervals.",
+    "Narrow unreleased intervals are not original releases. Their midpoint is a different possible estimator.",
+    "New stopping rules and acquisition costs cannot be inferred merely by relabelling original final records.",
+    "Nominal path coverage and participant cost assumptions are shared; actual coverage and information differ."
+  ]
+}

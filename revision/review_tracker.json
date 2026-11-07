@@ -142,6 +142,47 @@
           "真实机制与L/H、真实闭环、Many Labs噪声、近邻贡献、候选类理由及outcome-adaptive或logdet策略证据尚缺。",
           "作者是否理解流程尚未确认，不能由代理自行标记。"
         ]
+      },
+      {
+        "round_id": "AUDIT-OUTPUT-MODES-01",
+        "phase": "after",
+        "date_local": "2026-11-07",
+        "code_revision": "531ae5cff15c7c6290844133bfd1f93a64cc4955",
+        "artifact_paths": [
+          "revision/evidence/output_mode_audit.json"
+        ],
+        "all_issue_ids_reviewed": [
+          "REV-01",
+          "REV-02",
+          "REV-03",
+          "REV-04",
+          "REV-05",
+          "REV-06",
+          "REV-07",
+          "REV-08",
+          "REV-09",
+          "REV-10",
+          "REV-11",
+          "REV-12"
+        ],
+        "covered_review_refs": [
+          "nrhq.Q2",
+          "WGDN.Q1",
+          "WGDN.Q2",
+          "KoBT.W2",
+          "KoBT.Q1"
+        ],
+        "findings": [
+          "Both policies use R <= delta; the earlier discussion overemphasized point-release metrics relative to interval information.",
+          "At delta=.3, R-infinity targeted has 208 original releases plus 149 unreleased intervals of width <=.6 out of 600 bridgeable worlds.",
+          "At delta=.2, R2 targeted has 399 original releases plus 8 unreleased intervals of width <=.4 out of 600 bridgeable worlds.",
+          "Interval-midpoint release would change the estimator and stopping rule; original release rates remain unchanged."
+        ],
+        "status_changes_with_evidence": {},
+        "remaining_gaps": [
+          "No new simulation; interval comparisons at matched budgets/costs and any revised rule require a separate specified analysis.",
+          "Real mechanism validity, adaptive selection utility, closest-work novelty and general bridge guarantees remain unresolved."
+        ]
       }
     ]
   },
