@@ -1,0 +1,28 @@
+{
+  "raw_directory": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\reproduced\\historical_bridge_workflow01\\full",
+  "raw_manifest_sha256": "2eadd15062541f4fc6710e3ca756c740c98f5675bb05bd3d8fa0d624ac543a3d",
+  "analysis_script_sha256": "1411aa60d2e19b731fd6942332483dbbd75cd45fb32729873cac5e05119c6dd8",
+  "analysis_elapsed_seconds": 18.69399890000932,
+  "sampling_performed": false,
+  "output_sha256": {
+    "design_widths.csv": "06718efed412ee469726e093b51f049ff62a7e876a6f28ee10a3407eed286ea7",
+    "direction_confusion.csv": "2d7deed1c6a19d2f5566b0dc392e4fe7b4d9d1e79bd7eef71045363b0ef8cd8d",
+    "historical_budget_results.pdf": "08c6bd168a698acb0282329740950adb10a7b06b32bac7e814e9db54e95befc6",
+    "historical_budget_results.png": "aa858eb7cc2dc592391de098db17bbb36f8f35eb2a305560de17074aa528dbf5",
+    "independent_audit.json": "744b8629315fbbbe57923e8318222051ed55c95d964ba0ce6a9c0002b5829056",
+    "paired_width_comparisons.csv": "a6930e21ce238483f47bd779744bd36655520f99d8b47a7b3c2397c13f84715d",
+    "per_design_metrics.csv": "a6cfee00f8649ae55080afc410a80ab544b85e25cfe4593ce7b9664759afbc97",
+    "pooled_descriptive_metrics.csv": "4139d9554c9483e0c863f1608e35fcf37b7fa3f532934e80f4d40f04f9b95677",
+    "reference_per_design.csv": "1c4bc297a37b0ebea58da3ae7897c81fe4209ee3ce2a66600325c4af4febde66",
+    "RESULTS.md": "4850181c5f086cab5902d2aa68156dfeeafa4e69b425a8041c57236fae384dee",
+    "single_world_steps.csv": "571214544cf7434d360c8f9afc14032ccdfe68ec685bf3601afd5fa3f7ec1e3e",
+    "width_summary.csv": "5e66b6fdcb1e440ea4888e4d99549b5cc55b37efeb721be71bd62aabeb78dafb"
+  },
+  "presentation_refresh_seconds": 3.2226536000380293,
+  "final_figure_refresh_seconds": 1.1626285999082029,
+  "review": {
+    "independent_numeric_reconstruction": "passed",
+    "implementation_agent_report_cross_review": "passed",
+    "figure_visual_inspection": "passed"
+  }
+}

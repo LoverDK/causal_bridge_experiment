@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "profile": "full",
+  "designs": 200,
+  "worlds": 40000,
+  "evaluation_rows": 840000,
+  "audited_path_states": 20200,
+  "audited_bridge_choices": 4800,
+  "max_absolute_differences": {
+    "W": 5.551115123125783e-16,
+    "q": 2.6645352591003757e-15,
+    "weights": 1.7763568394002505e-15,
+    "next_W": 2.3314683517128287e-15,
+    "estimate": 6.750155989720952e-14,
+    "reference_estimate": 0.0,
+    "trace_estimate": 1.865174681370263e-14
+  },
+  "source_archive_sha256": "a050a387051b95952979dbe52d2faf84fa784213085f9824919b634c5d1246e7",
+  "sampling_performed": false,
+  "scope": [
+    "Independent matrix and outcome reconstruction; experiment implementation not imported.",
+    "History enters both precision and center; history/future/reference sources remain distinct.",
+    "Reference independence is established by disjoint source RNG streams; unequal samples alone are not proof of independence.",
+    "All coverage is pointwise joint marginal, not conditional on observed history or simultaneous over budgets."
+  ]
+}
