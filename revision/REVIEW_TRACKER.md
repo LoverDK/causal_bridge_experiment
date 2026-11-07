@@ -2,7 +2,7 @@
 
 更新：2026-11-07（Asia/Shanghai）。基线：`7e5841d3f3f22f892233582b9509aad656f3d266`；分支：`codex/reviewer-guided-rebuild`。
 
-作者已接受所测非高斯线性模型中有限新增桥接预算明显缩短历史区间的结论，本轮主实验收束。机制集合消融已按协议4528e20完成并独立审核；真实实验review与开跑条件已整理，适用准备完整后才开始。机器可读版本为 `review_tracker.json`，两份同步维护。
+作者已接受所测非高斯线性模型中有限新增桥接预算明显缩短历史区间的结论，本轮主实验收束。机制集合消融已完成；作者继续授权review相关消融，下一组研究L/H声明与曲率。真实实验review与开跑条件已整理，适用准备完整后才开始。机器可读版本为 `review_tracker.json`，两份同步维护。
 
 ## 每轮固定要求
 
@@ -482,3 +482,17 @@ REV-04/05仍open：微贷ATLAS未获资格、n_computed=0，不能称为成功�
 - REV-12：固定证书、停止实际输出、拒绝outer、零发布NA、空区间与成本分母已独立核对；没有真实验证。
 
 全部12项状态保持，没有resolved。详见[结果与范围](results/mechanism_uncertainty_ablation01/RESULTS.md)和[完成核验](evidence/mechanism_uncertainty_ablation01_complete.json)。真实实验仍处于[准备阶段](REAL_EXPERIMENT_REVIEW_PREPARATION.md)，没有新真实数据运行。
+
+
+## REVIEW-ABLATION-CONTINUATION02：运行前回顾
+
+作者授权继续推进与review有关的消融及明确记录问题修复。已回顾全12项与完整原意见，冻结[五组L/H声明与曲率协议](REVIEW_ABLATION_CONTINUATION02.md)，commit5d3e6d0。保留原三函数三几何、共同校准/数据/随机路径，比较正确声明、L减半/加倍、H置0/加倍；另保留相同baseline权重的分解与纯评分因果/采样误差分解。
+
+主要回应KoBT.W1、WGDN.W2a中可由合成错设敏感性回答的部分，以及nrhq.Q1/Q2的组件作用；不关闭真实输入、适应选择用途、凸组合合理性、新颖性或现实成本问题。所有状态保留。运行前预告smoke5–20秒、full2–5分钟/4CPU；smoke实测后更新full。两个确定性旧诊断记录问题独立修复，不改旧实验数值或输出。
+
+
+## RECORD-METADATA-CORRECTION01：确定性记录修复
+
+提交2f34cf2已修复两处writer/标签错误：有限校准样本不足时按实际+inf返回写状态；原operational分方法记录证书、U/LH/权重条件、独立outer和实现覆盖事件，点基线为NA。9600条旧记录的新口径为合法证书2400、不支持条件证书4800、点基线NA2400；216行frontier中144行移除无适用性的.10。
+
+10项确定性回归检查通过（1.036秒），只读纠正审计.367秒；5个旧CSV哈希完全保留，没有新抽样或重算估计/区间。根与独立report审查通过。详见[标签纠正与范围](evidence/record_metadata_audit_20261107/RECORD_LABEL_CORRECTION.md)。全12意见已回顾，主要推进REV-03/04/11/12的记录准确性，全部问题状态保留。

@@ -130,3 +130,13 @@ REV-01：盘点有助解释实验，但不自动改善正文。REV-02：选择�
 ## 后续主实验已完成
 
 HISTORICAL-BRIDGE-WORKFLOW01已完成并独立核验：实际历史加4次桥接，区间相对缩短比例中位46.79%；加8次为56.33%。支持所测模型中有限预算明显缩短历史区间。主预算4，新规则200/200设计比random更窄、193/200比logdet更窄。与高预算参考方向接近的更强目标未达到。见[完整结果](results/historical_bridge_workflow01/RESULTS.md)，其中同预算direct等全部对照保留。该结果不替代旧U/L/H权重与几何消融；扩展消融未自动启动。
+
+
+## 继续消融：L/H声明与审稿可回答范围
+
+作者已授权继续与review相关的消融。机制集合三输入对照已完成，结果见results/mechanism_uncertainty_ablation01/RESULTS.md；主预算proxy1798/1800覆盖，不能把它写成严重覆盖崩塌。下一组已按REVIEW_ABLATION_CONTINUATION02.md/json冻结（5d3e6d0）：正确声明、L减半/加倍、H置0/加倍，原数据生成、机制集合、观察和随机桥路径保持配对；通过同权重及真实因果/采样误差分解解释效果，保留线性H变体恒等的检查。
+
+权重与几何界、非高斯新分支选桥比较已有，不重复同一维度。剩余可用消融推进的是声明敏感性、组件代价及已确认标签错误；Rinf实用性仍需合法、明确的结果适应任务，凸组合类合理性需要额外估计器及其适用保证。真实U/LH来源与真实案例、新颖性不能由追加合成消融关闭。两项旧记录问题将独立修正，只读保留原始结果，不把标签修复当成新方法效能改善。
+
+
+上述校准finite记录和operational适用条件标签两个问题已于2f34cf2修复；原数值档案保留，独立纠正表见[evidence/record_metadata_audit_20261107/RECORD_LABEL_CORRECTION.md](evidence/record_metadata_audit_20261107/RECORD_LABEL_CORRECTION.md)。噪声混合方差与旧NSW拒绝开关混杂仍按原限制解释，不因标签修复变成新实验效能证据。
