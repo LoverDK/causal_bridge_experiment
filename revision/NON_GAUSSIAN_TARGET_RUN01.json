@@ -1,0 +1,39 @@
+{
+  "experiment_id": "NON-GAUSSIAN-TARGET-RUN01",
+  "frozen_date_local": "2026-11-07",
+  "dimension": 3,
+  "target": [1.0, 0.0, 0.0],
+  "prior_mean": [0.0, 0.0, 0.0],
+  "prior_covariance": [[0.04, 0.016, 0.006], [0.016, 0.16, 0.024], [0.006, 0.024, 0.08]],
+  "moment_source": "synthetic_known",
+  "individual_noise_sd": 0.5,
+  "observation_model": "Two independent arms: treatment mean x^T beta plus sigma noise; control mean sigma noise. Equal allocation gives ATE variance 4 sigma^2 / n.",
+  "initial_history": [
+    {"id": "history_e2", "x": [0.0, 1.0, 0.0], "participants": 32},
+    {"id": "history_e3", "x": [0.0, 0.0, 1.0], "participants": 32}
+  ],
+  "batch_participants": 64,
+  "new_batches": 4,
+  "candidate_replacement": false,
+  "direct_target_repeated_independent_batches": true,
+  "cost_per_participant": 1.0,
+  "failure_probability": 0.05,
+  "scientific_halfwidth": 0.30,
+  "full_width_thresholds": [0.4, 0.6, 0.8],
+  "simultaneous_path_looks": 5,
+  "parameter_distributions": ["gaussian", "rademacher", "student_t5"],
+  "noise_distributions": ["gaussian", "rademacher", "student_t5"],
+  "standardization": "Gaussian N(0,1), symmetric Rademacher +/-1, Student-t5 multiplied by sqrt(3/5); beta = Cholesky(V0) z.",
+  "methods": ["target_radius", "logdet", "frozen_random", "direct_target"],
+  "seeds": {"random_path": 2026110710, "smoke": 2026110711, "full": 2026110712},
+  "replicates": {"smoke": 3, "full": 200},
+  "geometries": {
+    "target_informative": [[2.0, 0.0, 0.0], [1.5, 0.3, 0.0], [1.5, -0.3, 0.0], [1.2, 0.0, 0.4], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]],
+    "distractor": [[2.0, 0.0, 0.0], [1.5, 0.3, 0.0], [0.0, 4.0, 0.0], [0.0, 0.0, 4.0], [0.0, 3.0, 3.0], [0.0, 3.0, -3.0]],
+    "weak": [[0.0, 1.0, 0.0], [0.0, 0.0, 1.0], [0.0, 0.7071, 0.7071], [0.0, 0.7071, -0.7071], [0.1, 1.0, 0.0], [0.1, 0.0, 1.0]]
+  },
+  "output_roots": {
+    "raw": "reproduced/non_gaussian_target_run01",
+    "report": "revision/results/non_gaussian_target_run01"
+  }
+}
