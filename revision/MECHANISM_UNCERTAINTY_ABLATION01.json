@@ -1,0 +1,267 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "MECHANISM-UNCERTAINTY-ABLATION01",
+  "frozen_date_local": "2026-11-07",
+  "objective": "Attribute the cost, precision and reliability effects of retaining mechanism-set uncertainty in the existing general U/L/H workflow on common observed data and fixed source prefixes.",
+  "implementation_identity": "current_method/atlas_new/workflow.py general smoothness/simplex certificate with computational min(Bbar,BLip); not the new linear-moment target-next-W theorem, not a legacy prototype.",
+  "source_config": "current_method/configs/workflow_full.json",
+  "source_seed_replaced": 2026091801,
+  "surfaces": [
+    "linear",
+    "quadratic",
+    "sinusoidal"
+  ],
+  "scenarios": [
+    "supported",
+    "bridgeable",
+    "unreachable"
+  ],
+  "dimension": 2,
+  "initial_sources": 4,
+  "candidate_bridges": 6,
+  "max_bridges": 3,
+  "archive_participants": 800,
+  "participants_per_bridge": 96,
+  "calibration_archives": 199,
+  "proxy_scale": 0.012,
+  "eta": 0.05,
+  "zeta": 0.05,
+  "tolerances": [
+    0.2,
+    0.3
+  ],
+  "variants": [
+    "calibrated_U",
+    "proxy_point",
+    "oracle_true_point"
+  ],
+  "variant_definitions": {
+    "calibrated_U": {
+      "centers": "unchanged clipped proxy locations",
+      "radii": "joint-max calibrated radius for all 10 sources and the target",
+      "guarantee_applicable": true,
+      "nominal_path_failure_bound": 0.1,
+      "information_status": "declared synthetic calibration inputs"
+    },
+    "proxy_point": {
+      "centers": "identical proxy locations",
+      "radii": 0,
+      "guarantee_applicable": false,
+      "nominal_path_failure_bound": null,
+      "information_status": "invalid zero-uncertainty negative control; no mechanism coverage claim"
+    },
+    "oracle_true_point": {
+      "centers": "true source and target locations, exposed only to this reference",
+      "radii": 0,
+      "guarantee_applicable": true,
+      "nominal_path_failure_bound": 0.05,
+      "information_status": "additional-information oracle; not a practicable method"
+    }
+  },
+  "smoothness": "Keep the exact original analytic L,H for each surface in all variants; no L,H or proxy-scale scan.",
+  "bound_modes": [
+    "r2",
+    "rinf"
+  ],
+  "primary_mode": "r2",
+  "primary_stage": 3,
+  "primary_new_participants": 288,
+  "fixed_budgets": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "schedule": "frozen_random_only",
+  "random_order_rule": "default_rng(SeedSequence([profile seed,surface_id,scenario_id,replicate,20])).permutation(arange(4,10)); common to every variant and mode",
+  "selection_scope": "No targeted bridge selection, no nearest schedule; at each stage refit weights on the identical source prefix.",
+  "optimizer": "Reuse existing workflow.optimize unchanged; design-only multi-start SLSQP with uniform/vertices/own previous weights extended by zero; no global-optimum claim; no cross-variant or oracle-weight warm starts.",
+  "statistical_allocation": {
+    "r2_certificate": "sqrt(2 log(2*(max_bridges+1)/(zeta/2))) times ||a*s||_2",
+    "r2_refusal": "sqrt(2 log(2*(initial_sources+candidate_bridges)/(zeta/2))) coordinate multiplier",
+    "rinf_certificate_and_refusal": "sqrt(2 log(2*(initial_sources+candidate_bridges)/zeta)) times sum a_i*s_i",
+    "oracle_eta_handling": "Keep identical multipliers and eta field; do not spend freed mechanism failure budget on narrower noise bounds.",
+    "coverage_scope": "Per-policy finite-horizon path guarantee when applicable; not simultaneous across methods and not conditional on release."
+  },
+  "same_weight_reference": "calibrated_U actual saved optimized weights separately at every mode and stage; evaluate all three input variants at exactly those weights and identical source observations",
+  "same_weight_components": [
+    "barycentric_center_offset",
+    "direct_set_radius_term",
+    "center_curvature",
+    "set_curvature_inflation",
+    "barycentric_geometry",
+    "lipschitz_center_distance",
+    "lipschitz_set_radius_term",
+    "lipschitz_geometry",
+    "minimum_geometry",
+    "active_branch",
+    "noise_radius",
+    "total_radius"
+  ],
+  "execution_views": {
+    "fixed_budget": "Actually collect each common prefix through stage 3; all-target certificate estimates/intervals at budgets 0..3; no stopping and no tolerance duplication required.",
+    "stopped": "Separately execute first certificate radius <= tolerance or budget exhaustion; actual cost and output certificate/refusal envelope remain separate from fixed-budget output.",
+    "acquisition": "Historical and per-source trial streams are shared exactly across variants/modes; future outcomes never enter planning; stopped runs do not acquire unused later trials.",
+    "refusal": "Variant-specific design and distances; label as outer refusal envelope, not sharp PI. Empty/inconsistent is not zero-width success."
+  },
+  "primary_metrics": [
+    "certificate full width and change from stage 0",
+    "true-target absolute error and squared error",
+    "certificate coverage",
+    "geometry/noise decomposition",
+    "paired contrasts calibrated_U minus proxy_point and calibrated_U minus oracle_true_point"
+  ],
+  "secondary_metrics": [
+    "same-weight geometry contrasts",
+    "rinf fixed-budget results",
+    "release and unconditional bad release at .2/.3",
+    "actual stopped participants",
+    "returned-output width/coverage/type",
+    "mechanism event and finite-horizon path coverage",
+    "conditional released error with zero-release values missing"
+  ],
+  "aggregation": "All 9 surface/scenario cells plus equal-surface pooling within each scenario; 200 independent worlds per cell; pair comparisons by world. Never count methods, budgets or tolerances as independent worlds.",
+  "bootstrap_repetitions": 2000,
+  "bootstrap_seed": 2026110753,
+  "inference_scope": "Exploratory individual paired intervals, resampling worlds within surface/scenario; no multiplicity-adjusted superiority claim; coverage failures/negative results retained.",
+  "workers": 4,
+  "profiles": {
+    "smoke": {
+      "seed": 2026110751,
+      "repetitions_per_cell": 3,
+      "bootstrap_repetitions": 100
+    },
+    "full": {
+      "seed": 2026110752,
+      "repetitions_per_cell": 200,
+      "bootstrap_repetitions": 2000
+    }
+  },
+  "trace": {
+    "surface": "linear",
+    "scenario": "bridgeable",
+    "replicate": 0
+  },
+  "output_root": "reproduced/mechanism_uncertainty_ablation01",
+  "report_root": "revision/results/mechanism_uncertainty_ablation01",
+  "primary_reviewer_concerns": [
+    "KoBT.W1",
+    "WGDN.W2a",
+    "nrhq.Q1",
+    "nrhq.Q2"
+  ],
+  "before_review": [
+    {
+      "id": "REV-01",
+      "prior_status": "partial_evidence",
+      "role": "secondary",
+      "scope": "A frozen single-world trace can clarify inputs and radius terms; does not complete writing review."
+    },
+    {
+      "id": "REV-02",
+      "prior_status": "partial_evidence",
+      "role": "boundary",
+      "scope": "All weights design-only; Rinf secondary is not evidence of outcome-adaptive selection utility."
+    },
+    {
+      "id": "REV-03",
+      "prior_status": "partial_evidence",
+      "role": "secondary",
+      "scope": "Bind every result to general U/L/H implementation, variant and output object; no headline replacement before results."
+    },
+    {
+      "id": "REV-04",
+      "prior_status": "open",
+      "role": "primary",
+      "scope": "Isolate mechanism-set uncertainty in a synthetic known-label model. Cannot provide real U or certify real L,H; keep status open."
+    },
+    {
+      "id": "REV-05",
+      "prior_status": "open",
+      "role": "not_addressed",
+      "scope": "No real-data certificate, no microcredit qualification change."
+    },
+    {
+      "id": "REV-06",
+      "prior_status": "partial_evidence",
+      "role": "not_addressed",
+      "scope": "No Many Labs target-noise or cross-family analysis."
+    },
+    {
+      "id": "REV-07",
+      "prior_status": "partial_evidence",
+      "role": "secondary",
+      "scope": "Matched component attribution with full fixed/stopped cost accounting; no ExAtlas, sample split or direct-trial superiority test."
+    },
+    {
+      "id": "REV-08",
+      "prior_status": "open",
+      "role": "not_addressed",
+      "scope": "No mathematical novelty/related-work resolution."
+    },
+    {
+      "id": "REV-09",
+      "prior_status": "open",
+      "role": "boundary",
+      "scope": "Keep simplex; no justification against signed/alternative estimators."
+    },
+    {
+      "id": "REV-10",
+      "prior_status": "partial_evidence",
+      "role": "boundary",
+      "scope": "Frozen random paths only; no target-next-W/logdet theorem validation or adaptive acquisition claim."
+    },
+    {
+      "id": "REV-11",
+      "prior_status": "open",
+      "role": "secondary",
+      "scope": "Explicit implementation and oracle/negative-control identities; no complete manuscript naming fix."
+    },
+    {
+      "id": "REV-12",
+      "prior_status": "partial_evidence",
+      "role": "secondary",
+      "scope": "Separate certificate, refusal envelope, fixed budget, stopping, bad release and empty-region states."
+    }
+  ],
+  "interpretation_rules": [
+    "A narrower proxy-point interval is not a gain unless reliability is separately reported; no guarantee is assigned to it.",
+    "Oracle is extra location information, not true-effect access or a practicable comparator.",
+    "All variants use unchanged known synthetic smoothness bounds and source-noise scales.",
+    "At calibrated weights, calibrated geometry >= proxy-point geometry always; calibrated geometry >= oracle geometry only on the joint mechanism-set coverage event.",
+    "Do not demand that proxy-point empirically undercover; conservative other terms can mask omission.",
+    "No reoptimized ordering is asserted from a local SLSQP solver; retain and inspect discrepancies without outcome-based retuning.",
+    "No simulated U result is real-world U calibration; no reviewer status automatically resolved."
+  ],
+  "required_checks": [
+    "exactly shared calibration archive, source observations and random source prefix across variants/modes",
+    "true coordinates enter oracle design only; true effects enter scoring only",
+    "variant-specific refusal design, no accidental world.design fallback",
+    "reconstruct radius from components and weighted estimate from saved source effects",
+    "same-weight deterministic inequalities with event qualification",
+    "mechanism_event_holds distinct from guarantee_applicable",
+    "fixed-budget actual cost equals stage*96; stopped cost equals acquired observations*96",
+    "stopped outputs never consume future observations; carried rows marked",
+    "all finite/nonempty and inconsistent states retained; conditional zero-release metrics undefined",
+    "primary/scoring perturbation invariance of design-only plans and decisions",
+    "all 12 reviewer concerns checked before smoke, after smoke and after full"
+  ],
+  "initial_runtime_estimate": {
+    "smoke_seconds": [
+      10,
+      30
+    ],
+    "full_seconds": [
+      180,
+      480
+    ],
+    "resource": "4 CPU worker processes; SciPy SLSQP, not GPU",
+    "basis": "Same-machine round01-cost-precision smoke 27 worlds 8.483s/full1800 worlds429.622s; new24 optimize calls/world versus prior candidate enumeration. Historical ablations_full133.806s is supporting evidence from another environment.",
+    "update_rule": "Measure smoke, independent report review of its audit/schema, root communicates revised full estimate before full launch."
+  },
+  "run_gates": {
+    "smoke": "Protocol committed first; root has already informed user of initial timing; relevant tests and smoke may then run.",
+    "full": "Smoke checks pass, report agent independently reviews, implementation sends revised runtime to root, and root confirms updated estimate has been communicated. No new user approval needed within authorized scope.",
+    "writes": "Fresh result directories only; preserve all original code/results; protocol changes after inspection require explicit versioned amendment, not overwrite."
+  }
+}
