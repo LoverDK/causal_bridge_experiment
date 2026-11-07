@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "baseline_commit": "7e5841d3f3f22f892233582b9509aad656f3d266",
   "branch": "codex/reviewer-guided-rebuild",
-  "scope_note": "已完成写作副本、原workflow只读审计及首轮具体方案；尚未运行本轮新模拟。已有结果的重算与新实验分开，没有问题被标为全部解决。",
+  "scope_note": "原流程已完整复现；独立种子的成本—精度新实验与分析完成。全部12项意见已回顾，负结果保留，没有问题标为全部解决；I&K/Manski阅读核查已另存。",
   "user_requirements": [
     "每次实验推进前、后回顾全部 review 和 12 个问题。",
     "不能用已运行代替已解决；状态由验收证据决定，保留未覆盖问题与负结果。",
@@ -20,8 +20,8 @@
   "closure_policy": "本轮最多 partial_evidence，不设 resolved。未来关闭须逐项验收产物、范围匹配并由根代理复核。",
   "first_round": {
     "protocol": "revision/FIRST_WORKFLOW.md",
-    "execution_status": "implementation_in_progress",
-    "scope": "原完整合成workflow已核实；按原设置进行27世界smoke及单世界讲解，随后复现1800世界full，逐阶段回顾全部review。",
+    "execution_status": "complete",
+    "scope": "原27/1800世界复现及新27/1800世界成本—精度实验均完成；新实验分开原停止与完整采集前缀，报告同成本精度及同精度达标/成本。",
     "cannot_claim": "跑通不等于真实机制有效、方法优越、新颖性成立或写作完成。",
     "design_status": "specified_v2_cost_precision",
     "archive_audit": "revision/evidence/workflow_archive_audit.json",
@@ -32,9 +32,12 @@
         "probability and cost of attaining prespecified precision"
       ],
       "precision": "returned interval halfwidth; original certificate radius and point error recorded separately",
-      "execution": "No new simulation. Original stopping-rule reproduction remains baseline; a separately versioned full-acquisition-prefix evaluation requires new runs and frozen independent seeds."
+      "execution": "Completed with independent full seed 2026110702; original stopping baseline and actual full acquisition prefixes reported separately."
     },
-    "run_protocol": "revision/COST_PRECISION_RUN01.md"
+    "run_protocol": "revision/COST_PRECISION_RUN01.md",
+    "result_report": "revision/results/cost_precision_run01/RESULTS.md",
+    "evidence": "revision/evidence/cost_precision_run01_complete.json",
+    "author_understanding": "pending_author_discussion"
   },
   "round_review_protocol": {
     "before": [
@@ -278,6 +281,147 @@
         "remaining_gaps": [
           "No new numerical outcomes observed before freezing this protocol.",
           "This synthetic design does not demonstrate real mechanism validity, outcome-adaptive selection utility, closest-work novelty or logdet performance."
+        ]
+      },
+      {
+        "round_id": "COST-PRECISION-RUN01-SMOKE",
+        "phase": "after",
+        "date_local": "2026-11-07",
+        "code_revision": "runner b3a41a3; reporting 2b0485f",
+        "artifact_paths": [
+          "revision/evidence/run01_baseline_and_smoke_validation.json",
+          "reproduced/round01-original-full/current_method/results/workflow_full/run_manifest.json",
+          "reproduced/round01-cost-precision-smoke/run_manifest.json",
+          "reproduced/round01-cost-precision-smoke/analysis/analysis_manifest.json"
+        ],
+        "all_issue_ids_reviewed": [
+          "REV-01",
+          "REV-02",
+          "REV-03",
+          "REV-04",
+          "REV-05",
+          "REV-06",
+          "REV-07",
+          "REV-08",
+          "REV-09",
+          "REV-10",
+          "REV-11",
+          "REV-12"
+        ],
+        "covered_review_refs": [
+          "nrhq.W1",
+          "nrhq.W2",
+          "nrhq.Q2",
+          "WGDN.Q1",
+          "KoBT.Q1"
+        ],
+        "findings": [
+          "Original 1800-world workflow rerun completed; six central raw/summary files are byte-identical to the published archive.",
+          "New 27-world smoke completed with 32 output checks and report checks passing.",
+          "Original 7 tests and new 10 tests passed; independent report audit matched 648 smoke first-hit records exactly.",
+          "Main new full run started with frozen independent seed2026110702; no efficacy conclusion from smoke."
+        ],
+        "status_changes_with_evidence": {},
+        "remaining_gaps": [
+          "All reviewer issue statuses retained until full results and scope review.",
+          "Synthetic assumptions and design-only selection cannot answer real calibration or outcome-adaptive practical benefit."
+        ]
+      },
+      {
+        "round_id": "COST-PRECISION-RUN01",
+        "phase": "after",
+        "date_local": "2026-11-07",
+        "code_revision": "2b0485f3d16706afce98181648c226750881c0c3",
+        "artifact_paths": [
+          "revision/results/cost_precision_run01/RESULTS.md",
+          "revision/evidence/cost_precision_run01_complete.json",
+          "reproduced/round01-cost-precision-full"
+        ],
+        "all_issue_ids_reviewed": [
+          "REV-01",
+          "REV-02",
+          "REV-03",
+          "REV-04",
+          "REV-05",
+          "REV-06",
+          "REV-07",
+          "REV-08",
+          "REV-09",
+          "REV-10",
+          "REV-11",
+          "REV-12"
+        ],
+        "covered_review_refs": [
+          "nrhq.W4",
+          "nrhq.Q2",
+          "nrhq.W1",
+          "nrhq.W2",
+          "nrhq.Q1"
+        ],
+        "findings": [
+          "1800 independent worlds, 32 run and 18 analysis checks pass; original six outputs byte-identical.",
+          "Linear bridgeable: halfwidth target .2, 100% attainment, 104.16 vs288 participants.",
+          "Bridgeable .3: 96-person pooled halfwidth .2533 vs .2921; direct target narrower at192/288.",
+          "Sinusoidal bridgeable .2 attainment2.5% vs100%; unreachable bridge attainment0%.",
+          "Rinf bridgeable .3 final353 interval successes vs207 original releases."
+        ],
+        "status_changes_with_evidence": [],
+        "per_issue_review": {
+          "REV-01": "有可复核的完整流程、成本与精度例子；作者是否理解、正文是否足够清楚仍需讨论。",
+          "REV-02": "补齐设计型 R2/R∞ 的成本、宽度和覆盖比较；未测试结果驱动选择或合法 sample splitting，不能据此宣称 selection-safe 收益。",
+          "REV-03": "新数字明确绑定 R2/R∞、prefix/stopped 与输出任务；未把本轮数字自动写入摘要，其他实验归因仍待全篇核对。",
+          "REV-04": "仅使用合成校准和已知解析 L,H；真实机制集合、错设与外部有效性没有新增证据。",
+          "REV-05": "完整合成闭环已实际重跑；真实微贷 not_qualified 和真实证书案例缺口不变。",
+          "REV-06": "没有运行 Many Labs；目标噪声主导的问题不由本轮修复。",
+          "REV-07": "在共同名义可靠性、明确新增成本下完成六策略和全部预设场景比较，直接推进 nrhq.W4/Q2；最近前作/样本拆分及审计部署总成本仍缺。",
+          "REV-08": "并行核查 I&K/Manski，明确 Theorem 5.3 的集合构造继承关系；未完成论文本体修改、全部近邻比较或贡献新颖性证明。",
+          "REV-09": "本轮维持 simplex 估计器类；没有负权重、回归或 IPD 对照，不能回答为何该候选类充分。",
+          "REV-10": "验证的是 prospective-radius heuristic；随机与最近来源对照不能验证 logdet 定理，非高斯/异方差稳健性仍缺。",
+          "REV-11": "新结果有冻结配置、独立种子、源快照和哈希；全篇 prototype 与当前方法的归属核对仍未完成。",
+          "REV-12": "严格区分点发布、拒绝外区间、半宽达标、完整前缀和原停止；失败/无界保留，支持本合成流程统计口径。真实资格状态、提前无效停止和 sharp 区域使用仍待处理。"
+        },
+        "remaining_gaps": [
+          "Real inputs/cases and ManyLabs",
+          "Outcome-adaptive selection safety",
+          "Nearest prior methods and complete cost",
+          "Estimator class and logdet scope",
+          "Author understanding pending"
+        ]
+      },
+      {
+        "round_id": "RELATED-WORK-01",
+        "phase": "after",
+        "date_local": "2026-11-07",
+        "code_revision": "Literature reading; no simulation or manuscript edits",
+        "artifact_paths": [
+          "revision/RELATED_WORK_READING.md"
+        ],
+        "all_issue_ids_reviewed": [
+          "REV-01",
+          "REV-02",
+          "REV-03",
+          "REV-04",
+          "REV-05",
+          "REV-06",
+          "REV-07",
+          "REV-08",
+          "REV-09",
+          "REV-10",
+          "REV-11",
+          "REV-12"
+        ],
+        "covered_review_refs": [
+          "WGDN.Q3",
+          "WGDN.W2d",
+          "nrhq.W3"
+        ],
+        "findings": [
+          "I&K prior set construction directly corresponds to Theorem5.3; Manski supplies target-specific set intersection principle.",
+          "Manski method details verified in2019 institutional preprint, not final2020 full text."
+        ],
+        "status_changes_with_evidence": [],
+        "remaining_gaps": [
+          "Manuscript citation and novelty positioning still need substantive revision; ExAtlas comparison remains separate."
         ]
       }
     ]
@@ -536,7 +680,8 @@
         "已有 PDF 及改写候选；nrhq 指出 decision layer、certificate、bridge 等定义前使用。",
         "用户已在本机完成Overleaf克隆。原稿位于 causal_lab_proposal_subpapers_tex_iclr2027/01.tex；基线29e4c0db4a17e72e04d9a1c9b330e81b166c604a，原稿SHA256为ef261e308e3463eb8e54d5de3c0fded1879f58777222f0115a0c5a5f79eaab73。同目录01_humanized.tex已创建并提交475b1ecfae407460ff9e587c2b9be1c47b56f5d5；用户已推送，origin/main的update by push记录与该提交一致。原稿保留。",
         "已完成01_humanized.tex首轮主文改写并通过独立语义审查、形式内容保留检查与完整LaTeX编译。正文10页、总42页；原01.tex SHA256未变。用户已完成Git推送，原稿和默认主文档选择未变。",
-        "只读重建原linear/bridgeable/replicate 0轨迹，解释半径.583089→.205812→.168749及192人停止；作者理解情况尚待讨论。"
+        "只读重建原linear/bridgeable/replicate 0轨迹，解释半径.583089→.205812→.168749及192人停止；作者理解情况尚待讨论。",
+        "COST-PRECISION-RUN01：有可复核的完整流程、成本与精度例子；作者是否理解、正文是否足够清楚仍需讨论。"
       ],
       "gaps": [
         "尚需作者阅读并确认解释是否清楚；对照实验与新增贡献不能由本轮语言编辑解决。"
@@ -571,7 +716,8 @@
         "当前 optimize_radius / plan 不接收 observed effects，主 workflow 是设计权重并实际使用 R2。",
         "同一非负权重、偏差项、噪声及置信预算下 R∞≥R2；不能寻找同条件的反向发布例子。",
         "已有 workflow 记录显示 R∞ 释放更少；这是原有结果，非本轮运行。",
-        "核实原workflow在观察结果前预规划全部候选顺序、权重与半径；新结果更新估计和拒绝区间，不提供outcome-adaptive选择收益证据。"
+        "核实原workflow在观察结果前预规划全部候选顺序、权重与半径；新结果更新估计和拒绝区间，不提供outcome-adaptive选择收益证据。",
+        "COST-PRECISION-RUN01：补齐设计型 R2/R∞ 的成本、宽度和覆盖比较；未测试结果驱动选择或合法 sample splitting，不能据此宣称 selection-safe 收益。"
       ],
       "gaps": [
         "缺真实 outcome-adaptive 用途和与合法 sample splitting 的匹配对照；权重优化收益不能归为 selection safety。"
@@ -605,7 +751,8 @@
       ],
       "known_evidence": [
         "95.3% / 0.2% 对应 Gaussian Bonferroni 与未校正区间，不是完整证书效用；Table 15 另列 theorem simultaneous。",
-        "修改稿摘要已把95.3%明确归因于Gaussian Bonferroni intervals，数值保持原样；完整方法的实际收益证据仍待实验复核。"
+        "修改稿摘要已把95.3%明确归因于Gaussian Bonferroni intervals，数值保持原样；完整方法的实际收益证据仍待实验复核。",
+        "COST-PRECISION-RUN01：新数字明确绑定 R2/R∞、prefix/stopped 与输出任务；未把本轮数字自动写入摘要，其他实验归因仍待全篇核对。"
       ],
       "gaps": [
         "摘要Bonferroni归因已澄清；主要贡献、全部图表到实际策略及保证的系统核对和完整方法效用证据仍需后续实验。"
@@ -639,7 +786,8 @@
       ],
       "known_evidence": [
         "现有 workflow 用合成机制标签与解析 L,H；joint calibration 在合成、声明条件下验证。",
-        "有限档案诊断不能证明遗漏机制不存在或认证全域平滑性上界。"
+        "有限档案诊断不能证明遗漏机制不存在或认证全域平滑性上界。",
+        "COST-PRECISION-RUN01：仅使用合成校准和已知解析 L,H；真实机制集合、错设与外部有效性没有新增证据。"
       ],
       "gaps": [
         "缺真实、结果盲、可追溯的机制坐标、集合、L,H、联合覆盖依据及错设敏感性。"
@@ -673,7 +821,8 @@
       ],
       "known_evidence": [
         "微贷 ATLAS 为 not_qualified，n_computed=0；不是计算证书后全部拒绝。",
-        "published 主分析为 Mexico、India EL1 两项；NSW 是 within-trial reconstruction，不能作为跨干预机制保证验证。"
+        "published 主分析为 Mexico、India EL1 两项；NSW 是 within-trial reconstruction，不能作为跨干预机制保证验证。",
+        "COST-PRECISION-RUN01：完整合成闭环已实际重跑；真实微贷 not_qualified 和真实证书案例缺口不变。"
       ],
       "gaps": [
         "尚无真实 audit→集合→半径→发布/拒绝→验证的完整证书案例。"
@@ -708,7 +857,8 @@
       "known_evidence": [
         "halfwidth 含 target_design_variance，属于 noisy reference 的预测噪声；这不等于发现 outcome leakage。",
         "已有 57 目标 CSV 的只读诊断：fixed 目标噪声占总方差中位 98.8774%，random 98.0202%。",
-        "δ=.15 时仅留目标噪声，fixed 10/57 的发布决定不变；random 原 6/57 变 7/57。"
+        "δ=.15 时仅留目标噪声，fixed 10/57 的发布决定不变；random 原 6/57 变 7/57。",
+        "COST-PRECISION-RUN01：没有运行 Many Labs；目标噪声主导的问题不由本轮修复。"
       ],
       "gaps": [
         "缺等目标 n / 固定参考噪声、多 effect families 诊断；当前结果不认证 archive 兼容性。"
@@ -745,16 +895,17 @@
       "known_evidence": [
         "已有 Appendix P 在共同 random bridge path 下支持部分合成场景的 design-only R2 权重收益，不能归为 R∞ 收益或超越最近前作。",
         "已有汇总中直接 target trial 在若干设置更有利；审计/部署成本未纳入；尚无完整 ExAtlas matched-information 对照。",
-        "复核原bridgeable汇总：delta=.3定向R2与直接目标均发布100%，平均新增人数117.92与96；仍是旧结果，不是本轮新实验。"
+        "复核原bridgeable汇总：delta=.3定向R2与直接目标均发布100%，平均新增人数117.92与96；仍是旧结果，不是本轮新实验。",
+        "COST-PRECISION-RUN01：在共同名义可靠性、明确新增成本下完成六策略和全部预设场景比较，直接推进 nrhq.W4/Q2；最近前作/样本拆分及审计部署总成本仍缺。"
       ],
       "gaps": [
-        "缺统一信息、假设、预算、置信水平和停止规则的强基线对照及全部成本。"
+        "合成六策略已按统一评价比较；仍缺最近前作、样本拆分等强外部基线与审计部署总成本，以及真实输入下的对应证据。"
       ],
       "acceptance_evidence": [
         "与适用设计权重、稳健聚合、样本拆分、最近前作和直接 trial 比较，明确不可比条件。",
         "报告 coverage、错误发布、发布率、宽度、目标误差与成本；保留全部预设场景及负结果。"
       ],
-      "next_step": "首轮先理解已有策略身份和成本；强基线及总成本另立协议。",
+      "next_step": "作者讨论成本—精度交叉及失败场景；下一协议考虑可观测输入下桥接/目标切换，强外部基线和完整成本仍须独立补齐。",
       "first_round_can_answer": [
         "单世界中各策略做了什么、花费多少参与者。"
       ],
@@ -781,7 +932,9 @@
       "known_evidence": [
         "根代理核实 I&K 已有 pairwise bounded-variation / Lipschitz 参数空间与 target projection；Manski 已有目标集合汇总。",
         "根代理核实 ExAtlas 已有同型重心误差分解、凸组合、阈值拒绝和 bridge 流程。",
-        "修改稿将原Appendix A的部分定位移入主文三段相关工作；尚未增加I&K/Manski/ExAtlas的逐命题新增内容比较。"
+        "修改稿将原Appendix A的部分定位移入主文三段相关工作；尚未增加I&K/Manski/ExAtlas的逐命题新增内容比较。",
+        "COST-PRECISION-RUN01：并行核查 I&K/Manski，明确 Theorem 5.3 的集合构造继承关系；未完成论文本体修改、全部近邻比较或贡献新颖性证明。",
+        "RELATED-WORK-01：I&K 2021 v1已含Lipschitz pairwise空间、目标投影、模型与联合高斯置信矩形相交及数据依赖权重讨论；P(J)与该集合直接对应。Manski详读2019作者前稿，最终刊版全文未取得。详见revision/RELATED_WORK_READING.md。"
       ],
       "gaps": [
         "缺逐命题符号映射、贡献归属修订、主文比较与匹配近邻实验。"
@@ -790,7 +943,7 @@
         "按 estimand、信息、假设、目标、采样误差、机制集合和选择规则列已有、推论与新增命题。",
         "区分 Theorem 5.3 的 finite-metric sharp 特例与一般 outer region；新增主张有证明或直接实验，并补引用。"
       ],
-      "next_step": "先完成文献/数学映射，再确定贡献与近邻实验。",
+      "next_step": "依据原文完成Theorem 5.3继承关系与贡献边界改写；继续核对ExAtlas等近邻，不以任务名称不同替代数学比较。",
       "first_round_can_answer": [
         "提供本实现的具体接口与信息边界供后续比较。"
       ],
@@ -815,7 +968,8 @@
       ],
       "known_evidence": [
         "方法限制为非负和为一的 prior ATE 权重；现有定理不证明它在所有 transport 估计器中最优。",
-        "重心不必是可实施干预，机制凸包上的平滑性需要科学解释。"
+        "重心不必是可实施干预，机制凸包上的平滑性需要科学解释。",
+        "COST-PRECISION-RUN01：本轮维持 simplex 估计器类；没有负权重、回归或 IPD 对照，不能回答为何该候选类充分。"
       ],
       "gaps": [
         "缺应用中选择该类的理由及负权重、外推、meta-regression / IPD 方法的信息条件对照。"
@@ -849,7 +1003,8 @@
       "known_evidence": [
         "Theorem 5.6 为非自适应 linear-Gaussian logdet 保证，target radius 控制另需 posterior condition-number 条件。",
         "workflow targeted R2 最小化 prospective radius，是一步 heuristic；并非上述 theorem-backed policy。",
-        "原targeted逐候选最小化prospective radius；初始完整路径按设计排定，没有执行logdet策略。"
+        "原targeted逐候选最小化prospective radius；初始完整路径按设计排定，没有执行logdet策略。",
+        "COST-PRECISION-RUN01：验证的是 prospective-radius heuristic；随机与最近来源对照不能验证 logdet 定理，非高斯/异方差稳健性仍缺。"
       ],
       "gaps": [
         "缺两种 policy 明确分离及匹配对照；缺非线性/非高斯/异方差/错设下证据。"
@@ -883,7 +1038,8 @@
       ],
       "known_evidence": [
         "主文/附录 ATLAS 命名和旧 prototype 归属存在混淆；仓库已有 current_method、paper_original、legacy_audits 分区。",
-        "原workflow对应01.tex Appendix L、Tables 10–12及Figure 5；9个manifest源文件及18个产物哈希均一致。"
+        "原workflow对应01.tex Appendix L、Tables 10–12及Figure 5；9个manifest源文件及18个产物哈希均一致。",
+        "COST-PRECISION-RUN01：新结果有冻结配置、独立种子、源快照和哈希；全篇 prototype 与当前方法的归属核对仍未完成。"
       ],
       "gaps": [
         "最新Overleaf源已取得，workflow已对应Appendix L / Tables 10–12 / Figure 5；全稿图表到实现、policy、bound、保证的完整清单尚未完成。"
@@ -923,17 +1079,18 @@
         "已有 sharp_lipschitz / outer-region 工具和 workflow；有限已知位置的 sharp region 不等于一般机制集合的 sharp region。",
         "联合事件 P(release 且 bad error) 控制不等于给定 release 的条件覆盖。",
         "现有 unreachable 菜单可耗尽预算仍拒绝；提前判无效/转直接 target 仍缺。",
-        "只读重建三几何linear/replicate 0的R2半径，最大差异3.11e-15；确认发布后预算行沿用输出与成本，plans中未来状态不是实际采集。"
+        "只读重建三几何linear/replicate 0的R2半径，最大差异3.11e-15；确认发布后预算行沿用输出与成本，plans中未来状态不是实际采集。",
+        "COST-PRECISION-RUN01：严格区分点发布、拒绝外区间、半宽达标、完整前缀和原停止；失败/无界保留，支持本合成流程统计口径。真实资格状态、提前无效停止和 sharp 区域使用仍待处理。"
       ],
       "gaps": [
-        "需统一资格失败、已算拒绝、发布、预算停止及空/无界/有限区域记录；统计口径与停止策略仍需核对。"
+        "本合成流程输出/停止/空无界/分母已核对；真实资格失败状态、sharp区域与外区间的全篇归属，以及提前无效停止/目标切换仍待处理。"
       ],
       "acceptance_evidence": [
         "每次运行保存输入审计、半径分解、区域类型和停止原因；空集合不误作成功，outer/exact 分开。",
         "指标注明分母、eta/zeta 和 joint/conditional 事件；零发布条件风险 undefined；策略切换先定义后评估。",
         "每轮前后回顾全部 review，用产物逐项验收，运行成功不直接关闭问题。"
       ],
-      "next_step": "按 FIRST_WORKFLOW.md 先 smoke 和单世界轨迹，核对状态与信息流，再考虑 full。",
+      "next_step": "讨论完整前缀与首次半宽达标结果；下一协议明确提前无效停止与目标切换，真实资格状态另立审计。",
       "first_round_can_answer": [
         "工程闭环、状态、信息边界、统计口径和实际停止行为。"
       ],

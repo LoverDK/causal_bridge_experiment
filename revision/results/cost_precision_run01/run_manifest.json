@@ -1,0 +1,338 @@
+{
+  "schema_version": "1.0",
+  "status": "complete",
+  "started_utc": "2026-11-07T08:19:48.796172+00:00",
+  "command": [
+    "D:\\python\\python.exe",
+    "current_method/run_cost_precision.py",
+    "--profile",
+    "full",
+    "--workers",
+    "4",
+    "--output",
+    "reproduced/round01-cost-precision-full"
+  ],
+  "config": {
+    "profile": "cost_precision_full",
+    "seed": 2026110702,
+    "repetitions_per_cell": 200,
+    "surfaces": [
+      "linear",
+      "quadratic",
+      "sinusoidal"
+    ],
+    "scenarios": [
+      "supported",
+      "bridgeable",
+      "unreachable"
+    ],
+    "dimension": 2,
+    "initial_sources": 4,
+    "candidate_bridges": 6,
+    "max_bridges": 3,
+    "archive_participants": 800,
+    "participants_per_bridge": 96,
+    "calibration_archives": 199,
+    "proxy_scale": 0.012,
+    "eta": 0.05,
+    "zeta": 0.05,
+    "tolerances": [
+      0.2,
+      0.3
+    ],
+    "methods": [
+      "r2_targeted",
+      "rinf_targeted",
+      "r2_random",
+      "r2_nearest",
+      "r2_static",
+      "target_only"
+    ],
+    "bootstrap_repetitions": 2000,
+    "bootstrap_seed": 2026110799,
+    "workers": 4
+  },
+  "git_revision": "2b0485f3d16706afce98181648c226750881c0c3",
+  "git_status_before_run": "",
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "packages": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "pandas": "3.0.5",
+    "matplotlib": "3.11.1"
+  },
+  "source_sha256": {
+    "current_method/run_cost_precision.py": "288af93d7ba0789c581ba5d16849d6caf0c13a009d7646d829788d7938436480",
+    "current_method/atlas_new/cost_precision.py": "4b18ec1154c9ea8d1c8c73e6588e688f782972e9346f9da5b2cba279a5292d21",
+    "current_method/atlas_new/workflow.py": "4c9a2185beb2b47b6ef289498b15136966bb03fc2318214e013c50591782e327",
+    "current_method/atlas_new/core.py": "fe91cb77b425d48d435ef295973976449747182051d35aded01b1332e7fcd59b",
+    "current_method/configs/cost_precision_full.json": "93b81d08167b52fd413fa51662e3153a7cf9359155b9cbfa9c9a1f9659314494",
+    "current_method/tests/test_cost_precision.py": "685d34cc508828d3044809accfdfc86c295439b18418127924d0508f664e0cfb",
+    "current_method/tests/test_workflow.py": "57ea2f6e782bd4a5625f765212f2ef80b5cbeeb9b9d6142ef3518a6e2e508d3f",
+    "revision/FIRST_WORKFLOW.md": "8f7fe8ab1e79aa481237fcf090baed4720ca29ed728eac2f960930022f9afefd",
+    "revision/COST_PRECISION_RUN01.md": "e8c2ffe368783a33048266bb2a562857f4c22beca4bc54c3e41aee5723791441"
+  },
+  "modes": {
+    "prefix": "Actual complete acquisition prefix, no early stop, static remains zero cost",
+    "stopped": "Unchanged legacy execute(); stop at first original-radius release"
+  },
+  "score_scope": "All truth is used only by the generator and separated scorer; no outcome-adaptive planning",
+  "reliability_scope": "Nominal 90% per-policy, per-mode finite-path coverage under the declared DGP; not conditional-on-release or across-policy coverage",
+  "cost_scope": "Additional randomized-trial participants only; historical, calibration and deployment costs excluded",
+  "acquisition_log_scope": "Mode/tolerance rows reuse paired source streams; repeated rows are not independent experiments",
+  "calibration_provenance": "199 scores per world independently reconstructed from frozen generator seed and checked against generator quantile",
+  "scope": "New synthetic cost-precision experiment; no real mechanism calibration, no universal superiority claim",
+  "counts": {
+    "independent_worlds": 1800,
+    "prefix_records": 86400,
+    "stopped_records": 86400,
+    "acquisitions_logged": 86917,
+    "planned_states": 30600,
+    "candidate_scores": 54000
+  },
+  "checks": [
+    {
+      "name": "complete and unique world audits",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "one reconstructed calibration per world",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reconstructed scores reproduce the declared order statistic",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no global optimality claim",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "two arms reconstruct every acquired effect",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prefix: balanced unique records",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prefix: mode labels match file",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prefix: original release event preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prefix: error release event is unconditional",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prefix: halfwidth is returned width, not certificate radius",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prefix: diagnostic midpoint only for finite nonempty intervals",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prefix: actual cost, acquisition count and selected IDs agree",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prefix: all weighted sources available and weights feasible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prefix: predictions reconstructed from actual arm summaries",
+      "passed": true,
+      "detail": "1.4988010832439613e-15"
+    },
+    {
+      "name": "prefix: legacy certificate matches saved decomposition",
+      "passed": true,
+      "detail": "8.215650382226158e-15"
+    },
+    {
+      "name": "prefix: returned and refused endpoints independently reconstructed",
+      "passed": true,
+      "detail": "8.43769498715119e-15"
+    },
+    {
+      "name": "prefix: acquisition and interval states remain consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prefix: path coverage is conjunction across all reported outputs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stopped: balanced unique records",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stopped: mode labels match file",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stopped: original release event preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stopped: error release event is unconditional",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stopped: halfwidth is returned width, not certificate radius",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stopped: diagnostic midpoint only for finite nonempty intervals",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stopped: actual cost, acquisition count and selected IDs agree",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stopped: all weighted sources available and weights feasible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stopped: predictions reconstructed from actual arm summaries",
+      "passed": true,
+      "detail": "1.4988010832439613e-15"
+    },
+    {
+      "name": "stopped: legacy certificate matches saved decomposition",
+      "passed": true,
+      "detail": "8.215650382226158e-15"
+    },
+    {
+      "name": "stopped: returned and refused endpoints independently reconstructed",
+      "passed": true,
+      "detail": "8.43769498715119e-15"
+    },
+    {
+      "name": "stopped: acquisition and interval states remain consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stopped: path coverage is conjunction across all reported outputs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prefix and original stopped modes agree through first stop",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "statistical_diagnostic_signals": 0,
+  "statistical_diagnostic_note": "Signals are preserved for investigation, not retried away. Failure to reject does not prove calibration or assumptions.",
+  "finished_utc": "2026-11-07T08:26:58.656148+00:00",
+  "elapsed_seconds": 429.6223139000358,
+  "artifacts": {
+    "acquisitions.csv": {
+      "sha256": "2c46805140034d050f563cb37060966ef36f7dcc6d0be448e3669432f11ae688",
+      "bytes": 13756415
+    },
+    "calibration_scores.jsonl": {
+      "sha256": "cb1f717165545cbfe9b6f3db2318e3825920d51e1870e9111dbf0abc5740dea6",
+      "bytes": 7636017
+    },
+    "candidate_scores.csv": {
+      "sha256": "6405dfad480c8563d87736d60c54133bdabf2b839177527f872f51211752e8da",
+      "bytes": 3312396
+    },
+    "plans.jsonl": {
+      "sha256": "cb11244278466242aa755998f4f6654cb509af4c23458452a36f7cb3852f7da0",
+      "bytes": 22998176
+    },
+    "prefix_records.csv": {
+      "sha256": "bb282f825edf262b9a86e7d11749e1760e2d68596003981f8f9f5edd91e94bdd",
+      "bytes": 52508556
+    },
+    "statistical_calibration_checks.csv": {
+      "sha256": "ad0c9ca77e9e3d4862a17b042869dca4e0fc9ff73c202cae6bea1837f383a46c",
+      "bytes": 23290
+    },
+    "stopped_records.csv": {
+      "sha256": "4fe6a190601ef71d5f209a5bbe5ccbad5533f03b80cc60d4e3941aee1819d85d",
+      "bytes": 51685713
+    },
+    "test_log.txt": {
+      "sha256": "45f9932626891b5469d4e7a00f926d7f475c5bfd8a4fea809deab982f4af8b13",
+      "bytes": 2854
+    },
+    "validation_checks.json": {
+      "sha256": "1b383d4d0ef61c8ca39b5c8a4fa6a16090ad26a1ff3431548cfad5ba2d7eeebc",
+      "bytes": 3914
+    },
+    "world_audits.jsonl": {
+      "sha256": "32e720581212c2d263c7c7f1b50cdad082017888e2a5606d61d0f04faa7e22bd",
+      "bytes": 4532398
+    },
+    "source_snapshot/current_method/run_cost_precision.py": {
+      "sha256": "288af93d7ba0789c581ba5d16849d6caf0c13a009d7646d829788d7938436480",
+      "bytes": 8554
+    },
+    "source_snapshot/revision/COST_PRECISION_RUN01.md": {
+      "sha256": "e8c2ffe368783a33048266bb2a562857f4c22beca4bc54c3e41aee5723791441",
+      "bytes": 6290
+    },
+    "source_snapshot/revision/FIRST_WORKFLOW.md": {
+      "sha256": "8f7fe8ab1e79aa481237fcf090baed4720ca29ed728eac2f960930022f9afefd",
+      "bytes": 18908
+    },
+    "source_snapshot/current_method/atlas_new/core.py": {
+      "sha256": "fe91cb77b425d48d435ef295973976449747182051d35aded01b1332e7fcd59b",
+      "bytes": 7129
+    },
+    "source_snapshot/current_method/atlas_new/cost_precision.py": {
+      "sha256": "4b18ec1154c9ea8d1c8c73e6588e688f782972e9346f9da5b2cba279a5292d21",
+      "bytes": 24555
+    },
+    "source_snapshot/current_method/atlas_new/workflow.py": {
+      "sha256": "4c9a2185beb2b47b6ef289498b15136966bb03fc2318214e013c50591782e327",
+      "bytes": 15747
+    },
+    "source_snapshot/current_method/configs/cost_precision_full.json": {
+      "sha256": "93b81d08167b52fd413fa51662e3153a7cf9359155b9cbfa9c9a1f9659314494",
+      "bytes": 653
+    },
+    "source_snapshot/current_method/tests/test_cost_precision.py": {
+      "sha256": "685d34cc508828d3044809accfdfc86c295439b18418127924d0508f664e0cfb",
+      "bytes": 10481
+    },
+    "source_snapshot/current_method/tests/test_workflow.py": {
+      "sha256": "57ea2f6e782bd4a5625f765212f2ef80b5cbeeb9b9d6142ef3518a6e2e508d3f",
+      "bytes": 5487
+    }
+  }
+}

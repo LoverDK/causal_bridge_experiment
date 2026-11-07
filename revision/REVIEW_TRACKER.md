@@ -2,7 +2,7 @@
 
 更新：2026-11-07（Asia/Shanghai）。基线：`7e5841d3f3f22f892233582b9509aad656f3d266`；分支：`codex/reviewer-guided-rebuild`。
 
-已完成写作副本、原workflow只读审计及首轮具体方案；尚未运行本轮新模拟。已有结果的重算与新实验分开，没有问题被标为全部解决。 机器可读版本为 `review_tracker.json`，两份同步维护。
+原流程已完整复现；独立种子的成本—精度新实验与分析完成。全部12项意见已回顾，负结果保留，没有问题标为全部解决；I&K/Manski阅读核查已另存。 机器可读版本为 `review_tracker.json`，两份同步维护。
 
 ## 每轮固定要求
 
@@ -14,7 +14,7 @@
 
 推进后：记录版本、配置、种子、产物和结果，逐项回顾全部问题。将前/后记录分别写入 JSON 的 `round_review_protocol.entries`。未检查的意见沿用状态，负结果保留。
 
-本轮执行协议：[FIRST_WORKFLOW.md](FIRST_WORKFLOW.md)。尚未启动新实验；先 smoke 和单世界轨迹，再检查三类预设情形，理解后才 full。
+本轮设计：[FIRST_WORKFLOW.md](FIRST_WORKFLOW.md)；运行前冻结协议：[COST_PRECISION_RUN01.md](COST_PRECISION_RUN01.md)。原复现和新smoke/full均完成，结果见[RUN01解读](results/cost_precision_run01/RESULTS.md)。作者理解仍待讨论；下方旧轮次记录按历史保留。
 
 状态：`open` = 关键修复证据仍缺；`partial_evidence` = 有限证据不足验收；`pending_source` = 写作待最新源；`writing_in_progress` = 最新源已取得、副本改写进行中。本轮不设 resolved。
 
@@ -41,6 +41,8 @@
 
 依据：`用户 PDF 第 1–2 页`；`nrhq review`。
 
+本轮更新（RUN01）：有可复核的完整流程、成本与精度例子；作者是否理解、正文是否足够清楚仍需讨论。 状态不变。
+
 ### REV-02 · R∞ 的代价与 R2 的实际用途
 
 优先级：P0；状态：`partial_evidence`。映射：WGDN.W1a、WGDN.Q1、nrhq.Q1。
@@ -61,6 +63,8 @@
 首轮不能回答：R∞ 普遍更优；完成 sample-split 或真实适应性效用比较。
 
 依据：`current_method/atlas_new/core.py`；`current_method/atlas_new/workflow.py`；`current_method/results/workflow_full/pooled_summary.csv`。
+
+本轮更新（RUN01）：补齐设计型 R2/R∞ 的成本、宽度和覆盖比较；未测试结果驱动选择或合法 sample splitting，不能据此宣称 selection-safe 收益。 状态不变。
 
 ### REV-03 · 摘要数字与证书结果归因
 
@@ -83,6 +87,8 @@
 
 依据：`用户 PDF 摘要、Figure 2B、Table 15`；`paper_original/run_operational_experiments.py`。
 
+本轮更新（RUN01）：新数字明确绑定 R2/R∞、prefix/stopped 与输出任务；未把本轮数字自动写入摘要，其他实验归因仍待全篇核对。 状态不变。
+
 ### REV-04 · 真实机制集合与 L,H 的来源
 
 优先级：P0；状态：`open`。映射：WGDN.W2a、WGDN.Q2、KoBT.W1、KoBT.Q1。
@@ -103,6 +109,8 @@
 首轮不能回答：现实集合或 L,H 已有效；合成校准直接认证真实跨干预。
 
 依据：`current_method/atlas_new/workflow.py`；`current_method/docs/mechanism_set_calibration_protocol.md`。
+
+本轮更新（RUN01）：仅使用合成校准和已知解析 L,H；真实机制集合、错设与外部有效性没有新增证据。 状态不变。
 
 ### REV-05 · 真实闭环与微贷 not_qualified
 
@@ -125,6 +133,8 @@
 
 依据：`MICROCREDIT_PUBLISHED_V1_REPORT_20260925.md`；`results/microcredit_primary_published_v1/loso_summary.csv`；`results/microcredit_primary_published_v1/qualification_audit.csv`。
 
+本轮更新（RUN01）：完整合成闭环已实际重跑；真实微贷 not_qualified 和真实证书案例缺口不变。 状态不变。
+
 ### REV-06 · Many Labs 目标噪声与迁移证据
 
 优先级：P0；状态：`partial_evidence`。映射：WGDN.W2c、WGDN.W2b、nrhq.Q2。
@@ -146,26 +156,30 @@
 
 依据：`paper_original/run_manylabs2_framing.py`；`current_method/atlas_new/manylabs.py`；`current_method/results/full/manylabs_holdouts.csv`；`本会话对已有 CSV 的只读半径分解；非新方法实验`。
 
+本轮更新（RUN01）：没有运行 Many Labs；目标噪声主导的问题不由本轮修复。 状态不变。
+
 ### REV-07 · 可行基线、权重收益与完整成本
 
 优先级：P0；状态：`partial_evidence`。映射：nrhq.W4、nrhq.Q2、WGDN.W1a、WGDN.Q1。
 
 已知证据：已有 Appendix P 在共同 random bridge path 下支持部分合成场景的 design-only R2 权重收益，不能归为 R∞ 收益或超越最近前作。 已有汇总中直接 target trial 在若干设置更有利；审计/部署成本未纳入；尚无完整 ExAtlas matched-information 对照。
 
-缺口：缺统一信息、假设、预算、置信水平和停止规则的强基线对照及全部成本。
+缺口：合成六策略已按统一评价比较；仍缺最近前作、样本拆分等强外部基线与审计部署总成本，以及真实输入下的对应证据。
 
 验收证据：
 
 - 与适用设计权重、稳健聚合、样本拆分、最近前作和直接 trial 比较，明确不可比条件。
 - 报告 coverage、错误发布、发布率、宽度、目标误差与成本；保留全部预设场景及负结果。
 
-下一步：首轮先理解已有策略身份和成本；强基线及总成本另立协议。
+下一步：作者讨论成本—精度交叉及失败场景；下一协议考虑可观测输入下桥接/目标切换，强外部基线和完整成本仍须独立补齐。
 
 首轮能回答：单世界中各策略做了什么、花费多少参与者。
 
 首轮不能回答：smoke 证明优越性；弱基线已覆盖 ExAtlas；参与者成本等于现实总成本。
 
 依据：`current_method/results/ablations_full/report.md`；`current_method/results/ablations_full/stopped_summary.csv`；`current_method/results/workflow_full/pooled_summary.csv`。
+
+本轮更新（RUN01）：在共同名义可靠性、明确新增成本下完成六策略和全部预设场景比较，直接推进 nrhq.W4/Q2；最近前作/样本拆分及审计部署总成本仍缺。 状态不变。
 
 ### REV-08 · I&K、Manski、ExAtlas 与新增贡献
 
@@ -180,13 +194,15 @@
 - 按 estimand、信息、假设、目标、采样误差、机制集合和选择规则列已有、推论与新增命题。
 - 区分 Theorem 5.3 的 finite-metric sharp 特例与一般 outer region；新增主张有证明或直接实验，并补引用。
 
-下一步：先完成文献/数学映射，再确定贡献与近邻实验。
+下一步：依据原文完成Theorem 5.3继承关系与贡献边界改写；继续核对ExAtlas等近邻，不以任务名称不同替代数学比较。
 
 首轮能回答：提供本实现的具体接口与信息边界供后续比较。
 
 首轮不能回答：流程跑通证明新颖性；优于弱基线等于超越近邻。
 
 依据：`https://arxiv.org/html/2108.06473v4`；`https://doi.org/10.1097/EDE.0000000000001178`；`https://arxiv.org/html/2605.27153v1`；`用户 PDF Theorem 5.3、Eq. 4.1、Appendix C`。
+
+本轮更新（RUN01）：并行核查 I&K/Manski，明确 Theorem 5.3 的集合构造继承关系；未完成论文本体修改、全部近邻比较或贡献新颖性证明。 状态不变。
 
 ### REV-09 · 凸组合候选类的理由与边界
 
@@ -209,6 +225,8 @@
 
 依据：`current_method/atlas_new/core.py`；`用户 PDF Sections 3–4、Theorem 5.4`。
 
+本轮更新（RUN01）：本轮维持 simplex 估计器类；没有负权重、回归或 IPD 对照，不能回答为何该候选类充分。 状态不变。
+
 ### REV-10 · bridge 定理与实际一步 heuristic
 
 优先级：P1；状态：`open`。映射：KoBT.W4、KoBT.Q1、nrhq.Q1。
@@ -229,6 +247,8 @@
 首轮不能回答：heuristic 运行验证 logdet 定理；保证扩展到一般非线性因果模型。
 
 依据：`current_method/atlas_new/workflow.py`；`用户 PDF Theorem 5.6、Appendix L.3`。
+
+本轮更新（RUN01）：验证的是 prospective-radius heuristic；随机与最近来源对照不能验证 logdet 定理，非高斯/异方差稳健性仍缺。 状态不变。
 
 ### REV-11 · 方法命名、旧 prototype 与结果版本
 
@@ -251,13 +271,15 @@
 
 依据：`CURRENT_ARTIFACTS.md`；`README.md`；`legacy_audits/`；`用户 PDF 附录和 NSW 叙述`。
 
+本轮更新（RUN01）：新结果有冻结配置、独立种子、源快照和哈希；全篇 prototype 与当前方法的归属核对仍未完成。 状态不变。
+
 ### REV-12 · 拒绝对象、停止状态与统计验收
 
 优先级：P1；状态：`partial_evidence`。映射：WGDN.Q2、WGDN.Q3、WGDN.W2b、KoBT.W3、KoBT.Q1、nrhq.Q2。
 
 已知证据：已有 sharp_lipschitz / outer-region 工具和 workflow；有限已知位置的 sharp region 不等于一般机制集合的 sharp region。 联合事件 P(release 且 bad error) 控制不等于给定 release 的条件覆盖。 现有 unreachable 菜单可耗尽预算仍拒绝；提前判无效/转直接 target 仍缺。
 
-缺口：需统一资格失败、已算拒绝、发布、预算停止及空/无界/有限区域记录；统计口径与停止策略仍需核对。
+缺口：本合成流程输出/停止/空无界/分母已核对；真实资格失败状态、sharp区域与外区间的全篇归属，以及提前无效停止/目标切换仍待处理。
 
 验收证据：
 
@@ -265,13 +287,15 @@
 - 指标注明分母、eta/zeta 和 joint/conditional 事件；零发布条件风险 undefined；策略切换先定义后评估。
 - 每轮前后回顾全部 review，用产物逐项验收，运行成功不直接关闭问题。
 
-下一步：按 FIRST_WORKFLOW.md 先 smoke 和单世界轨迹，核对状态与信息流，再考虑 full。
+下一步：讨论完整前缀与首次半宽达标结果；下一协议明确提前无效停止与目标切换，真实资格状态另立审计。
 
 首轮能回答：工程闭环、状态、信息边界、统计口径和实际停止行为。
 
 首轮不能回答：运行即解决 review；联合错误等于条件覆盖；真实输入可信性、新颖性或普遍优势。
 
 依据：`current_method/atlas_new/core.py`；`current_method/atlas_new/workflow.py`；`用户 PDF Eq. 4.3、Theorem 5.3、Appendix F.7`。
+
+本轮更新（RUN01）：严格区分点发布、拒绝外区间、半宽达标、完整前缀和原停止；失败/无界保留，支持本合成流程统计口径。真实资格状态、提前无效停止和 sharp 区域使用仍待处理。 状态不变。
 
 ## 完整 review 映射
 
@@ -347,3 +371,27 @@ Q1 仅回指 W1–W4。
 旧linear/bridgeable/replicate 0、delta=.3、96人时，定向R2和直接目标均发布，但半宽分别是.205812与.292060，说明相同成本和相同发布状态仍可有不同精度。这是解释性单例，不是总体优势证据。
 
 已回顾全部12项，状态不变。重点推进REV-07与REV-12的评价设计，仍无新模拟。原停止轨迹与新完整预算采集轨迹明确分开；后者尚未实现，需要独立版本与预先固定的新种子。覆盖、无界/空区间、未达标世界以及成本范围都必须共同报告。真实机制、真实应用、自适应用途、新颖性与理论范围缺口均继续保留。
+
+
+## COST-PRECISION-RUN01：执行完成
+
+原流程已完整复现；独立种子的成本—精度新实验与分析完成。全部12项意见已回顾，负结果保留，没有问题标为全部解决；I&K/Manski阅读核查已另存。
+
+- REV-01：有可复核的完整流程、成本与精度例子；作者是否理解、正文是否足够清楚仍需讨论。
+- REV-02：补齐设计型 R2/R∞ 的成本、宽度和覆盖比较；未测试结果驱动选择或合法 sample splitting，不能据此宣称 selection-safe 收益。
+- REV-03：新数字明确绑定 R2/R∞、prefix/stopped 与输出任务；未把本轮数字自动写入摘要，其他实验归因仍待全篇核对。
+- REV-04：仅使用合成校准和已知解析 L,H；真实机制集合、错设与外部有效性没有新增证据。
+- REV-05：完整合成闭环已实际重跑；真实微贷 not_qualified 和真实证书案例缺口不变。
+- REV-06：没有运行 Many Labs；目标噪声主导的问题不由本轮修复。
+- REV-07：在共同名义可靠性、明确新增成本下完成六策略和全部预设场景比较，直接推进 nrhq.W4/Q2；最近前作/样本拆分及审计部署总成本仍缺。
+- REV-08：并行核查 I&K/Manski，明确 Theorem 5.3 的集合构造继承关系；未完成论文本体修改、全部近邻比较或贡献新颖性证明。
+- REV-09：本轮维持 simplex 估计器类；没有负权重、回归或 IPD 对照，不能回答为何该候选类充分。
+- REV-10：验证的是 prospective-radius heuristic；随机与最近来源对照不能验证 logdet 定理，非高斯/异方差稳健性仍缺。
+- REV-11：新结果有冻结配置、独立种子、源快照和哈希；全篇 prototype 与当前方法的归属核对仍未完成。
+- REV-12：严格区分点发布、拒绝外区间、半宽达标、完整前缀和原停止；失败/无界保留，支持本合成流程统计口径。真实资格状态、提前无效停止和 sharp 区域使用仍待处理。
+
+运行32项与分析18项核验全部通过。最直接支持nrhq.W4/Q2的合成对照与成本—精度解释，未关闭该意见。详见[结果解读](results/cost_precision_run01/RESULTS.md)和[核验记录](evidence/cost_precision_run01_complete.json)。
+
+## RELATED-WORK-01：点名文献阅读完成
+
+[阅读说明](RELATED_WORK_READING.md)核实I&K已有pairwise Lipschitz空间、目标投影与含噪置信矩形构造；Manski的集合交原则与本稿有直接关系。Manski细节来自2019作者前稿，未声称读取最终刊版全文。REV-08保持open；论文相关工作与贡献定位尚待改写。

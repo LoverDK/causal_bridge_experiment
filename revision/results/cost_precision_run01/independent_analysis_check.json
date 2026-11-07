@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "scope": "independent saved-data checks; no simulation rerun",
+  "analysis_manifest_status": "complete",
+  "checked_attainment_rows": 43200,
+  "checked_cell_summaries": 432,
+  "rinf_bridgeable_delta03_final": {
+    "n": 600,
+    "original_released": 207,
+    "narrow_intervals": 353,
+    "unreleased_but_narrow": 146
+  },
+  "final_prefix_min_cell_path_coverage": 0.98,
+  "max_first_hit_bad_rate": 0.005,
+  "inconsistent_intervals": 0,
+  "visual_checks": [
+    "cost_precision_delta_0p3.png",
+    "path_coverage_delta_0p2.png",
+    "attainment_returned_interval_delta_0p3.png"
+  ],
+  "visual_findings": "All 9 cells and all 6 methods visible, legends and labels not clipped. Static represented at actual cost zero; direct n=0 infinity annotated."
+}

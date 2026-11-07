@@ -1,0 +1,30 @@
+PATTERN test_workflow.py
+test_analytic_gradients (test_workflow.WorkflowChecks.test_analytic_gradients) ... ok
+test_ball_bound_dominates_realized_geometry (test_workflow.WorkflowChecks.test_ball_bound_dominates_realized_geometry) ... ok
+test_final_radius_recomputed_and_old_weights_remain_available (test_workflow.WorkflowChecks.test_final_radius_recomputed_and_old_weights_remain_available) ... ok
+test_no_collect_after_release_and_cumulative_target_batches (test_workflow.WorkflowChecks.test_no_collect_after_release_and_cumulative_target_batches) ... ok
+test_planning_and_stop_ignore_target_truth_and_future_outcomes (test_workflow.WorkflowChecks.test_planning_and_stop_ignore_target_truth_and_future_outcomes) ... ok
+test_same_world_reproduces_and_calibration_covers_candidate_universe (test_workflow.WorkflowChecks.test_same_world_reproduces_and_calibration_covers_candidate_universe) ... ok
+test_summary_noise_matches_two_balanced_arms (test_workflow.WorkflowChecks.test_summary_noise_matches_two_balanced_arms) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.267s
+
+OK
+
+PATTERN test_cost_precision.py
+test_agrees_with_legacy_execute_until_its_first_stop (test_cost_precision.CostPrecisionChecks.test_agrees_with_legacy_execute_until_its_first_stop) ... ok
+test_calibration_reconstruction_and_joint_coverage_log (test_cost_precision.CostPrecisionChecks.test_calibration_reconstruction_and_joint_coverage_log) ... ok
+test_changed_observed_effects_change_estimate_not_design_decisions (test_cost_precision.CostPrecisionChecks.test_changed_observed_effects_change_estimate_not_design_decisions) ... ok
+test_collects_after_release_while_legacy_stops (test_cost_precision.CostPrecisionChecks.test_collects_after_release_while_legacy_stops) ... ok
+test_halfwidth_and_midpoint_preserve_refusal_semantics (test_cost_precision.CostPrecisionChecks.test_halfwidth_and_midpoint_preserve_refusal_semantics) ... ok
+test_path_coverage_is_joint_across_each_output (test_cost_precision.CostPrecisionChecks.test_path_coverage_is_joint_across_each_output) ... ok
+test_saved_artifact_validation_detects_cost_corruption (test_cost_precision.CostPrecisionChecks.test_saved_artifact_validation_detects_cost_corruption) ... ok
+test_saved_decomposition_matches_legacy_certificate (test_cost_precision.CostPrecisionChecks.test_saved_decomposition_matches_legacy_certificate) ... ok
+test_scoring_truth_cannot_change_multiround_decisions_or_data (test_cost_precision.CostPrecisionChecks.test_scoring_truth_cannot_change_multiround_decisions_or_data) ... ok
+test_static_does_not_spend_an_available_budget (test_cost_precision.CostPrecisionChecks.test_static_does_not_spend_an_available_budget) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.104s
+
+OK

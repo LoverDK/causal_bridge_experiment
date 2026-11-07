@@ -1,0 +1,154 @@
+{
+  "run_id": "COST-PRECISION-RUN01",
+  "status": "complete",
+  "raw_manifest": "reproduced\\round01-cost-precision-full\\run_manifest.json",
+  "analysis_manifest": "reproduced\\round01-cost-precision-full\\analysis\\analysis_manifest.json",
+  "code_revision": "2b0485f3d16706afce98181648c226750881c0c3",
+  "seed": 2026110702,
+  "run_counts": {
+    "independent_worlds": 1800,
+    "prefix_records": 86400,
+    "stopped_records": 86400,
+    "acquisitions_logged": 86917,
+    "planned_states": 30600,
+    "candidate_scores": 54000
+  },
+  "run_checks_passed": 32,
+  "analysis_checks_passed": 18,
+  "statistical_diagnostic_signals": 0,
+  "all_issue_review": {
+    "REV-01": "有可复核的完整流程、成本与精度例子；作者是否理解、正文是否足够清楚仍需讨论。",
+    "REV-02": "补齐设计型 R2/R∞ 的成本、宽度和覆盖比较；未测试结果驱动选择或合法 sample splitting，不能据此宣称 selection-safe 收益。",
+    "REV-03": "新数字明确绑定 R2/R∞、prefix/stopped 与输出任务；未把本轮数字自动写入摘要，其他实验归因仍待全篇核对。",
+    "REV-04": "仅使用合成校准和已知解析 L,H；真实机制集合、错设与外部有效性没有新增证据。",
+    "REV-05": "完整合成闭环已实际重跑；真实微贷 not_qualified 和真实证书案例缺口不变。",
+    "REV-06": "没有运行 Many Labs；目标噪声主导的问题不由本轮修复。",
+    "REV-07": "在共同名义可靠性、明确新增成本下完成六策略和全部预设场景比较，直接推进 nrhq.W4/Q2；最近前作/样本拆分及审计部署总成本仍缺。",
+    "REV-08": "并行核查 I&K/Manski，明确 Theorem 5.3 的集合构造继承关系；未完成论文本体修改、全部近邻比较或贡献新颖性证明。",
+    "REV-09": "本轮维持 simplex 估计器类；没有负权重、回归或 IPD 对照，不能回答为何该候选类充分。",
+    "REV-10": "验证的是 prospective-radius heuristic；随机与最近来源对照不能验证 logdet 定理，非高斯/异方差稳健性仍缺。",
+    "REV-11": "新结果有冻结配置、独立种子、源快照和哈希；全篇 prototype 与当前方法的归属核对仍未完成。",
+    "REV-12": "严格区分点发布、拒绝外区间、半宽达标、完整前缀和原停止；失败/无界保留，支持本合成流程统计口径。真实资格状态、提前无效停止和 sharp 区域使用仍待处理。"
+  },
+  "interpretation": "Conditional cost/precision gains, not universal superiority; all negative scenarios retained.",
+  "author_understanding": "pending_author_discussion",
+  "copied_artifacts": {
+    "analysis_manifest.json": {
+      "sha256": "42c65ceb282b67f185b043c782725768ff5099c09f6897632ceb932cce2e6e82",
+      "bytes": 8006
+    },
+    "analysis_validation.json": {
+      "sha256": "074f0f8c7e4a493c17d98b43c88bac747713a73ea9258a61dd7a4fc7a00d0489",
+      "bytes": 1568
+    },
+    "attainment_summary.csv": {
+      "sha256": "f3b9f2728a1e08c40d4dc8ec78e4eeadfde7323d09b4877d2a33c9aed758182a",
+      "bytes": 139894
+    },
+    "independent_analysis_check.json": {
+      "sha256": "08b9949a8f3ce2c1f2983be57b4f4095fcbabedefc2db905610952b92f901b2a",
+      "bytes": 796
+    },
+    "paired_attainment.csv": {
+      "sha256": "579ab67e714c80dbe6e0da3209acdce4db90fb86f4d729a6a5409c961ffe45cb",
+      "bytes": 67683
+    },
+    "paired_comparisons.csv": {
+      "sha256": "3360b2a9c34b8a0a415bcf51b26ba3f67d315afdebb0aa62a4579b4cf35bfada",
+      "bytes": 342218
+    },
+    "report.md": {
+      "sha256": "96375be7d7d2867c08198f8cb55987ab46b4142eab815adc2471a71d7c9f6e2e",
+      "bytes": 18759
+    },
+    "RESULTS.md": {
+      "sha256": "f8b049f13f73bbbfd2c490b0910f8a1d94bedf0a25f93093c62e5045da9328e8",
+      "bytes": 12138
+    },
+    "run_manifest.json": {
+      "sha256": "7a6e97540d4f24faa3faac229786a1a5bcd84b3ef679907ca7ec2202899be349",
+      "bytes": 11428
+    },
+    "statistical_calibration_checks.csv": {
+      "sha256": "ad0c9ca77e9e3d4862a17b042869dca4e0fc9ff73c202cae6bea1837f383a46c",
+      "bytes": 23290
+    },
+    "summary.csv": {
+      "sha256": "4a4a7932b6097623b746987259e8b9430a8565d7c618fe0bfd915daa90017224",
+      "bytes": 398175
+    },
+    "test_log.txt": {
+      "sha256": "45f9932626891b5469d4e7a00f926d7f475c5bfd8a4fea809deab982f4af8b13",
+      "bytes": 2854
+    },
+    "validation_checks.json": {
+      "sha256": "1b383d4d0ef61c8ca39b5c8a4fa6a16090ad26a1ff3431548cfad5ba2d7eeebc",
+      "bytes": 3914
+    },
+    "figures\\attainment_certificate_delta_0p2.pdf": {
+      "sha256": "0918ff48c02dc033cefe82e668cbd1937b01740ff2b174883b5569db749b3fea",
+      "bytes": 56694
+    },
+    "figures\\attainment_certificate_delta_0p2.png": {
+      "sha256": "521f966df9519596c9181b8d193646c07bff8fd1c0f989d44f2824a0d59d4543",
+      "bytes": 610679
+    },
+    "figures\\attainment_certificate_delta_0p3.pdf": {
+      "sha256": "c26be615ed4d3da42af27ba969cd02303f3887ccba2f03504652a2623e228f8f",
+      "bytes": 57503
+    },
+    "figures\\attainment_certificate_delta_0p3.png": {
+      "sha256": "3089ddc8a4284300d4917edc5cd990fca015295f181276da34f7e04bbee7de38",
+      "bytes": 692085
+    },
+    "figures\\attainment_returned_interval_delta_0p2.pdf": {
+      "sha256": "08e6ebb32f0e8148bc745427c3be7864f8b3692fd8763aae901959ac3e9ab594",
+      "bytes": 56867
+    },
+    "figures\\attainment_returned_interval_delta_0p2.png": {
+      "sha256": "b5ac5a0e2ceec54457a00da4f20e2d397e9ba7bd38fe24141df354f428251178",
+      "bytes": 623928
+    },
+    "figures\\attainment_returned_interval_delta_0p3.pdf": {
+      "sha256": "af600b1967776df6fbd21efb9433603c73872bf93d9e6ba2481d23b8d0de5ffb",
+      "bytes": 57616
+    },
+    "figures\\attainment_returned_interval_delta_0p3.png": {
+      "sha256": "ff56180374617512242c0e7616745f606833db0396f3f90c3c0d0ab790034785",
+      "bytes": 706091
+    },
+    "figures\\cost_precision_delta_0p2.pdf": {
+      "sha256": "44450b0b7a2239f3acf94641f5509a84ca73028df15e2681727d0d0a64a597d8",
+      "bytes": 60694
+    },
+    "figures\\cost_precision_delta_0p2.png": {
+      "sha256": "65b54c4feab7508b8b762102ef23ac8e23ab5409d4c31f267357d82269a63d25",
+      "bytes": 783298
+    },
+    "figures\\cost_precision_delta_0p3.pdf": {
+      "sha256": "e76fb6b876bc71f491c41225b6a5b43eef6ccd44699c7dfd81548f713b217186",
+      "bytes": 60690
+    },
+    "figures\\cost_precision_delta_0p3.png": {
+      "sha256": "f48cce9f9fdc792bb4d7be76e5753bdd2f9882ecccb1bf36c01cd32a61a96348",
+      "bytes": 789529
+    },
+    "figures\\path_coverage_delta_0p2.pdf": {
+      "sha256": "8ce106055097f18d55c36a1a45cb932f138c89e880a51132115f293181576c91",
+      "bytes": 56199
+    },
+    "figures\\path_coverage_delta_0p2.png": {
+      "sha256": "7eeb930dbc162f98246a419a8183be44b3f487a45140a094e4cf3b037ffb9e63",
+      "bytes": 501702
+    },
+    "figures\\path_coverage_delta_0p3.pdf": {
+      "sha256": "07601ef3656a9d9312ee477bfa0e9c9b4ac1287166e16bc6700b1ad62892a626",
+      "bytes": 56805
+    },
+    "figures\\path_coverage_delta_0p3.png": {
+      "sha256": "af29b1d69b111014ff736b4ba0768eaffde30652e9d36b308926f36f764ab7a9",
+      "bytes": 501915
+    }
+  },
+  "independent_analysis_check": "revision/results/cost_precision_run01/independent_analysis_check.json"
+}

@@ -1,0 +1,245 @@
+{
+  "status": "complete",
+  "started_utc": "2026-11-07T08:27:33.587803+00:00",
+  "command": [
+    "current_method/report_cost_precision.py",
+    "--input",
+    "reproduced/round01-cost-precision-full",
+    "--output",
+    "reproduced/round01-cost-precision-full/analysis"
+  ],
+  "input_directory": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\reproduced\\round01-cost-precision-full",
+  "analysis_seed": 2026110799,
+  "config": {
+    "profile": "cost_precision_full",
+    "seed": 2026110702,
+    "repetitions_per_cell": 200,
+    "surfaces": [
+      "linear",
+      "quadratic",
+      "sinusoidal"
+    ],
+    "scenarios": [
+      "supported",
+      "bridgeable",
+      "unreachable"
+    ],
+    "dimension": 2,
+    "initial_sources": 4,
+    "candidate_bridges": 6,
+    "max_bridges": 3,
+    "archive_participants": 800,
+    "participants_per_bridge": 96,
+    "calibration_archives": 199,
+    "proxy_scale": 0.012,
+    "eta": 0.05,
+    "zeta": 0.05,
+    "tolerances": [
+      0.2,
+      0.3
+    ],
+    "methods": [
+      "r2_targeted",
+      "rinf_targeted",
+      "r2_random",
+      "r2_nearest",
+      "r2_static",
+      "target_only"
+    ],
+    "bootstrap_repetitions": 2000,
+    "bootstrap_seed": 2026110799,
+    "workers": 4
+  },
+  "scope": "Saved-data analysis; no new simulation; pointwise paired bootstrap CIs, not familywise claims",
+  "source_sha256": {
+    "report_cost_precision.py": "6eb640cf327b3a26a92d8195cac0c28a1a64822c02d4cf082728b0920c6619be",
+    "atlas_new\\cost_precision_report.py": "ba235509cdfb5c705fb4eb87478539fc84e918fae44816461d72c376a86ce3c0"
+  },
+  "input_sha256": {
+    "prefix_records.csv": "bb282f825edf262b9a86e7d11749e1760e2d68596003981f8f9f5edd91e94bdd",
+    "stopped_records.csv": "4fe6a190601ef71d5f209a5bbe5ccbad5533f03b80cc60d4e3941aee1819d85d",
+    "run_manifest.json": "7a6e97540d4f24faa3faac229786a1a5bcd84b3ef679907ca7ec2202899be349"
+  },
+  "packages": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "matplotlib": "3.11.1"
+  },
+  "git_revision": "2b0485f3d16706afce98181648c226750881c0c3",
+  "counts": {
+    "summary_rows": 1152,
+    "attainment_world_rows": 43200,
+    "paired_precision_rows": 2880,
+    "paired_attainment_rows": 720,
+    "checks": [
+      {
+        "name": "prefix balanced record count",
+        "passed": true
+      },
+      {
+        "name": "prefix unique world method tolerance budget",
+        "passed": true
+      },
+      {
+        "name": "prefix all expected worlds",
+        "passed": true
+      },
+      {
+        "name": "prefix finite halfwidth matches endpoints",
+        "passed": true
+      },
+      {
+        "name": "prefix original release rule unchanged",
+        "passed": true
+      },
+      {
+        "name": "prefix invalid not counted as precision success",
+        "passed": true
+      },
+      {
+        "name": "prefix target origin explicitly unbounded",
+        "passed": true
+      },
+      {
+        "name": "prefix actual cost equals sampled budget",
+        "passed": true
+      },
+      {
+        "name": "static cost stays zero",
+        "passed": true
+      },
+      {
+        "name": "stopped balanced record count",
+        "passed": true
+      },
+      {
+        "name": "stopped unique world method tolerance budget",
+        "passed": true
+      },
+      {
+        "name": "stopped all expected worlds",
+        "passed": true
+      },
+      {
+        "name": "stopped finite halfwidth matches endpoints",
+        "passed": true
+      },
+      {
+        "name": "stopped original release rule unchanged",
+        "passed": true
+      },
+      {
+        "name": "stopped invalid not counted as precision success",
+        "passed": true
+      },
+      {
+        "name": "stopped target origin explicitly unbounded",
+        "passed": true
+      },
+      {
+        "name": "attainment all-world denominator preserved",
+        "passed": true
+      },
+      {
+        "name": "nonattainment has missing success cost and observed spending",
+        "passed": true
+      }
+    ]
+  },
+  "finished_utc": "2026-11-07T08:28:20.049543+00:00",
+  "elapsed_seconds": 46.461757600074634,
+  "artifacts": {
+    "analysis_validation.json": {
+      "sha256": "074f0f8c7e4a493c17d98b43c88bac747713a73ea9258a61dd7a4fc7a00d0489",
+      "bytes": 1568
+    },
+    "attainment.csv": {
+      "sha256": "61c63c12b1d752b38f0fa9f6cce18f59ca5ca4d2594f6ff5fb57c34ff1d08405",
+      "bytes": 5546892
+    },
+    "attainment_summary.csv": {
+      "sha256": "f3b9f2728a1e08c40d4dc8ec78e4eeadfde7323d09b4877d2a33c9aed758182a",
+      "bytes": 139894
+    },
+    "paired_attainment.csv": {
+      "sha256": "579ab67e714c80dbe6e0da3209acdce4db90fb86f4d729a6a5409c961ffe45cb",
+      "bytes": 67683
+    },
+    "paired_comparisons.csv": {
+      "sha256": "3360b2a9c34b8a0a415bcf51b26ba3f67d315afdebb0aa62a4579b4cf35bfada",
+      "bytes": 342218
+    },
+    "report.md": {
+      "sha256": "96375be7d7d2867c08198f8cb55987ab46b4142eab815adc2471a71d7c9f6e2e",
+      "bytes": 18759
+    },
+    "summary.csv": {
+      "sha256": "4a4a7932b6097623b746987259e8b9430a8565d7c618fe0bfd915daa90017224",
+      "bytes": 398175
+    },
+    "figures\\attainment_certificate_delta_0p2.pdf": {
+      "sha256": "0918ff48c02dc033cefe82e668cbd1937b01740ff2b174883b5569db749b3fea",
+      "bytes": 56694
+    },
+    "figures\\attainment_certificate_delta_0p2.png": {
+      "sha256": "521f966df9519596c9181b8d193646c07bff8fd1c0f989d44f2824a0d59d4543",
+      "bytes": 610679
+    },
+    "figures\\attainment_certificate_delta_0p3.pdf": {
+      "sha256": "c26be615ed4d3da42af27ba969cd02303f3887ccba2f03504652a2623e228f8f",
+      "bytes": 57503
+    },
+    "figures\\attainment_certificate_delta_0p3.png": {
+      "sha256": "3089ddc8a4284300d4917edc5cd990fca015295f181276da34f7e04bbee7de38",
+      "bytes": 692085
+    },
+    "figures\\attainment_returned_interval_delta_0p2.pdf": {
+      "sha256": "08e6ebb32f0e8148bc745427c3be7864f8b3692fd8763aae901959ac3e9ab594",
+      "bytes": 56867
+    },
+    "figures\\attainment_returned_interval_delta_0p2.png": {
+      "sha256": "b5ac5a0e2ceec54457a00da4f20e2d397e9ba7bd38fe24141df354f428251178",
+      "bytes": 623928
+    },
+    "figures\\attainment_returned_interval_delta_0p3.pdf": {
+      "sha256": "af600b1967776df6fbd21efb9433603c73872bf93d9e6ba2481d23b8d0de5ffb",
+      "bytes": 57616
+    },
+    "figures\\attainment_returned_interval_delta_0p3.png": {
+      "sha256": "ff56180374617512242c0e7616745f606833db0396f3f90c3c0d0ab790034785",
+      "bytes": 706091
+    },
+    "figures\\cost_precision_delta_0p2.pdf": {
+      "sha256": "44450b0b7a2239f3acf94641f5509a84ca73028df15e2681727d0d0a64a597d8",
+      "bytes": 60694
+    },
+    "figures\\cost_precision_delta_0p2.png": {
+      "sha256": "65b54c4feab7508b8b762102ef23ac8e23ab5409d4c31f267357d82269a63d25",
+      "bytes": 783298
+    },
+    "figures\\cost_precision_delta_0p3.pdf": {
+      "sha256": "e76fb6b876bc71f491c41225b6a5b43eef6ccd44699c7dfd81548f713b217186",
+      "bytes": 60690
+    },
+    "figures\\cost_precision_delta_0p3.png": {
+      "sha256": "f48cce9f9fdc792bb4d7be76e5753bdd2f9882ecccb1bf36c01cd32a61a96348",
+      "bytes": 789529
+    },
+    "figures\\path_coverage_delta_0p2.pdf": {
+      "sha256": "8ce106055097f18d55c36a1a45cb932f138c89e880a51132115f293181576c91",
+      "bytes": 56199
+    },
+    "figures\\path_coverage_delta_0p2.png": {
+      "sha256": "7eeb930dbc162f98246a419a8183be44b3f487a45140a094e4cf3b037ffb9e63",
+      "bytes": 501702
+    },
+    "figures\\path_coverage_delta_0p3.pdf": {
+      "sha256": "07601ef3656a9d9312ee477bfa0e9c9b4ac1287166e16bc6700b1ad62892a626",
+      "bytes": 56805
+    },
+    "figures\\path_coverage_delta_0p3.png": {
+      "sha256": "af29b1d69b111014ff736b4ba0768eaffde30652e9d36b308926f36f764ab7a9",
+      "bytes": 501915
+    }
+  }
+}

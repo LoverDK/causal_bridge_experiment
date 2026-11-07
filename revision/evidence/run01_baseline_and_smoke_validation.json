@@ -1,0 +1,250 @@
+{
+  "original_full_manifest": "reproduced\\round01-original-full\\current_method\\results\\workflow_full\\run_manifest.json",
+  "original_full_status": "complete",
+  "byte_identical_baseline_outputs": {
+    "workflow_records.csv": true,
+    "workflow_summary.csv": true,
+    "pooled_summary.csv": true,
+    "paired_comparisons.csv": true,
+    "acquisitions.csv": true,
+    "plans.jsonl": true
+  },
+  "new_smoke_manifest": "reproduced\\round01-cost-precision-smoke\\run_manifest.json",
+  "smoke_checks": [
+    {
+      "name": "complete and unique world audits",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "one reconstructed calibration per world",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reconstructed scores reproduce the declared order statistic",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no global optimality claim",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "two arms reconstruct every acquired effect",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prefix: balanced unique records",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prefix: mode labels match file",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prefix: original release event preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prefix: error release event is unconditional",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prefix: halfwidth is returned width, not certificate radius",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prefix: diagnostic midpoint only for finite nonempty intervals",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prefix: actual cost, acquisition count and selected IDs agree",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prefix: all weighted sources available and weights feasible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prefix: predictions reconstructed from actual arm summaries",
+      "passed": true,
+      "detail": "1.1102230246251565e-15"
+    },
+    {
+      "name": "prefix: legacy certificate matches saved decomposition",
+      "passed": true,
+      "detail": "7.105427357601002e-15"
+    },
+    {
+      "name": "prefix: returned and refused endpoints independently reconstructed",
+      "passed": true,
+      "detail": "7.771561172376096e-15"
+    },
+    {
+      "name": "prefix: acquisition and interval states remain consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prefix: path coverage is conjunction across all reported outputs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stopped: balanced unique records",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stopped: mode labels match file",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stopped: original release event preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stopped: error release event is unconditional",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stopped: halfwidth is returned width, not certificate radius",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stopped: diagnostic midpoint only for finite nonempty intervals",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stopped: actual cost, acquisition count and selected IDs agree",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stopped: all weighted sources available and weights feasible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stopped: predictions reconstructed from actual arm summaries",
+      "passed": true,
+      "detail": "1.1102230246251565e-15"
+    },
+    {
+      "name": "stopped: legacy certificate matches saved decomposition",
+      "passed": true,
+      "detail": "7.105427357601002e-15"
+    },
+    {
+      "name": "stopped: returned and refused endpoints independently reconstructed",
+      "passed": true,
+      "detail": "7.771561172376096e-15"
+    },
+    {
+      "name": "stopped: acquisition and interval states remain consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stopped: path coverage is conjunction across all reported outputs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prefix and original stopped modes agree through first stop",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "smoke_analysis_checks": [
+    {
+      "name": "prefix balanced record count",
+      "passed": true
+    },
+    {
+      "name": "prefix unique world method tolerance budget",
+      "passed": true
+    },
+    {
+      "name": "prefix all expected worlds",
+      "passed": true
+    },
+    {
+      "name": "prefix finite halfwidth matches endpoints",
+      "passed": true
+    },
+    {
+      "name": "prefix original release rule unchanged",
+      "passed": true
+    },
+    {
+      "name": "prefix invalid not counted as precision success",
+      "passed": true
+    },
+    {
+      "name": "prefix target origin explicitly unbounded",
+      "passed": true
+    },
+    {
+      "name": "prefix actual cost equals sampled budget",
+      "passed": true
+    },
+    {
+      "name": "static cost stays zero",
+      "passed": true
+    },
+    {
+      "name": "stopped balanced record count",
+      "passed": true
+    },
+    {
+      "name": "stopped unique world method tolerance budget",
+      "passed": true
+    },
+    {
+      "name": "stopped all expected worlds",
+      "passed": true
+    },
+    {
+      "name": "stopped finite halfwidth matches endpoints",
+      "passed": true
+    },
+    {
+      "name": "stopped original release rule unchanged",
+      "passed": true
+    },
+    {
+      "name": "stopped invalid not counted as precision success",
+      "passed": true
+    },
+    {
+      "name": "stopped target origin explicitly unbounded",
+      "passed": true
+    },
+    {
+      "name": "attainment all-world denominator preserved",
+      "passed": true
+    },
+    {
+      "name": "nonattainment has missing success cost and observed spending",
+      "passed": true
+    }
+  ],
+  "interpretation": "Reproduction and smoke validation only, not a new scientific efficacy conclusion."
+}

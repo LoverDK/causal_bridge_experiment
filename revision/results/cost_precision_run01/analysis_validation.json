@@ -1,0 +1,74 @@
+[
+  {
+    "name": "prefix balanced record count",
+    "passed": true
+  },
+  {
+    "name": "prefix unique world method tolerance budget",
+    "passed": true
+  },
+  {
+    "name": "prefix all expected worlds",
+    "passed": true
+  },
+  {
+    "name": "prefix finite halfwidth matches endpoints",
+    "passed": true
+  },
+  {
+    "name": "prefix original release rule unchanged",
+    "passed": true
+  },
+  {
+    "name": "prefix invalid not counted as precision success",
+    "passed": true
+  },
+  {
+    "name": "prefix target origin explicitly unbounded",
+    "passed": true
+  },
+  {
+    "name": "prefix actual cost equals sampled budget",
+    "passed": true
+  },
+  {
+    "name": "static cost stays zero",
+    "passed": true
+  },
+  {
+    "name": "stopped balanced record count",
+    "passed": true
+  },
+  {
+    "name": "stopped unique world method tolerance budget",
+    "passed": true
+  },
+  {
+    "name": "stopped all expected worlds",
+    "passed": true
+  },
+  {
+    "name": "stopped finite halfwidth matches endpoints",
+    "passed": true
+  },
+  {
+    "name": "stopped original release rule unchanged",
+    "passed": true
+  },
+  {
+    "name": "stopped invalid not counted as precision success",
+    "passed": true
+  },
+  {
+    "name": "stopped target origin explicitly unbounded",
+    "passed": true
+  },
+  {
+    "name": "attainment all-world denominator preserved",
+    "passed": true
+  },
+  {
+    "name": "nonattainment has missing success cost and observed spending",
+    "passed": true
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "name": "complete and unique world audits",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "one reconstructed calibration per world",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "reconstructed scores reproduce the declared order statistic",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "no global optimality claim",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "two arms reconstruct every acquired effect",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "prefix: balanced unique records",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "prefix: mode labels match file",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "prefix: original release event preserved",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "prefix: error release event is unconditional",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "prefix: halfwidth is returned width, not certificate radius",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "prefix: diagnostic midpoint only for finite nonempty intervals",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "prefix: actual cost, acquisition count and selected IDs agree",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "prefix: all weighted sources available and weights feasible",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "prefix: predictions reconstructed from actual arm summaries",
+    "passed": true,
+    "detail": "1.4988010832439613e-15"
+  },
+  {
+    "name": "prefix: legacy certificate matches saved decomposition",
+    "passed": true,
+    "detail": "8.215650382226158e-15"
+  },
+  {
+    "name": "prefix: returned and refused endpoints independently reconstructed",
+    "passed": true,
+    "detail": "8.43769498715119e-15"
+  },
+  {
+    "name": "prefix: acquisition and interval states remain consistent",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "prefix: path coverage is conjunction across all reported outputs",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "stopped: balanced unique records",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "stopped: mode labels match file",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "stopped: original release event preserved",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "stopped: error release event is unconditional",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "stopped: halfwidth is returned width, not certificate radius",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "stopped: diagnostic midpoint only for finite nonempty intervals",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "stopped: actual cost, acquisition count and selected IDs agree",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "stopped: all weighted sources available and weights feasible",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "stopped: predictions reconstructed from actual arm summaries",
+    "passed": true,
+    "detail": "1.4988010832439613e-15"
+  },
+  {
+    "name": "stopped: legacy certificate matches saved decomposition",
+    "passed": true,
+    "detail": "8.215650382226158e-15"
+  },
+  {
+    "name": "stopped: returned and refused endpoints independently reconstructed",
+    "passed": true,
+    "detail": "8.43769498715119e-15"
+  },
+  {
+    "name": "stopped: acquisition and interval states remain consistent",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "stopped: path coverage is conjunction across all reported outputs",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "prefix and original stopped modes agree through first stop",
+    "passed": true,
+    "detail": ""
+  }
+]
