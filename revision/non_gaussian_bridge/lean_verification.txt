@@ -1,0 +1,58 @@
+MODULE NonGaussianProbability
+EXIT 0
+MODULE NonGaussianDesign
+EXIT 0
+'CausalAtlas.NonGaussianDesign.exists_radius_minimizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlas.NonGaussianDesign.selectMinRadius_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlas.NonGaussianDesign.geometric_gap_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlas.NonGaussianDesign.greedy_finite_budget_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+MODULE NonGaussianEuclidean
+EXIT 0
+'CausalAtlas.NonGaussianEuclidean.linear_bias_le_euclidean' depends on axioms: [propext, Classical.choice, Quot.sound]
+MODULE NonGaussianMoments
+EXIT 0
+MODULE NonGaussianMatrix
+EXIT 0
+'CausalAtlas.NonGaussianMatrix.sandwich_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlas.NonGaussianMatrix.sandwich_identity_of_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+MODULE NonGaussianTargetUpdate
+EXIT 0
+'CausalAtlas.NonGaussianTargetUpdate.radius_le_of_score_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlas.NonGaussianTargetUpdate.exists_best_next_width' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlas.NonGaussianTargetUpdate.rank_one_inverse_update' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlas.NonGaussianTargetUpdate.target_quadratic_update' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlas.NonGaussianTargetUpdate.exists_best_target_next' depends on axioms: [propext, Classical.choice, Quot.sound]
+MODULE NonGaussianBridge
+EXIT 0
+MODULE NonGaussianAxiomAudit
+EXIT 0
+'CausalAtlasNonGaussian.shifted_chebyshev_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlasNonGaussian.shifted_chebyshev' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlasNonGaussian.weighted_variance_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlasNonGaussian.weighted_variance_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlasNonGaussian.weighted_mean_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlasNonGaussian.weighted_error_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlasNonGaussian.weighted_correlated_variance_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlasNonGaussian.weighted_cross_covariance_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlasNonGaussian.block_variance_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlasNonGaussian.block_mean_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlasNonGaussian.block_error_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonGaussianBridge.linear_error_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonGaussianBridge.box_bias_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonGaussianBridge.exact_matching_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonGaussianBridge.fixed_parameter_bridge_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonGaussianBridge.exact_matching_bridge_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonGaussianBridge.moment_prior_bridge_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonGaussianBridge.exists_best_moment_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlas.NonGaussianDesign.exists_radius_minimizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlas.NonGaussianDesign.selectMinRadius_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlas.NonGaussianDesign.geometric_gap_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlas.NonGaussianDesign.greedy_finite_budget_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlas.NonGaussianEuclidean.linear_bias_le_euclidean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlas.NonGaussianMatrix.sandwich_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlas.NonGaussianMatrix.sandwich_identity_of_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlas.NonGaussianTargetUpdate.radius_le_of_score_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlas.NonGaussianTargetUpdate.exists_best_next_width' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlas.NonGaussianTargetUpdate.rank_one_inverse_update' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlas.NonGaussianTargetUpdate.target_quadratic_update' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CausalAtlas.NonGaussianTargetUpdate.exists_best_target_next' depends on axioms: [propext, Classical.choice, Quot.sound]

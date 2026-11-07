@@ -9,4 +9,7 @@ require mathlib from git
 
 @[default_target]
 lean_lib LeanProofs where
-  roots := #[`LeanProofs, `CausalAtlasBridge, `AxiomAudit]
+  roots := #[`LeanProofs, `CausalAtlasBridge, `AxiomAudit,
+    `NonGaussianProbability, `NonGaussianMoments, `NonGaussianDesign,
+    `NonGaussianEuclidean, `NonGaussianMatrix, `NonGaussianTargetUpdate,
+    `NonGaussianBridge, `NonGaussianAxiomAudit]

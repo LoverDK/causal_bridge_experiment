@@ -2,7 +2,7 @@
 
 更新：2026-11-07（Asia/Shanghai）。基线：`7e5841d3f3f22f892233582b9509aad656f3d266`；分支：`codex/reviewer-guided-rebuild`。
 
-原流程已完整复现；独立种子的成本—精度新实验与分析完成。全部12项意见已回顾，负结果保留，没有问题标为全部解决；I&K/Manski阅读核查已另存。 机器可读版本为 `review_tracker.json`，两份同步维护。
+原流程与成本—精度RUN01完成；新非高斯W形式概率定理及目标区间有限菜单选择已通过Lean，矩阵闭式连接范围另列。目标区间新实验协议已冻结，尚未报告新模拟结果；无问题标为全部解决。 机器可读版本为 `review_tracker.json`，两份同步维护。
 
 ## 每轮固定要求
 
@@ -229,7 +229,7 @@
 
 ### REV-10 · bridge 定理与实际一步 heuristic
 
-优先级：P1；状态：`open`。映射：KoBT.W4、KoBT.Q1、nrhq.Q1。
+优先级：P1；状态：`partial_evidence`。映射：KoBT.W4、KoBT.Q1、nrhq.Q1。
 
 已知证据：Theorem 5.6 为非自适应 linear-Gaussian logdet 保证，target radius 控制另需 posterior condition-number 条件。 workflow targeted R2 最小化 prospective radius，是一步 heuristic；并非上述 theorem-backed policy。
 
@@ -395,3 +395,10 @@ Q1 仅回指 W1–W4。
 ## RELATED-WORK-01：点名文献阅读完成
 
 [阅读说明](RELATED_WORK_READING.md)核实I&K已有pairwise Lipschitz空间、目标投影与含噪置信矩形构造；Manski的集合交原则与本稿有直接关系。Manski细节来自2019作者前稿，未声称读取最终刊版全文。REV-08保持open；论文相关工作与贡献定位尚待改写。
+
+
+## THEORY-NONGAUSSIAN-01 与新实验设计
+
+非高斯W形式概率界、真实观测误差与有限菜单目标区间选择已通过Lean；详见[验证范围](non_gaussian_bridge/README.md)。REV-10由open改为partial_evidence，仅支持Gaussian限制和选择目标这一部分。条件后验、固定参数覆盖与joint marginal coverage分开；线性、已知二阶矩、机制输入及现实适用性仍未解决。其余11项状态不变，没有resolved。
+
+用户要求直接缩短目标区间，故新主选择是逐候选最小化有效半径；logdet为对照。已冻结[NON-GAUSSIAN-TARGET-RUN01](NON_GAUSSIAN_TARGET_RUN01.md)，commit 7846f87。协议表逐项回顾12项意见；新模拟结果尚未报告。

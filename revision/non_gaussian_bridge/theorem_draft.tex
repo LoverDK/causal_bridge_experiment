@@ -1,0 +1,323 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\R}{\mathbb R}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Prob}{\mathbb P}
+\newcommand{\norm}[1]{\left\lVert #1\right\rVert_2}
+\newcommand{\sci}{\delta_{\mathrm{sci}}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\title{Direct target-interval minimization with finite-variance noise}
+\author{}
+\date{7 November 2026}
+\begin{document}
+\maketitle
+
+\noindent\textbf{Objective and verification scope.}
+The bridge-selection objective in this draft is the length of a certified interval for the specified target. The primary rule minimizes that length over a declared finite feasible menu. A closed-form score implements the exact next-bridge choice for the matrix estimator. The former log-determinant objective is retained only as a historical comparison in Appendix~\ref{sec:historical}.
+
+The complete moment-based probability theorem for the original zero-mean parameter model and the finite-menu minimum-radius existence theorem have passed Lean verification. The actual rank-one inverse update, target quadratic-form update, and existence of a best next matrix half-width have also been checked under explicit inverse, symmetry, and nonzero-denominator assumptions. Their full composition with the positive-definite design construction and probability certificate is not yet one formalized matrix theorem. This document does not modify the existing manuscript or report new experiments.
+
+\section{A computable interval for the target}
+Let $I$ be a finite observation index set and fix known design vectors $x_i,t\in\R^p$, $p\ge1$. The parameter $\beta$ is a square-integrable random vector with known mean $m_0$ and covariance $V_0$. Its coordinates may be dependent. The matrix $V_0$ is symmetric positive semidefinite; invertibility is needed only in Section~\ref{sec:score}. The observation model and target are
+\begin{equation}
+ Y_i=x_i^\top\beta+\epsilon_i,\qquad \theta_\star=t^\top\beta.
+ \label{eq:model}
+\end{equation}
+The square-integrable noises are centered, independent of one another and jointly independent of $\beta$, with known bounds $\E\epsilon_i^2\le v_i$, $v_i\ge0$. Pairwise uncorrelated noises and zero parameter--noise cross-covariances suffice for the mathematical proof; independence is a convenient sufficient condition. No Gaussian or exponential-moment assumption is made.
+
+For fixed coefficients $a_i$, define
+\begin{align}
+ \widehat\theta_a
+   &=t^\top m_0+\sum_i a_i(Y_i-x_i^\top m_0),\nonumber\\
+ d(a)&=\sum_i a_ix_i-t,\qquad
+ W_a=d(a)^\top V_0d(a)+\sum_i a_i^2v_i,\qquad
+ R_a(\alpha)=\sqrt{W_a/\alpha}.                              \label{eq:radius}
+\end{align}
+Unselected observations receive coefficient zero. All design inputs, moment inputs, coefficients, and selection rules are fixed without using the evaluation outcomes. The failure probability $\alpha\in(0,1)$ is distinct from the scientific error tolerance $\sci\ge0$.
+
+\begin{theorem}[Moment-based target interval]\label{thm:moments}
+Under these assumptions, for any fixed design-only coefficients,
+\begin{equation}
+ \Prob\bigl(|\widehat\theta_a-\theta_\star|\le R_a(\alpha)\bigr)
+ \ge1-\alpha.                                                 \label{eq:coverage}
+\end{equation}
+The radius is computable from the declared design and moment inputs. Its interval length is $2R_a(\alpha)$, independent of the realized outcomes. No parameter-norm bound is required.
+\end{theorem}
+\begin{proof}
+The actual estimation error is
+\[
+ Z_a=\widehat\theta_a-\theta_\star
+     =d(a)^\top(\beta-m_0)+\sum_i a_i\epsilon_i.
+\]
+It is centered and square-integrable. Expanding its second moment, retaining all off-diagonal parameter covariances, and using the vanishing cross-covariances gives
+\[
+ \E Z_a^2
+ =\sum_{j,\ell}d(a)_jd(a)_\ell(V_0)_{j\ell}
+       +\sum_i a_i^2\E\epsilon_i^2
+ \le W_a.
+\]
+For $W_a>0$, Markov's inequality applied to $Z_a^2$ implies
+$\Prob(|Z_a|>\sqrt{W_a/\alpha})\le\alpha$. For $W_a=0$, the nonnegative variable $Z_a^2$ has expectation zero, so $Z_a=0$ almost surely. This proves the claim, including the degenerate case. The probability step is the standard second-moment argument behind Chebyshev's inequality~\cite{duchi2023notes}.
+\end{proof}
+
+The probability in \eqref{eq:coverage} is marginal over the joint distribution of $\beta$ and the noises. It is neither a posterior probability conditional on the observed $Y$ nor a uniform guarantee for every fixed $\beta$. Known moments remain substantive inputs. Noisy design proxies, unknown moments, or variance estimates from the same observations need separate uncertainty analysis. A justified covariance upper bound can replace $V_0$ in the paper proof; the current Lean statement uses the exact known covariance.
+
+\section{Primary selection rule: minimize the target interval}
+\label{sec:finite}
+Let $\mathcal D_C$ be a nonempty finite menu of feasible plans, fixed before evaluation outcomes. Each plan $D$ specifies an observation subset, a prescribed coefficient vector $a(D)$ supported on that subset, and its known cost. The menu may already enforce a cost budget $C$. Use the \emph{same} failure probability $\alpha$ for all compared plans, and write $R(D,\alpha)=R_{a(D)}(\alpha)$.
+
+\begin{theorem}[Exact target-interval choice in a finite menu]\label{thm:finite}
+With fixed tie-breaking, choose
+\begin{equation}
+ D^*\in\argmin_{D\in\mathcal D_C}R(D,\alpha).                   \label{eq:menu}
+\end{equation}
+Then $D^*$ minimizes the certified target interval length over the stated menu, and
+\[
+ \Prob\bigl(|\widehat\theta_{a(D^*)}-\theta_\star|
+                       \le R(D^*,\alpha)\bigr)\ge1-\alpha.
+\]
+No multiplicity penalty for $|\mathcal D_C|$ is required for this design-only selection.
+\end{theorem}
+\begin{proof}
+A real-valued function has a minimum on a nonempty finite set. Multiplication by two preserves minimizers, so minimizing radius also minimizes interval length. The selected coefficient vector depends only on declared design inputs and not on evaluation randomness. Apply Theorem~\ref{thm:moments} to that vector.
+\end{proof}
+
+For the original $m_0=0$ model, Lean theorem
+\texttt{exists\_best\_moment\_bridge} proves precisely the existence of a minimum-radius member of a finite coefficient menu together with its actual-error probability guarantee. The mathematical menu must contain the intended coefficient vectors. That theorem does not itself construct a matrix estimator, filter costs, or extract executable real-number comparison code.
+
+\subsection{Next bridge versus a complete budget}
+At a current design-only set $S$, prescribe the updated coefficients for each feasible next candidate $b$ and select
+\begin{equation}
+ b^*\in\argmin_{b\in\mathcal B_C(S)}R(S\cup\{b\},\alpha),
+ \qquad \mathcal B_C(S)\ne\varnothing.                         \label{eq:next}
+\end{equation}
+Because the current interval length is constant across candidates, this choice gives the largest reduction in certified interval length among the feasible \emph{next} additions. For a general coefficient rule, include a no-addition option if a nonworsening choice must always exist. Section~\ref{sec:score} shows that the matrix certificate is already nonincreasing after an addition.
+
+Repeatedly making the best next choice is not asserted to minimize the final interval after several additions. For a small menu and a budget of at most $B$ further candidates, exact global planning instead evaluates
+\begin{equation}
+ T^*\in\argmin_{\substack{T\subseteq E\setminus S\\|T|\le B}}
+                  R(S\cup T,\alpha),                         \label{eq:global}
+\end{equation}
+using the prescribed coefficient vector for every feasible subset. This is globally optimal \emph{within that finite family}. For unequal costs, replace $|T|\le B$ by the actual cost constraint. Enumeration may be expensive. A score divided by cost has no equivalent optimality guarantee from these results.
+
+One may instead minimize cost among plans whose radius is at most $\sci$. Failure to find such a plan proves infeasibility only in the declared menu. It does not establish impossibility among all estimators or experiments. For rational inputs the squared radius is rational; exact comparisons are possible. Unverified local numerical optimization does not establish the finite-menu minimum.
+
+\section{A closed-form score for the next bridge}
+\label{sec:score}
+Assume $V_0\succ0$ and $v_b=\sigma_b^2>0$. For a selected set $S$, define
+\begin{equation}
+ A_0=V_0^{-1},\quad
+ G_S=\sum_{b\in S}\frac{x_bx_b^\top}{\sigma_b^2},\quad
+ A_S=A_0+G_S,\quad V_S=A_S^{-1}.                              \label{eq:matrices}
+\end{equation}
+Use the linear moment-based estimator
+\begin{equation}
+ \widehat\beta_S=m_0+V_S\sum_{b\in S}
+       \frac{x_b(Y_b-x_b^\top m_0)}{\sigma_b^2},
+ \qquad \widehat\theta_S=t^\top\widehat\beta_S.                 \label{eq:matrix-estimator}
+\end{equation}
+Its coefficients are $a_b(S)=t^\top V_Sx_b/\sigma_b^2$ on $S$ and zero elsewhere. Since $d(a(S))=-A_0V_St$, the declared second-moment bound simplifies to
+\begin{align}
+ W_{a(S)}
+ &=t^\top V_SA_0V_0A_0V_St+t^\top V_SG_SV_St\nonumber\\
+ &=t^\top V_S(A_0+G_S)V_St=t^\top V_St=:q_S.                  \label{eq:Wq}
+\end{align}
+Here $A_0V_0A_0=A_0$ and $V_S(A_0+G_S)V_S=V_S$. Thus Theorem~\ref{thm:moments} gives the certified radius
+\begin{equation}
+ R(S,\alpha)=\sqrt{q_S/\alpha}.                               \label{eq:matrix-radius}
+\end{equation}
+With exact parameter covariance and exact noise variances, \eqref{eq:matrix-estimator} is the linear minimum-mean-square-error estimator: its error is uncorrelated with every observed $Y_b$, as the contributions $-V_SA_0V_0x_b$ and $V_Sx_b$ cancel. With only variance upper bounds, no optimality for the actual distribution is asserted. Under non-Gaussian distributions the estimator need not equal the conditional mean, and $V_S$ need not be the conditional posterior covariance.
+
+\begin{theorem}[Exact next-step target score]\label{thm:target-score}
+Fix $S$. Let $\mathcal B_C(S)\subseteq E\setminus S$ be a nonempty feasible menu. Under \eqref{eq:matrices}, define
+\begin{equation}
+ H(b\mid S)=\frac{(t^\top V_Sx_b)^2}
+                  {\sigma_b^2+x_b^\top V_Sx_b}.                \label{eq:target-score}
+\end{equation}
+Then
+\begin{equation}
+ q_{S\cup\{b\}}=q_S-H(b\mid S).                               \label{eq:q-update}
+\end{equation}
+For a common $\alpha$, any maximizer of $H(b\mid S)$ is an exact minimizer of $R(S\cup\{b\},\alpha)$ and therefore of the next target interval length. Its selected estimator has the joint marginal coverage in Theorem~\ref{thm:moments}. The score contains no unknown parameter or future observation.
+\end{theorem}
+
+\begin{proof}
+Write $A=A_S\succ0$, $V=A^{-1}$, $x=x_b$, $s=\sigma_b^2>0$, $z=Vx$, and $h=x^\top Vx\ge0$. Set $r=s+h>0$ and $B=V-zz^\top/r$. Direct multiplication gives
+\begin{align*}
+ (A+xx^\top/s)B
+ &=I+xz^\top\left(\frac1s-\frac1r-\frac{h}{sr}\right)\\
+ &=I,
+\end{align*}
+because $Az=x$, $x^\top V=z^\top$, and $r=s+h$. Both $A+xx^\top/s$ and $B$ are symmetric, so transposing the product also gives $B(A+xx^\top/s)=I$. Consequently,
+\begin{equation}
+ V_{S\cup\{b\}}
+   =V_S-\frac{V_Sx_bx_b^\top V_S}
+                 {\sigma_b^2+x_b^\top V_Sx_b}.                \label{eq:SM}
+\end{equation}
+This is the Sherman--Morrison rank-one inverse update; the required instance has been verified directly here.
+
+Multiply \eqref{eq:SM} by $t^\top$ and $t$ to obtain \eqref{eq:q-update}. Positive definiteness of the updated inverse gives $q_S-H(b\mid S)\ge0$, and $H(b\mid S)\ge0$. Since square root is increasing and $q_S$ is common to all candidates,
+\[
+ \argmax_{b\in\mathcal B_C(S)}H(b\mid S)
+ =\argmin_{b\in\mathcal B_C(S)}
+       2\sqrt{(q_S-H(b\mid S))/\alpha}.
+\]
+The chosen vector $a(S\cup\{b\})$ is fixed by design inputs. Apply Theorem~\ref{thm:moments} and \eqref{eq:Wq} for its coverage.
+\end{proof}
+
+The exact decrease in interval length is
+\[
+ \frac{2}{\sqrt\alpha}
+   \left(\sqrt{q_S}-\sqrt{q_S-H(b\mid S)}\right).
+\]
+Thus the score ranks reductions in target interval length directly. Its computation requires the target vector, the design matrix, and the candidate variance bounds. The theorem proves optimality for one addition. It supplies no multi-step greedy approximation factor. If the whole remaining budget is small enough to enumerate, \eqref{eq:global} gives the corresponding finite-family global optimum.
+
+\section{Acquisition, updates, release, and stopping}
+Initialize $A=A_0$ and $z=A_0m_0$. After actually obtaining a new observation $Y_b$, update
+\[
+ A\leftarrow A+x_bx_b^\top/\sigma_b^2,\qquad
+ z\leftarrow z+x_bY_b/\sigma_b^2,\qquad
+ \widehat\beta=A^{-1}z.
+\]
+These updates produce \eqref{eq:matrix-estimator}. The center uses acquired outcomes, while the selection score and certified width use only the fixed design and moment inputs.
+
+Release the point estimate at tolerance $\sci$ when $R\le\sci$; otherwise return the interval and refuse to certify that precision. Theorem~\ref{thm:moments} controls the unconditional bad-release event:
+\[
+ \Prob(R\le\sci,\ |\widehat\theta-\theta_\star|>\sci)\le\alpha.
+\]
+Refusal does not imply actual inaccuracy. For simultaneous validity over a fixed design-only path of at most $T$ stages, preassign $\alpha_t>0$ with $\sum_{t=1}^T\alpha_t\le\alpha$ and use the corresponding radius at each stage. The union bound yields simultaneous coverage and therefore coverage at any stopping time bounded by $T$. At a given stage, all candidates must use the same $\alpha_t$ for the score equivalence above. Comparing candidates with different failure budgets is a different objective.
+
+A stopping rule based only on the frozen radius selects a design without using outcomes and may use a pointwise guarantee instead; this is not an all-prefix guarantee. Outcome-adaptive choices of designs, weights, moment inputs, or variance bounds need a separate argument. Finite variance can give wider intervals than Gaussian inference, and joint marginal coverage is weaker than a Gaussian conditional posterior statement. Neither the statistical certificate nor finite-menu optimality proves universal cost savings over direct target sampling.
+
+\section{What has actually passed Lean verification}
+The existing module audit recorded in \texttt{lean\_verification.json} passed with warnings treated as errors. The additional target-update module has also compiled without warnings; its five theorem audits list only Lean's standard axioms. The verified scope is:
+\begin{itemize}
+ \item \texttt{moment\_prior\_bridge\_coverage} derives a bound on the actual observation-based error for $m_0=0$, exact known parameter covariance, pairwise independent noises, zero parameter--noise cross-covariance, and fixed coefficients. It includes zero variance and assumes no final tail event.
+ \item \texttt{exists\_best\_moment\_bridge} proves existence of a minimum-radius member of a nonempty finite coefficient menu together with that member's actual-error guarantee. This is the mathematical core of Theorem~\ref{thm:finite} and its one-addition menu. It is not an executable optimizer or a formal construction of the concrete coefficients.
+ \item Fixed-parameter and exact-matching probability statements, an Euclidean bias inequality, and a matrix sandwich identity derived from positive definiteness have been checked separately.
+ \item In \texttt{NonGaussianTargetUpdate}, \texttt{rank\_one\_inverse\_update} proves the actual updated inverse from $AV=I$, $r\ne0$, and $r+x^\top Vx\ne0$. The theorem \texttt{target\_quadratic\_update} additionally assumes $V$ symmetric and derives $q_{\rm new}=q-H$. Finally, \texttt{exists\_best\_target\_next} uses these facts and common $\alpha>0$ to prove existence of a finite-menu minimizer of the actual updated inverse quadratic-form half-width expression.
+\end{itemize}
+The target-update module does not construct $G_S$ from the candidate observations or derive its inverse/symmetry/denominator premises from the positive-definite statistical design. It does not prove nonnegativity of the quadratic forms or probability coverage. Those statistical conditions hold in the paper's stated positive-definite model, but the complete formal chain from that construction through concrete coefficients, $W_a=q_S$, the next-step matrix rule, and coverage remains unfinished.
+
+The nonzero-mean centering extension, cost-filtering code, and finite-path stopping corollary are also not claimed to be formally verified. The checked generic greedy recurrence gives no multi-step guarantee for the target score. The complete matrix log-determinant and spectral statements in the historical appendix remain paper proofs. There is no blanket formal-verification claim for this document.
+
+\appendix
+\section{Fixed-parameter alternatives}
+\label{sec:fixed}
+These alternatives treat $\beta$ as fixed, not random. They therefore change the parameter model and are not needed for the primary moment-based theorem.
+
+For fixed finite design coordinates $x_{ij},t_j$, let
+$Y_i=\sum_jx_{ij}\beta_j+\epsilon_i$ and
+$\theta_\star=\sum_jt_j\beta_j$. Assume independent centered square-integrable noises with known $\E\epsilon_i^2\le v_i$. For fixed coefficients $a_i$ define
+\[
+ d_j=\sum_i a_ix_{ij}-t_j,\qquad
+ B_a=\sum_j|d_j|M_j,\qquad V_a=\sum_i a_i^2v_i.
+\]
+\begin{theorem}[Fixed-parameter coefficient certificate]\label{thm:coefficient}
+If $|\beta_j|\le M_j$ for declared $M_j\ge0$, then
+\[
+ \Prob\left(\left|\sum_i a_iY_i-\theta_\star\right|
+              \le B_a+\sqrt{V_a/\alpha}\right)\ge1-\alpha.
+\]
+\end{theorem}
+\begin{proof}
+The exact error is $\sum_jd_j\beta_j+Z$, where $Z=\sum_i a_i\epsilon_i$.
+The deterministic term is at most $B_a$ in absolute value. Centering and independence give $\E Z=0$ and $\E Z^2\le V_a$. Apply the second-moment argument in Theorem~\ref{thm:moments}, including $V_a=0$, and the triangle inequality.
+\end{proof}
+If every $d_j=0$, exact target matching eliminates the bias for every fixed $\beta$; the radius is $\sqrt{V_a/\alpha}$ without any parameter bound. Feasibility means that the target lies in the linear span of the selected design vectors. Signed coefficients are allowed. These coefficient and exact-matching probability statements have passed Lean verification.
+
+For the fixed-parameter ridge alternative, assume a known $\norm{\beta}\le M$, $\lambda>0$, and $\sigma_b^2>0$. Set
+\[
+ G_S=\sum_{b\in S}x_bx_b^\top/\sigma_b^2,\quad
+ A_S=\lambda I+G_S,\quad
+ \widehat\beta_S=A_S^{-1}\sum_{b\in S}x_bY_b/\sigma_b^2,\quad
+ u_S=A_S^{-1}t.
+\]
+\begin{theorem}[Fixed-parameter ridge certificate]\label{thm:ridge}
+For fixed design-only $S$,
+\[
+ \Prob\left(|t^\top\widehat\beta_S-t^\top\beta|
+  \le r_S(\alpha)\right)\ge1-\alpha,\qquad
+ r_S(\alpha)=\lambda M\norm{u_S}
+                +\sqrt{u_S^\top G_Su_S/\alpha}.
+\]
+Moreover $r_S(\alpha)\le\sqrt{\lambda M^2+\alpha^{-1}}
+                   \sqrt{t^\top A_S^{-1}t}$.
+\end{theorem}
+\begin{proof}
+The actual error is
+$-\lambda u_S^\top\beta+\sum_{b\in S}(u_S^\top x_b/\sigma_b^2)\epsilon_b$.
+Cauchy--Schwarz bounds its deterministic term by $\lambda M\norm{u_S}$, and independence bounds the variance of its centered random term by $u_S^\top G_Su_S$. Apply the same positive- and zero-variance argument. Finally,
+$t^\top A_S^{-1}t=\lambda\norm{u_S}^2+u_S^\top G_Su_S$;
+two-dimensional Cauchy--Schwarz gives the simplified bound.
+\end{proof}
+A known $M$ cannot be replaced by the unknown realized norm. This exact fixed-parameter radius need not share the primary radius's monotonicity or the next-step score in \eqref{eq:target-score}; use its actual radius when comparing plans. Its full matrix specialization is not claimed to be formalized by the separately checked Euclidean inequality.
+
+\section{Historical comparison: log-determinant design}
+\label{sec:historical}
+The earlier rule maximized a global design-volume objective,
+\[
+ F(S)=\tfrac12\log(\det A_S/\det A_0),\qquad
+ \Delta_F(b\mid S)=\tfrac12\log(1+x_b^\top V_Sx_b/\sigma_b^2).
+\]
+It does not use the target vector $t$. It is retained for comparison, not as the target-width rule recommended in this draft.
+
+For fixed $A_0\succ0$ and known candidate designs, the determinant update gives the displayed marginal. It is nonnegative. If $S\subseteq T$, then $A_T\succeq A_S\succ0$ and $A_T^{-1}\preceq A_S^{-1}$, so the marginal decreases. Thus $F$ is normalized, monotone, and submodular. Exact cardinality greedy with $k$ additions satisfies the classical result~\cite{nemhauser1978analysis}
+\begin{equation}
+ F(S_g)\ge c_k F(S_D^*),\qquad
+ c_k=1-(1-1/k)^k\ge1-e^{-1},\qquad
+ S_D^*\in\argmax_{|S|\le k}F(S).                              \label{eq:logdet}
+\end{equation}
+Indeed, the gap obeys
+$F(S_D^*)-F(S_{j+1})\le(1-1/k)[F(S_D^*)-F(S_j)]$ by submodularity and exact greedy choice; iterate from the empty set. This is a deterministic design theorem. Its factor is not a target-interval approximation factor and does not transfer to the score in \eqref{eq:target-score}.
+
+For a concrete separation, take $p=2$, $A_0=I$, variance bounds one, target $t=e_2$, and candidates $x_1=h^2e_1$, $x_2=he_2$, $h>1$. With one addition, logdet chooses candidate 1, leaving target $q=1$. Candidate 2 gives $q=1/(1+h^2)$, so the ratio of certified target radii is unbounded as $h$ increases. The target score selects candidate 2.
+
+A conditional spectral comparison for the historical rule remains valid. If
+$\kappa(A_S)\le\bar\kappa$ for all feasible size-$k$ sets, then
+\[
+ R(S_g,\alpha)\le
+ \frac{\norm{t}\sqrt{\bar\kappa}}{\sqrt\alpha}
+ (\det A_0)^{-(1-c_k)/(2p)}
+ (\det A_{S_D^*})^{-c_k/(2p)}.
+\]
+To prove it, set $m=\lambda_{\min}(A)$ and note
+$(\det A)^{1/p}\le\kappa(A)m$. Therefore
+\[
+ \sqrt{t^\top A^{-1}t}
+ \le\norm{t}\sqrt{\kappa(A)}(\det A)^{-1/(2p)}.
+\]
+Exponentiate \eqref{eq:logdet} and combine these inequalities.
+A computable sufficient bound is
+\[
+ \bar\kappa=\frac{\lambda_{\max}(A_0)+D_k}{\lambda_{\min}(A_0)},
+\]
+where $D_k$ sums the $k$ largest $\norm{x_b}^2/\sigma_b^2$.
+This comparison does not establish target optimality and is unnecessary for the direct target score.
+
+The second-moment inequality, rank-one inverse identity, finite enumeration, and classical submodular factor are established tools. Their use here supplies an explicit bridge-selection formulation and a stated verification boundary; it is not a claim that these tools are new or that the resulting procedure is universally cheaper than direct target sampling.
+
+\begin{thebibliography}{9}
+\bibitem{duchi2023notes}
+J.~Duchi.
+\newblock \emph{Lecture Notes on Statistics and Information Theory}.
+\newblock Stanford University, December 6, 2023, Section 4.1.
+\newblock \url{https://web.stanford.edu/class/stats311/lecture-notes.pdf}.
+
+\bibitem{nemhauser1978analysis}
+G.~L. Nemhauser, L.~A. Wolsey, and M.~L. Fisher.
+\newblock An analysis of approximations for maximizing submodular set functions---I.
+\newblock \emph{Mathematical Programming}, 14:265--294, 1978.
+\newblock \href{https://doi.org/10.1007/BF01588971}{doi:10.1007/BF01588971}.
+\end{thebibliography}
+\end{document}

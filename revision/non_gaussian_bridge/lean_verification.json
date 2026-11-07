@@ -1,0 +1,105 @@
+{
+  "verified_at": "2026-11-07T18:16:24.3946567+08:00",
+  "lean_version": "Lean (version 4.34.0-rc1, x86_64-w64-windows-gnu, commit 3447a668783dbce1a8fdb97101dd067687b2b418, Release)",
+  "warning_as_error": true,
+  "mathlib_revision": "de5ce8a9a66a4aa68a9bdbb35b63a06d34d9ca11",
+  "source_of_mathlib_revision": "Cached package Git HEAD verified against LeanProofs/lake-manifest.json",
+  "checks": [
+    {
+      "module": "NonGaussianProbability",
+      "exit_code": 0,
+      "sha256": "0a2691ead83f88ad5b1dd1a80a2fc85c3fea61edd6a44a21b4b85d4230bcd2ee",
+      "output": []
+    },
+    {
+      "module": "NonGaussianDesign",
+      "exit_code": 0,
+      "sha256": "843b1d418911899c48ca6bfb9acafcf15cdd4400e45e4c6b7e2254d95a59fc49",
+      "output": [
+        "'CausalAtlas.NonGaussianDesign.exists_radius_minimizer' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlas.NonGaussianDesign.selectMinRadius_spec' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlas.NonGaussianDesign.geometric_gap_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlas.NonGaussianDesign.greedy_finite_budget_bound' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "NonGaussianEuclidean",
+      "exit_code": 0,
+      "sha256": "fc86d0fec3b9d4acebda59ed59f35307e1bcfa9eee8c5a6e5bc306a4b9f66227",
+      "output": [
+        "'CausalAtlas.NonGaussianEuclidean.linear_bias_le_euclidean' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "NonGaussianMoments",
+      "exit_code": 0,
+      "sha256": "f724d8b2a52eaa514c491ff85e5d2871f259414815e5ba4119dc0c989c9adc25",
+      "output": []
+    },
+    {
+      "module": "NonGaussianMatrix",
+      "exit_code": 0,
+      "sha256": "1db97ac5a10db78ecfbb0fd5a38749be8a39cd9642c79bf0257772491935b0a0",
+      "output": [
+        "'CausalAtlas.NonGaussianMatrix.sandwich_identity' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlas.NonGaussianMatrix.sandwich_identity_of_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "NonGaussianTargetUpdate",
+      "exit_code": 0,
+      "sha256": "9cf876844b635e7641729ba910b18cf381cc8cacb5dd47501ceac3867085507f",
+      "output": [
+        "'CausalAtlas.NonGaussianTargetUpdate.radius_le_of_score_ge' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlas.NonGaussianTargetUpdate.exists_best_next_width' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlas.NonGaussianTargetUpdate.rank_one_inverse_update' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlas.NonGaussianTargetUpdate.target_quadratic_update' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlas.NonGaussianTargetUpdate.exists_best_target_next' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "NonGaussianBridge",
+      "exit_code": 0,
+      "sha256": "6570d6ae17913eb2b3aff0f2fb9f9cef19ef38f5ac326c55b893958e9000818e",
+      "output": []
+    },
+    {
+      "module": "NonGaussianAxiomAudit",
+      "exit_code": 0,
+      "sha256": "ce3140d8c2d375d8b4ac88a71837e460a804537ecce6ec6c4558c07da8c2da96",
+      "output": [
+        "'CausalAtlasNonGaussian.shifted_chebyshev_pos' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlasNonGaussian.shifted_chebyshev' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlasNonGaussian.weighted_variance_eq' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlasNonGaussian.weighted_variance_le' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlasNonGaussian.weighted_mean_zero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlasNonGaussian.weighted_error_probability' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlasNonGaussian.weighted_correlated_variance_eq' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlasNonGaussian.weighted_cross_covariance_zero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlasNonGaussian.block_variance_le' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlasNonGaussian.block_mean_zero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlasNonGaussian.block_error_probability' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'NonGaussianBridge.linear_error_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'NonGaussianBridge.box_bias_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'NonGaussianBridge.exact_matching_error' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'NonGaussianBridge.fixed_parameter_bridge_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'NonGaussianBridge.exact_matching_bridge_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'NonGaussianBridge.moment_prior_bridge_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'NonGaussianBridge.exists_best_moment_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlas.NonGaussianDesign.exists_radius_minimizer' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlas.NonGaussianDesign.selectMinRadius_spec' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlas.NonGaussianDesign.geometric_gap_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlas.NonGaussianDesign.greedy_finite_budget_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlas.NonGaussianEuclidean.linear_bias_le_euclidean' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlas.NonGaussianMatrix.sandwich_identity' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlas.NonGaussianMatrix.sandwich_identity_of_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlas.NonGaussianTargetUpdate.radius_le_of_score_ge' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlas.NonGaussianTargetUpdate.exists_best_next_width' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlas.NonGaussianTargetUpdate.rank_one_inverse_update' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlas.NonGaussianTargetUpdate.target_quadratic_update' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CausalAtlas.NonGaussianTargetUpdate.exists_best_target_next' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    }
+  ],
+  "passed": true
+}

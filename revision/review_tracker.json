@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "baseline_commit": "7e5841d3f3f22f892233582b9509aad656f3d266",
   "branch": "codex/reviewer-guided-rebuild",
-  "scope_note": "原流程已完整复现；独立种子的成本—精度新实验与分析完成。全部12项意见已回顾，负结果保留，没有问题标为全部解决；I&K/Manski阅读核查已另存。",
+  "scope_note": "原流程与成本—精度RUN01完成；新非高斯W形式概率定理及目标区间有限菜单选择已通过Lean，矩阵闭式连接范围另列。目标区间新实验协议已冻结，尚未报告新模拟结果；无问题标为全部解决。",
   "user_requirements": [
     "每次实验推进前、后回顾全部 review 和 12 个问题。",
     "不能用已运行代替已解决；状态由验收证据决定，保留未覆盖问题与负结果。",
@@ -422,6 +422,94 @@
         "status_changes_with_evidence": [],
         "remaining_gaps": [
           "Manuscript citation and novelty positioning still need substantive revision; ExAtlas comparison remains separate."
+        ]
+      },
+      {
+        "round_id": "THEORY-NONGAUSSIAN-01",
+        "phase": "after",
+        "date_local": "2026-11-07",
+        "code_revision": "7846f87 plus new proof sources with SHA256 recorded in lean_verification.json",
+        "artifact_paths": [
+          "LeanProofs/NonGaussianBridge.lean",
+          "LeanProofs/NonGaussianMoments.lean",
+          "revision/non_gaussian_bridge/README.md",
+          "revision/non_gaussian_bridge/lean_verification.json",
+          "revision/non_gaussian_bridge/theorem_draft.tex"
+        ],
+        "all_issue_ids_reviewed": [
+          "REV-01",
+          "REV-02",
+          "REV-03",
+          "REV-04",
+          "REV-05",
+          "REV-06",
+          "REV-07",
+          "REV-08",
+          "REV-09",
+          "REV-10",
+          "REV-11",
+          "REV-12"
+        ],
+        "covered_review_refs": [
+          "KoBT.W4",
+          "KoBT.Q1",
+          "nrhq.Q1"
+        ],
+        "findings": [
+          "非高斯W形式概率界、完整协方差交叉项及零方差情况通过Lean。",
+          "原文零均值随机参数模型保留；coverage是参数与噪声的joint marginal，不能称conditional posterior或每个固定beta都覆盖。",
+          "用户明确目标是直接缩短目标区间；主选择改为有限候选最小有效半径，logdet降为另一目标的对照。",
+          "没有新实验结果；原Overleaf和旧输出保留。"
+        ],
+        "status_changes_with_evidence": {
+          "REV-10": "open -> partial_evidence: only Gaussian-shape restriction and target-choice theorem receive direct evidence; README records formalization limits"
+        },
+        "remaining_gaps": [
+          "线性、已知设计、有效二阶矩和设计only选择限制仍在。",
+          "有限菜单存在性不是已提取可执行optimizer；一步最优不是多步贪心全局最优。",
+          "REV-04/05/06/08及其余不被本轮覆盖的要求维持原状态；没有novelty或真实有效性结论。"
+        ]
+      },
+      {
+        "round_id": "NON-GAUSSIAN-TARGET-RUN01",
+        "phase": "before",
+        "date_local": "2026-11-07",
+        "code_revision": "7846f87 (frozen protocol)",
+        "artifact_paths": [
+          "revision/NON_GAUSSIAN_TARGET_RUN01.md",
+          "revision/NON_GAUSSIAN_TARGET_RUN01.json"
+        ],
+        "all_issue_ids_reviewed": [
+          "REV-01",
+          "REV-02",
+          "REV-03",
+          "REV-04",
+          "REV-05",
+          "REV-06",
+          "REV-07",
+          "REV-08",
+          "REV-09",
+          "REV-10",
+          "REV-11",
+          "REV-12"
+        ],
+        "covered_review_refs": [
+          "KoBT.W4",
+          "KoBT.Q1",
+          "nrhq.W4",
+          "nrhq.Q2",
+          "WGDN.Q1"
+        ],
+        "findings": [
+          "冻结27个geometry×parameter-distribution×noise-distribution单元；smoke81/full5400世界，四策略，4批各64人。",
+          "目标选择逐个计算完整W；矩阵q与target reduction作独立一致性核对。",
+          "共同history/prior/cost，报告完整width与同精度成本；主停止半宽.30，额外完整width阈值.4/.6/.8。",
+          "已记录全部12项可回答和不能回答范围；运行尚未开始。"
+        ],
+        "status_changes_with_evidence": {},
+        "remaining_gaps": [
+          "模拟二阶矩是synthetic_known，非现实校准。",
+          "运行成功或Monte Carlo覆盖不替代数学证明或解决全部review。"
         ]
       }
     ]
@@ -994,7 +1082,7 @@
       "id": "REV-10",
       "title": "bridge 定理与实际一步 heuristic",
       "priority": "P1",
-      "status": "open",
+      "status": "partial_evidence",
       "review_refs": [
         "KoBT.W4",
         "KoBT.Q1",
@@ -1004,16 +1092,18 @@
         "Theorem 5.6 为非自适应 linear-Gaussian logdet 保证，target radius 控制另需 posterior condition-number 条件。",
         "workflow targeted R2 最小化 prospective radius，是一步 heuristic；并非上述 theorem-backed policy。",
         "原targeted逐候选最小化prospective radius；初始完整路径按设计排定，没有执行logdet策略。",
-        "COST-PRECISION-RUN01：验证的是 prospective-radius heuristic；随机与最近来源对照不能验证 logdet 定理，非高斯/异方差稳健性仍缺。"
+        "COST-PRECISION-RUN01：验证的是 prospective-radius heuristic；随机与最近来源对照不能验证 logdet 定理，非高斯/异方差稳健性仍缺。",
+        "THEORY-NONGAUSSIAN-01：保留原零均值随机参数的完整协方差，取消Gaussian形状；实际Y到目标误差的W形式界、有限菜单直接最小目标半径及覆盖通过Lean。一般logdet近似因子不转称为目标半径保证。"
       ],
       "gaps": [
-        "缺两种 policy 明确分离及匹配对照；缺非线性/非高斯/异方差/错设下证据。"
+        "非Gaussian主统计保证及有限菜单最小目标区间已形式化；具体矩阵更新的形式化范围另列，尚不能宣称整份定理草稿全部Lean验证。",
+        "仍需冻结协议下的真实执行、域外非线性/未知设计/错设与现实案例；二阶矩输入可靠性仍是前提。"
       ],
       "acceptance_evidence": [
         "每个 policy 标注目标、信息、假设和适用定理；不把 heuristic 结果当 logdet 保证。",
         "定理域内验证，域外另列经验 stress test；共同预算比较 random、radius policy、logdet 等。"
       ],
-      "next_step": "首轮保持实际代码身份；后续 theorem policy 另立实现与实验协议。",
+      "next_step": "执行NON-GAUSSIAN-TARGET-RUN01，比较target-radius、logdet、frozen-random、direct-target的共同成本—精度与覆盖；保留弱桥接结果。",
       "first_round_can_answer": [
         "当前一步规则如何选 bridge、更新半径和停止。"
       ],
