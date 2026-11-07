@@ -22,18 +22,18 @@
 
 ### REV-01 · 引言、首现定义与解释顺序
 
-优先级：P1；状态：`writing_in_progress`。映射：nrhq.W1、nrhq.W2、nrhq.Q1。
+优先级：P1；状态：`partial_evidence`。映射：nrhq.W1、nrhq.W2、nrhq.Q1。
 
 已知证据：已有 PDF 及改写候选；nrhq 指出 decision layer、certificate、bridge 等定义前使用。 用户已在本机完成Overleaf克隆。原稿位于 causal_lab_proposal_subpapers_tex_iclr2027/01.tex；基线29e4c0db4a17e72e04d9a1c9b330e81b166c604a，原稿SHA256为ef261e308e3463eb8e54d5de3c0fded1879f58777222f0115a0c5a5f79eaab73。子代理正在同目录创建01_humanized.tex，原稿保留。
 
-缺口：尚无基于最新源文件的修订、语义审查及编译验证；不能标完成。
+缺口：副本已通过语义审查和编译，正文10页；尚需作者审阅可读性。对照实验和新增贡献不由文字编辑解决。
 
 验收证据：
 
 - 最新源与 prose-only diff；先解释目标、输入、假设和输出，再用术语；贯穿例子和图 1 可独立读懂。
 - 数学、引用、数值和限定条件保持准确，编译与逐项阅读通过。
 
-下一步：核查同目录副本的语义、公式、引用、数值及编译结果；通过后提交并同步。
+下一步：完成Git同步并由作者审阅副本；实验工作继续提供可理解的单世界运行轨迹。
 
 首轮能回答：为方法直觉提供一个可检查的流程例子。
 
@@ -64,7 +64,7 @@
 
 ### REV-03 · 摘要数字与证书结果归因
 
-优先级：P0；状态：`open`。映射：WGDN.W1b、nrhq.Q1、nrhq.Q2。
+优先级：P0；状态：`partial_evidence`。映射：WGDN.W1b、nrhq.Q1、nrhq.Q2。
 
 已知证据：95.3% / 0.2% 对应 Gaussian Bonferroni 与未校正区间，不是完整证书效用；Table 15 另列 theorem simultaneous。
 
@@ -313,3 +313,7 @@ Q1 仅回指 W1–W4。
 - KoBT.W4（W4）：bridge 保证仅限线性高斯，现实适用性未知 → REV-10
 - KoBT.Q1（Questions: see weaknesses）：回指 W1–W4，无独立新增问题 → REV-04、REV-05、REV-09、REV-10、REV-11、REV-12
 
+
+## WRITING-01 回顾
+
+已回顾全部12项，未运行本轮新实验。01_humanized.tex完成主文改写与独立检查：正文10页、全稿42页，正式数学内容、数据表和原稿均保留。REV-01和REV-03有部分文字证据；摘要明确95.3%来自Gaussian Bonferroni。相关工作扩展仅使用原附录内容，尚未完成最近邻工作的数学比较。其余问题继续保持此前状态。Git提交与Overleaf同步见最终写作任务记录。

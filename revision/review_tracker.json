@@ -44,7 +44,52 @@
       "status_changes_with_evidence",
       "remaining_gaps"
     ],
-    "entries": []
+    "entries": [
+      {
+        "round_id": "WRITING-01",
+        "phase": "after",
+        "date_local": "2026-11-07",
+        "code_revision": "Overleaf baseline 29e4c0db4a17e72e04d9a1c9b330e81b166c604a; new-copy commit pending final sync record",
+        "artifact_paths": [
+          "Overleaf: causal_lab_proposal_subpapers_tex_iclr2027/01_humanized.tex"
+        ],
+        "all_issue_ids_reviewed": [
+          "REV-01",
+          "REV-02",
+          "REV-03",
+          "REV-04",
+          "REV-05",
+          "REV-06",
+          "REV-07",
+          "REV-08",
+          "REV-09",
+          "REV-10",
+          "REV-11",
+          "REV-12"
+        ],
+        "covered_review_refs": [
+          "nrhq.W1",
+          "nrhq.W2",
+          "nrhq.W3",
+          "nrhq.Q1",
+          "WGDN.W1b"
+        ],
+        "findings": [
+          "首现术语和解释顺序改写；图注、相关工作、方法直觉更明确。",
+          "正式假设、定理、证明、公式、算法、数据表及AI声明之后内容保留；引用key集合未变。",
+          "独立语义审查通过，发现的范围扩大已修正；正文10页完整编译通过。"
+        ],
+        "status_changes_with_evidence": {
+          "REV-01": "writing_in_progress -> partial_evidence: 局部文字修订通过检查，未视为整条review解决",
+          "REV-03": "open -> partial_evidence: Bonferroni数字归因明确，实用收益待实验"
+        },
+        "remaining_gaps": [
+          "本轮无新实验，first_round.execution_status保持not_started。",
+          "真实机制集合有效性、完整比较、新颖性及bridge衔接均未因语言编辑关闭。",
+          "其他意见状态沿用，最终Overleaf同步结果另行记录。"
+        ]
+      }
+    ]
   },
   "reviewers": [
     {
@@ -290,7 +335,7 @@
       "id": "REV-01",
       "title": "引言、首现定义与解释顺序",
       "priority": "P1",
-      "status": "writing_in_progress",
+      "status": "partial_evidence",
       "review_refs": [
         "nrhq.W1",
         "nrhq.W2",
@@ -298,16 +343,17 @@
       ],
       "known_evidence": [
         "已有 PDF 及改写候选；nrhq 指出 decision layer、certificate、bridge 等定义前使用。",
-        "用户已在本机完成Overleaf克隆。原稿位于 causal_lab_proposal_subpapers_tex_iclr2027/01.tex；基线29e4c0db4a17e72e04d9a1c9b330e81b166c604a，原稿SHA256为ef261e308e3463eb8e54d5de3c0fded1879f58777222f0115a0c5a5f79eaab73。子代理正在同目录创建01_humanized.tex，原稿保留。"
+        "用户已在本机完成Overleaf克隆。原稿位于 causal_lab_proposal_subpapers_tex_iclr2027/01.tex；基线29e4c0db4a17e72e04d9a1c9b330e81b166c604a，原稿SHA256为ef261e308e3463eb8e54d5de3c0fded1879f58777222f0115a0c5a5f79eaab73。子代理正在同目录创建01_humanized.tex，原稿保留。",
+        "已完成01_humanized.tex首轮主文改写并通过独立语义审查、形式内容保留检查与完整LaTeX编译。正文10页、总42页；原01.tex SHA256未变。Git同步状态另见写作任务最终记录。"
       ],
       "gaps": [
-        "尚无基于最新源文件的修订、语义审查及编译验证；不能标完成。"
+        "尚需作者阅读并确认解释是否清楚；对照实验与新增贡献不能由本轮语言编辑解决。"
       ],
       "acceptance_evidence": [
         "最新源与 prose-only diff；先解释目标、输入、假设和输出，再用术语；贯穿例子和图 1 可独立读懂。",
         "数学、引用、数值和限定条件保持准确，编译与逐项阅读通过。"
       ],
-      "next_step": "核查同目录副本的语义、公式、引用、数值及编译结果；通过后提交并同步。",
+      "next_step": "完成Git同步并由作者审阅副本；实验工作继续提供可理解的单世界运行轨迹。",
       "first_round_can_answer": [
         "为方法直觉提供一个可检查的流程例子。"
       ],
@@ -358,14 +404,15 @@
       "id": "REV-03",
       "title": "摘要数字与证书结果归因",
       "priority": "P0",
-      "status": "open",
+      "status": "partial_evidence",
       "review_refs": [
         "WGDN.W1b",
         "nrhq.Q1",
         "nrhq.Q2"
       ],
       "known_evidence": [
-        "95.3% / 0.2% 对应 Gaussian Bonferroni 与未校正区间，不是完整证书效用；Table 15 另列 theorem simultaneous。"
+        "95.3% / 0.2% 对应 Gaussian Bonferroni 与未校正区间，不是完整证书效用；Table 15 另列 theorem simultaneous。",
+        "修改稿摘要已把95.3%明确归因于Gaussian Bonferroni intervals，数值保持原样；完整方法的实际收益证据仍待实验复核。"
       ],
       "gaps": [
         "尚无摘要、贡献、图表到具体 bound/policy/code/result 的完整归属及修订。"
@@ -374,7 +421,7 @@
         "headline 数字逐项对应实际方法和设置；Bonferroni 动机例子与完整方法结果分开。",
         "摘要实用结论由相应方法直接支持，负结果与范围保留。"
       ],
-      "next_step": "追踪现有数字来源，后续修改摘要及贡献归因。",
+      "next_step": "复核每个主要实验结论的实际方法与保证，决定摘要应呈现哪些完整方法结果。",
       "first_round_can_answer": [
         "本轮实际使用哪个 bound、policy 和评价事件。"
       ],
@@ -539,7 +586,8 @@
       ],
       "known_evidence": [
         "根代理核实 I&K 已有 pairwise bounded-variation / Lipschitz 参数空间与 target projection；Manski 已有目标集合汇总。",
-        "根代理核实 ExAtlas 已有同型重心误差分解、凸组合、阈值拒绝和 bridge 流程。"
+        "根代理核实 ExAtlas 已有同型重心误差分解、凸组合、阈值拒绝和 bridge 流程。",
+        "修改稿将原Appendix A的部分定位移入主文三段相关工作；尚未增加I&K/Manski/ExAtlas的逐命题新增内容比较。"
       ],
       "gaps": [
         "缺逐命题符号映射、贡献归属修订、主文比较与匹配近邻实验。"
