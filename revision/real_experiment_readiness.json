@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0",
+  "as_of_local": "2026-11-07",
+  "timezone": "Asia/Shanghai",
+  "status": "NOT_READY_FOR_REAL_RUN",
+  "current_scope": "review_and_preparation_only",
+  "new_real_effect_estimation_performed": false,
+  "new_real_model_fit_performed": false,
+  "new_real_acquisition_replay_performed": false,
+  "synthetic_ablation_separately_authorized": true,
+  "human_approval_gate_added": false,
+  "reason": "Missing scientific inputs and frozen execution protocol, not a pending permission request.",
+  "report": "revision/REAL_EXPERIMENT_REVIEW_PREPARATION.md",
+  "review_refs": [
+    "WGDN.W2a",
+    "WGDN.W2b",
+    "WGDN.W2c",
+    "WGDN.Q2",
+    "KoBT.W1",
+    "KoBT.W3",
+    "KoBT.W4",
+    "KoBT.Q1",
+    "nrhq.W4",
+    "nrhq.Q2",
+    "WGDN.W3"
+  ],
+  "issue_statuses_retained": {
+    "REV-01": "partial_evidence",
+    "REV-02": "partial_evidence",
+    "REV-03": "partial_evidence",
+    "REV-04": "open",
+    "REV-05": "open",
+    "REV-06": "partial_evidence",
+    "REV-07": "partial_evidence",
+    "REV-08": "open",
+    "REV-09": "open",
+    "REV-10": "partial_evidence",
+    "REV-11": "open",
+    "REV-12": "partial_evidence"
+  },
+  "planned_order": [
+    "real_inputs_to_conditional_or_calibrated_certificate",
+    "many_labs_target_noise_diagnostic",
+    "real_candidate_reveal_replay_if_inputs_support_it"
+  ],
+  "gates": [
+    {
+      "id": "G1",
+      "name": "estimand_compatibility",
+      "status": "partial",
+      "acceptance": "研究资格矩阵、目标人群、处理/对照、结果、时间窗、量纲与独立单位"
+    },
+    {
+      "id": "G2",
+      "name": "mechanism_provenance",
+      "status": "missing",
+      "acceptance": "字段证据表、来源/日期/单位/范围、U映射、联合事件、遗漏机制假设"
+    },
+    {
+      "id": "G3",
+      "name": "validity_inputs",
+      "status": "missing",
+      "acceptance": "L/H或线性moment x,t,P,v依据；条件敏感性与校准保证分别声明"
+    },
+    {
+      "id": "G4",
+      "name": "independence_and_exposure",
+      "status": "partial",
+      "acceptance": "archive/校准/候选/目标划分、依赖结构、已见结果清单"
+    },
+    {
+      "id": "G5",
+      "name": "comparators_and_cost",
+      "status": "not_frozen",
+      "acceptance": "匹配信息基线、预算、科学阈值/停止、审计与采集成本"
+    },
+    {
+      "id": "G6",
+      "name": "evaluation",
+      "status": "not_frozen",
+      "acceptance": "区间对象、参考噪声、点差、方向、资格/拒绝/发布/无界/空区间状态及分母"
+    },
+    {
+      "id": "G7",
+      "name": "implementation_audit",
+      "status": "not_ready",
+      "acceptance": "先冻结接口与核验规则；smoke后独立重算、程序不泄漏与过程暴露分开审计，full前通过"
+    },
+    {
+      "id": "G8",
+      "name": "execution",
+      "status": "not_ready",
+      "acceptance": "各任务适用的输入、协议哈希、review映射和运行时预报先完成；smoke核验后进入full"
+    }
+  ],
+  "claim_tiers": {
+    "conditional_worked_case": "Actual real-data computation given explicit, traceable input assumptions; does not validate all scientific assumptions or claim calibrated real coverage.",
+    "calibrated_real_case": "Additionally requires compatible independent reference labels/scores and an appropriate joint coverage argument; trial counts alone are insufficient."
+  },
+  "exposure_policy": "Existing visible results stay retrospective/exploratory. Sealing again or passing a target-flip test does not erase prior exposure.",
+  "raw_data_publication": false,
+  "sources": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "d668e09e5a78e826c92d5da87578f6535fd4827eaa8455f39681b92250874805"
+    },
+    {
+      "path": "revision/REVIEW_TRACKER.md",
+      "sha256": "df01b36dc80773ea826a2ce9dfbcd4097368965dc730574c6dea3ae8f6ac8b8d"
+    },
+    {
+      "path": "revision/MECHANISM_UNCERTAINTY_ABLATION01.json",
+      "sha256": "51d2d77ee0f473a62afa58a0cd092d5107d192dcd153172dfc49cc4cd18b6e6f"
+    },
+    {
+      "path": "DATA_SOURCES.md",
+      "sha256": "bca3fbb621146422f249647373aa2715b2384f392ed9c6cf7e45bee7af3cf2b4"
+    },
+    {
+      "path": "REAL_CROSS_INTERVENTION_REQUIREMENTS.md",
+      "sha256": "22cea3243155fd9e904f7d538436349792af6e5fc72e7b3dbacd8a29c4c9ead1"
+    },
+    {
+      "path": "REAL_CROSS_INTERVENTION_AUTHOR_RESPONSE.md",
+      "sha256": "188a1a7087e0d6f0625c6fd4b0fccdc6f7b2d5cfda1aa5a49f55bca4088200c2"
+    },
+    {
+      "path": "MICROCREDIT_CODING_STATUS_20260925.md",
+      "sha256": "462c9bbf797b86445c377b3bcc53b8b841cd491eeb36a1817b1930702d51d763"
+    },
+    {
+      "path": "MICROCREDIT_METADATA_AUDIT_20260925.md",
+      "sha256": "b0576d2f8b2734ecaea83ac33442e9c824e1fa77dcb3edcd8d740b98fbdba169"
+    },
+    {
+      "path": "MICROCREDIT_PUBLISHED_V1_REPORT_20260925.md",
+      "sha256": "91c366963cc3bd97b5bb99bc4f623c1dcaa0e5a73e1d1b7fbbc694d69d972625"
+    },
+    {
+      "path": "results/microcredit_primary_published_v1/qualification_audit.csv",
+      "sha256": "f3e622493c57a4a7ecf75c061eafd8d549a0ce7654bca5b11d9e810fdf3d0b29"
+    },
+    {
+      "path": "current_method/docs/effect_family_holdout_protocol.md",
+      "sha256": "5726378b7b3a82c4026da90c852391f1ac715f46dd3e7d715af816b42aaff3a9"
+    },
+    {
+      "path": "current_method/results/real_supplement/manifest.json",
+      "sha256": "64c00d70f417a8ef8adf7061ac7c6821a781aa5e2104f84e265aab1358135e7d"
+    },
+    {
+      "path": "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/report.md",
+      "sha256": "fbd071d5a8833a511175f91aec8e83726e75cb73ae7ad9794d9e5bb51b3aefa9"
+    }
+  ],
+  "report_sha256": "3595ec12644ac0a60ce2bff28ba49a8036b4c2d0781bd4f29feaf67a86c37704",
+  "gates_apply_per_task": true,
+  "execution_sequence": [
+    "freeze applicable task inputs, interfaces and protocol",
+    "announce smoke runtime and execute smoke",
+    "independently audit smoke and announce revised full estimate",
+    "execute full if scientific gates pass"
+  ],
+  "baseline_diagnostic_exception": "Many Labs baseline target-noise diagnostics require their own estimand, exposure, noise definition, evaluation and frozen protocol; they do not require or establish U/L/H calibration."
+}
