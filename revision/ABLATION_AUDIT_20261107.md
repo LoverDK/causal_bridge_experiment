@@ -140,3 +140,6 @@ HISTORICAL-BRIDGE-WORKFLOW01已完成并独立核验：实际历史加4次桥接
 
 
 上述校准finite记录和operational适用条件标签两个问题已于2f34cf2修复；原数值档案保留，独立纠正表见[evidence/record_metadata_audit_20261107/RECORD_LABEL_CORRECTION.md](evidence/record_metadata_audit_20261107/RECORD_LABEL_CORRECTION.md)。噪声混合方差与旧NSW拒绝开关混杂仍按原限制解释，不因标签修复变成新实验效能证据。
+
+
+CONTINUATION02已完成，见[结果](results/ablation_continuation02/RESULTS.md)。L减半可产生严重几何低估、漏盖及过早错误发布；固定末端覆盖不能替代停止风险。H0主预算1800世界无观察违例，保留这一负结果。两轮新消融目前补齐组件与声明敏感性；真实参数来源、适应性实用任务、凸组合之外的适当方法比较仍不能靠重复这些消融完成。
