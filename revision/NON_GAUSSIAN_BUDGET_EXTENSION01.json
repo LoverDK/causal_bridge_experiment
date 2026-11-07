@@ -1,0 +1,73 @@
+{
+  "experiment_id": "NON-GAUSSIAN-BUDGET-EXTENSION01",
+  "frozen_date_local": "2026-11-07",
+  "source_config": "revision/NON_GAUSSIAN_TARGET_RUN01.json",
+  "source_config_sha256": "287e8e978ae28dc0f294e4263a2275723aadc2d0c5b99e0435af6e4d9bc8b34f",
+  "source_run": "reproduced/non_gaussian_target_run01/full",
+  "source_manifest_sha256": "736f2944897b909a4f632189c66e0da9a9b567b38c1eddb92b7967d99f607f63",
+  "source_code_revision": "793f7ae2c2a16b91cf8f00b7590749a1f2f52083",
+  "source_seed": 2026110712,
+  "extension_stream_tag": 2026110721,
+  "preserve_base_prefix_batches": 4,
+  "repeated_types_after_base": true,
+  "continuation_rules": {
+    "target_radius": "minimize complete updated W among all six types; independent new 64-person cohort",
+    "logdet": "maximize original logdet gain among all six types; independent new 64-person cohort",
+    "frozen_random": "cycle saved six-type random permutation, continuing at its fifth entry after the old four",
+    "direct_target": "repeat target in independent 64-person cohorts, stopping at the original attainment if already sufficient"
+  },
+  "max_new_participants": 131072,
+  "checkpoints_new_participants": [
+    0,
+    64,
+    128,
+    192,
+    256,
+    512,
+    1024,
+    2048,
+    4096,
+    8192,
+    16384,
+    32768,
+    65536,
+    131072
+  ],
+  "include_pre_stop_and_stop": true,
+  "replicates": {
+    "smoke": 3,
+    "full": 200
+  },
+  "primary_full_width_threshold": 0.6,
+  "failure_probability": 0.05,
+  "coverage_scope": "pointwise at deterministic design checkpoints and the design-only first attainment; no whole-long-path simultaneous coverage claim",
+  "sampling_scope": "Continue the same original worlds; first visit to each type retains the original paired potential observation, repeated visits use fresh independent individual noise. No Gaussian replacement for Student-t or Rademacher.",
+  "cost_scope": "Cumulative new participants excluding shared historical 64; also report max(new_n-256,0). Already attained methods keep their original first stop.",
+  "smoke_scope": "Original replicate indices 0..2; a predetermined subset of full, not independent additional worlds.",
+  "supplementary_design_only_reference_width": 0.532657214042566,
+  "supplementary_scope": "Compute planned cost for width no larger than direct-target at 256; do not collect beyond the primary .60 stop for this secondary diagnostic.",
+  "output_roots": {
+    "raw": "reproduced/non_gaussian_budget_extension",
+    "report": "revision/results/non_gaussian_budget_extension"
+  },
+  "pre_sampling_design_expectations": {
+    "weak": {
+      "target_radius": 57088,
+      "logdet": 59904,
+      "frozen_random": 88128,
+      "direct_target": 256
+    },
+    "distractor_frozen_random": 384
+  },
+  "inputs_unchanged": [
+    "prior mean/covariance",
+    "candidate features",
+    "individual noise SD",
+    "parameter/noise distribution families",
+    "64-person balanced cohort",
+    "alpha .05",
+    "scientific halfwidth .30",
+    "shared history",
+    "method information boundary"
+  ]
+}
