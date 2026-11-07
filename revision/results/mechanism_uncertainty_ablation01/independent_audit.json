@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "profile": "full",
+  "worlds": 1800,
+  "fixed_states": 43200,
+  "stopped_rows": 86400,
+  "same_weight_comparisons": 28104,
+  "max_absolute_differences": {
+    "geometry_components": 6.661338147750939e-16,
+    "estimate": 0.0,
+    "refusal_endpoints": 0.0,
+    "stopped_endpoints": 0.0,
+    "same_weight_components": 4.440892098500626e-16
+  },
+  "sampling_performed": false,
+  "optimization_repeated": false,
+  "scope": [
+    "Independent explicit geometry/noise formulas; original simulator/optimizer not imported.",
+    "Saved calibration scores sorted without regenerating random observations.",
+    "Each variant uses its own refusal geometry; stopped outputs use only the acquired prefix.",
+    "No verification of global optimization or real mechanism calibration."
+  ]
+}

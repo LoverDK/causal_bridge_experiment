@@ -1,0 +1,32 @@
+{
+  "raw_directory": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\reproduced\\mechanism_uncertainty_ablation01\\full",
+  "raw_manifest_sha256": "2d1e7ff4bac1ffb9dde32ca0d2b90a71b35102e4e8d85e2f8e5ba6605abfdf20",
+  "analysis_script_sha256": "c207af7bbec1b912112b896500267e6a45f905f4b92d5d9e21e26cc26cf2e4e6",
+  "analysis_elapsed_seconds": 28.548187399981543,
+  "sampling_performed": false,
+  "output_sha256": {
+    "calibration_summary.csv": "3e3247c8e8819a993e187f40d7a3a8c33effda35cc0e0d0c15a139d2e46d4e7b",
+    "fixed_summary_cells.csv": "da410bb86078b65105456911dcba3b004256ad34f4b6e83901bd19058e5461d1",
+    "fixed_summary_scenarios.csv": "1aaa4caa6014b6e876da330212c32ed3a7994f20ae03d16c524f165d08898490",
+    "independent_audit.json": "da250fbffe034dcaca46ad04075a483bb32b52a60ade01b0572e45efaee71791",
+    "mechanism_uncertainty_results.pdf": "c41e0a80327d5dba776b03907a8bc4752b8362963fa4e0c24eb2bfbb7e80de8d",
+    "mechanism_uncertainty_results.png": "2e7c4721ed78c976b14319236587267dcfdb49d2c0fc7f47700f84285800eaaf",
+    "paired_bootstrap.csv": "43cb0953c49f719830daa3c06ee53c7301916283a4cc15d43a902a3f35a8f372",
+    "primary_summary_cells.csv": "bc235bfbf226128614c9a927ab1a33840b42ef4e592ce6602136a5181b4e642f",
+    "primary_summary_scenarios.csv": "6257b64204a367e75c6a56e7f453f73501d897f777bcab4a215fe9021410800d",
+    "RESULTS.md": "023cf2c8085e2ae5be9a16b23f17baccb8137fdc6ae5cdfcb05fd45508d86adb",
+    "same_weight_summary_cells.csv": "6416a61883f9e85de15907d997b0acce14e576058af1b2005805496792ceab28",
+    "same_weight_world_contrasts.csv": "667d3cfd15fa70616c2c68af8f14a0a13b6056779b17770891c9733242142ed8",
+    "single_world_fixed_states.csv": "80e9d12186f627f73cc3676510e12d83b584ffdad9be4df23d5298c3b3fd62da",
+    "single_world_observations.csv": "7ed6cf1d0e6428477d91f193a677efa7d4be2c63fe126d7016583fcc96b51d34",
+    "stopped_summary_cells.csv": "8250fa9ebf89b297144c15c95cfa53f0a01a1f3ea2a7cad9f8503d08b12fa4f8",
+    "stopped_summary_scenarios.csv": "1cf88ae4579666b99ccdc466ee77e711e269ddf941278038afe9d5e76591c0f5"
+  },
+  "presentation_refresh_seconds": 0.1448931999038905,
+  "review": {
+    "independent_numeric_audit": "passed",
+    "implementation_agent_raw_summary_cross_check": "passed",
+    "root_report_review": "passed",
+    "figure_visual_inspection": "passed"
+  }
+}
