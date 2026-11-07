@@ -4,14 +4,15 @@
   "timezone": "Asia/Shanghai",
   "baseline_commit": "7e5841d3f3f22f892233582b9509aad656f3d266",
   "branch": "codex/reviewer-guided-rebuild",
-  "scope_note": "消融盘点、原设计成本/模型审计及历史有限预算主实验均完成。新历史主实验40000世界耗时63.18秒并独立核验：主预算4区间缩短中位46.79%，支持有限预算信息增益；与高预算参考方向接近的更强目标仍未达到。全部12项状态保留，没有resolved。",
+  "scope_note": "作者已接受所测非高斯线性模型中有限新增桥接预算明显缩短历史区间的结论，本轮主实验收束。后续回到消融讨论；尚未冻结或启动新的消融协议。",
   "user_requirements": [
     "每次实验推进前、后回顾全部 review 和 12 个问题。",
     "不能用已运行代替已解决；状态由验收证据决定，保留未覆盖问题与负结果。",
     "实验重建使用本地Git分支；未经明确安排不向公开实验仓库发布修订记录。",
     "Evaluate cost and precision jointly under a common reliability requirement, including informative refusal intervals.",
     "每次启动实验前给出预计墙钟时间、依据及资源瓶颈；用smoke实测更新full估计；长任务留出租实例选择。",
-    "当前主目标：有限新增预算缩短历史证据的目标区间，同时报告与高预算直接目标参考的点估计差距及方向判断一致性；不以同精度成本优势为验收条件。"
+    "当前主目标：有限新增预算缩短历史证据的目标区间，同时报告与高预算直接目标参考的点估计差距及方向判断一致性；不以同精度成本优势为验收条件。",
+    "作者已接受所测非高斯线性模型中有限新增桥接预算明显缩短历史区间的结论，本轮主实验收束。后续回到消融讨论；尚未冻结或启动新的消融协议。"
   ],
   "status_definitions": {
     "open": "关键修复证据仍缺；已诊断不等于已修复。",
@@ -760,6 +761,48 @@
           "R∞适应性用途、候选估计类及最近邻公平比较仍缺",
           "形式化范围仍按既有Lean记录；新成本下界未Lean验证"
         ]
+      },
+      {
+        "round_id": "ABLATION-DISCUSSION-02",
+        "phase": "after",
+        "date_local": "2026-11-07",
+        "code_revision": "discussion after historical experiment report b173f7d and tracker c35738d",
+        "artifact_paths": [
+          "revision/ABLATION_AUDIT_20261107.md"
+        ],
+        "all_issue_ids_reviewed": [
+          "REV-01",
+          "REV-02",
+          "REV-03",
+          "REV-04",
+          "REV-05",
+          "REV-06",
+          "REV-07",
+          "REV-08",
+          "REV-09",
+          "REV-10",
+          "REV-11",
+          "REV-12"
+        ],
+        "covered_review_refs": [
+          "WGDN.W1a",
+          "WGDN.Q1",
+          "KoBT.W1",
+          "WGDN.W2a",
+          "nrhq.Q1"
+        ],
+        "findings": [
+          "作者接受本轮有限预算区间缩短结论，不再调整该实验以追求高预算方向一致。",
+          "权重、几何界及新选桥策略比较均已有，建议先保留解释；minimum几何零额外发布/成本收益保留。",
+          "核实同输入同候选同失败预算下 min R2 <= R2(a(Y)) <= R∞(a(Y))；R∞胜全局最优合法设计R2的发布例子在这些条件下不可能，中间R2对适应权重不作有效性声明。",
+          "建议下一组优先讨论校准集合/代理点/真坐标oracle在一般U/L/H流程中的差异，固定L/H及观测和桥接前缀；具体协议未冻结。"
+        ],
+        "status_changes_with_evidence": {},
+        "remaining_gaps": [
+          "机制集合真实构造不能由合成消融解决",
+          "R∞实用角色需先明确结果适应任务；不能以较差固定权重或局部优化失败制造优势",
+          "下一组实验尚未设计完毕或运行"
+        ]
       }
     ]
   },
@@ -1057,7 +1100,8 @@
         "已有 workflow 记录显示 R∞ 释放更少；这是原有结果，非本轮运行。",
         "核实原workflow在观察结果前预规划全部候选顺序、权重与半径；新结果更新估计和拒绝区间，不提供outcome-adaptive选择收益证据。",
         "COST-PRECISION-RUN01：补齐设计型 R2/R∞ 的成本、宽度和覆盖比较；未测试结果驱动选择或合法 sample splitting，不能据此宣称 selection-safe 收益。",
-        "NON-GAUSSIAN-TARGET-RUN01：验证新moment分支的design-only选择，不是R∞结果适应性效用证据。"
+        "NON-GAUSSIAN-TARGET-RUN01：验证新moment分支的design-only选择，不是R∞结果适应性效用证据。",
+        "ABLATION-DISCUSSION-02：相同设计输入、候选及失败预算下，最优合法设计R2数值支配任何适应R∞的半径；只有同条件全局最优比较才可用此结论。逐步预算不同须重审乘子。"
       ],
       "gaps": [
         "缺真实 outcome-adaptive 用途和与合法 sample splitting 的匹配对照；权重优化收益不能归为 selection safety。"
@@ -1066,7 +1110,7 @@
         "逐 policy 标明信息、权重选择时机和合法 bound；明确半径关系及条件。",
         "同目标/信息/预算下报告覆盖、发布、宽度和成本；直接回答有无适应性实用收益，必要时收窄主张。"
       ],
-      "next_step": "首轮跟踪设计权重和 R2/R∞ 分解；后续单独定义适应性任务及对照。",
+      "next_step": "先阐明R∞保护结果适应选择的实际任务和代价，再讨论与合法拆分的效用；不寻找同条件下胜过全局最优R2发布的例子。",
       "first_round_can_answer": [
         "当前 planner 是否使用结果、半径来源与适用条件。"
       ],
