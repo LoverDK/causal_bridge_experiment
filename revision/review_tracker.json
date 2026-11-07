@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "baseline_commit": "7e5841d3f3f22f892233582b9509aad656f3d266",
   "branch": "codex/reviewer-guided-rebuild",
-  "scope_note": "作者已接受有限新增预算缩短历史区间的限定主实验结论。机制集合消融已按协议4528e20授权执行；真实实验先整理review与输入准备，满足明确条件前不启动新真实估计、模型拟合或桥接回放。",
+  "scope_note": "有限预算历史桥接主实验结论已接受；机制集合消融已完成并保留限定/负结果。真实实验review与开跑条件已整理，尚未准备完整，未启动新的真实估计、模型拟合或桥接回放。",
   "user_requirements": [
     "每次实验推进前、后回顾全部 review 和 12 个问题。",
     "不能用已运行代替已解决；状态由验收证据决定，保留未覆盖问题与负结果。",
@@ -12,7 +12,7 @@
     "Evaluate cost and precision jointly under a common reliability requirement, including informative refusal intervals.",
     "每次启动实验前给出预计墙钟时间、依据及资源瓶颈；用smoke实测更新full估计；长任务留出租实例选择。",
     "当前主目标：有限新增预算缩短历史证据的目标区间，同时报告与高预算直接目标参考的点估计差距及方向判断一致性；不以同精度成本优势为验收条件。",
-    "作者已接受有限新增预算缩短历史区间的限定主实验结论。机制集合消融已按协议4528e20授权执行；真实实验先整理review与输入准备，满足明确条件前不启动新真实估计、模型拟合或桥接回放。",
+    "有限预算历史桥接主实验结论已接受；机制集合消融已完成并保留限定/负结果。真实实验review与开跑条件已整理，尚未准备完整，未启动新的真实估计、模型拟合或桥接回放。",
     "真实实验先整理review和准备输入、假设、评价及执行协议；准备完整后再开始。当前准备审查不授权跳过缺失证据直接运行。"
   ],
   "status_definitions": {
@@ -934,6 +934,67 @@
           "REV-11": "open",
           "REV-12": "partial_evidence"
         }
+      },
+      {
+        "round_id": "MECHANISM-UNCERTAINTY-ABLATION01",
+        "phase": "after",
+        "date_local": "2026-11-07",
+        "code_revision": "protocol 4528e20; implementation ca2056b; report 65b553a",
+        "artifact_paths": [
+          "revision/results/mechanism_uncertainty_ablation01/RESULTS.md",
+          "revision/results/mechanism_uncertainty_ablation01/analysis_manifest.json",
+          "revision/evidence/mechanism_uncertainty_ablation01_complete.json",
+          "reproduced/mechanism_uncertainty_ablation01/full/run_manifest.json"
+        ],
+        "all_issue_ids_reviewed": [
+          "REV-01",
+          "REV-02",
+          "REV-03",
+          "REV-04",
+          "REV-05",
+          "REV-06",
+          "REV-07",
+          "REV-08",
+          "REV-09",
+          "REV-10",
+          "REV-11",
+          "REV-12"
+        ],
+        "covered_review_refs": [
+          "KoBT.W1",
+          "WGDN.W2a",
+          "nrhq.Q1",
+          "nrhq.Q2"
+        ],
+        "findings": [
+          "1800 worlds; full75.790688seconds versus revised2–4minute forecast; 10tests18runchecks; independent43200formula states/86400stopped outputs passed.",
+          "主R2 stage3，calibrated/oracle分别1800/1800覆盖，proxy1798/1800；没有严重欠覆盖，保留负控制经验表现好的结果。",
+          "bridgeable校准/代理/oracle平均全宽.421914/.310244/.309321；delta.2发布242/566/575(各600)，平均停止新增265.28/202.72/203.36。",
+          "同权重几何和各自重新优化分开；oracle额外信息、proxy无名义保证；三版本不是同保证下的普通竞争算法。",
+          "本轮只回答机制不确定性组件的限定影响，不解决真实输入来源、不证明相对直接实验省钱。"
+        ],
+        "issue_findings": {
+          "REV-01": "固定单世界输入、权重和半径分解已保存；不代替作者可读性审阅。",
+          "REV-02": "全部设计型权重；Rinf次结果没有提供结果适应选择用途。",
+          "REV-03": "数字明确归属一般U/L/H计算证书及三个输入身份；未改摘要。",
+          "REV-04": "合成集合消融量化宽度与发布代价；proxy在主预算仍覆盖1798/1800，未展示明显欠覆盖；真实U/LH来源继续open。",
+          "REV-05": "本轮不运行真实数据，微贷资格失败未改变；真实准备报告已列开跑要求。",
+          "REV-06": "本轮未运行ManyLabs目标噪声诊断；真实准备报告列为独立待冻结任务。",
+          "REV-07": "共用观测、桥路径和预算的组件比较已完成；不证明相对direct/ExAtlas优势，真实成本仍缺。",
+          "REV-08": "机制消融未解决相关工作与新颖性。",
+          "REV-09": "保留simplex；没有证明该估计器类普遍最优。",
+          "REV-10": "本轮固定random路径，不验证新W或旧logdet选桥定理；去高斯已有范围保持。",
+          "REV-11": "本轮区分主方法、proxy负控制、oracle及一般U/LH分支；全稿命名仍未修完。",
+          "REV-12": "固定证书、停止实际输出、拒绝outer、零发布NA、空区间与成本分母已独立核对；没有真实验证。"
+        },
+        "status_changes_with_evidence": {},
+        "remaining_gaps": [
+          "真实U/LH及独立校准档案",
+          "明显遗漏集合可靠性损失的实证证据（本轮未观察到，不改seed/阈值制造）",
+          "结果适应选择实用角色",
+          "强外部基线、新颖性与真实成本",
+          "真实输入到证书案例及ManyLabs噪声诊断尚未执行"
+        ]
       }
     ]
   },
@@ -1194,7 +1255,8 @@
         "只读重建原linear/bridgeable/replicate 0轨迹，解释半径.583089→.205812→.168749及192人停止；作者理解情况尚待讨论。",
         "COST-PRECISION-RUN01：有可复核的完整流程、成本与精度例子；作者是否理解、正文是否足够清楚仍需讨论。",
         "NON-GAUSSIAN-TARGET-RUN01：新增预先指定单世界的观测、权重、方差分解和采集/停止轨迹；不代替作者理解或全稿编辑。",
-        "HISTORICAL-BRIDGE：固定设计0/世界0实际历史和新观测轨迹已保存，有助解释，不代替作者可读性审阅。"
+        "HISTORICAL-BRIDGE：固定设计0/世界0实际历史和新观测轨迹已保存，有助解释，不代替作者可读性审阅。",
+        "MECHANISM-UNCERTAINTY-ABLATION01：固定单世界输入、权重和半径分解已保存；不代替作者可读性审阅。"
       ],
       "gaps": [
         "尚需作者阅读并确认解释是否清楚；对照实验与新增贡献不能由本轮语言编辑解决。"
@@ -1212,7 +1274,8 @@
       ],
       "sources": [
         "用户 PDF 第 1–2 页",
-        "nrhq review"
+        "nrhq review",
+        "revision/results/mechanism_uncertainty_ablation01/RESULTS.md"
       ]
     },
     {
@@ -1232,7 +1295,8 @@
         "核实原workflow在观察结果前预规划全部候选顺序、权重与半径；新结果更新估计和拒绝区间，不提供outcome-adaptive选择收益证据。",
         "COST-PRECISION-RUN01：补齐设计型 R2/R∞ 的成本、宽度和覆盖比较；未测试结果驱动选择或合法 sample splitting，不能据此宣称 selection-safe 收益。",
         "NON-GAUSSIAN-TARGET-RUN01：验证新moment分支的design-only选择，不是R∞结果适应性效用证据。",
-        "ABLATION-DISCUSSION-02：相同设计输入、候选及失败预算下，最优合法设计R2数值支配任何适应R∞的半径；只有同条件全局最优比较才可用此结论。逐步预算不同须重审乘子。"
+        "ABLATION-DISCUSSION-02：相同设计输入、候选及失败预算下，最优合法设计R2数值支配任何适应R∞的半径；只有同条件全局最优比较才可用此结论。逐步预算不同须重审乘子。",
+        "MECHANISM-UNCERTAINTY-ABLATION01：全部设计型权重；Rinf次结果没有提供结果适应选择用途。"
       ],
       "gaps": [
         "缺真实 outcome-adaptive 用途和与合法 sample splitting 的匹配对照；权重优化收益不能归为 selection safety。"
@@ -1268,7 +1332,8 @@
         "95.3% / 0.2% 对应 Gaussian Bonferroni 与未校正区间，不是完整证书效用；Table 15 另列 theorem simultaneous。",
         "修改稿摘要已把95.3%明确归因于Gaussian Bonferroni intervals，数值保持原样；完整方法的实际收益证据仍待实验复核。",
         "COST-PRECISION-RUN01：新数字明确绑定 R2/R∞、prefix/stopped 与输出任务；未把本轮数字自动写入摘要，其他实验归因仍待全篇核对。",
-        "NON-GAUSSIAN-TARGET-RUN01：结果对应新主定理和明确method_id；未自动改摘要数字。"
+        "NON-GAUSSIAN-TARGET-RUN01：结果对应新主定理和明确method_id；未自动改摘要数字。",
+        "MECHANISM-UNCERTAINTY-ABLATION01：数字明确归属一般U/L/H计算证书及三个输入身份；未改摘要。"
       ],
       "gaps": [
         "摘要Bonferroni归因已澄清；主要贡献、全部图表到实际策略及保证的系统核对和完整方法效用证据仍需后续实验。"
@@ -1305,7 +1370,8 @@
         "有限档案诊断不能证明遗漏机制不存在或认证全域平滑性上界。",
         "COST-PRECISION-RUN01：仅使用合成校准和已知解析 L,H；真实机制集合、错设与外部有效性没有新增证据。",
         "NON-GAUSSIAN-TARGET-RUN01：V0、噪声方差、机制向量均为synthetic_known；真实集合、L/H与二阶矩校准仍未解决。",
-        "REAL-PREPARATION-01：review、既有证据、条件案例/真实校准分层及8项开跑要求已整理；当前未就绪，未运行新真实实验，状态保留。"
+        "REAL-PREPARATION-01：review、既有证据、条件案例/真实校准分层及8项开跑要求已整理；当前未就绪，未运行新真实实验，状态保留。",
+        "MECHANISM-UNCERTAINTY-ABLATION01：合成集合消融量化宽度与发布代价；proxy在主预算仍覆盖1798/1800，未展示明显欠覆盖；真实U/LH来源继续open。"
       ],
       "gaps": [
         "缺真实、结果盲、可追溯的机制坐标、集合、L,H、联合覆盖依据及错设敏感性。"
@@ -1324,7 +1390,8 @@
       "sources": [
         "current_method/atlas_new/workflow.py",
         "current_method/docs/mechanism_set_calibration_protocol.md",
-        "revision/REAL_EXPERIMENT_REVIEW_PREPARATION.md"
+        "revision/REAL_EXPERIMENT_REVIEW_PREPARATION.md",
+        "revision/results/mechanism_uncertainty_ablation01/RESULTS.md"
       ]
     },
     {
@@ -1343,7 +1410,8 @@
         "published 主分析为 Mexico、India EL1 两项；NSW 是 within-trial reconstruction，不能作为跨干预机制保证验证。",
         "COST-PRECISION-RUN01：完整合成闭环已实际重跑；真实微贷 not_qualified 和真实证书案例缺口不变。",
         "NON-GAUSSIAN-TARGET-RUN01：完成合成新分支闭环，没有新的真实微贷证书。",
-        "REAL-PREPARATION-01：review、既有证据、条件案例/真实校准分层及8项开跑要求已整理；当前未就绪，未运行新真实实验，状态保留。"
+        "REAL-PREPARATION-01：review、既有证据、条件案例/真实校准分层及8项开跑要求已整理；当前未就绪，未运行新真实实验，状态保留。",
+        "MECHANISM-UNCERTAINTY-ABLATION01：本轮不运行真实数据，微贷资格失败未改变；真实准备报告已列开跑要求。"
       ],
       "gaps": [
         "尚无真实 audit→集合→半径→发布/拒绝→验证的完整证书案例。"
@@ -1383,7 +1451,8 @@
         "COST-PRECISION-RUN01：没有运行 Many Labs；目标噪声主导的问题不由本轮修复。",
         "NON-GAUSSIAN-TARGET-RUN01：本轮未运行Many Labs，目标噪声问题状态不变。",
         "ABLATION-AUDIT：已核对57目标×100训练量匹配及原稿10/28目标效应族baseline；不再把多效应族列为完全未做。",
-        "REAL-PREPARATION-01：review、既有证据、条件案例/真实校准分层及8项开跑要求已整理；当前未就绪，未运行新真实实验，状态保留。"
+        "REAL-PREPARATION-01：review、既有证据、条件案例/真实校准分层及8项开跑要求已整理；当前未就绪，未运行新真实实验，状态保留。",
+        "MECHANISM-UNCERTAINTY-ABLATION01：本轮未运行ManyLabs目标噪声诊断；真实准备报告列为独立待冻结任务。"
       ],
       "gaps": [
         "缺等目标n/固定参考噪声诊断；多效应族baseline已有，仍不是主证书的真实应用。"
@@ -1426,7 +1495,8 @@
         "NON-GAUSSIAN-TARGET-RUN01：严格同宽0.532657214043时强桥64新人数、direct256；弱桥在256人仍不能达到width .6。优势来自声明的loading，非普遍省成本。",
         "MAIN-THEOREM与预算下界保留不利direct比较；下一协议依作者改为有限预算信息增益及高预算参考结论接近，尚无新结果。",
         "HISTORICAL-BRIDGE：主预算4缩宽中位46.79%，支持有限预算信息增益；同预算direct更强，与高预算参考方向接近仍未达到。",
-        "REAL-PREPARATION-01：review、既有证据、条件案例/真实校准分层及8项开跑要求已整理；当前未就绪，未运行新真实实验，状态保留。"
+        "REAL-PREPARATION-01：review、既有证据、条件案例/真实校准分层及8项开跑要求已整理；当前未就绪，未运行新真实实验，状态保留。",
+        "MECHANISM-UNCERTAINTY-ABLATION01：共用观测、桥路径和预算的组件比较已完成；不证明相对direct/ExAtlas优势，真实成本仍缺。"
       ],
       "gaps": [
         "合成六策略已按统一评价比较；仍缺最近前作、样本拆分等强外部基线与审计部署总成本，以及真实输入下的对应证据。"
@@ -1446,7 +1516,8 @@
         "current_method/results/ablations_full/report.md",
         "current_method/results/ablations_full/stopped_summary.csv",
         "current_method/results/workflow_full/pooled_summary.csv",
-        "revision/REAL_EXPERIMENT_REVIEW_PREPARATION.md"
+        "revision/REAL_EXPERIMENT_REVIEW_PREPARATION.md",
+        "revision/results/mechanism_uncertainty_ablation01/RESULTS.md"
       ]
     },
     {
@@ -1466,7 +1537,8 @@
         "修改稿将原Appendix A的部分定位移入主文三段相关工作；尚未增加I&K/Manski/ExAtlas的逐命题新增内容比较。",
         "COST-PRECISION-RUN01：并行核查 I&K/Manski，明确 Theorem 5.3 的集合构造继承关系；未完成论文本体修改、全部近邻比较或贡献新颖性证明。",
         "RELATED-WORK-01：I&K 2021 v1已含Lipschitz pairwise空间、目标投影、模型与联合高斯置信矩形相交及数据依赖权重讨论；P(J)与该集合直接对应。Manski详读2019作者前稿，最终刊版全文未取得。详见revision/RELATED_WORK_READING.md。",
-        "NON-GAUSSIAN-TARGET-RUN01：概率/矩阵/有限枚举为已有工具；本轮没有解决贡献新颖性及全部近邻比较。"
+        "NON-GAUSSIAN-TARGET-RUN01：概率/矩阵/有限枚举为已有工具；本轮没有解决贡献新颖性及全部近邻比较。",
+        "MECHANISM-UNCERTAINTY-ABLATION01：机制消融未解决相关工作与新颖性。"
       ],
       "gaps": [
         "缺逐命题符号映射、贡献归属修订、主文比较与匹配近邻实验。"
@@ -1502,7 +1574,8 @@
         "方法限制为非负和为一的 prior ATE 权重；现有定理不证明它在所有 transport 估计器中最优。",
         "重心不必是可实施干预，机制凸包上的平滑性需要科学解释。",
         "COST-PRECISION-RUN01：本轮维持 simplex 估计器类；没有负权重、回归或 IPD 对照，不能回答为何该候选类充分。",
-        "NON-GAUSSIAN-TARGET-RUN01：新线性moment估计器可有signed weights，不证明原simplex类在所有方法中最优。"
+        "NON-GAUSSIAN-TARGET-RUN01：新线性moment估计器可有signed weights，不证明原simplex类在所有方法中最优。",
+        "MECHANISM-UNCERTAINTY-ABLATION01：保留simplex；没有证明该估计器类普遍最优。"
       ],
       "gaps": [
         "缺应用中选择该类的理由及负权重、外推、meta-regression / IPD 方法的信息条件对照。"
@@ -1542,7 +1615,8 @@
         "NON-GAUSSIAN-TARGET-RUN01：5400世界覆盖27个预设几何×参数分布×噪声分布；target规则实际枚举W并核对目标gain。去Gaussian部分得到理论与域内实现证据，线性和有效输入限制仍在。",
         "MAIN-THEOREM：200原设计×200非Gaussian世界新W选桥执行并审计；原PanelD无实际历史观测的任务局限已记录。",
         "HISTORICAL-BRIDGE：实际历史和新观测共同进入W与中心，新非高斯单步公式已在40000世界执行并全量重建；线性已知矩条件保留。",
-        "REAL-PREPARATION-01：review、既有证据、条件案例/真实校准分层及8项开跑要求已整理；当前未就绪，未运行新真实实验，状态保留。"
+        "REAL-PREPARATION-01：review、既有证据、条件案例/真实校准分层及8项开跑要求已整理；当前未就绪，未运行新真实实验，状态保留。",
+        "MECHANISM-UNCERTAINTY-ABLATION01：本轮固定random路径，不验证新W或旧logdet选桥定理；去高斯已有范围保持。"
       ],
       "gaps": [
         "实际新W执行已完成；一般机制流程衔接、真实输入与成本仍未验证。",
@@ -1582,7 +1656,8 @@
         "COST-PRECISION-RUN01：新结果有冻结配置、独立种子、源快照和哈希；全篇 prototype 与当前方法的归属核对仍未完成。",
         "NON-GAUSSIAN-TARGET-RUN01：新分支、冻结配置、代码793f7ae、源快照、哈希和报告单独保存；旧实验没有被覆盖。",
         "ABLATION-AUDIT区分旧prototype、一般U/L/H+simplex、已知矩线性分支；原PanelD抽象先验被过度称为主流程的范围已纠正。",
-        "REAL-PREPARATION-01：review、既有证据、条件案例/真实校准分层及8项开跑要求已整理；当前未就绪，未运行新真实实验，状态保留。"
+        "REAL-PREPARATION-01：review、既有证据、条件案例/真实校准分层及8项开跑要求已整理；当前未就绪，未运行新真实实验，状态保留。",
+        "MECHANISM-UNCERTAINTY-ABLATION01：本轮区分主方法、proxy负控制、oracle及一般U/LH分支；全稿命名仍未修完。"
       ],
       "gaps": [
         "最新Overleaf源已取得，workflow已对应Appendix L / Tables 10–12 / Figure 5；全稿图表到实现、policy、bound、保证的完整清单尚未完成。"
@@ -1627,7 +1702,8 @@
         "COST-PRECISION-RUN01：严格区分点发布、拒绝外区间、半宽达标、完整前缀和原停止；失败/无界保留，支持本合成流程统计口径。真实资格状态、提前无效停止和 sharp 区域使用仍待处理。",
         "NON-GAUSSIAN-TARGET-RUN01：独立记录pointwise/五前缀区间、actual stopped/full prefix，以及interval miss与scientific bad release；停止由设计决定，不能推广为任意outcome-adaptive停止。",
         "HISTORICAL-BRIDGE：固定预算、独立未来参考、真值误差、方向三分类及分母分开；不声明条件或全路径覆盖。",
-        "REAL-PREPARATION-01：review、既有证据、条件案例/真实校准分层及8项开跑要求已整理；当前未就绪，未运行新真实实验，状态保留。"
+        "REAL-PREPARATION-01：review、既有证据、条件案例/真实校准分层及8项开跑要求已整理；当前未就绪，未运行新真实实验，状态保留。",
+        "MECHANISM-UNCERTAINTY-ABLATION01：固定证书、停止实际输出、拒绝outer、零发布NA、空区间与成本分母已独立核对；没有真实验证。"
       ],
       "gaps": [
         "本合成流程输出/停止/空无界/分母已核对；真实资格失败状态、sharp区域与外区间的全篇归属，以及提前无效停止/目标切换仍待处理。"
@@ -1648,7 +1724,8 @@
         "current_method/atlas_new/core.py",
         "current_method/atlas_new/workflow.py",
         "用户 PDF Eq. 4.3、Theorem 5.3、Appendix F.7",
-        "revision/REAL_EXPERIMENT_REVIEW_PREPARATION.md"
+        "revision/REAL_EXPERIMENT_REVIEW_PREPARATION.md",
+        "revision/results/mechanism_uncertainty_ablation01/RESULTS.md"
       ]
     }
   ]
