@@ -1,0 +1,28 @@
+{
+  "raw_directory": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\reproduced\\ablation_continuation02\\full",
+  "raw_manifest_sha256": "1083c508b2904f14d3c1ff050b2509ea63e2c4409a087fc8d0b705fd74a4b842",
+  "analysis_script_sha256": "f54742586b60113b65d3147d84e294b5c63a9e1b633c37bab6813dae9bcd88d3",
+  "analysis_elapsed_seconds": 71.61679189989809,
+  "sampling_performed": false,
+  "output_sha256": {
+    "calibration_summary.csv": "71724f8849979501260984ba950bedbbd3f980e565d16a8e3b158ec204e3559f",
+    "fixed_summary_cells.csv": "3de92fdbbdecc4b66b76a11006fdf4d5f9a262972856f86978b33622a4e37e3c",
+    "fixed_summary_scenarios.csv": "728f4c600dc001c95355f73f66dbcf8a62314f75bd05790cee8661391e542880",
+    "independent_audit.json": "b17b3235faf8140214d55b8d2d02256fc725ee46709db131bc7ed0701910f6b3",
+    "paired_bootstrap.csv": "5d2fec670ad118a040e5da6649a879ada47e4fe31ae0dd6af45dde2e7e6757b8",
+    "primary_summary_cells.csv": "5b50817078b26c74610fc68e9fa1635712755e337ffd7d9240c128dce65369bb",
+    "primary_summary_scenarios.csv": "85ad731a7ecfc60640a2bbdf44f8d4e542cef8601be7cf24f99acc5859885655",
+    "RESULTS.md": "ceb04d626008b122b1325f709d926b56e130193d8d4a46cd3689b0e1b3b60737",
+    "same_weight_summary_cells.csv": "1f07817a3c43a4c4b508d043bed9fcc2294a5ad26aea25c07cee46d1ac83d63f",
+    "same_weight_world_contrasts.csv": "20e3910d2a1e079ca629491cb968e953ddc9daa8b4593e227ce4922188135ec1",
+    "single_world_fixed_states.csv": "c1acf9913f8fd0ae6550295d5817ce4c1aea1455b53fed4600d6a066475f1f47",
+    "single_world_observations.csv": "ba06670275ed844637e9b31ecf7f3c2eb9594416107a7a40e3098b64e58adbe6",
+    "smoothness_declaration_results.pdf": "85c4ee3d833d3a9dea44f4fd4e77e42c43f4900c67169d47eaf00e0d2df3a12d",
+    "smoothness_declaration_results.png": "5e8b3c255c980978bcd3d04f08413dde47ce689899517c5f4ea6901261c6f169",
+    "stopped_summary_cells.csv": "92366ab03a4d70c50746f1c8a6500193578fbeed22a3a194df3df89032929a18",
+    "stopped_summary_scenarios.csv": "bc6a9d664ba490230ac0ebf4e0a62c5d1c5bfcfc2f3e29454d232dde8fc22a73"
+  },
+  "numerical_audit_script_sha256": "e1093c05c236ade4b13bc5ad3af0ca7ccdeef71650705c4a75a121bbf07aa09d",
+  "presentation_refresh_seconds": 1.028186200070195,
+  "presentation_refresh_scope": "Report ordering and main-result interpretation from already audited CSVs; no new numerical audit, sampling, or optimization."
+}

@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "worlds": 1800,
+  "fixed_states": 72000,
+  "stopped_rows": 144000,
+  "same_weight_states": 72000,
+  "valid_declaration_and_covered_mechanism_geometry_checks": 45760,
+  "max_absolute_differences": {
+    "geometry": 1.3322676295501878e-15,
+    "estimate": 0.0,
+    "refusal": 0.0,
+    "stopped": 0.0,
+    "same_weight": 8.881784197001252e-16,
+    "error_decomposition": 0.0
+  },
+  "sampling_performed": false,
+  "optimization_repeated": false,
+  "scope": [
+    "No simulator/optimizer import; explicit independent formulas and actual saved observations.",
+    "All source/artifact hashes and calibration-score quantiles checked; no global-optimum claim.",
+    "Policy declaration validity, selected branch and returned refusal validity remain separate.",
+    "True effects used only to score saved plans; no new real-data analysis."
+  ]
+}
