@@ -2,7 +2,7 @@
 
 更新：2026-11-07（Asia/Shanghai）。基线：`7e5841d3f3f22f892233582b9509aad656f3d266`；分支：`codex/reviewer-guided-rebuild`。
 
-原流程与成本—精度RUN01完成；新非高斯W形式概率定理及目标区间有限菜单选择已通过Lean，矩阵闭式连接范围另列。目标区间新实验协议已冻结，尚未报告新模拟结果；无问题标为全部解决。 机器可读版本为 `review_tracker.json`，两份同步维护。
+新非高斯目标区间分支完成：W形式主概率界与单步目标选桥通过Lean；5400世界新实验及成本—精度分析完成。强桥有严格同宽成本优势，弱桥负结果保留；全部12项已回顾，没有resolved。 机器可读版本为 `review_tracker.json`，两份同步维护。
 
 ## 每轮固定要求
 
@@ -402,3 +402,23 @@ Q1 仅回指 W1–W4。
 非高斯W形式概率界、真实观测误差与有限菜单目标区间选择已通过Lean；详见[验证范围](non_gaussian_bridge/README.md)。REV-10由open改为partial_evidence，仅支持Gaussian限制和选择目标这一部分。条件后验、固定参数覆盖与joint marginal coverage分开；线性、已知二阶矩、机制输入及现实适用性仍未解决。其余11项状态不变，没有resolved。
 
 用户要求直接缩短目标区间，故新主选择是逐候选最小化有效半径；logdet为对照。已冻结[NON-GAUSSIAN-TARGET-RUN01](NON_GAUSSIAN_TARGET_RUN01.md)，commit 7846f87。协议表逐项回顾12项意见；新模拟结果尚未报告。
+
+
+## NON-GAUSSIAN-TARGET-RUN01 完成后回顾
+
+完整运行5400个独立世界、216000条相关预算记录，代码793f7ae，11项测试与8项运行核验通过。[完整结果](results/non_gaussian_target_run01/RESULTS.md)保留所有27个预设单元。强桥与直接目标实验在完整width=0.532657214043时分别需新增64与256人；计入共同历史则总128与320人。优势由预设2倍target loading解释，weak桥接负结果保留。
+
+- REV-01：新增预先指定单世界的观测、权重、方差分解和采集/停止轨迹；不代替作者理解或全稿编辑。
+- REV-02：验证新moment分支的design-only选择，不是R∞结果适应性效用证据。
+- REV-03：结果对应新主定理和明确method_id；未自动改摘要数字。
+- REV-04：V0、噪声方差、机制向量均为synthetic_known；真实集合、L/H与二阶矩校准仍未解决。
+- REV-05：完成合成新分支闭环，没有新的真实微贷证书。
+- REV-06：本轮未运行Many Labs，目标噪声问题状态不变。
+- REV-07：严格同宽0.532657214043时强桥64新人数、direct256；弱桥在256人仍不能达到width .6。优势来自声明的loading，非普遍省成本。
+- REV-08：概率/矩阵/有限枚举为已有工具；本轮没有解决贡献新颖性及全部近邻比较。
+- REV-09：新线性moment估计器可有signed weights，不证明原simplex类在所有方法中最优。
+- REV-10：5400世界覆盖27个预设几何×参数分布×噪声分布；target规则实际枚举W并核对目标gain。去Gaussian部分得到理论与域内实现证据，线性和有效输入限制仍在。
+- REV-11：新分支、冻结配置、代码793f7ae、源快照、哈希和报告单独保存；旧实验没有被覆盖。
+- REV-12：独立记录pointwise/五前缀区间、actual stopped/full prefix，以及interval miss与scientific bad release；停止由设计决定，不能推广为任意outcome-adaptive停止。
+
+所有状态维持前一理论里程碑，REV-10仍是partial_evidence；没有resolved。经验覆盖不代替概率定理，线性模型/已知输入/现实应用缺口保留。

@@ -1,0 +1,3 @@
+geometry,bridge_new_n,direct_new_n,bridge_W,direct_W,W_abs_difference,bridge_width,direct_width,width_abs_difference,incremental_saving_fraction,bridge_total_n,direct_total_n
+target_informative,64,256,0.0035465463458948,0.0035465463458948,0,0.532657214042566,0.532657214042566,0,0.75,128,320
+distractor,64,256,0.0035465463458948,0.0035465463458948,0,0.532657214042566,0.532657214042566,0,0.75,128,320

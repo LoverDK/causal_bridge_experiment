@@ -1,0 +1,44 @@
+{
+  "status": "complete",
+  "started_utc": "2026-11-07T10:21:54.575575+00:00",
+  "source_run": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\reproduced\\non_gaussian_target_run01\\full",
+  "raw_manifest_sha256": "736f2944897b909a4f632189c66e0da9a9b567b38c1eddb92b7967d99f607f63",
+  "analysis_source_sha256": "5618cc2c3ce9b9453f5a203949e027ab92736f830cb321057941cdad331be659",
+  "command": [
+    "D:\\python\\python.exe",
+    "current_method/analyze_non_gaussian_target_bridge.py"
+  ],
+  "scope": "Descriptive fixed-design costs; world-level marginal events with pointwise Wilson 95% intervals; no family correction",
+  "checks_passed": 118,
+  "worlds": 5400,
+  "records": 216000,
+  "summary_rows": 1080,
+  "finished_utc": "2026-11-07T10:22:30.444800+00:00",
+  "artifact_sha256": {
+    "analysis_checks.json": "476829ea2030e9d59c1e2045a980f6e0c1327926181211e6682c2eec3be1ce7d",
+    "attainment_per_world.csv": "11458d7c2f6d4b69270c8dd8c5b6b3d52fd5f5b8cd2a0721d94dcf0b6597a6ee",
+    "attainment_summary.csv": "2efe8d4cf8b428df6cbb1424dbf664e756f901dbd6430dc796fa1a925ad80fee",
+    "cell_prefix_stopped_summary.csv": "1253be404b08b12c8626881fdae61608a89219a5377d9945e181d78a1add3de9",
+    "cost_precision.pdf": "49b1383cc605a27e2cafef56447287a423cfed757df3d9d8ead6cffd3d09fa10",
+    "cost_precision.png": "3923f91de5d03e2d2673329ef8a9597bde284b0a81ad5bca3d65ad679224c6c8",
+    "coverage.pdf": "fe9b847570eea142fba3b4863bb8dcf726ccd6d2ea06d5d71babd6b3bb767592",
+    "coverage.png": "064ad452205ee37547f9f38fddd5c818b67187abc4f278634b31e57479adaec2",
+    "deterministic_width_cost.csv": "e604c3bc21381a76267f5acb6bea4373ad64d63ac89b1c1ddaaed33be29fa192",
+    "exact_width_cost_matches.csv": "ed53cc041a27f393e6f301abd725b6d9e1df9acf638401a3b5557173dbac8ce4",
+    "path_coverage_summary.csv": "c0d3ef16580266b11f806624b0b631f4887aacaad3b9d7f0db923e5cdb03b921",
+    "RESULTS.md": "64db9c3454d88bbecb0cb3e6a25cfb499ad31c80352c10e06a0fe33b857b1839",
+    "single_world_initial_candidates.csv": "092862d4f2d9cdab48c5370944f85b1181b0c3403ab5725a09091f9126b82bde",
+    "single_world_observations.csv": "833721e7616647cfab01ef275ffd4f795820c83adcf4a8f8a90039b678765c75",
+    "single_world_trajectory.csv": "4a75a9f1df803db1ab168f33be77d206ddb713822a10f527111be34a27fdbc9b",
+    "stopped_terminal_summary.csv": "24de960aa5aaf6e1f7546228d798bc696fe11bc8f618bbdba9b55d505390722e"
+  },
+  "report_refresh": {
+    "utc": "2026-11-07T10:23:43.068129+00:00",
+    "previous_analysis_source_sha256": "0236ff07fd2572cab15172448e768de17b6b19f0b5c9c5aeabdd8a7b3414d68b",
+    "operations": "Rechecked original raw and source-snapshot hashes; regenerated RESULTS.md with stage-zero selected displayed as history only; statistical tables and figures unchanged."
+  },
+  "precision_wording_refresh": {
+    "at_utc": "2026-11-07T10:27:55.360913+00:00",
+    "reason": "Clarify that weak-bridge failure means width threshold not attained within budget; no sampling, numerical analysis, table or figure changed."
+  }
+}

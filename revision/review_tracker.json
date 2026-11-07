@@ -4,7 +4,7 @@
   "timezone": "Asia/Shanghai",
   "baseline_commit": "7e5841d3f3f22f892233582b9509aad656f3d266",
   "branch": "codex/reviewer-guided-rebuild",
-  "scope_note": "原流程与成本—精度RUN01完成；新非高斯W形式概率定理及目标区间有限菜单选择已通过Lean，矩阵闭式连接范围另列。目标区间新实验协议已冻结，尚未报告新模拟结果；无问题标为全部解决。",
+  "scope_note": "新非高斯目标区间分支完成：W形式主概率界与单步目标选桥通过Lean；5400世界新实验及成本—精度分析完成。强桥有严格同宽成本优势，弱桥负结果保留；全部12项已回顾，没有resolved。",
   "user_requirements": [
     "每次实验推进前、后回顾全部 review 和 12 个问题。",
     "不能用已运行代替已解决；状态由验收证据决定，保留未覆盖问题与负结果。",
@@ -511,6 +511,68 @@
           "模拟二阶矩是synthetic_known，非现实校准。",
           "运行成功或Monte Carlo覆盖不替代数学证明或解决全部review。"
         ]
+      },
+      {
+        "round_id": "NON-GAUSSIAN-TARGET-RUN01",
+        "phase": "after",
+        "date_local": "2026-11-07",
+        "code_revision": "793f7ae2c2a16b91cf8f00b7590749a1f2f52083",
+        "artifact_paths": [
+          "revision/NON_GAUSSIAN_TARGET_RUN01.json",
+          "revision/results/non_gaussian_target_run01/RESULTS.md",
+          "revision/results/non_gaussian_target_run01/analysis_manifest.json",
+          "reproduced/non_gaussian_target_run01/full/run_manifest.json",
+          "revision/evidence/non_gaussian_target_run01_complete.json"
+        ],
+        "all_issue_ids_reviewed": [
+          "REV-01",
+          "REV-02",
+          "REV-03",
+          "REV-04",
+          "REV-05",
+          "REV-06",
+          "REV-07",
+          "REV-08",
+          "REV-09",
+          "REV-10",
+          "REV-11",
+          "REV-12"
+        ],
+        "covered_review_refs": [
+          "KoBT.W4",
+          "KoBT.Q1",
+          "nrhq.W4",
+          "nrhq.Q2",
+          "WGDN.Q1"
+        ],
+        "findings": [
+          "5400 independent worlds; 216000 correlated policy/mode/prefix records; 35.54 seconds; 11 implementation tests and 8 run checks passed.",
+          "At exactly equal full width 0.532657214043, target bridge costs 64 new participants and direct target costs 256 in informative/distractor; 75% incremental saving, or 60% including the shared 64-person history.",
+          "Distractor width<=.6: target64, logdet192, direct256, fixed-random not attained by256; weak bridge methods not attained by256 while direct attained.",
+          "Pointwise empirical coverage across 540 cells is 99.5%-100% with n=200 per cell; stopped and corrected five-prefix empirical coverage100%. Monte Carlo proportions are not population guarantees.",
+          "Costs/widths are deterministic under the declared design and common second moments; distribution repetitions are not independent evidence of cost advantage."
+        ],
+        "status_changes_with_evidence": {},
+        "all_issue_assessment": {
+          "REV-01": "新增预先指定单世界的观测、权重、方差分解和采集/停止轨迹；不代替作者理解或全稿编辑。",
+          "REV-02": "验证新moment分支的design-only选择，不是R∞结果适应性效用证据。",
+          "REV-03": "结果对应新主定理和明确method_id；未自动改摘要数字。",
+          "REV-04": "V0、噪声方差、机制向量均为synthetic_known；真实集合、L/H与二阶矩校准仍未解决。",
+          "REV-05": "完成合成新分支闭环，没有新的真实微贷证书。",
+          "REV-06": "本轮未运行Many Labs，目标噪声问题状态不变。",
+          "REV-07": "严格同宽0.532657214043时强桥64新人数、direct256；弱桥在256人仍不能达到width .6。优势来自声明的loading，非普遍省成本。",
+          "REV-08": "概率/矩阵/有限枚举为已有工具；本轮没有解决贡献新颖性及全部近邻比较。",
+          "REV-09": "新线性moment估计器可有signed weights，不证明原simplex类在所有方法中最优。",
+          "REV-10": "5400世界覆盖27个预设几何×参数分布×噪声分布；target规则实际枚举W并核对目标gain。去Gaussian部分得到理论与域内实现证据，线性和有效输入限制仍在。",
+          "REV-11": "新分支、冻结配置、代码793f7ae、源快照、哈希和报告单独保存；旧实验没有被覆盖。",
+          "REV-12": "独立记录pointwise/五前缀区间、actual stopped/full prefix，以及interval miss与scientific bad release；停止由设计决定，不能推广为任意outcome-adaptive停止。"
+        },
+        "remaining_gaps": [
+          "Nonlinear and misspecified models, unknown design positions and real moment calibration remain untested.",
+          "Known synthetic loading2 explains favorable exact-width comparison; it does not establish generic cost advantage or full operational costs.",
+          "One-step optimality is not a multi-step global greedy guarantee; fixed menu and simultaneous path statements have separate scope.",
+          "Lean proof scope is recorded explicitly; not every manuscript corollary has been joined into one formal matrix probability theorem."
+        ]
       }
     ]
   },
@@ -769,7 +831,8 @@
         "用户已在本机完成Overleaf克隆。原稿位于 causal_lab_proposal_subpapers_tex_iclr2027/01.tex；基线29e4c0db4a17e72e04d9a1c9b330e81b166c604a，原稿SHA256为ef261e308e3463eb8e54d5de3c0fded1879f58777222f0115a0c5a5f79eaab73。同目录01_humanized.tex已创建并提交475b1ecfae407460ff9e587c2b9be1c47b56f5d5；用户已推送，origin/main的update by push记录与该提交一致。原稿保留。",
         "已完成01_humanized.tex首轮主文改写并通过独立语义审查、形式内容保留检查与完整LaTeX编译。正文10页、总42页；原01.tex SHA256未变。用户已完成Git推送，原稿和默认主文档选择未变。",
         "只读重建原linear/bridgeable/replicate 0轨迹，解释半径.583089→.205812→.168749及192人停止；作者理解情况尚待讨论。",
-        "COST-PRECISION-RUN01：有可复核的完整流程、成本与精度例子；作者是否理解、正文是否足够清楚仍需讨论。"
+        "COST-PRECISION-RUN01：有可复核的完整流程、成本与精度例子；作者是否理解、正文是否足够清楚仍需讨论。",
+        "NON-GAUSSIAN-TARGET-RUN01：新增预先指定单世界的观测、权重、方差分解和采集/停止轨迹；不代替作者理解或全稿编辑。"
       ],
       "gaps": [
         "尚需作者阅读并确认解释是否清楚；对照实验与新增贡献不能由本轮语言编辑解决。"
@@ -805,7 +868,8 @@
         "同一非负权重、偏差项、噪声及置信预算下 R∞≥R2；不能寻找同条件的反向发布例子。",
         "已有 workflow 记录显示 R∞ 释放更少；这是原有结果，非本轮运行。",
         "核实原workflow在观察结果前预规划全部候选顺序、权重与半径；新结果更新估计和拒绝区间，不提供outcome-adaptive选择收益证据。",
-        "COST-PRECISION-RUN01：补齐设计型 R2/R∞ 的成本、宽度和覆盖比较；未测试结果驱动选择或合法 sample splitting，不能据此宣称 selection-safe 收益。"
+        "COST-PRECISION-RUN01：补齐设计型 R2/R∞ 的成本、宽度和覆盖比较；未测试结果驱动选择或合法 sample splitting，不能据此宣称 selection-safe 收益。",
+        "NON-GAUSSIAN-TARGET-RUN01：验证新moment分支的design-only选择，不是R∞结果适应性效用证据。"
       ],
       "gaps": [
         "缺真实 outcome-adaptive 用途和与合法 sample splitting 的匹配对照；权重优化收益不能归为 selection safety。"
@@ -840,7 +904,8 @@
       "known_evidence": [
         "95.3% / 0.2% 对应 Gaussian Bonferroni 与未校正区间，不是完整证书效用；Table 15 另列 theorem simultaneous。",
         "修改稿摘要已把95.3%明确归因于Gaussian Bonferroni intervals，数值保持原样；完整方法的实际收益证据仍待实验复核。",
-        "COST-PRECISION-RUN01：新数字明确绑定 R2/R∞、prefix/stopped 与输出任务；未把本轮数字自动写入摘要，其他实验归因仍待全篇核对。"
+        "COST-PRECISION-RUN01：新数字明确绑定 R2/R∞、prefix/stopped 与输出任务；未把本轮数字自动写入摘要，其他实验归因仍待全篇核对。",
+        "NON-GAUSSIAN-TARGET-RUN01：结果对应新主定理和明确method_id；未自动改摘要数字。"
       ],
       "gaps": [
         "摘要Bonferroni归因已澄清；主要贡献、全部图表到实际策略及保证的系统核对和完整方法效用证据仍需后续实验。"
@@ -875,7 +940,8 @@
       "known_evidence": [
         "现有 workflow 用合成机制标签与解析 L,H；joint calibration 在合成、声明条件下验证。",
         "有限档案诊断不能证明遗漏机制不存在或认证全域平滑性上界。",
-        "COST-PRECISION-RUN01：仅使用合成校准和已知解析 L,H；真实机制集合、错设与外部有效性没有新增证据。"
+        "COST-PRECISION-RUN01：仅使用合成校准和已知解析 L,H；真实机制集合、错设与外部有效性没有新增证据。",
+        "NON-GAUSSIAN-TARGET-RUN01：V0、噪声方差、机制向量均为synthetic_known；真实集合、L/H与二阶矩校准仍未解决。"
       ],
       "gaps": [
         "缺真实、结果盲、可追溯的机制坐标、集合、L,H、联合覆盖依据及错设敏感性。"
@@ -910,7 +976,8 @@
       "known_evidence": [
         "微贷 ATLAS 为 not_qualified，n_computed=0；不是计算证书后全部拒绝。",
         "published 主分析为 Mexico、India EL1 两项；NSW 是 within-trial reconstruction，不能作为跨干预机制保证验证。",
-        "COST-PRECISION-RUN01：完整合成闭环已实际重跑；真实微贷 not_qualified 和真实证书案例缺口不变。"
+        "COST-PRECISION-RUN01：完整合成闭环已实际重跑；真实微贷 not_qualified 和真实证书案例缺口不变。",
+        "NON-GAUSSIAN-TARGET-RUN01：完成合成新分支闭环，没有新的真实微贷证书。"
       ],
       "gaps": [
         "尚无真实 audit→集合→半径→发布/拒绝→验证的完整证书案例。"
@@ -946,7 +1013,8 @@
         "halfwidth 含 target_design_variance，属于 noisy reference 的预测噪声；这不等于发现 outcome leakage。",
         "已有 57 目标 CSV 的只读诊断：fixed 目标噪声占总方差中位 98.8774%，random 98.0202%。",
         "δ=.15 时仅留目标噪声，fixed 10/57 的发布决定不变；random 原 6/57 变 7/57。",
-        "COST-PRECISION-RUN01：没有运行 Many Labs；目标噪声主导的问题不由本轮修复。"
+        "COST-PRECISION-RUN01：没有运行 Many Labs；目标噪声主导的问题不由本轮修复。",
+        "NON-GAUSSIAN-TARGET-RUN01：本轮未运行Many Labs，目标噪声问题状态不变。"
       ],
       "gaps": [
         "缺等目标 n / 固定参考噪声、多 effect families 诊断；当前结果不认证 archive 兼容性。"
@@ -984,7 +1052,8 @@
         "已有 Appendix P 在共同 random bridge path 下支持部分合成场景的 design-only R2 权重收益，不能归为 R∞ 收益或超越最近前作。",
         "已有汇总中直接 target trial 在若干设置更有利；审计/部署成本未纳入；尚无完整 ExAtlas matched-information 对照。",
         "复核原bridgeable汇总：delta=.3定向R2与直接目标均发布100%，平均新增人数117.92与96；仍是旧结果，不是本轮新实验。",
-        "COST-PRECISION-RUN01：在共同名义可靠性、明确新增成本下完成六策略和全部预设场景比较，直接推进 nrhq.W4/Q2；最近前作/样本拆分及审计部署总成本仍缺。"
+        "COST-PRECISION-RUN01：在共同名义可靠性、明确新增成本下完成六策略和全部预设场景比较，直接推进 nrhq.W4/Q2；最近前作/样本拆分及审计部署总成本仍缺。",
+        "NON-GAUSSIAN-TARGET-RUN01：严格同宽0.532657214043时强桥64新人数、direct256；弱桥在256人仍不能达到width .6。优势来自声明的loading，非普遍省成本。"
       ],
       "gaps": [
         "合成六策略已按统一评价比较；仍缺最近前作、样本拆分等强外部基线与审计部署总成本，以及真实输入下的对应证据。"
@@ -1022,7 +1091,8 @@
         "根代理核实 ExAtlas 已有同型重心误差分解、凸组合、阈值拒绝和 bridge 流程。",
         "修改稿将原Appendix A的部分定位移入主文三段相关工作；尚未增加I&K/Manski/ExAtlas的逐命题新增内容比较。",
         "COST-PRECISION-RUN01：并行核查 I&K/Manski，明确 Theorem 5.3 的集合构造继承关系；未完成论文本体修改、全部近邻比较或贡献新颖性证明。",
-        "RELATED-WORK-01：I&K 2021 v1已含Lipschitz pairwise空间、目标投影、模型与联合高斯置信矩形相交及数据依赖权重讨论；P(J)与该集合直接对应。Manski详读2019作者前稿，最终刊版全文未取得。详见revision/RELATED_WORK_READING.md。"
+        "RELATED-WORK-01：I&K 2021 v1已含Lipschitz pairwise空间、目标投影、模型与联合高斯置信矩形相交及数据依赖权重讨论；P(J)与该集合直接对应。Manski详读2019作者前稿，最终刊版全文未取得。详见revision/RELATED_WORK_READING.md。",
+        "NON-GAUSSIAN-TARGET-RUN01：概率/矩阵/有限枚举为已有工具；本轮没有解决贡献新颖性及全部近邻比较。"
       ],
       "gaps": [
         "缺逐命题符号映射、贡献归属修订、主文比较与匹配近邻实验。"
@@ -1057,7 +1127,8 @@
       "known_evidence": [
         "方法限制为非负和为一的 prior ATE 权重；现有定理不证明它在所有 transport 估计器中最优。",
         "重心不必是可实施干预，机制凸包上的平滑性需要科学解释。",
-        "COST-PRECISION-RUN01：本轮维持 simplex 估计器类；没有负权重、回归或 IPD 对照，不能回答为何该候选类充分。"
+        "COST-PRECISION-RUN01：本轮维持 simplex 估计器类；没有负权重、回归或 IPD 对照，不能回答为何该候选类充分。",
+        "NON-GAUSSIAN-TARGET-RUN01：新线性moment估计器可有signed weights，不证明原simplex类在所有方法中最优。"
       ],
       "gaps": [
         "缺应用中选择该类的理由及负权重、外推、meta-regression / IPD 方法的信息条件对照。"
@@ -1093,7 +1164,8 @@
         "workflow targeted R2 最小化 prospective radius，是一步 heuristic；并非上述 theorem-backed policy。",
         "原targeted逐候选最小化prospective radius；初始完整路径按设计排定，没有执行logdet策略。",
         "COST-PRECISION-RUN01：验证的是 prospective-radius heuristic；随机与最近来源对照不能验证 logdet 定理，非高斯/异方差稳健性仍缺。",
-        "THEORY-NONGAUSSIAN-01：保留原零均值随机参数的完整协方差，取消Gaussian形状；实际Y到目标误差的W形式界、有限菜单直接最小目标半径及覆盖通过Lean。一般logdet近似因子不转称为目标半径保证。"
+        "THEORY-NONGAUSSIAN-01：保留原零均值随机参数的完整协方差，取消Gaussian形状；实际Y到目标误差的W形式界、有限菜单直接最小目标半径及覆盖通过Lean。一般logdet近似因子不转称为目标半径保证。",
+        "NON-GAUSSIAN-TARGET-RUN01：5400世界覆盖27个预设几何×参数分布×噪声分布；target规则实际枚举W并核对目标gain。去Gaussian部分得到理论与域内实现证据，线性和有效输入限制仍在。"
       ],
       "gaps": [
         "非Gaussian主统计保证及有限菜单最小目标区间已形式化；具体矩阵更新的形式化范围另列，尚不能宣称整份定理草稿全部Lean验证。",
@@ -1129,7 +1201,8 @@
       "known_evidence": [
         "主文/附录 ATLAS 命名和旧 prototype 归属存在混淆；仓库已有 current_method、paper_original、legacy_audits 分区。",
         "原workflow对应01.tex Appendix L、Tables 10–12及Figure 5；9个manifest源文件及18个产物哈希均一致。",
-        "COST-PRECISION-RUN01：新结果有冻结配置、独立种子、源快照和哈希；全篇 prototype 与当前方法的归属核对仍未完成。"
+        "COST-PRECISION-RUN01：新结果有冻结配置、独立种子、源快照和哈希；全篇 prototype 与当前方法的归属核对仍未完成。",
+        "NON-GAUSSIAN-TARGET-RUN01：新分支、冻结配置、代码793f7ae、源快照、哈希和报告单独保存；旧实验没有被覆盖。"
       ],
       "gaps": [
         "最新Overleaf源已取得，workflow已对应Appendix L / Tables 10–12 / Figure 5；全稿图表到实现、policy、bound、保证的完整清单尚未完成。"
@@ -1170,7 +1243,8 @@
         "联合事件 P(release 且 bad error) 控制不等于给定 release 的条件覆盖。",
         "现有 unreachable 菜单可耗尽预算仍拒绝；提前判无效/转直接 target 仍缺。",
         "只读重建三几何linear/replicate 0的R2半径，最大差异3.11e-15；确认发布后预算行沿用输出与成本，plans中未来状态不是实际采集。",
-        "COST-PRECISION-RUN01：严格区分点发布、拒绝外区间、半宽达标、完整前缀和原停止；失败/无界保留，支持本合成流程统计口径。真实资格状态、提前无效停止和 sharp 区域使用仍待处理。"
+        "COST-PRECISION-RUN01：严格区分点发布、拒绝外区间、半宽达标、完整前缀和原停止；失败/无界保留，支持本合成流程统计口径。真实资格状态、提前无效停止和 sharp 区域使用仍待处理。",
+        "NON-GAUSSIAN-TARGET-RUN01：独立记录pointwise/五前缀区间、actual stopped/full prefix，以及interval miss与scientific bad release；停止由设计决定，不能推广为任意outcome-adaptive停止。"
       ],
       "gaps": [
         "本合成流程输出/停止/空无界/分母已核对；真实资格失败状态、sharp区域与外区间的全篇归属，以及提前无效停止/目标切换仍待处理。"
