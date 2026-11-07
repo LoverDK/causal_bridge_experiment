@@ -1,0 +1,44 @@
+{
+  "counts": {
+    "records": 9600,
+    "archived_true": 6400,
+    "corrected_certificate_valid": 2400,
+    "unsupported_certificate": 4800,
+    "point_only_not_applicable": 2400,
+    "archived_true_but_unsupported": 2400,
+    "archived_true_but_point_only": 1600,
+    "frontier_rows": 216,
+    "frontier_rows_without_applicable_bound": 144
+  },
+  "calibration_boundary": {
+    "n": 10,
+    "eta": 0.05,
+    "requested_rank": 11,
+    "archived_observed": "finite",
+    "corrected_observed": "infinite",
+    "quantile_representation": "positive_infinity"
+  },
+  "archive_hashes_before": {
+    "results\\full\\operational_records.csv": "afd426e38980a00833ef884c10472d2f1dcb08b9bd1e8986ff60516c3c1c51d8",
+    "results\\full\\operational_summary.csv": "39b8c0fa3a80256a69f3c387a39656793404f38e9c6325d53956177bd821392c",
+    "results\\full\\operational_frontier.csv": "e953f38577114b22c794cfdfe779357de9b9586a538bda74aaeb39d34e413bb6",
+    "results\\full\\operational_audits.csv": "c62b34c8339151238c34835785d044cb3ee4f795e2288304f6e671279cf93ab0",
+    "results\\full_plus\\plus_assumption_boundaries.csv": "dd490b3b21a7bc0c2aad7a0ffc1ea11a5cb0854f5c7fb3e10fcaac9b5961cfce"
+  },
+  "archive_hashes_after": {
+    "results\\full\\operational_records.csv": "afd426e38980a00833ef884c10472d2f1dcb08b9bd1e8986ff60516c3c1c51d8",
+    "results\\full\\operational_summary.csv": "39b8c0fa3a80256a69f3c387a39656793404f38e9c6325d53956177bd821392c",
+    "results\\full\\operational_frontier.csv": "e953f38577114b22c794cfdfe779357de9b9586a538bda74aaeb39d34e413bb6",
+    "results\\full\\operational_audits.csv": "c62b34c8339151238c34835785d044cb3ee4f795e2288304f6e671279cf93ab0",
+    "results\\full_plus\\plus_assumption_boundaries.csv": "dd490b3b21a7bc0c2aad7a0ffc1ea11a5cb0854f5c7fb3e10fcaac9b5961cfce"
+  },
+  "archived_bytes_unchanged": true,
+  "code_hashes": {
+    "audit_legacy_record_labels.py": "64a342f3761fc07ae1eb4c4cac3b11f5834bedbde6a402997a4860983112b890",
+    "atlas_new\\operational_metadata.py": "4bb607565fad75326dc55e4ba4495f21abd62f28714f17dca78f2c483aad73d3",
+    "atlas_new\\experiments.py": "c37f5902532595b089c1e9159da903232f6c9a5929db568a3e90eda6a7310cbd",
+    "atlas_new\\audit_plus.py": "2a5049f21b4914d88b5b0f4b733d537cd2fb45ef6be149eee9088ca38397ab29"
+  },
+  "audit_seconds": 0.3672800000058487,
+  "scope": "Deterministic metadata reinterpretation only; no optimizer, fit, outcome sampling, new simulation, or old file writes."
+}

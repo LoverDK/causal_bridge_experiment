@@ -132,7 +132,10 @@ def assumptions_and_boundaries(cfg,out):
     except ValueError:add('off_simplex','reject','reject','weights do not sum to one')
     try: radius(np.array([.5,.5]),box_vertices(boxes),-1,.2,[.1,.1],[0,0],.05);add('negative_L','reject','accepted','')
     except ValueError:add('negative_L','reject','reject','negative smoothness bound')
-    try: calibrated_quantile(np.arange(10),.05);add('small_calibration','infinite','finite','')
+    try:
+        q = calibrated_quantile(np.arange(10), .05)
+        status = 'infinite' if np.isposinf(q) else 'finite' if np.isfinite(q) else 'invalid'
+        add('small_calibration', 'infinite', status, f'quantile={q}')
     except Exception as e:add('small_calibration','raise or infinite','raise',type(e).__name__)
     add('selection_R2','invalid_if_adaptive','explicitly_labelled','plus_correlated_noise.csv')
     add('t3_gaussian_certificate','invalid_assumption','explicitly_labelled','plus_heavy_tails.csv')

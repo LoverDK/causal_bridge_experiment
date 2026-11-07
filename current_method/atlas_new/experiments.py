@@ -8,6 +8,7 @@ from scipy.special import softmax
 from scipy.stats import norm
 from .core import (box_vertices, radius, optimize_radius, calibrated_quantile,
                    sharp_lipschitz, posterior, information, logdet_greedy, complementarity)
+from .operational_metadata import operational_condition_labels
 
 
 def save(out, name, rows):
@@ -171,7 +172,7 @@ def operational(cfg,out):
                     joint_set_covered=joint,weights=json.dumps(weights.tolist()) if weights is not None else '',
                     outer_status='nonempty' if outer_lo<=outer_hi else 'inconsistent',
                     outer_lower=outer_lo,outer_upper=outer_hi,outer_covered=outer_lo<=tau[-1]<=outer_hi,
-                    assumption_valid=scenario not in ['proxy_shift','understated_LH'],**dd))
+                    **operational_condition_labels(scenario,name,cfg['eta'],cfg['zeta']),**dd))
         if (rep+1)%25==0: print(f'  operational {rep+1}/{cfg["operational_repetitions"]}',flush=True)
     df=save(out,'operational_records',rows);save(out,'operational_audits',audits)
     summaries=[];frontier=[]
@@ -181,7 +182,8 @@ def operational(cfg,out):
             mae_mcse=g.error.std(ddof=1)/np.sqrt(len(g)),coverage=g.covered.mean(),mean_width=g.width.mean(),
             coverage_mc_lower=coverage_lo,coverage_mc_upper=coverage_hi,
             joint_set_coverage=g.joint_set_covered.mean(),outer_coverage=g.outer_covered.mean(),
-            solver_failures=g.solver_failures.sum()))
+            solver_failures=g.solver_failures.sum(),
+            **operational_condition_labels(scenario,method,cfg['eta'],cfg['zeta'])))
         if not g.radius.notna().all(): continue
         for tol in cfg['tolerances']:
             release=g.radius<=tol; wrong=release & (g.error>tol);nrel=int(release.sum())
@@ -191,7 +193,8 @@ def operational(cfg,out):
                 released_coverage=g.loc[release,'covered'].mean(),
                 unconditional_bad_release=wrong.mean(),bad_release_mc_lower=elo,bad_release_mc_upper=ehi,
                 conditional_bad_release=float(wrong.sum()/nrel) if nrel else np.nan,
-                bound_if_valid=cfg['eta']+cfg['zeta']))
+                bound_if_valid=operational_condition_labels(
+                    scenario,method,cfg['eta'],cfg['zeta'])['nominal_certificate_failure_bound']))
     save(out,'operational_summary',summaries);save(out,'operational_frontier',frontier)
     return df
 
