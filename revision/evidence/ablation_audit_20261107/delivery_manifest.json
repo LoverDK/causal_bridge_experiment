@@ -1,0 +1,22 @@
+{
+  "created_local": "2026-11-07",
+  "purpose": "Read-only audit evidence; source experiments and results preserved",
+  "sha256": {
+    "ablation_audit_recompute.py": "b01de24e7647a343ac4a3e950f82f89b5c7b1f0f60169af0b163334ed03c3fb1",
+    "ablation_code_audit.md": "7cbad3d598ed5fd42a3806f7f8463a8b2bc514af4e1a2355487560e5ac487569",
+    "ablation_local_recompute.py": "6ed9e2e6b4b9ab40bf6bae13066ad5ff4993567e18e8b021aece857cb0100f9c",
+    "recomputed/audit_summary.json": "cc9c83e9b8481803e69de79a34b23dd9f83bb301e671db9525eb562827a2bedb",
+    "recomputed/calibration_recomputed.csv": "8f155391781f4546c99d62322e6663ce311a19552400fdfec04e8527dce15390",
+    "recomputed/exatlas_recomputed.csv": "3b3dc93adef37a45b4c1c12ed0b65f315b1a87b2848ad0ba95cf572fb44374b9",
+    "recomputed/fixed_recomputed.csv": "43422a0269fe505c1783951d01269d0131448f892e4543cb1415f259e81ff741",
+    "recomputed/joint_recomputed.csv": "4d10645adbb9c5e07f1fc12438ba8d2b325c3f751243c236b79aedd0f9c6fd75",
+    "recomputed/legacy_nsw_recomputed.csv": "f8dc10a2d8e3e9142aa90eaa4ebe37b9e7ed9af7135c2b4e3fd601261a9f4b82",
+    "recomputed/legacy_synthetic_recomputed.csv": "0dbdb31dcefdd3465530781f02faa29696a69c0d3606f0b3298e2c093b7adae7",
+    "recomputed/local_summary.json": "a3baac15c002a3716f14ac3e2029b6244a176aa5a272a8c904df265e1611c360",
+    "recomputed/manylabs_recomputed.csv": "5d670eb305333c5586febb9a93c4d2b65767c0d47e75d52cc0ae42d05d2127fd",
+    "recomputed/min_vs_barycentric_width.csv": "f7da8ec1676dc632b7bd706f5e3861a12ffc87b252f98c30ad54609374e5225e",
+    "recomputed/operational_recomputed.csv": "da4e11869963bd12c7728e28327afce997c31b0a2d1a7b52770e093ccf6855f7",
+    "recomputed/same_weight_recomputed.csv": "e84a9d6a6bbf2971c6f08e2d234f468334ac5de08488c06af5ff82d1283de2d3",
+    "recomputed/stopped_recomputed.csv": "6a31ad6b828cdae47670284990083d7264edf93885de07989a0b1e56b648ae38"
+  }
+}

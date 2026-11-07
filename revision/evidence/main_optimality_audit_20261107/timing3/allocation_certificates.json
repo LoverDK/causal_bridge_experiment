@@ -1,0 +1,323 @@
+[
+  {
+    "design_id": 0,
+    "greedy_cost": 284,
+    "direct_cost": 56,
+    "optimizer_success": true,
+    "optimizer_status": 0,
+    "optimizer_iterations": 12,
+    "continuous_feasible_cost": 283.0445719279691,
+    "continuous_q": 0.004499999999549999,
+    "global_lower_bound": 283.0445599683916,
+    "numeric_margin": 0.00028304455996839157,
+    "conservative_lower_bound": 283.0442769238316,
+    "continuous_gap": 1.1959577534526034e-05,
+    "relative_gap": 4.225333647299047e-08,
+    "greedy_direction_lower_bound": 279.2275323027911,
+    "optimized_direction_lower_bound": 283.0445599683916,
+    "ceil_integer_upper": 287,
+    "integer_feasible_upper": 284,
+    "integer_q": 0.004485495039012377,
+    "lower_exceeds_direct": true,
+    "lower_excludes_strict_saving": true,
+    "integer_upper_cheaper_than_direct": false,
+    "lower_minus_direct": 227.04455996839158,
+    "elapsed_seconds": 0.00811459997203201,
+    "optimizer_message": "Optimization terminated successfully",
+    "continuous_allocation": [
+      14.444510372815905,
+      42.28435927252522,
+      31.567646584275245,
+      0.0,
+      93.08591497642514,
+      0.0,
+      0.0,
+      0.0,
+      33.515190561361656,
+      68.14695016056592,
+      0.0,
+      0.0
+    ],
+    "integer_allocation": [
+      15,
+      42,
+      32,
+      0,
+      93,
+      0,
+      0,
+      0,
+      34,
+      68,
+      0,
+      0
+    ],
+    "greedy_allocation": [
+      15.0,
+      42.0,
+      32.0,
+      0.0,
+      92.0,
+      0.0,
+      2.0,
+      0.0,
+      33.0,
+      68.0,
+      0.0,
+      0.0
+    ],
+    "selected_certificate": {
+      "z": [
+        -0.2995518148662636,
+        -0.30492850414992456,
+        -0.4847469120920524,
+        -0.6374364406322144,
+        -0.2850871261244112,
+        -0.3077464272037851
+      ],
+      "numerator": 91.37812733570613,
+      "denominator": 0.3228400762972113,
+      "lower": 283.0445599683916
+    },
+    "greedy_certificate": {
+      "z": [
+        -0.3033798229445111,
+        -0.3026412982893556,
+        -0.48588570287368893,
+        -0.6355058456728853,
+        -0.2854917316198171,
+        -0.3080759689348405
+      ],
+      "numerator": 90.94586470876789,
+      "denominator": 0.32570521953453807,
+      "lower": 279.2275323027911
+    },
+    "optimized_certificate": {
+      "z": [
+        -0.2995518148662636,
+        -0.30492850414992456,
+        -0.4847469120920524,
+        -0.6374364406322144,
+        -0.2850871261244112,
+        -0.3077464272037851
+      ],
+      "numerator": 91.37812733570613,
+      "denominator": 0.3228400762972113,
+      "lower": 283.0445599683916
+    }
+  },
+  {
+    "design_id": 1,
+    "greedy_cost": 186,
+    "direct_cost": 56,
+    "optimizer_success": true,
+    "optimizer_status": 0,
+    "optimizer_iterations": 14,
+    "continuous_feasible_cost": 184.81668601351575,
+    "continuous_q": 0.00449999999955,
+    "global_lower_bound": 184.81668087969462,
+    "numeric_margin": 0.0001848166808796946,
+    "conservative_lower_bound": 184.81649606301374,
+    "continuous_gap": 5.13382113354055e-06,
+    "relative_gap": 2.7777909258502292e-08,
+    "greedy_direction_lower_bound": 177.14602401488543,
+    "optimized_direction_lower_bound": 184.81668087969462,
+    "ceil_integer_upper": 188,
+    "integer_feasible_upper": 185,
+    "integer_q": 0.004496539358499568,
+    "lower_exceeds_direct": true,
+    "lower_excludes_strict_saving": true,
+    "integer_upper_cheaper_than_direct": false,
+    "lower_minus_direct": 128.81668087969462,
+    "elapsed_seconds": 0.0022676000371575356,
+    "optimizer_message": "Optimization terminated successfully",
+    "continuous_allocation": [
+      0.0,
+      0.0,
+      0.0,
+      6.611572076567034,
+      30.75497162322921,
+      37.550065109274335,
+      12.385908664560258,
+      66.3285700173757,
+      0.0,
+      0.0,
+      31.185598522509217,
+      0.0
+    ],
+    "integer_allocation": [
+      0,
+      0,
+      0,
+      7,
+      31,
+      38,
+      12,
+      66,
+      0,
+      0,
+      31,
+      0
+    ],
+    "greedy_allocation": [
+      0.0,
+      0.0,
+      1.0,
+      6.0,
+      30.0,
+      37.0,
+      13.0,
+      66.0,
+      0.0,
+      0.0,
+      33.0,
+      0.0
+    ],
+    "selected_certificate": {
+      "z": [
+        -0.3730875235415521,
+        -0.058303501165455414,
+        0.734363989858843,
+        0.44180241134441733,
+        -0.08816713519615524,
+        -0.3393421835399247
+      ],
+      "numerator": 101.74489470697377,
+      "denominator": 0.5505179198256679,
+      "lower": 184.81668087969462
+    },
+    "greedy_certificate": {
+      "z": [
+        -0.39383584707747593,
+        -0.053569019681836735,
+        0.7077905967483133,
+        0.4597277918998218,
+        -0.09383288885886751,
+        -0.34770950974207515
+      ],
+      "numerator": 100.58700259607697,
+      "denominator": 0.5678197021663028,
+      "lower": 177.14602401488543
+    },
+    "optimized_certificate": {
+      "z": [
+        -0.3730875235415521,
+        -0.058303501165455414,
+        0.734363989858843,
+        0.44180241134441733,
+        -0.08816713519615524,
+        -0.3393421835399247
+      ],
+      "numerator": 101.74489470697377,
+      "denominator": 0.5505179198256679,
+      "lower": 184.81668087969462
+    }
+  },
+  {
+    "design_id": 2,
+    "greedy_cost": 55,
+    "direct_cost": 56,
+    "optimizer_success": true,
+    "optimizer_status": 0,
+    "optimizer_iterations": 13,
+    "continuous_feasible_cost": 54.45466629995101,
+    "continuous_q": 0.00449999999955,
+    "global_lower_bound": 54.45466614834212,
+    "numeric_margin": 5.445466614834212e-05,
+    "conservative_lower_bound": 54.45461169367597,
+    "continuous_gap": 1.516088872222099e-07,
+    "relative_gap": 2.7841303146934587e-09,
+    "greedy_direction_lower_bound": 41.274640272509814,
+    "optimized_direction_lower_bound": 54.45466614834212,
+    "ceil_integer_upper": 58,
+    "integer_feasible_upper": 55,
+    "integer_q": 0.004469937874433147,
+    "lower_exceeds_direct": false,
+    "lower_excludes_strict_saving": false,
+    "integer_upper_cheaper_than_direct": true,
+    "lower_minus_direct": -1.5453338516578796,
+    "elapsed_seconds": 0.0017621999140828848,
+    "optimizer_message": "Optimization terminated successfully",
+    "continuous_allocation": [
+      25.003958450357718,
+      3.7515665263561093,
+      2.4148008097253286,
+      0.0,
+      0.0,
+      0.0,
+      8.130873871937382,
+      0.0,
+      12.78658567984927,
+      0.0,
+      0.0,
+      2.366880961725197
+    ],
+    "integer_allocation": [
+      25,
+      4,
+      3,
+      0,
+      0,
+      0,
+      8,
+      0,
+      13,
+      0,
+      0,
+      2
+    ],
+    "greedy_allocation": [
+      25.0,
+      4.0,
+      3.0,
+      0.0,
+      0.0,
+      0.0,
+      8.0,
+      0.0,
+      13.0,
+      0.0,
+      0.0,
+      2.0
+    ],
+    "selected_certificate": {
+      "z": [
+        0.27614358452312643,
+        0.12483441412463256,
+        -0.5373726382718532,
+        0.7400692899665214,
+        -0.07725250529554785,
+        -0.2563615296561419
+      ],
+      "numerator": 29.247240535592745,
+      "denominator": 0.5370933770105059,
+      "lower": 54.45466614834212
+    },
+    "greedy_certificate": {
+      "z": [
+        0.2653815358363154,
+        0.22428049526684501,
+        -0.5604473335526183,
+        0.6969093137040958,
+        -0.14150477670270936,
+        -0.24385137448162986
+      ],
+      "numerator": 28.785823881068385,
+      "denominator": 0.6974215569418453,
+      "lower": 41.274640272509814
+    },
+    "optimized_certificate": {
+      "z": [
+        0.27614358452312643,
+        0.12483441412463256,
+        -0.5373726382718532,
+        0.7400692899665214,
+        -0.07725250529554785,
+        -0.2563615296561419
+      ],
+      "numerator": 29.247240535592745,
+      "denominator": 0.5370933770105059,
+      "lower": 54.45466614834212
+    }
+  }
+]

@@ -4,12 +4,14 @@
   "timezone": "Asia/Shanghai",
   "baseline_commit": "7e5841d3f3f22f892233582b9509aad656f3d266",
   "branch": "codex/reviewer-guided-rebuild",
-  "scope_note": "新非高斯目标区间分支完成：W形式主概率界与单步目标选桥通过Lean；5400世界新实验及成本—精度分析完成。强桥有严格同宽成本优势，弱桥负结果保留；全部12项已回顾，没有resolved。",
+  "scope_note": "已有消融完成只读核查；原设计非高斯分支运行及全局成本诊断完成，明确其缺实际历史数据。作者现将主目标改为有限新增预算缩短历史区间，并比较与高预算直接目标参考的点差和方向结论；HISTORICAL-BRIDGE-WORKFLOW01已冻结待执行。不再以同精度省钱验收，全部12项状态保留。",
   "user_requirements": [
     "每次实验推进前、后回顾全部 review 和 12 个问题。",
     "不能用已运行代替已解决；状态由验收证据决定，保留未覆盖问题与负结果。",
     "实验重建使用本地Git分支；未经明确安排不向公开实验仓库发布修订记录。",
-    "Evaluate cost and precision jointly under a common reliability requirement, including informative refusal intervals."
+    "Evaluate cost and precision jointly under a common reliability requirement, including informative refusal intervals.",
+    "每次启动实验前给出预计墙钟时间、依据及资源瓶颈；用smoke实测更新full估计；长任务留出租实例选择。",
+    "当前主目标：有限新增预算缩短历史证据的目标区间，同时报告与高预算直接目标参考的点估计差距及方向判断一致性；不以同精度成本优势为验收条件。"
   ],
   "status_definitions": {
     "open": "关键修复证据仍缺；已诊断不等于已修复。",
@@ -573,6 +575,143 @@
           "One-step optimality is not a multi-step global greedy guarantee; fixed menu and simultaneous path statements have separate scope.",
           "Lean proof scope is recorded explicitly; not every manuscript corollary has been joined into one formal matrix probability theorem."
         ]
+      },
+      {
+        "round_id": "ABLATION-AUDIT-20261107",
+        "phase": "after",
+        "code_revision": "Baseline archived ablations; current execution commits 6bdbeb1 and analysis 3593149",
+        "artifact_paths": [
+          "revision/ABLATION_AUDIT_20261107.md",
+          "revision/evidence/ablation_audit_20261107/"
+        ],
+        "covered_review_refs": [
+          "nrhq.Q1",
+          "nrhq.Q2",
+          "WGDN.W1a",
+          "WGDN.W1b",
+          "WGDN.Q1",
+          "WGDN.W2a",
+          "WGDN.W2c",
+          "KoBT.W1",
+          "KoBT.W2"
+        ],
+        "findings": [
+          "两组完整流程匹配消融已完成：权重在部分场景有收益；minimum geometry对Bbar的57600匹配状态无发布/成本增益。",
+          "另有U/H删除、selection、calibration、real基准/旧prototype局部诊断；不可混作当前完整方法归因。",
+          "小校准finite标签错误、assumption_valid方法条件遗漏、污染方差1.63、旧NSW拒绝开关同时改变机制误差项，需局部修复/重新设计；未重跑或改旧输出。",
+          "训练档案量匹配及多效应族baseline已有；固定目标参考噪声仍缺。"
+        ],
+        "remaining_gaps": [
+          "实际adaptive策略对合法design/split的效用",
+          "真实机制校准/证书案例",
+          "估计器类/近邻公平比较",
+          "独立局部对照修复尚未执行"
+        ],
+        "date_local": "2026-11-07",
+        "all_issue_ids_reviewed": [
+          "REV-01",
+          "REV-02",
+          "REV-03",
+          "REV-04",
+          "REV-05",
+          "REV-06",
+          "REV-07",
+          "REV-08",
+          "REV-09",
+          "REV-10",
+          "REV-11",
+          "REV-12"
+        ],
+        "status_changes_with_evidence": {}
+      },
+      {
+        "round_id": "MAIN-THEOREM-WORKFLOW01",
+        "phase": "after",
+        "code_revision": "protocol36dffd3 / implementation6bdbeb1 / report3593149",
+        "artifact_paths": [
+          "revision/MAIN_THEOREM_WORKFLOW01.md",
+          "revision/results/main_theorem_workflow01/RESULTS.md",
+          "revision/BRIDGE_COST_DIAGNOSIS_20261107.md",
+          "revision/evidence/main_optimality_audit_20261107/"
+        ],
+        "covered_review_refs": [
+          "KoBT.W4",
+          "KoBT.Q1",
+          "nrhq.Q1",
+          "nrhq.Q2"
+        ],
+        "findings": [
+          "200原设计×200世界实际t5运行完成，160000方法端点，180.3秒；9tests及10runchecks通过，全路径/端点独立重算。",
+          "新target在所有200设计比logdet/random所需观测少，但同价direct只胜2/200；不支持普遍同精度省钱。",
+          "最优连续分配的全局数值下界在198/200高于direct；greedy/lower中位1.00435，改搜索难以逆转。",
+          "模型忠实性审计确认V0是抽象先验，无实际historyY；是结构化选桥子流程，不能视作一般ATLAS历史复用全流程。",
+          "此前手设载荷0.1/2的5400世界结果只作附属边界诊断；弱桥预算扩展仅smoke，full未执行。"
+        ],
+        "remaining_gaps": [
+          "真实历史复用及一般机制工作流尚未由此实验验证",
+          "现实成本和候选/噪声依据",
+          "联合边际保证不能声称条件后验或全路径覆盖",
+          "完整形式化链及新成本下界Lean形式化未做"
+        ],
+        "date_local": "2026-11-07",
+        "all_issue_ids_reviewed": [
+          "REV-01",
+          "REV-02",
+          "REV-03",
+          "REV-04",
+          "REV-05",
+          "REV-06",
+          "REV-07",
+          "REV-08",
+          "REV-09",
+          "REV-10",
+          "REV-11",
+          "REV-12"
+        ],
+        "status_changes_with_evidence": {}
+      },
+      {
+        "round_id": "HISTORICAL-BRIDGE-WORKFLOW01",
+        "phase": "before",
+        "code_revision": "frozen protocol cdc146b",
+        "artifact_paths": [
+          "revision/HISTORICAL_BRIDGE_WORKFLOW01.json",
+          "revision/HISTORICAL_BRIDGE_WORKFLOW01.md"
+        ],
+        "covered_review_refs": [
+          "nrhq.Q1",
+          "nrhq.Q2",
+          "KoBT.W4",
+          "KoBT.Q1"
+        ],
+        "findings": [
+          "作者明确新主目标并选择同时报告点差及方向结论；同精度省钱不再是验收标准。",
+          "保留200原设计，4种预先随机历史类型各1实际独立Y，所有方法共享；新预算0/1/2/4/8，4为主预算。",
+          "H+direct64参考未来噪声独立于各低预算policy，samehistory；参考不是真值，另评分真实误差/覆盖。",
+          "方向按CI对0正/负/不足，双方不足单列；点差阈值.30沿用旧效应尺度；全部预算和设计保留。",
+          "启动前已给smoke5–15秒/full1–3分钟CPU估计，smoke测速后更新；通过测试和独立审计授权full。"
+        ],
+        "remaining_gaps": [
+          "当前尚未完成新运行；不得预告优势",
+          "仍是合成已知矩线性模型，未验证真实U/L/H或现实成本",
+          "不提供R∞结果适应性或一般simplex类证据"
+        ],
+        "date_local": "2026-11-07",
+        "all_issue_ids_reviewed": [
+          "REV-01",
+          "REV-02",
+          "REV-03",
+          "REV-04",
+          "REV-05",
+          "REV-06",
+          "REV-07",
+          "REV-08",
+          "REV-09",
+          "REV-10",
+          "REV-11",
+          "REV-12"
+        ],
+        "status_changes_with_evidence": {}
       }
     ]
   },
@@ -1014,10 +1153,11 @@
         "已有 57 目标 CSV 的只读诊断：fixed 目标噪声占总方差中位 98.8774%，random 98.0202%。",
         "δ=.15 时仅留目标噪声，fixed 10/57 的发布决定不变；random 原 6/57 变 7/57。",
         "COST-PRECISION-RUN01：没有运行 Many Labs；目标噪声主导的问题不由本轮修复。",
-        "NON-GAUSSIAN-TARGET-RUN01：本轮未运行Many Labs，目标噪声问题状态不变。"
+        "NON-GAUSSIAN-TARGET-RUN01：本轮未运行Many Labs，目标噪声问题状态不变。",
+        "ABLATION-AUDIT：已核对57目标×100训练量匹配及原稿10/28目标效应族baseline；不再把多效应族列为完全未做。"
       ],
       "gaps": [
-        "缺等目标 n / 固定参考噪声、多 effect families 诊断；当前结果不认证 archive 兼容性。"
+        "缺等目标n/固定参考噪声诊断；多效应族baseline已有，仍不是主证书的真实应用。"
       ],
       "acceptance_evidence": [
         "分开 target estimand 与 noisy reference，拆分 archive、transport、target validation 不确定性。",
@@ -1053,7 +1193,8 @@
         "已有汇总中直接 target trial 在若干设置更有利；审计/部署成本未纳入；尚无完整 ExAtlas matched-information 对照。",
         "复核原bridgeable汇总：delta=.3定向R2与直接目标均发布100%，平均新增人数117.92与96；仍是旧结果，不是本轮新实验。",
         "COST-PRECISION-RUN01：在共同名义可靠性、明确新增成本下完成六策略和全部预设场景比较，直接推进 nrhq.W4/Q2；最近前作/样本拆分及审计部署总成本仍缺。",
-        "NON-GAUSSIAN-TARGET-RUN01：严格同宽0.532657214043时强桥64新人数、direct256；弱桥在256人仍不能达到width .6。优势来自声明的loading，非普遍省成本。"
+        "NON-GAUSSIAN-TARGET-RUN01：严格同宽0.532657214043时强桥64新人数、direct256；弱桥在256人仍不能达到width .6。优势来自声明的loading，非普遍省成本。",
+        "MAIN-THEOREM与预算下界保留不利direct比较；下一协议依作者改为有限预算信息增益及高预算参考结论接近，尚无新结果。"
       ],
       "gaps": [
         "合成六策略已按统一评价比较；仍缺最近前作、样本拆分等强外部基线与审计部署总成本，以及真实输入下的对应证据。"
@@ -1165,17 +1306,18 @@
         "原targeted逐候选最小化prospective radius；初始完整路径按设计排定，没有执行logdet策略。",
         "COST-PRECISION-RUN01：验证的是 prospective-radius heuristic；随机与最近来源对照不能验证 logdet 定理，非高斯/异方差稳健性仍缺。",
         "THEORY-NONGAUSSIAN-01：保留原零均值随机参数的完整协方差，取消Gaussian形状；实际Y到目标误差的W形式界、有限菜单直接最小目标半径及覆盖通过Lean。一般logdet近似因子不转称为目标半径保证。",
-        "NON-GAUSSIAN-TARGET-RUN01：5400世界覆盖27个预设几何×参数分布×噪声分布；target规则实际枚举W并核对目标gain。去Gaussian部分得到理论与域内实现证据，线性和有效输入限制仍在。"
+        "NON-GAUSSIAN-TARGET-RUN01：5400世界覆盖27个预设几何×参数分布×噪声分布；target规则实际枚举W并核对目标gain。去Gaussian部分得到理论与域内实现证据，线性和有效输入限制仍在。",
+        "MAIN-THEOREM：200原设计×200非Gaussian世界新W选桥执行并审计；原PanelD无实际历史观测的任务局限已记录。"
       ],
       "gaps": [
-        "非Gaussian主统计保证及有限菜单最小目标区间已形式化；具体矩阵更新的形式化范围另列，尚不能宣称整份定理草稿全部Lean验证。",
-        "仍需冻结协议下的真实执行、域外非线性/未知设计/错设与现实案例；二阶矩输入可靠性仍是前提。"
+        "实际新W执行已完成；一般机制流程衔接、真实输入与成本仍未验证。",
+        "概率界及单步更新Lean范围如原验证记录；整条具体矩阵统计链与成本下界不声称已全部形式化。"
       ],
       "acceptance_evidence": [
         "每个 policy 标注目标、信息、假设和适用定理；不把 heuristic 结果当 logdet 保证。",
         "定理域内验证，域外另列经验 stress test；共同预算比较 random、radius policy、logdet 等。"
       ],
-      "next_step": "执行NON-GAUSSIAN-TARGET-RUN01，比较target-radius、logdet、frozen-random、direct-target的共同成本—精度与覆盖；保留弱桥接结果。",
+      "next_step": "执行已冻结HISTORICAL-BRIDGE-WORKFLOW01：实际历史Y、有限预算、点差/方向/真实误差综合评价，不再以同精度省钱验收。",
       "first_round_can_answer": [
         "当前一步规则如何选 bridge、更新半径和停止。"
       ],
@@ -1202,7 +1344,8 @@
         "主文/附录 ATLAS 命名和旧 prototype 归属存在混淆；仓库已有 current_method、paper_original、legacy_audits 分区。",
         "原workflow对应01.tex Appendix L、Tables 10–12及Figure 5；9个manifest源文件及18个产物哈希均一致。",
         "COST-PRECISION-RUN01：新结果有冻结配置、独立种子、源快照和哈希；全篇 prototype 与当前方法的归属核对仍未完成。",
-        "NON-GAUSSIAN-TARGET-RUN01：新分支、冻结配置、代码793f7ae、源快照、哈希和报告单独保存；旧实验没有被覆盖。"
+        "NON-GAUSSIAN-TARGET-RUN01：新分支、冻结配置、代码793f7ae、源快照、哈希和报告单独保存；旧实验没有被覆盖。",
+        "ABLATION-AUDIT区分旧prototype、一般U/L/H+simplex、已知矩线性分支；原PanelD抽象先验被过度称为主流程的范围已纠正。"
       ],
       "gaps": [
         "最新Overleaf源已取得，workflow已对应Appendix L / Tables 10–12 / Figure 5；全稿图表到实现、policy、bound、保证的完整清单尚未完成。"

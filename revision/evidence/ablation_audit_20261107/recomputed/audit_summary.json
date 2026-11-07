@@ -1,0 +1,53 @@
+{
+  "stopped_rows": 345600,
+  "planned_rows": 172800,
+  "worlds": 1800,
+  "minbar": {
+    "states": 57600,
+    "release_disagreements": 0,
+    "cost_disagreements": 0,
+    "radius_disagreements": 4676,
+    "max_absolute_radius_diff": 0.011803620789319957
+  },
+  "max_cell_width_improvement": {
+    "surface": "sinusoidal",
+    "scenario": "unreachable",
+    "schedule": "random",
+    "mode": "r2",
+    "stage": 2,
+    "width_improvement": 0.009772697994744813
+  },
+  "min_cell_width_improvement": {
+    "surface": "linear",
+    "scenario": "bridgeable",
+    "schedule": "nearest",
+    "mode": "r2",
+    "stage": 0,
+    "width_improvement": 0.0
+  },
+  "all_coverage": 1.0,
+  "all_bad_releases": 0,
+  "solver_failures": 0,
+  "global_claims": 0,
+  "optimizer_audit": {
+    "n": 120,
+    "mean_gap": -0.06798254335145666,
+    "median_relative_gap": -0.06329583162659999,
+    "max_gap": -0.0119344423705,
+    "times_random_better": 0,
+    "failures": 0,
+    "global_claims": 0
+  },
+  "legacy_nsw_identical_estimate_max_abs": 0.0,
+  "source_hashes": {},
+  "source_sha256": {
+    "run_ablations.py": true,
+    "atlas_new\\ablations.py": true,
+    "atlas_new\\ablation_report.py": true,
+    "atlas_new\\workflow.py": true,
+    "atlas_new\\core.py": true,
+    "configs\\workflow_full.json": true,
+    "tests\\test_ablations.py": true,
+    "docs\\ablation_protocol.md": true
+  }
+}

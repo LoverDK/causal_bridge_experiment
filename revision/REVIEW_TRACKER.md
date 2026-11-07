@@ -2,7 +2,7 @@
 
 更新：2026-11-07（Asia/Shanghai）。基线：`7e5841d3f3f22f892233582b9509aad656f3d266`；分支：`codex/reviewer-guided-rebuild`。
 
-新非高斯目标区间分支完成：W形式主概率界与单步目标选桥通过Lean；5400世界新实验及成本—精度分析完成。强桥有严格同宽成本优势，弱桥负结果保留；全部12项已回顾，没有resolved。 机器可读版本为 `review_tracker.json`，两份同步维护。
+已有消融完成只读核查；原设计非高斯分支运行及全局成本诊断完成，明确其缺实际历史数据。作者现将主目标改为有限新增预算缩短历史区间，并比较与高预算直接目标参考的点差和方向结论；HISTORICAL-BRIDGE-WORKFLOW01已冻结待执行。不再以同精度省钱验收，全部12项状态保留。 机器可读版本为 `review_tracker.json`，两份同步维护。
 
 ## 每轮固定要求
 
@@ -141,7 +141,7 @@
 
 已知证据：halfwidth 含 target_design_variance，属于 noisy reference 的预测噪声；这不等于发现 outcome leakage。 已有 57 目标 CSV 的只读诊断：fixed 目标噪声占总方差中位 98.8774%，random 98.0202%。 δ=.15 时仅留目标噪声，fixed 10/57 的发布决定不变；random 原 6/57 变 7/57。
 
-缺口：缺等目标 n / 固定参考噪声、多 effect families 诊断；当前结果不认证 archive 兼容性。
+缺口：缺等目标 n / 固定参考噪声诊断；多效应族基线已有，仍不认证 archive 兼容性。
 
 验收证据：
 
@@ -422,3 +422,14 @@ Q1 仅回指 W1–W4。
 - REV-12：独立记录pointwise/五前缀区间、actual stopped/full prefix，以及interval miss与scientific bad release；停止由设计决定，不能推广为任意outcome-adaptive停止。
 
 所有状态维持前一理论里程碑，REV-10仍是partial_evidence；没有resolved。经验覆盖不代替概率定理，线性模型/已知输入/现实应用缺口保留。
+
+
+## 2026-11-07 消融审计、结构化分支结果及主目标修正
+
+已有消融完成只读核查；原设计非高斯分支运行及全局成本诊断完成，明确其缺实际历史数据。作者现将主目标改为有限新增预算缩短历史区间，并比较与高预算直接目标参考的点差和方向结论；HISTORICAL-BRIDGE-WORKFLOW01已冻结待执行。不再以同精度省钱验收，全部12项状态保留。
+
+已回顾全部REV-01至REV-12，状态均未更改。详细证据见 [消融盘点](ABLATION_AUDIT_20261107.md)、[结构化分支报告](results/main_theorem_workflow01/RESULTS.md)、[成本与任务诊断](BRIDGE_COST_DIAGNOSIS_20261107.md)。权重与几何消融已有，局部诊断错误单列，负结果保留。原设计分支无实际历史Y，不能作为一般机制复用主实验；全局规划亦无法逆转当前198/200设计的同价direct成本差距。手设强弱载荷旧结果不再承担主实验结论，预算扩展仅smoke。
+
+新目标由作者确认：有限新增预算缩短历史区间，同时报告与高预算直接目标参考的点差及方向结论。协议 [HISTORICAL-BRIDGE-WORKFLOW01](HISTORICAL_BRIDGE_WORKFLOW01.md) 已于cdc146b冻结；4次实际历史观测共享，主新增预算4，所有0/1/2/4/8预算保留，参考64次独立未来目标观测不是真值。当前未报告运行结果，不预设优势。
+
+新固定要求：每次实验启动前预估耗时和资源，小规模测速后更新full估计，长任务留出租实例选择。本轮预告smoke5–15秒/full1–3分钟CPU，实际时长待记录。REV-02、04、05、06、08、09等仍不由该线性合成分支解决；原稿未自动更改。

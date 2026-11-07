@@ -1,0 +1,16 @@
+{
+  "created_local": "2026-11-07",
+  "purpose": "Preserved read-only model and allocation audit; old outputs unchanged",
+  "sha256": {
+    "audit_allocations.py": "99e34cf49a66f6913f2eabdbfd1f9b23bc8046fb44057d72b820973f03df8990",
+    "model_fidelity_audit.md": "91d99b753563b573dcf502957894cbada0aefec82e71414ee1e91b4f7db985f4",
+    "README.md": "0b033cb070c1a9e08f6fd8bf2acc3aabe6ee488db4a7333169118d97423b1737",
+    "full200/allocation_certificates.json": "434eeb1c455e03668b0e110da71ec24169634df634cf1ce7aaec577bf4f336e9",
+    "full200/independent_recomputed_certificates.csv": "d114898e6de9c3a23546fa7709f23ba2bdcc643972b0248c2bc58ebea0fcd105",
+    "full200/per_design_bounds.csv": "7fe3ee709f9e69672f02e88bf91a9939777e8e11564a5d291ce53a6d7293d464",
+    "full200/summary.json": "f9cf2e6de65d9b5224d7f785b7924884a595c03b0c30ca605b499119b5afffa9",
+    "timing3/allocation_certificates.json": "5a8879ca7e6dc5f187b1d9202749d1c974bb8a8dbcfb6e48c7d66a28bcea7138",
+    "timing3/per_design_bounds.csv": "48fb9846b04ee04d390de49c2b683cdc589b7f3a38e6e25ea7c934937d24e929",
+    "timing3/summary.json": "04be3212b7cc69333b869207086694f82f7c122fd96b83b92ef91597f553f193"
+  }
+}

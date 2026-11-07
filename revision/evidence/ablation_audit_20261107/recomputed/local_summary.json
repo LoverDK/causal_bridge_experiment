@@ -1,0 +1,15 @@
+{
+  "matched_size_rows": 5700,
+  "matched_size_targets": 57,
+  "matched_size_reps": [
+    100
+  ],
+  "matched_size_mae": 0.07998653333593614,
+  "small_calibration_n10_isinf": true,
+  "contamination_variance": 1.63,
+  "operational_invalid_metadata_counts": {
+    "adaptive_R2_invalid": 800,
+    "no_curvature": 800,
+    "singleton_U": 800
+  }
+}
