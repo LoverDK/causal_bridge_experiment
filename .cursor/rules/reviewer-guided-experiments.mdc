@@ -1,0 +1,10 @@
+---
+description: Revisit reviewer concerns before and after every experiment milestone.
+alwaysApply: true
+---
+
+Follow the reviewer-guided experiment rules in the repository root `AGENTS.md`.
+Before advancing an experiment, read `revision/REVIEW_TRACKER.md`,
+`revision/review_tracker.json`, and its protocol. After the milestone, update
+only the concern statuses justified by evidence, recording remaining gaps.
+A completed run alone does not resolve a reviewer concern.
