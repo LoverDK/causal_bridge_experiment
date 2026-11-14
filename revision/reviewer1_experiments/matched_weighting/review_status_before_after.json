@@ -1,0 +1,242 @@
+[
+  {
+    "phase": "before",
+    "id": "REV-01",
+    "title": "引言、首现定义与解释顺序",
+    "status_before": "partial_evidence",
+    "status_after": "partial_evidence",
+    "evidence": "No new evidence for this concern.",
+    "scope": "Not investigated; original status preserved.",
+    "resolved": false
+  },
+  {
+    "phase": "before",
+    "id": "REV-02",
+    "title": "R∞ 的代价与 R2 的实际用途",
+    "status_before": "partial_evidence",
+    "status_after": "partial_evidence",
+    "evidence": "REPORT.md; metrics_all_caps.csv; paired_intervals_cap288.csv",
+    "scope": "Saved synthetic weighting/certificate/order audit only; no external or adaptive validity established.",
+    "resolved": false
+  },
+  {
+    "phase": "before",
+    "id": "REV-03",
+    "title": "摘要数字与证书结果归因",
+    "status_before": "partial_evidence",
+    "status_after": "partial_evidence",
+    "evidence": "REPORT.md; metrics_all_caps.csv; paired_intervals_cap288.csv",
+    "scope": "Saved synthetic weighting/certificate/order audit only; no external or adaptive validity established.",
+    "resolved": false
+  },
+  {
+    "phase": "before",
+    "id": "REV-04",
+    "title": "真实机制集合与 L,H 的来源",
+    "status_before": "open",
+    "status_after": "open",
+    "evidence": "No new evidence for this concern.",
+    "scope": "Not investigated; original status preserved.",
+    "resolved": false
+  },
+  {
+    "phase": "before",
+    "id": "REV-05",
+    "title": "真实闭环与微贷 not_qualified",
+    "status_before": "open",
+    "status_after": "open",
+    "evidence": "No new evidence for this concern.",
+    "scope": "Not investigated; original status preserved.",
+    "resolved": false
+  },
+  {
+    "phase": "before",
+    "id": "REV-06",
+    "title": "Many Labs 目标噪声与迁移证据",
+    "status_before": "partial_evidence",
+    "status_after": "partial_evidence",
+    "evidence": "No new evidence for this concern.",
+    "scope": "Not investigated; original status preserved.",
+    "resolved": false
+  },
+  {
+    "phase": "before",
+    "id": "REV-07",
+    "title": "可行基线、权重收益与完整成本",
+    "status_before": "partial_evidence",
+    "status_after": "partial_evidence",
+    "evidence": "REPORT.md; metrics_all_caps.csv; paired_intervals_cap288.csv",
+    "scope": "Saved synthetic weighting/certificate/order audit only; no external or adaptive validity established.",
+    "resolved": false
+  },
+  {
+    "phase": "before",
+    "id": "REV-08",
+    "title": "I&K、Manski、ExAtlas 与新增贡献",
+    "status_before": "open",
+    "status_after": "open",
+    "evidence": "No new evidence for this concern.",
+    "scope": "Not investigated; original status preserved.",
+    "resolved": false
+  },
+  {
+    "phase": "before",
+    "id": "REV-09",
+    "title": "凸组合候选类的理由与边界",
+    "status_before": "open",
+    "status_after": "open",
+    "evidence": "No new evidence for this concern.",
+    "scope": "Not investigated; original status preserved.",
+    "resolved": false
+  },
+  {
+    "phase": "before",
+    "id": "REV-10",
+    "title": "bridge 定理与实际一步 heuristic",
+    "status_before": "partial_evidence",
+    "status_after": "partial_evidence",
+    "evidence": "REPORT.md; metrics_all_caps.csv; paired_intervals_cap288.csv",
+    "scope": "Saved synthetic weighting/certificate/order audit only; no external or adaptive validity established.",
+    "resolved": false
+  },
+  {
+    "phase": "before",
+    "id": "REV-11",
+    "title": "方法命名、旧 prototype 与结果版本",
+    "status_before": "open",
+    "status_after": "open",
+    "evidence": "REPORT.md; metrics_all_caps.csv; paired_intervals_cap288.csv",
+    "scope": "Saved synthetic weighting/certificate/order audit only; no external or adaptive validity established.",
+    "resolved": false
+  },
+  {
+    "phase": "before",
+    "id": "REV-12",
+    "title": "拒绝对象、停止状态与统计验收",
+    "status_before": "partial_evidence",
+    "status_after": "partial_evidence",
+    "evidence": "REPORT.md; metrics_all_caps.csv; paired_intervals_cap288.csv",
+    "scope": "Saved synthetic weighting/certificate/order audit only; no external or adaptive validity established.",
+    "resolved": false
+  },
+  {
+    "phase": "after",
+    "id": "REV-01",
+    "title": "引言、首现定义与解释顺序",
+    "status_before": "partial_evidence",
+    "status_after": "partial_evidence",
+    "evidence": "No new evidence for this concern.",
+    "scope": "Not investigated; original status preserved.",
+    "resolved": false
+  },
+  {
+    "phase": "after",
+    "id": "REV-02",
+    "title": "R∞ 的代价与 R2 的实际用途",
+    "status_before": "partial_evidence",
+    "status_after": "partial_evidence",
+    "evidence": "REPORT.md; metrics_all_caps.csv; paired_intervals_cap288.csv",
+    "scope": "Saved synthetic weighting/certificate/order audit only; no external or adaptive validity established.",
+    "resolved": false
+  },
+  {
+    "phase": "after",
+    "id": "REV-03",
+    "title": "摘要数字与证书结果归因",
+    "status_before": "partial_evidence",
+    "status_after": "partial_evidence",
+    "evidence": "REPORT.md; metrics_all_caps.csv; paired_intervals_cap288.csv",
+    "scope": "Saved synthetic weighting/certificate/order audit only; no external or adaptive validity established.",
+    "resolved": false
+  },
+  {
+    "phase": "after",
+    "id": "REV-04",
+    "title": "真实机制集合与 L,H 的来源",
+    "status_before": "open",
+    "status_after": "open",
+    "evidence": "No new evidence for this concern.",
+    "scope": "Not investigated; original status preserved.",
+    "resolved": false
+  },
+  {
+    "phase": "after",
+    "id": "REV-05",
+    "title": "真实闭环与微贷 not_qualified",
+    "status_before": "open",
+    "status_after": "open",
+    "evidence": "No new evidence for this concern.",
+    "scope": "Not investigated; original status preserved.",
+    "resolved": false
+  },
+  {
+    "phase": "after",
+    "id": "REV-06",
+    "title": "Many Labs 目标噪声与迁移证据",
+    "status_before": "partial_evidence",
+    "status_after": "partial_evidence",
+    "evidence": "No new evidence for this concern.",
+    "scope": "Not investigated; original status preserved.",
+    "resolved": false
+  },
+  {
+    "phase": "after",
+    "id": "REV-07",
+    "title": "可行基线、权重收益与完整成本",
+    "status_before": "partial_evidence",
+    "status_after": "partial_evidence",
+    "evidence": "REPORT.md; metrics_all_caps.csv; paired_intervals_cap288.csv",
+    "scope": "Saved synthetic weighting/certificate/order audit only; no external or adaptive validity established.",
+    "resolved": false
+  },
+  {
+    "phase": "after",
+    "id": "REV-08",
+    "title": "I&K、Manski、ExAtlas 与新增贡献",
+    "status_before": "open",
+    "status_after": "open",
+    "evidence": "No new evidence for this concern.",
+    "scope": "Not investigated; original status preserved.",
+    "resolved": false
+  },
+  {
+    "phase": "after",
+    "id": "REV-09",
+    "title": "凸组合候选类的理由与边界",
+    "status_before": "open",
+    "status_after": "open",
+    "evidence": "No new evidence for this concern.",
+    "scope": "Not investigated; original status preserved.",
+    "resolved": false
+  },
+  {
+    "phase": "after",
+    "id": "REV-10",
+    "title": "bridge 定理与实际一步 heuristic",
+    "status_before": "partial_evidence",
+    "status_after": "partial_evidence",
+    "evidence": "REPORT.md; metrics_all_caps.csv; paired_intervals_cap288.csv",
+    "scope": "Saved synthetic weighting/certificate/order audit only; no external or adaptive validity established.",
+    "resolved": false
+  },
+  {
+    "phase": "after",
+    "id": "REV-11",
+    "title": "方法命名、旧 prototype 与结果版本",
+    "status_before": "open",
+    "status_after": "open",
+    "evidence": "REPORT.md; metrics_all_caps.csv; paired_intervals_cap288.csv",
+    "scope": "Saved synthetic weighting/certificate/order audit only; no external or adaptive validity established.",
+    "resolved": false
+  },
+  {
+    "phase": "after",
+    "id": "REV-12",
+    "title": "拒绝对象、停止状态与统计验收",
+    "status_before": "partial_evidence",
+    "status_after": "partial_evidence",
+    "evidence": "REPORT.md; metrics_all_caps.csv; paired_intervals_cap288.csv",
+    "scope": "Saved synthetic weighting/certificate/order audit only; no external or adaptive validity established.",
+    "resolved": false
+  }
+]

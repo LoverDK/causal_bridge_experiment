@@ -1,0 +1,72 @@
+{
+  "primitive_checks": {
+    "passed": true,
+    "tangent_gradient_squared_max": 2.666666666666667,
+    "full_simplex_geometry": 2.3094010767585034,
+    "r2_contrasts": 68,
+    "r2_zeta_per_contrast": 0.0003676470588235294,
+    "rinf_shared_zeta": 0.025,
+    "source_joint_failure_budget": 0.05,
+    "scope": "Boundary/algebra checks only; no model-truth or coverage validation."
+  },
+  "smoke_aggregate_checks": {
+    "passed": true,
+    "prediction_rows": 6,
+    "weight_rows": 240,
+    "source_sites": 40,
+    "target_sites": 1,
+    "cohort_n": 7228,
+    "solver_runs": 2,
+    "sensitivity_rows": 0,
+    "maximum_independent_numeric_error": 2.7755575615628914e-16,
+    "maximum_simplex_error": 2.220446049250313e-16,
+    "minimum_weight": 0.0,
+    "maximum_solver_gap": 2.6671165276326292e-11,
+    "participant_outcomes_opened": false,
+    "target_outcomes_opened": false,
+    "files_reviewed_sha256": {
+      "data\\all_design.csv": "3e46ca7ce37d58707a2307a13222a0770a08a726d488445e428a5343c9f529f2",
+      "code\\run_conditional.py": "4be046334b5f4bc189946d2299ab0b62e09667d7b738112ffbe09844dc5d93da"
+    }
+  },
+  "full_aggregate_checks": {
+    "passed": true,
+    "prediction_rows": 102,
+    "weight_rows": 4080,
+    "source_sites": 40,
+    "target_sites": 17,
+    "cohort_n": 7228,
+    "solver_runs": 34,
+    "sensitivity_rows": 918,
+    "maximum_independent_numeric_error": 3.885780586188048e-16,
+    "maximum_simplex_error": 2.220446049250313e-16,
+    "minimum_weight": 0.0,
+    "maximum_solver_gap": 2.845932378647831e-10,
+    "solver_retries": [
+      {
+        "target": "brookcuny",
+        "family": "R2",
+        "attempt_count": 2,
+        "final_tolerance": 1e-09
+      },
+      {
+        "target": "csunorthonline",
+        "family": "R2",
+        "attempt_count": 2,
+        "final_tolerance": 1e-09
+      },
+      {
+        "target": "georgefox",
+        "family": "R2",
+        "attempt_count": 2,
+        "final_tolerance": 1e-09
+      }
+    ],
+    "participant_outcomes_opened": false,
+    "target_outcomes_opened": false,
+    "files_reviewed_sha256": {
+      "data\\all_design.csv": "3e46ca7ce37d58707a2307a13222a0770a08a726d488445e428a5343c9f529f2",
+      "code\\run_conditional.py": "0a333cee994db014c001d021727672ce127362527c056ac66f5175dd1e4fce3d"
+    }
+  }
+}

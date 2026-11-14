@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "formal_reveal_preceded_review": true,
+  "freeze_reverified": true,
+  "canonical_target_records_independently_checked": 2863,
+  "target_references": 17,
+  "evaluation_rows": 102,
+  "native_baseline_rows": 34,
+  "qualification_rows": 102,
+  "maximum_numeric_error": 1.1102230246251565e-16,
+  "raw_reference_misses": [
+    {
+      "target": "radboud",
+      "policy": "optimized_R2",
+      "absolute_error": 0.26884671991295217,
+      "radius": 0.2427647496351724
+    }
+  ],
+  "conditional_joint_source_reference_failure_budget": 0.1,
+  "latent_causal_effect_coverage_measured": false,
+  "scientific_assumptions_verified_by_evaluation": false,
+  "claim_limits": [
+    "Optimized R2 reduces the conditional radius and releases8/17 at delta.15; its observed MAE exceeds uniform.",
+    "16/17 raw inclusion and17/17 adjusted compatibility are noisy-reference metrics, not true-effect coverage.",
+    "All point signs agree, but only one target reference interval excludes zero and no policy has both intervals determine the same direction."
+  ]
+}

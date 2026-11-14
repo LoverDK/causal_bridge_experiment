@@ -1,0 +1,118 @@
+{
+  "source_n": 4365,
+  "sites": 57,
+  "target_n": 2863,
+  "q_raw": [
+    [
+      0.2967352914145702,
+      0.3289885619578797,
+      0.49620112752181356
+    ],
+    [
+      0.49310598114524895,
+      0.5118343235116085,
+      0.27909753822982747
+    ]
+  ],
+  "q_smooth": [
+    [
+      0.2970289604828874,
+      0.32910246032913226,
+      0.4964863469708816
+    ],
+    [
+      0.4929824801951951,
+      0.5117669915376799,
+      0.307273119984203
+    ]
+  ],
+  "h": 0.05,
+  "eligible_count": 29,
+  "candidate_ids": [
+    "armstrong",
+    "radboud",
+    "tanzania",
+    "ouhk",
+    "kwazulu",
+    "osnabruck",
+    "umich",
+    "ulatina",
+    "tilburg",
+    "pascal",
+    "padua",
+    "queensland2"
+  ],
+  "calibration_diagnostics": {
+    "raw": {
+      "q": [
+        [
+          0.2967352914145702,
+          0.3289885619578797,
+          0.49620112752181356
+        ],
+        [
+          0.49310598114524895,
+          0.5118343235116085,
+          0.27909753822982747
+        ]
+      ],
+      "arms": [
+        {
+          "arm": 0,
+          "success": true,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "negative_objective": 1377.7555054998354,
+          "max_abs_gradient": 6.2883960096904445e-06,
+          "boundary": false,
+          "finite_logit": true
+        },
+        {
+          "arm": 1,
+          "success": true,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "negative_objective": 1498.761265186936,
+          "max_abs_gradient": 3.759767039923645e-06,
+          "boundary": false,
+          "finite_logit": true
+        }
+      ]
+    },
+    "smooth": {
+      "q": [
+        [
+          0.2970289604828874,
+          0.32910246032913226,
+          0.4964863469708816
+        ],
+        [
+          0.4929824801951951,
+          0.5117669915376799,
+          0.307273119984203
+        ]
+      ],
+      "arms": [
+        {
+          "arm": 0,
+          "success": true,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "negative_objective": 1379.9873113278707,
+          "max_abs_gradient": 1.4176490927830798e-06,
+          "boundary": false,
+          "finite_logit": true
+        },
+        {
+          "arm": 1,
+          "success": true,
+          "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "negative_objective": 1500.934376738797,
+          "max_abs_gradient": 2.521218900319866e-08,
+          "boundary": false,
+          "finite_logit": true
+        }
+      ]
+    }
+  },
+  "conditions": 46,
+  "scenarios": 13,
+  "output": "D:\\study\\zzh\u79d1\u7814\\phase1\\manylabs2_mle_gaussian_bridge\\protocol\\execution.json"
+}

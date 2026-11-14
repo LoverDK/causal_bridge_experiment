@@ -1,0 +1,25 @@
+{
+  "frozen_utc": "2026-11-08T17:02:42.220559+00:00",
+  "target_outcomes_read_in_this_run": false,
+  "independent_full_numeric_check_passed": true,
+  "files": {
+    "audit/independent_checks_pre_reveal.json": "0d34b36b811e7329ca74f8a530f62c83b372f3c2c63c5d7c3dd102e16556a769",
+    "code/evaluate_frozen.py": "4fed3c6fd42da3a28b8cdb470d9a8c6660d06a04c1008ec16a3da7555baa0a5c",
+    "code/run_conditional.py": "0a333cee994db014c001d021727672ce127362527c056ac66f5175dd1e4fce3d",
+    "data/all_design.csv": "3e46ca7ce37d58707a2307a13222a0770a08a726d488445e428a5343c9f529f2",
+    "data/frozen_site_split.csv": "a0dbbf206aafc08435ed81000fb79e6f2ad8607099e1d54f52a236ed03c6889c",
+    "data/sex_profile_set_audit.csv": "8c98e5e426f40f8fe93ea03dafba4457c9ec51d3cde94a9a5efd905d46eb6f33",
+    "data/source_only.csv": "54401905de1d8796aee78332952f602f5b8ff65d1c0c3dd6e96235623a271b45",
+    "math_specification.md": "5d0de2cc99e52bfdb2597b2ee9cf5be373c7cb92a53c4c7ce6a6bf661c33aab8",
+    "protocol/evaluation_protocol.md": "577018db2a39a6d89d14ae96c6ac634739847fc2194a0ed7757398b2261634e1",
+    "protocol/numerical_protocol.md": "c09ade141ec5cf6eec1cf9bdf9c94e900062d08755c8372b6a396c29b0bb520d",
+    "results/numerical_summary.json": "c34244cf1e42fc6757b3a2aa2c07719725c13b179d50458792097060c8db439a",
+    "results/optimization_audit.csv": "ec138340a39f7f2383b1445072e836b05922e1dddc59bd147c84a47f70c45e0d",
+    "results/predictions_pre_reveal.csv": "f043d4c85e29ee0c09e90f1337fda14eef355f14d6a5e2d781dfe307a85f341d",
+    "results/sensitivity.csv": "9ceaef5dbfd884546da23ce27bb929d8c6ae99da92eaadf490372d7ba4e90975",
+    "results/source_estimates_pre_reveal.csv": "e3dec2115857df423f754798dcf506f537eb30da0cb0dd85172bbbd221673026",
+    "results/source_inputs.csv": "f6ebe506f71f23711c280d0fe1fe2e0bf46a3b28cde8c3958f000dd0e65196e6",
+    "results/weights.csv": "ffd1fb8f92d91d53af05e978ebcd5d3b4d0d5970a7fe151f6cd5e222c8f32a11",
+    "scientific_qualification.md": "acbcd978358acdf6063e72b463efe248f684c65fa2bd32e6fa46d2481724d0ee"
+  }
+}

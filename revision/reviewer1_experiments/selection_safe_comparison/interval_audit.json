@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "wilson_intervals_verified_against_scipy": 17926,
+  "max_error": 3.3306690738754696e-16
+}

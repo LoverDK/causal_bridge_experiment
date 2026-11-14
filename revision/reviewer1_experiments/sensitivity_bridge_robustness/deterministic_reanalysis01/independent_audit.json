@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "code_sha256": "0de3656455d3822809242fb4c19d412f3095e5e4ae0c880fb919d7463d13ba58",
+  "protocol_sha256": "723dc618d64ec318c20ff5efb68f04fed1410ed0578ccff29ede5508c1ba6fe7",
+  "run_manifest_sha256": "88dfd18b86f52d8c28188ed4e869cce9889b9dce94b552bee8988372269a1907",
+  "elapsed_seconds": 9.388732300139964,
+  "designs": 200,
+  "subsets_checked": 114600,
+  "method_rows_checked": 2400,
+  "greedy_steps_checked": 1600,
+  "candidate_scores_checked": 16800,
+  "exhaustive_extrema_checked": 1200,
+  "archived_rows_reproduced": 600,
+  "max_absolute_discrepancies": {
+    "subset_variance": 1.0880185641326534e-14,
+    "subset_information": 1.4210854715202004e-14,
+    "subset_condition": 2.6489033189136535e-11,
+    "greedy_covariance": 1.0880185641326534e-14,
+    "rank_one_variance_gain": 1.5237811012980274e-14,
+    "candidate_target_gain": 1.5709655798445965e-14,
+    "candidate_information_gain": 1.2434497875801753e-14,
+    "method_variance": 1.4654943925052066e-14,
+    "archived_metric": 4.807105824511382e-10
+  },
+  "no_sampling": true,
+  "notes": "No experiment implementation imported. Independent solve-based covariance and direct objective differences audit rank-one implementation and exhaustive extrema. Numeric tolerance1e-8 absolute/relative; choice tolerance1e-10. All200 designs retained; no scientific theorem follows from this audit."
+}

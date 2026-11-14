@@ -1,0 +1,13 @@
+{
+  "analysis_manifest.json": "b6a1d44029f329b1d4305ab3b4172918e05124b78ea46aedccdd263068a421f0",
+  "analyze_saved.py": "4d5194acc8adbd91a60fa1796ae2ec17959b508b33db407909da18e445c342d4",
+  "claim_facts.csv": "e7e1253c6a37bcf7c624d0f046d782ffb79355774441b9b4ada2b0e924226944",
+  "concern_statuses.json": "b115e3437bbd303f4905915fa8b50b04eb93d09565db9136e9eaba2c085129b2",
+  "overlap_verification.csv": "3842df12b2f7ea5f848dfe302342a013a7e36a9d4410709844e9c91c7cbc2c06",
+  "paired_targeted_contrasts.csv": "6093ab478d66d30b8b08c5a728181707c99b23b83206e68de80186eaca2b2bf1",
+  "PROTOCOL.md": "1747059174d61dec1fc77333204ae93181805bc399d1914cc017368a22b4f028",
+  "REPORT.md": "50030616b42c48a0f91e1e10ac6b77372e5a98422e1baa20240aff2fac2665c0",
+  "surface_cap_metrics.csv": "7b48c3c5d8911407b4294d629d5b5102394e33dd5d5eaeab4a143ec2d29cd5a6",
+  "verification.json": "f9eca52a5417f029a415fc184c895e46cbba52faaee5f5fad20e21b3ab8070b1",
+  "verify_saved.py": "84ffbeaf9ea096cefcb191c6c662bc9623ff4a7ce5c8e96e0a38dd10754d7f66"
+}

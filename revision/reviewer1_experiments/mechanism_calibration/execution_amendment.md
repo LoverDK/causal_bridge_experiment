@@ -1,0 +1,9 @@
+# Execution amendment v1 — 2026-11-08
+
+Root priority report authorized implementation and smoke after the initial feasibility delivery. Full execution still waits for smoke audit and root's revised-runtime go. This changes no cells, distributions, methods, seeds, estimands or inference in the frozen proposal.
+
+Storage amendment requested by root: do not retain every calibration vector. Save every world's test entity norms, all three methods' calibrated radius vectors, exact ranks, joint calibration order statistic and maximum, score counts, perturbation counts, joint/entity/role hits, seed components and configuration. Full calibration vectors and flags are deterministically regenerated from NumPy PCG64 and per-world SeedSequence([profile_seed,cell_index,world_index]). The runner draws base archive and independent entity normals, then missing flags/normals, then unreliable flags/normals; calibration is generated before independent test. Even zero-probability perturbation flags/normals are drawn, preserving a documented exact sequence. There are no causal outcomes in the generator.
+
+All compressed raw arrays stay in this assigned experiment directory. No raw vectors are copied into Overleaf. The independent audit duplicates generator arithmetic without importing runner helpers, sorts regenerated norms to verify ranks and compares all saved smoke quantities. Full audit will reconstruct all worlds, with no optimization or fitting. Both implementations are saved and hashed. This independent implementation checks software consistency with the declared generator, not real-world exchangeability.
+
+The original config status field describes the initial proposal and is retained to preserve its hash. Execution authorization and actual states are recorded by fresh manifests. Initial forecast was 5–20 seconds smoke, 1–5 minutes full generation plus 1–3 minutes reporting; compact raw storage should reduce I/O, and measured smoke supersedes this estimate.

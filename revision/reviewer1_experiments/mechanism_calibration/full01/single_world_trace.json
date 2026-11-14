@@ -1,0 +1,164 @@
+{
+  "seed": 20261108022,
+  "cell_index": 0,
+  "cell_id": "baseline",
+  "world_index": 0,
+  "n_cal": 199,
+  "K": 4,
+  "bridges": 6,
+  "M": 11,
+  "p": 2,
+  "rho": 0,
+  "eta": "0.05",
+  "ranks": [
+    190,
+    190,
+    200
+  ],
+  "test_entity_norms": [
+    1.4525986710324807,
+    2.6078221590825263,
+    1.5326884974788861,
+    0.7843948305178594,
+    1.6750059865538327,
+    0.4597090015356842,
+    1.5102211757376316,
+    0.5083969416582952,
+    0.8507948744781938,
+    0.33074472495968477,
+    0.12164093327759476
+  ],
+  "calibration_max": 3.8525125769727024,
+  "rules": {
+    "joint_max": {
+      "radii": [
+        3.3568290001641645,
+        3.3568290001641645,
+        3.3568290001641645,
+        3.3568290001641645,
+        3.3568290001641645,
+        3.3568290001641645,
+        3.3568290001641645,
+        3.3568290001641645,
+        3.3568290001641645,
+        3.3568290001641645,
+        3.3568290001641645
+      ],
+      "radius_is_infinite": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "hits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "joint_covered": true,
+      "entity_fraction": 1.0
+    },
+    "entitywise_marginal": {
+      "radii": [
+        2.339776012786992,
+        2.5464279606101505,
+        2.3579241059319402,
+        2.4456664942998114,
+        2.385744141637289,
+        2.4678211108496257,
+        2.2990693365222707,
+        2.3591133317400903,
+        2.391222863920801,
+        2.623274202497267,
+        2.588350918249557
+      ],
+      "radius_is_infinite": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "hits": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "joint_covered": false,
+      "entity_fraction": 0.9090909090909091
+    },
+    "entitywise_bonferroni": {
+      "radii": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "radius_is_infinite": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "hits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "joint_covered": true,
+      "entity_fraction": 1.0
+    }
+  },
+  "outcomes_used": false
+}

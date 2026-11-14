@@ -6,6 +6,10 @@ This repository is prepared for anonymous supplementary-material export. The exp
 
 For the package overview, start with [SUPPLEMENTARY_README.md](SUPPLEMENTARY_README.md). The paper-item map is [CURRENT_ARTIFACTS.md](CURRENT_ARTIFACTS.md); the figure/table asset index is [paper_figures/PAPER_MAP.md](paper_figures/PAPER_MAP.md). Data origins are in [DATA_SOURCES.md](DATA_SOURCES.md). Exact delivered bytes are pinned in [provenance/release_manifest.json](provenance/release_manifest.json).
 
+## November 2026 experiment update
+
+The [new experiment index](revision/EXPERIMENT_UPDATE_20261114.md) covers the reviewer-guided workflows and ablations, five supplementary audits, the Many Labs 2 conditional aggregate replay, and the Bernoulli/MLE bridge simulation. Historical results and manifests are retained.
+
 ## Contents
 
 | Directory | Purpose |

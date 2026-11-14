@@ -1,0 +1,64 @@
+{
+  "experiment_id": "SELECTION-SAFE-COMPARISON01",
+  "alpha": 0.05,
+  "geometry": [
+    "balanced_near",
+    "one_distant",
+    "distant_only"
+  ],
+  "precision": [
+    "equal",
+    "heterogeneous"
+  ],
+  "surfaces": [
+    "flat",
+    "linear",
+    "curved"
+  ],
+  "K": [
+    4,
+    16
+  ],
+  "ambiguity": [
+    0.0,
+    0.025
+  ],
+  "rho": [
+    0.2,
+    1.0
+  ],
+  "tolerances": [
+    0.15,
+    0.3,
+    0.6
+  ],
+  "full_worlds_per_cell": 5000,
+  "smoke_worlds_per_cell": 50,
+  "full_seed": 202611081102,
+  "smoke_seed": 202611081101,
+  "optimizer_dual_gap_tolerance": 2e-06,
+  "mechanism_domain": [
+    -1.0,
+    1.0
+  ],
+  "methods": [
+    "outcome_adaptive_Rinf",
+    "design_only_optimized_R2",
+    "honest_half_split_R2",
+    "naive_postselection_R2",
+    "uniform_R2",
+    "inverse_variance_R2"
+  ],
+  "initial_runtime_forecast": {
+    "smoke_seconds": [
+      5,
+      20
+    ],
+    "full_seconds": [
+      30,
+      120
+    ],
+    "basis": "72 tiny convex optimizations and vectorized Gaussian arithmetic; compressed raw output CPU/IO",
+    "resources": "single CPU process; no GPU; <500 MB expected memory"
+  }
+}

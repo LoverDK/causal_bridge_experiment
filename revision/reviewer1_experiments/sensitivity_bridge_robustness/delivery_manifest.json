@@ -1,0 +1,142 @@
+{
+  "delivery": "E smoothness reuse audit and authorized deterministic saved-design reanalysis",
+  "source_design_sha256": "a050a387051b95952979dbe52d2faf84fa784213085f9824919b634c5d1246e7",
+  "copied_design_sha256": "a050a387051b95952979dbe52d2faf84fa784213085f9824919b634c5d1246e7",
+  "hashes_match": true,
+  "new_monte_carlo": false,
+  "new_dgp": false,
+  "source_archive_modified": false,
+  "tex_or_git_modified": false,
+  "files": [
+    {
+      "path": "audit_existing.py",
+      "bytes": 7224,
+      "sha256": "1f6634bc48b8559cdaa7832483ea8f0c0dc3083992ef13e319193347bbad8091"
+    },
+    {
+      "path": "check_deterministic.py",
+      "bytes": 7555,
+      "sha256": "0de3656455d3822809242fb4c19d412f3095e5e4ae0c880fb919d7463d13ba58"
+    },
+    {
+      "path": "claim_facts.json",
+      "bytes": 10851,
+      "sha256": "a19248775f8e2a5c5208a5b0f326b1a52084183db9c4195a0eb537eca202c96b"
+    },
+    {
+      "path": "deterministic_protocol.json",
+      "bytes": 3517,
+      "sha256": "723dc618d64ec318c20ff5efb68f04fed1410ed0578ccff29ede5508c1ba6fe7"
+    },
+    {
+      "path": "deterministic_reanalysis01\\appendix_table_rows.csv",
+      "bytes": 2047,
+      "sha256": "c960a914f8b23da3e5b1d05c144de408c2397ad360498b45889048f34f7ea3c9"
+    },
+    {
+      "path": "deterministic_reanalysis01\\greedy_candidate_scores.csv",
+      "bytes": 1560765,
+      "sha256": "c15a6d53472380214d47897b6c3f831f26be7cc435b583d7acd2c7f8e99a33c0"
+    },
+    {
+      "path": "deterministic_reanalysis01\\greedy_steps.csv",
+      "bytes": 1394223,
+      "sha256": "7cebebb57d4ef6729a89adafa023eaf195cc98a9958e2111947c4387f623113b"
+    },
+    {
+      "path": "deterministic_reanalysis01\\independent_audit.json",
+      "bytes": 1401,
+      "sha256": "5e4daf3d02b12efdd965ad17a6e2d846062d4a11d632b37eff1b3df676cc8394"
+    },
+    {
+      "path": "deterministic_reanalysis01\\input_designs.json",
+      "bytes": 800699,
+      "sha256": "a050a387051b95952979dbe52d2faf84fa784213085f9824919b634c5d1246e7"
+    },
+    {
+      "path": "deterministic_reanalysis01\\method_results.csv",
+      "bytes": 526272,
+      "sha256": "3bfa20cd86d56db1442139aad0c13ce9215c336a0077e036688dafe83309c8df"
+    },
+    {
+      "path": "deterministic_reanalysis01\\paired_comparisons.csv",
+      "bytes": 551,
+      "sha256": "7f88538ed0be1a03e180b6a983875c90bf4d3054e570bb1a8e05d267a8d16e6d"
+    },
+    {
+      "path": "deterministic_reanalysis01\\RESULTS.md",
+      "bytes": 8188,
+      "sha256": "2f59e14b6eb98c0c235fa226e09b10497a1e041532f5bdb0cacf63ee31f9e0f7"
+    },
+    {
+      "path": "deterministic_reanalysis01\\run_manifest.json",
+      "bytes": 1356,
+      "sha256": "88dfd18b86f52d8c28188ed4e869cce9889b9dce94b552bee8988372269a1907"
+    },
+    {
+      "path": "deterministic_reanalysis01\\subset_scores.csv",
+      "bytes": 10995103,
+      "sha256": "45a879f4fd315a0cf52a1b2df752d97bcb25dc2bb3d1d9e9810ae0d3db0b6e03"
+    },
+    {
+      "path": "deterministic_reanalysis01\\summary.csv",
+      "bytes": 8331,
+      "sha256": "111bef1fa0b61517aef7fe05412214551394c191d04b9687bc5754e06177e323"
+    },
+    {
+      "path": "existing_csv_arithmetic.json",
+      "bytes": 11904,
+      "sha256": "d9ba952c79d27545902ce325fbfc14ce918c608b25dbb5ad2071daa491af8dba"
+    },
+    {
+      "path": "finalize_manifest.py",
+      "bytes": 3908,
+      "sha256": "46ba08dc28c519b069c8e006e17f74ecd41e7465ac0c644055951158c3da331d"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 10224,
+      "sha256": "43ca9303817a18e94103326798506e967ae18194283f23d8748ab3e733976aac"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 19835,
+      "sha256": "05d02f7416a6cd2919e806db22ac0bd08e5cc1e51dacfbe1bc5d284dddd8f6c6"
+    },
+    {
+      "path": "reuse_protocol.json",
+      "bytes": 2105,
+      "sha256": "5fcaab70b68c2873658bf0e5fdfa1a87a9c96fd34434f151cd64917e807eaedd"
+    },
+    {
+      "path": "reused_bridge_anisotropy.csv",
+      "bytes": 160,
+      "sha256": "9d521753c7e273a94ec737f0cac26f9b9388a7ad820949a96c1bff21fb8ce3b2"
+    },
+    {
+      "path": "reused_LH_cells.csv",
+      "bytes": 18891,
+      "sha256": "5b50817078b26c74610fc68e9fa1635712755e337ffd7d9240c128dce65369bb"
+    },
+    {
+      "path": "reused_LH_primary.csv",
+      "bytes": 6525,
+      "sha256": "85ad731a7ecfc60640a2bbdf44f8d4e542cef8601be7cf24f99acc5859885655"
+    },
+    {
+      "path": "reused_LH_stopped.csv",
+      "bytes": 7722,
+      "sha256": "bc6a9d664ba490230ac0ebf4e0a62c5d1c5bfcfc2f3e29454d232dde8fc22a73"
+    },
+    {
+      "path": "reused_U_primary.csv",
+      "bytes": 3025,
+      "sha256": "6257b64204a367e75c6a56e7f453f73501d897f777bcab4a215fe9021410800d"
+    },
+    {
+      "path": "run_deterministic.py",
+      "bytes": 7945,
+      "sha256": "725c6c0c54e572e8b76f0edc788b426ad03d24784e3350a118f94a496de24b8b"
+    }
+  ]
+}

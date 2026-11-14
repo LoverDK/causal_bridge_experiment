@@ -1,0 +1,532 @@
+{
+  "protocol_path": "D:\\study\\zzh\u79d1\u7814\\phase1\\manylabs2_mle_gaussian_bridge\\protocol\\execution.json",
+  "protocol_sha256": "c5f8527b03d08d472dea4f643fa3d89f05a0cbda089b8f3defd524d579470921",
+  "code_sha256": "c0d8f78d7538229cfd871be32698934a0f32659ce4fe84a0ff2b32866115f0f8",
+  "seed": 2026110901,
+  "run_type": "full",
+  "condition_runs": [
+    {
+      "scenario": "barycenter",
+      "dgp": "A",
+      "scale": 1,
+      "replications": 5000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        0
+      ],
+      "elapsed_seconds": 2.1618186000268906
+    },
+    {
+      "scenario": "barycenter",
+      "dgp": "A",
+      "scale": 2,
+      "replications": 5000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        1
+      ],
+      "elapsed_seconds": 2.2133309999480844
+    },
+    {
+      "scenario": "barycenter",
+      "dgp": "A",
+      "scale": 5,
+      "replications": 5000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        2
+      ],
+      "elapsed_seconds": 2.199868200113997
+    },
+    {
+      "scenario": "barycenter",
+      "dgp": "A",
+      "scale": 10,
+      "replications": 5000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        3
+      ],
+      "elapsed_seconds": 2.3550547999329865
+    },
+    {
+      "scenario": "barycenter",
+      "dgp": "A",
+      "scale": 20,
+      "replications": 5000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        4
+      ],
+      "elapsed_seconds": 2.227344499900937
+    },
+    {
+      "scenario": "barycenter",
+      "dgp": "B",
+      "scale": 1,
+      "replications": 5000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        5
+      ],
+      "elapsed_seconds": 1.959891399834305
+    },
+    {
+      "scenario": "barycenter",
+      "dgp": "B",
+      "scale": 2,
+      "replications": 5000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        6
+      ],
+      "elapsed_seconds": 2.2041818001307547
+    },
+    {
+      "scenario": "barycenter",
+      "dgp": "B",
+      "scale": 5,
+      "replications": 5000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        7
+      ],
+      "elapsed_seconds": 2.1660235999152064
+    },
+    {
+      "scenario": "barycenter",
+      "dgp": "B",
+      "scale": 10,
+      "replications": 5000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        8
+      ],
+      "elapsed_seconds": 2.114011500030756
+    },
+    {
+      "scenario": "barycenter",
+      "dgp": "B",
+      "scale": 20,
+      "replications": 5000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        9
+      ],
+      "elapsed_seconds": 2.0535291000269353
+    },
+    {
+      "scenario": "unknown_all_Male",
+      "dgp": "A",
+      "scale": 1,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        10
+      ],
+      "elapsed_seconds": 0.5273627999704331
+    },
+    {
+      "scenario": "unknown_all_Male",
+      "dgp": "A",
+      "scale": 5,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        11
+      ],
+      "elapsed_seconds": 1.3092326999176294
+    },
+    {
+      "scenario": "unknown_all_Male",
+      "dgp": "A",
+      "scale": 20,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        12
+      ],
+      "elapsed_seconds": 1.2339283998589963
+    },
+    {
+      "scenario": "unknown_all_Female",
+      "dgp": "A",
+      "scale": 1,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        13
+      ],
+      "elapsed_seconds": 0.5197171000763774
+    },
+    {
+      "scenario": "unknown_all_Female",
+      "dgp": "A",
+      "scale": 5,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        14
+      ],
+      "elapsed_seconds": 1.3311902000568807
+    },
+    {
+      "scenario": "unknown_all_Female",
+      "dgp": "A",
+      "scale": 20,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        15
+      ],
+      "elapsed_seconds": 1.2949091999325901
+    },
+    {
+      "scenario": "unknown_all_Other",
+      "dgp": "A",
+      "scale": 1,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        16
+      ],
+      "elapsed_seconds": 1.1190582001581788
+    },
+    {
+      "scenario": "unknown_all_Other",
+      "dgp": "A",
+      "scale": 5,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        17
+      ],
+      "elapsed_seconds": 1.3009026998188347
+    },
+    {
+      "scenario": "unknown_all_Other",
+      "dgp": "A",
+      "scale": 20,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        18
+      ],
+      "elapsed_seconds": 1.2785149000119418
+    },
+    {
+      "scenario": "other_q0_0.2_q1_0.2",
+      "dgp": "A",
+      "scale": 1,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        19
+      ],
+      "elapsed_seconds": 1.1067969999276102
+    },
+    {
+      "scenario": "other_q0_0.2_q1_0.2",
+      "dgp": "A",
+      "scale": 5,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        20
+      ],
+      "elapsed_seconds": 1.2593165999278426
+    },
+    {
+      "scenario": "other_q0_0.2_q1_0.2",
+      "dgp": "A",
+      "scale": 20,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        21
+      ],
+      "elapsed_seconds": 1.270338699920103
+    },
+    {
+      "scenario": "other_q0_0.2_q1_0.5",
+      "dgp": "A",
+      "scale": 1,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        22
+      ],
+      "elapsed_seconds": 1.1093574999831617
+    },
+    {
+      "scenario": "other_q0_0.2_q1_0.5",
+      "dgp": "A",
+      "scale": 5,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        23
+      ],
+      "elapsed_seconds": 1.270837499992922
+    },
+    {
+      "scenario": "other_q0_0.2_q1_0.5",
+      "dgp": "A",
+      "scale": 20,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        24
+      ],
+      "elapsed_seconds": 1.3783044000156224
+    },
+    {
+      "scenario": "other_q0_0.2_q1_0.8",
+      "dgp": "A",
+      "scale": 1,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        25
+      ],
+      "elapsed_seconds": 1.0686592001002282
+    },
+    {
+      "scenario": "other_q0_0.2_q1_0.8",
+      "dgp": "A",
+      "scale": 5,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        26
+      ],
+      "elapsed_seconds": 1.240435500163585
+    },
+    {
+      "scenario": "other_q0_0.2_q1_0.8",
+      "dgp": "A",
+      "scale": 20,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        27
+      ],
+      "elapsed_seconds": 1.3094342001713812
+    },
+    {
+      "scenario": "other_q0_0.5_q1_0.2",
+      "dgp": "A",
+      "scale": 1,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        28
+      ],
+      "elapsed_seconds": 1.1257203998975456
+    },
+    {
+      "scenario": "other_q0_0.5_q1_0.2",
+      "dgp": "A",
+      "scale": 5,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        29
+      ],
+      "elapsed_seconds": 1.2619425000157207
+    },
+    {
+      "scenario": "other_q0_0.5_q1_0.2",
+      "dgp": "A",
+      "scale": 20,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        30
+      ],
+      "elapsed_seconds": 1.2588646998628974
+    },
+    {
+      "scenario": "other_q0_0.5_q1_0.5",
+      "dgp": "A",
+      "scale": 1,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        31
+      ],
+      "elapsed_seconds": 1.1465199999511242
+    },
+    {
+      "scenario": "other_q0_0.5_q1_0.5",
+      "dgp": "A",
+      "scale": 5,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        32
+      ],
+      "elapsed_seconds": 1.284597999881953
+    },
+    {
+      "scenario": "other_q0_0.5_q1_0.5",
+      "dgp": "A",
+      "scale": 20,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        33
+      ],
+      "elapsed_seconds": 1.3397964001633227
+    },
+    {
+      "scenario": "other_q0_0.5_q1_0.8",
+      "dgp": "A",
+      "scale": 1,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        34
+      ],
+      "elapsed_seconds": 1.0845503997989
+    },
+    {
+      "scenario": "other_q0_0.5_q1_0.8",
+      "dgp": "A",
+      "scale": 5,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        35
+      ],
+      "elapsed_seconds": 1.3038476998917758
+    },
+    {
+      "scenario": "other_q0_0.5_q1_0.8",
+      "dgp": "A",
+      "scale": 20,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        36
+      ],
+      "elapsed_seconds": 1.3103212998248637
+    },
+    {
+      "scenario": "other_q0_0.8_q1_0.2",
+      "dgp": "A",
+      "scale": 1,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        37
+      ],
+      "elapsed_seconds": 1.177291200030595
+    },
+    {
+      "scenario": "other_q0_0.8_q1_0.2",
+      "dgp": "A",
+      "scale": 5,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        38
+      ],
+      "elapsed_seconds": 1.3175756998825818
+    },
+    {
+      "scenario": "other_q0_0.8_q1_0.2",
+      "dgp": "A",
+      "scale": 20,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        39
+      ],
+      "elapsed_seconds": 1.3885373999364674
+    },
+    {
+      "scenario": "other_q0_0.8_q1_0.5",
+      "dgp": "A",
+      "scale": 1,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        40
+      ],
+      "elapsed_seconds": 1.245036100037396
+    },
+    {
+      "scenario": "other_q0_0.8_q1_0.5",
+      "dgp": "A",
+      "scale": 5,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        41
+      ],
+      "elapsed_seconds": 1.3100074001122266
+    },
+    {
+      "scenario": "other_q0_0.8_q1_0.5",
+      "dgp": "A",
+      "scale": 20,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        42
+      ],
+      "elapsed_seconds": 1.3214952999260277
+    },
+    {
+      "scenario": "other_q0_0.8_q1_0.8",
+      "dgp": "A",
+      "scale": 1,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        43
+      ],
+      "elapsed_seconds": 1.163498500129208
+    },
+    {
+      "scenario": "other_q0_0.8_q1_0.8",
+      "dgp": "A",
+      "scale": 5,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        44
+      ],
+      "elapsed_seconds": 1.3242746000178158
+    },
+    {
+      "scenario": "other_q0_0.8_q1_0.8",
+      "dgp": "A",
+      "scale": 20,
+      "replications": 2000,
+      "seed_entropy": 2026110901,
+      "seed_spawn_key": [
+        45
+      ],
+      "elapsed_seconds": 1.6023299000225961
+    }
+  ],
+  "elapsed_seconds": 90.17220139992423,
+  "numpy": "2.5.2",
+  "pandas": "3.0.5",
+  "scipy": "1.18.1",
+  "source_summary": "fresh pooled category contrasts from all40 source sites; independent future bridge outcomes; zero-mean identity prior",
+  "oracle": "exact Bernoulli first-two-moment risk minimizer plus independent-pilot2000 selected MC exhaustive oracle evaluated on fresh main draws",
+  "mle": "analytic saturated cell binomial MLE, strict finite coefficients and extended probability boundary estimates separate",
+  "outputs": {
+    "bernoulli_monte_carlo_results.csv": "12cf5b615bdddebbcea94c7564d32974f943bf4a88c48ede03658b3e1b885d1f",
+    "bridge_design_comparison.csv": "14e7c277f6d95bb8acc7bc12edef6420b627a51d03e72274df08adde7ca29d5e",
+    "gaussian_approximation_results.csv": "95582ed5b0c0175667459633c9adf7190b3847c6ef567555f21026a2d37f6fde",
+    "joint_gaussian_diagnostics.csv": "8b175ed373a72c56ed5ed17bec9796f35a802207f305b9f326d808d40458fb3c",
+    "sample_size_scaling.csv": "0710fc12088c91edc61a5b40380bae8e84018a094a004d3eb385e5bdc81529d5",
+    "simulation_cell_counts.csv": "1ec28f4aa78c6cbc9951b30e3c2ad75131d40e0607e6d4cf3ba92f047bbbc127",
+    "source_design_conditioning.csv": "bb9dcf9c2e0c9b123aa79baac669670ca15ceb26a709c8893cdb5916658b972d",
+    "source_summary_diagnostics.csv": "67392b5444fdfc0133e71534c8ed98931f77d063741431cd3a64507957d14e2b"
+  }
+}

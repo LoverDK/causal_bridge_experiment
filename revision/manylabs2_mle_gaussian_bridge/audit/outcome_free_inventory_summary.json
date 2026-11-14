@@ -1,0 +1,9 @@
+{
+  "sites": 57,
+  "sites_observed_other_absent": 43,
+  "sites_observed_other_in_both_arms": 3,
+  "sites_unknown_membership_present": 42,
+  "sites_barycenter_other_positive": 43,
+  "source_sites": 40,
+  "target_sites": 17
+}

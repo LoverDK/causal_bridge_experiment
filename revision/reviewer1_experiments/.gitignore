@@ -1,0 +1,6 @@
+selection_safe_comparison/full/raw/
+selection_safe_comparison/smoke/raw/
+mechanism_calibration/full01/raw/
+mechanism_calibration/smoke01/raw/
+__pycache__/
+**/__pycache__/

@@ -1,0 +1,385 @@
+{
+  "phase": "after",
+  "experiment_id": "SELECTION-SAFE-COMPARISON01",
+  "statuses_unchanged": true,
+  "issues": [
+    {
+      "id": "REV-01",
+      "title": "引言、首现定义与解释顺序",
+      "status": "partial_evidence",
+      "review_refs": [
+        "nrhq.W1",
+        "nrhq.W2",
+        "nrhq.Q1"
+      ],
+      "gaps": [
+        "尚需作者阅读并确认解释是否清楚；对照实验与新增贡献不能由本轮语言编辑解决。"
+      ]
+    },
+    {
+      "id": "REV-02",
+      "title": "R∞ 的代价与 R2 的实际用途",
+      "status": "partial_evidence",
+      "review_refs": [
+        "WGDN.W1a",
+        "WGDN.Q1",
+        "nrhq.Q1"
+      ],
+      "gaps": [
+        "缺真实 outcome-adaptive 用途和与合法 sample splitting 的匹配对照；权重优化收益不能归为 selection safety。"
+      ]
+    },
+    {
+      "id": "REV-03",
+      "title": "摘要数字与证书结果归因",
+      "status": "partial_evidence",
+      "review_refs": [
+        "WGDN.W1b",
+        "nrhq.Q1",
+        "nrhq.Q2"
+      ],
+      "gaps": [
+        "摘要Bonferroni归因已澄清；主要贡献、全部图表到实际策略及保证的系统核对和完整方法效用证据仍需后续实验。"
+      ]
+    },
+    {
+      "id": "REV-04",
+      "title": "真实机制集合与 L,H 的来源",
+      "status": "open",
+      "review_refs": [
+        "WGDN.W2a",
+        "WGDN.Q2",
+        "KoBT.W1",
+        "KoBT.Q1"
+      ],
+      "gaps": [
+        "缺真实、结果盲、可追溯的机制坐标、集合、L,H、联合覆盖依据及错设敏感性。"
+      ]
+    },
+    {
+      "id": "REV-05",
+      "title": "真实闭环与微贷 not_qualified",
+      "status": "open",
+      "review_refs": [
+        "WGDN.W2b",
+        "WGDN.Q2",
+        "KoBT.W3",
+        "KoBT.Q1"
+      ],
+      "gaps": [
+        "尚无真实 audit→集合→半径→发布/拒绝→验证的完整证书案例。"
+      ]
+    },
+    {
+      "id": "REV-06",
+      "title": "Many Labs 目标噪声与迁移证据",
+      "status": "partial_evidence",
+      "review_refs": [
+        "WGDN.W2c",
+        "WGDN.W2b",
+        "nrhq.Q2"
+      ],
+      "gaps": [
+        "缺等目标n/固定参考噪声诊断；多效应族baseline已有，仍不是主证书的真实应用。"
+      ]
+    },
+    {
+      "id": "REV-07",
+      "title": "可行基线、权重收益与完整成本",
+      "status": "partial_evidence",
+      "review_refs": [
+        "nrhq.W4",
+        "nrhq.Q2",
+        "WGDN.W1a",
+        "WGDN.Q1"
+      ],
+      "gaps": [
+        "合成六策略已按统一评价比较；仍缺最近前作、样本拆分等强外部基线与审计部署总成本，以及真实输入下的对应证据。"
+      ]
+    },
+    {
+      "id": "REV-08",
+      "title": "I&K、Manski、ExAtlas 与新增贡献",
+      "status": "open",
+      "review_refs": [
+        "nrhq.W3",
+        "nrhq.Q1",
+        "WGDN.W2d",
+        "WGDN.Q3"
+      ],
+      "gaps": [
+        "缺逐命题符号映射、贡献归属修订、主文比较与匹配近邻实验。"
+      ]
+    },
+    {
+      "id": "REV-09",
+      "title": "凸组合候选类的理由与边界",
+      "status": "open",
+      "review_refs": [
+        "KoBT.W2",
+        "KoBT.Q1"
+      ],
+      "gaps": [
+        "缺应用中选择该类的理由及负权重、外推、meta-regression / IPD 方法的信息条件对照。"
+      ]
+    },
+    {
+      "id": "REV-10",
+      "title": "bridge 定理与实际一步 heuristic",
+      "status": "partial_evidence",
+      "review_refs": [
+        "KoBT.W4",
+        "KoBT.Q1",
+        "nrhq.Q1"
+      ],
+      "gaps": [
+        "实际新W执行已完成；一般机制流程衔接、真实输入与成本仍未验证。",
+        "概率界及单步更新Lean范围如原验证记录；整条具体矩阵统计链与成本下界不声称已全部形式化。"
+      ]
+    },
+    {
+      "id": "REV-11",
+      "title": "方法命名、旧 prototype 与结果版本",
+      "status": "open",
+      "review_refs": [
+        "WGDN.W3",
+        "KoBT.W3",
+        "KoBT.Q1",
+        "nrhq.W1"
+      ],
+      "gaps": [
+        "最新Overleaf源已取得，workflow已对应Appendix L / Tables 10–12 / Figure 5；全稿图表到实现、policy、bound、保证的完整清单尚未完成。"
+      ]
+    },
+    {
+      "id": "REV-12",
+      "title": "拒绝对象、停止状态与统计验收",
+      "status": "partial_evidence",
+      "review_refs": [
+        "WGDN.Q2",
+        "WGDN.Q3",
+        "WGDN.W2b",
+        "KoBT.W3",
+        "KoBT.Q1",
+        "nrhq.Q2"
+      ],
+      "gaps": [
+        "本合成流程输出/停止/空无界/分母已核对；真实资格失败状态、sharp区域与外区间的全篇归属，以及提前无效停止/目标切换仍待处理。"
+      ]
+    }
+  ],
+  "concern_registry": [
+    {
+      "id": "nrhq.W1",
+      "reviewer": "nrhq",
+      "official_anchor": "未编号写作段 1",
+      "summary": "术语未定义，引言和图 1 难读",
+      "issue_ids": [
+        "REV-01",
+        "REV-11"
+      ]
+    },
+    {
+      "id": "nrhq.W2",
+      "reviewer": "nrhq",
+      "official_anchor": "未编号写作段 2",
+      "summary": "缺直觉与例子，叙述含糊及 AI 写作质量质疑",
+      "issue_ids": [
+        "REV-01"
+      ]
+    },
+    {
+      "id": "nrhq.W3",
+      "reviewer": "nrhq",
+      "official_anchor": "未编号 related-work 段",
+      "summary": "主文文献定位不足",
+      "issue_ids": [
+        "REV-08"
+      ]
+    },
+    {
+      "id": "nrhq.W4",
+      "reviewer": "nrhq",
+      "official_anchor": "未编号比较段",
+      "summary": "没有可行替代方法对比",
+      "issue_ids": [
+        "REV-07"
+      ]
+    },
+    {
+      "id": "nrhq.Q1",
+      "reviewer": "nrhq",
+      "official_anchor": "第 1 问",
+      "summary": "关键创新及选择、权重、发布的作用",
+      "issue_ids": [
+        "REV-01",
+        "REV-02",
+        "REV-03",
+        "REV-08",
+        "REV-10"
+      ]
+    },
+    {
+      "id": "nrhq.Q2",
+      "reviewer": "nrhq",
+      "official_anchor": "第 2 问",
+      "summary": "与替代方法的结果比较",
+      "issue_ids": [
+        "REV-03",
+        "REV-06",
+        "REV-07",
+        "REV-12"
+      ]
+    },
+    {
+      "id": "WGDN.W1a",
+      "reviewer": "WGDN",
+      "official_anchor": "W1 前两段",
+      "summary": "选择安全半径损失 pooling 精度和发布能力",
+      "issue_ids": [
+        "REV-02",
+        "REV-07"
+      ]
+    },
+    {
+      "id": "WGDN.W1b",
+      "reviewer": "WGDN",
+      "official_anchor": "W1 摘要段",
+      "summary": "95.3% / 0.2% 来自 Bonferroni，非完整证书",
+      "issue_ids": [
+        "REV-03"
+      ]
+    },
+    {
+      "id": "WGDN.W2a",
+      "reviewer": "WGDN",
+      "official_anchor": "W2 机制集合段",
+      "summary": "真实集合未构造，合成标签校准不够",
+      "issue_ids": [
+        "REV-04"
+      ]
+    },
+    {
+      "id": "WGDN.W2b",
+      "reviewer": "WGDN",
+      "official_anchor": "W2 真实数据段",
+      "summary": "真实数据未实际应用主证书",
+      "issue_ids": [
+        "REV-05",
+        "REV-06",
+        "REV-12"
+      ]
+    },
+    {
+      "id": "WGDN.W2c",
+      "reviewer": "WGDN",
+      "official_anchor": "W2 framing / Figure 3 段",
+      "summary": "发布可能主要由目标样本量决定",
+      "issue_ids": [
+        "REV-06"
+      ]
+    },
+    {
+      "id": "WGDN.W2d",
+      "reviewer": "WGDN",
+      "official_anchor": "W2 标准工具段",
+      "summary": "理论工具标准，需要明确贡献与实用证据",
+      "issue_ids": [
+        "REV-08"
+      ]
+    },
+    {
+      "id": "WGDN.W3",
+      "reviewer": "WGDN",
+      "official_anchor": "未编号 smaller point",
+      "summary": "ATLAS 命名与旧 prototype 混用",
+      "issue_ids": [
+        "REV-11"
+      ]
+    },
+    {
+      "id": "WGDN.Q1",
+      "reviewer": "WGDN",
+      "official_anchor": "第 1 问",
+      "summary": "选择安全是否优于合法设计权重或样本拆分；否则定理作用",
+      "issue_ids": [
+        "REV-02",
+        "REV-07"
+      ]
+    },
+    {
+      "id": "WGDN.Q2",
+      "reviewer": "WGDN",
+      "official_anchor": "第 2 问",
+      "summary": "无机制标签如何构造真实集合并计算证书；全拒绝亦可",
+      "issue_ids": [
+        "REV-04",
+        "REV-05",
+        "REV-12"
+      ]
+    },
+    {
+      "id": "WGDN.Q3",
+      "reviewer": "WGDN",
+      "official_anchor": "第 3 问",
+      "summary": "Theorem 5.3 与 I&K / Manski 的关系和新增内容",
+      "issue_ids": [
+        "REV-08",
+        "REV-12"
+      ]
+    },
+    {
+      "id": "KoBT.W1",
+      "reviewer": "KoBT",
+      "official_anchor": "W1",
+      "summary": "机制集合及 L,H 的取得与错设风险",
+      "issue_ids": [
+        "REV-04"
+      ]
+    },
+    {
+      "id": "KoBT.W2",
+      "reviewer": "KoBT",
+      "official_anchor": "W2",
+      "summary": "为什么采用 prior ATE 的凸组合",
+      "issue_ids": [
+        "REV-09"
+      ]
+    },
+    {
+      "id": "KoBT.W3",
+      "reviewer": "KoBT",
+      "official_anchor": "W3",
+      "summary": "NSW / 微贷不足以支持主要实用主张",
+      "issue_ids": [
+        "REV-05",
+        "REV-11",
+        "REV-12"
+      ]
+    },
+    {
+      "id": "KoBT.W4",
+      "reviewer": "KoBT",
+      "official_anchor": "W4",
+      "summary": "bridge 保证仅限线性高斯，现实适用性未知",
+      "issue_ids": [
+        "REV-10"
+      ]
+    },
+    {
+      "id": "KoBT.Q1",
+      "reviewer": "KoBT",
+      "official_anchor": "Questions: see weaknesses",
+      "summary": "回指 W1–W4，无独立新增问题",
+      "issue_ids": [
+        "REV-04",
+        "REV-05",
+        "REV-09",
+        "REV-10",
+        "REV-11",
+        "REV-12"
+      ]
+    }
+  ],
+  "findings": "See results.md; no issue resolved."
+}

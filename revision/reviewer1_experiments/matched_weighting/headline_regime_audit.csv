@@ -1,0 +1,9 @@
+scenario,schedule,mode,tolerance,budget,method,regime,surface,n_worlds,n_released,release,participants,first_release_cost_conditional,all_target_mae,released_mae,certificate_width,returned_output_width,certificate_coverage,output_coverage,path_coverage,bad_release,selective_risk,budget_participants
+bridgeable,random,r2,0.3,3,optimized__minimum,first_release_stopped,pooled,600,600,1.0,159.68,159.68,0.039917739232334666,0.039917739232334666,0.49596607361895345,0.49596607361895356,1.0,1.0,1.0,0.0,0.0,288
+bridgeable,random,r2,0.3,3,optimized__minimum,complete_prefix,pooled,600,600,1.0,288.0,,0.03338903641895301,0.03338903641895301,0.4224396573211838,,1.0,,1.0,0.0,0.0,288
+bridgeable,random,r2,0.3,3,uniform__minimum,first_release_stopped,pooled,600,122,0.20333333333333334,283.52,265.9672131147541,0.1423390381591069,0.10645957570700416,0.7098572371836763,0.6104233591655438,1.0,1.0,1.0,0.0,0.0,288
+bridgeable,random,r2,0.3,3,uniform__minimum,complete_prefix,pooled,600,120,0.2,288.0,,0.1405179830837628,0.09697605177149732,0.7060549108703599,,1.0,,1.0,0.0,0.0,288
+bridgeable,random,r2,0.3,3,inverse_variance__minimum,first_release_stopped,pooled,600,0,0.0,288.0,,0.361692728789832,,1.10968336972048,0.6140968423043356,1.0,1.0,1.0,0.0,,288
+bridgeable,random,r2,0.3,3,inverse_variance__minimum,complete_prefix,pooled,600,0,0.0,288.0,,0.36169272878983194,,1.10968336972048,,1.0,,1.0,0.0,,288
+bridgeable,random,r2,0.3,3,nearest_source__minimum,first_release_stopped,pooled,600,0,0.0,288.0,,0.13070255972286596,,1.0208085644137737,0.6140968423043356,1.0,1.0,1.0,0.0,,288
+bridgeable,random,r2,0.3,3,nearest_source__minimum,complete_prefix,pooled,600,0,0.0,288.0,,0.13070255972286596,,1.0208085644137739,,1.0,,1.0,0.0,,288

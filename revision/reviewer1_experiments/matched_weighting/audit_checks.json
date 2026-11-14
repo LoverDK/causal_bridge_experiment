@@ -1,0 +1,49 @@
+{
+  "source_record_rows": 345600,
+  "retained_stopped_rows": 230400,
+  "plan_rows": 172800,
+  "complete_prefix_rows": 230400,
+  "independent_worlds": 1800,
+  "worlds_per_geometry": 600,
+  "worlds_per_surface_geometry": 200,
+  "shared_prefix_keys": 14400,
+  "shared_prefix_failures": 0,
+  "simplex_failures": 0,
+  "decompressed_plan_hash": "32b94f7602476145fa60cd98a9ee025e7c127b15456291ca29a68ad80d5ab0e3",
+  "workflow_overlap": [
+    {
+      "schedule": "random",
+      "n": 14400,
+      "max_absolute_differences": {
+        "new_n": 0.0,
+        "radius": 0.0,
+        "estimate": 0.0,
+        "error": 0.0,
+        "released": 0.0,
+        "bad_release": 0.0,
+        "width": 0.0,
+        "path_covered": 0.0
+      }
+    },
+    {
+      "schedule": "nearest",
+      "n": 14400,
+      "max_absolute_differences": {
+        "new_n": 0.0,
+        "radius": 0.0,
+        "estimate": 0.0,
+        "error": 0.0,
+        "released": 0.0,
+        "bad_release": 0.0,
+        "width": 0.0,
+        "path_covered": 0.0
+      }
+    }
+  ],
+  "stopped_all_bad_release_count": 0,
+  "stopped_all_path_covered": true,
+  "fixed_all_certificate_covered": true,
+  "stopped_uniform_release": 0.20333333333333334,
+  "complete_prefix_uniform_release": 0.2,
+  "nearest_r2_bridgeable_delta02_all_refuse": true
+}

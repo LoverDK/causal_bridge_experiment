@@ -1,0 +1,5 @@
+# Preserve frozen artifact hashes across Windows and Unix checkouts.
+* -text whitespace=cr-at-eol
+# Preserve the original archived files, including their trailing blank line.
+original_code/run_conditional.py whitespace=cr-at-eol,-blank-at-eof
+protocol/numerical_protocol.md whitespace=cr-at-eol,-blank-at-eof

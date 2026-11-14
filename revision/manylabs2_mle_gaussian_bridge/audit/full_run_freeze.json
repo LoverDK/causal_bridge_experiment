@@ -1,0 +1,17 @@
+{
+  "frozen_utc": "2026-11-08T19:13:19.926617+00:00",
+  "phase": "Before full MC; timingpilotusedonlytechnicalchecks",
+  "real_target_outcomes_accessed": false,
+  "files": {
+    "code/bernoulli_mc.py": "c0d8f78d7538229cfd871be32698934a0f32659ce4fe84a0ff2b32866115f0f8",
+    "code/build_inputs.py": "7aa01afd3ecfbd08738d619bd6875a2be1726ab99ec6682a2a108d9b766d10a6",
+    "data/all_design.csv": "3e46ca7ce37d58707a2307a13222a0770a08a726d488445e428a5343c9f529f2",
+    "data/frozen_site_split.csv": "a0dbbf206aafc08435ed81000fb79e6f2ad8607099e1d54f52a236ed03c6889c",
+    "data/sex_profile_set_audit.csv": "8c98e5e426f40f8fe93ea03dafba4457c9ec51d3cde94a9a5efd905d46eb6f33",
+    "data/source_only.csv": "54401905de1d8796aee78332952f602f5b8ff65d1c0c3dd6e96235623a271b45",
+    "protocol/analysis_plan.md": "aa8f75f1387a910b838b84e4ab6440afa2ec0f00fc3be786339820c58d3608ae",
+    "protocol/calibration_summary.json": "8bd035af0c8ea9fb7754874d6e5fd5664a1a3f850c3a4b971437d1a7be6b800d",
+    "protocol/design_cell_inventory.csv": "e147611cf1b01712ff453dadaf6e1aac709c9ae9cfa8608c579e50903d9562ce",
+    "protocol/execution.json": "c5f8527b03d08d472dea4f643fa3d89f05a0cbda089b8f3defd524d579470921"
+  }
+}

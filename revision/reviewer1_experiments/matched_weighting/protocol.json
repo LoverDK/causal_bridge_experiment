@@ -1,0 +1,21 @@
+{
+  "analysis_id": "matched-weighting-saved-reanalysis-20261108",
+  "frozen_before_execution": true,
+  "purpose": "Extend existing Appendix P audit to every surface, geometry, certificate, order, tolerance and budget without new simulation.",
+  "source_root": "C:/Users/Qiutian/Documents/Codex/2026-11-07/wo/outputs/experiment-rebuild",
+  "surfaces": ["linear", "quadratic", "sinusoidal"],
+  "geometries": ["supported", "bridgeable", "unreachable"],
+  "methods": ["optimized__minimum", "uniform__minimum", "inverse_variance__minimum", "nearest_source__minimum"],
+  "orders": ["random", "nearest"],
+  "certificates": ["r2", "rinf"],
+  "tolerances": [0.2, 0.3],
+  "budgets": [0, 1, 2, 3],
+  "regimes": ["first_release_stopped", "complete_prefix"],
+  "independent_unit": "world=(surface,scenario,replicate); 1800 total, 600 per geometry, 200 per surface/geometry",
+  "bootstrap": {"seed": 2026110803, "repetitions": 2000, "unit": "paired whole worlds", "strata": "surface within geometry", "reported_caps": [288], "interval": "individual exploratory 95% percentile; no simultaneous superiority inference; all caps retain descriptive metrics"},
+  "metrics": ["release", "participants", "first_release_cost_conditional", "all_target_mae", "released_mae", "certificate_width", "returned_output_width", "certificate_coverage", "output_coverage", "path_coverage", "bad_release", "selective_risk"],
+  "rules": ["Keep zero-release conditional metrics undefined", "Do not mix carried stopped outcomes and complete-prefix outcomes", "Complete-prefix width is certificate width; refusal output width is unavailable from plans", "Complete-prefix path coverage means all certificate intervals through the prefix, not stopped returned-output coverage", "Weight fitting is design-only; inverse variance uses known DGP noise", "Order, optimized weights and certificate type are distinct factors", "No adaptive R2, logdet, external-method superiority or real calibration claim"],
+  "forecast": {"wall_seconds": [60, 240], "basis": "Prior exact 345600-record and 172800-plan audit took 4.14 seconds; extended bootstrap arithmetic adds matrices of 2000 paired world resamples", "bottleneck": "CPU arithmetic and gzip/CSV I/O", "gpu": false},
+  "review_scope": ["REV-02", "REV-03", "REV-07", "REV-10", "REV-11", "REV-12"],
+  "review_status_policy": "Record all twelve before/after; preserve original status; no resolved status."
+}

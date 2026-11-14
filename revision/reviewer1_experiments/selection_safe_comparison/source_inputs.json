@@ -1,0 +1,26 @@
+[
+  {
+    "path": "C:/Users/Qiutian/Documents/Codex/2026-11-07/wo/outputs/experiment-rebuild/AGENTS.md",
+    "sha256": "3ebc944f3e939802f1dcb294c5c9aa60275d53f4a98a98803e6d9f43f6ca230c"
+  },
+  {
+    "path": "C:/Users/Qiutian/Documents/Codex/2026-11-07/wo/outputs/experiment-rebuild/revision/REVIEW_TRACKER.md",
+    "sha256": "7dc7e57f80e1a96e70d894b8dabc5502cf460bba6787c6d7a3cd93111192e8c6"
+  },
+  {
+    "path": "C:/Users/Qiutian/Documents/Codex/2026-11-07/wo/outputs/experiment-rebuild/revision/review_tracker.json",
+    "sha256": "1b8169895eb64937cac9f65468b60b183498ff7a6489e2671f2a593600bddc64"
+  },
+  {
+    "path": "C:/Users/Qiutian/Documents/Codex/2026-11-07/wo/outputs/experiment-rebuild/revision/FIRST_WORKFLOW.md",
+    "sha256": "ac6499ca699722325c7f1138020b01705eb71bf715e8dca30d87190f0dc0654d"
+  },
+  {
+    "path": "C:/Users/Qiutian/Documents/Codex/2026-11-07/wo/outputs/experiment-rebuild/revision/MECHANISM_UNCERTAINTY_ABLATION01.md",
+    "sha256": "cee7421bf619af74cc93026a281735db6d4aecb268b3bf40d73fef5b0beba789"
+  },
+  {
+    "path": "D:/study/zzh科研/reviewer1-sprint/causal_lab_proposal_subpapers_tex_iclr2027/01_reviewer1_baselines.tex",
+    "sha256": "df1038bdd823c893451139392b577598fd29058d470d7bd99a78fb9f34fae4fb"
+  }
+]

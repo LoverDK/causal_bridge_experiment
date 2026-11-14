@@ -1,0 +1,20 @@
+{
+  "initial_smoke_forecast_seconds": [5,20],
+  "initial_full_forecast_seconds": [30,120],
+  "smoke_measured_internal_seconds": 0.5736278998665512,
+  "smoke_python_launch_plus_runtime_seconds": 1.91188,
+  "smoke_verifier_seconds": 0.7918036000337452,
+  "smoke_worlds": 3600,
+  "full_worlds": 360000,
+  "full_updated_execution_forecast_seconds": [15,60],
+  "full_updated_verification_forecast_seconds": [5,20],
+  "basis": "100x world count; conservative 100x full smoke cost is 57.4s, but all 72 optimizer setups and summary construction repeat only once. Single CPU numerical arithmetic and NPZ compression/IO; no GPU.",
+  "smoke_raw_bytes": 1159083,
+  "smoke_largest_raw_file_bytes": 26578,
+  "full_authorization_status_at_forecast": "awaiting root go after smoke verification",
+  "full_authorization_received": "Root explicitly authorized frozen full72x5000 after priority report and smoke verifier",
+  "full_measured_internal_seconds": 5.1853332000318915,
+  "full_python_launch_plus_runtime_seconds": 6.3342756,
+  "full_measured_verifier_seconds": 10.971407700097188,
+  "forecast_comparison": "Runner was faster than conservative15–60s range because repeated optimization/summary overhead did not scale100x and raw repeated radii compressed efficiently; verifier within5–20s forecast. No model/grid/seed changes."
+}

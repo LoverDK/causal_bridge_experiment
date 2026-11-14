@@ -1,0 +1,48 @@
+{
+  "analysis_id": "matched-weighting-saved-reanalysis-20261108",
+  "analysis_type": "saved-output arithmetic; no simulation or fitting",
+  "input_sha256": {
+    "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\current_method\\results\\ablations_full\\records.csv": "5434a141c7deb4d4f2e1c127560ac442e0af8dd373d8603449af8ad36995a869",
+    "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\current_method\\results\\ablations_full\\plans.jsonl.gz": "d8b70ccb2c35bd52f57165d54ce886e3e24987857caf44bc0e1c4c2faf0185fd",
+    "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\current_method\\results\\ablations_full\\run_manifest.json": "a3d48a1c71865e9cebad4ce2504bdd845c3d675104415be6eb99ac2a8e709877",
+    "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\current_method\\results\\ablations_full\\paired_differences.csv": "c993873148d3d71f8306e85356a5b5f2debc5ed85b13aa502eee14d736d119da",
+    "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\current_method\\atlas_new\\ablations.py": "3ffde1247024253fefee7d9fc621d35a000f2cd073d46c55d6fc31bf99188ed8",
+    "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\current_method\\atlas_new\\workflow.py": "4c9a2185beb2b47b6ef289498b15136966bb03fc2318214e013c50591782e327",
+    "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\current_method\\docs\\ablation_protocol.md": "169a0ad48061dcbbc621d05e5c8a442bd2f9340869558d78c5e59be2c9402482",
+    "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\review_tracker.json": "1b8169895eb64937cac9f65468b60b183498ff7a6489e2671f2a593600bddc64",
+    "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\REVIEW_TRACKER.md": "7dc7e57f80e1a96e70d894b8dabc5502cf460bba6787c6d7a3cd93111192e8c6",
+    "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\FIRST_WORKFLOW.md": "ac6499ca699722325c7f1138020b01705eb71bf715e8dca30d87190f0dc0654d",
+    "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\AGENTS.md": "3ebc944f3e939802f1dcb294c5c9aa60275d53f4a98a98803e6d9f43f6ca230c",
+    "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\current_method\\results\\workflow_full\\workflow_records.csv": "4068655ab7df20777409a334208b53601369ac7a66bd2e9be742829d32884136"
+  },
+  "source_manifest_sha256": "a3d48a1c71865e9cebad4ce2504bdd845c3d675104415be6eb99ac2a8e709877",
+  "code_sha256": "fc7e1ae2e0808c71a6da0e89dbf4b7654ae6a2ff71f820f8bd5d67f107ebb828",
+  "protocol_sha256": "dc6290f4d807aac19d6b34e48e87f6d28ef3de6ec003b6f3f479a58768ed8271",
+  "output_sha256": {
+    "analyze.py": "fc7e1ae2e0808c71a6da0e89dbf4b7654ae6a2ff71f820f8bd5d67f107ebb828",
+    "audit_checks.json": "8c0669faa4f88925dcd4e057d807cceb97bd863901d6c1daaafc3c4c7ad974ed",
+    "finalize_manifest.py": "329eeb63d7615d1f98eecdd358d7ace7e0247b8bc63f02a53913ff9488fa8f08",
+    "headline_regime_audit.csv": "42a4815af0b83eb1ea554db001902c8b369050770ca09951144afcf2bebab2bc",
+    "independent_summary_checks.json": "c88a8d20e5ce79b92790f4fb04aac5a483d2a4e763c31b8a425b17d7507e7af1",
+    "metrics_all_caps.csv": "76fbd486ddcd9c598a6c221f6040d10ff113940c1f5ef76421af9469bf219532",
+    "metric_intervals_cap288.csv": "521a7487448ed9db016fd113be4cb80560bceca30a1ed76bbcb56d40ace93e00",
+    "original_seed_paired_intervals.csv": "f6056694318e4a7b3e7a5d651cbfd526a84648f40e5e0205879d08a6a861d1fb",
+    "paired_intervals_cap288.csv": "b8a67c3d74721b297332ca0cea03fd99be983c95357f6ab9a0f77678907d84a1",
+    "protocol.json": "dc6290f4d807aac19d6b34e48e87f6d28ef3de6ec003b6f3f479a58768ed8271",
+    "REPORT.md": "fd48af8a38f9118fc36e3f4b9f3dc1ec18e1875435bb45a81db607110c7a1dc2",
+    "review_status_before_after.json": "fc402d916282867be998b6c615ad4b89727d5be13b1a12d852f943928a352743",
+    "verify_saved_summaries.py": "63b1e36014e595f1f8202954ce13570221d71f5eaa05b092c3aced62a56dcd1d"
+  },
+  "elapsed_seconds": 46.19674210017547,
+  "forecast_seconds": [
+    60,
+    240
+  ],
+  "python": "3.13.15",
+  "numpy": "2.5.2",
+  "pandas": "3.0.5",
+  "bootstrap_seed": 2026110803,
+  "bootstrap_repetitions": 2000,
+  "caveat": "Fresh Monte Carlo bootstrap of existing worlds; not independent new simulation; ratio CIs undefined when no releases. Individual intervals do not adjust for multiplicity.",
+  "finalized_after_independent_verification": true
+}

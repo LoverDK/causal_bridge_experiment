@@ -1,0 +1,167 @@
+{
+  "operation": "Existing archived CSV arithmetic and selected hash verification only",
+  "new_sampling": false,
+  "new_optimization": false,
+  "archive_modified": false,
+  "command": "python audit_existing.py",
+  "elapsed_seconds": 0.12273960001766682,
+  "protocol_sha256": "5fcaab70b68c2873658bf0e5fdfa1a87a9c96fd34434f151cd64917e807eaedd",
+  "code_sha256": "1f6634bc48b8559cdaa7832483ea8f0c0dc3083992ef13e319193347bbad8091",
+  "source_files": [
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\AGENTS.md",
+      "sha256": "3ebc944f3e939802f1dcb294c5c9aa60275d53f4a98a98803e6d9f43f6ca230c"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\FIRST_WORKFLOW.md",
+      "sha256": "ac6499ca699722325c7f1138020b01705eb71bf715e8dca30d87190f0dc0654d"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\REVIEW_TRACKER.md",
+      "sha256": "7dc7e57f80e1a96e70d894b8dabc5502cf460bba6787c6d7a3cd93111192e8c6"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\review_tracker.json",
+      "sha256": "1b8169895eb64937cac9f65468b60b183498ff7a6489e2671f2a593600bddc64"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\REVIEW_ABLATION_CONTINUATION02.md",
+      "sha256": "0c31cd2d4b99e0a0bdf8618c0fb6391352527d7635d34a26358b17e21b372916"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\REVIEW_ABLATION_CONTINUATION02.json",
+      "sha256": "15af6a8386bdf900c0b9cd7af5213486acd499ca5a356352f10e0cbdb34555b0"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\MECHANISM_UNCERTAINTY_ABLATION01.md",
+      "sha256": "cee7421bf619af74cc93026a281735db6d4aecb268b3bf40d73fef5b0beba789"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\MECHANISM_UNCERTAINTY_ABLATION01.json",
+      "sha256": "51d2d77ee0f473a62afa58a0cd092d5107d192dcd153172dfc49cc4cd18b6e6f"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\HISTORICAL_BRIDGE_WORKFLOW01.md",
+      "sha256": "cb90ed92b290721a059ba00e495a6046181b78cc8e00a7610b984978d724416c"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\ABLATION_AUDIT_20261107.md",
+      "sha256": "24d8106cb41cde6b01aa340a3ed3bc1cc22c2811648e13ed785bff1387e3ef23"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\current_method\\atlas_new\\experiments.py",
+      "sha256": "c37f5902532595b089c1e9159da903232f6c9a5929db568a3e90eda6a7310cbd"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\current_method\\results\\full\\bridge_records.csv",
+      "sha256": "f4ec838d21e626f3b0cd5eeb9a132acd18224ee7dd7493e305d7740188c61239"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\current_method\\results\\full\\bridge_anisotropy.csv",
+      "sha256": "9d521753c7e273a94ec737f0cac26f9b9388a7ad820949a96c1bff21fb8ce3b2"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\current_method\\results\\full\\bridge_designs.json",
+      "sha256": "a050a387051b95952979dbe52d2faf84fa784213085f9824919b634c5d1246e7"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\current_method\\results\\full\\operational_summary.csv",
+      "sha256": "39b8c0fa3a80256a69f3c387a39656793404f38e9c6325d53956177bd821392c"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\results\\ablation_continuation02\\primary_summary_scenarios.csv",
+      "sha256": "85ad731a7ecfc60640a2bbdf44f8d4e542cef8601be7cf24f99acc5859885655"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\results\\ablation_continuation02\\stopped_summary_scenarios.csv",
+      "sha256": "bc6a9d664ba490230ac0ebf4e0a62c5d1c5bfcfc2f3e29454d232dde8fc22a73"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\results\\ablation_continuation02\\primary_summary_cells.csv",
+      "sha256": "5b50817078b26c74610fc68e9fa1635712755e337ffd7d9240c128dce65369bb"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\results\\ablation_continuation02\\same_weight_summary_cells.csv",
+      "sha256": "1f07817a3c43a4c4b508d043bed9fcc2294a5ad26aea25c07cee46d1ac83d63f"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\results\\ablation_continuation02\\RESULTS.md",
+      "sha256": "ceb04d626008b122b1325f709d926b56e130193d8d4a46cd3689b0e1b3b60737"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\results\\ablation_continuation02\\analysis_manifest.json",
+      "sha256": "c9068d1af275e9c9c883f2ce03365bf022a41c49733f7086cb02e9f838251ad4"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\results\\ablation_continuation02\\independent_audit.json",
+      "sha256": "b17b3235faf8140214d55b8d2d02256fc725ee46709db131bc7ed0701910f6b3"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\results\\mechanism_uncertainty_ablation01\\primary_summary_scenarios.csv",
+      "sha256": "6257b64204a367e75c6a56e7f453f73501d897f777bcab4a215fe9021410800d"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\results\\mechanism_uncertainty_ablation01\\stopped_summary_scenarios.csv",
+      "sha256": "1cf88ae4579666b99ccdc466ee77e711e269ddf941278038afe9d5e76591c0f5"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\results\\mechanism_uncertainty_ablation01\\RESULTS.md",
+      "sha256": "023cf2c8085e2ae5be9a16b23f17baccb8137fdc6ae5cdfcb05fd45508d86adb"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\results\\mechanism_uncertainty_ablation01\\analysis_manifest.json",
+      "sha256": "cd0e16492f0d17f2b344d5722052635b73edb43c47bffb45bd106e11ad837cd1"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\results\\historical_bridge_workflow01\\RESULTS.md",
+      "sha256": "4850181c5f086cab5902d2aa68156dfeeafa4e69b425a8041c57236fae384dee"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\results\\non_gaussian_target_run01\\RESULTS.md",
+      "sha256": "64db9c3454d88bbecb0cb3e6a25cfb499ad31c80352c10e06a0fe33b857b1839"
+    },
+    {
+      "path": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild\\revision\\results\\main_theorem_workflow01\\RESULTS.md",
+      "sha256": "77f0fc1840ed76d897b0bb90c386d5cc29d428dfe1ab1a6d230717cc4efe722a"
+    }
+  ],
+  "latest_paper": {
+    "path": "D:\\study\\zzh\u79d1\u7814\\reviewer1-sprint\\causal_lab_proposal_subpapers_tex_iclr2027\\01_reviewer1_baselines.tex",
+    "sha256": "df1038bdd823c893451139392b577598fd29058d470d7bd99a78fb9f34fae4fb"
+  },
+  "outputs": [
+    {
+      "path": "D:\\study\\zzh\u79d1\u7814\\reviewer1-sprint\\rebuttal_work\\experiments\\sensitivity_bridge_robustness\\audit_existing.py",
+      "sha256": "1f6634bc48b8559cdaa7832483ea8f0c0dc3083992ef13e319193347bbad8091"
+    },
+    {
+      "path": "D:\\study\\zzh\u79d1\u7814\\reviewer1-sprint\\rebuttal_work\\experiments\\sensitivity_bridge_robustness\\existing_csv_arithmetic.json",
+      "sha256": "d9ba952c79d27545902ce325fbfc14ce918c608b25dbb5ad2071daa491af8dba"
+    },
+    {
+      "path": "D:\\study\\zzh\u79d1\u7814\\reviewer1-sprint\\rebuttal_work\\experiments\\sensitivity_bridge_robustness\\reuse_protocol.json",
+      "sha256": "5fcaab70b68c2873658bf0e5fdfa1a87a9c96fd34434f151cd64917e807eaedd"
+    },
+    {
+      "path": "D:\\study\\zzh\u79d1\u7814\\reviewer1-sprint\\rebuttal_work\\experiments\\sensitivity_bridge_robustness\\reused_bridge_anisotropy.csv",
+      "sha256": "9d521753c7e273a94ec737f0cac26f9b9388a7ad820949a96c1bff21fb8ce3b2"
+    },
+    {
+      "path": "D:\\study\\zzh\u79d1\u7814\\reviewer1-sprint\\rebuttal_work\\experiments\\sensitivity_bridge_robustness\\reused_LH_cells.csv",
+      "sha256": "5b50817078b26c74610fc68e9fa1635712755e337ffd7d9240c128dce65369bb"
+    },
+    {
+      "path": "D:\\study\\zzh\u79d1\u7814\\reviewer1-sprint\\rebuttal_work\\experiments\\sensitivity_bridge_robustness\\reused_LH_primary.csv",
+      "sha256": "85ad731a7ecfc60640a2bbdf44f8d4e542cef8601be7cf24f99acc5859885655"
+    },
+    {
+      "path": "D:\\study\\zzh\u79d1\u7814\\reviewer1-sprint\\rebuttal_work\\experiments\\sensitivity_bridge_robustness\\reused_LH_stopped.csv",
+      "sha256": "bc6a9d664ba490230ac0ebf4e0a62c5d1c5bfcfc2f3e29454d232dde8fc22a73"
+    },
+    {
+      "path": "D:\\study\\zzh\u79d1\u7814\\reviewer1-sprint\\rebuttal_work\\experiments\\sensitivity_bridge_robustness\\reused_U_primary.csv",
+      "sha256": "6257b64204a367e75c6a56e7f453f73501d897f777bcab4a215fe9021410800d"
+    }
+  ],
+  "scope_note": "Initial existing-CSV arithmetic provenance. Combined REPORT.md later gained an authorized deterministic stage and is hashed by delivery_manifest.json."
+}

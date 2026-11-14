@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "independent_conditional_checks": 11520,
+  "maximum_absolute_difference": 5.684341886080802e-14,
+  "zero_release_NA_checked_rows": 1225,
+  "unbounded_direct_zero_cap_rows": 24,
+  "direct_bad_release_and_path_events_preserved": true,
+  "concern_statuses_unchanged": 12
+}

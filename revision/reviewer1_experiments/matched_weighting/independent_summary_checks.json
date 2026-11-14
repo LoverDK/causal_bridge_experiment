@@ -1,0 +1,49 @@
+{
+  "summary_comparisons": [
+    {
+      "regime": "first_release_stopped",
+      "rows": 1152,
+      "maximum_absolute_differences": {
+        "release": 0.0,
+        "participants": 0.0,
+        "all_target_mae": 4.978684131629052e-12,
+        "released_mae": 4.871936187811343e-13,
+        "certificate_coverage": 0.0,
+        "bad_release": 0.0,
+        "selective_risk": 0.0,
+        "width": 4.980904577678302e-12
+      },
+      "saved_summary_sha256": "371d40b1f9b71d4eb0b706af9a2368d1ac6b639eeb6bdf080ed9fa55f50f36e0"
+    },
+    {
+      "regime": "complete_prefix",
+      "rows": 1152,
+      "maximum_absolute_differences": {
+        "release": 0.0,
+        "participants": 0.0,
+        "all_target_mae": 4.978684131629052e-12,
+        "released_mae": 3.426980921261702e-13,
+        "certificate_coverage": 0.0,
+        "bad_release": 0.0,
+        "selective_risk": 0.0,
+        "width": 4.978906176233977e-12
+      },
+      "saved_summary_sha256": "1954b0eddcd57094faed713281ecf512cfa3796af7cd2947c56151ceb7533a46"
+    }
+  ],
+  "minimum_vs_barycentric_stopped_mismatches": {
+    "released": 0,
+    "new_n": 0
+  },
+  "source_hash_matches": {
+    "run_ablations.py": true,
+    "atlas_new\\ablations.py": true,
+    "atlas_new\\ablation_report.py": true,
+    "atlas_new\\workflow.py": true,
+    "atlas_new\\core.py": true,
+    "configs\\workflow_full.json": true,
+    "tests\\test_ablations.py": true,
+    "docs\\ablation_protocol.md": true
+  },
+  "statement": "Saved independent cell summaries agree; this checks arithmetic and attribution, not new scientific validity."
+}

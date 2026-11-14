@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "seed": 20261109,
+  "algebra_draws": 2000,
+  "max_bias_identity_error": 3.3306690738754696e-16,
+  "max_observed_TV_bound_violation": 0.0,
+  "max_observed_vertex_TV_envelope_violation": 0.0,
+  "max_minkowski_identity_error": 2.220446049250313e-16,
+  "cube_vertex_max_tangent_gradient": 1.632993161855452,
+  "declared_L": 1.632993161855452,
+  "scope": "Small numerical algebra checks; proofs in math_specification.md. Not coverage simulation or validation of real-data scientific assumptions."
+}

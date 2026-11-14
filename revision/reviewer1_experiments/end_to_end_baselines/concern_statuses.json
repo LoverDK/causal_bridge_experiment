@@ -1,0 +1,98 @@
+[
+  {
+    "id": "REV-01",
+    "title": "引言、首现定义与解释顺序",
+    "before": "partial_evidence",
+    "after": "partial_evidence",
+    "status_changed": false,
+    "evidence_scope": "no new acceptance evidence; prior status preserved"
+  },
+  {
+    "id": "REV-02",
+    "title": "R∞ 的代价与 R2 的实际用途",
+    "before": "partial_evidence",
+    "after": "partial_evidence",
+    "status_changed": false,
+    "evidence_scope": "no new acceptance evidence; prior status preserved"
+  },
+  {
+    "id": "REV-03",
+    "title": "摘要数字与证书结果归因",
+    "before": "partial_evidence",
+    "after": "partial_evidence",
+    "status_changed": false,
+    "evidence_scope": "no new acceptance evidence; prior status preserved"
+  },
+  {
+    "id": "REV-04",
+    "title": "真实机制集合与 L,H 的来源",
+    "before": "open",
+    "after": "open",
+    "status_changed": false,
+    "evidence_scope": "no new acceptance evidence; prior status preserved"
+  },
+  {
+    "id": "REV-05",
+    "title": "真实闭环与微贷 not_qualified",
+    "before": "open",
+    "after": "open",
+    "status_changed": false,
+    "evidence_scope": "no new acceptance evidence; prior status preserved"
+  },
+  {
+    "id": "REV-06",
+    "title": "Many Labs 目标噪声与迁移证据",
+    "before": "partial_evidence",
+    "after": "partial_evidence",
+    "status_changed": false,
+    "evidence_scope": "no new acceptance evidence; prior status preserved"
+  },
+  {
+    "id": "REV-07",
+    "title": "可行基线、权重收益与完整成本",
+    "before": "partial_evidence",
+    "after": "partial_evidence",
+    "status_changed": false,
+    "evidence_scope": "saved synthetic comparison and statistical denominator extension"
+  },
+  {
+    "id": "REV-08",
+    "title": "I&K、Manski、ExAtlas 与新增贡献",
+    "before": "open",
+    "after": "open",
+    "status_changed": false,
+    "evidence_scope": "no new acceptance evidence; prior status preserved"
+  },
+  {
+    "id": "REV-09",
+    "title": "凸组合候选类的理由与边界",
+    "before": "open",
+    "after": "open",
+    "status_changed": false,
+    "evidence_scope": "no new acceptance evidence; prior status preserved"
+  },
+  {
+    "id": "REV-10",
+    "title": "bridge 定理与实际一步 heuristic",
+    "before": "partial_evidence",
+    "after": "partial_evidence",
+    "status_changed": false,
+    "evidence_scope": "no new acceptance evidence; prior status preserved"
+  },
+  {
+    "id": "REV-11",
+    "title": "方法命名、旧 prototype 与结果版本",
+    "before": "open",
+    "after": "open",
+    "status_changed": false,
+    "evidence_scope": "no new acceptance evidence; prior status preserved"
+  },
+  {
+    "id": "REV-12",
+    "title": "拒绝对象、停止状态与统计验收",
+    "before": "partial_evidence",
+    "after": "partial_evidence",
+    "status_changed": false,
+    "evidence_scope": "saved synthetic comparison and statistical denominator extension"
+  }
+]

@@ -1,0 +1,107 @@
+{
+  "passed": true,
+  "independent_reconstruction": true,
+  "summary_rows_recomputed": 2592,
+  "max_formula_difference": 4.440892098500626e-16,
+  "max_geometry_violation": 2.7755575615628914e-17,
+  "impossible_global_optimized_release_reversals": 0,
+  "analytic_null_comparisons": [
+    {
+      "cell": 0,
+      "K": 4,
+      "naive_expected": 0.9738463273891929,
+      "naive_observed": 0.9718,
+      "simultaneous_expected": 0.9942415156393835,
+      "simultaneous_observed": 0.9944
+    },
+    {
+      "cell": 1,
+      "K": 4,
+      "naive_expected": 0.9738463273891929,
+      "naive_observed": 0.974,
+      "simultaneous_expected": 0.9942415156393835,
+      "simultaneous_observed": 0.9958
+    },
+    {
+      "cell": 2,
+      "K": 16,
+      "naive_expected": 0.8994183070042321,
+      "naive_observed": 0.8956,
+      "simultaneous_expected": 0.9948193384646058,
+      "simultaneous_observed": 0.994
+    },
+    {
+      "cell": 3,
+      "K": 16,
+      "naive_expected": 0.8994183070042321,
+      "naive_observed": 0.8938,
+      "simultaneous_expected": 0.9948193384646058,
+      "simultaneous_observed": 0.9952
+    },
+    {
+      "cell": 24,
+      "K": 4,
+      "naive_expected": 0.9738463273891929,
+      "naive_observed": 0.9704,
+      "simultaneous_expected": 0.9942415156393835,
+      "simultaneous_observed": 0.9952
+    },
+    {
+      "cell": 25,
+      "K": 4,
+      "naive_expected": 0.9738463273891929,
+      "naive_observed": 0.9732,
+      "simultaneous_expected": 0.9942415156393835,
+      "simultaneous_observed": 0.9954
+    },
+    {
+      "cell": 26,
+      "K": 16,
+      "naive_expected": 0.8994183070042321,
+      "naive_observed": 0.894,
+      "simultaneous_expected": 0.9948193384646058,
+      "simultaneous_observed": 0.9954
+    },
+    {
+      "cell": 27,
+      "K": 16,
+      "naive_expected": 0.8994183070042321,
+      "naive_observed": 0.8992,
+      "simultaneous_expected": 0.9948193384646058,
+      "simultaneous_observed": 0.9938
+    },
+    {
+      "cell": 48,
+      "K": 4,
+      "naive_expected": 0.9738463273891929,
+      "naive_observed": 0.9764,
+      "simultaneous_expected": 0.9942415156393835,
+      "simultaneous_observed": 0.9954
+    },
+    {
+      "cell": 49,
+      "K": 4,
+      "naive_expected": 0.9738463273891929,
+      "naive_observed": 0.9742,
+      "simultaneous_expected": 0.9942415156393835,
+      "simultaneous_observed": 0.995
+    },
+    {
+      "cell": 50,
+      "K": 16,
+      "naive_expected": 0.8994183070042321,
+      "naive_observed": 0.8952,
+      "simultaneous_expected": 0.9948193384646058,
+      "simultaneous_observed": 0.9952
+    },
+    {
+      "cell": 51,
+      "K": 16,
+      "naive_expected": 0.8994183070042321,
+      "naive_observed": 0.896,
+      "simultaneous_expected": 0.9948193384646058,
+      "simultaneous_observed": 0.9958
+    }
+  ],
+  "seconds": 10.971407700097188
+}

@@ -1,0 +1,25 @@
+{
+  "protocol_sha256": "723dc618d64ec318c20ff5efb68f04fed1410ed0578ccff29ede5508c1ba6fe7",
+  "code_sha256": "725c6c0c54e572e8b76f0edc788b426ad03d24784e3350a118f94a496de24b8b",
+  "input_designs_sha256": "a050a387051b95952979dbe52d2faf84fa784213085f9824919b634c5d1246e7",
+  "archived_records_sha256": "f4ec838d21e626f3b0cd5eeb9a132acd18224ee7dd7493e305d7740188c61239",
+  "command": "python run_deterministic.py",
+  "python": "3.13.15",
+  "numpy": "2.5.2",
+  "elapsed_seconds": 4.788443300174549,
+  "n_designs": 200,
+  "n_subsets": 114600,
+  "n_method_results": 2400,
+  "new_sampling": false,
+  "new_dgp": false,
+  "source_archive_modified": false,
+  "output_sha256": {
+    "greedy_candidate_scores.csv": "c15a6d53472380214d47897b6c3f831f26be7cc435b583d7acd2c7f8e99a33c0",
+    "greedy_steps.csv": "7cebebb57d4ef6729a89adafa023eaf195cc98a9958e2111947c4387f623113b",
+    "input_designs.json": "a050a387051b95952979dbe52d2faf84fa784213085f9824919b634c5d1246e7",
+    "method_results.csv": "3bfa20cd86d56db1442139aad0c13ce9215c336a0077e036688dafe83309c8df",
+    "paired_comparisons.csv": "7f88538ed0be1a03e180b6a983875c90bf4d3054e570bb1a8e05d267a8d16e6d",
+    "subset_scores.csv": "45a879f4fd315a0cf52a1b2df752d97bcb25dc2bb3d1d9e9810ae0d3db0b6e03",
+    "summary.csv": "111bef1fa0b61517aef7fe05412214551394c191d04b9687bc5754e06177e323"
+  }
+}

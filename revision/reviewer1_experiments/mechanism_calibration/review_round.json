@@ -1,0 +1,72 @@
+{
+  "round_id": "MECHANISM-CALIBRATION-INCREMENTAL-01",
+  "date_local": "2026-11-08",
+  "covered_review_refs": [
+    "WGDN.W2a",
+    "WGDN.Q2",
+    "KoBT.W1",
+    "KoBT.Q1"
+  ],
+  "all_issue_ids_reviewed": [
+    "REV-01",
+    "REV-02",
+    "REV-03",
+    "REV-04",
+    "REV-05",
+    "REV-06",
+    "REV-07",
+    "REV-08",
+    "REV-09",
+    "REV-10",
+    "REV-11",
+    "REV-12"
+  ],
+  "before_status": {
+    "REV-01": "partial_evidence",
+    "REV-02": "partial_evidence",
+    "REV-03": "partial_evidence",
+    "REV-04": "open",
+    "REV-05": "open",
+    "REV-06": "partial_evidence",
+    "REV-07": "partial_evidence",
+    "REV-08": "open",
+    "REV-09": "open",
+    "REV-10": "partial_evidence",
+    "REV-11": "open",
+    "REV-12": "partial_evidence"
+  },
+  "after_status": {
+    "REV-01": "partial_evidence",
+    "REV-02": "partial_evidence",
+    "REV-03": "partial_evidence",
+    "REV-04": "open",
+    "REV-05": "open",
+    "REV-06": "partial_evidence",
+    "REV-07": "partial_evidence",
+    "REV-08": "open",
+    "REV-09": "open",
+    "REV-10": "partial_evidence",
+    "REV-11": "open",
+    "REV-12": "partial_evidence"
+  },
+  "status_changes": {},
+  "real_data_execution": false,
+  "scientific_scope": "Synthetic calibration stress and real-input feasibility only. No real labels, global smoothness validation or real certificate computation.",
+  "evidence": [
+    "feasibility.md",
+    "protocol.md",
+    "stress_grid_config.json",
+    "execution_amendment.md",
+    "smoke_report.md",
+    "RESULTS.md",
+    "full01/run_manifest.json",
+    "full01/independent_audit.json"
+  ],
+  "remaining_gaps": [
+    "genuine independent mechanism reference measurement",
+    "complete comparable real archive calibration units",
+    "outcome-blind domain-competent double coding/adjudication",
+    "external L/H justification",
+    "real computed certificate case"
+  ]
+}

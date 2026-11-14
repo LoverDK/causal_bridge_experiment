@@ -1,0 +1,76 @@
+{
+  "result_directory": "D:\\study\\zzh\u79d1\u7814\\phase1\\manylabs2_mle_gaussian_bridge",
+  "findings": [],
+  "checks": [
+    {
+      "check": "pre_run_frozen_inputs_and_code",
+      "frozen_files": 10,
+      "mismatches": []
+    },
+    {
+      "check": "finite_MLE_analytic_probability",
+      "rows": 2622,
+      "outside_six_MCSE": 0,
+      "max_absolute_error": 0.04000000000000015
+    },
+    {
+      "check": "oracle_variance_identity",
+      "identified_rows": 2237,
+      "max_relative_error": 6.693534615465069e-13
+    },
+    {
+      "check": "extended_estimator_exact_moment_MC_reconciliation",
+      "max_absolute_bias_MC_z": 4.283482365443978,
+      "max_absolute_variance_MC_z": 3.9008835138223845,
+      "bias_outside_six_MCSE": 0,
+      "variance_outside_six_MCSE": 0
+    },
+    {
+      "check": "all_site_denominators",
+      "groups": 184,
+      "minimum_rows": 57,
+      "maximum_rows": 57
+    },
+    {
+      "check": "historical_arm_ratio_and_scaled_size_preservation",
+      "arm_schedules": 5244,
+      "disagreements": 0
+    },
+    {
+      "check": "exhaustive_expected_risk_MC_reconciliation",
+      "rows": 50424,
+      "maximum_absolute_MC_z": 3.025923533211546,
+      "outside_six_MCSE": 0
+    },
+    {
+      "check": "independent_subset_policy_reconstruction",
+      "mc_oracle_mismatches": 0,
+      "analytic_oracle_mismatches": 0,
+      "logdet_optimum_mismatches": 0,
+      "greedy_bound_violations": 0,
+      "uniform_risk_average_mismatches": 0
+    }
+  ],
+  "diagnostic_rows": 10488,
+  "cell_rows": 15732,
+  "target_export_audit": {
+    "status": "passed",
+    "target_rows": 68816,
+    "policy_condition_groups": 4048,
+    "targets_per_group": 17,
+    "primary_hashes_verified": 9,
+    "original_freeze_hashes_verified": 10,
+    "unavailable_target_rows": 2856,
+    "source_only_target_rows": 3128,
+    "maximum_absolute_aggregate_differences": {
+      "valid_rate": 1.1102230246251565e-16,
+      "mse": 6.578396681555798e-17,
+      "mae": 7.632783294297951e-17,
+      "coverage95_conditional": 6.916689443414725e-14,
+      "coverage95_unconditional": 1.3350431871117507e-14
+    },
+    "seed_provenance_review": "Exporter reconstructs each recorded evaluation SeedSequence child; source/bridge child streams 1/0 are unchanged; policy choices read from primary outputs; no refitting or reselection.",
+    "exporter_sha256": "55b18d6829027ca95349f0b65fbec1a56f258b37596b13ec82b16a9f3529f6ab",
+    "findings": []
+  }
+}

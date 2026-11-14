@@ -1,0 +1,15 @@
+{
+  "experiment_id": "E-SMOOTHNESS-BRIDGE-AUDIT",
+  "status": "frozen_before_existing_csv_arithmetic",
+  "source_root": "C:/Users/Qiutian/Documents/Codex/2026-11-07/wo/outputs/experiment-rebuild",
+  "allowed_operation": "Read archived protocols, code and reports; recompute descriptive summaries from saved CSVs; verify selected archive hashes. No new simulation or optimization.",
+  "review_mapping": ["KoBT.W1", "KoBT.W4", "KoBT.Q1", "REV-04", "REV-10", "REV-12"],
+  "unit": "One independent synthetic world in the L/H and U ablations; one archived design for bridge information/radius comparisons.",
+  "primary_smoothness": {"archive": "revision/results/ablation_continuation02", "mode": "r2", "stage": 3, "new_participants": 288, "variants": ["baseline", "L_half", "L_double", "H_zero", "H_double"], "all_surfaces": ["linear", "quadratic", "sinusoidal"], "all_scenarios": ["supported", "bridgeable", "unreachable"]},
+  "secondary": ["stopped outputs at delta .2 and .3", "all Rinf and budget results retained by source pointer", "same-weight diagnostics retained by source pointer", "mechanism_uncertainty_ablation01", "old operational understated_LH and no_curvature", "original Panel D exhaustive bridge benchmark and anisotropy witness", "non_gaussian_target_run01 and historical_bridge_workflow01 scope audit"],
+  "events": {"certificate_coverage": "truth in weighted estimate plus/minus certificate radius", "bad_release": "release and absolute point error greater than prespecified delta", "returned_coverage": "truth in actual returned release interval or refusal outer envelope", "causal_geometry_violation": "absolute true weighted source-to-target effect difference exceeds geometric bound"},
+  "inference": "Descriptive reuse only. No new confidence intervals, no status upgrades, no multiplicity-adjusted claims.",
+  "runtime_forecast_seconds": [1, 10],
+  "runtime_basis": "Small existing summary CSVs and SHA256 checks only; CPU/I/O, no GPU.",
+  "new_run_gate": "Any new deterministic design optimization or simulation requires root priority report/go. None is included in this audit."
+}

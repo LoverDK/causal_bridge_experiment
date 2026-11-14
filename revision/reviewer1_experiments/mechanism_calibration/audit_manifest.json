@@ -1,0 +1,160 @@
+{
+  "audit_id": "MECHANISM-CALIBRATION-FEASIBILITY-20261108",
+  "created_utc": "2026-11-08T09:33:29.353013+00:00",
+  "status": "documentation_only_no_experiment",
+  "external_tree_read_only": true,
+  "source_root": "C:\\Users\\Qiutian\\Documents\\Codex\\2026-11-07\\wo\\outputs\\experiment-rebuild",
+  "source_files": {
+    "AGENTS.md": {
+      "sha256": "3ebc944f3e939802f1dcb294c5c9aa60275d53f4a98a98803e6d9f43f6ca230c",
+      "bytes": 3213
+    },
+    "revision/REVIEW_TRACKER.md": {
+      "sha256": "7dc7e57f80e1a96e70d894b8dabc5502cf460bba6787c6d7a3cd93111192e8c6",
+      "bytes": 42447
+    },
+    "revision/review_tracker.json": {
+      "sha256": "1b8169895eb64937cac9f65468b60b183498ff7a6489e2671f2a593600bddc64",
+      "bytes": 92445
+    },
+    "revision/FIRST_WORKFLOW.md": {
+      "sha256": "ac6499ca699722325c7f1138020b01705eb71bf715e8dca30d87190f0dc0654d",
+      "bytes": 19271
+    },
+    "revision/REAL_EXPERIMENT_REVIEW_PREPARATION.md": {
+      "sha256": "3595ec12644ac0a60ce2bff28ba49a8036b4c2d0781bd4f29feaf67a86c37704",
+      "bytes": 15444
+    },
+    "DATA_SOURCES.md": {
+      "sha256": "bca3fbb621146422f249647373aa2715b2384f392ed9c6cf7e45bee7af3cf2b4",
+      "bytes": 4442
+    },
+    "REAL_CROSS_INTERVENTION_REQUIREMENTS.md": {
+      "sha256": "22cea3243155fd9e904f7d538436349792af6e5fc72e7b3dbacd8a29c4c9ead1",
+      "bytes": 4338
+    },
+    "MICROCREDIT_METADATA_AUDIT_20260925.md": {
+      "sha256": "b0576d2f8b2734ecaea83ac33442e9c824e1fa77dcb3edcd8d740b98fbdba169",
+      "bytes": 5482
+    },
+    "MICROCREDIT_CODING_STATUS_20260925.md": {
+      "sha256": "462c9bbf797b86445c377b3bcc53b8b841cd491eeb36a1817b1930702d51d763",
+      "bytes": 1781
+    },
+    "MICROCREDIT_DESIGN_EVIDENCE_20260925.md": {
+      "sha256": "5218f5ac2695abca15175dcb26c91cd1ef844cbe5c437b1c4c338f6afa6f370b",
+      "bytes": 16235
+    },
+    "current_method/docs/mechanism_set_calibration_protocol.md": {
+      "sha256": "b50664b6f74107165dd46ac52be6162278ed73347ff0b68a37e187e246d0cc49",
+      "bytes": 2384
+    },
+    "current_method/docs/effect_family_holdout_protocol.md": {
+      "sha256": "5726378b7b3a82c4026da90c852391f1ac715f46dd3e7d715af816b42aaff3a9",
+      "bytes": 3014
+    },
+    "legacy_audits/results/extensions/nsw_real_proxy_truth_v2/report.md": {
+      "sha256": "fbd071d5a8833a511175f91aec8e83726e75cb73ae7ad9794d9e5bb51b3aefa9",
+      "bytes": 1414
+    },
+    "current_method/atlas_new/core.py": {
+      "sha256": "fe91cb77b425d48d435ef295973976449747182051d35aded01b1332e7fcd59b",
+      "bytes": 7129
+    },
+    "current_method/atlas_new/mechanism_calibration.py": {
+      "sha256": "1095d082f60c2159ff5ba494e1da5ebfaaa6c508e957c04f1a0b958a9a38a6dc",
+      "bytes": 3049
+    },
+    "current_method/atlas_new/experiments.py": {
+      "sha256": "c37f5902532595b089c1e9159da903232f6c9a5929db568a3e90eda6a7310cbd",
+      "bytes": 17417
+    },
+    "current_method/atlas_new/audit_plus.py": {
+      "sha256": "2a5049f21b4914d88b5b0f4b733d537cd2fb45ef6be149eee9088ca38397ab29",
+      "bytes": 11988
+    },
+    "current_method/run_mechanism_calibration.py": {
+      "sha256": "5b1a82a4cc899171688bf15773f3185cb213d7b6a9f2c722920b2fe652a5ce0c",
+      "bytes": 3995
+    },
+    "current_method/results/mechanism_calibration/summary.csv": {
+      "sha256": "b2e781843a84d556ab7e6cfb457201cc6a5beb9e725038504c80cfe006773649",
+      "bytes": 548
+    },
+    "current_method/results/full/joint_calibration_summary.csv": {
+      "sha256": "9a06c1212cff7b3adc7bd975584931b2f74294a263affcb1a2af4248c0505381",
+      "bytes": 1711
+    },
+    "current_method/results/full_plus/plus_calibration_sensitivity_summary.csv": {
+      "sha256": "314a7d410bd93d21c3558a061b25a3cdb76dc180fd8d11b9241f1a3ec5c7dc5f",
+      "bytes": 1512
+    },
+    "revision/MECHANISM_UNCERTAINTY_ABLATION01.json": {
+      "sha256": "51d2d77ee0f473a62afa58a0cd092d5107d192dcd153172dfc49cc4cd18b6e6f",
+      "bytes": 12058
+    },
+    "revision/REVIEW_ABLATION_CONTINUATION02.json": {
+      "sha256": "15af6a8386bdf900c0b9cd7af5213486acd499ca5a356352f10e0cbdb34555b0",
+      "bytes": 14695
+    },
+    "revision/evidence/mechanism_uncertainty_ablation01_complete.json": {
+      "sha256": "5228246bbcaf1c6b797044aab99c7c0cb340d09ceb763338273335fa0d42eec6",
+      "bytes": 3743
+    },
+    "revision/evidence/ablation_continuation02_complete.json": {
+      "sha256": "3360a635e43b811e0e751e7a518708444930d9d219b742265b8208d62ca6857c",
+      "bytes": 3847
+    }
+  },
+  "source_registry_all12_status_snapshot": {
+    "REV-01": "partial_evidence",
+    "REV-02": "partial_evidence",
+    "REV-03": "partial_evidence",
+    "REV-04": "open",
+    "REV-05": "open",
+    "REV-06": "partial_evidence",
+    "REV-07": "partial_evidence",
+    "REV-08": "open",
+    "REV-09": "open",
+    "REV-10": "partial_evidence",
+    "REV-11": "open",
+    "REV-12": "partial_evidence"
+  },
+  "review_status_changes": {},
+  "all12_review": "All concerns read and reviewed in feasibility.md. No issue upgraded.",
+  "experiment_run": false,
+  "real_fit_run": false,
+  "labels_created": false,
+  "web_sources": [
+    {
+      "url": "https://github.com/ManyLabsOpenScience/ManyLabs2",
+      "observed": "links to sourceInfo and primary-analysis codebook"
+    },
+    {
+      "url": "https://docs.google.com/spreadsheets/d/1Qn_kVkVGwffBAmhAbpgrTjdxKLP1bb2chHjBMVyGl1s/edit?usp=sharing",
+      "observed": "participating-lab descriptors including uncertain device entries; live external metadata, not mechanism ground truth"
+    },
+    {
+      "url": "https://users.nber.org/~rdehejia/data/.nswdata2.html",
+      "observed": "NSW sample/variable definitions; RE78 is outcome"
+    },
+    {
+      "url": "https://www.openicpsr.org/openicpsr/project/116357/version/V1/view",
+      "observed": "seven-study replication archive page"
+    }
+  ],
+  "artifacts": {
+    "feasibility.md": {
+      "sha256": "55b82689d23d29e1890e08e8745224d506902c8072d2fa28e3038de27679c79e",
+      "bytes": 13693
+    },
+    "protocol.md": {
+      "sha256": "673fb7be3c06ce70868f0a1704f6bb95933fa0f92846d9853a3bc90dc1f7c181",
+      "bytes": 8329
+    },
+    "stress_grid_config.json": {
+      "sha256": "8b45e244041b6c7c4d56f0023427e9c665d7c8af1ffb29cc394891b03f89639e",
+      "bytes": 9955
+    }
+  }
+}

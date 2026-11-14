@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "target_rows": 68816,
+  "policy_condition_groups": 4048,
+  "targets_per_group": 17,
+  "primary_hashes_verified": 9,
+  "original_freeze_hashes_verified": 10,
+  "unavailable_target_rows": 2856,
+  "source_only_target_rows": 3128,
+  "maximum_absolute_aggregate_differences": {
+    "valid_rate": 1.1102230246251565e-16,
+    "mse": 6.578396681555798e-17,
+    "mae": 7.632783294297951e-17,
+    "coverage95_conditional": 6.916689443414725e-14,
+    "coverage95_unconditional": 1.3350431871117507e-14
+  },
+  "seed_provenance_review": "Exporter reconstructs each recorded evaluation SeedSequence child; source/bridge child streams 1/0 are unchanged; policy choices read from primary outputs; no refitting or reselection.",
+  "exporter_sha256": "55b18d6829027ca95349f0b65fbec1a56f258b37596b13ec82b16a9f3529f6ab",
+  "findings": []
+}
